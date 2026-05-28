@@ -133,11 +133,11 @@ export default function Dashboard({
                     </div>
                   </div>
                   <div style={{ textAlign: "right" }}>
-                    <div style={{ fontSize: "16px", fontWeight: "700", color: h.pct >= 80 ? "var(--success)" : h.pct >= 50 ? "var(--warning)" : "var(--error)" }}>
-                      {h.pct}%
+                    <div style={{ fontSize: "16px", fontWeight: "700", color: (h.pct || 0) >= 80 ? "var(--success)" : (h.pct || 0) >= 50 ? "var(--warning)" : "var(--error)" }}>
+                      {h.pct !== undefined && h.pct !== null && !isNaN(h.pct) ? h.pct : 0}%
                     </div>
                     <div style={{ fontSize: "11px", color: "var(--text-muted)", marginTop: "2px" }}>
-                      {h.score}/{h.totalQuestions} Correct
+                      {h.score !== undefined && h.score !== null ? h.score : 0}/{h.totalQuestions || 0} Correct
                     </div>
                   </div>
                 </div>
