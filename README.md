@@ -1,16 +1,126 @@
-# React + Vite
+# TCS NQT Preparation Portal & Mock Test Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, state-of-the-art, dark-themed practice and mock exam portal for candidates preparing for the **TCS National Qualifier Test (NQT)**. Built with Vite, React, Vanilla CSS, and Lucide Icons, this single-page web application is fully self-contained, offline-compatible, and ready for deployment to platforms like Netlify.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+*   📊 **Interactive Dashboard**: Track your study progress, average test scores, overall accuracy, and saved bookmark counts.
+*   📚 **Offline Question Bank**: **580 unique questions** compiled, structured, and deduplicated from official prep resources. Includes detailed step-by-step mathematical explanations.
+*   ⚙️ **Mock Configurator**: Customize your mocks by selecting a specific topic or mixed syllabus, modifying question count and time limits, and toggling session modes.
+*   🧠 **Two Practice Modes**:
+    *   **Exam Mode**: Strict timed mock simulation. Answers are hidden until submission, progress is tracked, and a red countdown warning activates when under 5 minutes.
+    *   **Practice Mode**: Learn as you go. View immediate checkmarks on option selection, read full step-by-step solutions per question, and proceed without a timer.
+*   🎯 **Results Analytics**:
+    *   Dynamic circular SVG progress indicator.
+    *   Accordion-based review list filtering correct, incorrect, and skipped responses.
+    *   "Bookmark" buttons to save challenging questions for future review.
+*   📉 **History & Performance**: Visual SVG line charts representing score progression over time, alongside vertical progress meters representing topic strengths.
+*   💾 **Saved Questions revision**: Browse bookmarked questions, review solutions, delete saved items, or launch a quick custom mock containing *only* your bookmarks.
+*   🔮 **AI Mock Generator**:
+    *   **API Mode**: Enter your Anthropic Claude API Key (securely saved in browser `localStorage`) to generate fresh, custom papers on any topic using Claude 3.5 Sonnet.
+    *   **Local Simulator Fallback**: If no API key is supplied, a simulator dynamically shuffles and builds a realistic mock paper from the 580 offline questions immediately.
+*   🚪 **Mid-Test Exit & Navigation**: Safely exit tests in progress using a styled confirmation modal to return to the dashboard.
+*   📱 **High-Density Question Palette**: Sidebar navigation grid dynamically transitions from 5-columns to 8-columns or 10-columns for large question sets to prevent layout overflows.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+NQTMcq/
+├── dist/                  # Production build output
+├── public/                # Static assets
+├── src/
+│   ├── assets/            # SVG logos
+│   ├── components/        # Modular UI components
+│   │   ├── Dashboard.jsx  # Main hero stats and topic grid
+│   │   ├── TestConfig.jsx # Test sliders and mode selection
+│   │   ├── TestEngine.jsx # Test workspace (timer, sidebar grid, modals)
+│   │   ├── ResultsView.jsx# Score SVG gauge and solution accordions
+│   │   ├── AiPaper.jsx    # Claude API key input and NQT simulator
+│   │   └── Analytics.jsx  # SVG trend charts and bookmarks manager
+│   ├── data/
+│   │   └── questionBank.js# The merged database of 580 NQT questions
+│   ├── App.jsx            # Main app shell and state coordinator
+│   ├── index.css          # Design system, glassmorphism, and color variables
+│   └── main.jsx           # ReactDOM client mount point
+├── index.html             # HTML5 template (optimized for SEO)
+├── package.json           # Node configuration and script actions
+└── vite.config.js         # Vite compiler configuration
+```
+
+---
+
+## 📈 Question Bank Topics
+
+The offline question bank contains **580 unique questions** categorized under 16 topics:
+
+*   **Quantitative Aptitude**: 313 questions
+*   **Software Engineering**: 39 questions
+*   **Logical Reasoning**: 30 questions
+*   **Programming Concepts**: 29 questions
+*   **Data Structures & Algorithms (DSA)**: 20 questions
+*   **Technical Concepts**: 20 questions
+*   **General / Mixed**: 20 questions
+*   **Computer Fundamentals**: 19 questions
+*   **Verbal Ability**: 10 questions
+*   **DBMS & SQL**: 10 questions
+*   **Computer Networks**: 10 questions
+*   **Operating Systems**: 10 questions
+*   **Web Technologies**: 10 questions
+*   **Cloud Computing**: 10 questions
+*   **Cybersecurity**: 10 questions
+*   **AI & ML**: 10 questions
+*   **System Design**: 10 questions
+
+---
+
+## 🛠️ Local Installation & Development
+
+To run this project locally, ensure you have [Node.js](https://nodejs.org/) installed:
+
+1.  **Clone or navigate** to the project directory:
+    ```bash
+    cd d:/Projects/NQTMcq
+    ```
+2.  **Install dependencies** (Vite, React, Lucide Icons):
+    ```bash
+    npm install
+    ```
+3.  **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+4.  Open the local address in your browser (usually `http://localhost:5173/`).
+
+---
+
+## 🌐 Netlify Deployment
+
+This website is a Single Page Application (SPA) with **no runtime server dependencies**. The 580 questions are compiled directly into the client-side JavaScript bundle, making it 100% compatible with static hosting platforms like Netlify.
+
+### Option A: Manual Drag-and-Drop
+1.  Compile the production build:
+    ```bash
+    npm run build
+    ```
+2.  Vite will generate a `dist/` folder.
+3.  Drag and drop the `dist/` folder directly into the Netlify Dashboard.
+
+### Option B: Git Integration (Continuous Deployment)
+If you connect your repository to Netlify, set the following configuration values:
+*   **Build Command**: `npm run build`
+*   **Publish Directory**: `dist`
+*   **Node Version**: `18+` or `20+`
+
+---
+
+## 💻 Technology Stack
+
+*   **Compiler/Bundler**: Vite
+*   **Library**: React (Functional components & hooks)
+*   **Styling**: Vanilla CSS (CSS Variables, Grid Layouts, Glassmorphism, Animations)
+*   **Icons**: Lucide React
+*   **Deduplication & Extraction**: Python 3.14 + `pypdf`
