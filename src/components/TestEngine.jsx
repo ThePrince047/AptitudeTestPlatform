@@ -321,13 +321,7 @@ export default function TestEngine({
           </button>
         </div>
         <h4 className="nav-sidebar-title desktop-only-title">Question Palette</h4>
-        <div 
-          className="question-nav-grid"
-          style={{ 
-            gridTemplateColumns: `repeat(${questions.length > 50 ? 10 : questions.length > 25 ? 8 : 5}, 1fr)`,
-            gap: questions.length > 25 ? "6px" : "8px" 
-          }}
-        >
+        <div className="question-nav-grid">
           {questions.map((_, qIdx) => {
             const isCurrent = qIdx === idx;
             const isAns = answers[qIdx] !== undefined;

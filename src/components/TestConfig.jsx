@@ -126,7 +126,7 @@ export default function TestConfig({
                 Exam Mode
               </div>
               <div className="mode-description">
-                Strict timed mock test with no immediate answers or explanations. Simulates the actual NQT exam environment.
+                Strict timed mock test with no immediate answers or explanations. Simulates the actual exam environment.
               </div>
             </div>
 

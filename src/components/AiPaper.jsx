@@ -10,11 +10,58 @@ export default function AiPaper({
   const [topic, setTopic] = useState("Quantitative Aptitude");
   const [numQuestions, setNumQuestions] = useState(10);
   const [loading, setLoading] = useState(false);
+  const [progressText, setProgressText] = useState("");
   const [error, setError] = useState("");
   const [saveKey, setSaveKey] = useState(true);
 
   const handleSaveKeyChange = (e) => {
     setSaveKey(e.target.checked);
+  };
+
+  const fetchBatch = async (count, topicName, key) => {
+    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        contents: [
+          {
+            parts: [
+              {
+                text: `Generate exactly ${count} challenging and realistic exam MCQ questions for the topic: "${topicName}". 
+Return ONLY a valid JSON array, no markdown wrappers, no explanations outside the JSON. Format:
+[
+  {"q": "Question text here. Include code snippet if applicable.", "opts": ["Option A", "Option B", "Option C", "Option D"], "ans": 0, "sol": "Detailed step-by-step solution here."}
+]
+The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option in the "opts" array. Make the questions exam-realistic, covering aptitude syllabus standards.`
+              }
+            ]
+          }
+        ],
+        generationConfig: {
+          responseMimeType: "application/json"
+        }
+      })
+    });
+
+    if (!response.ok) {
+      const errData = await response.json().catch(() => ({}));
+      throw new Error(errData.error?.message || `HTTP error ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (!data.candidates || data.candidates.length === 0 || !data.candidates[0].content || !data.candidates[0].content.parts || data.candidates[0].content.parts.length === 0) {
+      throw new Error("No response candidates returned from Gemini API.");
+    }
+
+    const rawText = data.candidates[0].content.parts[0].text.trim();
+    const parsed = JSON.parse(rawText);
+    
+    if (!Array.isArray(parsed)) {
+      throw new Error("API did not return a valid list of questions.");
+    }
+    return parsed;
   };
 
   const generatePaper = async () => {
@@ -26,6 +73,7 @@ export default function AiPaper({
 
     setLoading(true);
     setError("");
+    setProgressText("Initializing API connection...");
 
     if (saveKey) {
       localStorage.setItem("gemini_api_key", apiKey.trim());
@@ -34,50 +82,29 @@ export default function AiPaper({
     }
 
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text: `Generate exactly ${numQuestions} challenging and realistic TCS NQT exam MCQ questions for the topic: "${topic}". 
-Return ONLY a valid JSON array, no markdown wrappers, no explanations outside the JSON. Format:
-[
-  {"q": "Question text here. Include code snippet if applicable.", "opts": ["Option A", "Option B", "Option C", "Option D"], "ans": 0, "sol": "Detailed step-by-step solution here."}
-]
-The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option in the "opts" array. Make the questions exam-realistic, covering NQT syllabus standards.`
-                }
-              ]
-            }
-          ],
-          generationConfig: {
-            responseMimeType: "application/json"
-          }
-        })
-      });
-
-      if (!response.ok) {
-        const errData = await response.json().catch(() => ({}));
-        throw new Error(errData.error?.message || `HTTP error ${response.status}`);
+      const batchSize = 15; // Safe size to fit inside 8k output token limit
+      const numBatches = Math.ceil(numQuestions / batchSize);
+      const batchCounts = [];
+      let remaining = numQuestions;
+      for (let i = 0; i < numBatches; i++) {
+        const currentBatch = Math.min(batchSize, remaining);
+        batchCounts.push(currentBatch);
+        remaining -= currentBatch;
       }
 
-      const data = await response.json();
-      if (!data.candidates || data.candidates.length === 0 || !data.candidates[0].content || !data.candidates[0].content.parts || data.candidates[0].content.parts.length === 0) {
-        throw new Error("No response candidates returned from Gemini API. Check your key and parameters.");
+      let allQuestions = [];
+      for (let i = 0; i < batchCounts.length; i++) {
+        const count = batchCounts[i];
+        setProgressText(`Generating batch ${i + 1} of ${numBatches} (${count} questions)...`);
+        const batchQuestions = await fetchBatch(count, topic, apiKey.trim());
+        allQuestions = allQuestions.concat(batchQuestions);
       }
 
-      const rawText = data.candidates[0].content.parts[0].text.trim();
-      const parsed = JSON.parse(rawText);
-      
-      if (!Array.isArray(parsed) || parsed.length === 0) {
-        throw new Error("API did not return a valid list of questions.");
+      if (allQuestions.length === 0) {
+        throw new Error("No questions were generated.");
       }
 
-      const enriched = parsed.map((q, idx) => ({
+      const enriched = allQuestions.map((q, idx) => ({
         ...q,
         id: `ai_${Date.now()}_${idx}`,
         cat: topic
@@ -93,12 +120,14 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
       }, 4000);
     } finally {
       setLoading(false);
+      setProgressText("");
     }
   };
 
   const triggerLocalSimulator = () => {
     setLoading(true);
     setError("");
+    setProgressText("Building paper from local database...");
     
     // Simulate generation delay
     setTimeout(() => {
@@ -107,6 +136,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
       if (pool.length === 0) {
         setError(`No questions available for topic: ${topic}`);
         setLoading(false);
+        setProgressText("");
         return;
       }
       
@@ -121,6 +151,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
       }));
       
       setLoading(false);
+      setProgressText("");
       onStartCustomTest(enriched, topic);
     }, 1500);
   };
@@ -183,7 +214,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
               lineHeight: "1.5"
             }}
           >
-            <strong>Note on Fallback:</strong> If no API key is supplied, the portal will run in <strong>Local Simulator Mode</strong>. It will automatically build a realistic NQT paper from the offline questions database immediately!
+            <strong>Note on Fallback:</strong> If no API key is supplied, the portal will run in <strong>Local Simulator Mode</strong>. It will automatically build a realistic aptitude paper from the offline questions database immediately!
           </div>
         </div>
 
@@ -254,12 +285,12 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
           {loading ? (
             <>
               <Icons.RefreshCw size={16} className="animate-spin" style={{ animation: "spin 1s linear infinite" }} />
-              Generating {numQuestions} NQT Questions...
+              {progressText || `Generating ${numQuestions} Questions...`}
             </>
           ) : (
             <>
               <Icons.Sparkles size={16} />
-              {apiKey.trim() ? "Generate via Gemini API" : "Start Local NQT Simulator"}
+              {apiKey.trim() ? "Generate via Gemini API" : "Start Local Simulator"}
             </>
           )}
         </button>

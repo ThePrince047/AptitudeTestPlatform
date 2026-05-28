@@ -1,13 +1,13 @@
-# TCS NQT Preparation Portal & Mock Test Engine
+# Aptitude Mock Test Environment & Prep Portal
 
-A premium, state-of-the-art, dark-themed practice and mock exam portal for candidates preparing for the **TCS National Qualifier Test (NQT)**. Built with Vite, React, Vanilla CSS, and Lucide Icons, this single-page web application is fully self-contained, offline-compatible, and ready for deployment to platforms like Netlify.
+A premium, state-of-the-art, dark-themed practice and mock exam portal for candidates preparing for aptitude exams. Built with Vite, React, Vanilla CSS, and Lucide Icons, this single-page web application is fully self-contained, offline-compatible, and ready for deployment to platforms like Netlify.
 
 ---
 
 ## 🚀 Key Features
 
 *   📊 **Interactive Dashboard**: Track your study progress, average test scores, overall accuracy, and saved bookmark counts.
-*   📚 **Offline Question Bank**: **1,535 unique questions** compiled, structured, and deduplicated from official prep resources. Includes detailed step-by-step mathematical explanations.
+*   📚 **Offline Question Bank**: **1,780+ unique questions** compiled, structured, and deduplicated. Includes detailed step-by-step mathematical explanations.
 *   ⚙️ **Mock Configurator**: Customize your mocks by selecting a specific topic or mixed syllabus, modifying question count and time limits, and toggling session modes.
 *   🧠 **Two Practice Modes**:
     *   **Exam Mode**: Strict timed mock simulation. Answers are hidden until submission, progress is tracked, and a red countdown warning activates when under 5 minutes.
@@ -19,10 +19,10 @@ A premium, state-of-the-art, dark-themed practice and mock exam portal for candi
 *   📉 **History & Performance**: Visual SVG line charts representing score progression over time, alongside vertical progress meters representing topic strengths.
 *   💾 **Saved Questions revision**: Browse bookmarked questions, review solutions, delete saved items, or launch a quick custom mock containing *only* your bookmarks.
 *   🔮 **AI Mock Generator**:
-    *   **API Mode**: Enter your Anthropic Claude API Key (securely saved in browser `localStorage`) to generate fresh, custom papers on any topic using Claude 3.5 Sonnet.
-    *   **Local Simulator Fallback**: If no API key is supplied, a simulator dynamically shuffles and builds a realistic mock paper from the 1,535 offline questions immediately.
+    *   **API Mode**: Enter your Google Gemini API Key (securely saved in browser `localStorage`) to generate fresh, custom papers on any topic using Gemini 2.5 Flash in batches.
+    *   **Local Simulator Fallback**: If no API key is supplied, a simulator dynamically shuffles and builds a realistic mock paper from the offline questions immediately.
 *   🚪 **Mid-Test Exit & Navigation**: Safely exit tests in progress using a styled confirmation modal to return to the dashboard.
-*   📱 **High-Density Question Palette**: Sidebar navigation grid dynamically transitions from 5-columns to 8-columns or 10-columns for large question sets to prevent layout overflows.
+*   📱 **High-Density Question Palette**: Sidebar navigation grid displays small, fixed-size pills with grid auto-fill to prevent layout overflows.
 
 ---
 
@@ -39,10 +39,10 @@ NQTMcq/
 │   │   ├── TestConfig.jsx # Test sliders and mode selection
 │   │   ├── TestEngine.jsx # Test workspace (timer, sidebar grid, modals)
 │   │   ├── ResultsView.jsx# Score SVG gauge and solution accordions
-│   │   ├── AiPaper.jsx    # Claude API key input and NQT simulator
+│   │   ├── AiPaper.jsx    # Gemini API key input and offline simulator
 │   │   └── Analytics.jsx  # SVG trend charts and bookmarks manager
 │   ├── data/
-│   │   └── questionBank.js# The merged database of 1,535 NQT questions
+│   │   └── questionBank.js# The merged database of 1,782 questions
 │   ├── App.jsx            # Main app shell and state coordinator
 │   ├── index.css          # Design system, glassmorphism, and color variables
 │   └── main.jsx           # ReactDOM client mount point
@@ -55,10 +55,10 @@ NQTMcq/
 
 ## 📈 Question Bank Topics
 
-The offline question bank contains **1,535 unique questions** categorized under 17 topics:
+The offline question bank contains **1,782 unique questions** categorized under 17 topics:
 
 *   **Quantitative Aptitude**: 313 questions
-*   **Logical Reasoning**: 79 questions
+*   **Logical Reasoning**: 326 questions
 *   **Computer Networks**: 78 questions
 *   **Verbal Ability**: 77 questions
 *   **Programming Concepts**: 76 questions

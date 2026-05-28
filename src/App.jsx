@@ -26,7 +26,19 @@ export default function App() {
     const savedHistory = localStorage.getItem("nqt_history");
     if (savedHistory) {
       try {
-        setHistory(JSON.parse(savedHistory));
+        const parsed = JSON.parse(savedHistory);
+        // Self-healing migration to correct any NaN percentages or scores
+        const healed = parsed.map(h => {
+          let score = h.score;
+          let pct = h.pct;
+          if (score === undefined || score === null || isNaN(pct) || pct === null) {
+            score = h.questions ? h.questions.filter((q, idx) => h.answers[idx] === q.ans).length : 0;
+            pct = h.questions && h.questions.length ? Math.round((score / h.questions.length) * 100) : 0;
+          }
+          return { ...h, score, pct };
+        });
+        setHistory(healed);
+        localStorage.setItem("nqt_history", JSON.stringify(healed));
       } catch (e) {
         console.error("Failed to parse history", e);
       }
@@ -64,6 +76,19 @@ export default function App() {
     setMobileMenuOpen(false);
   };
 
+  // Dynamic option shuffler that shifts correct answer index ans
+  const shuffleQuestionOptions = (q) => {
+    if (!q || !q.opts) return q;
+    const correctOptionText = q.opts[q.ans];
+    const shuffledOpts = [...q.opts].sort(() => Math.random() - 0.5);
+    const newAnsIndex = shuffledOpts.indexOf(correctOptionText);
+    return {
+      ...q,
+      opts: shuffledOpts,
+      ans: newAnsIndex
+    };
+  };
+
   const handleStartTestConfig = (catId) => {
     setActiveCategory(catId);
     navigateTo("config");
@@ -78,14 +103,16 @@ export default function App() {
     // Shuffle and slice
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
     const selected = shuffled.slice(0, Math.min(setup.questionCount, pool.length));
+    const prepared = selected.map(shuffleQuestionOptions);
     
-    setTestQuestions(selected);
+    setTestQuestions(prepared);
     setTestConfig(setup);
     setScreen("test");
   };
 
   const handleStartCustomTest = (customQs, topicName) => {
-    setTestQuestions(customQs);
+    const prepared = customQs.map(shuffleQuestionOptions);
+    setTestQuestions(prepared);
     setTestConfig({
       category: topicName,
       questionCount: customQs.length,
@@ -100,8 +127,9 @@ export default function App() {
     if (pool.length === 0) return;
     
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
+    const prepared = shuffled.map(shuffleQuestionOptions);
     
-    setTestQuestions(shuffled);
+    setTestQuestions(prepared);
     setTestConfig({
       category: "all",
       questionCount: shuffled.length,
@@ -112,7 +140,10 @@ export default function App() {
   };
 
   const handleSubmitTest = (resultPayload) => {
-    const { score, questions, answers, config } = resultPayload;
+    const { questions, answers, config } = resultPayload;
+    
+    // Calculate correct score and percentage directly to avoid undefined/NaN bugs
+    const score = questions.filter((q, idx) => answers[idx] === q.ans).length;
     const pct = questions.length ? Math.round((score / questions.length) * 100) : 0;
     
     const newSession = {
@@ -131,7 +162,11 @@ export default function App() {
     setHistory(nextHistory);
     localStorage.setItem("nqt_history", JSON.stringify(nextHistory));
     
-    setLatestResult(resultPayload);
+    setLatestResult({
+      ...resultPayload,
+      score: score,
+      pct: pct
+    });
     setScreen("result");
   };
 
@@ -165,7 +200,7 @@ export default function App() {
           <div className="logo-icon">
             <Icons.Layers size={18} color="#FFF" />
           </div>
-          <h1>NQT Prep Portal</h1>
+          <h1>Aptitude Portal</h1>
           <button 
             className="mobile-close-btn" 
             onClick={() => setMobileMenuOpen(false)}
@@ -230,7 +265,7 @@ export default function App() {
           </button>
           <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <Icons.Layers size={16} color="var(--primary)" />
-            <span style={{ fontWeight: "700", fontSize: "14px", color: "#FFF" }}>NQT Prep</span>
+            <span style={{ fontWeight: "700", fontSize: "14px", color: "#FFF" }}>Aptitude Prep</span>
           </div>
           <div style={{ width: "20px" }}></div>
         </div>

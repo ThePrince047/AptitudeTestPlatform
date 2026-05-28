@@ -5,31 +5,31 @@
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Colors */
-  --bg-main: #090B10;
-  --bg-card: rgba(19, 23, 34, 0.85);
-  --bg-sidebar: rgba(13, 16, 24, 0.95);
-  --border-color: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(255, 255, 255, 0.12);
+  --bg-main: #0B0E14;             /* Softer, matte slate-black */
+  --bg-card: rgba(20, 27, 41, 0.8); /* Soft slate card background */
+  --bg-sidebar: #0d121c;          /* Softer sidebar backdrop */
+  --border-color: rgba(255, 255, 255, 0.05);
+  --border-hover: rgba(99, 102, 241, 0.15);
   
-  --text-primary: #ECEEF2;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
+  --text-primary: #E2E8F0;        /* Muted slate-white to reduce contrast strain */
+  --text-secondary: #94A3B8;      /* Slate 400 */
+  --text-muted: #64748B;          /* Slate 500 */
   
-  --primary: #5C62F5;
-  --primary-glow: rgba(92, 98, 245, 0.08);
-  --primary-border: rgba(92, 98, 245, 0.25);
+  --primary: #6366F1;             /* Softer indigo */
+  --primary-glow: rgba(99, 102, 241, 0.04);
+  --primary-border: rgba(99, 102, 241, 0.18);
   
-  --success: #10B981;
-  --success-bg: rgba(16, 185, 129, 0.08);
-  --success-border: rgba(16, 185, 129, 0.2);
+  --success: #10B981;             /* Soft emerald green */
+  --success-bg: rgba(16, 185, 129, 0.04);
+  --success-border: rgba(16, 185, 129, 0.12);
 
-  --error: #EF4444;
-  --error-bg: rgba(239, 68, 68, 0.08);
-  --error-border: rgba(239, 68, 68, 0.2);
+  --error: #F43F5E;               /* Soft rose red to reduce eye shock */
+  --error-bg: rgba(244, 63, 94, 0.04);
+  --error-border: rgba(244, 63, 94, 0.12);
 
-  --warning: #F59E0B;
-  --warning-bg: rgba(245, 158, 11, 0.08);
-  --warning-border: rgba(245, 158, 11, 0.2);
+  --warning: #F59E0B;             /* Soft amber */
+  --warning-bg: rgba(245, 158, 11, 0.04);
+  --warning-border: rgba(245, 158, 11, 0.12);
 }
 
 * {
@@ -83,9 +83,9 @@ body {
   display: flex;
   width: 100vw;
   min-height: 100vh;
-  background: radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 10% 80%, rgba(124, 58, 237, 0.08) 0%, transparent 50%),
-              #07080D;
+  background: radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.04) 0%, transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(124, 58, 237, 0.04) 0%, transparent 50%),
+              #0B0E14;
 }
 
 /* Sidebar Styling */
@@ -371,13 +371,13 @@ body {
 .btn-primary {
   background-color: var(--primary);
   color: #FFF;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.12);
 }
 
 .btn-primary:hover {
   background-color: #4F46E5;
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 6px 14px rgba(99, 102, 241, 0.18);
 }
 
 .btn-secondary {
@@ -394,12 +394,12 @@ body {
 .btn-accent {
   background: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%);
   color: #FFF;
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.12);
 }
 
 .btn-accent:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 6px 14px rgba(124, 58, 237, 0.18);
 }
 
 /* Test Config Screen */
@@ -670,7 +670,7 @@ body {
 .option-button.selected {
   border-color: var(--primary);
   background-color: var(--primary-glow);
-  box-shadow: 0 0 16px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.05);
 }
 
 .option-button.correct {
@@ -749,20 +749,23 @@ body {
 
 .question-nav-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, 34px);
   gap: 8px;
   margin-bottom: 24px;
   overflow-y: auto;
   flex: 1;
+  justify-content: center;
+  align-content: start;
 }
 
 .nav-grid-pill {
-  aspect-ratio: 1;
-  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   font-family: var(--font-mono);
   cursor: pointer;
@@ -770,6 +773,7 @@ body {
   background-color: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border-color);
   color: var(--text-secondary);
+  flex-shrink: 0;
 }
 
 .nav-grid-pill:hover {
@@ -779,7 +783,7 @@ body {
 .nav-grid-pill.current {
   border-color: var(--primary);
   color: #FFF;
-  box-shadow: 0 0 8px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.1);
 }
 
 .nav-grid-pill.answered {
