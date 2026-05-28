@@ -61,7 +61,7 @@ export default function ResultsView({
         <div className="results-hero">
           {/* Circular Score Gauge */}
           <div className="score-circle-wrapper">
-            <svg className="score-circle-svg">
+            <svg className="score-circle-svg" viewBox="0 0 160 160">
               <circle className="score-circle-bg" cx="80" cy="80" r={radius} />
               <circle 
                 className="score-circle-fill" 
@@ -78,6 +78,7 @@ export default function ResultsView({
               <div className="score-circle-fraction">{score} / {totalQuestions} Qs</div>
             </div>
           </div>
+
 
           <h3 style={{ fontSize: "24px", fontWeight: "800", color: "#FFF", marginBottom: "4px" }}>
             Performance Level: <span style={{ color: gradeColor }}>{grade}</span>
