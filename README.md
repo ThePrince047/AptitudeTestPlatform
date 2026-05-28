@@ -97,7 +97,7 @@ Ensure you have [Node.js 18+](https://nodejs.org/) installed.
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/ThePrince047/AptitudeTestPlatform.git
 cd NQTMcq
 
 # 2. Install dependencies
