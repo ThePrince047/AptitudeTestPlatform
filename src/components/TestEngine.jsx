@@ -7,13 +7,15 @@ export default function TestEngine({
   config = {}, 
   bookmarks = [], 
   onToggleBookmark,
-  onSubmitTest 
+  onSubmitTest,
+  onExitTest
 }) {
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState({});
   const [flagged, setFlagged] = useState(new Set());
   const [timeLeft, setTimeLeft] = useState(config.timeLimit * 60);
   const [showSubmitModal, setShowSubmitModal] = useState(false);
+  const [showExitModal, setShowExitModal] = useState(false);
   const [practiceRevealed, setPracticeRevealed] = useState({}); // Track which practice questions are revealed
   const timerRef = useRef(null);
 
@@ -114,6 +116,24 @@ export default function TestEngine({
           </div>
 
           <div className="test-header-actions">
+            {onExitTest && (
+              <button 
+                onClick={() => setShowExitModal(true)}
+                className="btn btn-secondary"
+                style={{ 
+                  padding: "10px 14px", 
+                  borderRadius: "10px", 
+                  borderColor: "var(--error-border)",
+                  backgroundColor: "transparent",
+                  color: "var(--error)"
+                }}
+                title="Leave Session"
+              >
+                <Icons.LogOut size={16} style={{ marginRight: "6px" }} />
+                <span>Leave</span>
+              </button>
+            )}
+
             {config.mode === "exam" ? (
               <div className={`timer-badge ${isLowTime ? "warning-time" : ""}`}>
                 <Icons.Clock size={16} />
@@ -269,11 +289,18 @@ export default function TestEngine({
       {/* Grid Navigation Panel (Right) */}
       <div className="test-navigation-sidebar">
         <h4 className="nav-sidebar-title">Question Palette</h4>
-        <div className="question-nav-grid">
+        <div 
+          className="question-nav-grid"
+          style={{ 
+            gridTemplateColumns: `repeat(${questions.length > 50 ? 10 : questions.length > 25 ? 8 : 5}, 1fr)`,
+            gap: questions.length > 25 ? "6px" : "8px" 
+          }}
+        >
           {questions.map((_, qIdx) => {
             const isCurrent = qIdx === idx;
             const isAns = answers[qIdx] !== undefined;
             const isFlg = flagged.has(qIdx);
+            const isDense = questions.length > 25;
 
             let pillClass = "nav-grid-pill";
             if (isCurrent) pillClass += " current";
@@ -284,6 +311,10 @@ export default function TestEngine({
               <button 
                 key={qIdx} 
                 className={pillClass}
+                style={{ 
+                  fontSize: isDense ? "11px" : "13px",
+                  borderRadius: isDense ? "4px" : "8px"
+                }}
                 onClick={() => setIdx(qIdx)}
               >
                 {qIdx + 1}
@@ -341,6 +372,41 @@ export default function TestEngine({
                 style={{ flex: 1, backgroundColor: "var(--success)" }}
               >
                 Submit Exam
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Exit Confirmation Modal */}
+      {showExitModal && (
+        <div className="modal-overlay">
+          <div className="modal-card">
+            <div style={{ display: "flex", gap: "16px", marginBottom: "16px" }}>
+              <div className="stat-icon-wrapper" style={{ backgroundColor: "var(--error-bg)", color: "var(--error)" }}>
+                <Icons.LogOut size={24} />
+              </div>
+              <div>
+                <h4 style={{ fontSize: "18px", fontWeight: "700", color: "#FFF" }}>Leave Mock Session?</h4>
+                <p style={{ fontSize: "14px", color: "var(--text-secondary)", marginTop: "4px", lineHeight: "1.5" }}>
+                  Are you sure you want to leave this mock session? Your answers and progress will be discarded.
+                </p>
+              </div>
+            </div>
+            <div className="modal-actions">
+              <button 
+                onClick={() => setShowExitModal(false)}
+                className="btn btn-secondary"
+                style={{ flex: 1 }}
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={onExitTest}
+                className="btn btn-primary"
+                style={{ flex: 1, backgroundColor: "var(--error)" }}
+              >
+                Leave Session
               </button>
             </div>
           </div>
