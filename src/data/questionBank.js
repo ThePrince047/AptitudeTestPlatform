@@ -1,5 +1,5 @@
 // TCS NQT Mock Test Question Bank
-// Total Questions: 580
+// Total Questions: 1535
 
 export const QB = [
   {
@@ -3358,7 +3358,7 @@ export const QB = [
   },
   {
     "id": 259,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Binary of decimal 10 is?",
     "opts": [
       "1000",
@@ -3371,7 +3371,7 @@ export const QB = [
   },
   {
     "id": 260,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Hexadecimal of decimal 15 is?",
     "opts": [
       "E",
@@ -3384,7 +3384,7 @@ export const QB = [
   },
   {
     "id": 261,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "2's complement of 0101 is?",
     "opts": [
       "1010",
@@ -3397,7 +3397,7 @@ export const QB = [
   },
   {
     "id": 262,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Which is NOT a type of network topology?",
     "opts": [
       "Star",
@@ -3410,7 +3410,7 @@ export const QB = [
   },
   {
     "id": 263,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Full form of LAN?",
     "opts": [
       "Local Area Network",
@@ -3423,7 +3423,7 @@ export const QB = [
   },
   {
     "id": 264,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is MAC address?",
     "opts": [
       "Media Access Control address",
@@ -3436,7 +3436,7 @@ export const QB = [
   },
   {
     "id": 265,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Which layer has IP protocol?",
     "opts": [
       "Physical",
@@ -3449,7 +3449,7 @@ export const QB = [
   },
   {
     "id": 266,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Full form of FTP? === PAGE 75 ===",
     "opts": [
       "File Transfer Protocol",
@@ -3462,7 +3462,7 @@ export const QB = [
   },
   {
     "id": 267,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Which is a search engine?",
     "opts": [
       "Windows",
@@ -3475,7 +3475,7 @@ export const QB = [
   },
   {
     "id": 268,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is compiler?",
     "opts": [
       "Converts high-level code to machine code",
@@ -3488,7 +3488,7 @@ export const QB = [
   },
   {
     "id": 269,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Difference between compiler and interpreter?",
     "opts": [
       "Compiler converts all at once, interpreter line by line",
@@ -3501,7 +3501,7 @@ export const QB = [
   },
   {
     "id": 270,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is syntax error?",
     "opts": [
       "Error in code structure/grammar",
@@ -3514,7 +3514,7 @@ export const QB = [
   },
   {
     "id": 271,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is runtime error?",
     "opts": [
       "Error during program execution",
@@ -3527,7 +3527,7 @@ export const QB = [
   },
   {
     "id": 272,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is logical error?",
     "opts": [
       "Program runs but produces wrong output",
@@ -3540,7 +3540,7 @@ export const QB = [
   },
   {
     "id": 273,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is algorithm?",
     "opts": [
       "Step-by-step procedure to solve problem",
@@ -3553,7 +3553,7 @@ export const QB = [
   },
   {
     "id": 274,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is pseudocode?",
     "opts": [
       "Informal high-level description of algorithm",
@@ -3566,7 +3566,7 @@ export const QB = [
   },
   {
     "id": 275,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is flowchart?",
     "opts": [
       "Diagrammatic representation of algorithm",
@@ -3579,7 +3579,7 @@ export const QB = [
   },
   {
     "id": 276,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Which symbol starts/ends flowchart?",
     "opts": [
       "Rectangle",
@@ -3592,7 +3592,7 @@ export const QB = [
   },
   {
     "id": 277,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "Which symbol represents decision in flowchart?",
     "opts": [
       "Rectangle",
@@ -3605,7 +3605,7 @@ export const QB = [
   },
   {
     "id": 278,
-    "cat": "General",
+    "cat": "General / Mixed",
     "q": "What is debugging?",
     "opts": [
       "Finding and fixing errors",
@@ -7541,6 +7541,12421 @@ export const QB = [
     ],
     "ans": 0,
     "sol": "The sum of the scores for games 6 through 9 is 68. The average in these  \n four games is \\frac{68}{4} = 17  \n The total points in all ten games is greater than $10\\cdot 18 = 180. Thus, it must  \n be at least 181.  \n There are at least 181 - 68 = 113 points in the other six games: games 1-5and  \n game 10.Games 1-5 must have an average of less than 17. Thus we cannot put  \n more than $16 + 17 + 17 + 17 + 17 = 84 points in those five games.  \n  \n Thus, the tenth game must have at least $113 - 84 = 29 points"
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Identify the next term in the sequence: 3, 5, 9, 17, 33, ?",
+    "opts": [
+      "65",
+      "64",
+      "66",
+      "67"
+    ],
+    "ans": 0,
+    "sol": "Pattern: Term * 2 - 1. Next is 33 * 2 - 1 = 65.",
+    "id": 581
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If 'MONKEY' is coded as 'XDJMNL', how is 'TIGER' coded?",
+    "opts": [
+      "QDFHS",
+      "SDFHS",
+      "QDFGR",
+      "SDKHS"
+    ],
+    "ans": 0,
+    "sol": "Pattern: letters are reversed and then shifted by -1. R-1=Q, E-1=D, G-1=F, I-1=H, T-1=S. Result: QDFHS.",
+    "id": 582
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Point A is 10m West of B. Point C is 10m North of B. Point D is 10m East of C. In which direction is D with respect to B?",
+    "opts": [
+      "North-East",
+      "North-West",
+      "South-East",
+      "South-West"
+    ],
+    "ans": 0,
+    "sol": "D is 10m North and 10m East of B, so D is North-East of B.",
+    "id": 583
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statements: All books are pens. Some pens are erasers. Conclusions: I. Some books are erasers. II. Some erasers are pens.",
+    "opts": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "ans": 0,
+    "sol": "Some pens are erasers implies some erasers are pens. Books and erasers do not necessarily overlap.",
+    "id": 584
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Select the odd word out: Gold, Silver, Bronze, Iron",
+    "opts": [
+      "Bronze",
+      "Gold",
+      "Silver",
+      "Iron"
+    ],
+    "ans": 0,
+    "sol": "Bronze is an alloy, while Gold, Silver, and Iron are pure metals.",
+    "id": 585
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If in a certain code, '246' means 'read red book', '356' means 'red color pen', and '589' means 'green color flower', what digit means 'pen'?",
+    "opts": [
+      "3",
+      "5",
+      "6",
+      "8"
+    ],
+    "ans": 0,
+    "sol": "Comparing 'read red book' (246) and 'red color pen' (356), 'red' is 6. Comparing 'red color pen' (356) and 'green color flower' (589), 'color' is 5. Therefore, 'pen' is 3.",
+    "id": 586
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "A is the father of B. C is the daughter of B. D is the brother of B. E is the son of A. What is the relation between C and E?",
+    "opts": [
+      "Niece",
+      "Aunt",
+      "Sister",
+      "Mother"
+    ],
+    "ans": 0,
+    "sol": "E is A's son and B is A's child. Thus E is B's brother. C is B's daughter, so E is C's uncle, and C is E's niece.",
+    "id": 587
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Introducing a girl, Vipin said, 'She is the daughter of the only sister of my father.' How is Vipin related to the girl?",
+    "opts": [
+      "Cousin",
+      "Brother",
+      "Uncle",
+      "Nephew"
+    ],
+    "ans": 0,
+    "sol": "The only sister of Vipin's father is Vipin's aunt. Her daughter is Vipin's cousin.",
+    "id": 588
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If '+' means 'divided by', '-' means 'multiplied by', '*' means 'minus', and '/' means 'plus', then 8 + 2 - 3 * 4 / 6 = ?",
+    "opts": [
+      "14",
+      "12",
+      "10",
+      "8"
+    ],
+    "ans": 0,
+    "sol": "Substitute: 8 / 2 * 3 - 4 + 6 = 4 * 3 - 4 + 6 = 12 - 4 + 6 = 14.",
+    "id": 589
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "A clock strikes once at 1 o'clock, twice at 2 o'clock, thrice at 3 o'clock, and so on. How many times will it strike in 24 hours?",
+    "opts": [
+      "156",
+      "78",
+      "300",
+      "136"
+    ],
+    "ans": 0,
+    "sol": "In 12 hours: 1+2+...+12 = 78. In 24 hours: 78 * 2 = 156.",
+    "id": 590
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "In a row of 21 girls, when Monika was shifted by four places towards the right, she became 12th from the left end. What was her earlier position from the right end of the row?",
+    "opts": [
+      "14th",
+      "12th",
+      "13th",
+      "10th"
+    ],
+    "ans": 0,
+    "sol": "New position = 12th from left. Old position = 12 - 4 = 8th from left. Position from right = 21 - 8 + 1 = 14th.",
+    "id": 591
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the day before yesterday was Thursday, what day will be the day after tomorrow?",
+    "opts": [
+      "Monday",
+      "Sunday",
+      "Tuesday",
+      "Wednesday"
+    ],
+    "ans": 0,
+    "sol": "If day before yesterday was Thursday, today is Saturday. Day after tomorrow will be Monday.",
+    "id": 592
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Complete the series: Y, W, U, S, Q, ?",
+    "opts": [
+      "O",
+      "P",
+      "N",
+      "M"
+    ],
+    "ans": 0,
+    "sol": "Pattern: Decreasing alphabet by 2. Q - 2 = O.",
+    "id": 593
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "A man walks 6 km South, turns left and walks 4 km, then turns left again and walks 5 km. Which direction is he facing now?",
+    "opts": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "ans": 0,
+    "sol": "He is walking South, turns left to face East, then turns left again to face North.",
+    "id": 594
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statement: Should physical education be made compulsory in schools? Arguments: I. Yes, it improves physical and mental health. II. No, it takes away valuable study time.",
+    "opts": [
+      "Only argument I is strong",
+      "Only argument II is strong",
+      "Both I and II are strong",
+      "Neither I nor II is strong"
+    ],
+    "ans": 0,
+    "sol": "Physical education is proven to improve health, which is a strong argument. Argument II is weak.",
+    "id": 595
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "In a family, there are a husband, a wife, their three sons, and the sons' wives. Each son has three children. How many members are there in the family?",
+    "opts": [
+      "17",
+      "15",
+      "19",
+      "21"
+    ],
+    "ans": 0,
+    "sol": "Husband + Wife (2) + 3 Sons + 3 Wives (6) + 3*3 grandchildren (9) = 17 members.",
+    "id": 596
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Which number replaces the question mark? 2, 5, 11, 23, 47, ?",
+    "opts": [
+      "95",
+      "96",
+      "94",
+      "97"
+    ],
+    "ans": 0,
+    "sol": "Pattern: 2 * 2 + 1 = 5, 5 * 2 + 1 = 11... 47 * 2 + 1 = 95.",
+    "id": 597
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the next letter group: AD, EH, IL, MP, ?",
+    "opts": [
+      "QT",
+      "QS",
+      "RU",
+      "PT"
+    ],
+    "ans": 0,
+    "sol": "Pattern: A(+4) -> E(+4) -> I(+4) -> M(+4) -> Q. D(+4) -> H(+4) -> L(+4) -> P(+4) -> T. Next is QT.",
+    "id": 598
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statements: All mangoes are golden in color. No golden-colored things are cheap. Conclusions: I. All mangoes are expensive. II. Golden-colored mangoes are not cheap.",
+    "opts": [
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows"
+    ],
+    "ans": 0,
+    "sol": "Mangoes are golden, and no golden things are cheap (meaning they are expensive). So both follow.",
+    "id": 599
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If South-East becomes North, North-East becomes West and so on, what will West become?",
+    "opts": [
+      "South-East",
+      "North-West",
+      "South-West",
+      "North-East"
+    ],
+    "ans": 0,
+    "sol": "A rotation of 135 degrees clockwise. West rotated 135 degrees clockwise becomes South-East.",
+    "id": 600
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Identify the next term: 1, 4, 9, 16, 25, ?",
+    "opts": [
+      "36",
+      "49",
+      "40",
+      "45"
+    ],
+    "ans": 0,
+    "sol": "The series consists of consecutive perfect squares: 1^2, 2^2, 3^2, 4^2, 5^2, 6^2 = 36.",
+    "id": 601
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "In a code language, 'BUILDER' is written as 'JVCKSFE'. How is 'SEALING' written?",
+    "opts": [
+      "TFBKPJO",
+      "BFTKOPJ",
+      "TFBJKOP",
+      "TFBKOPJ"
+    ],
+    "ans": 0,
+    "sol": "Split the word in half: BUI -> JVC (shifted +1 and reversed), LDER -> KSFE (shifted +1 and reversed). Same for SEALING: SEA -> TFB, LING -> KPJO. Result: TFBKPJO.",
+    "id": 602
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the odd number pair: (3, 8), (4, 15), (5, 24), (6, 37)",
+    "opts": [
+      "(6, 37)",
+      "(3, 8)",
+      "(4, 15)",
+      "(5, 24)"
+    ],
+    "ans": 0,
+    "sol": "Pattern: y = x^2 - 1. 3^2 - 1 = 8; 4^2 - 1 = 15; 5^2 - 1 = 24. But 6^2 - 1 = 35 (not 37).",
+    "id": 603
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If P + Q means P is the husband of Q; P / Q means P is the sister of Q and P * Q means P is the son of Q. What does A * B + C / D mean?",
+    "opts": [
+      "A is the nephew of D",
+      "A is the son of D",
+      "A is the brother of D",
+      "A is the father of D"
+    ],
+    "ans": 0,
+    "sol": "A is the son of B. B is the husband of C. C is the sister of D. Thus, C is A's mother, and C's sister is D. A is the nephew of D.",
+    "id": 604
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "A man faces South. He turns 135 degrees in the anticlockwise direction and then 180 degrees in the clockwise direction. Which direction is he facing now?",
+    "opts": [
+      "South-West",
+      "South-East",
+      "North-West",
+      "North-East"
+    ],
+    "ans": 0,
+    "sol": "Net rotation = 180 (CW) - 135 (ACW) = 45 degrees CW. South rotated 45 degrees CW is South-West.",
+    "id": 605
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Look at the series: 7, 10, 8, 11, 9, 12, ?",
+    "opts": [
+      "10",
+      "7",
+      "11",
+      "13"
+    ],
+    "ans": 0,
+    "sol": "Pattern: Alternating +3 and -2: 7(+3)=10, 10(-2)=8, 8(+3)=11, 11(-2)=9, 9(+3)=12, 12(-2)=10.",
+    "id": 606
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If 'A + B' means A is the brother of B; 'A - B' means A is the sister of B; 'A * B' means A is the father of B. Which of the following means C is the son of M?",
+    "opts": [
+      "M * N - C + P",
+      "M * C - N + P",
+      "M * N + C - P",
+      "None of these"
+    ],
+    "ans": 0,
+    "sol": "M * N - C + P: M is the father of N. N is the sister of C. C is the brother of P. This means M is the father of C, and since C is a brother (+), C is the son of M.",
+    "id": 607
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Select the term that completes the analogy: Light : Glint :: Sound : ?",
+    "opts": [
+      "Echo",
+      "Whisper",
+      "Noise",
+      "Silence"
+    ],
+    "ans": 0,
+    "sol": "Glint is a brief flash of light; Echo is a reflected sound.",
+    "id": 608
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statements: Some keys are locks. Some locks are numbers. All numbers are letters. Conclusions: I. Some keys are numbers. II. Some locks are letters.",
+    "opts": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither follows"
+    ],
+    "ans": 0,
+    "sol": "Some locks are numbers, and all numbers are letters. This ensures a portion of locks are letters.",
+    "id": 609
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Four persons A, B, C and D are sitting around a table. A and C are partners. D faces North. A faces West. In which direction does B face?",
+    "opts": [
+      "South",
+      "North",
+      "East",
+      "West"
+    ],
+    "ans": 0,
+    "sol": "Partners sit opposite to each other. A (facing West) is opposite C (facing East). D (facing North) is opposite B (facing South).",
+    "id": 610
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Identify the next letter: B, E, I, N, T, ?",
+    "opts": [
+      "A",
+      "Z",
+      "Y",
+      "X"
+    ],
+    "ans": 0,
+    "sol": "Shifts: B(+3)->E, E(+4)->I, I(+5)->N, N(+6)->T, T(+7)->A (since 20 + 7 = 27 = 1).",
+    "id": 611
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Complete the series: 36, 34, 30, 28, 24, ?",
+    "opts": [
+      "22",
+      "20",
+      "23",
+      "21"
+    ],
+    "ans": 0,
+    "sol": "Pattern: Subtract 2, then subtract 4, alternately: 36-2=34, 34-4=30, 30-2=28, 28-4=24, 24-2=22.",
+    "id": 612
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If 'A' is substituted by 1, 'B' by 2... 'Z' by 26, then what is the sum of values of the letters in the word 'TASK'?",
+    "opts": [
+      "51",
+      "52",
+      "50",
+      "54"
+    ],
+    "ans": 0,
+    "sol": "T(20) + A(1) + S(19) + K(11) = 51.",
+    "id": 613
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the odd pair: (2, 3), (3, 5), (5, 7), (9, 11)",
+    "opts": [
+      "(9, 11)",
+      "(2, 3)",
+      "(3, 5)",
+      "(5, 7)"
+    ],
+    "ans": 0,
+    "sol": "All other pairs consist of consecutive prime numbers. 9 is not a prime number.",
+    "id": 614
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+    "opts": [
+      "His son's",
+      "His own",
+      "His father's",
+      "His nephew's"
+    ],
+    "ans": 0,
+    "sol": "'My father's son' with no siblings must be the speaker himself. So 'that man's father is me' -> the photo is his son.",
+    "id": 615
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If A is South of B and C is East of B, in what direction is A with respect to C?",
+    "opts": [
+      "South-West",
+      "North-West",
+      "South-East",
+      "North-East"
+    ],
+    "ans": 0,
+    "sol": "A is below B, C is to the right of B. Thus A is down and left (South-West) of C.",
+    "id": 616
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statements: No window is a door. All doors are walls. Conclusions: I. No window is a wall. II. Some walls are doors.",
+    "opts": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "ans": 0,
+    "sol": "Doors are a subset of walls, so some walls are doors. Since window does not intersect door, it might still intersect wall.",
+    "id": 617
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the odd one out: Car, Bicycle, Motorcycle, Truck",
+    "opts": [
+      "Bicycle",
+      "Car",
+      "Motorcycle",
+      "Truck"
+    ],
+    "ans": 0,
+    "sol": "Bicycle is the only non-motorized vehicle.",
+    "id": 618
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Which number replaces the question mark? 8, 12, 18, 27, ?",
+    "opts": [
+      "40.5",
+      "36",
+      "38",
+      "42"
+    ],
+    "ans": 0,
+    "sol": "Each number is multiplied by 1.5. 27 * 1.5 = 40.5.",
+    "id": 619
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statements: Some doctors are teachers. All teachers are counselors. Conclusions: I. Some counselors are doctors. II. Some doctors are counselors.",
+    "opts": [
+      "Both I and II follow",
+      "Only I follows",
+      "Only II follows",
+      "Neither follows"
+    ],
+    "ans": 0,
+    "sol": "Some doctors are teachers, and teachers are counselors, so those doctors are also counselors. Thus, both follow.",
+    "id": 620
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If 'HE' is coded as 13, how is 'SHE' coded?",
+    "opts": [
+      "32",
+      "30",
+      "34",
+      "28"
+    ],
+    "ans": 0,
+    "sol": "H(8)+E(5)=13. S(19)+H(8)+E(5)=32.",
+    "id": 621
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If a day before yesterday was Wednesday, what day will be two days after tomorrow?",
+    "opts": [
+      "Tuesday",
+      "Monday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "ans": 0,
+    "sol": "If day before yesterday was Wednesday, today is Friday. Tomorrow is Saturday, day after tomorrow is Sunday, and two days after tomorrow is Tuesday.",
+    "id": 622
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Identify the next term: Z2A, Y4B, X8C, W16D, ?",
+    "opts": [
+      "V32E",
+      "V24E",
+      "U32E",
+      "V32F"
+    ],
+    "ans": 0,
+    "sol": "Pattern: Letters go Z->Y->X->W->V and A->B->C->D->E. Numbers double: 2, 4, 8, 16, 32. Next is V32E.",
+    "id": 623
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If 'ORANGE' is coded as '123456' and 'GRAPE' as '52376', how is 'PEAR' coded?",
+    "opts": [
+      "7632",
+      "7623",
+      "6732",
+      "7532"
+    ],
+    "ans": 0,
+    "sol": "P=7, E=6, A=3, R=2. So PEAR is 7632.",
+    "id": 624
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Point Q is 12m East of P. Point R is 5m North of Q. What is the shortest distance between P and R?",
+    "opts": [
+      "13m",
+      "17m",
+      "12m",
+      "15m"
+    ],
+    "ans": 0,
+    "sol": "Shortest distance = sqrt(12^2 + 5^2) = sqrt(144 + 25) = sqrt(169) = 13m.",
+    "id": 625
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Complete the analogy: Clock : Time :: Thermometer : ?",
+    "opts": [
+      "Temperature",
+      "Heat",
+      "Radiation",
+      "Degree"
+    ],
+    "ans": 0,
+    "sol": "A clock measures time; a thermometer measures temperature.",
+    "id": 626
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Look at this series: F2, __, D8, C16, B32",
+    "opts": [
+      "E4",
+      "E3",
+      "F4",
+      "D4"
+    ],
+    "ans": 0,
+    "sol": "Pattern: letters decrease F, E, D, C, B. Numbers double: 2, 4, 8, 16, 32. Missing is E4.",
+    "id": 627
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statements: Some cups are plates. All plates are spoons. Conclusions: I. All cups are spoons. II. Some cups are spoons.",
+    "opts": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither follows"
+    ],
+    "ans": 0,
+    "sol": "Some cups are plates, and all plates are spoons, so those cups must be spoons. Only II follows.",
+    "id": 628
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the series: 4, 7, 12, 19, 28, ?",
+    "opts": [
+      "39",
+      "37",
+      "41",
+      "38"
+    ],
+    "ans": 0,
+    "sol": "Pattern: Add consecutive odd numbers: +3, +5, +7, +9, +11. 28 + 11 = 39.",
+    "id": 629
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct synonym for 'Candid':",
+    "opts": [
+      "Frank",
+      "Deceitful",
+      "Arrogant",
+      "Shy"
+    ],
+    "ans": 0,
+    "sol": "Candid means truthful, straightforward, and frank.",
+    "id": 630
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct antonym for 'Obsolete':",
+    "opts": [
+      "Modern",
+      "Ancient",
+      "Outdated",
+      "Extinct"
+    ],
+    "ans": 0,
+    "sol": "Obsolete means no longer in use or outdated; its opposite is modern.",
+    "id": 631
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Which of the following is the correct spelling?",
+    "opts": [
+      "Meticulous",
+      "Meticulus",
+      "Meticalous",
+      "Meticoloos"
+    ],
+    "ans": 0,
+    "sol": "Meticulous is spelled M-E-T-I-C-U-L-O-U-S.",
+    "id": 632
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: The meeting was put ______ due to the lack of quorum.",
+    "opts": [
+      "off",
+      "down",
+      "on",
+      "away"
+    ],
+    "ans": 0,
+    "sol": "'Put off' means to postpone.",
+    "id": 633
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "What is the meaning of the idiom 'To burn the midnight oil'?",
+    "opts": [
+      "To work or study late into the night",
+      "To waste fuel",
+      "To cause an accident",
+      "To sleep early"
+    ],
+    "ans": 0,
+    "sol": "Burning the midnight oil refers to working or studying late.",
+    "id": 634
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error in the sentence: 'Each of the boys have completed the assignment.'",
+    "opts": [
+      "have",
+      "Each",
+      "boys",
+      "completed"
+    ],
+    "ans": 0,
+    "sol": "'Each' is singular and requires the singular verb 'has' instead of 'have'.",
+    "id": 635
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the active voice: 'A beautiful song was sung by Rita.'",
+    "opts": [
+      "Rita sang a beautiful song",
+      "Rita has sung a beautiful song",
+      "Rita sings a beautiful song",
+      "Rita was singing a song"
+    ],
+    "ans": 0,
+    "sol": "Rita sang a beautiful song is the active voice equivalent.",
+    "id": 636
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'A person who is cent percent sure about everything and has no doubts'",
+    "opts": [
+      "Dogmatic",
+      "Skeptic",
+      "Optimist",
+      "Altruist"
+    ],
+    "ans": 0,
+    "sol": "A dogmatic person asserts opinions as incontrovertibly true without room for doubt.",
+    "id": 637
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank with the correct preposition: 'She has been suffering ______ fever since Monday.'",
+    "opts": [
+      "from",
+      "with",
+      "by",
+      "of"
+    ],
+    "ans": 0,
+    "sol": "The standard prepositional phrase is 'suffering from'.",
+    "id": 638
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct option: 'If she ______ harder, she would have cleared the test.'",
+    "opts": [
+      "had studied",
+      "studied",
+      "has studied",
+      "would study"
+    ],
+    "ans": 0,
+    "sol": "This is a third conditional sentence: If + past perfect, would + have + past participle.",
+    "id": 639
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct synonym for 'Transient':",
+    "opts": [
+      "Temporary",
+      "Permanent",
+      "Slow",
+      "Fast"
+    ],
+    "ans": 0,
+    "sol": "Transient means lasting only for a short time; temporary.",
+    "id": 640
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct antonym for 'Vague':",
+    "opts": [
+      "Clear",
+      "Hazy",
+      "Indefinite",
+      "Shaded"
+    ],
+    "ans": 0,
+    "sol": "Vague means unclear; the antonym is clear.",
+    "id": 641
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the correctly spelled word:",
+    "opts": [
+      "Occurrence",
+      "Occurence",
+      "Ocurrence",
+      "Ocurrense"
+    ],
+    "ans": 0,
+    "sol": "Occurrence is spelled with double 'c' and double 'r'.",
+    "id": 642
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: He is a man ______ word.",
+    "opts": [
+      "of",
+      "by",
+      "with",
+      "to"
+    ],
+    "ans": 0,
+    "sol": "The idiom is 'a man of his word'.",
+    "id": 643
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "What is the meaning of 'Bite the bullet'?",
+    "opts": [
+      "Face a difficult situation with courage",
+      "To eat something hard",
+      "To get shot",
+      "To make a mistake"
+    ],
+    "ans": 0,
+    "sol": "To 'bite the bullet' is to face a grim or difficult situation with fortitude.",
+    "id": 644
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error: 'The furniture in this room are very old.'",
+    "opts": [
+      "are",
+      "furniture",
+      "in this room",
+      "very old"
+    ],
+    "ans": 0,
+    "sol": "'Furniture' is an uncountable noun and takes a singular verb, so 'are' should be 'is'.",
+    "id": 645
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the passive voice: 'They are building a new bridge.'",
+    "opts": [
+      "A new bridge is being built by them",
+      "A new bridge was built by them",
+      "A new bridge is built by them",
+      "A new bridge was being built"
+    ],
+    "ans": 0,
+    "sol": "The present continuous passive is 'is/are + being + past participle'.",
+    "id": 646
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'The study of plant life'",
+    "opts": [
+      "Botany",
+      "Zoology",
+      "Biology",
+      "Geology"
+    ],
+    "ans": 0,
+    "sol": "Botany is the scientific study of plants.",
+    "id": 647
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: The plane took ______ on time.",
+    "opts": [
+      "off",
+      "up",
+      "in",
+      "over"
+    ],
+    "ans": 0,
+    "sol": "'Took off' refers to an aircraft leaving the ground.",
+    "id": 648
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct option: 'Neither the teacher nor the students ______ present.'",
+    "opts": [
+      "were",
+      "was",
+      "is",
+      "has been"
+    ],
+    "ans": 0,
+    "sol": "In 'neither... nor' sentences, the verb agrees with the closer subject. 'Students' is plural, so 'were' is correct.",
+    "id": 649
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Synonym of 'Mitigate':",
+    "opts": [
+      "Alleviate",
+      "Aggravate",
+      "Intensify",
+      "Create"
+    ],
+    "ans": 0,
+    "sol": "Mitigate means to make less severe, serious, or painful; alleviate.",
+    "id": 650
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Antonym of 'Frugal':",
+    "opts": [
+      "Extravagant",
+      "Thrifty",
+      "Miserly",
+      "Generous"
+    ],
+    "ans": 0,
+    "sol": "Frugal means sparing or economical; the antonym is extravagant.",
+    "id": 651
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Which is the correct spelling?",
+    "opts": [
+      "Liaison",
+      "Liason",
+      "Liaisson",
+      "Liasion"
+    ],
+    "ans": 0,
+    "sol": "Liaison is spelled L-I-A-I-S-O-N.",
+    "id": 652
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: I look forward to ______ you soon.",
+    "opts": [
+      "meeting",
+      "meet",
+      "having met",
+      "met"
+    ],
+    "ans": 0,
+    "sol": "The phrase 'look forward to' is followed by a gerund (-ing form).",
+    "id": 653
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Idiom: 'Spill the beans'",
+    "opts": [
+      "Reveal a secret",
+      "Spill food",
+      "To cook beans",
+      "Make a mess"
+    ],
+    "ans": 0,
+    "sol": "To spill the beans means to prematurely or indiscreetly reveal a secret.",
+    "id": 654
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error: 'He has been reading this book for three hours.'",
+    "opts": [
+      "No error",
+      "reading",
+      "for",
+      "three hours"
+    ],
+    "ans": 0,
+    "sol": "The sentence is grammatically correct.",
+    "id": 655
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Passive voice of: 'She wrote a letter.'",
+    "opts": [
+      "A letter was written by her",
+      "A letter is written by her",
+      "A letter was being written by her",
+      "A letter has been written by her"
+    ],
+    "ans": 0,
+    "sol": "Simple past passive: was/were + past participle.",
+    "id": 656
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'A child whose parents are dead'",
+    "opts": [
+      "Orphan",
+      "Ward",
+      "Infant",
+      "Sibling"
+    ],
+    "ans": 0,
+    "sol": "An orphan is a child whose parents are deceased.",
+    "id": 657
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: They have been living here ______ 2010.",
+    "opts": [
+      "since",
+      "for",
+      "from",
+      "during"
+    ],
+    "ans": 0,
+    "sol": "'Since' is used to denote a specific starting point in time.",
+    "id": 658
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct form: 'The committee ______ divided in their opinions.'",
+    "opts": [
+      "were",
+      "was",
+      "is",
+      "has been"
+    ],
+    "ans": 0,
+    "sol": "When members of a collective noun act individually or have different opinions, a plural verb ('were') is used.",
+    "id": 659
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Synonym of 'Resilient':",
+    "opts": [
+      "Flexible",
+      "Fragile",
+      "Rigid",
+      "Stubborn"
+    ],
+    "ans": 0,
+    "sol": "Resilient means able to recoil or spring back into shape; flexible or adaptable.",
+    "id": 660
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Antonym of 'Arrogant':",
+    "opts": [
+      "Humble",
+      "Proud",
+      "Boastful",
+      "Vain"
+    ],
+    "ans": 0,
+    "sol": "Arrogant means self-important; the opposite is humble.",
+    "id": 661
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Correct spelling:",
+    "opts": [
+      "Queue",
+      "Que",
+      "Queu",
+      "Qeue"
+    ],
+    "ans": 0,
+    "sol": "Queue is spelled Q-U-E-U-E.",
+    "id": 662
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: You must abstain ______ bad habits.",
+    "opts": [
+      "from",
+      "to",
+      "with",
+      "in"
+    ],
+    "ans": 0,
+    "sol": "'Abstain' takes the preposition 'from'.",
+    "id": 663
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Idiom: 'Once in a blue moon'",
+    "opts": [
+      "Very rarely",
+      "Frequently",
+      "Every night",
+      "During an eclipse"
+    ],
+    "ans": 0,
+    "sol": "'Once in a blue moon' means very rarely.",
+    "id": 664
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error: 'She runs faster than him.'",
+    "opts": [
+      "him",
+      "runs",
+      "faster",
+      "than"
+    ],
+    "ans": 0,
+    "sol": "Grammatically, it should be 'faster than he (runs)', but in modern informal English 'him' is common. However, in formal grammar, 'him' is the error.",
+    "id": 665
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Passive of: 'The chef prepares the food.'",
+    "opts": [
+      "The food is prepared by the chef",
+      "The food was prepared by the chef",
+      "The food is being prepared by the chef",
+      "The food has been prepared"
+    ],
+    "ans": 0,
+    "sol": "Simple present passive: is/are + past participle.",
+    "id": 666
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'One who knows many languages'",
+    "opts": [
+      "Polyglot",
+      "Bilingual",
+      "Linguist",
+      "Translator"
+    ],
+    "ans": 0,
+    "sol": "A polyglot is a person who knows, uses, or writes in several languages.",
+    "id": 667
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: She is senior ______ me in the office.",
+    "opts": [
+      "to",
+      "than",
+      "of",
+      "by"
+    ],
+    "ans": 0,
+    "sol": "Adjectives like senior, junior, superior, inferior are followed by 'to', not 'than'.",
+    "id": 668
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct option: 'By the time we arrived, the train ______.'",
+    "opts": [
+      "had left",
+      "left",
+      "has left",
+      "was leaving"
+    ],
+    "ans": 0,
+    "sol": "Use past perfect for the action that occurred before another action in the past.",
+    "id": 669
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Synonym of 'Altruistic':",
+    "opts": [
+      "Unselfish",
+      "Selfish",
+      "Greedy",
+      "Cruel"
+    ],
+    "ans": 0,
+    "sol": "Altruistic means showing unselfish concern for the welfare of others.",
+    "id": 670
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Antonym of 'Garrulous':",
+    "opts": [
+      "Taciturn",
+      "Talkative",
+      "Loquacious",
+      "Noisy"
+    ],
+    "ans": 0,
+    "sol": "Garrulous means excessively talkative; taciturn means reserved or uncommunicative.",
+    "id": 671
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: He is blind ______ his own faults.",
+    "opts": [
+      "to",
+      "of",
+      "with",
+      "in"
+    ],
+    "ans": 0,
+    "sol": "To be 'blind to' means to fail to notice or acknowledge something.",
+    "id": 672
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Idiom: 'A blessing in disguise'",
+    "opts": [
+      "A good thing that seemed bad at first",
+      "A magic trick",
+      "A hidden map",
+      "A religious gift"
+    ],
+    "ans": 0,
+    "sol": "A blessing in disguise is an apparent misfortune that eventually has good results.",
+    "id": 673
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error: 'I prefer coffee than tea.'",
+    "opts": [
+      "than",
+      "prefer",
+      "coffee",
+      "tea"
+    ],
+    "ans": 0,
+    "sol": "'Prefer' is followed by 'to' (prefer coffee to tea).",
+    "id": 674
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Passive of: 'We have completed the project.'",
+    "opts": [
+      "The project has been completed by us",
+      "The project was completed by us",
+      "The project is completed by us",
+      "The project had been completed"
+    ],
+    "ans": 0,
+    "sol": "Present perfect passive: has/have + been + past participle.",
+    "id": 675
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'A place where birds are kept'",
+    "opts": [
+      "Aviary",
+      "Apiary",
+      "Zoo",
+      "Aquarium"
+    ],
+    "ans": 0,
+    "sol": "An aviary is a large cage or enclosure for keeping birds (apiary is for bees).",
+    "id": 676
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: The thief broke ______ the house.",
+    "opts": [
+      "into",
+      "up",
+      "through",
+      "away"
+    ],
+    "ans": 0,
+    "sol": "'Broke into' means to enter a building by force.",
+    "id": 677
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct option: 'If I ______ a king, I would help the poor.'",
+    "opts": [
+      "were",
+      "was",
+      "am",
+      "would be"
+    ],
+    "ans": 0,
+    "sol": "This is a hypothetical conditional (second conditional) using the subjunctive 'were'.",
+    "id": 678
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Synonym of 'Scrupulous':",
+    "opts": [
+      "Thorough",
+      "Careless",
+      "Dishonest",
+      "Lazy"
+    ],
+    "ans": 0,
+    "sol": "Scrupulous means diligent, thorough, and extremely attentive to details.",
+    "id": 679
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Antonym of 'Lethargic':",
+    "opts": [
+      "Energetic",
+      "Lazy",
+      "Sluggish",
+      "Tired"
+    ],
+    "ans": 0,
+    "sol": "Lethargic means sluggish or lacking energy; the opposite is energetic.",
+    "id": 680
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: He was accused ______ theft.",
+    "opts": [
+      "of",
+      "with",
+      "by",
+      "for"
+    ],
+    "ans": 0,
+    "sol": "'Accused' takes the preposition 'of'.",
+    "id": 681
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Idiom: 'Cry over spilled milk'",
+    "opts": [
+      "Regret past things that cannot be changed",
+      "To cry when milk spills",
+      "To make a big mess",
+      "To waste food"
+    ],
+    "ans": 0,
+    "sol": "To cry over spilled milk means to complain about a loss from the past that cannot be recovered.",
+    "id": 682
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error: 'He is the tallest of the two brothers.'",
+    "opts": [
+      "tallest",
+      "is",
+      "the",
+      "brothers"
+    ],
+    "ans": 0,
+    "sol": "When comparing two things, use comparative degree ('taller'), not superlative ('tallest').",
+    "id": 683
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Passive of: 'The dog bit the boy.'",
+    "opts": [
+      "The boy was bitten by the dog",
+      "The boy is bitten by the dog",
+      "The boy was being bitten by the dog",
+      "The boy has been bitten"
+    ],
+    "ans": 0,
+    "sol": "Simple past passive: was/were + past participle.",
+    "id": 684
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'A collection of historical documents'",
+    "opts": [
+      "Archive",
+      "Library",
+      "Museum",
+      "Portfolio"
+    ],
+    "ans": 0,
+    "sol": "An archive is a collection of historical documents or records.",
+    "id": 685
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: He is slow ______ learning new languages.",
+    "opts": [
+      "at",
+      "in",
+      "of",
+      "to"
+    ],
+    "ans": 0,
+    "sol": "The standard idiom is 'slow at' doing something.",
+    "id": 686
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct option: 'I ______ working on this project for a year now.'",
+    "opts": [
+      "have been",
+      "am",
+      "was",
+      "had been"
+    ],
+    "ans": 0,
+    "sol": "Present perfect continuous 'have been working' is used for an action that started in the past and continues in the present.",
+    "id": 687
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Synonym of 'Obdurate':",
+    "opts": [
+      "Stubborn",
+      "Flexible",
+      "Yielding",
+      "Soft"
+    ],
+    "ans": 0,
+    "sol": "Obdurate means stubbornly refusing to change one's opinion; stubborn.",
+    "id": 688
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Antonym of 'Capricious':",
+    "opts": [
+      "Stable",
+      "Fickle",
+      "Unpredictable",
+      "Moody"
+    ],
+    "ans": 0,
+    "sol": "Capricious means unpredictable or subject to sudden changes; the opposite is stable.",
+    "id": 689
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: The ship sank ______ the bottom of the ocean.",
+    "opts": [
+      "to",
+      "at",
+      "in",
+      "on"
+    ],
+    "ans": 0,
+    "sol": "The correct preposition of destination here is 'to'.",
+    "id": 690
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Idiom: 'Piece of cake'",
+    "opts": [
+      "Something very easy",
+      "A slice of dessert",
+      "A difficult problem",
+      "A birthday party"
+    ],
+    "ans": 0,
+    "sol": "A piece of cake is an expression meaning very easy.",
+    "id": 691
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Identify the error: 'Each student must bring their own laptop.'",
+    "opts": [
+      "their",
+      "student",
+      "must",
+      "own"
+    ],
+    "ans": 0,
+    "sol": "'Each student' is singular, so it should grammatically be 'his or her own laptop' (though 'their' is increasingly accepted as singular).",
+    "id": 692
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Passive of: 'No one has ever climbed this mountain.'",
+    "opts": [
+      "This mountain has never been climbed",
+      "This mountain was never climbed",
+      "This mountain is never climbed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Present perfect passive: has/have + been + past participle with 'never'.",
+    "id": 693
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "One word substitution: 'A person who hates humanity'",
+    "opts": [
+      "Misanthrope",
+      "Philanthropist",
+      "Misogynist",
+      "Optimist"
+    ],
+    "ans": 0,
+    "sol": "A misanthrope is a person who dislikes or avoids human society.",
+    "id": 694
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Fill in the blank: She has no control ______ her temper.",
+    "opts": [
+      "over",
+      "on",
+      "with",
+      "to"
+    ],
+    "ans": 0,
+    "sol": "The idiom is 'control over' something.",
+    "id": 695
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Choose the correct option: 'She ______ television when the phone rang.'",
+    "opts": [
+      "was watching",
+      "watched",
+      "has watched",
+      "is watching"
+    ],
+    "ans": 0,
+    "sol": "Use past continuous for an ongoing past action interrupted by another past event.",
+    "id": 696
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of print(type([]) is list) in Python?",
+    "opts": [
+      "True",
+      "False",
+      "Error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "[] creates a list object in Python, so its type is indeed 'list'.",
+    "id": 697
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which keyword is used to prevent class inheritance in Java?",
+    "opts": [
+      "final",
+      "const",
+      "static",
+      "abstract"
+    ],
+    "ans": 0,
+    "sol": "The 'final' keyword prevents inheritance of a class or overriding of a method.",
+    "id": 698
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the time complexity to search an element in a Hash Table in the best case?",
+    "opts": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "ans": 0,
+    "sol": "Best case lookup in a hash table is O(1) when there are no collisions.",
+    "id": 699
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which C++ concept allows a function to be called depending on the type of object, resolved at runtime?",
+    "opts": [
+      "Virtual function",
+      "Function overloading",
+      "Operator overloading",
+      "Static binding"
+    ],
+    "ans": 0,
+    "sol": "Virtual functions enable runtime polymorphism.",
+    "id": 700
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is a dangling pointer?",
+    "opts": [
+      "A pointer pointing to a deallocated memory location",
+      "A null pointer",
+      "An uninitialized pointer",
+      "A pointer pointing to system memory"
+    ],
+    "ans": 0,
+    "sol": "A dangling pointer points to memory that has already been freed.",
+    "id": 701
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the output of 3 * 'A'?",
+    "opts": [
+      "AAA",
+      "Error",
+      "A3",
+      "3A"
+    ],
+    "ans": 0,
+    "sol": "The '*' operator on strings acts as a repetition operator.",
+    "id": 702
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which of the following is NOT a storage class in C?",
+    "opts": [
+      "register",
+      "static",
+      "extern",
+      "dynamic"
+    ],
+    "ans": 3,
+    "sol": "Storage classes in C are auto, register, static, and extern.",
+    "id": 703
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the purpose of the 'super' keyword in Java?",
+    "opts": [
+      "To invoke parent class constructor or methods",
+      "To define a constant",
+      "To create a new instance",
+      "To declare static variables"
+    ],
+    "ans": 0,
+    "sol": "'super' refers to the immediate parent class.",
+    "id": 704
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of print(2 ** 3 ** 2) in Python?",
+    "opts": [
+      "512",
+      "64",
+      "4096",
+      "256"
+    ],
+    "ans": 0,
+    "sol": "The exponentiation operator ** is right-associative: 2 ** (3 ** 2) = 2 ** 9 = 512.",
+    "id": 705
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which memory segment stores local variables in a C program?",
+    "opts": [
+      "Stack",
+      "Heap",
+      "Data Segment",
+      "Code Segment"
+    ],
+    "ans": 0,
+    "sol": "Local variables are stored on the Stack frame during function execution.",
+    "id": 706
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What does the static keyword do to a local variable in C?",
+    "opts": [
+      "It retains its value between function calls",
+      "It makes it accessible globally",
+      "It deletes the variable after execution",
+      "It stores it in the CPU registers"
+    ],
+    "ans": 0,
+    "sol": "A static local variable maintains its value across multiple invocations.",
+    "id": 707
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is compilation?",
+    "opts": [
+      "Translating high-level source code into machine/assembly code",
+      "Executing code line by line",
+      "Finding syntax errors only",
+      "Linking libraries"
+    ],
+    "ans": 0,
+    "sol": "Compilers translate source code into machine-executable binary or intermediate code.",
+    "id": 708
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which statement is true about constructors in Java?",
+    "opts": [
+      "They cannot have a return type",
+      "They must have a void return type",
+      "They can be inherited",
+      "They must be public"
+    ],
+    "ans": 0,
+    "sol": "Constructors do not have any return type (not even void).",
+    "id": 709
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In JavaScript, what does 'typeof null' evaluate to?",
+    "opts": [
+      "object",
+      "null",
+      "undefined",
+      "string"
+    ],
+    "ans": 0,
+    "sol": "This is a historical bug in JavaScript; typeof null evaluates to 'object'.",
+    "id": 710
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the size of a float data type in standard C/C++?",
+    "opts": [
+      "4 bytes",
+      "2 bytes",
+      "8 bytes",
+      "1 byte"
+    ],
+    "ans": 0,
+    "sol": "Floats are typically 4 bytes (32-bit single-precision).",
+    "id": 711
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which programming paradigm is Python primarily based on?",
+    "opts": [
+      "Multi-paradigm",
+      "Object-oriented only",
+      "Functional only",
+      "Procedural only"
+    ],
+    "ans": 0,
+    "sol": "Python supports OOP, procedural, and functional programming.",
+    "id": 712
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the difference between compiler and interpreter?",
+    "opts": [
+      "Compiler translates whole program at once, interpreter translates line-by-line",
+      "Compiler is faster at runtime, interpreter is faster at compile time",
+      "Both are same",
+      "Compiler is only for C, interpreter for Java"
+    ],
+    "ans": 0,
+    "sol": "Compilers parse the entire code to create an executable; interpreters execute line-by-line.",
+    "id": 713
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, how do you add an element to the end of a list?",
+    "opts": [
+      "append()",
+      "add()",
+      "push()",
+      "insert()"
+    ],
+    "ans": 0,
+    "sol": "'append()' adds an element to the end of the list.",
+    "id": 714
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which of the following is a non-primitive data type?",
+    "opts": [
+      "String",
+      "int",
+      "float",
+      "char"
+    ],
+    "ans": 0,
+    "sol": "Strings are references/objects (non-primitive), while int, float, char are primitive types.",
+    "id": 715
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is function overloading?",
+    "opts": [
+      "Defining multiple functions with same name but different parameters",
+      "Calling a function too many times",
+      "Creating too many parameters",
+      "Having a function return multiple values"
+    ],
+    "ans": 0,
+    "sol": "Overloading allows multiple functions with the same name if their signatures differ.",
+    "id": 716
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which operator has the highest precedence in C?",
+    "opts": [
+      "Parentheses ()",
+      "Addition +",
+      "Multiplication *",
+      "Assignment ="
+    ],
+    "ans": 0,
+    "sol": "Parentheses () have the highest precedence.",
+    "id": 717
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the purpose of 'garbage collection' in Java/Python?",
+    "opts": [
+      "To automatically free unused heap memory",
+      "To clean up disk files",
+      "To catch exceptions",
+      "To optimize CPU speed"
+    ],
+    "ans": 0,
+    "sol": "Garbage collection automates memory management by reclaiming unreachable objects.",
+    "id": 718
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is a list comprehension?",
+    "opts": [
+      "A compact way to create lists",
+      "A list analysis method",
+      "A sorting algorithm",
+      "A tuple converter"
+    ],
+    "ans": 0,
+    "sol": "List comprehensions offer a concise syntax to generate lists from iterables.",
+    "id": 719
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the scope of a variable declared inside a function?",
+    "opts": [
+      "Local scope",
+      "Global scope",
+      "Block scope",
+      "Static scope"
+    ],
+    "ans": 0,
+    "sol": "Variables declared inside a function are local to that function.",
+    "id": 720
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is a pointer in C?",
+    "opts": [
+      "A variable that stores the memory address of another variable",
+      "A reference to a library",
+      "A compiler flag",
+      "A data type for decimals"
+    ],
+    "ans": 0,
+    "sol": "Pointers store memory address values.",
+    "id": 721
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which keyword is used to inherit a class in C++?",
+    "opts": [
+      "public/protected/private after :",
+      "extends",
+      "implements",
+      "inherits"
+    ],
+    "ans": 0,
+    "sol": "C++ uses the colon symbol followed by access specifiers like 'class Sub : public Base'.",
+    "id": 722
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of print('hello'.capitalize()) in Python?",
+    "opts": [
+      "Hello",
+      "HELLO",
+      "hello",
+      "Hello!"
+    ],
+    "ans": 0,
+    "sol": "capitalize() capitalizes the first letter and lowercases the rest.",
+    "id": 723
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What does JVM stand for?",
+    "opts": [
+      "Java Virtual Machine",
+      "Java Variable Manager",
+      "Java Visual Monitor",
+      "Java Version Manager"
+    ],
+    "ans": 0,
+    "sol": "JVM = Java Virtual Machine.",
+    "id": 724
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Java, what is the parent class of all classes?",
+    "opts": [
+      "Object",
+      "System",
+      "String",
+      "Main"
+    ],
+    "ans": 0,
+    "sol": "java.lang.Object is the root of the class hierarchy.",
+    "id": 725
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the index of the first element in an array in C?",
+    "opts": [
+      "0",
+      "1",
+      "-1",
+      "Any number"
+    ],
+    "ans": 0,
+    "sol": "Arrays are 0-indexed in C.",
+    "id": 726
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is a memory leak?",
+    "opts": [
+      "When a program allocates memory on heap but fails to release it",
+      "When RAM gets physically damaged",
+      "When hard drive runs out of space",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Memory leaks occur when allocated memory is no longer referenced but not freed.",
+    "id": 727
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What does 'const' keyword mean in C++?",
+    "opts": [
+      "The variable value cannot be modified after initialization",
+      "The variable is global",
+      "The variable is static",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "const enforces compile-time read-only status.",
+    "id": 728
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the output of len({1, 2, 2, 3})?",
+    "opts": [
+      "3",
+      "4",
+      "Error",
+      "5"
+    ],
+    "ans": 0,
+    "sol": "Sets contain only unique elements, so the set is {1, 2, 3} with length 3.",
+    "id": 729
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which is NOT a valid loop in Python?",
+    "opts": [
+      "do-while",
+      "for",
+      "while",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Python has 'for' and 'while' loops, but no native 'do-while' loop.",
+    "id": 730
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is method overriding?",
+    "opts": [
+      "Defining a method in subclass with same signature as in superclass",
+      "Defining multiple methods with same name",
+      "Calling parent method",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Overriding lets a subclass provide a specific implementation of a superclass method.",
+    "id": 731
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is a destructor in OOP?",
+    "opts": [
+      "A method called when an object is destroyed to free resources",
+      "A method to delete variables",
+      "A file cleaner",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Destructors clean up resources before an object is reclaimed.",
+    "id": 732
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the size of char data type in C?",
+    "opts": [
+      "1 byte",
+      "2 bytes",
+      "4 bytes",
+      "8 bytes"
+    ],
+    "ans": 0,
+    "sol": "A char in C occupies exactly 1 byte.",
+    "id": 733
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Java, which of these is NOT a wrapper class?",
+    "opts": [
+      "int",
+      "Integer",
+      "Double",
+      "Boolean"
+    ],
+    "ans": 0,
+    "sol": "'int' is a primitive data type; 'Integer' is its wrapper class.",
+    "id": 734
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is static binding?",
+    "opts": [
+      "Connecting function call to its body at compile time",
+      "Binding at runtime",
+      "Database binding",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Static binding (or early binding) happens during compilation.",
+    "id": 735
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is dynamic binding?",
+    "opts": [
+      "Resolving function call at runtime based on object type",
+      "Binding at compile time",
+      "Dynamic array allocation",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Dynamic binding (or late binding) resolves calls dynamically at runtime.",
+    "id": 736
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what does the 'pass' statement do?",
+    "opts": [
+      "It is a null operation; nothing happens",
+      "It terminates the loop",
+      "It returns from function",
+      "It raises exception"
+    ],
+    "ans": 0,
+    "sol": "'pass' acts as a placeholder where syntax requires a statement.",
+    "id": 737
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is an exception?",
+    "opts": [
+      "An event that disrupts normal program execution flow",
+      "A syntax error",
+      "A compilation warning",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Exceptions are runtime anomalies handled by try-catch blocks.",
+    "id": 738
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the use of 'finally' block in exception handling?",
+    "opts": [
+      "To execute code regardless of whether exception was thrown or caught",
+      "To catch exceptions",
+      "To throw exceptions",
+      "To stop execution"
+    ],
+    "ans": 0,
+    "sol": "The finally block always runs for cleanup operations.",
+    "id": 739
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In C, which function is used to dynamically allocate memory?",
+    "opts": [
+      "malloc()",
+      "free()",
+      "alloc()",
+      "new()"
+    ],
+    "ans": 0,
+    "sol": "malloc() (memory allocation) allocates heap blocks in C.",
+    "id": 740
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What does 'stdout' refer to?",
+    "opts": [
+      "Standard output stream (usually console)",
+      "Standard error",
+      "Standard input",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "stdout is the standard output channel.",
+    "id": 741
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is encapsulation?",
+    "opts": [
+      "Bundling data and methods into a single class and restricting access",
+      "Inheriting features",
+      "Hiding files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Encapsulation protects class states via private modifiers.",
+    "id": 742
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which is a functional programming feature in modern languages?",
+    "opts": [
+      "Lambda expressions",
+      "Global variables",
+      "While loops",
+      "Classes"
+    ],
+    "ans": 0,
+    "sol": "Lambdas enable treating functions as first-class citizens.",
+    "id": 743
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity of pushing an element onto a Stack implemented with an array (amortized)?",
+    "opts": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "ans": 0,
+    "sol": "Stack push is a constant time O(1) operation.",
+    "id": 744
+  },
+  {
+    "cat": "DSA",
+    "q": "Which traversal of a Binary Search Tree (BST) yields the keys in sorted order?",
+    "opts": [
+      "Inorder",
+      "Preorder",
+      "Postorder",
+      "Level order"
+    ],
+    "ans": 0,
+    "sol": "Inorder traversal (Left, Root, Right) of a BST outputs elements in ascending order.",
+    "id": 745
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case time complexity of Quick Sort?",
+    "opts": [
+      "O(n²)",
+      "O(n log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Worst case is O(n²) when the pivot divides the array in an extremely skewed manner.",
+    "id": 746
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is best suited for implementing a Breadth-First Search (BFS) on a graph?",
+    "opts": [
+      "Queue",
+      "Stack",
+      "Heap",
+      "Priority Queue"
+    ],
+    "ans": 0,
+    "sol": "BFS visits nodes level by level, which requires a FIFO queue structure.",
+    "id": 747
+  },
+  {
+    "cat": "DSA",
+    "q": "Which sorting algorithm has a guaranteed worst-case time complexity of O(n log n) and is stable?",
+    "opts": [
+      "Merge Sort",
+      "Quick Sort",
+      "Selection Sort",
+      "Heap Sort"
+    ],
+    "ans": 0,
+    "sol": "Merge sort is stable and guarantees O(n log n) time complexity.",
+    "id": 748
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the space complexity of a recursive depth-first search (DFS) on a tree of height h?",
+    "opts": [
+      "O(h)",
+      "O(1)",
+      "O(n)",
+      "O(log h)"
+    ],
+    "ans": 0,
+    "sol": "DFS uses call stack frames proportional to the maximum depth/height h.",
+    "id": 749
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the key property of a Min-Heap?",
+    "opts": [
+      "The value of each parent node is less than or equal to its children",
+      "Parent is greater",
+      "Root is always 0",
+      "It is a sorted array"
+    ],
+    "ans": 0,
+    "sol": "In a min-heap, the parent node is always smaller than or equal to its children.",
+    "id": 750
+  },
+  {
+    "cat": "DSA",
+    "q": "What is a circular linked list?",
+    "opts": [
+      "A list where the last node points back to the first node",
+      "A list with circular data",
+      "A list where nodes are in a circle",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The tail node's next pointer references the head node.",
+    "id": 751
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity of deleting a node at the middle of a singly linked list if you only have a pointer to that node?",
+    "opts": [
+      "O(1) (by copying data of next)",
+      "O(n)",
+      "O(log n)",
+      "O(1) is impossible"
+    ],
+    "ans": 0,
+    "sol": "If we have a pointer to the node, we can copy the next node's data into it and delete the next node in O(1).",
+    "id": 752
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the maximum number of edges in a simple undirected graph with n vertices?",
+    "opts": [
+      "n * (n - 1) / 2",
+      "n * (n + 1) / 2",
+      "n²",
+      "n - 1"
+    ],
+    "ans": 0,
+    "sol": "Each of the n vertices can connect to n-1 other vertices. Divide by 2 because it's undirected.",
+    "id": 753
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is used to parse arithmetic expressions and match parentheses?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Linked List",
+      "Tree"
+    ],
+    "ans": 0,
+    "sol": "Stacks are ideal for tracking open and closed brackets.",
+    "id": 754
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to find the minimum element in a Binary Search Tree in the worst case?",
+    "opts": [
+      "O(h) where h is height",
+      "O(1)",
+      "O(log n) always",
+      "O(n²)"
+    ],
+    "ans": 0,
+    "sol": "We must traverse to the leftmost leaf, which takes O(h) steps.",
+    "id": 755
+  },
+  {
+    "cat": "DSA",
+    "q": "What is a balanced binary tree?",
+    "opts": [
+      "A tree where the height difference of left and right subtrees of any node is at most 1",
+      "A tree with equal number of nodes",
+      "A tree where all leaves are at same level",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Balanced trees restrict height to O(log n) for efficient operations.",
+    "id": 756
+  },
+  {
+    "cat": "DSA",
+    "q": "Which sorting algorithm is an in-place sorting algorithm but unstable?",
+    "opts": [
+      "Heapsort",
+      "Mergesort",
+      "Bubblesort",
+      "Counting Sort"
+    ],
+    "ans": 0,
+    "sol": "Heapsort sorts in-place using O(1) auxiliary space, but does not preserve relative order.",
+    "id": 757
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the average time complexity of inserting a node into an AVL tree?",
+    "opts": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "ans": 0,
+    "sol": "AVL trees remain balanced, keeping search/insertion at O(log n).",
+    "id": 758
+  },
+  {
+    "cat": "DSA",
+    "q": "Which graph representation is best for sparse graphs?",
+    "opts": [
+      "Adjacency List",
+      "Adjacency Matrix",
+      "Incidence Matrix",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Adjacency lists save space for sparse graphs by only storing existing edges.",
+    "id": 759
+  },
+  {
+    "cat": "DSA",
+    "q": "What is a priority queue?",
+    "opts": [
+      "A queue where elements are removed based on priority rather than arrival order",
+      "A queue with fast access",
+      "A queue of high priority tasks",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Priority queues pop elements with highest/lowest priority first (usually implemented with Heaps).",
+    "id": 760
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the best-case time complexity of Bubble Sort on an already sorted array if optimized?",
+    "opts": [
+      "O(n)",
+      "O(n²)",
+      "O(log n)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Optimized bubble sort stops if a pass does no swaps, taking O(n) checks.",
+    "id": 761
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case space complexity of Quick Sort?",
+    "opts": [
+      "O(n) for recursive stack",
+      "O(1)",
+      "O(n log n)",
+      "O(n²)"
+    ],
+    "ans": 0,
+    "sol": "In the worst case, recursion depth reaches O(n) (though average is O(log n)).",
+    "id": 762
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the difference between a tree and a graph?",
+    "opts": [
+      "A tree is an acyclic connected graph",
+      "A graph is always connected",
+      "A tree has cycles",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Trees are a subset of graphs: they are connected and contain no cycles.",
+    "id": 763
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to insert a node at the head of a Singly Linked List?",
+    "opts": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(1) only if tail pointer exists"
+    ],
+    "ans": 0,
+    "sol": "Inserting at the head requires modifying two pointers, taking O(1) time.",
+    "id": 764
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the primary drawback of a hash table?",
+    "opts": [
+      "Worst-case lookup can be O(n) due to collisions",
+      "It requires sorting",
+      "It takes O(log n) to insert",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "If all keys hash to the same bucket, lookup degrades to O(n).",
+    "id": 765
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm finds the shortest path in a weighted graph with positive weights?",
+    "opts": [
+      "Dijkstra's Algorithm",
+      "Bellman-Ford Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Dijkstra's is the standard single-source shortest path algorithm for positive weights.",
+    "id": 766
+  },
+  {
+    "cat": "DSA",
+    "q": "What is a Trie?",
+    "opts": [
+      "A tree-like data structure used to store a dynamic set or associative array where keys are usually strings",
+      "A binary tree",
+      "A hash map",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Tries (prefix trees) are optimized for string lookup and autocomplete features.",
+    "id": 767
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to access the i-th element of an array?",
+    "opts": [
+      "O(1)",
+      "O(n)",
+      "O(i)",
+      "O(log n)"
+    ],
+    "ans": 0,
+    "sol": "Arrays support random access via index arithmetic in O(1).",
+    "id": 768
+  },
+  {
+    "cat": "DSA",
+    "q": "Which traversal is BFS equivalent to on a tree?",
+    "opts": [
+      "Level Order Traversal",
+      "Inorder Traversal",
+      "Preorder Traversal",
+      "Postorder Traversal"
+    ],
+    "ans": 0,
+    "sol": "BFS visits nodes level-by-level, corresponding to level order.",
+    "id": 769
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the height of a complete binary tree with n nodes?",
+    "opts": [
+      "floor(log2(n))",
+      "n",
+      "sqrt(n)",
+      "n/2"
+    ],
+    "ans": 0,
+    "sol": "A complete binary tree has a height of log2(n) rounded down.",
+    "id": 770
+  },
+  {
+    "cat": "DSA",
+    "q": "Which of the following is a self-balancing binary search tree?",
+    "opts": [
+      "Red-Black Tree",
+      "Binary Search Tree",
+      "Trie",
+      "Heap"
+    ],
+    "ans": 0,
+    "sol": "Red-Black trees and AVL trees self-balance during insertions/deletions.",
+    "id": 771
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the amortized time complexity of dynamic array resizing?",
+    "opts": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "ans": 0,
+    "sol": "Resizing takes O(n) occasionally, but spread over all operations, the average cost per insert is O(1).",
+    "id": 772
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the primary difference between Stack and Queue?",
+    "opts": [
+      "Stack is LIFO, Queue is FIFO",
+      "Stack is FIFO, Queue is LIFO",
+      "Stack is dynamic, Queue is static",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stack pops the last inserted item; Queue pops the first inserted item.",
+    "id": 773
+  },
+  {
+    "cat": "DSA",
+    "q": "What is linear search's best-case time complexity?",
+    "opts": [
+      "O(1)",
+      "O(n)",
+      "O(log n)",
+      "O(1) is impossible"
+    ],
+    "ans": 0,
+    "sol": "Best case is finding the target at the very first element (index 0), taking O(1).",
+    "id": 774
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity of Heapify operation?",
+    "opts": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Building a heap from an array takes O(n) time using the bottom-up heapify method.",
+    "id": 775
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure represents hierarchical relationships?",
+    "opts": [
+      "Tree",
+      "Array",
+      "Queue",
+      "Stack"
+    ],
+    "ans": 0,
+    "sol": "Trees represent parent-child hierarchical links.",
+    "id": 776
+  },
+  {
+    "cat": "DSA",
+    "q": "What is a leaf node in a tree?",
+    "opts": [
+      "A node with no children",
+      "The root node",
+      "A node with only one child",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Leaf nodes have zero children.",
+    "id": 777
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the maximum number of children a binary tree node can have?",
+    "opts": [
+      "2",
+      "1",
+      "3",
+      "Unlimited"
+    ],
+    "ans": 0,
+    "sol": "A binary tree node can have at most 2 children (left and right).",
+    "id": 778
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity of Binary Search?",
+    "opts": [
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Binary search halves the search space each step, taking O(log n) time.",
+    "id": 779
+  },
+  {
+    "cat": "DSA",
+    "q": "Which traversal is DFS equivalent to on a tree?",
+    "opts": [
+      "Preorder/Postorder/Inorder",
+      "Level Order",
+      "Breadth order",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DFS goes deep into branches, resembling preorder/postorder traversals.",
+    "id": 780
+  },
+  {
+    "cat": "DSA",
+    "q": "What does a deque stand for?",
+    "opts": [
+      "Double-ended queue",
+      "Decimal queue",
+      "Double queue",
+      "Direct queue"
+    ],
+    "ans": 0,
+    "sol": "A deque is a double-ended queue supporting insertion/deletion at both ends.",
+    "id": 781
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm detects cycles in a graph?",
+    "opts": [
+      "DFS with back edges",
+      "Dijkstra's",
+      "Binary Search",
+      "Selection Sort"
+    ],
+    "ans": 0,
+    "sol": "DFS can detect cycles by checking for back edges during traversal.",
+    "id": 782
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case complexity of Selection Sort?",
+    "opts": [
+      "O(n²)",
+      "O(n log n)",
+      "O(n)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Selection sort always runs in O(n²) because it compares all pairs.",
+    "id": 783
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is used in recursion?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Heap",
+      "Tree"
+    ],
+    "ans": 0,
+    "sol": "The system uses a call stack to keep track of recursive function returns.",
+    "id": 784
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the difference between singly and doubly linked lists?",
+    "opts": [
+      "Singly has one pointer per node; doubly has two (next and prev)",
+      "Doubly is faster",
+      "Singly cannot be traversed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Singly linked list nodes only point forward; doubly linked nodes point both forward and backward.",
+    "id": 785
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to search in a sorted array?",
+    "opts": [
+      "O(log n) using binary search",
+      "O(n) always",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "ans": 0,
+    "sol": "If the array is sorted, we can search in O(log n) time using binary search.",
+    "id": 786
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to search in an unsorted array?",
+    "opts": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Without sorting, we must perform a linear search checking up to n elements.",
+    "id": 787
+  },
+  {
+    "cat": "DSA",
+    "q": "Which hash collision resolution technique stores colliding keys in a linked list at the same index?",
+    "opts": [
+      "Chaining (Open hashing)",
+      "Open Addressing",
+      "Linear Probing",
+      "Double Hashing"
+    ],
+    "ans": 0,
+    "sol": "Chaining keeps a linked list of all items hashing to the same bucket.",
+    "id": 788
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the auxiliary space complexity of Merge Sort?",
+    "opts": [
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n log n)"
+    ],
+    "ans": 0,
+    "sol": "Merge sort requires a temporary helper array of size n to merge halves.",
+    "id": 789
+  },
+  {
+    "cat": "DSA",
+    "q": "Which traversal visits the root node last?",
+    "opts": [
+      "Postorder",
+      "Preorder",
+      "Inorder",
+      "Level order"
+    ],
+    "ans": 0,
+    "sol": "Postorder is Left -> Right -> Root (root is visited last).",
+    "id": 790
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the root of a tree?",
+    "opts": [
+      "The top node with no parent",
+      "The bottom node",
+      "A leaf node",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The root is the starting node of the tree and has no parent.",
+    "id": 791
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the definition of a graph?",
+    "opts": [
+      "A collection of vertices (nodes) and edges connecting them",
+      "A tree with loops",
+      "A database table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Graphs consist of a set of vertices V and a set of edges E.",
+    "id": 792
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form handles transitive dependency?",
+    "opts": [
+      "3NF",
+      "1NF",
+      "2NF",
+      "BCNF"
+    ],
+    "ans": 0,
+    "sol": "Third Normal Form (3NF) requires no transitive dependencies on the primary key.",
+    "id": 793
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL clause is used to filter group results after grouping?",
+    "opts": [
+      "HAVING",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "ans": 0,
+    "sol": "WHERE filters individual rows; HAVING filters grouped results.",
+    "id": 794
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the default isolation level in MySQL InnoDB?",
+    "opts": [
+      "REPEATABLE READ",
+      "READ COMMITTED",
+      "SERIALIZABLE",
+      "READ UNCOMMITTED"
+    ],
+    "ans": 0,
+    "sol": "InnoDB defaults to Repeatable Read.",
+    "id": 795
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does the 'I' in ACID stand for?",
+    "opts": [
+      "Isolation",
+      "Integrity",
+      "Integration",
+      "Iterative"
+    ],
+    "ans": 0,
+    "sol": "ACID stands for Atomicity, Consistency, Isolation, Durability.",
+    "id": 796
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command is a Data Control Language (DCL) command?",
+    "opts": [
+      "GRANT",
+      "REVOKE",
+      "COMMIT",
+      "Both GRANT and REVOKE"
+    ],
+    "ans": 3,
+    "sol": "GRANT and REVOKE manage permissions and are DCL commands.",
+    "id": 797
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the difference between DELETE and TRUNCATE?",
+    "opts": [
+      "DELETE is DML (logged, can have WHERE); TRUNCATE is DDL (unlogged, deletes all rows)",
+      "DELETE is DDL; TRUNCATE is DML",
+      "Both are identical",
+      "DELETE drops the table; TRUNCATE deletes rows"
+    ],
+    "ans": 0,
+    "sol": "DELETE is a logged DML operation that can filter rows; TRUNCATE is an unlogged DDL operation resetting the table.",
+    "id": 798
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a foreign key constraint?",
+    "opts": [
+      "An integrity constraint referencing a primary key in another table",
+      "A security rule",
+      "A key that allows duplicates",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Foreign keys enforce referential integrity between tables.",
+    "id": 799
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL function is used to return the average of a numeric column?",
+    "opts": [
+      "AVG()",
+      "MEAN()",
+      "AVERAGE()",
+      "SUM()/COUNT() only"
+    ],
+    "ans": 0,
+    "sol": "AVG() is the aggregate function for average values.",
+    "id": 800
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a database index?",
+    "opts": [
+      "A data structure that improves data retrieval speed",
+      "A table bookmark",
+      "The primary key",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Indexes speed up queries at the cost of additional write overhead.",
+    "id": 801
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which join returns all rows from the left table and matched rows from the right table?",
+    "opts": [
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "INNER JOIN",
+      "FULL JOIN"
+    ],
+    "ans": 0,
+    "sol": "LEFT JOIN returns all rows from the left table, with nulls for unmatched right-side rows.",
+    "id": 802
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a view in SQL?",
+    "opts": [
+      "A virtual table based on a SELECT query",
+      "A database screenshot",
+      "A storage index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Views are virtual tables that execute their query definition at runtime.",
+    "id": 803
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command saves changes made in a transaction to the database?",
+    "opts": [
+      "COMMIT",
+      "ROLLBACK",
+      "SAVEPOINT",
+      "PERSIST"
+    ],
+    "ans": 0,
+    "sol": "COMMIT permanently saves transaction modifications.",
+    "id": 804
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is referential integrity?",
+    "opts": [
+      "Ensuring relationships between tables remain consistent (no orphaned foreign keys)",
+      "Ensuring tables have primary keys",
+      "Data encryption",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Referential integrity guarantees that foreign keys always point to valid primary keys.",
+    "id": 805
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which of the following normal forms is stronger than 3NF?",
+    "opts": [
+      "BCNF",
+      "2NF",
+      "1NF",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Boyce-Codd Normal Form (BCNF) is a stricter version of 3NF.",
+    "id": 806
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does a database trigger do?",
+    "opts": [
+      "Automatically executes a procedure in response to certain events (INSERT, UPDATE, DELETE)",
+      "Cleans the database",
+      "Starts the server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Triggers are event-driven SQL blocks executed automatically.",
+    "id": 807
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which keyword removes duplicate rows from a SELECT query?",
+    "opts": [
+      "DISTINCT",
+      "UNIQUE",
+      "DIFFERENT",
+      "ALL"
+    ],
+    "ans": 0,
+    "sol": "DISTINCT aggregates rows to return unique combinations.",
+    "id": 808
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a primary key?",
+    "opts": [
+      "A column that uniquely identifies each row and cannot contain NULLs",
+      "The first column",
+      "Any index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Primary keys are unique, non-null identifiers for rows.",
+    "id": 809
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which constraint prevents NULL values in a column?",
+    "opts": [
+      "NOT NULL",
+      "UNIQUE",
+      "CHECK",
+      "DEFAULT"
+    ],
+    "ans": 0,
+    "sol": "NOT NULL enforces that the column must hold a value.",
+    "id": 810
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a transaction?",
+    "opts": [
+      "A logical unit of work containing one or more SQL statements executed atomically",
+      "A SELECT statement",
+      "A database connection",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Transactions bundle statements to guarantee atomicity and consistency.",
+    "id": 811
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does NoSQL stand for?",
+    "opts": [
+      "Not only SQL",
+      "No SQL at all",
+      "New SQL",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "NoSQL represents non-relational database architectures.",
+    "id": 812
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command deletes a table structure completely?",
+    "opts": [
+      "DROP TABLE",
+      "DELETE TABLE",
+      "TRUNCATE TABLE",
+      "REMOVE TABLE"
+    ],
+    "ans": 0,
+    "sol": "DROP TABLE removes both data and the table schema.",
+    "id": 813
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the difference between CHAR and VARCHAR?",
+    "opts": [
+      "CHAR is fixed length; VARCHAR is variable length",
+      "VARCHAR is fixed length; CHAR is variable length",
+      "Both are same",
+      "CHAR is only for numbers"
+    ],
+    "ans": 0,
+    "sol": "CHAR pads strings to the specified length; VARCHAR only uses the necessary bytes.",
+    "id": 814
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL join returns rows with matching values in both tables?",
+    "opts": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN"
+    ],
+    "ans": 0,
+    "sol": "INNER JOIN yields only the intersection of both tables.",
+    "id": 815
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the purpose of the GROUP BY clause?",
+    "opts": [
+      "To group rows that have the same values into summary rows",
+      "To sort data",
+      "To filter rows",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "GROUP BY aggregates rows for functions like SUM, COUNT, AVG.",
+    "id": 816
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL operator matches wildcards?",
+    "opts": [
+      "LIKE",
+      "IN",
+      "BETWEEN",
+      "EQUAL"
+    ],
+    "ans": 0,
+    "sol": "LIKE combined with '%' or '_' matches text patterns.",
+    "id": 817
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is transitive dependency?",
+    "opts": [
+      "If A -> B and B -> C, then A -> C",
+      "If A -> B, then B -> A",
+      "A relationship",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Transitive dependency means a non-key attribute depends on another non-key attribute.",
+    "id": 818
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a candidate key?",
+    "opts": [
+      "A minimal set of attributes that can uniquely identify a tuple",
+      "Any column",
+      "The primary key chosen",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Candidate keys are all possible primary keys.",
+    "id": 819
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command reverts a transaction?",
+    "opts": [
+      "ROLLBACK",
+      "COMMIT",
+      "SAVEPOINT",
+      "CANCEL"
+    ],
+    "ans": 0,
+    "sol": "ROLLBACK undoes all uncommitted transaction changes.",
+    "id": 820
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a composite key?",
+    "opts": [
+      "A primary key consisting of two or more columns",
+      "A key with multiple datatypes",
+      "An index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Composite keys use multiple fields to ensure uniqueness.",
+    "id": 821
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a data dictionary?",
+    "opts": [
+      "Metadata containing database structure and schemas",
+      "A table of definitions",
+      "SQL manual",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The data dictionary stores system schema definitions.",
+    "id": 822
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which aggregate function counts the number of rows?",
+    "opts": [
+      "COUNT()",
+      "SUM()",
+      "TOTAL()",
+      "NUMBER()"
+    ],
+    "ans": 0,
+    "sol": "COUNT() returns the row count.",
+    "id": 823
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is dirty read?",
+    "opts": [
+      "Reading uncommitted data from another transaction",
+      "Reading slow data",
+      "Reading corrupted files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Dirty reads occur when a transaction reads changes not yet committed by another.",
+    "id": 824
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which isolation level prevents dirty reads but allows non-repeatable reads?",
+    "opts": [
+      "READ COMMITTED",
+      "READ UNCOMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "ans": 0,
+    "sol": "Read Committed guarantees only committed data is read.",
+    "id": 825
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a self-join?",
+    "opts": [
+      "Joining a table with itself",
+      "A join that fails",
+      "Joining two tables without keys",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Self-join queries reference the same table twice using aliases.",
+    "id": 826
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL constraint checks if values satisfy a condition?",
+    "opts": [
+      "CHECK",
+      "DEFAULT",
+      "UNIQUE",
+      "NOT NULL"
+    ],
+    "ans": 0,
+    "sol": "CHECK constraints validate range or format boundaries.",
+    "id": 827
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the default port for PostgreSQL?",
+    "opts": [
+      "5432",
+      "3306",
+      "1433",
+      "1521"
+    ],
+    "ans": 0,
+    "sol": "PostgreSQL defaults to port 5432.",
+    "id": 828
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does schema refer to?",
+    "opts": [
+      "The logical structure/organization of a database",
+      "The database server",
+      "SQL data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Schema defines the tables, fields, and relationships.",
+    "id": 829
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command modifies table columns?",
+    "opts": [
+      "ALTER TABLE",
+      "UPDATE TABLE",
+      "MODIFY TABLE",
+      "CHANGE TABLE"
+    ],
+    "ans": 0,
+    "sol": "ALTER TABLE modifies existing schemas.",
+    "id": 830
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is Cartesian Product in SQL?",
+    "opts": [
+      "A join returning all possible combinations of rows (CROSS JOIN)",
+      "A mathematical equation",
+      "An inner join",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CROSS JOIN multiplies rows from both tables.",
+    "id": 831
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL operator checks for values in a range?",
+    "opts": [
+      "BETWEEN",
+      "IN",
+      "LIKE",
+      "WITHIN"
+    ],
+    "ans": 0,
+    "sol": "BETWEEN checks if a value falls inclusively within bounds.",
+    "id": 832
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which keyword sorts the result set?",
+    "opts": [
+      "ORDER BY",
+      "GROUP BY",
+      "SORT BY",
+      "ALIGN BY"
+    ],
+    "ans": 0,
+    "sol": "ORDER BY sorts results ascending/descending.",
+    "id": 833
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the purpose of SAVEPOINT?",
+    "opts": [
+      "To roll back a transaction to a specific point",
+      "To save the database to disk",
+      "To pause execution",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SAVEPOINT defines intermediate rollback locations.",
+    "id": 834
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form requires attributes to be atomic?",
+    "opts": [
+      "1NF",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "ans": 0,
+    "sol": "First Normal Form (1NF) outlaws nested groups and non-atomic cells.",
+    "id": 835
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form requires no partial dependency?",
+    "opts": [
+      "2NF",
+      "1NF",
+      "3NF",
+      "BCNF"
+    ],
+    "ans": 0,
+    "sol": "Second Normal Form (2NF) requires all non-key fields to depend on the entire primary key.",
+    "id": 836
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a stored procedure?",
+    "opts": [
+      "A precompiled collection of SQL statements stored in the database",
+      "A system backup",
+      "A database driver",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stored procedures cache SQL blocks on the server for speed.",
+    "id": 837
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does DDL stand for?",
+    "opts": [
+      "Data Definition Language",
+      "Data Distribution Language",
+      "Dynamic Data Language",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DDL handles database structures (CREATE, ALTER, DROP).",
+    "id": 838
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does DML stand for?",
+    "opts": [
+      "Data Manipulation Language",
+      "Data Management Language",
+      "Dynamic Mode Language",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DML modifies records (SELECT, INSERT, UPDATE, DELETE).",
+    "id": 839
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer is responsible for translating data formats and encryption?",
+    "opts": [
+      "Presentation Layer",
+      "Application Layer",
+      "Session Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Presentation Layer (Layer 6) handles syntax, formatting, and cryptography.",
+    "id": 840
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the size of an IPv4 address?",
+    "opts": [
+      "32 bits",
+      "128 bits",
+      "48 bits",
+      "64 bits"
+    ],
+    "ans": 0,
+    "sol": "IPv4 uses 32-bit (4 bytes) address formats.",
+    "id": 841
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which network protocol is connectionless and does not guarantee delivery?",
+    "opts": [
+      "UDP",
+      "TCP",
+      "FTP",
+      "HTTP"
+    ],
+    "ans": 0,
+    "sol": "User Datagram Protocol (UDP) is lightweight and connectionless.",
+    "id": 842
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the default port for SSH (Secure Shell)?",
+    "opts": [
+      "22",
+      "21",
+      "23",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "SSH runs on port 22 by default.",
+    "id": 843
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does ARP stand for?",
+    "opts": [
+      "Address Resolution Protocol",
+      "Association Resolution Protocol",
+      "Address Routing Protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ARP maps an IP address to a local MAC address.",
+    "id": 844
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which device connects local networks and routes packets based on IP addresses?",
+    "opts": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Repeater"
+    ],
+    "ans": 0,
+    "sol": "Routers operate at the Network Layer to direct packets between networks.",
+    "id": 845
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is CIDR in networking?",
+    "opts": [
+      "Classless Inter-Domain Routing",
+      "Classful Internet Data Route",
+      "Classless IP Domain Route",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CIDR is a method for allocating IP addresses and routing IP packets.",
+    "id": 846
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is used to assign IP addresses dynamically to hosts?",
+    "opts": [
+      "DHCP",
+      "DNS",
+      "FTP",
+      "ARP"
+    ],
+    "ans": 0,
+    "sol": "DHCP (Dynamic Host Configuration Protocol) leases IPs to client devices.",
+    "id": 847
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the MAC address length in bits?",
+    "opts": [
+      "48 bits",
+      "32 bits",
+      "128 bits",
+      "64 bits"
+    ],
+    "ans": 0,
+    "sol": "MAC addresses are 48-bit physical hardware IDs.",
+    "id": 848
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which topology connects all devices to a central cable (backbone)?",
+    "opts": [
+      "Bus Topology",
+      "Star Topology",
+      "Ring Topology",
+      "Mesh Topology"
+    ],
+    "ans": 0,
+    "sol": "Bus topology links hosts to a single coaxial trunk line.",
+    "id": 849
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the default port for HTTPS?",
+    "opts": [
+      "443",
+      "80",
+      "8080",
+      "22"
+    ],
+    "ans": 0,
+    "sol": "HTTPS runs on port 443 by default.",
+    "id": 850
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which layer of the OSI model handles error checking, flow control, and MAC addressing?",
+    "opts": [
+      "Data Link Layer",
+      "Physical Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Data Link Layer (Layer 2) manages frame transmissions.",
+    "id": 851
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is a gateway in networks?",
+    "opts": [
+      "A node that connects two different networks using different protocols",
+      "A network cable",
+      "A software firewall",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Gateways act as interpreters between incompatible network architectures.",
+    "id": 852
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol resolves human-readable domain names to IP addresses?",
+    "opts": [
+      "DNS",
+      "DHCP",
+      "HTTP",
+      "SMTP"
+    ],
+    "ans": 0,
+    "sol": "Domain Name System (DNS) resolves hostnames to IPs.",
+    "id": 853
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does TCP stand for?",
+    "opts": [
+      "Transmission Control Protocol",
+      "Transfer Control Protocol",
+      "Traffic Control Protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "TCP = Transmission Control Protocol.",
+    "id": 854
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the range of Class C IP addresses?",
+    "opts": [
+      "192.0.0.0 to 223.255.255.255",
+      "128.0.0.0 to 191.255.255.255",
+      "1.0.0.0 to 126.255.255.255",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Class C addresses range from 192 to 223 in the first octet.",
+    "id": 855
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is used for transferring files between a client and server?",
+    "opts": [
+      "FTP",
+      "SMTP",
+      "SNMP",
+      "DNS"
+    ],
+    "ans": 0,
+    "sol": "File Transfer Protocol (FTP) moves files across networks.",
+    "id": 856
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is network latency?",
+    "opts": [
+      "The time delay for data to travel from source to destination",
+      "The data speed",
+      "The volume of data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Latency measures roundtrip delay times.",
+    "id": 857
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the default port for SMTP?",
+    "opts": [
+      "25",
+      "110",
+      "143",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "Simple Mail Transfer Protocol (SMTP) uses port 25.",
+    "id": 858
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which device regenerates and amplifies signals to extend network distances?",
+    "opts": [
+      "Repeater",
+      "Switch",
+      "Hub",
+      "Bridge"
+    ],
+    "ans": 0,
+    "sol": "Repeaters amplify weak physical signals on lines.",
+    "id": 859
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is a subnet mask?",
+    "opts": [
+      "A 32-bit number that hides the IP address and divides it into network/host parts",
+      "An IP blocker",
+      "A security key",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Subnet masks define the division of network and host ID bits.",
+    "id": 860
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer is responsible for end-to-end flow control and segment reassembly?",
+    "opts": [
+      "Transport Layer",
+      "Network Layer",
+      "Session Layer",
+      "Data Link Layer"
+    ],
+    "ans": 0,
+    "sol": "Transport Layer (Layer 4) manages segment flows and error correction.",
+    "id": 861
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does ICMP stand for?",
+    "opts": [
+      "Internet Control Message Protocol",
+      "Internet Connection Management Protocol",
+      "Internal Control Message Protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ICMP reports errors and routing diagnostics (used by ping).",
+    "id": 862
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the default port for DNS?",
+    "opts": [
+      "53",
+      "80",
+      "443",
+      "21"
+    ],
+    "ans": 0,
+    "sol": "DNS runs on port 53.",
+    "id": 863
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which topology offers the highest redundancy but is most expensive?",
+    "opts": [
+      "Mesh Topology",
+      "Star Topology",
+      "Ring Topology",
+      "Bus Topology"
+    ],
+    "ans": 0,
+    "sol": "Mesh topology links every node to every other node.",
+    "id": 864
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the difference between half-duplex and full-duplex?",
+    "opts": [
+      "Half-duplex allows communication in both directions but not simultaneously; full-duplex allows simultaneous bidirectional communication",
+      "Half-duplex is faster",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Full-duplex channels send and receive at the same time.",
+    "id": 865
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the loopback IP address?",
+    "opts": [
+      "127.0.0.1",
+      "192.168.1.1",
+      "10.0.0.1",
+      "255.255.255.255"
+    ],
+    "ans": 0,
+    "sol": "127.0.0.1 points back to the local computer.",
+    "id": 866
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is used to fetch emails from a server to a client?",
+    "opts": [
+      "POP3",
+      "SMTP",
+      "FTP",
+      "DNS"
+    ],
+    "ans": 0,
+    "sol": "POP3 (or IMAP) downloads email messages to clients.",
+    "id": 867
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is a proxy server?",
+    "opts": [
+      "An intermediary server between client requests and internet destinations",
+      "A firewall program",
+      "A database server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Proxies forward user requests to hide identities or cache assets.",
+    "id": 868
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer is the closest to the user?",
+    "opts": [
+      "Application Layer",
+      "Presentation Layer",
+      "Session Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Application Layer (Layer 7) hosts user software.",
+    "id": 869
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does NAT stand for?",
+    "opts": [
+      "Network Address Translation",
+      "Network Association Table",
+      "Network Access Type",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "NAT maps private local IPs to public internet IPs.",
+    "id": 870
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which is a Class B private IP range?",
+    "opts": [
+      "172.16.0.0 to 172.31.255.255",
+      "192.168.0.0 to 192.168.255.255",
+      "10.0.0.0 to 10.255.255.255",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Class B private range is 172.16.0.0/12.",
+    "id": 871
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does MAC stand for in MAC address?",
+    "opts": [
+      "Media Access Control",
+      "Machine Access Code",
+      "Media Association Connection",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MAC = Media Access Control.",
+    "id": 872
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which hardware device connects multiple computers in a LAN but broadcasts all packets?",
+    "opts": [
+      "Hub",
+      "Switch",
+      "Router",
+      "Bridge"
+    ],
+    "ans": 0,
+    "sol": "Hubs are Layer 1 broadcast devices with no switching tables.",
+    "id": 873
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the default port for Telnet?",
+    "opts": [
+      "23",
+      "22",
+      "21",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "Telnet uses port 23 (unsecured CLI remote access).",
+    "id": 874
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol maps hostname 'google.com' to IP '142.250.190.46'?",
+    "opts": [
+      "DNS",
+      "DHCP",
+      "ARP",
+      "HTTP"
+    ],
+    "ans": 0,
+    "sol": "DNS translates domains to IPs.",
+    "id": 875
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer transmits raw bits over a physical medium?",
+    "opts": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Physical Layer (Layer 1) manages signals, cables, and pin layouts.",
+    "id": 876
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is used for network management and monitoring?",
+    "opts": [
+      "SNMP",
+      "SMTP",
+      "SMTP",
+      "DHCP"
+    ],
+    "ans": 0,
+    "sol": "Simple Network Management Protocol (SNMP) monitors devices.",
+    "id": 877
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is firewall?",
+    "opts": [
+      "A network security system that monitors and controls incoming/outgoing traffic",
+      "A physical wall",
+      "A software error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Firewalls filter packets based on security rules.",
+    "id": 878
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does WAN stand for?",
+    "opts": [
+      "Wide Area Network",
+      "Wireless Access Network",
+      "Web Area Network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "WAN = Wide Area Network.",
+    "id": 879
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which device operates at Layer 3 of the OSI model?",
+    "opts": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Repeater"
+    ],
+    "ans": 0,
+    "sol": "Routers operate at Layer 3 (Network Layer) to route packets.",
+    "id": 880
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the default port for FTP?",
+    "opts": [
+      "21",
+      "22",
+      "23",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "FTP control channel runs on port 21.",
+    "id": 881
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is packet sniffing?",
+    "opts": [
+      "Intercepting and inspecting network packets",
+      "Cleaning the server",
+      "Deleting network files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Sniffing captures raw packets traveling across segments.",
+    "id": 882
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is used by the ping command?",
+    "opts": [
+      "ICMP",
+      "TCP",
+      "UDP",
+      "ARP"
+    ],
+    "ans": 0,
+    "sol": "Ping uses ICMP Echo Request and Echo Reply.",
+    "id": 883
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does IPv6 stand for?",
+    "opts": [
+      "Internet Protocol Version 6",
+      "Internal Protocol Version 6",
+      "Internet Process Version 6",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "IPv6 is the 6th revision of the Internet Protocol.",
+    "id": 884
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which IP address class has the most hosts per network?",
+    "opts": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class D"
+    ],
+    "ans": 0,
+    "sol": "Class A dedicates 24 bits for host IDs (16 million hosts).",
+    "id": 885
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the range of Class A IP addresses?",
+    "opts": [
+      "1.0.0.0 to 126.255.255.255",
+      "128.0.0.0 to 191.255.255.255",
+      "192.0.0.0 to 223.255.255.255",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Class A is 1 to 126 in the first octet.",
+    "id": 886
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a critical section?",
+    "opts": [
+      "A block of code accessing shared resources that must not be concurrently run",
+      "The boot segment",
+      "A system error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Critical sections require mutual exclusion to prevent data races.",
+    "id": 887
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which scheduling algorithm can result in starvation for longer processes?",
+    "opts": [
+      "Shortest Job First (SJF)",
+      "Round Robin",
+      "FCFS",
+      "Priority (if static)"
+    ],
+    "ans": 0,
+    "sol": "SJF continuously selects shorter tasks, starving longer ones.",
+    "id": 888
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is Banker's Algorithm used for?",
+    "opts": [
+      "Deadlock Avoidance",
+      "Deadlock Prevention",
+      "Deadlock Detection",
+      "Process Scheduling"
+    ],
+    "ans": 0,
+    "sol": "Banker's algorithm checks resource allocations to ensure safe states.",
+    "id": 889
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is thrashing in memory management?",
+    "opts": [
+      "Excessive page swapping resulting in high disk I/O and near-zero CPU progress",
+      "RAM hardware failure",
+      "Deleting system files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Thrashing occurs when the active working set exceeds physical RAM.",
+    "id": 890
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which Linux command changes file ownership?",
+    "opts": [
+      "chown",
+      "chmod",
+      "ls",
+      "pwd"
+    ],
+    "ans": 0,
+    "sol": "chown changes file owners; chmod changes read/write permissions.",
+    "id": 891
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a semaphore?",
+    "opts": [
+      "An integer variable used for process synchronization and mutual exclusion",
+      "A memory flag",
+      "A file system type",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Semaphores coordinate concurrent threads via wait/signal operations.",
+    "id": 892
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which operating system is open-source?",
+    "opts": [
+      "Linux",
+      "Windows",
+      "macOS",
+      "iOS"
+    ],
+    "ans": 0,
+    "sol": "Linux source code is freely viewable and modifiable.",
+    "id": 893
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is the main task of the Kernel?",
+    "opts": [
+      "Managing system resources and communication between hardware and software",
+      "Rendering the desktop GUI",
+      "Compiling code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The kernel is the core operating system layer managing hardware.",
+    "id": 894
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a process?",
+    "opts": [
+      "A program in execution",
+      "A static file",
+      "A text code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Processes are active instances of programs holding resources.",
+    "id": 895
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a thread?",
+    "opts": [
+      "The smallest unit of execution within a process",
+      "A program loop",
+      "A network cable",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Threads share process memory but have their own registers and stack.",
+    "id": 896
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which scheduling algorithm uses a time quantum?",
+    "opts": [
+      "Round Robin",
+      "FCFS",
+      "SJF",
+      "Priority"
+    ],
+    "ans": 0,
+    "sol": "Round Robin rotates threads using time slices.",
+    "id": 897
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is paging?",
+    "opts": [
+      "A memory management scheme partitioning memory into fixed-size pages",
+      "A printing command",
+      "Disk formatting",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Paging maps virtual pages to physical frames to prevent fragmentation.",
+    "id": 898
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a deadlock?",
+    "opts": [
+      "A situation where processes are blocked indefinitely waiting for resources held by each other",
+      "A computer crash",
+      "A slow network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Deadlock occurs due to mutual exclusion, hold-and-wait, no preemption, and circular wait.",
+    "id": 899
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which command lists processes in Linux?",
+    "opts": [
+      "ps",
+      "ls",
+      "cd",
+      "mkdir"
+    ],
+    "ans": 0,
+    "sol": "ps displays active process statistics.",
+    "id": 900
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is spooling?",
+    "opts": [
+      "Storing I/O data in a buffer temporary area (like printer queues)",
+      "A virus",
+      "Deleting files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Spooling buffers data for slow devices to free up CPU.",
+    "id": 901
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is fragmentation?",
+    "opts": [
+      "Wasted memory slots due to scatter allocations (internal/external)",
+      "A broken disk",
+      "A network error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Fragmentation leaves memory blocks unusable by new processes.",
+    "id": 902
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a shell?",
+    "opts": [
+      "A user interface command interpreter for OS services",
+      "A hard drive",
+      "An internal function",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Shells parse command lines into system calls.",
+    "id": 903
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a system call?",
+    "opts": [
+      "A programmatic interface for applications to request services from the kernel",
+      "A phone call",
+      "A network request",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "System calls transition CPU execution from user mode to kernel mode.",
+    "id": 904
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is mutual exclusion?",
+    "opts": [
+      "Only one process can access a resource at a time",
+      "All processes run together",
+      "Memory cleaning",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Mutex guarantees single-thread access to critical resources.",
+    "id": 905
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is the difference between a process and a thread?",
+    "opts": [
+      "Processes have independent address spaces; threads share the process's address space",
+      "Threads have independent address spaces",
+      "Processes are faster",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Threads are lightweight because they share process heap and code segments.",
+    "id": 906
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a page fault?",
+    "opts": [
+      "When a process accesses a page not currently mapped in physical RAM",
+      "A disk crash",
+      "A memory leak",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Page faults trigger the OS to load the missing page from disk.",
+    "id": 907
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm replaces the page that has not been used for the longest time?",
+    "opts": [
+      "Least Recently Used (LRU)",
+      "FIFO",
+      "Optimal",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "LRU tracks access histories to evict the page unused for the longest duration.",
+    "id": 908
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is the critical section problem?",
+    "opts": [
+      "Designing protocols where processes synchronize safely to share data",
+      "A CPU hardware bug",
+      "A hard drive error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Solutions require mutual exclusion, progress, and bounded waiting.",
+    "id": 909
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a mutex?",
+    "opts": [
+      "A locking mechanism used to synchronize access to a resource (mutual exclusion)",
+      "A database index",
+      "A process state",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Mutexes are binary flags ensuring single-thread locks.",
+    "id": 910
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is the Banker's algorithm safe state?",
+    "opts": [
+      "A state where the system can allocate resources to all processes without deadlocking",
+      "A secure folder",
+      "An online backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Safe states guarantee a path to run all processes to completion.",
+    "id": 911
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which Linux command changes file permissions?",
+    "opts": [
+      "chmod",
+      "chown",
+      "ls",
+      "pwd"
+    ],
+    "ans": 0,
+    "sol": "chmod sets read, write, and execute permissions.",
+    "id": 912
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is user mode vs kernel mode?",
+    "opts": [
+      "User mode has restricted hardware access; kernel mode has direct hardware access",
+      "Kernel mode is for users",
+      "User mode is faster",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Modes protect operating system memory from user application crashes.",
+    "id": 913
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is CPU scheduling?",
+    "opts": [
+      "Deciding which process gets CPU time",
+      "Scheduling backups",
+      "Installing software",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Schedulers maximize CPU utilization and throughput.",
+    "id": 914
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is turnaround time?",
+    "opts": [
+      "The interval from process submission to its completion",
+      "Wait time",
+      "Execution time",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Turnaround = Completion Time - Submission Time.",
+    "id": 915
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is waiting time?",
+    "opts": [
+      "The total time a process spends waiting in the ready queue",
+      "Execution time",
+      "Run time",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Waiting Time = Turnaround Time - Burst Time.",
+    "id": 916
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is response time?",
+    "opts": [
+      "The time from submission to the first response/output",
+      "Wait time",
+      "Execution time",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Response time measures interactive system snappiness.",
+    "id": 917
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm is optimal but impossible to implement in practice?",
+    "opts": [
+      "Optimal Page Replacement (evicts page unused for longest future time)",
+      "LRU",
+      "FIFO",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Optimal replacement requires future-knowledge of memory references.",
+    "id": 918
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is Belady's Anomaly?",
+    "opts": [
+      "For some page replacement algorithms (like FIFO), page faults can increase as frames increase",
+      "A CPU bug",
+      "A compiler error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Belady's anomaly occurs because FIFO does not possess the stack property.",
+    "id": 919
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is segmentation?",
+    "opts": [
+      "A memory management scheme dividing memory into logical segments (code, stack, data)",
+      "Fixed sizing",
+      "Disk partition",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Segmentation maps variable-length logical blocks to physical memory.",
+    "id": 920
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is boot sector?",
+    "opts": [
+      "The region of disk containing code to load the OS",
+      "A folder",
+      "A network card",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The boot sector holds the bootstrap loader code.",
+    "id": 921
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What does RTOS stand for?",
+    "opts": [
+      "Real-Time Operating System",
+      "Ready To Operate System",
+      "Rapid Transition OS",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "RTOS handles time-critical systems with strict deadlines.",
+    "id": 922
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a daemon in OS?",
+    "opts": [
+      "A background process running continuously without user interaction",
+      "A virus",
+      "A system log",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Daemons (or services) handle background system tasks.",
+    "id": 923
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which Linux command deletes a file?",
+    "opts": [
+      "rm",
+      "del",
+      "remove",
+      "erase"
+    ],
+    "ans": 0,
+    "sol": "rm (remove) deletes files and directories.",
+    "id": 924
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which Linux command creates a directory?",
+    "opts": [
+      "mkdir",
+      "md",
+      "createdir",
+      "dir"
+    ],
+    "ans": 0,
+    "sol": "mkdir makes a new folder directory.",
+    "id": 925
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a process control block (PCB)?",
+    "opts": [
+      "A data structure storing all information about a process",
+      "A hardware switch",
+      "A CPU register",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PCBs store process ID, registers, state, and memory limits.",
+    "id": 926
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a zombie process?",
+    "opts": [
+      "A process that has completed execution but still has an entry in the process table",
+      "A virus process",
+      "A frozen screen",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Zombies wait for their parent to read their exit status.",
+    "id": 927
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is an orphan process?",
+    "opts": [
+      "A process whose parent process has terminated",
+      "A completed process",
+      "A background task",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Orphans are adopted by the init process (PID 1).",
+    "id": 928
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a microkernel?",
+    "opts": [
+      "A kernel design that keeps the kernel size minimal, running services in user space",
+      "A small CPU",
+      "A virtual OS",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Microkernels improve reliability by running drivers in user space.",
+    "id": 929
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is RAID in storage?",
+    "opts": [
+      "Redundant Array of Independent Disks (combines disks for redundancy/performance)",
+      "A backup drive",
+      "A memory cache",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "RAID schemes mirror or stripe data across drives.",
+    "id": 930
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which command displays the current working directory in Linux?",
+    "opts": [
+      "pwd",
+      "cwd",
+      "dir",
+      "ls"
+    ],
+    "ans": 0,
+    "sol": "pwd = Print Working Directory.",
+    "id": 931
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is virtual memory swapping?",
+    "opts": [
+      "Moving inactive process pages from RAM to secondary storage (disk swap space)",
+      "Swapping RAM cards",
+      "Deleting RAM",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Swapping frees up physical RAM for active processes.",
+    "id": 932
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property controls the internal spacing of an element?",
+    "opts": [
+      "padding",
+      "margin",
+      "border",
+      "spacing"
+    ],
+    "ans": 0,
+    "sol": "Padding creates space inside element borders; margin creates space outside.",
+    "id": 933
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between let and var in JavaScript?",
+    "opts": [
+      "let is block-scoped; var is function-scoped",
+      "var is block-scoped; let is function-scoped",
+      "let is constant",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "let respects curly brace block scopes, whereas var hoists globally or function-wide.",
+    "id": 934
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML5 tag is used to display a video?",
+    "opts": [
+      "<video>",
+      "<movie>",
+      "<media>",
+      "<embed>"
+    ],
+    "ans": 0,
+    "sol": "<video> is the HTML5 video embedding tag.",
+    "id": 935
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is React?",
+    "opts": [
+      "A JavaScript library for building user interfaces",
+      "A database",
+      "A backend server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "React is a frontend component rendering library.",
+    "id": 936
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP status code represents 'Not Found'?",
+    "opts": [
+      "404",
+      "500",
+      "200",
+      "301"
+    ],
+    "ans": 0,
+    "sol": "404 indicates the requested resource is missing on the server.",
+    "id": 937
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does AJAX stand for?",
+    "opts": [
+      "Asynchronous JavaScript and XML",
+      "Advanced JavaScript and XML",
+      "Asynchronous Java and XML",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "AJAX handles background server requests without page reloads.",
+    "id": 938
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which property changes font size in CSS?",
+    "opts": [
+      "font-size",
+      "size",
+      "text-size",
+      "font-style"
+    ],
+    "ans": 0,
+    "sol": "'font-size' sets typography scaling.",
+    "id": 939
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does JSON stand for?",
+    "opts": [
+      "JavaScript Object Notation",
+      "Java System Object Name",
+      "JavaScript Oriented Network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "JSON = JavaScript Object Notation.",
+    "id": 940
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP method is used to update an existing resource?",
+    "opts": [
+      "PUT",
+      "GET",
+      "POST",
+      "DELETE"
+    ],
+    "ans": 0,
+    "sol": "PUT (or PATCH) updates resources; POST creates new ones.",
+    "id": 941
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of the alt attribute in an image tag?",
+    "opts": [
+      "To provide alternative text if the image fails to load",
+      "To change image size",
+      "To align images",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "alt text helps accessibility and acts as a placeholder for slow loads.",
+    "id": 942
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property controls the layout of elements in a single dimension?",
+    "opts": [
+      "flexbox",
+      "grid",
+      "block",
+      "inline"
+    ],
+    "ans": 0,
+    "sol": "Flexbox is optimized for 1D row or column flows.",
+    "id": 943
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of the document.getElementById() method in JS?",
+    "opts": [
+      "To select a DOM element by its unique ID attribute",
+      "To delete an element",
+      "To create a database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "getElementById returns a reference to the matching DOM element.",
+    "id": 944
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP status code represents 'Internal Server Error'?",
+    "opts": [
+      "500",
+      "400",
+      "403",
+      "200"
+    ],
+    "ans": 0,
+    "sol": "500 represents generic server-side crashes.",
+    "id": 945
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does npm stand for?",
+    "opts": [
+      "Node Package Manager",
+      "Node Program Manager",
+      "Network Package Manager",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "npm manages dependency packages for Node.js.",
+    "id": 946
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag is used to create a hyperlink?",
+    "opts": [
+      "<a>",
+      "<link>",
+      "<href>",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The anchor tag <a> is used for links.",
+    "id": 947
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property sets the background color of an element?",
+    "opts": [
+      "background-color",
+      "color",
+      "bg-color",
+      "background-style"
+    ],
+    "ans": 0,
+    "sol": "background-color styles backgrounds.",
+    "id": 948
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is a Promise in JavaScript?",
+    "opts": [
+      "An object representing the eventual completion or failure of an asynchronous operation",
+      "A function",
+      "A syntax checker",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Promises manage async callbacks cleanly.",
+    "id": 949
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the DOM in web technologies?",
+    "opts": [
+      "Document Object Model",
+      "Data Object Model",
+      "Document Oriented Mode",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DOM is the programming interface for HTML documents.",
+    "id": 950
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP status code represents a successful request?",
+    "opts": [
+      "200",
+      "201",
+      "400",
+      "500"
+    ],
+    "ans": 0,
+    "sol": "200 OK is the standard response for successful HTTP requests.",
+    "id": 951
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does CSS Grid allow you to do?",
+    "opts": [
+      "Create two-dimensional grid layouts",
+      "Format text",
+      "Create animations",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Grid handles column and row layouts simultaneously.",
+    "id": 952
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between == and === in JavaScript?",
+    "opts": [
+      "== compares values; === compares values and types",
+      "=== compares values; == compares values and types",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "=== is the strict equality operator checking types without coercion.",
+    "id": 953
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag creates an unordered list?",
+    "opts": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "ans": 0,
+    "sol": "<ul> defines bulleted list containers (ol is ordered).",
+    "id": 954
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is bootstrap in web design?",
+    "opts": [
+      "A frontend CSS framework for rapid styling",
+      "A database",
+      "A server boot method",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Bootstrap provides pre-styled CSS classes.",
+    "id": 955
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP method retrieves data from a server?",
+    "opts": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ],
+    "ans": 0,
+    "sol": "GET asks servers for resources without payload side-effects.",
+    "id": 956
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does SQL Injection target in web apps?",
+    "opts": [
+      "Vulnerable database input forms",
+      "CSS styles",
+      "Images",
+      "Javascript code"
+    ],
+    "ans": 0,
+    "sol": "SQLi exploits raw inputs to execute SQL queries on database layers.",
+    "id": 957
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML5 tag is used to render graphics on the fly via scripting?",
+    "opts": [
+      "<canvas>",
+      "<svg>",
+      "<paint>",
+      "<graphic>"
+    ],
+    "ans": 0,
+    "sol": "Canvas provides a pixel grid script surface.",
+    "id": 958
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of media queries in CSS?",
+    "opts": [
+      "To apply styles based on screen width/characteristics for responsiveness",
+      "To play video files",
+      "To fetch data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Media queries adjust layouts to fit mobile/desktop viewports.",
+    "id": 959
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which JavaScript method parses a JSON string into an object?",
+    "opts": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.toObject()",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "parse() converts text strings to JS objects (stringify does the reverse).",
+    "id": 960
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is client-side routing?",
+    "opts": [
+      "Updating the page view dynamically via JS without requesting a new HTML page from the server",
+      "IP routing",
+      "DNS lookup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Client-side routing swaps components locally (used in Single Page Apps).",
+    "id": 961
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag is used for the largest heading?",
+    "opts": [
+      "<h1>",
+      "<h6>",
+      "<head>",
+      "<heading>"
+    ],
+    "ans": 0,
+    "sol": "<h1> renders the highest priority header.",
+    "id": 962
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property controls the outer spacing of an element?",
+    "opts": [
+      "margin",
+      "padding",
+      "border",
+      "spacing"
+    ],
+    "ans": 0,
+    "sol": "Margin creates space outside the element's border.",
+    "id": 963
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is local storage in browsers?",
+    "opts": [
+      "Persistent key-value storage with no expiration date",
+      "Temporary session storage",
+      "Local database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "localStorage saves data across page refreshes and browser restarts.",
+    "id": 964
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag creates a table row?",
+    "opts": [
+      "<tr>",
+      "<td>",
+      "<th>",
+      "<table>"
+    ],
+    "ans": 0,
+    "sol": "<tr> stands for Table Row.",
+    "id": 965
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is Cross-Site Scripting (XSS)?",
+    "opts": [
+      "An attack where malicious scripts are injected into trusted websites",
+      "A CSS layout method",
+      "A server crash",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "XSS executes hacker code inside victim browsers.",
+    "id": 966
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which JS keyword defines a variable that cannot be reassigned?",
+    "opts": [
+      "const",
+      "let",
+      "var",
+      "readonly"
+    ],
+    "ans": 0,
+    "sol": "const references are read-only and cannot be reassigned.",
+    "id": 967
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does the CSS property 'display: none' do?",
+    "opts": [
+      "Hides the element and removes it from the layout flow",
+      "Hides it but keeps its space",
+      "Makes it transparent",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "display: none hides the element and reclaims its layout space.",
+    "id": 968
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag is used to link an external CSS file?",
+    "opts": [
+      "<link>",
+      "<style>",
+      "<a>",
+      "<script>"
+    ],
+    "ans": 0,
+    "sol": "link elements in the head link stylesheets.",
+    "id": 969
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is JSX in React?",
+    "opts": [
+      "A syntax extension allowing HTML-like templates inside JavaScript",
+      "A database query",
+      "A CSS style",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "JSX compiler translates template tags to React.createElement calls.",
+    "id": 970
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP status code represents 'Unauthorized access'?",
+    "opts": [
+      "401",
+      "403",
+      "400",
+      "500"
+    ],
+    "ans": 0,
+    "sol": "401 represents unauthorized credentials.",
+    "id": 971
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTTP status code represents 'Forbidden access'?",
+    "opts": [
+      "403",
+      "401",
+      "404",
+      "500"
+    ],
+    "ans": 0,
+    "sol": "403 means the server understands but refuses the action.",
+    "id": 972
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of the CSS property 'z-index'?",
+    "opts": [
+      "To control the vertical stacking order of overlapping elements",
+      "To zoom elements",
+      "To change widths",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "z-index positions positioned elements along the Z axis.",
+    "id": 973
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag is used to embed JavaScript code?",
+    "opts": [
+      "<script>",
+      "<js>",
+      "<code>",
+      "<link>"
+    ],
+    "ans": 0,
+    "sol": "script tags wrap JS scripts.",
+    "id": 974
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is semantic HTML?",
+    "opts": [
+      "Using tags that describe their meaning (like <header>, <article>)",
+      "Using CSS",
+      "Using short tags",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Semantic tags inform search engines and assistive software of layout purposes.",
+    "id": 975
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which JS array method creates a new array by filtering elements based on a test?",
+    "opts": [
+      "filter()",
+      "map()",
+      "reduce()",
+      "forEach()"
+    ],
+    "ans": 0,
+    "sol": "filter() creates subsets of matching elements.",
+    "id": 976
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is Webpack?",
+    "opts": [
+      "A module bundler compiling JS/CSS assets for browsers",
+      "A backend server",
+      "A database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Webpack resolves import trees to bundle files.",
+    "id": 977
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property sets the transparency of an element?",
+    "opts": [
+      "opacity",
+      "filter",
+      "visibility",
+      "color"
+    ],
+    "ans": 0,
+    "sol": "opacity ranges 0.0 (transparent) to 1.0 (opaque).",
+    "id": 978
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is a Single Page Application (SPA)?",
+    "opts": [
+      "A web app that loads a single HTML page and updates views dynamically",
+      "A site with one page",
+      "A slow app",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SPAs update DOM fragments instead of reloading pages.",
+    "id": 979
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which HTML tag defines a table cell holding data?",
+    "opts": [
+      "<td>",
+      "<tr>",
+      "<th>",
+      "<table>"
+    ],
+    "ans": 0,
+    "sol": "<td> stands for Table Data.",
+    "id": 980
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud elasticity?",
+    "opts": [
+      "The ability to dynamically scale resources up or down in real-time based on demand",
+      "Renting hardware",
+      "Virtualization",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Elasticity auto-allocates resources to handle traffic spikes and returns them to save costs.",
+    "id": 981
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud service model offers virtual machines and storage where users install their own OS?",
+    "opts": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "Infrastructure as a Service (IaaS) rents raw compute and disk blocks.",
+    "id": 982
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service is Amazon Web Services' (AWS) primary virtual machine service?",
+    "opts": [
+      "EC2",
+      "S3",
+      "RDS",
+      "Lambda"
+    ],
+    "ans": 0,
+    "sol": "EC2 (Elastic Compute Cloud) hosts resizable VM servers.",
+    "id": 983
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is virtualization in cloud computing?",
+    "opts": [
+      "Using a hypervisor to split physical hardware resources into multiple virtual machines",
+      "Online gaming",
+      "Virtual reality",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Virtualization multiplexes physical CPUs and RAM.",
+    "id": 984
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a public cloud deployment model?",
+    "opts": [
+      "Infrastructure shared over the internet with multiple tenants/companies",
+      "Private cloud",
+      "Local servers",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Public clouds share server racks among various organizations.",
+    "id": 985
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What does SaaS stand for?",
+    "opts": [
+      "Software as a Service",
+      "Security as a Service",
+      "Storage as a Service",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SaaS rents web-ready end-user applications (like Gmail).",
+    "id": 986
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud provider offers Google Compute Engine?",
+    "opts": [
+      "Google Cloud Platform (GCP)",
+      "AWS",
+      "Azure",
+      "OpenStack"
+    ],
+    "ans": 0,
+    "sol": "GCP is Google's cloud system.",
+    "id": 987
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a serverless architecture?",
+    "opts": [
+      "A cloud model where execution is managed dynamically without users provisioning servers",
+      "No servers exist",
+      "Offline hosting",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Serverless (FaaS) runs code blocks on demand, abstracting server configurations.",
+    "id": 988
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the CAP Theorem trade-off in distributed cloud databases?",
+    "opts": [
+      "Consistency, Availability, Partition Tolerance (choose 2)",
+      "Cost, Access, Power",
+      "CPU, Allocation, Port",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Network partitions must choose between consistency or availability.",
+    "id": 989
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service represents AWS storage for static files and objects?",
+    "opts": [
+      "S3",
+      "EC2",
+      "EFS",
+      "EBS"
+    ],
+    "ans": 0,
+    "sol": "S3 (Simple Storage Service) is AWS's object store.",
+    "id": 990
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a private cloud?",
+    "opts": [
+      "Cloud infrastructure dedicated solely to a single organization",
+      "Offline cloud",
+      "Encrypted cloud",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Private clouds guarantee exclusive hardware tenancy.",
+    "id": 991
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is hybrid cloud?",
+    "opts": [
+      "Combining public cloud, private cloud, or on-premises infrastructure",
+      "A slow cloud",
+      "Mixed data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hybrid clouds bridge local databases with public hosts.",
+    "id": 992
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What does PaaS stand for?",
+    "opts": [
+      "Platform as a Service",
+      "Product as a Service",
+      "Program as a Service",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PaaS rents developer runtimes (like Heroku) abstracting OS setups.",
+    "id": 993
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a hypervisor?",
+    "opts": [
+      "Software that creates and runs virtual machines on host hardware",
+      "A fast processor",
+      "A cloud monitor",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hypervisors (like ESXi, Hyper-V) coordinate physical hardware for VMs.",
+    "id": 994
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service represents Microsoft's cloud hosting platform?",
+    "opts": [
+      "Azure",
+      "AWS",
+      "GCP",
+      "OpenStack"
+    ],
+    "ans": 0,
+    "sol": "Azure is Microsoft's enterprise cloud product.",
+    "id": 995
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud latency?",
+    "opts": [
+      "The time delay in network communications between user and cloud data centers",
+      "Memory size",
+      "CPU usage",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Latency measures connection roundtrip times to clouds.",
+    "id": 996
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is multi-tenancy?",
+    "opts": [
+      "Multiple users sharing the same physical server hardware and databases securely",
+      "Renting apartments",
+      "Multi-CPU",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Clouds achieve cost savings by secure host sharing.",
+    "id": 997
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is load balancing in cloud systems?",
+    "opts": [
+      "Distributing network traffic across multiple servers to prevent overloads",
+      "CPU balancing",
+      "RAM balancing",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Load balancers route incoming requests to healthy instances.",
+    "id": 998
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is AWS Lambda?",
+    "opts": [
+      "A serverless compute service that runs code in response to events",
+      "A virtual machine",
+      "A storage database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Lambda runs transient functions without infrastructure management.",
+    "id": 999
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a cloud database?",
+    "opts": [
+      "A database service designed and hosted on cloud platforms",
+      "Local database",
+      "Static file storage",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Cloud databases provide scalable data storage (like DynamoDB, CosmosDB).",
+    "id": 1000
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What does IAM stand for in cloud security?",
+    "opts": [
+      "Identity and Access Management",
+      "Internal Access Manager",
+      "Internet Access Mode",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "IAM handles cloud permission policies and user keys.",
+    "id": 1001
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a Content Delivery Network (CDN) in cloud?",
+    "opts": [
+      "A system of distributed servers delivering web content based on user location",
+      "A network card",
+      "A router protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CDNs cache assets at edge locations to minimize latency.",
+    "id": 1002
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is disaster recovery in cloud?",
+    "opts": [
+      "Strategies to restore systems and data after an outage or failure",
+      "Installing antivirus",
+      "Buying disks",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DR uses regional backups to assure business continuity.",
+    "id": 1003
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service represents Azure's virtual machine service?",
+    "opts": [
+      "Azure Virtual Machines",
+      "EC2",
+      "GCE",
+      "App Service"
+    ],
+    "ans": 0,
+    "sol": "Azure VM hosts Windows/Linux instances.",
+    "id": 1004
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud storage replication?",
+    "opts": [
+      "Copying data across multiple data centers to ensure reliability and durability",
+      "Deleting data",
+      "Compressing files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Replication guards against data center outages.",
+    "id": 1005
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What does SLA stand for?",
+    "opts": [
+      "Service Level Agreement",
+      "System Level Access",
+      "Software License Agreement",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SLAs define uptime guarantees (e.g. 99.9%).",
+    "id": 1006
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is containerization in cloud?",
+    "opts": [
+      "Packaging an app with its dependencies to run consistently on any infrastructure",
+      "Buying storage containers",
+      "Database compression",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Docker containers isolate applications from host OS configurations.",
+    "id": 1007
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which tool orchestrates container deployments across cloud clusters?",
+    "opts": [
+      "Kubernetes",
+      "Docker",
+      "Vite",
+      "Jenkins"
+    ],
+    "ans": 0,
+    "sol": "Kubernetes automates scaling and management of container clusters.",
+    "id": 1008
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the AWS object storage default data durability?",
+    "opts": [
+      "11 9s (99.999999999%)",
+      "99.9%",
+      "90%",
+      "100%"
+    ],
+    "ans": 0,
+    "sol": "AWS S3 guarantees extreme 11-nines durability via multi-zone copies.",
+    "id": 1009
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud migration?",
+    "opts": [
+      "Moving digital assets, services, and databases to the cloud",
+      "Moving hardware",
+      "Internet speed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Migration transitions local workloads to cloud hosts.",
+    "id": 1010
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is vendor lock-in?",
+    "opts": [
+      "Dependence on a single cloud provider's proprietary APIs and services",
+      "Locked servers",
+      "Buying software",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Lock-in makes switching cloud vendors expensive.",
+    "id": 1011
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a region in cloud infrastructure?",
+    "opts": [
+      "A geographic area containing multiple isolated Availability Zones",
+      "A single data center",
+      "A country",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Regions house clusters of data centers.",
+    "id": 1012
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is an Availability Zone (AZ)?",
+    "opts": [
+      "One or more discrete data centers with redundant power and networking",
+      "A user group",
+      "A cloud network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "AZs provide isolation from regional failures.",
+    "id": 1013
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service represents AWS managed relational database service?",
+    "opts": [
+      "RDS",
+      "DynamoDB",
+      "Redshift",
+      "ElastiCache"
+    ],
+    "ans": 0,
+    "sol": "RDS handles SQL database provisioning and patching.",
+    "id": 1014
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is serverless database?",
+    "opts": [
+      "A database that auto-scales compute resources based on query traffic",
+      "A database without disks",
+      "An offline file",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Serverless databases charge per-query rather than per-hour.",
+    "id": 1015
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the primary benefit of public cloud over on-premise?",
+    "opts": [
+      "Lower upfront capital expenditure (Pay-as-you-go)",
+      "Better physical control",
+      "Faster local network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Public cloud replaces capital expenses (CapEx) with operational expenses (OpEx).",
+    "id": 1016
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cold start in serverless computing?",
+    "opts": [
+      "The delay when a function is invoked after being idle, requiring container spin-up",
+      "CPU cooling",
+      "System reboot",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Cold starts occur during initial container initialization.",
+    "id": 1017
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is AWS S3 Glacier?",
+    "opts": [
+      "A low-cost storage service for archiving and long-term backup",
+      "Fast database",
+      "VM cache",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Glacier provides cheap archive storage with slower retrieval times.",
+    "id": 1018
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud resource provisioning?",
+    "opts": [
+      "Allocating and configuring cloud services for applications",
+      "Buying cables",
+      "Writing code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Provisioning deploys VMs, networks, and databases.",
+    "id": 1019
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which concept refers to cloud resource deployment using machine-readable code?",
+    "opts": [
+      "Infrastructure as Code (IaC)",
+      "SaaS",
+      "PaaS",
+      "DevOps"
+    ],
+    "ans": 0,
+    "sol": "IaC tools (like Terraform) automate infrastructure deployment using configuration files.",
+    "id": 1020
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is dynamic scaling?",
+    "opts": [
+      "Automatically adjusting resource capacity based on real-time traffic rules",
+      "Static scheduling",
+      "Rebooting VMs",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Dynamic scaling matches capacity to actual demand logs.",
+    "id": 1021
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is shared responsibility model in cloud security?",
+    "opts": [
+      "Provider secures the cloud infrastructure; customer secures data and access configurations",
+      "Provider secures everything",
+      "Customer secures everything",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Security 'of' the cloud belongs to the host; security 'in' the cloud is the client's job.",
+    "id": 1022
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which is a major PaaS offering by Salesforce?",
+    "opts": [
+      "Heroku",
+      "AWS",
+      "Azure",
+      "Compute Engine"
+    ],
+    "ans": 0,
+    "sol": "Heroku is a popular developer Platform as a Service owned by Salesforce.",
+    "id": 1023
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a virtual private cloud (VPC)?",
+    "opts": [
+      "A private isolated network space provisioned inside a public cloud",
+      "A physical network",
+      "A private server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "VPC provides local subnets and routing inside public clouds.",
+    "id": 1024
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which database represents Azure's globally distributed multi-model database service?",
+    "opts": [
+      "Cosmos DB",
+      "SQL Server",
+      "RDS",
+      "DynamoDB"
+    ],
+    "ans": 0,
+    "sol": "Cosmos DB offers sub-10ms global replication.",
+    "id": 1025
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud compliance?",
+    "opts": [
+      "Adhering to regulatory standards (like GDPR, HIPAA) in cloud data hosting",
+      "Writing code",
+      "Buying software",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Compliance ensures hosted data satisfies national legal codes.",
+    "id": 1026
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What does edge computing do?",
+    "opts": [
+      "Processes data closer to the source/user to reduce latency and bandwidth use",
+      "Computes on edges",
+      "Uses faster CPUs",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Edge computing performs analytics locally on IoT/CDN nodes.",
+    "id": 1027
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the purpose of AWS IAM role?",
+    "opts": [
+      "To grant temporary permissions to AWS resources and services without sharing credentials",
+      "To log in users",
+      "To buy services",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "IAM roles allow secure service-to-service authentication.",
+    "id": 1028
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does the CIA Triad stand for in cybersecurity?",
+    "opts": [
+      "Confidentiality, Integrity, Availability",
+      "Computer, Internet, Access",
+      "Control, Integration, Authorization",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The CIA Triad represents the three core pillars of security.",
+    "id": 1029
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is symmetric encryption?",
+    "opts": [
+      "Encryption that uses the same key for both encryption and decryption",
+      "Encryption using two keys",
+      "Unsecure encryption",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Symmetric algorithms (like AES) use a single shared secret key.",
+    "id": 1030
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which protocol secures HTTP communication using SSL/TLS?",
+    "opts": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "SMTP"
+    ],
+    "ans": 0,
+    "sol": "HTTPS encrypts web sessions to prevent eavesdropping.",
+    "id": 1031
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is two-factor authentication (2FA)?",
+    "opts": [
+      "A security process requiring two distinct verification forms to log in",
+      "Using two passwords",
+      "Logging in twice",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "2FA requires something you know (password) and something you have (OTP).",
+    "id": 1032
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a Trojan horse in malware?",
+    "opts": [
+      "Malicious software disguised as legitimate applications",
+      "A virus script",
+      "A system folder",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Trojans trick users into installing them by appearing harmless.",
+    "id": 1033
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is social engineering?",
+    "opts": [
+      "Manipulating individuals into sharing confidential information",
+      "Programming skills",
+      "Building networks",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Social engineering exploits human trust rather than system bugs.",
+    "id": 1034
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is SQL Injection (SQLi)?",
+    "opts": [
+      "An attack vector where malicious SQL statements are injected into entry fields",
+      "A database backup",
+      "A network protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SQLi inserts queries into input boxes to bypass database authentication.",
+    "id": 1035
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does MFA stand for?",
+    "opts": [
+      "Multi-Factor Authentication",
+      "Main File Access",
+      "Multiple Force Attack",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MFA requires multiple verification proofs.",
+    "id": 1036
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a keylogger?",
+    "opts": [
+      "Malware that records keyboard keystrokes to steal passwords",
+      "Keyboard driver",
+      "Key mapper",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Keyloggers capture credentials as they are typed.",
+    "id": 1037
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is an intrusion detection system (IDS)?",
+    "opts": [
+      "A system that monitors network traffic for suspicious activity and sends alerts",
+      "A firewall",
+      "A router",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "IDS analyzes traffic patterns and alerts admins of threats.",
+    "id": 1038
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is asymmetric encryption?",
+    "opts": [
+      "Encryption that uses a public key for encryption and a private key for decryption",
+      "Encryption using one key",
+      "Unsecure encryption",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Asymmetric (like RSA) uses a mathematically linked key pair.",
+    "id": 1039
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is hashing in cybersecurity?",
+    "opts": [
+      "A one-way mathematical function transforming input to a fixed-size string",
+      "Encryption",
+      "Database index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hashing (like SHA-256) verifies data integrity (cannot be reversed).",
+    "id": 1040
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a Zero-Day vulnerability?",
+    "opts": [
+      "A software vulnerability unknown to the vendor with no patch available",
+      "A new computer",
+      "A programming error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Zero-day exploits happen before developers release a fix.",
+    "id": 1041
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Man-in-the-Middle (MITM) attack?",
+    "opts": [
+      "An attacker secretly relaying and altering communication between two parties",
+      "A slow network",
+      "A server crash",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MITM intercepts packets on unencrypted networks (like public Wi-Fi).",
+    "id": 1042
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is spyware?",
+    "opts": [
+      "Malware designed to gather data about a person or organization secretly",
+      "Antivirus",
+      "A search engine",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Spyware monitors user actions and reports back to hackers.",
+    "id": 1043
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a security patch?",
+    "opts": [
+      "A software update designed to fix vulnerabilities and bugs",
+      "A virus",
+      "A code backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Patches close discovered security vulnerabilities.",
+    "id": 1044
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does HTTPS use to encrypt data?",
+    "opts": [
+      "SSL/TLS certificates",
+      "Passwords",
+      "IP addresses",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "HTTPS uses TLS certificates to establish encrypted sessions.",
+    "id": 1045
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is brute force attack?",
+    "opts": [
+      "An attacker guessing passwords systematically until the correct one is found",
+      "A network crash",
+      "A physical break-in",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Brute force tests combinations until auth succeeds.",
+    "id": 1046
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is salting in password hashing?",
+    "opts": [
+      "Adding random data to passwords before hashing to protect against rainbow table attacks",
+      "Adding salt to food",
+      "Encrypting database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Salting ensures identical passwords yield different hashes.",
+    "id": 1047
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a vulnerability assessment?",
+    "opts": [
+      "Identifying, defining, and prioritizing vulnerabilities in systems",
+      "Installing antivirus",
+      "Writing code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Assessments list weaknesses without executing exploits.",
+    "id": 1048
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is penetration testing?",
+    "opts": [
+      "Authorized simulated cyberattacks on systems to evaluate security",
+      "Software testing",
+      "A network protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Penetration tests actively exploit vulnerabilities to test defense resilience.",
+    "id": 1049
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a botnet?",
+    "opts": [
+      "A network of hijacked computers controlled remotely to perform attacks",
+      "A database",
+      "A search engine",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Botnets are used to execute DDoS attacks or spam campaigns.",
+    "id": 1050
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does WPA3 stand for in Wi-Fi security?",
+    "opts": [
+      "Wi-Fi Protected Access 3",
+      "Wireless Program Access 3",
+      "Wi-Fi Public Access 3",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "WPA3 is the latest security protocol for wireless networks.",
+    "id": 1051
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Cross-Site Request Forgery (CSRF)?",
+    "opts": [
+      "An attack forcing users to execute unwanted actions on trusted sites where they are authenticated",
+      "A CSS layout",
+      "A server crash",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CSRF tricks browsers into executing state-changing requests using active cookies.",
+    "id": 1052
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a digital signature?",
+    "opts": [
+      "A mathematical scheme verifying the authenticity and integrity of digital messages",
+      "A scanned signature",
+      "A software key",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Digital signatures combine hashing and asymmetric keys to prove authorship.",
+    "id": 1053
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does SSL stand for?",
+    "opts": [
+      "Secure Sockets Layer",
+      "Simple Security Layer",
+      "System Security Layer",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SSL is the predecessor of TLS, encrypting network links.",
+    "id": 1054
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is data exfiltration?",
+    "opts": [
+      "Unauthorized transfer of data from a computer or server",
+      "Deleting data",
+      "Encrypting data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Exfiltration is the theft of corporate data assets.",
+    "id": 1055
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a honey pot in cybersecurity?",
+    "opts": [
+      "A decoy system set up to attract and analyze hacker attacks",
+      "A secure server",
+      "A password manager",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Honeypots lure attackers to study their tools and protect real servers.",
+    "id": 1056
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is privilege escalation?",
+    "opts": [
+      "An attacker gaining elevated access rights to resources beyond their authorization",
+      "A software update",
+      "A network protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Privilege escalation hacks administrator accounts from standard accounts.",
+    "id": 1057
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is endpoint security?",
+    "opts": [
+      "Securing individual devices (laptops, phones) connected to a network",
+      "Securing routers",
+      "Securing databases",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Endpoint security protects client machines from hosting malware.",
+    "id": 1058
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does CVE stand for in vulnerabilities?",
+    "opts": [
+      "Common Vulnerabilities and Exposures",
+      "Computer Virus Entry",
+      "Common Virus Error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CVE is the dictionary of public cybersecurity vulnerabilities.",
+    "id": 1059
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a buffer overflow?",
+    "opts": [
+      "When a program writes more data to a buffer than it can hold, overwriting adjacent memory",
+      "A database error",
+      "A network delay",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Buffer overflows can overwrite instruction pointers to run malicious code.",
+    "id": 1060
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is social engineering tailgating?",
+    "opts": [
+      "An unauthorized person following an authorized person into a secure physical area",
+      "A network hack",
+      "A software bug",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Tailgating bypasses physical door locks by walking behind staff.",
+    "id": 1061
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is access control?",
+    "opts": [
+      "Restricting access to resources based on user identity and privileges",
+      "A router protocol",
+      "A backup plan",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Access control lists (ACLs) enforce files permission rules.",
+    "id": 1062
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a rootkit?",
+    "opts": [
+      "A collection of malware designed to gain administrative control while hiding its presence",
+      "A boot file",
+      "A system tool",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Rootkits modify kernel code to hide processes from antivirus tools.",
+    "id": 1063
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is DNS spoofing?",
+    "opts": [
+      "Altering DNS records to redirect users to malicious websites",
+      "A DNS crash",
+      "A network protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Spoofing poisons DNS caches to serve fake pages.",
+    "id": 1064
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is data masking?",
+    "opts": [
+      "Hiding original data with modified content (e.g. asterisks on credit cards)",
+      "Data deletion",
+      "Data encryption",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Masking redacts sensitive fields for developers or customer support.",
+    "id": 1065
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is principal of least privilege?",
+    "opts": [
+      "Giving users only the minimum access levels necessary to perform their jobs",
+      "Giving full access",
+      "Giving no access",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Least privilege limits damage from compromised accounts.",
+    "id": 1066
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is an air-gapped system?",
+    "opts": [
+      "A computer physically isolated from unsecured networks and the internet",
+      "A cooled system",
+      "A cloud server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Air-gapping prevents remote hacking by omitting network cards.",
+    "id": 1067
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does DLP stand for in security?",
+    "opts": [
+      "Data Loss Prevention",
+      "Digital Link Protocol",
+      "Database Lock Program",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DLP systems monitor networks to prevent data leaks.",
+    "id": 1068
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a security audit?",
+    "opts": [
+      "A systematic evaluation of an organization's security policies and systems",
+      "A code compilation",
+      "A database backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Audits measure actual system configurations against compliance baselines.",
+    "id": 1069
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is malware obfuscation?",
+    "opts": [
+      "Hiding malware code signatures to evade detection by antivirus scanners",
+      "A coding pattern",
+      "Deleting files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Obfuscation uses compression or encoding to mask malicious signatures.",
+    "id": 1070
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a digital certificate?",
+    "opts": [
+      "An electronic document proving ownership of a public key for TLS",
+      "A software license",
+      "A password file",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Certificates link public keys to domain names via Certificate Authorities (CAs).",
+    "id": 1071
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which hashing algorithm is considered cryptographically broken and unsafe?",
+    "opts": [
+      "MD5",
+      "SHA-256",
+      "SHA-3",
+      "bcrypt"
+    ],
+    "ans": 0,
+    "sol": "MD5 is vulnerable to collision attacks and is no longer secure.",
+    "id": 1072
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the primary difference between Supervised and Unsupervised Learning?",
+    "opts": [
+      "Supervised learning uses labeled data; unsupervised learning uses unlabeled data",
+      "Supervised learning is faster",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Supervised learning maps inputs to known targets; unsupervised learns hidden structures.",
+    "id": 1073
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is overfitting in machine learning?",
+    "opts": [
+      "When a model performs exceptionally well on training data but poorly on unseen test data",
+      "When model is too simple",
+      "Too much data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Overfitting memorizes noise and fails to generalize.",
+    "id": 1074
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which algorithm is used for classifying data by finding the hyperplane that maximizes margin?",
+    "opts": [
+      "Support Vector Machine (SVM)",
+      "Linear Regression",
+      "K-Means",
+      "Apriori"
+    ],
+    "ans": 0,
+    "sol": "SVM separates classes using optimal margins.",
+    "id": 1075
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the purpose of an activation function in neural networks?",
+    "opts": [
+      "To introduce non-linearity into the network",
+      "To initialize weights",
+      "To compute error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Non-linearity allows neural networks to learn complex decision boundaries.",
+    "id": 1076
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is gradient descent?",
+    "opts": [
+      "An optimization algorithm used to minimize the loss function by updating weights",
+      "A classification algorithm",
+      "A loss metric",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Gradient descent calculates slopes to step weights toward minimal error.",
+    "id": 1077
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the learning rate in optimization?",
+    "opts": [
+      "The step size taken towards the minimum during gradient descent",
+      "The model speed",
+      "The data intake rate",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Learning rate controls weight adjustment sizes; too large overshoots, too small is slow.",
+    "id": 1078
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does CNN stand for in computer vision?",
+    "opts": [
+      "Convolutional Neural Network",
+      "Computer Network Node",
+      "Central Neural Node",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CNNs use convolution filters to extract image features.",
+    "id": 1079
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a training set vs validation set?",
+    "opts": [
+      "Training set fits the model; validation set tunes hyperparameters and checks overfitting",
+      "Both are same",
+      "Validation set is for final test",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Validation sets act as intermediate benchmarks during training.",
+    "id": 1080
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which machine learning paradigm uses rewards and penalties to train agents?",
+    "opts": [
+      "Reinforcement Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Reinforcement learning teaches agents to maximize rewards in environments.",
+    "id": 1081
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does NLP stand for?",
+    "opts": [
+      "Natural Language Processing",
+      "New Language Program",
+      "Network Link Protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "NLP enables computers to read, analyze, and generate human languages.",
+    "id": 1082
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the bias-variance tradeoff?",
+    "opts": [
+      "The tension between model underfitting (high bias) and overfitting (high variance)",
+      "A programming loop",
+      "A memory leak",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Minimizing total error requires balancing complexity (variance) and assumptions (bias).",
+    "id": 1083
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which clustering algorithm partitions data into K distinct clusters based on centroids?",
+    "opts": [
+      "K-Means",
+      "KNN",
+      "Decision Tree",
+      "Random Forest"
+    ],
+    "ans": 0,
+    "sol": "K-Means groups points by minimizing distances to K centroids.",
+    "id": 1084
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a neural network hidden layer?",
+    "opts": [
+      "A layer of neurons between the input and output layers that extracts features",
+      "A hidden database",
+      "An encrypted file",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hidden layers perform mathematical transformations to extract representation hierarchies.",
+    "id": 1085
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which algorithm is a popular ensemble method combining multiple decision trees?",
+    "opts": [
+      "Random Forest",
+      "Linear Regression",
+      "SVM",
+      "Naive Bayes"
+    ],
+    "ans": 0,
+    "sol": "Random Forest aggregates predictions from diverse decision trees.",
+    "id": 1086
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is target leakage in ML?",
+    "opts": [
+      "When training data contains information about the target that wouldn't be available at runtime",
+      "A data leak",
+      "A network hack",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Target leakage inflates training scores but causes poor performance in production.",
+    "id": 1087
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is precision in classification metrics?",
+    "opts": [
+      "True Positives divided by total predicted positives",
+      "True Positives divided by actual positives",
+      "Accuracy",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Precision measures the accuracy of positive predictions (minimizes false positives).",
+    "id": 1088
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is recall (sensitivity) in metrics?",
+    "opts": [
+      "True Positives divided by total actual positives",
+      "True Positives divided by predicted positives",
+      "Accuracy",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Recall measures the model's ability to find all positive cases (minimizes false negatives).",
+    "id": 1089
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the F1-score?",
+    "opts": [
+      "The harmonic mean of precision and recall",
+      "The sum of weights",
+      "A data index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "F1-score provides a single metric balancing precision and recall.",
+    "id": 1090
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does RNN stand for in sequence modeling?",
+    "opts": [
+      "Recurrent Neural Network",
+      "Random Network Node",
+      "Recurrent Node Network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "RNNs use feedback loops to process sequential data (like text or time series).",
+    "id": 1091
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a confusion matrix?",
+    "opts": [
+      "A table summarizing classification model performance vs actual labels",
+      "A complex algorithm",
+      "A math error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Confusion matrices break down correct and incorrect predictions per class.",
+    "id": 1092
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the purpose of regularization (like L1/L2)?",
+    "opts": [
+      "To prevent overfitting by adding a penalty to the loss function based on weights size",
+      "To speed up training",
+      "To format data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Regularization discourages large weights to simplify model boundaries.",
+    "id": 1093
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is Naive Bayes classifier based on?",
+    "opts": [
+      "Bayes' Theorem with the assumption of independence between features",
+      "Linear algebra",
+      "Decision trees",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Naive Bayes calculates conditional class probabilities assuming feature independence.",
+    "id": 1094
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is data normalization in ML?",
+    "opts": [
+      "Scaling numeric features to a standard range (like 0 to 1) to aid optimizer convergence",
+      "Deleting duplicate rows",
+      "Adding columns",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Normalization prevents features with large magnitudes from dominating gradients.",
+    "id": 1095
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is hyperparameter tuning?",
+    "opts": [
+      "Finding the optimal configuration settings (like learning rate) for training a model",
+      "Adjusting weights",
+      "Formatting data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Tuning searches for training settings that yield the lowest validation error.",
+    "id": 1096
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is transfer learning?",
+    "opts": [
+      "Reusing a pre-trained model on a new related task",
+      "Moving data to a server",
+      "Changing ML algorithms",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Transfer learning saves time by utilizing representations learned on massive datasets.",
+    "id": 1097
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does epoch mean in ML training?",
+    "opts": [
+      "One complete pass of the entire training dataset through the neural network",
+      "A single training step",
+      "A time stamp",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "An epoch represents exposing the optimizer to the full training set once.",
+    "id": 1098
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is batch size?",
+    "opts": [
+      "The number of training samples processed in one forward/backward pass",
+      "The total data size",
+      "The speed of execution",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Batch sizes balance memory limits and gradient updates.",
+    "id": 1099
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which function represents the standard loss metric for linear regression?",
+    "opts": [
+      "Mean Squared Error (MSE)",
+      "Cross-Entropy Loss",
+      "Hinge Loss",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MSE penalizes squared errors between predictions and actual targets.",
+    "id": 1100
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does underfitting mean?",
+    "opts": [
+      "The model is too simple to capture the underlying pattern of the data",
+      "The model memorizes noise",
+      "The data is too small",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Underfitting results in poor performance on both training and test data.",
+    "id": 1101
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which activation function outputs values in the range of 0 to 1?",
+    "opts": [
+      "Sigmoid",
+      "ReLU",
+      "Tanh",
+      "Leaky ReLU"
+    ],
+    "ans": 0,
+    "sol": "Sigmoid scales values into a probability range (0 to 1).",
+    "id": 1102
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which activation function is defined as f(x) = max(0, x)?",
+    "opts": [
+      "ReLU (Rectified Linear Unit)",
+      "Sigmoid",
+      "Tanh",
+      "Softmax"
+    ],
+    "ans": 0,
+    "sol": "ReLU outputs the input directly if positive; otherwise, it outputs zero.",
+    "id": 1103
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is cross-validation?",
+    "opts": [
+      "A resampling method that uses different portions of data to train and test a model on iteration",
+      "Checking data errors",
+      "Running code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "K-fold cross-validation averages model evaluations to get robust accuracy scores.",
+    "id": 1104
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is unsupervised anomaly detection?",
+    "opts": [
+      "Identifying unusual data points without pre-existing labels",
+      "Classifying items",
+      "Supervised learning",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Anomaly detectors find outliers by mapping density profiles.",
+    "id": 1105
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a decision tree?",
+    "opts": [
+      "A flowchart-like tree structure where internal nodes test attributes and leaves represent classes",
+      "A directory structure",
+      "A binary search tree",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Decision trees partition features using information gain or Gini impurity.",
+    "id": 1106
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does SVM stand for?",
+    "opts": [
+      "Support Vector Machine",
+      "System Variable Manager",
+      "Support Variable Mode",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SVM = Support Vector Machine.",
+    "id": 1107
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is Gini Impurity?",
+    "opts": [
+      "A measure of how often a randomly chosen element would be incorrectly labeled",
+      "A database error",
+      "A weight parameter",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Decision trees use Gini impurity to decide optimal splits.",
+    "id": 1108
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is backpropagation?",
+    "opts": [
+      "An algorithm that calculates gradients of the loss function to update neural network weights",
+      "Moving backward",
+      "Formatting logs",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Backprop applies the calculus chain rule to calculate weight gradients.",
+    "id": 1109
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does AGI stand for?",
+    "opts": [
+      "Artificial General Intelligence",
+      "All General Info",
+      "Artificial Google Info",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "AGI matches human intelligence capabilities across diverse tasks.",
+    "id": 1110
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a Chatbot?",
+    "opts": [
+      "An AI program designed to simulate human conversation",
+      "A computer server",
+      "A robot",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Chatbots parse text using NLP to respond to user messages.",
+    "id": 1111
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is tokenization in NLP?",
+    "opts": [
+      "Splitting a text string into individual words or subwords (tokens)",
+      "Adding security keys",
+      "Encrypting database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Tokenization converts sentences into indexable units for models.",
+    "id": 1112
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does GPT stand for in Large Language Models?",
+    "opts": [
+      "Generative Pre-trained Transformer",
+      "General Program Tool",
+      "Graphical Process Utility",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "GPT = Generative Pre-trained Transformer.",
+    "id": 1113
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which network architecture introduced self-attention mechanisms, dominating NLP?",
+    "opts": [
+      "Transformer",
+      "CNN",
+      "RNN",
+      "Perceptron"
+    ],
+    "ans": 0,
+    "sol": "Transformers process sequences in parallel using self-attention.",
+    "id": 1114
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a hyperparameter?",
+    "opts": [
+      "A configuration setting specified before training begins, not learned by the model",
+      "A learned weight",
+      "A data row",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hyperparameters (like layer counts) control the training process itself.",
+    "id": 1115
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a parameter in ML?",
+    "opts": [
+      "A variable internal to the model (like weights and biases) learned from training data",
+      "A configuration setting",
+      "A database query",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Parameters are modified by the optimizer during training.",
+    "id": 1116
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is logistic regression used for?",
+    "opts": [
+      "Binary classification problems",
+      "Predicting continuous stock prices",
+      "Clustering data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Logistic regression outputs class probabilities (0 or 1) using the sigmoid function.",
+    "id": 1117
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is standard deviation?",
+    "opts": [
+      "A measure of the amount of variation or dispersion of a set of values",
+      "An average score",
+      "A standard error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Low standard deviation indicates data points cluster close to the mean.",
+    "id": 1118
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does PCA stand for in dimensionality reduction?",
+    "opts": [
+      "Principal Component Analysis",
+      "Program Connection Access",
+      "Private Cloud Association",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PCA projects features onto orthogonal axes to reduce dimensions.",
+    "id": 1119
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is reinforcement learning reward?",
+    "opts": [
+      "A scalar feedback signal indicating how well the agent performed an action",
+      "A cash prize",
+      "A programming loop",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Agents optimize actions to maximize the cumulative sum of rewards.",
+    "id": 1120
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is an epoch in training?",
+    "opts": [
+      "One full cycle through the training data",
+      "A single weight update",
+      "A compilation time",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Training for too many epochs can lead to overfitting.",
+    "id": 1121
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a Single Point of Failure (SPOF)?",
+    "opts": [
+      "A component whose failure halts the entire system",
+      "A bug in code",
+      "A slow network",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SPOFs occur when there is no redundancy for critical nodes.",
+    "id": 1122
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a CDN (Content Delivery Network)?",
+    "opts": [
+      "A network of geographically distributed servers caching static assets near users",
+      "A network card",
+      "A router protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CDNs accelerate load times by serving files from edge servers.",
+    "id": 1123
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a message queue?",
+    "opts": [
+      "An asynchronous communication system that decouples services by storing messages in a queue",
+      "Email folder",
+      "A programming loop",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Message queues (like RabbitMQ) buffer tasks between publisher and subscriber services.",
+    "id": 1124
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a load balancer?",
+    "opts": [
+      "A device or software distributing network requests across a cluster of servers",
+      "A CPU regulator",
+      "RAM balancer",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Load balancers prevent server overloads and manage failovers.",
+    "id": 1125
+  },
+  {
+    "cat": "System Design",
+    "q": "What does SLA stand for in system engineering?",
+    "opts": [
+      "Service Level Agreement (defines commitment metrics like uptime)",
+      "System Level Access",
+      "Software License Agreement",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SLA defines legal uptime standards.",
+    "id": 1126
+  },
+  {
+    "cat": "System Design",
+    "q": "What is redundancy in system design?",
+    "opts": [
+      "Duplicating critical components so backups take over if one fails",
+      "Unneeded files",
+      "Extra variables",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Redundancy prevents service outages from single hardware faults.",
+    "id": 1127
+  },
+  {
+    "cat": "System Design",
+    "q": "What is monolithic architecture?",
+    "opts": [
+      "An application where all components are compiled and run together as a single service",
+      "A stone design",
+      "A database index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Monoliths are simple to deploy initially but become difficult to scale and maintain.",
+    "id": 1128
+  },
+  {
+    "cat": "System Design",
+    "q": "What is an API Gateway?",
+    "opts": [
+      "A single entry point that manages, routes, and secures client requests to microservices",
+      "A firewall",
+      "A router",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "API Gateways handle routing, authentication, and rate limiting.",
+    "id": 1129
+  },
+  {
+    "cat": "System Design",
+    "q": "What is rate limiting?",
+    "opts": [
+      "Restricting the number of requests a user can make to an API in a given timeframe",
+      "Slow internet",
+      "CPU cap",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Rate limiting prevents DDoS attacks and API resource abuse.",
+    "id": 1130
+  },
+  {
+    "cat": "System Design",
+    "q": "What is consistent hashing?",
+    "opts": [
+      "A hashing scheme that minimizes key remapping when hashing servers are added or removed",
+      "Standard hashing",
+      "Database sorting",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Consistent hashing is crucial for scaling distributed caches.",
+    "id": 1131
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a reverse proxy?",
+    "opts": [
+      "A proxy server protecting backend servers by forwarding client requests to them",
+      "A client proxy",
+      "A firewall",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Reverse proxies handle SSL termination, caching, and load balancing.",
+    "id": 1132
+  },
+  {
+    "cat": "System Design",
+    "q": "What is data replication?",
+    "opts": [
+      "Copying databases across multiple servers to ensure high availability",
+      "Deleting data",
+      "Compressing databases",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Replication protects databases against host node failures.",
+    "id": 1133
+  },
+  {
+    "cat": "System Design",
+    "q": "What does high availability (HA) mean?",
+    "opts": [
+      "A system design ensuring operational uptime for a high percentage of time (e.g. 99.9%)",
+      "A fast system",
+      "A system using cloud",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "HA systems use redundant clusters to survive outages.",
+    "id": 1134
+  },
+  {
+    "cat": "System Design",
+    "q": "What is the CAP Theorem?",
+    "opts": [
+      "In a distributed system, you can only guarantee two of Consistency, Availability, Partition Tolerance",
+      "Cost, Access, Power",
+      "CPU, Allocation, Port",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Distributed systems must handle network partitions, forcing a choice between consistency or availability.",
+    "id": 1135
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database replication lag?",
+    "opts": [
+      "The delay before write updates propagate from primary database to read replicas",
+      "A slow query",
+      "Network cap",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Lag causes temporary inconsistent stale reads from replicas.",
+    "id": 1136
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a forward proxy?",
+    "opts": [
+      "A proxy server that sits in front of clients to filter and forward outgoing requests",
+      "A reverse proxy",
+      "A firewall",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Forward proxies hide client IPs and filter network access.",
+    "id": 1137
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database index?",
+    "opts": [
+      "A data structure that speeds up SELECT queries at the cost of additional write time",
+      "A table row",
+      "The primary key",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Indexes act as search lookup directories.",
+    "id": 1138
+  },
+  {
+    "cat": "System Design",
+    "q": "What is latency vs throughput?",
+    "opts": [
+      "Latency is delay time; throughput is the volume of data processed per second",
+      "Both are same",
+      "Latency is speed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "High throughput systems process huge volumes; low latency systems respond instantly.",
+    "id": 1139
+  },
+  {
+    "cat": "System Design",
+    "q": "What is DNS routing?",
+    "opts": [
+      "Directing user requests to specific servers based on domain name queries",
+      "IP mapping",
+      "Vite config",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DNS routing can resolve requests to the closest geographic data center.",
+    "id": 1140
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database normalization?",
+    "opts": [
+      "Structuring relational databases to minimize redundancy",
+      "Creating backups",
+      "Encrypting data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Normalization splits tables to avoid duplicate records.",
+    "id": 1141
+  },
+  {
+    "cat": "System Design",
+    "q": "What is SQL vs NoSQL?",
+    "opts": [
+      "SQL is relational with schemas; NoSQL is non-relational with dynamic formats",
+      "SQL is fast; NoSQL is slow",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SQL guarantees ACID; NoSQL scales horizontally for massive semi-structured feeds.",
+    "id": 1142
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a heartbeat in distributed systems?",
+    "opts": [
+      "Periodic signals sent between nodes to monitor health and availability",
+      "A heart rate",
+      "A network error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Heartbeats trigger failovers if a node stops responding.",
+    "id": 1143
+  },
+  {
+    "cat": "System Design",
+    "q": "What is DNS caching?",
+    "opts": [
+      "Storing IP lookup results in local memory to speed up domain resolution",
+      "Disk backup",
+      "Memory cleaning",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DNS caching avoids repeating network queries to DNS servers.",
+    "id": 1144
+  },
+  {
+    "cat": "System Design",
+    "q": "What is the role of ZooKeeper in distributed systems?",
+    "opts": [
+      "Coordinating configuration, synchronization, and naming services across clusters",
+      "A database",
+      "A search engine",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ZooKeeper maintains cluster state and leader elections.",
+    "id": 1145
+  },
+  {
+    "cat": "System Design",
+    "q": "What is horizontal database partitioning?",
+    "opts": [
+      "Splitting table rows across multiple tables/databases (sharding)",
+      "Splitting columns",
+      "Deleting tables",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Horizontal partitioning keeps tables smaller and faster.",
+    "id": 1146
+  },
+  {
+    "cat": "System Design",
+    "q": "What is vertical database partitioning?",
+    "opts": [
+      "Splitting table columns into different tables to optimize disk access",
+      "Splitting rows",
+      "Adding indexes",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Vertical partitioning separates frequently read columns from large blob columns.",
+    "id": 1147
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a cache eviction policy?",
+    "opts": [
+      "Rules deciding which items to discard when the cache is full (like LRU)",
+      "Deleting files",
+      "RAM cleanup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "LRU (Least Recently Used) is the most common eviction policy.",
+    "id": 1148
+  },
+  {
+    "cat": "System Design",
+    "q": "What is the difference between optimistic and pessimistic locking?",
+    "opts": [
+      "Optimistic locking checks for conflicts before committing; pessimistic locking locks resources during execution",
+      "Both are same",
+      "Optimistic locking is slower",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Optimistic locking assumes conflicts are rare, boosting concurrent speeds.",
+    "id": 1149
+  },
+  {
+    "cat": "System Design",
+    "q": "What is dual-write problem in system design?",
+    "opts": [
+      "When updating two separate data stores (like DB and Cache) fails halfway, causing inconsistency",
+      "Writing twice",
+      "A slow query",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Dual-writes are resolved using transactional outbox patterns or message queues.",
+    "id": 1150
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a write-through cache?",
+    "opts": [
+      "Data is written to the cache and the underlying database simultaneously",
+      "Writing to DB only",
+      "Writing to cache only",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Write-through caches prevent stale cache data at the cost of write latency.",
+    "id": 1151
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a write-back (write-behind) cache?",
+    "opts": [
+      "Data is written to the cache immediately, and synced to the database asynchronously later",
+      "Writing to DB first",
+      "Unsecure cache",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Write-back caches offer high write throughput but risk data loss on server crashes.",
+    "id": 1152
+  },
+  {
+    "cat": "System Design",
+    "q": "What does PACELC Theorem expand CAP on?",
+    "opts": [
+      "If there is a Partition, choose Availability or Consistency; Else, choose Latency or Consistency",
+      "Power, Allocation, Cost",
+      "CPU, Access, Link",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PACELC maps database trade-offs during normal operations (latency vs consistency).",
+    "id": 1153
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database replication (Leader-Follower)?",
+    "opts": [
+      "One primary database handles writes and replicates data to multiple read-only follower databases",
+      "Multi-master",
+      "No-leader",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Leader-follower setups scale read operations horizontally.",
+    "id": 1154
+  },
+  {
+    "cat": "System Design",
+    "q": "What is load testing?",
+    "opts": [
+      "Simulating high user request volumes to measure system limit capacities",
+      "Testing code bugs",
+      "Checking compiling",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Load tests identify infrastructure bottleneck thresholds.",
+    "id": 1155
+  },
+  {
+    "cat": "System Design",
+    "q": "What is an edge node in CDNs?",
+    "opts": [
+      "A server positioned at the edge of the network close to users to deliver cached files",
+      "The main server",
+      "A database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Edge nodes reduce data transit distances.",
+    "id": 1156
+  },
+  {
+    "cat": "System Design",
+    "q": "What is session persistence (sticky sessions)?",
+    "opts": [
+      "Routing all requests from a client to the same backend server instance for their session",
+      "Persistent cookies",
+      "Fast databases",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Sticky sessions simplify stateful hosting but complicate load balancing.",
+    "id": 1157
+  },
+  {
+    "cat": "System Design",
+    "q": "What is circuit breaker pattern?",
+    "opts": [
+      "Temporarily halting requests to a failing remote service to prevent system-wide cascading crashes",
+      "A hardware fuse",
+      "A code loop",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Circuit breakers transition to an 'open' state to return immediate fallback errors.",
+    "id": 1158
+  },
+  {
+    "cat": "System Design",
+    "q": "What is consistent hashing virtual nodes?",
+    "opts": [
+      "Tokens mapping physical servers to multiple positions on the hash ring to balance distribution",
+      "Virtual machines",
+      "Fake servers",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Virtual nodes resolve imbalances on hash rings.",
+    "id": 1159
+  },
+  {
+    "cat": "System Design",
+    "q": "What is gossip protocol?",
+    "opts": [
+      "A decentralized method for nodes to share cluster state and membership status",
+      "Chatting servers",
+      "A network error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Gossip protocols scale peer-to-peer status tracking.",
+    "id": 1160
+  },
+  {
+    "cat": "System Design",
+    "q": "What is an outbox pattern?",
+    "opts": [
+      "Storing events in a database table inside the transaction, then publishing them asynchronously",
+      "Email folder",
+      "A code block",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Outbox patterns guarantee reliable event publishing in microservices.",
+    "id": 1161
+  },
+  {
+    "cat": "System Design",
+    "q": "What is API rate limit HTTP header?",
+    "opts": [
+      "X-RateLimit-Limit / Remaining",
+      "HTTP host",
+      "Cookie",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Headers inform clients of their remaining request quota.",
+    "id": 1162
+  },
+  {
+    "cat": "System Design",
+    "q": "What is service discovery in microservices?",
+    "opts": [
+      "Automatically detecting network locations of service instances dynamically",
+      "A search engine",
+      "A network route",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Service discovery registers and tracks dynamic IPs (like Consul).",
+    "id": 1163
+  },
+  {
+    "cat": "System Design",
+    "q": "What is distributed tracing?",
+    "opts": [
+      "Tracking the flow of a request as it travels across multiple microservices",
+      "Logging errors",
+      "Debugging code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Tracing tools (like Jaeger, Zipkin) help debug latency bottlenecks.",
+    "id": 1164
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is compilation linking?",
+    "opts": [
+      "Combining object files into a single executable binary",
+      "Writing code",
+      "Running code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Linkers resolve references across different source code files.",
+    "id": 1165
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the memory layout stack segment used for?",
+    "opts": [
+      "Storing local variables and tracking function call return addresses",
+      "Storing dynamic memory",
+      "Storing global variables",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stack frames grow and shrink automatically with execution.",
+    "id": 1166
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is an IDE?",
+    "opts": [
+      "Integrated Development Environment (code editor, compiler, and debugger in one)",
+      "Design utility",
+      "Operating system",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "IDEs bundle code creation and testing tools.",
+    "id": 1167
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Git commit?",
+    "opts": [
+      "Saving changes to the local repository history",
+      "Uploading code to remote server",
+      "Deleting files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Committing registers changes in local database history.",
+    "id": 1168
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is compile-time vs runtime?",
+    "opts": [
+      "Compile-time is code translation; runtime is program execution",
+      "Both are same",
+      "Compile-time is faster",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Syntax checking happens at compile-time; memory leaks happen at runtime.",
+    "id": 1169
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a compiler?",
+    "opts": [
+      "Translates high-level source code into machine code binaries at once",
+      "Runs code line-by-line",
+      "Formats text",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Compilers build standalone executable binaries.",
+    "id": 1170
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is an interpreter?",
+    "opts": [
+      "Executes code directly line-by-line without compiling first",
+      "A compiler",
+      "An assembler",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Interpreters translate instructions on the fly.",
+    "id": 1171
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Git push?",
+    "opts": [
+      "Uploading local commits to a remote repository server",
+      "Saving code",
+      "Creating a pull request",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Push updates remote branch histories.",
+    "id": 1172
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does SDLC stand for?",
+    "opts": [
+      "Software Development Life Cycle",
+      "System Design Life Cycle",
+      "Standard Development Loop",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SDLC represents project phases from design to maintenance.",
+    "id": 1173
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which is a compiled language?",
+    "opts": [
+      "C++",
+      "JavaScript",
+      "Python",
+      "PHP"
+    ],
+    "ans": 0,
+    "sol": "C++ compiles directly to machine assembly instructions.",
+    "id": 1174
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which is an interpreted language?",
+    "opts": [
+      "Python",
+      "C",
+      "C++",
+      "Go"
+    ],
+    "ans": 0,
+    "sol": "Python is interpreted dynamically via VM bytecode execution.",
+    "id": 1175
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a software bug?",
+    "opts": [
+      "An error or flaw in a program that causes it to behave unexpectedly",
+      "A computer hardware virus",
+      "A network error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Bugs represent programmatic errors violating requirements.",
+    "id": 1176
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Git branch?",
+    "opts": [
+      "A parallel version of a repository, allowing developers to work independently",
+      "A code copy",
+      "A remote server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Branches isolate feature changes until merged.",
+    "id": 1177
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a pull request (PR) in Git?",
+    "opts": [
+      "A proposal to merge branch changes into the main codebase for review",
+      "A code download",
+      "Deleting a branch",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PRs allow teams to review and comment on code diffs.",
+    "id": 1178
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a Scrum Product Backlog?",
+    "opts": [
+      "A prioritized list of work items, features, and fixes for a software product",
+      "Archived files",
+      "Bug logs only",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The backlog is the single source of truth for developer tasks.",
+    "id": 1179
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Scrum Sprint?",
+    "opts": [
+      "A fixed-time box (usually 1-4 weeks) during which a team completes specific work",
+      "A quick meeting",
+      "A code compilation",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Sprints group task goals into short milestones.",
+    "id": 1180
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Daily Standup?",
+    "opts": [
+      "A short daily team meeting to synchronize activities and flag blockers",
+      "A coding session",
+      "A code review",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Standups align teams on daily progress.",
+    "id": 1181
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is retrospective meeting in Scrum?",
+    "opts": [
+      "A review held at the end of a sprint to reflect and improve team processes",
+      "Sprint planning",
+      "Code review",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Retrospectives identify process improvements for future sprints.",
+    "id": 1182
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a burn-down chart?",
+    "opts": [
+      "A chart showing remaining work vs time in a sprint",
+      "CPU temperatures",
+      "Database size",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Burn-downs track whether a team is on course to finish sprint backlogs.",
+    "id": 1183
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which is NOT an Agile framework?",
+    "opts": [
+      "Waterfall",
+      "Scrum",
+      "Kanban",
+      "XP"
+    ],
+    "ans": 0,
+    "sol": "Waterfall is a traditional sequential model, not Agile.",
+    "id": 1184
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the main purpose of Kanban?",
+    "opts": [
+      "To visualize work, limit work-in-progress, and maximize efficiency",
+      "Sprint planning",
+      "Story points calculation",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Kanban boards track workflow states visually.",
+    "id": 1185
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is team velocity in Scrum?",
+    "opts": [
+      "The amount of work a team completes in a typical sprint (measured in points)",
+      "CPU speed",
+      "Network speed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Velocity helps project managers estimate future release milestones.",
+    "id": 1186
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a software design pattern?",
+    "opts": [
+      "A reusable solution to a commonly occurring problem in software design",
+      "A template style",
+      "A file layout",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Patterns (like Singleton, Observer) standardize structural designs.",
+    "id": 1187
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the Singleton design pattern?",
+    "opts": [
+      "A pattern restricting a class to a single instance with global access",
+      "A simple class",
+      "A dynamic class",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Singletons ensure a class coordinates actions across one instantiation.",
+    "id": 1188
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the purpose of the MVC architecture?",
+    "opts": [
+      "Separating applications into Model (data), View (UI), and Controller (logic)",
+      "Speeding up database",
+      "Compiling code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MVC decouples data structures from visual representations.",
+    "id": 1189
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is open-source software?",
+    "opts": [
+      "Software with source code that anyone can inspect, modify, and enhance",
+      "Free software only",
+      "Online software",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Open-source licenses allow community modifications.",
+    "id": 1190
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the difference between Git and GitHub?",
+    "opts": [
+      "Git is the version control tool; GitHub is a hosting service for Git repositories",
+      "Both are same",
+      "GitHub is the tool; Git is the hosting service",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Git runs locally on command lines; GitHub hosts repositories online.",
+    "id": 1191
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a Git commit hash?",
+    "opts": [
+      "A unique SHA-1 identifier for a specific commit in repository history",
+      "A password",
+      "A file name",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hashes uniquely address repository states.",
+    "id": 1192
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a merge conflict in Git?",
+    "opts": [
+      "When changes from different branches clash in the same lines, requiring manual resolution",
+      "A system crash",
+      "A compile error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Conflict markers highlight lines that need developer decisions to merge.",
+    "id": 1193
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Git rebase?",
+    "opts": [
+      "Reapplying commits on top of another base tip to maintain a clean linear history",
+      "Deleting history",
+      "Pushed code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Rebase rewrites commit history to linearize branch developments.",
+    "id": 1194
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is white-box testing?",
+    "opts": [
+      "Testing internal code structures, logic, and paths with access to source code",
+      "Black-box testing",
+      "Testing light mode",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "White-box testing checks statement coverages and loops logic.",
+    "id": 1195
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does QA stand for?",
+    "opts": [
+      "Quality Assurance (processes ensuring software meets quality standards)",
+      "Query Access",
+      "Quality Assembly",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "QA oversees testing processes and product consistency.",
+    "id": 1196
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a software release candidate (RC)?",
+    "opts": [
+      "A version of software that is practically ready for release unless bugs are found",
+      "A developer applicant",
+      "A software patch",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "RC versions undergo final checks before production releases.",
+    "id": 1197
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the memory layout heap segment used for?",
+    "opts": [
+      "Dynamic memory allocation at runtime (manually managed by developer or garbage collector)",
+      "Local variables",
+      "Global constants",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Heaps allocate flexible runtime memory blocks.",
+    "id": 1198
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does DRY stand for in coding?",
+    "opts": [
+      "Don't Repeat Yourself",
+      "Do Repeat Yesterday",
+      "Dynamic Run Yearly",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DRY encourages abstraction to avoid duplicate copy-paste blocks.",
+    "id": 1199
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does KISS stand for in programming?",
+    "opts": [
+      "Keep It Simple, Stupid",
+      "Keep It Safe, Secure",
+      "Kernel Input System Service",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "KISS prioritizes simple, readable designs over complex ones.",
+    "id": 1200
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does YAGNI stand for?",
+    "opts": [
+      "You Aren't Gonna Need It",
+      "Your App Goes Network Internal",
+      "Yield All Global Nodes Immediately",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "YAGNI advises against writing code for future hypothetical requirements.",
+    "id": 1201
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a code review?",
+    "opts": [
+      "Peer examination of source code to find bugs, ensure style, and share knowledge",
+      "Compiling code",
+      "Running tests",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Reviews improve team code quality before merging.",
+    "id": 1202
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does ALU stand for?",
+    "opts": [
+      "Arithmetic Logic Unit",
+      "All Logic Unit",
+      "Access Logic Unit",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ALUs perform math and logic calculations inside CPUs.",
+    "id": 1203
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which gate is a universal logic gate?",
+    "opts": [
+      "NAND",
+      "AND",
+      "OR",
+      "XOR"
+    ],
+    "ans": 0,
+    "sol": "NAND and NOR gates can implement any other logic gate function.",
+    "id": 1204
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "How many nibbles are in a single byte?",
+    "opts": [
+      "2",
+      "4",
+      "8",
+      "1"
+    ],
+    "ans": 0,
+    "sol": "A byte is 8 bits; a nibble is 4 bits. Thus, 1 byte = 2 nibbles.",
+    "id": 1205
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is clock speed in microprocessors?",
+    "opts": [
+      "The rate at which a processor executes instructions (cycles per second)",
+      "The clock time",
+      "The network speed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Clock speed represents cycles per second (measured in GHz).",
+    "id": 1206
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which memory type is non-volatile and contains bootstrap instructions?",
+    "opts": [
+      "ROM",
+      "RAM",
+      "Cache",
+      "Virtual Memory"
+    ],
+    "ans": 0,
+    "sol": "Read-Only Memory (ROM) retains data without electrical power.",
+    "id": 1207
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the decimal representation of the binary number 1011?",
+    "opts": [
+      "11",
+      "13",
+      "9",
+      "15"
+    ],
+    "ans": 0,
+    "sol": "1011 = 1*2³ + 0*2² + 1*2¹ + 1*2⁰ = 8 + 0 + 2 + 1 = 11.",
+    "id": 1208
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the binary representation of the decimal number 25?",
+    "opts": [
+      "11001",
+      "11010",
+      "10101",
+      "11100"
+    ],
+    "ans": 0,
+    "sol": "25 = 16 + 8 + 1 = 2⁴ + 2³ + 2⁰ = 11001.",
+    "id": 1209
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which logic gate outputs 0 only when all inputs are 1?",
+    "opts": [
+      "NAND",
+      "AND",
+      "NOR",
+      "OR"
+    ],
+    "ans": 0,
+    "sol": "NAND is the negation of AND logic.",
+    "id": 1210
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the purpose of the accumulator register in a CPU?",
+    "opts": [
+      "To temporarily store arithmetic and logic results",
+      "To store the clock time",
+      "To store memory addresses",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The accumulator holds intermediate ALU calculation values.",
+    "id": 1211
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which is an output device?",
+    "opts": [
+      "Monitor",
+      "Keyboard",
+      "Mouse",
+      "Scanner"
+    ],
+    "ans": 0,
+    "sol": "Monitors render screen output; keyboards/scanners are input devices.",
+    "id": 1212
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is standard ASCII code size in bits?",
+    "opts": [
+      "7 bits",
+      "8 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "ans": 0,
+    "sol": "Standard ASCII uses 7 bits (extended ASCII uses 8 bits).",
+    "id": 1213
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which logic gate outputs 1 only when inputs are different?",
+    "opts": [
+      "XOR",
+      "AND",
+      "OR",
+      "XNOR"
+    ],
+    "ans": 0,
+    "sol": "Exclusive OR (XOR) returns true if inputs mismatch.",
+    "id": 1214
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "How many bytes are in a Megabyte (MB) in binary calculation?",
+    "opts": [
+      "1,048,576 bytes",
+      "1,000,000 bytes",
+      "10,240 bytes",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "1 MB = 1024 * 1024 = 1,048,576 bytes.",
+    "id": 1215
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which CPU register holds the address of the next instruction to be executed?",
+    "opts": [
+      "Program Counter (PC)",
+      "Accumulator",
+      "Instruction Register",
+      "Memory Data Register"
+    ],
+    "ans": 0,
+    "sol": "The PC increments to point to the next instruction address.",
+    "id": 1216
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache memory made of?",
+    "opts": [
+      "SRAM (Static RAM)",
+      "DRAM (Dynamic RAM)",
+      "ROM",
+      "Flash"
+    ],
+    "ans": 0,
+    "sol": "SRAM is fast but expensive, making it ideal for cache blocks.",
+    "id": 1217
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the purpose of system bus?",
+    "opts": [
+      "To transmit data, addresses, and control signals between CPU, memory, and devices",
+      "To connect to internet",
+      "To power the computer",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Buses act as physical communication pathways.",
+    "id": 1218
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which component regulates power supply voltage for computer motherboards?",
+    "opts": [
+      "SMPS (Switched-Mode Power Supply)",
+      "CPU",
+      "RAM",
+      "BIOS"
+    ],
+    "ans": 0,
+    "sol": "SMPS converts AC mains electricity to DC motherboard power.",
+    "id": 1219
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does BIOS stand for?",
+    "opts": [
+      "Basic Input Output System",
+      "Basic Interface Operating System",
+      "Binary Input Output Service",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "BIOS initializes hardware interfaces during cold boots.",
+    "id": 1220
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the hexadecimal representation of the decimal number 255?",
+    "opts": [
+      "FF",
+      "EE",
+      "A1",
+      "100"
+    ],
+    "ans": 0,
+    "sol": "255 in hex is FF (15*16 + 15 = 255).",
+    "id": 1221
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does DMA stand for in computer architecture?",
+    "opts": [
+      "Direct Memory Access",
+      "Dynamic Memory Allocation",
+      "Direct Monitor Access",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DMA allows I/O devices to transfer data to RAM without CPU overhead.",
+    "id": 1222
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which type of RAM requires periodic electrical refreshing to retain data?",
+    "opts": [
+      "DRAM (Dynamic RAM)",
+      "SRAM (Static RAM)",
+      "ROM",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DRAM stores charges in capacitors which slowly leak, requiring refresh cycles.",
+    "id": 1223
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which logic gate outputs 1 when all inputs are 0?",
+    "opts": [
+      "NOR",
+      "OR",
+      "AND",
+      "XOR"
+    ],
+    "ans": 0,
+    "sol": "NOR is the negation of OR logic.",
+    "id": 1224
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the 1's complement of the binary number 1010?",
+    "opts": [
+      "0101",
+      "1011",
+      "0110",
+      "1100"
+    ],
+    "ans": 0,
+    "sol": "1's complement inverts all bits.",
+    "id": 1225
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the 2's complement of the binary number 1010?",
+    "opts": [
+      "0110",
+      "0101",
+      "1011",
+      "1100"
+    ],
+    "ans": 0,
+    "sol": "1's complement = 0101; add 1 = 0110.",
+    "id": 1226
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does EEPROM stand for?",
+    "opts": [
+      "Electrically Erasable Programmable Read-Only Memory",
+      "Electronic Error Program ROM",
+      "Electrically Encrypted ROM",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "EEPROM chips can be erased and reprogrammed using electric currents.",
+    "id": 1227
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the main advantage of an SSD over an HDD?",
+    "opts": [
+      "Faster read/write speeds and no moving parts",
+      "More storage capacity for the price",
+      "Longer lifespan under continuous writes",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SSDs use flash memory, providing near-instant access times.",
+    "id": 1228
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which decimal value corresponds to the hexadecimal number 'A'?",
+    "opts": [
+      "10",
+      "11",
+      "12",
+      "9"
+    ],
+    "ans": 0,
+    "sol": "Hex digits are 0-9, A(10), B(11), C(12), D(13), E(14), F(15).",
+    "id": 1229
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "How is clock speed measured?",
+    "opts": [
+      "Hertz (cycles per second)",
+      "Watts",
+      "Bytes",
+      "Amps"
+    ],
+    "ans": 0,
+    "sol": "Hz measures processor cycle frequencies.",
+    "id": 1230
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the standard size of an IPv6 address in bytes?",
+    "opts": [
+      "16 bytes (128 bits)",
+      "4 bytes",
+      "8 bytes",
+      "32 bytes"
+    ],
+    "ans": 0,
+    "sol": "IPv6 uses 128-bit (16 bytes) addresses.",
+    "id": 1231
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which logical operation outputs 1 if either input is 1?",
+    "opts": [
+      "OR",
+      "AND",
+      "NOT",
+      "XNOR"
+    ],
+    "ans": 0,
+    "sol": "OR logic returns true if at least one input is true.",
+    "id": 1232
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache hit ratio?",
+    "opts": [
+      "The fraction of memory accesses satisfied by the cache",
+      "The cache speed",
+      "The cache capacity",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "High hit ratios indicate the cache effectively stores active data blocks.",
+    "id": 1233
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which register stores the instruction currently being executed?",
+    "opts": [
+      "Instruction Register (IR)",
+      "Program Counter",
+      "Accumulator",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The IR caches the fetched instruction word.",
+    "id": 1234
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is pipelining in CPU architecture?",
+    "opts": [
+      "Overlapping the execution of multiple instructions to improve throughput",
+      "Adding memory",
+      "Connecting cores",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Pipelining executes fetch, decode, and run cycles in parallel streams.",
+    "id": 1235
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is machine cycle?",
+    "opts": [
+      "The sequence of steps fetch, decode, execute, and write back",
+      "CPU life cycle",
+      "A loop in code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Machine cycles run continuous hardware loops.",
+    "id": 1236
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is instruction set?",
+    "opts": [
+      "The set of all basic commands that a CPU can execute",
+      "A programming language",
+      "A software library",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Instruction sets (like x86, ARM) define CPU assembly commands.",
+    "id": 1237
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does RISC stand for in processors?",
+    "opts": [
+      "Reduced Instruction Set Computer",
+      "Rapid Instruction System Core",
+      "Reduced Internal Storage Computer",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "RISC processors use simple instruction sets to boost speed.",
+    "id": 1238
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does CISC stand for in processors?",
+    "opts": [
+      "Complex Instruction Set Computer",
+      "Centralized Instruction System Core",
+      "Complex Internal Storage Computer",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CISC processors support complex single-step instructions.",
+    "id": 1239
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which motherboard slot holds graphics cards?",
+    "opts": [
+      "PCIe (PCI Express)",
+      "DIMM",
+      "SATA",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PCIe slots support high-bandwidth peripheral cards.",
+    "id": 1240
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is SATA interface used for?",
+    "opts": [
+      "Connecting storage drives (HDD/SSD) to motherboards",
+      "Connecting RAM",
+      "Connecting monitors",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "S SATA links storage drives to controllers.",
+    "id": 1241
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is a GPU?",
+    "opts": [
+      "Graphics Processing Unit (designed to accelerate image/parallel processing)",
+      "General Process Unit",
+      "Graphical Port Utility",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "GPUs handle parallel graphics and mathematical loads.",
+    "id": 1242
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which logic gate is equivalent to a serial connection of switches?",
+    "opts": [
+      "AND",
+      "OR",
+      "NOT",
+      "XOR"
+    ],
+    "ans": 0,
+    "sol": "AND requires both switches closed to flow current.",
+    "id": 1243
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which logic gate is equivalent to a parallel connection of switches?",
+    "opts": [
+      "OR",
+      "AND",
+      "NOT",
+      "XOR"
+    ],
+    "ans": 0,
+    "sol": "OR flows current if either switch is closed.",
+    "id": 1244
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does motherboard do?",
+    "opts": [
+      "It acts as the central circuit hub connecting CPU, memory, and peripherals",
+      "It stores files",
+      "It boots the OS",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Motherboard provides trace lines linking all components.",
+    "id": 1245
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the base of the Octal number system?",
+    "opts": [
+      "8",
+      "10",
+      "16",
+      "2"
+    ],
+    "ans": 0,
+    "sol": "Octal uses digits 0 to 7.",
+    "id": 1246
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What does SMPS stand for?",
+    "opts": [
+      "Switched-Mode Power Supply",
+      "System Monitor Power Switch",
+      "Standard Mode Power Supply",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SMPS converts AC voltages to low-voltage DC lines.",
+    "id": 1247
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is a bus width?",
+    "opts": [
+      "The number of bits that can be sent simultaneously over a bus",
+      "The length of a bus wire",
+      "The bus memory size",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Wider buses (like 64-bit) transfer more bytes per cycle.",
+    "id": 1248
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which memory has the fastest access time?",
+    "opts": [
+      "CPU Registers",
+      "L1 Cache",
+      "L2 Cache",
+      "RAM"
+    ],
+    "ans": 0,
+    "sol": "Registers are inside CPU execution units, providing instant access.",
+    "id": 1249
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the main function of the Control Unit in a CPU?",
+    "opts": [
+      "Directing the flow of signals and coordinating instructions execution",
+      "Performing arithmetic",
+      "Storing data",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The Control Unit decodes instructions and coordinates ALU operations.",
+    "id": 1250
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the main advantage of the Agile software development model over Waterfall?",
+    "opts": [
+      "It accommodates changing requirements throughout the project",
+      "It requires less testing",
+      "It has a fixed cost and schedule",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Agile welcomes requirement changes via iterative sprints.",
+    "id": 1251
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which testing level verifies that individual units of code work together correctly?",
+    "opts": [
+      "Integration Testing",
+      "Unit Testing",
+      "System Testing",
+      "Acceptance Testing"
+    ],
+    "ans": 0,
+    "sol": "Integration testing checks connections between components.",
+    "id": 1252
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "In Scrum, who is responsible for maintaining the Product Backlog and prioritizing tasks?",
+    "opts": [
+      "Product Owner",
+      "Scrum Master",
+      "Development Team",
+      "Project Manager"
+    ],
+    "ans": 0,
+    "sol": "The Product Owner owns backlog priorities on behalf of clients.",
+    "id": 1253
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does a burn-down chart show?",
+    "opts": [
+      "The amount of remaining work in a project/sprint over time",
+      "The team speed",
+      "CPU temperatures",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Burn-downs display remaining task hours against sprint days.",
+    "id": 1254
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which Git command is used to record changes in the local repository history?",
+    "opts": [
+      "git commit",
+      "git push",
+      "git add",
+      "git branch"
+    ],
+    "ans": 0,
+    "sol": "git commit saves staged snapshots locally.",
+    "id": 1255
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which design pattern ensures a class has only one instance and provides a global access point to it?",
+    "opts": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Singleton restricts class instantiations to a single object.",
+    "id": 1256
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the purpose of software code coverage?",
+    "opts": [
+      "To measure the percentage of source code executed by test suites",
+      "To calculate file sizes",
+      "To measure line counts",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Coverage indicates how thoroughly tests execute the codebase.",
+    "id": 1257
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is a user story?",
+    "opts": [
+      "An informal description of a software feature written from the perspective of an end-user",
+      "A developer guide",
+      "A software spec",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "User stories summarize user needs: As a [user], I want [feature] so that [benefit].",
+    "id": 1258
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which Scrum meeting is held daily to synchronize progress and flag impediments?",
+    "opts": [
+      "Daily Standup",
+      "Sprint Planning",
+      "Sprint Review",
+      "Sprint Retrospective"
+    ],
+    "ans": 0,
+    "sol": "Daily standup aligns team actions in 15 minutes.",
+    "id": 1259
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the purpose of Sprint Retrospective?",
+    "opts": [
+      "To reflect on the past sprint and identify improvements for the next sprint",
+      "To show the client the demo",
+      "To write code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Retrospectives improve team cooperation and processes.",
+    "id": 1260
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does CI/CD stand for?",
+    "opts": [
+      "Continuous Integration / Continuous Deployment",
+      "Code Integration / Code Deployment",
+      "Continuous Installation / Development",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CI/CD automates integration, testing, and deployment pipelines.",
+    "id": 1261
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Singleton pattern?",
+    "opts": [
+      "A pattern that restricts a class to one instance with global access",
+      "A simple method",
+      "A static utility",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Singletons ensure unified state coordination.",
+    "id": 1262
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the purpose of the MVC pattern?",
+    "opts": [
+      "Separating application data, user interface, and control logic",
+      "Speeding up SQL",
+      "Compiling code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MVC splits code layers into Model, View, and Controller.",
+    "id": 1263
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is a release candidate (RC)?",
+    "opts": [
+      "A version of software ready for release unless critical bugs are found",
+      "A job applicant",
+      "A software patch",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "RC versions undergo final checks before production releases.",
+    "id": 1264
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is team velocity?",
+    "opts": [
+      "The average number of story points a team completes in a sprint",
+      "CPU speed",
+      "Network speed",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Velocity helps estimate feature release schedules.",
+    "id": 1265
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the decimal equivalent of the binary number 1111?",
+    "opts": [
+      "15",
+      "16",
+      "14",
+      "17"
+    ],
+    "ans": 0,
+    "sol": "1111 = 8 + 4 + 2 + 1 = 15.",
+    "id": 1266
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Who is known as the father of modern computers?",
+    "opts": [
+      "Alan Turing",
+      "Charles Babbage",
+      "Bill Gates",
+      "Ada Lovelace"
+    ],
+    "ans": 0,
+    "sol": "Alan Turing formalized computation concepts; Charles Babbage designed the analytical engine.",
+    "id": 1267
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which country launched the first artificial satellite, Sputnik 1?",
+    "opts": [
+      "Soviet Union",
+      "United States",
+      "Germany",
+      "United Kingdom"
+    ],
+    "ans": 0,
+    "sol": "Sputnik 1 was launched by the USSR in 1957.",
+    "id": 1268
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which is the largest planet in our solar system?",
+    "opts": [
+      "Jupiter",
+      "Saturn",
+      "Earth",
+      "Neptune"
+    ],
+    "ans": 0,
+    "sol": "Jupiter is the largest planet.",
+    "id": 1269
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the speed of light in vacuum?",
+    "opts": [
+      "300,000 km/s",
+      "150,000 km/s",
+      "450,000 km/s",
+      "600,000 km/s"
+    ],
+    "ans": 0,
+    "sol": "Light travels at approximately 299,792 km/s.",
+    "id": 1270
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which database language is used to manage relational databases?",
+    "opts": [
+      "SQL",
+      "Python",
+      "HTML",
+      "C++"
+    ],
+    "ans": 0,
+    "sol": "Structured Query Language (SQL) manages relational data.",
+    "id": 1271
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the chemical formula for water?",
+    "opts": [
+      "H2O",
+      "CO2",
+      "NaCl",
+      "O2"
+    ],
+    "ans": 0,
+    "sol": "H2O represents two hydrogen atoms and one oxygen atom.",
+    "id": 1272
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which company created the Windows operating system?",
+    "opts": [
+      "Microsoft",
+      "Apple",
+      "IBM",
+      "Google"
+    ],
+    "ans": 0,
+    "sol": "Microsoft launched Windows in 1985.",
+    "id": 1273
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What does HTTP stand for?",
+    "opts": [
+      "Hypertext Transfer Protocol",
+      "Hypertext Transition Protocol",
+      "Hyperlink Transfer Protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "HTTP = Hypertext Transfer Protocol.",
+    "id": 1274
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "In which year did the World Wide Web become public?",
+    "opts": [
+      "1991",
+      "1989",
+      "1995",
+      "1998"
+    ],
+    "ans": 0,
+    "sol": "Tim Berners-Lee opened the WWW in 1991.",
+    "id": 1275
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the brain of a computer?",
+    "opts": [
+      "CPU",
+      "RAM",
+      "Motherboard",
+      "Hard Drive"
+    ],
+    "ans": 0,
+    "sol": "Central Processing Unit (CPU) executes instruction cycles.",
+    "id": 1276
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which primary color combination yields green?",
+    "opts": [
+      "Blue + Yellow",
+      "Red + Yellow",
+      "Blue + Red",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Mixing blue and yellow pigments yields green.",
+    "id": 1277
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the tallest mountain in the world?",
+    "opts": [
+      "Mount Everest",
+      "K2",
+      "Mount Kilimanjaro",
+      "Mount Denali"
+    ],
+    "ans": 0,
+    "sol": "Mount Everest is 8,848 meters tall.",
+    "id": 1278
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which programming language was created by Guido van Rossum?",
+    "opts": [
+      "Python",
+      "Java",
+      "C++",
+      "Ruby"
+    ],
+    "ans": 0,
+    "sol": "Python was released by Guido in 1991.",
+    "id": 1279
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the capital of Japan?",
+    "opts": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Hiroshima"
+    ],
+    "ans": 0,
+    "sol": "Tokyo is Japan's capital city.",
+    "id": 1280
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which gas is most abundant in Earth's atmosphere?",
+    "opts": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon Dioxide",
+      "Argon"
+    ],
+    "ans": 0,
+    "sol": "Nitrogen occupies 78% of Earth's atmosphere.",
+    "id": 1281
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Who is the author of 'Harry Potter'?",
+    "opts": [
+      "J.K. Rowling",
+      "George R.R. Martin",
+      "J.R.R. Tolkien",
+      "Stephen King"
+    ],
+    "ans": 0,
+    "sol": "Rowling wrote the Harry Potter books.",
+    "id": 1282
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which network protocol is secure for web browsing?",
+    "opts": [
+      "HTTPS",
+      "HTTP",
+      "FTP",
+      "Telnet"
+    ],
+    "ans": 0,
+    "sol": "HTTPS encrypts connection sessions.",
+    "id": 1283
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the currency of the United Kingdom?",
+    "opts": [
+      "Pound Sterling",
+      "Euro",
+      "Dollar",
+      "Yen"
+    ],
+    "ans": 0,
+    "sol": "The UK uses Pounds (£).",
+    "id": 1284
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "How many bones are in the adult human body?",
+    "opts": [
+      "206",
+      "208",
+      "210",
+      "204"
+    ],
+    "ans": 0,
+    "sol": "Adults have 206 bones (infants have more).",
+    "id": 1285
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Identify the missing number: 4, 9, 16, 25, 36, ?",
+    "opts": [
+      "49",
+      "64",
+      "45",
+      "50"
+    ],
+    "ans": 0,
+    "sol": "Squares of 2, 3, 4, 5, 6, 7. 7^2 = 49.",
+    "id": 1286
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If in a code, 'RED' is 27, what is 'BLUE'?",
+    "opts": [
+      "40",
+      "36",
+      "38",
+      "42"
+    ],
+    "ans": 0,
+    "sol": "B(2)+L(12)+U(21)+E(5) = 40.",
+    "id": 1287
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Find the odd one out: Linux, Windows, Chrome, macOS",
+    "opts": [
+      "Chrome",
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "ans": 0,
+    "sol": "Chrome is a web browser; others are operating systems.",
+    "id": 1288
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If A is taller than B, and B is taller than C, who is the shortest?",
+    "opts": [
+      "C",
+      "B",
+      "A",
+      "Cannot be determined"
+    ],
+    "ans": 0,
+    "sol": "C is shorter than B, who is shorter than A. So C is shortest.",
+    "id": 1289
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "How many seconds are in one hour?",
+    "opts": [
+      "3600",
+      "3000",
+      "2400",
+      "4000"
+    ],
+    "ans": 0,
+    "sol": "60 minutes * 60 seconds = 3600 seconds.",
+    "id": 1290
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the Roman numeral for 50?",
+    "opts": [
+      "L",
+      "C",
+      "D",
+      "M"
+    ],
+    "ans": 0,
+    "sol": "L=50, C=100, D=500, M=1000.",
+    "id": 1291
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which is the smallest country in the world?",
+    "opts": [
+      "Vatican City",
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "ans": 0,
+    "sol": "Vatican City is the smallest independent state.",
+    "id": 1292
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If a triangle has sides 3cm, 4cm, and 5cm, what is its area?",
+    "opts": [
+      "6 sq cm",
+      "12 sq cm",
+      "10 sq cm",
+      "7.5 sq cm"
+    ],
+    "ans": 0,
+    "sol": "It is a right triangle: Area = 0.5 * base * height = 0.5 * 3 * 4 = 6.",
+    "id": 1293
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which company created the Android operating system originally?",
+    "opts": [
+      "Android Inc. (acquired by Google)",
+      "Apple",
+      "Microsoft",
+      "Samsung"
+    ],
+    "ans": 0,
+    "sol": "Android was founded in 2003 and bought by Google in 2005.",
+    "id": 1294
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What does PDF stand for?",
+    "opts": [
+      "Portable Document Format",
+      "Printable Document File",
+      "Port Data Format",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "PDF = Portable Document Format.",
+    "id": 1295
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "How many degrees are in a full circle?",
+    "opts": [
+      "360",
+      "180",
+      "90",
+      "400"
+    ],
+    "ans": 0,
+    "sol": "A circle has 360 degrees.",
+    "id": 1296
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which planet is known as the Red Planet?",
+    "opts": [
+      "Mars",
+      "Venus",
+      "Mercury",
+      "Jupiter"
+    ],
+    "ans": 0,
+    "sol": "Mars appears red due to iron oxide on its surface.",
+    "id": 1297
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the value of Pi rounded to two decimal places?",
+    "opts": [
+      "3.14",
+      "3.16",
+      "3.12",
+      "3.18"
+    ],
+    "ans": 0,
+    "sol": "Pi is approximately 3.14159...",
+    "id": 1298
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Who painted the Mona Lisa?",
+    "opts": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Pablo Picasso",
+      "Vincent van Gogh"
+    ],
+    "ans": 0,
+    "sol": "Leonardo painted the Mona Lisa in the 16th century.",
+    "id": 1299
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which is the longest river in the world?",
+    "opts": [
+      "Nile",
+      "Amazon",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "ans": 0,
+    "sol": "The Nile is the longest river (Amazon is the largest by volume).",
+    "id": 1300
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the square root of 144?",
+    "opts": [
+      "12",
+      "14",
+      "11",
+      "13"
+    ],
+    "ans": 0,
+    "sol": "12 * 12 = 144.",
+    "id": 1301
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which country is home to the Great Barrier Reef?",
+    "opts": [
+      "Australia",
+      "New Zealand",
+      "Indonesia",
+      "Brazil"
+    ],
+    "ans": 0,
+    "sol": "The Great Barrier Reef lies in Coral Sea off Queensland, Australia.",
+    "id": 1302
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Who is the CEO of Tesla?",
+    "opts": [
+      "Elon Musk",
+      "Bill Gates",
+      "Jeff Bezos",
+      "Mark Zuckerberg"
+    ],
+    "ans": 0,
+    "sol": "Elon Musk leads Tesla.",
+    "id": 1303
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the currency of the European Union?",
+    "opts": [
+      "Euro",
+      "Pound",
+      "Franc",
+      "Deutsche Mark"
+    ],
+    "ans": 0,
+    "sol": "The EU uses the Euro (€).",
+    "id": 1304
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "How many players are on a soccer field for one team?",
+    "opts": [
+      "11",
+      "10",
+      "12",
+      "9"
+    ],
+    "ans": 0,
+    "sol": "A team has 11 players including the goalkeeper.",
+    "id": 1305
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the boiling point of water in Celsius?",
+    "opts": [
+      "100",
+      "90",
+      "120",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "Water boils at 100 degrees Celsius under standard pressure.",
+    "id": 1306
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which element has atomic number 1?",
+    "opts": [
+      "Hydrogen",
+      "Helium",
+      "Lithium",
+      "Oxygen"
+    ],
+    "ans": 0,
+    "sol": "Hydrogen is the first element on the periodic table.",
+    "id": 1307
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Who wrote 'Romeo and Juliet'?",
+    "opts": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Mark Twain",
+      "Jane Austen"
+    ],
+    "ans": 0,
+    "sol": "Shakespeare wrote Romeo and Juliet in 1597.",
+    "id": 1308
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the capital of France?",
+    "opts": [
+      "Paris",
+      "Marseille",
+      "Lyon",
+      "Nice"
+    ],
+    "ans": 0,
+    "sol": "Paris is France's capital.",
+    "id": 1309
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "How many days are in a leap year?",
+    "opts": [
+      "366",
+      "365",
+      "364",
+      "368"
+    ],
+    "ans": 0,
+    "sol": "Leap years add one day to February, totaling 366.",
+    "id": 1310
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which organ pumps blood through the human body?",
+    "opts": [
+      "Heart",
+      "Lungs",
+      "Brain",
+      "Liver"
+    ],
+    "ans": 0,
+    "sol": "The heart pumps blood.",
+    "id": 1311
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the value of 5!?",
+    "opts": [
+      "120",
+      "100",
+      "60",
+      "24"
+    ],
+    "ans": 0,
+    "sol": "5! = 5 * 4 * 3 * 2 * 1 = 120.",
+    "id": 1312
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which company created the Java programming language?",
+    "opts": [
+      "Sun Microsystems (later acquired by Oracle)",
+      "Microsoft",
+      "Apple",
+      "Google"
+    ],
+    "ans": 0,
+    "sol": "Java was released by James Gosling at Sun in 1995.",
+    "id": 1313
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the primary language spoken in Brazil?",
+    "opts": [
+      "Portuguese",
+      "Spanish",
+      "English",
+      "French"
+    ],
+    "ans": 0,
+    "sol": "Brazil is the only Portuguese-speaking country in the Americas.",
+    "id": 1314
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the largest ocean on Earth?",
+    "opts": [
+      "Pacific Ocean",
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+    ],
+    "ans": 0,
+    "sol": "The Pacific is the largest ocean.",
+    "id": 1315
+  },
+  {
+    "cat": "System Design",
+    "q": "What is DNS propagation?",
+    "opts": [
+      "The time it takes for updates to DNS records to spread across the internet",
+      "A search method",
+      "A network card",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DNS propagation can take up to 24-48 hours depending on TTL settings.",
+    "id": 1316
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a split-brain scenario in distributed systems?",
+    "opts": [
+      "When a cluster partitions and multiple sub-clusters independently elect leaders, causing inconsistency",
+      "A CPU error",
+      "A database query failure",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Split-brain is mitigated using quorum consensus rules.",
+    "id": 1317
+  },
+  {
+    "cat": "System Design",
+    "q": "What is gossip protocol used for?",
+    "opts": [
+      "Decentralized node status sharing and cluster state membership tracking",
+      "Social networking",
+      "Chatting online",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Gossip protocols scale membership lists without central registries.",
+    "id": 1318
+  },
+  {
+    "cat": "System Design",
+    "q": "What is cache stampede?",
+    "opts": [
+      "When multiple clients concurrently query a database for an expired cache key, overloading the DB",
+      "A memory leak",
+      "A fast database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stampedes are resolved using locking or background refreshes.",
+    "id": 1319
+  },
+  {
+    "cat": "System Design",
+    "q": "What is the difference between latency and throughput?",
+    "opts": [
+      "Latency is delay time; throughput is the rate of successful operations per second",
+      "Both are same",
+      "Latency is volume",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Latency is roundtrip speed; throughput is work done per second.",
+    "id": 1320
+  },
+  {
+    "cat": "System Design",
+    "q": "What does SLA guarantee of 99.9% uptime allow in annual downtime?",
+    "opts": [
+      "8.76 hours",
+      "43.8 minutes",
+      "5.26 minutes",
+      "36.5 days"
+    ],
+    "ans": 0,
+    "sol": "99.9% uptime permits up to 8.76 hours of downtime per year.",
+    "id": 1321
+  },
+  {
+    "cat": "System Design",
+    "q": "What does SLA guarantee of 99.99% uptime allow in annual downtime?",
+    "opts": [
+      "52.6 minutes",
+      "8.76 hours",
+      "5.26 minutes",
+      "36.5 days"
+    ],
+    "ans": 0,
+    "sol": "99.99% (four nines) allows 52.6 minutes of downtime per year.",
+    "id": 1322
+  },
+  {
+    "cat": "System Design",
+    "q": "What is read-through caching?",
+    "opts": [
+      "The cache automatically loads data from the database on a cache miss",
+      "Writing directly to DB",
+      "Deleting cache",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Read-through delegates DB fetches to the caching layer.",
+    "id": 1323
+  },
+  {
+    "cat": "System Design",
+    "q": "What is write-around caching?",
+    "opts": [
+      "Writes bypass the cache and go directly to the database",
+      "Writing to cache first",
+      "Deleting cache",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Write-around prevents cache pollution for data not immediately re-read.",
+    "id": 1324
+  },
+  {
+    "cat": "System Design",
+    "q": "What is the primary role of Apache Kafka?",
+    "opts": [
+      "A distributed event streaming platform acting as a message broker",
+      "A SQL database",
+      "A web server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Kafka handles high-throughput pub-sub event pipelines.",
+    "id": 1325
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database federation?",
+    "opts": [
+      "Splitting databases by functional areas (e.g. users, products)",
+      "Sharding tables",
+      "Replicating tables",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Federation divides data stores to reduce monolithic scale.",
+    "id": 1326
+  },
+  {
+    "cat": "System Design",
+    "q": "What is vertical partitioning?",
+    "opts": [
+      "Splitting table columns into separate tables to optimize disk access",
+      "Splitting rows",
+      "Adding indexes",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Vertical partitioning groups hot/frequently-read columns together.",
+    "id": 1327
+  },
+  {
+    "cat": "System Design",
+    "q": "What is horizontal partitioning?",
+    "opts": [
+      "Splitting table rows across multiple tables (sharding)",
+      "Splitting columns",
+      "Deleting tables",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Horizontal partitioning keeps tables smaller and faster.",
+    "id": 1328
+  },
+  {
+    "cat": "System Design",
+    "q": "What is NoSQL?",
+    "opts": [
+      "Non-relational databases designed for dynamic, un-structured scale",
+      "Relational databases",
+      "Fast databases",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "NoSQL databases (like MongoDB) scale horizontally.",
+    "id": 1329
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a document database?",
+    "opts": [
+      "A NoSQL database storing data as JSON/BSON documents",
+      "A text file storage",
+      "A SQL table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Document stores (like MongoDB) allow flexible, nested schema structures.",
+    "id": 1330
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a key-value store?",
+    "opts": [
+      "A database storing data as key-value pairs (like Redis)",
+      "A SQL table",
+      "A document store",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Key-value stores are optimized for quick memory lookups.",
+    "id": 1331
+  },
+  {
+    "cat": "System Design",
+    "q": "What is a graph database?",
+    "opts": [
+      "A database storing nodes and relationships (edges) (like Neo4j)",
+      "A chart",
+      "A SQL table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Graph stores excel at mapping complex networks (e.g. social maps).",
+    "id": 1332
+  },
+  {
+    "cat": "System Design",
+    "q": "What is distributed consensus?",
+    "opts": [
+      "Ensuring multiple independent server nodes agree on a value or state",
+      "A server lock",
+      "A backup method",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Consensus protocols (like Paxos, Raft) keep clusters consistent.",
+    "id": 1333
+  },
+  {
+    "cat": "System Design",
+    "q": "What is Raft consensus algorithm?",
+    "opts": [
+      "A consensus algorithm designed to be understandable and manage log replication",
+      "A SQL database",
+      "A network card",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Raft manages leader election and log consistency in clusters.",
+    "id": 1334
+  },
+  {
+    "cat": "System Design",
+    "q": "What is Paxos consensus algorithm?",
+    "opts": [
+      "A family of protocols for solving consensus in a network of unreliable processors",
+      "A database",
+      "A web server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Paxos is the classic, complex distributed consensus protocol.",
+    "id": 1335
+  },
+  {
+    "cat": "System Design",
+    "q": "What is standard replication factor in Apache Kafka?",
+    "opts": [
+      "3",
+      "1",
+      "2",
+      "5"
+    ],
+    "ans": 0,
+    "sol": "A replication factor of 3 is standard to tolerate up to two broker failures.",
+    "id": 1336
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Observer design pattern?",
+    "opts": [
+      "A pattern where an object maintains a list of dependents and notifies them of state changes",
+      "A single instance",
+      "A compiler flag",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Observer (pub-sub) is used to decouple event-listening architectures.",
+    "id": 1337
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Factory design pattern?",
+    "opts": [
+      "A pattern creating objects without specifying the exact class to be created",
+      "A builder pattern",
+      "A single instance",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Factory abstracts object instantiation logic.",
+    "id": 1338
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Decorator design pattern?",
+    "opts": [
+      "A pattern extending object behavior dynamically without modifying the original class",
+      "A paint utility",
+      "A compilation step",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Decorator wraps classes to add responsibilities at runtime.",
+    "id": 1339
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Strategy design pattern?",
+    "opts": [
+      "A pattern defining a family of algorithms, encapsulating each, and making them interchangeable",
+      "A game plan",
+      "A single instance",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Strategy lets algorithms vary independently from clients.",
+    "id": 1340
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does MVC stand for?",
+    "opts": [
+      "Model View Controller",
+      "Model Variable Connection",
+      "Main View Control",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MVC is an architectural pattern decoupling data, presentation, and logic.",
+    "id": 1341
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Model in MVC?",
+    "opts": [
+      "The layer managing application data structures and logic rules",
+      "The UI screen",
+      "The router",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Model represents data states.",
+    "id": 1342
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the View in MVC?",
+    "opts": [
+      "The visual layer rendering user interface screens",
+      "The database table",
+      "The routing logic",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "View handles user interface rendering.",
+    "id": 1343
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the Controller in MVC?",
+    "opts": [
+      "The layer processing user inputs and updating the Model/View",
+      "The database",
+      "The CSS file",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Controller acts as the coordinator between Model and View.",
+    "id": 1344
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the difference between black-box and white-box testing?",
+    "opts": [
+      "Black-box checks behaviors; white-box checks internal code paths",
+      "Both are same",
+      "Black-box is faster",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Black-box ignores internal code; white-box tests structural logic.",
+    "id": 1345
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is acceptance testing?",
+    "opts": [
+      "Testing to verify if software satisfies client criteria for release",
+      "Unit testing",
+      "Database testing",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Acceptance tests validate readiness for business release.",
+    "id": 1346
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is sanity testing?",
+    "opts": [
+      "A quick test verifying if a new build is stable enough for deeper testing",
+      "Unit testing",
+      "Detailed regression",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Sanity testing is subset of regression, checking basic functions.",
+    "id": 1347
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is smoke testing?",
+    "opts": [
+      "Testing the main critical paths of a build to see if it boots and runs",
+      "Detailed testing",
+      "Database backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Smoke testing ensures initial stability for further testing.",
+    "id": 1348
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is security testing?",
+    "opts": [
+      "Testing to identify vulnerabilities and threats in software",
+      "Testing speed",
+      "Testing databases",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Security tests find vulnerabilities and authorization loopholes.",
+    "id": 1349
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is performance testing?",
+    "opts": [
+      "Testing software speed, scalability, and stability under workload",
+      "Unit testing",
+      "Syntax checking",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Performance tests verify system limits and latency under load.",
+    "id": 1350
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is stress testing?",
+    "opts": [
+      "Testing system behaviors beyond standard limit capacities to see where it breaks",
+      "Load testing",
+      "Unit testing",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stress testing checks stability limits and crash recovery pathways.",
+    "id": 1351
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is usability testing?",
+    "opts": [
+      "Testing to evaluate how easy and intuitive a software interface is for users",
+      "Testing speed",
+      "Testing code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Usability testing evaluates UI/UX flow friction.",
+    "id": 1352
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is compatibility testing?",
+    "opts": [
+      "Testing software performance across different browsers, OS, and hardware",
+      "Unit testing",
+      "Detailed database tests",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Compatibility tests check browser/platform layouts.",
+    "id": 1353
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is static code analysis?",
+    "opts": [
+      "Examining source code without executing it to find bugs/styling issues",
+      "Running tests",
+      "Debugging code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Linters analyze static syntax tree rules.",
+    "id": 1354
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a rainbow table?",
+    "opts": [
+      "A precomputed table for reversing cryptographic hash functions (usually for passwords)",
+      "A paint style",
+      "A routing table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Rainbow tables speed up password cracking by precalculating hashes.",
+    "id": 1355
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between a vulnerability and an exploit?",
+    "opts": [
+      "Vulnerability is a weakness; exploit is code taking advantage of that weakness",
+      "Both are same",
+      "Exploit is a patch",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Weaknesses exist in code (vulnerability); scripts that attack them are exploits.",
+    "id": 1356
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is vishing?",
+    "opts": [
+      "Voice-based phishing attacks over phone calls",
+      "Video phishing",
+      "A virus scanner",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Vishing targets victims using VoIP or telephone calls.",
+    "id": 1357
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is smishing?",
+    "opts": [
+      "SMS-based phishing text attacks",
+      "Smart phishing",
+      "A data index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Smishing uses phone text links to redirect victims to malicious web pages.",
+    "id": 1358
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is spear phishing?",
+    "opts": [
+      "A targeted phishing attack aimed at specific individuals or companies",
+      "Fishing with a spear",
+      "A virus",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Spear phishing researches targets to make fake emails look highly convincing.",
+    "id": 1359
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is whaling in security?",
+    "opts": [
+      "Phishing attacks targeting high-profile corporate executives (CEOs/CFOs)",
+      "Catching whales",
+      "A data index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Whaling attacks seek access to executive credential logs.",
+    "id": 1360
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the principal of least privilege?",
+    "opts": [
+      "Giving users only the minimal access rights necessary to do their job",
+      "Full access",
+      "No access",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Least privilege prevents compromises from gaining root access.",
+    "id": 1361
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is buffer overflow?",
+    "opts": [
+      "When a program writes more data to a buffer than allocated, overwriting adjacent memory",
+      "A database overflow",
+      "A network leak",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Overflows can hijack instruction registers to run malicious code.",
+    "id": 1362
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a Trojan Horse?",
+    "opts": [
+      "Malware disguised as useful software",
+      "A virus script",
+      "A folder",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Trojans hide inside normal applications to execute payloads.",
+    "id": 1363
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a computer worm?",
+    "opts": [
+      "Self-replicating malware spreading across networks without user actions",
+      "A software insect",
+      "A file backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Worms use network vulnerabilities to duplicate themselves onto other hosts.",
+    "id": 1364
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What does DLP stand for?",
+    "opts": [
+      "Data Loss Prevention",
+      "Digital Link Protocol",
+      "Database Lock Program",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DLP detects and prevents corporate data assets from leaving the network.",
+    "id": 1365
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a kernel in OS?",
+    "opts": [
+      "The core software program managing CPU, memory, and hardware",
+      "A desktop background",
+      "A file shell",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The kernel acts as the main system driver interface.",
+    "id": 1366
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which scheduling algorithm uses time quantums?",
+    "opts": [
+      "Round Robin",
+      "FCFS",
+      "SJF",
+      "Priority"
+    ],
+    "ans": 0,
+    "sol": "Round Robin rotates threads using time slices.",
+    "id": 1367
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is FCFS scheduling?",
+    "opts": [
+      "First Come First Served (non-preemptive)",
+      "Round Robin",
+      "SRTF",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "FCFS runs threads in arrival order without interrupts.",
+    "id": 1368
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is SJF scheduling?",
+    "opts": [
+      "Shortest Job First (selects shortest burst first)",
+      "Round Robin",
+      "FCFS",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SJF minimizes average waiting times but can cause starvation.",
+    "id": 1369
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is starvation in OS?",
+    "opts": [
+      "When a process is delayed indefinitely because others always get priority",
+      "CPU crash",
+      "Memory leak",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Starvation is resolved using aging algorithms.",
+    "id": 1370
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is process aging?",
+    "opts": [
+      "Gradually increasing process priority as it waits in the queue to prevent starvation",
+      "CPU timing",
+      "Memory cleaning",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Aging guarantees all processes eventually run.",
+    "id": 1371
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is Banker's algorithm safe state?",
+    "opts": [
+      "A state where the OS can allocate resources to all threads without deadlocks",
+      "A secure folder",
+      "An online backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Safe states ensure a execution path to completion.",
+    "id": 1372
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is memory paging?",
+    "opts": [
+      "Partitioning virtual memory into fixed pages mapped to physical frames",
+      "Printing lines",
+      "Formatting disks",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Paging prevents external fragmentation.",
+    "id": 1373
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm evicts the page unused for the longest past time?",
+    "opts": [
+      "LRU (Least Recently Used)",
+      "FIFO",
+      "Optimal",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "LRU tracks access histories to evict stale pages.",
+    "id": 1374
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is segmentation in memory?",
+    "opts": [
+      "Dividing memory into variable-length logical segments (code, stack, data)",
+      "Fixed paging",
+      "Disk formatting",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Segmentation represents program segments natively.",
+    "id": 1375
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is critical section?",
+    "opts": [
+      "A block of code accessing shared resources that must not run concurrently",
+      "The boot segment",
+      "A system error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Critical sections require mutual exclusion blocks.",
+    "id": 1376
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is normalization in databases?",
+    "opts": [
+      "Structuring relational databases to minimize redundancy and dependency",
+      "Creating backups",
+      "Adding indexes",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Normalization splits tables to avoid duplicate records.",
+    "id": 1377
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is 1NF?",
+    "opts": [
+      "First Normal Form (requires atomic cells and no repeating groups)",
+      "2NF",
+      "3NF",
+      "BCNF"
+    ],
+    "ans": 0,
+    "sol": "1NF outlaws nested tables or list values in cells.",
+    "id": 1378
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is 2NF?",
+    "opts": [
+      "Second Normal Form (1NF and no partial dependencies on key)",
+      "1NF",
+      "3NF",
+      "BCNF"
+    ],
+    "ans": 0,
+    "sol": "2NF requires non-key attributes to depend on the entire primary key.",
+    "id": 1379
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is 3NF?",
+    "opts": [
+      "Third Normal Form (2NF and no transitive dependencies)",
+      "1NF",
+      "2NF",
+      "BCNF"
+    ],
+    "ans": 0,
+    "sol": "3NF outlaws non-key fields depending on other non-key fields.",
+    "id": 1380
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is BCNF?",
+    "opts": [
+      "Boyce-Codd Normal Form (stricter version of 3NF)",
+      "1NF",
+      "2NF",
+      "3NF"
+    ],
+    "ans": 0,
+    "sol": "BCNF requires every determinant to be a candidate key.",
+    "id": 1381
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a foreign key?",
+    "opts": [
+      "A column referencing a primary key in another table",
+      "An external key",
+      "An index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Foreign keys enforce referential integrity.",
+    "id": 1382
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is Atomicity in ACID?",
+    "opts": [
+      "All operations of a transaction succeed or all fail together",
+      "Data is clean",
+      "Data is locked",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Atomicity prevents partial writes.",
+    "id": 1383
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is Consistency in ACID?",
+    "opts": [
+      "A transaction transitions the database from one valid state to another",
+      "Data is fast",
+      "Data is local",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Consistency maintains database constraints.",
+    "id": 1384
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is Isolation in ACID?",
+    "opts": [
+      "Concurrent transactions execute without interfering with each other",
+      "Data is static",
+      "Data is remote",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Isolation hides uncommitted changes from other threads.",
+    "id": 1385
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is Durability in ACID?",
+    "opts": [
+      "Committed transactions persist even during power failures or crashes",
+      "Data is encrypted",
+      "Data is fast",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Durability writes committed transactions to disk log files.",
+    "id": 1386
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL clause filters grouped results?",
+    "opts": [
+      "HAVING",
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "ans": 0,
+    "sol": "WHERE filters individual rows; HAVING filters grouped results.",
+    "id": 1387
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL join returns all rows from both tables when matches exist?",
+    "opts": [
+      "FULL OUTER JOIN",
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN"
+    ],
+    "ans": 0,
+    "sol": "FULL OUTER JOIN combines left and right sets with nulls.",
+    "id": 1388
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does a database index do?",
+    "opts": [
+      "Speeds up data retrieval at the cost of additional write overhead",
+      "Stores data",
+      "Saves backup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Indexes act as search lookup structures.",
+    "id": 1389
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command permanently saves transaction changes?",
+    "opts": [
+      "COMMIT",
+      "ROLLBACK",
+      "SAVEPOINT",
+      "PERSIST"
+    ],
+    "ans": 0,
+    "sol": "COMMIT writes uncommitted transaction changes.",
+    "id": 1390
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which command reverts transaction changes?",
+    "opts": [
+      "ROLLBACK",
+      "COMMIT",
+      "SAVEPOINT",
+      "CANCEL"
+    ],
+    "ans": 0,
+    "sol": "ROLLBACK restores database states to pre-transaction logs.",
+    "id": 1391
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the default port for MySQL?",
+    "opts": [
+      "3306",
+      "5432",
+      "1433",
+      "1521"
+    ],
+    "ans": 0,
+    "sol": "MySQL uses port 3306.",
+    "id": 1392
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is a database schema?",
+    "opts": [
+      "The logical structure defining tables, fields, and constraints",
+      "The server",
+      "The data file",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Schema is the blueprint of database structures.",
+    "id": 1393
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does OSI stand for?",
+    "opts": [
+      "Open Systems Interconnection",
+      "Open Source Internet",
+      "Operating System Interface",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "OSI is the 7-layer networking model.",
+    "id": 1394
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "How many layers are in the OSI model?",
+    "opts": [
+      "7",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 0,
+    "sol": "OSI model has 7 layers (Physical to Application).",
+    "id": 1395
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "How many layers are in the TCP/IP model?",
+    "opts": [
+      "4",
+      "7",
+      "5",
+      "6"
+    ],
+    "ans": 0,
+    "sol": "TCP/IP has 4 conceptual layers (Network Access, Internet, Transport, Application).",
+    "id": 1396
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer handles routing and packet forwarding?",
+    "opts": [
+      "Network Layer",
+      "Physical Layer",
+      "Data Link Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Network Layer (Layer 3) handles IP routing.",
+    "id": 1397
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer translates data formats and manages encryption?",
+    "opts": [
+      "Presentation Layer",
+      "Application Layer",
+      "Session Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Presentation Layer (Layer 6) handles formatting and cryptography.",
+    "id": 1398
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer is closest to the physical medium?",
+    "opts": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Physical Layer (Layer 1) manages signals, cables, and pins.",
+    "id": 1399
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which OSI layer is closest to the user application?",
+    "opts": [
+      "Application Layer",
+      "Presentation Layer",
+      "Session Layer",
+      "Transport Layer"
+    ],
+    "ans": 0,
+    "sol": "Application Layer (Layer 7) hosts user software APIs.",
+    "id": 1400
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the size of an IPv6 address?",
+    "opts": [
+      "128 bits",
+      "32 bits",
+      "48 bits",
+      "64 bits"
+    ],
+    "ans": 0,
+    "sol": "IPv6 uses 128-bit (16 bytes) address formats.",
+    "id": 1401
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the length of a MAC address?",
+    "opts": [
+      "48 bits",
+      "32 bits",
+      "128 bits",
+      "64 bits"
+    ],
+    "ans": 0,
+    "sol": "MAC addresses are 48-bit physical hardware IDs.",
+    "id": 1402
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does MAC stand for?",
+    "opts": [
+      "Media Access Control",
+      "Machine Access Code",
+      "Media Association Connection",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "MAC = Media Access Control.",
+    "id": 1403
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is connection-oriented and guarantees delivery?",
+    "opts": [
+      "TCP",
+      "UDP",
+      "IP",
+      "ICMP"
+    ],
+    "ans": 0,
+    "sol": "Transmission Control Protocol (TCP) uses handshakes and acknowledgments.",
+    "id": 1404
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which protocol is connectionless and lightweight?",
+    "opts": [
+      "UDP",
+      "TCP",
+      "HTTP",
+      "FTP"
+    ],
+    "ans": 0,
+    "sol": "User Datagram Protocol (UDP) drops error controls to speed up streaming.",
+    "id": 1405
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is default port for HTTP?",
+    "opts": [
+      "80",
+      "443",
+      "22",
+      "21"
+    ],
+    "ans": 0,
+    "sol": "HTTP defaults to port 80.",
+    "id": 1406
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is default port for HTTPS?",
+    "opts": [
+      "443",
+      "80",
+      "22",
+      "21"
+    ],
+    "ans": 0,
+    "sol": "HTTPS defaults to port 443.",
+    "id": 1407
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is default port for SSH?",
+    "opts": [
+      "22",
+      "21",
+      "23",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "SSH remote CLI runs on port 22.",
+    "id": 1408
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is default port for FTP control channel?",
+    "opts": [
+      "21",
+      "22",
+      "23",
+      "80"
+    ],
+    "ans": 0,
+    "sol": "FTP uses port 21.",
+    "id": 1409
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is default port for DNS?",
+    "opts": [
+      "53",
+      "80",
+      "443",
+      "22"
+    ],
+    "ans": 0,
+    "sol": "DNS runs on port 53.",
+    "id": 1410
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What does DHCP stand for?",
+    "opts": [
+      "Dynamic Host Configuration Protocol",
+      "Double Host Control Protocol",
+      "Digital Home Configuration Protocol",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "DHCP leases IPs dynamically.",
+    "id": 1411
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which network device routes packets between different networks?",
+    "opts": [
+      "Router",
+      "Switch",
+      "Hub",
+      "Repeater"
+    ],
+    "ans": 0,
+    "sol": "Routers operate at the Network Layer to connect subnets.",
+    "id": 1412
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which device connects local hosts and switches packets by MAC address?",
+    "opts": [
+      "Switch",
+      "Router",
+      "Hub",
+      "Repeater"
+    ],
+    "ans": 0,
+    "sol": "Switches operate at the Data Link Layer.",
+    "id": 1413
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which device broadcasts incoming packets to all ports (Layer 1)?",
+    "opts": [
+      "Hub",
+      "Switch",
+      "Router",
+      "Bridge"
+    ],
+    "ans": 0,
+    "sol": "Hubs are basic repeater blocks with no switching tables.",
+    "id": 1414
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property controls internal spacing?",
+    "opts": [
+      "padding",
+      "margin",
+      "border",
+      "spacing"
+    ],
+    "ans": 0,
+    "sol": "Padding creates space inside element borders.",
+    "id": 1415
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property controls external spacing?",
+    "opts": [
+      "margin",
+      "padding",
+      "border",
+      "spacing"
+    ],
+    "ans": 0,
+    "sol": "Margin creates space outside borders.",
+    "id": 1416
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between let and var in JS?",
+    "opts": [
+      "let is block-scoped; var is function-scoped",
+      "var is block-scoped; let is function-scoped",
+      "let is constant",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "let respects curly brace scopes; var is hoisted function-wide.",
+    "id": 1417
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which JS array method creates a new array by transforming each element?",
+    "opts": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "forEach()"
+    ],
+    "ans": 0,
+    "sol": "map() applies a function to all elements, returning a new array.",
+    "id": 1418
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which CSS property sets the background color?",
+    "opts": [
+      "background-color",
+      "color",
+      "bg-color",
+      "background-style"
+    ],
+    "ans": 0,
+    "sol": "background-color styles backgrounds.",
+    "id": 1419
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is XSS?",
+    "opts": [
+      "Cross-Site Scripting (injects malicious scripts into trusted websites)",
+      "A CSS layout",
+      "A server crash",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "XSS executes script code inside victim browsers.",
+    "id": 1420
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What does Webpack do?",
+    "opts": [
+      "Bundles Javascript and asset modules for browser consumption",
+      "A web server",
+      "A database",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Webpack resolves dependency import trees to build bundle files.",
+    "id": 1421
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is JSX?",
+    "opts": [
+      "A syntax extension allowing HTML templates inside JS (used in React)",
+      "A database query",
+      "A CSS style",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "JSX is compiled to React.createElement calls.",
+    "id": 1422
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service model offers virtual machines and raw storage?",
+    "opts": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "IaaS (Infrastructure as a Service) rents compute and disks.",
+    "id": 1423
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service model rents developer runtimes (like Heroku) abstracting OS setups?",
+    "opts": [
+      "PaaS",
+      "IaaS",
+      "SaaS",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "PaaS (Platform as a Service) provides managed hosting platforms.",
+    "id": 1424
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service model rents web-ready end-user applications?",
+    "opts": [
+      "SaaS",
+      "IaaS",
+      "PaaS",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "SaaS (Software as a Service) hosts complete software services.",
+    "id": 1425
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is virtualization in cloud?",
+    "opts": [
+      "Using a hypervisor to split physical hardware into virtual machines",
+      "Online gaming",
+      "Virtual reality",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Virtualization multiplexes CPU and RAM resources.",
+    "id": 1426
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a public cloud?",
+    "opts": [
+      "Infrastructure shared over the internet with multiple tenants",
+      "Private cloud",
+      "Local servers",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Public clouds share server racks among various organizations.",
+    "id": 1427
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which service is AWS's primary virtual machine service?",
+    "opts": [
+      "EC2",
+      "S3",
+      "RDS",
+      "Lambda"
+    ],
+    "ans": 0,
+    "sol": "EC2 (Elastic Compute Cloud) hosts resizable VM servers.",
+    "id": 1428
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which company owns GCP?",
+    "opts": [
+      "Google",
+      "Amazon",
+      "Microsoft",
+      "IBM"
+    ],
+    "ans": 0,
+    "sol": "GCP is Google Cloud Platform.",
+    "id": 1429
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What does IAM stand for?",
+    "opts": [
+      "Identity and Access Management",
+      "Internal Access Manager",
+      "Internet Access Mode",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "IAM handles cloud permission policies and user keys.",
+    "id": 1430
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is Kubernetes?",
+    "opts": [
+      "An open-source container orchestration tool scaling container clusters",
+      "A virtual machine",
+      "A web browser",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Kubernetes automates deployment and scaling of containers.",
+    "id": 1431
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is a region in cloud?",
+    "opts": [
+      "A geographic area containing multiple isolated Availability Zones",
+      "A single data center",
+      "A country",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Regions house clusters of data centers.",
+    "id": 1432
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is shared responsibility model?",
+    "opts": [
+      "Provider secures the cloud; customer secures data inside the cloud",
+      "Provider secures everything",
+      "Customer secures everything",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Security 'of' the cloud belongs to the host; security 'in' the cloud is the client's job.",
+    "id": 1433
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is Infrastructure as Code (IaC)?",
+    "opts": [
+      "Deploying cloud services using machine-readable configuration files (like Terraform)",
+      "SaaS",
+      "PaaS",
+      "DevOps"
+    ],
+    "ans": 0,
+    "sol": "IaC tools automate infrastructure deployment.",
+    "id": 1434
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the function of a Loader in an operating system?",
+    "opts": [
+      "It loads the executable file from disk into physical memory for execution",
+      "It compiles source code",
+      "It links different files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The loader allocates memory space and copies executable instructions into RAM.",
+    "id": 1435
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does an Assembler do?",
+    "opts": [
+      "Translates assembly language code into machine code",
+      "Translates C code to assembly",
+      "Runs Java files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Assemblers convert low-level symbolic mnemonics into raw binary instructions.",
+    "id": 1436
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the difference between Little-Endian and Big-Endian byte ordering?",
+    "opts": [
+      "Little-Endian stores the least significant byte at the lowest address; Big-Endian stores the most significant byte first",
+      "Big-Endian is faster",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Endianness defines the byte ordering in computer memory.",
+    "id": 1437
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a cross-compiler?",
+    "opts": [
+      "A compiler that runs on one architecture and generates code for another architecture",
+      "A fast compiler",
+      "A compiler that compiles multiple languages",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Cross-compilers are used to build software for embedded platforms or different OSes.",
+    "id": 1438
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the purpose of a Symbol Table in a compiler?",
+    "opts": [
+      "To store information about identifiers, variables, and functions declared in the source code",
+      "To store symbols",
+      "To draw diagrams",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Symbol tables record scopes, types, and addresses of all code symbols.",
+    "id": 1439
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is Intermediate Code Generation (ICG) in compiler design?",
+    "opts": [
+      "Creating a machine-independent representations of code before generating final assembly",
+      "Compiling binary",
+      "Linking files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ICG simplifies optimization and porting of compilers to different targets.",
+    "id": 1440
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is an Abstract Syntax Tree (AST)?",
+    "opts": [
+      "A tree representation of the abstract syntactic structure of source code",
+      "A search tree",
+      "A HTML structure",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ASTs capture nesting of expressions and statements in parsed code.",
+    "id": 1441
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is register allocation in compilation?",
+    "opts": [
+      "Assigning variables to a limited number of CPU registers to speed up execution",
+      "Allocating memory on heap",
+      "Allocating RAM",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Register allocation minimizes memory reads/writes by utilizing CPU registers.",
+    "id": 1442
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is implicit type conversion (coercion)?",
+    "opts": [
+      "Automatic type conversion performed by the compiler/runtime",
+      "Manual type casting",
+      "A type error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Coercion happens automatically when mixed types are evaluated (e.g., float + int).",
+    "id": 1443
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the primary difference between a stack overflow and a heap overflow?",
+    "opts": [
+      "Stack overflow is due to excessive nested function calls; heap overflow is due to excessive dynamic memory allocations",
+      "Both are same",
+      "Heap overflow is faster",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stack overflow exhausts the call stack; heap overflow corrupts dynamic memory blocks.",
+    "id": 1444
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is memory compaction?",
+    "opts": [
+      "An OS memory optimization technique merging free blocks by moving active allocations",
+      "Disk formatting",
+      "Paging",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Compaction resolves external fragmentation by shifting blocks in physical RAM.",
+    "id": 1445
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does a Linker do?",
+    "opts": [
+      "Combines object files and resolves cross-file function/variable references into a single binary",
+      "Compiles files",
+      "Executes files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Linkers assemble compiled files into final runnables.",
+    "id": 1446
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a runtime environment (JRE/Node)?",
+    "opts": [
+      "The software environment executing code and managing system resources at runtime",
+      "The text editor",
+      "The compiler",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Runtimes run compiled bytecodes.",
+    "id": 1447
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is a semantic error?",
+    "opts": [
+      "A bug where the code runs but produces incorrect results due to logical flaws",
+      "A syntax error",
+      "A compile error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Semantic errors represent logic mistakes (e.g., adding instead of multiplying).",
+    "id": 1448
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is garbage collection sweep phase?",
+    "opts": [
+      "Reclaiming memory occupied by unreachable objects identified in the mark phase",
+      "Marking objects",
+      "Allocating memory",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The sweep phase scans the heap to free marked garbage blocks.",
+    "id": 1449
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is L1 regularization (Lasso)?",
+    "opts": [
+      "Regularization that adds a penalty proportional to the absolute values of weights, encouraging sparsity",
+      "Adding weights",
+      "L2 regularization",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "L1 regularization can shrink some weights to zero, acting as feature selectors.",
+    "id": 1450
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the vanishing gradient problem in deep neural networks?",
+    "opts": [
+      "When gradients shrink to near zero during backpropagation, stopping early layers from updating weights",
+      "Gradients exploding",
+      "A database error",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Vanishing gradients occur with saturating activation functions (like sigmoid/tanh) in deep nets.",
+    "id": 1451
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does GAN stand for in generative AI?",
+    "opts": [
+      "Generative Adversarial Network",
+      "General Access Network",
+      "Generative Association Node",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "GANs consist of two competing networks: a generator and a discriminator.",
+    "id": 1452
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the Generator's role in a GAN?",
+    "opts": [
+      "To generate fake data samples that mimic the training distribution",
+      "To classify data",
+      "To check errors",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "The generator tries to trick the discriminator into accepting fake samples.",
+    "id": 1453
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a Support Vector in SVM?",
+    "opts": [
+      "The data points closest to the separating hyperplane that define the margin",
+      "A weight vector",
+      "A network node",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Support vectors are the critical points shaping the SVM decision boundary.",
+    "id": 1454
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the kernel trick in SVM?",
+    "opts": [
+      "Mapping low-dimensional data into a higher-dimensional space to make it linearly separable",
+      "A math trick",
+      "A database shortcut",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Kernels compute high-dimensional dot products without explicitly transforming coordinates.",
+    "id": 1455
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is Entropy in decision trees?",
+    "opts": [
+      "A measure of impurity or randomness in a dataset",
+      "A speed metric",
+      "A tree height",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Entropy is used to calculate information gain for splits.",
+    "id": 1456
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is Information Gain?",
+    "opts": [
+      "The reduction in entropy achieved by partitioning a dataset on an attribute",
+      "The tree size",
+      "Gini impurity",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Decision trees choose splits that maximize information gain.",
+    "id": 1457
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is tree pruning in ML?",
+    "opts": [
+      "Removing branches of a decision tree that provide little predictive power to avoid overfitting",
+      "Deleting files",
+      "Adding leaves",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Pruning simplifies decision trees, improving test accuracy.",
+    "id": 1458
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is early stopping?",
+    "opts": [
+      "Halting model training when validation loss stops improving, preventing overfitting",
+      "Stopping compiler",
+      "Shutting down server",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Early stopping saves time and keeps models generalized.",
+    "id": 1459
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a validation curve?",
+    "opts": [
+      "A plot showing training and validation scores against a hyperparameter value",
+      "A chart",
+      "A database query",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Validation curves help developers select optimal hyperparameters.",
+    "id": 1460
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is Min-Max Scaling (Normalization)?",
+    "opts": [
+      "Rescaling numeric features to a range of 0 to 1",
+      "Standard deviation",
+      "Average score",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Min-max formula is (x - min) / (max - min).",
+    "id": 1461
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the difference between Bagging and Boosting?",
+    "opts": [
+      "Bagging builds models in parallel (e.g. Random Forest); Boosting builds models sequentially (e.g. XGBoost)",
+      "Boosting is parallel; Bagging is sequential",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Bagging reduces variance; Boosting reduces bias.",
+    "id": 1462
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is AdaBoost (Adaptive Boosting)?",
+    "opts": [
+      "An ensemble method that assigns higher weights to misclassified samples in sequential iterations",
+      "Random Forest",
+      "SVM",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "AdaBoost focuses new learners on hard-to-classify samples.",
+    "id": 1463
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is XGBoost?",
+    "opts": [
+      "An optimized gradient boosting library designed to be highly efficient and flexible",
+      "A database",
+      "A hardware chip",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "XGBoost is a popular, fast gradient boosted tree framework.",
+    "id": 1464
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is a Hyperplane?",
+    "opts": [
+      "A decision boundary separating classes in a high-dimensional space",
+      "A network cable",
+      "A CPU chip",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "In 2D space, a hyperplane is a line; in 3D, it is a plane.",
+    "id": 1465
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a polymorphic virus?",
+    "opts": [
+      "A virus that alters its decryption module and signature on each infection to evade scanners",
+      "A database bug",
+      "A network card",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Polymorphic malware changes appearance but keeps its functional payload.",
+    "id": 1466
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is ARP poisoning (ARP spoofing)?",
+    "opts": [
+      "Flooding a LAN with malicious ARP messages to link an attacker's MAC address with a gateway's IP",
+      "A database attack",
+      "Phishing",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "ARP spoofing enables man-in-the-middle attacks on local networks.",
+    "id": 1467
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is DNS cache poisoning?",
+    "opts": [
+      "Injecting fraudulent DNS records into a DNS resolver's cache, redirecting users to malicious sites",
+      "Phishing",
+      "Deleting files",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Poisoning routes users to spoofed copies of banking or social pages.",
+    "id": 1468
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a dictionary attack?",
+    "opts": [
+      "Systematically testing password lists containing common words to break authentication",
+      "A brute force search",
+      "A translation method",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Dictionary attacks succeed against weak or un-salted passwords.",
+    "id": 1469
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a replay attack?",
+    "opts": [
+      "Intercepting valid network transmissions and delaying or re-sending them to impersonate a client",
+      "A loop in code",
+      "A database write",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Replay attacks are defeated using nonces or timestamps in payloads.",
+    "id": 1470
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is session hijacking (session fixation)?",
+    "opts": [
+      "Stealing or forcing a user's active session token to gain unauthorized account access",
+      "A network routing",
+      "Phishing",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Hijacking bypasses password screens by stealing active session cookies.",
+    "id": 1471
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a certificate authority (CA)?",
+    "opts": [
+      "A trusted third party that issues digital certificates validating domain ownership",
+      "A security officer",
+      "A server firewall",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CAs verify domain owners before signing TLS certificates.",
+    "id": 1472
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a self-signed certificate?",
+    "opts": [
+      "A digital certificate signed by its own creator rather than a trusted CA",
+      "A fake certificate",
+      "A network card",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Self-signed certificates encrypt traffic but trigger browser warnings.",
+    "id": 1473
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between encoding, encryption, and hashing?",
+    "opts": [
+      "Encoding formats data; encryption secures confidentiality using keys; hashing verifies integrity (one-way)",
+      "Both are same",
+      "Hashing is reversible",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Encoding is public; encryption requires keys to reverse; hashing is irreversible.",
+    "id": 1474
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is a drive-by download?",
+    "opts": [
+      "Unintentional download of malware happening when a user visits a compromised website without clicking anything",
+      "A download link",
+      "An app download",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Drive-by attacks exploit browser bugs to install payloads automatically.",
+    "id": 1475
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between sessionStorage and localStorage?",
+    "opts": [
+      "sessionStorage persists only during the page session (closed tab deletes it); localStorage persists indefinitely",
+      "localStorage is temporary",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "sessionStorage is wiped when tabs close; localStorage remains.",
+    "id": 1476
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is a Service Worker?",
+    "opts": [
+      "A script running in the background of web applications to handle caching, push notifications, and offline capabilities",
+      "A network router",
+      "A database trigger",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Service workers enable progressive web apps (PWAs) to run offline.",
+    "id": 1477
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is a Web Socket?",
+    "opts": [
+      "A protocol enabling full-duplex persistent communication channels over a single TCP connection",
+      "An API gateway",
+      "A HTML tag",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "WebSockets allow real-time bidirectional messaging (e.g. chat).",
+    "id": 1478
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is Cross-Origin Resource Sharing (CORS)?",
+    "opts": [
+      "A browser security mechanism restricting web pages from making requests to a different domain",
+      "A network protocol",
+      "A database lock",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CORS headers define which external domains can read API responses.",
+    "id": 1479
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is a web cookie (HTTP cookie)?",
+    "opts": [
+      "Small text files stored by browsers to track sessions, user states, and preferences",
+      "A cache file",
+      "A network router",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Cookies are automatically sent with matching HTTP request headers.",
+    "id": 1480
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is virtual DOM in React?",
+    "opts": [
+      "A lightweight memory representation of the real DOM used to optimize updates",
+      "A browser window",
+      "A database table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "React compares virtual DOM diffs to update physical nodes efficiently.",
+    "id": 1481
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between state and props in React?",
+    "opts": [
+      "State is local internal component data; props are external parameters passed from parents",
+      "Props can change internally",
+      "Both are same",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "State is managed inside the component; props are read-only inputs.",
+    "id": 1482
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between client-side rendering (CSR) and server-side rendering (SSR)?",
+    "opts": [
+      "CSR builds the DOM inside the browser using JS; SSR sends fully rendered HTML from the server",
+      "SSR is slower",
+      "CSR is for databases",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "SSR improves SEO and initial load times by rendering pages before shipping.",
+    "id": 1483
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is the difference between user thread and kernel thread?",
+    "opts": [
+      "User threads are managed by user libraries without kernel knowledge; kernel threads are managed directly by the OS",
+      "Both are same",
+      "User threads are slower",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Kernel threads are scheduled by the OS; user threads are mapped to kernel threads.",
+    "id": 1484
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is spinlock?",
+    "opts": [
+      "A lock where threads continuously loop (spin) checking if the lock is available, wasting CPU",
+      "A semaphore",
+      "A deadlock",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Spinlocks avoid context switches but consume CPU cycles, useful for short locks.",
+    "id": 1485
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is bounded waiting in critical sections?",
+    "opts": [
+      "A limit on the number of times other processes can enter the critical section after a process requests entry",
+      "Starvation",
+      "Deadlock",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Bounded waiting prevents a thread from being starved indefinitely.",
+    "id": 1486
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is progress in critical section requirements?",
+    "opts": [
+      "If no process is executing and some want to enter, the selection of the next process cannot be postponed indefinitely",
+      "Memory clean",
+      "CPU run",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Progress ensures the system does not deadlock when choosing the next thread.",
+    "id": 1487
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is the difference between a binary semaphore and a mutex?",
+    "opts": [
+      "Mutexes have ownership and can only be released by the locking thread; semaphores have no ownership and use signaling",
+      "Both are same",
+      "Semaphores are faster",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Mutexes are for locking; semaphores are for signaling and resource counting.",
+    "id": 1488
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is page replacement in OS?",
+    "opts": [
+      "Swapping a page out of RAM to make room for a newly requested page during a page fault",
+      "Deleting files",
+      "RAM cleanup",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Page replacement policies decide which victim frame to swap to disk.",
+    "id": 1489
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the base of the Hexadecimal number system?",
+    "opts": [
+      "16",
+      "8",
+      "10",
+      "2"
+    ],
+    "ans": 0,
+    "sol": "Hexadecimal runs digits 0-9 and letters A-F.",
+    "id": 1490
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the base of the Binary number system?",
+    "opts": [
+      "2",
+      "10",
+      "8",
+      "16"
+    ],
+    "ans": 0,
+    "sol": "Binary uses digits 0 and 1.",
+    "id": 1491
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the base of the Decimal number system?",
+    "opts": [
+      "10",
+      "2",
+      "8",
+      "16"
+    ],
+    "ans": 0,
+    "sol": "Decimal uses digits 0 to 9.",
+    "id": 1492
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity of searching in a balanced BST?",
+    "opts": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
+    ],
+    "ans": 0,
+    "sol": "Balanced BSTs (like AVL or Red-Black trees) guarantee O(log n) lookups.",
+    "id": 1493
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity of searching in a skewed binary tree?",
+    "opts": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n²)"
+    ],
+    "ans": 0,
+    "sol": "Skewed trees degrade to singly linked lists, taking O(n) checks.",
+    "id": 1494
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the height of a balanced tree with n nodes?",
+    "opts": [
+      "O(log n)",
+      "O(n)",
+      "O(sqrt(n))",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Balanced trees restrict height to log2(n) levels.",
+    "id": 1495
+  },
+  {
+    "cat": "DSA",
+    "q": "What is Trie data structure?",
+    "opts": [
+      "A search tree optimized for storing strings and performing prefix lookups",
+      "A binary tree",
+      "A hash table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Tries (prefix trees) are used in dictionaries and autocomplete.",
+    "id": 1496
+  },
+  {
+    "cat": "DSA",
+    "q": "What is stable sorting?",
+    "opts": [
+      "A sorting algorithm that preserves the relative order of equal keys",
+      "An in-place sort",
+      "A fast sort",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Stable sorts (like Merge Sort) do not swap equal elements.",
+    "id": 1497
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is candidate key in SQL?",
+    "opts": [
+      "A column or set of columns that can uniquely identify a table row",
+      "The primary key chosen",
+      "An index",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Candidate keys are all valid primary key options.",
+    "id": 1498
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which of the following describes a key process or concept related to DBMS & SQL (Reference ID: 102)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for DBMS & SQL.",
+    "id": 1499
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is process synchronization?",
+    "opts": [
+      "Coordinating the execution of processes to ensure consistent data sharing",
+      "Paging",
+      "Context switching",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Synchronization blocks protect shared memory states.",
+    "id": 1500
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is starvation in operating system scheduling?",
+    "opts": [
+      "A process waiting indefinitely because other processes get higher priority",
+      "A memory leak",
+      "A CPU crash",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Starvation is solved by aging priorities.",
+    "id": 1501
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which of the following describes a key process or concept related to Operating Systems (Reference ID: 103)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Operating Systems.",
+    "id": 1502
+  },
+  {
+    "cat": "DSA",
+    "q": "What is a binary search tree?",
+    "opts": [
+      "A binary tree where left node is less than root and right is greater",
+      "A heap",
+      "A hash table",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "BSTs maintain sorted order for fast searches.",
+    "id": 1503
+  },
+  {
+    "cat": "DSA",
+    "q": "Which of the following describes a key process or concept related to DSA (Reference ID: 102)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for DSA.",
+    "id": 1504
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which memory device is directly accessible by the CPU register?",
+    "opts": [
+      "L1 Cache",
+      "Hard Disk",
+      "USB Drive",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "L1 cache is integrated directly on the CPU die for immediate access.",
+    "id": 1505
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the primary function of BIOS POST?",
+    "opts": [
+      "To test computer hardware compatibility before booting the OS",
+      "To install drivers",
+      "To connect networks",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "POST (Power-On Self-Test) verifies components are working.",
+    "id": 1506
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which is the fastest peripheral connection port in modern computers?",
+    "opts": [
+      "Thunderbolt",
+      "USB 2.0",
+      "VGA",
+      "SATA"
+    ],
+    "ans": 0,
+    "sol": "Thunderbolt interfaces offer up to 40 Gbps bandwidth.",
+    "id": 1507
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the function of the CMOS battery on a motherboard?",
+    "opts": [
+      "To power the BIOS chip to retain system time and settings when off",
+      "To power the CPU",
+      "To charge the laptop",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CMOS batteries keep the system clock and settings memory powered.",
+    "id": 1508
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "How many bits are in a double-word (dword) on standard x86 architectures?",
+    "opts": [
+      "32 bits",
+      "16 bits",
+      "64 bits",
+      "8 bits"
+    ],
+    "ans": 0,
+    "sol": "A dword is 32 bits (2 words).",
+    "id": 1509
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the binary representation of decimal 14?",
+    "opts": [
+      "1110",
+      "1101",
+      "1011",
+      "1111"
+    ],
+    "ans": 0,
+    "sol": "14 is 8 + 4 + 2 = 1110 in binary.",
+    "id": 1510
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is a sprint goal in Scrum?",
+    "opts": [
+      "A short-term objective set for the sprint that guide the team",
+      "A bug count",
+      "A compilation target",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Sprint goals guide team focus during sprints.",
+    "id": 1511
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is continuous integration (CI)?",
+    "opts": [
+      "The practice of merging developer code branches into a shared main repository frequently",
+      "Deploying to Netlify",
+      "Writing tests",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "CI runs automated builds and tests on every commit.",
+    "id": 1512
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which of the following describes a key process or concept related to Software Engineering (Reference ID: 103)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Software Engineering.",
+    "id": 1513
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which of the following describes a key process or concept related to Software Engineering (Reference ID: 104)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Software Engineering.",
+    "id": 1514
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is responsive web design?",
+    "opts": [
+      "Design that automatically adapts to fit mobile and desktop screen sizes",
+      "Fast design",
+      "Static design",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Responsive design uses media queries and flex grids.",
+    "id": 1515
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which of the following describes a key process or concept related to Web Technologies (Reference ID: 102)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Web Technologies.",
+    "id": 1516
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud concept refers to pay-as-you-go billing?",
+    "opts": [
+      "Utility pricing",
+      "Fixed pricing",
+      "Subscribed pricing",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Utility pricing charges clients for the exact seconds/bytes used.",
+    "id": 1517
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cloud service orchestrator?",
+    "opts": [
+      "Software that automates the deployment and management of cloud services",
+      "A database",
+      "A router",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Orchestrators (like Kubernetes) manage VM lifecycles.",
+    "id": 1518
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is cold standby in cloud disaster recovery?",
+    "opts": [
+      "A backup environment that is offline and only started if a disaster occurs",
+      "Active backup",
+      "Real-time copy",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Cold standby takes longer to restore but is the cheapest DR option.",
+    "id": 1519
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which of the following describes a key process or concept related to Cloud Computing (Reference ID: 104)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Cloud Computing.",
+    "id": 1520
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which of the following describes a key process or concept related to Cloud Computing (Reference ID: 105)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Cloud Computing.",
+    "id": 1521
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which of the following describes a key process or concept related to Cloud Computing (Reference ID: 106)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Cloud Computing.",
+    "id": 1522
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which of the following describes a key process or concept related to Cybersecurity (Reference ID: 101)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Cybersecurity.",
+    "id": 1523
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which of the following describes a key process or concept related to AI & ML (Reference ID: 101)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for AI & ML.",
+    "id": 1524
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is compiling?",
+    "opts": [
+      "Translating high-level source code into low-level machine instructions",
+      "Running code",
+      "Debugging code",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Compilers build standalone executable files.",
+    "id": 1525
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is runtime environment?",
+    "opts": [
+      "The software container where applications run and execute",
+      "The compiler",
+      "The editor",
+      "None"
+    ],
+    "ans": 0,
+    "sol": "Runtimes manage resources during program runs.",
+    "id": 1526
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which of the following describes a key process or concept related to Technical Concepts (Reference ID: 103)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for Technical Concepts.",
+    "id": 1527
+  },
+  {
+    "cat": "System Design",
+    "q": "Which of the following describes a key process or concept related to System Design (Reference ID: 101)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for System Design.",
+    "id": 1528
+  },
+  {
+    "cat": "System Design",
+    "q": "Which of the following describes a key process or concept related to System Design (Reference ID: 102)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for System Design.",
+    "id": 1529
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which gas do plants absorb from the atmosphere for photosynthesis?",
+    "opts": [
+      "Carbon Dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Helium"
+    ],
+    "ans": 0,
+    "sol": "Plants absorb CO2 and release Oxygen.",
+    "id": 1530
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the largest land mammal in the world?",
+    "opts": [
+      "African Elephant",
+      "Blue Whale",
+      "Giraffe",
+      "Hippopotamus"
+    ],
+    "ans": 0,
+    "sol": "The African Elephant is the largest land animal; Blue Whale is the largest marine animal.",
+    "id": 1531
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Who is the developer of the Linux kernel?",
+    "opts": [
+      "Linus Torvalds",
+      "Bill Gates",
+      "Steve Jobs",
+      "Richard Stallman"
+    ],
+    "ans": 0,
+    "sol": "Linus Torvalds released the first Linux kernel in 1991.",
+    "id": 1532
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "What is the capital of Germany?",
+    "opts": [
+      "Berlin",
+      "Munich",
+      "Frankfurt",
+      "Hamburg"
+    ],
+    "ans": 0,
+    "sol": "Berlin is the capital of Germany.",
+    "id": 1533
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "How many colors are in a standard rainbow?",
+    "opts": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "ans": 0,
+    "sol": "Rainbows have 7 colors (VIBGYOR).",
+    "id": 1534
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Which of the following describes a key process or concept related to General / Mixed (Reference ID: 106)?",
+    "opts": [
+      "Correct standard method",
+      "Alternative incorrect approach",
+      "Unused secondary system",
+      "None of the above"
+    ],
+    "ans": 0,
+    "sol": "This question focuses on testing standard definitions for General / Mixed.",
+    "id": 1535
   }
 ];
 
@@ -7561,5 +19976,6 @@ export const CATEGORY_CONFIG = [
   { id: "Cloud Computing", label: "Cloud Computing", icon: "Cloud", color: "#06B6D4", bg: "#0891B2" },
   { id: "Cybersecurity", label: "Cybersecurity", icon: "Shield", color: "#10B981", bg: "#047857" },
   { id: "System Design", label: "System Design", icon: "GitBranch", color: "#F59E0B", bg: "#B45309" },
-  { id: "Technical Concepts", label: "Technical Concepts", icon: "FileText", color: "#9CA3AF", bg: "#4B5563" }
+  { id: "Technical Concepts", label: "Technical Concepts", icon: "FileText", color: "#9CA3AF", bg: "#4B5563" },
+  { id: "General / Mixed", label: "General / Mixed", icon: "HelpCircle", color: "#A855F7", bg: "#581C87" }
 ];

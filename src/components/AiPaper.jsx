@@ -179,7 +179,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
               lineHeight: "1.5"
             }}
           >
-            <strong>Note on Fallback:</strong> If no API key is supplied, the portal will run in <strong>Local Simulator Mode</strong>. It will automatically build a realistic NQT paper from the 580+ offline questions database immediately!
+            <strong>Note on Fallback:</strong> If no API key is supplied, the portal will run in <strong>Local Simulator Mode</strong>. It will automatically build a realistic NQT paper from the 1,530+ offline questions database immediately!
           </div>
         </div>
 

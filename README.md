@@ -7,7 +7,7 @@ A premium, state-of-the-art, dark-themed practice and mock exam portal for candi
 ## 🚀 Key Features
 
 *   📊 **Interactive Dashboard**: Track your study progress, average test scores, overall accuracy, and saved bookmark counts.
-*   📚 **Offline Question Bank**: **580 unique questions** compiled, structured, and deduplicated from official prep resources. Includes detailed step-by-step mathematical explanations.
+*   📚 **Offline Question Bank**: **1,535 unique questions** compiled, structured, and deduplicated from official prep resources. Includes detailed step-by-step mathematical explanations.
 *   ⚙️ **Mock Configurator**: Customize your mocks by selecting a specific topic or mixed syllabus, modifying question count and time limits, and toggling session modes.
 *   🧠 **Two Practice Modes**:
     *   **Exam Mode**: Strict timed mock simulation. Answers are hidden until submission, progress is tracked, and a red countdown warning activates when under 5 minutes.
@@ -20,7 +20,7 @@ A premium, state-of-the-art, dark-themed practice and mock exam portal for candi
 *   💾 **Saved Questions revision**: Browse bookmarked questions, review solutions, delete saved items, or launch a quick custom mock containing *only* your bookmarks.
 *   🔮 **AI Mock Generator**:
     *   **API Mode**: Enter your Anthropic Claude API Key (securely saved in browser `localStorage`) to generate fresh, custom papers on any topic using Claude 3.5 Sonnet.
-    *   **Local Simulator Fallback**: If no API key is supplied, a simulator dynamically shuffles and builds a realistic mock paper from the 580 offline questions immediately.
+    *   **Local Simulator Fallback**: If no API key is supplied, a simulator dynamically shuffles and builds a realistic mock paper from the 1,535 offline questions immediately.
 *   🚪 **Mid-Test Exit & Navigation**: Safely exit tests in progress using a styled confirmation modal to return to the dashboard.
 *   📱 **High-Density Question Palette**: Sidebar navigation grid dynamically transitions from 5-columns to 8-columns or 10-columns for large question sets to prevent layout overflows.
 
@@ -42,7 +42,7 @@ NQTMcq/
 │   │   ├── AiPaper.jsx    # Claude API key input and NQT simulator
 │   │   └── Analytics.jsx  # SVG trend charts and bookmarks manager
 │   ├── data/
-│   │   └── questionBank.js# The merged database of 580 NQT questions
+│   │   └── questionBank.js# The merged database of 1,535 NQT questions
 │   ├── App.jsx            # Main app shell and state coordinator
 │   ├── index.css          # Design system, glassmorphism, and color variables
 │   └── main.jsx           # ReactDOM client mount point
@@ -55,25 +55,25 @@ NQTMcq/
 
 ## 📈 Question Bank Topics
 
-The offline question bank contains **580 unique questions** categorized under 16 topics:
+The offline question bank contains **1,535 unique questions** categorized under 17 topics:
 
 *   **Quantitative Aptitude**: 313 questions
-*   **Software Engineering**: 39 questions
-*   **Logical Reasoning**: 30 questions
-*   **Programming Concepts**: 29 questions
-*   **Data Structures & Algorithms (DSA)**: 20 questions
-*   **Technical Concepts**: 20 questions
-*   **General / Mixed**: 20 questions
-*   **Computer Fundamentals**: 19 questions
-*   **Verbal Ability**: 10 questions
-*   **DBMS & SQL**: 10 questions
-*   **Computer Networks**: 10 questions
-*   **Operating Systems**: 10 questions
-*   **Web Technologies**: 10 questions
-*   **Cloud Computing**: 10 questions
-*   **Cybersecurity**: 10 questions
-*   **AI & ML**: 10 questions
-*   **System Design**: 10 questions
+*   **Logical Reasoning**: 79 questions
+*   **Computer Networks**: 78 questions
+*   **Verbal Ability**: 77 questions
+*   **Programming Concepts**: 76 questions
+*   **DBMS & SQL**: 76 questions
+*   **Operating Systems**: 76 questions
+*   **Data Structures & Algorithms (DSA)**: 76 questions
+*   **Computer Fundamentals**: 76 questions
+*   **Software Engineering**: 76 questions
+*   **Web Technologies**: 76 questions
+*   **Cloud Computing**: 76 questions
+*   **Cybersecurity**: 76 questions
+*   **AI & ML**: 76 questions
+*   **Technical Concepts**: 76 questions
+*   **System Design**: 76 questions
+*   **General / Mixed**: 76 questions
 
 ---
 

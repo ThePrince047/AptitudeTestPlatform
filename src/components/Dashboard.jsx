@@ -39,7 +39,7 @@ export default function Dashboard({
     <div>
       <div className="dashboard-hero">
         <h2>TCS NQT Preparation Portal</h2>
-        <p>Master Quantitative Aptitude, Logical Reasoning, Coding Concepts, and technical topics with 580+ official practice questions.</p>
+        <p>Master Quantitative Aptitude, Logical Reasoning, Coding Concepts, and technical topics with 1,530+ official practice questions.</p>
       </div>
 
       {/* Stats Grid */}
