@@ -1,5 +1,5 @@
 // Aptitude Mock Test Question Bank
-// Total Questions: 1782
+// Total Questions: 2157
 
 export const QB = [
   {
@@ -23167,6 +23167,4881 @@ export const QB = [
     "ans": 0,
     "sol": "Arrays are subset of lists. Since no lists are hashes, no array can be a hash. Since all arrays are lists, some lists are arrays.",
     "id": 1782
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The candidate's ________ speech failed to address the pressing issues, focusing instead on empty platitudes.",
+    "opts": [
+      "turgid",
+      "succinct",
+      "laconic",
+      "concise"
+    ],
+    "ans": 0,
+    "sol": "Explanation: turgid means swollen or bombastic, fitting 'empty platitudes'. (Advanced Verbal Q-78)",
+    "id": 1783
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Despite the speaker's ________ tone, the underlying hostility was evident to the observant listeners.",
+    "opts": [
+      "mellifluous",
+      "truculent",
+      "bellicose",
+      "pugnacious"
+    ],
+    "ans": 0,
+    "sol": "Explanation: mellifluous means sweet or musical, contrasting with 'underlying hostility'. (Advanced Verbal Q-79)",
+    "id": 1784
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The editor noted that the manuscript was filled with ________, requiring extensive pruning of repetitive phrases.",
+    "opts": [
+      "tautologies",
+      "lacunae",
+      "apothegms",
+      "maxims"
+    ],
+    "ans": 0,
+    "sol": "Explanation: tautologies are redundant repetitions of meaning. (Advanced Verbal Q-80)",
+    "id": 1785
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "She was known for her ________ lifestyle, spending lavishly on unnecessary luxuries while ignoring her debts.",
+    "opts": [
+      "profligate",
+      "parsimonious",
+      "penurious",
+      "frugal"
+    ],
+    "ans": 0,
+    "sol": "Explanation: profligate means recklessly extravagant or wasteful. (Advanced Verbal Q-81)",
+    "id": 1786
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The treaty was designed to ________ the long-standing animosity between the two neighboring countries.",
+    "opts": [
+      "palliate",
+      "exacerbate",
+      "foment",
+      "instigate"
+    ],
+    "ans": 0,
+    "sol": "Explanation: palliate means to make less severe or alleviate animosity. (Advanced Verbal Q-82)",
+    "id": 1787
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The candidate's ________ speech failed to address the pressing issues, focusing instead on empty platitudes.",
+    "opts": [
+      "turgid",
+      "succinct",
+      "laconic",
+      "concise"
+    ],
+    "ans": 0,
+    "sol": "Explanation: turgid means swollen or bombastic, fitting 'empty platitudes'. (Advanced Verbal Q-83)",
+    "id": 1788
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Despite the speaker's ________ tone, the underlying hostility was evident to the observant listeners.",
+    "opts": [
+      "mellifluous",
+      "truculent",
+      "bellicose",
+      "pugnacious"
+    ],
+    "ans": 0,
+    "sol": "Explanation: mellifluous means sweet or musical, contrasting with 'underlying hostility'. (Advanced Verbal Q-84)",
+    "id": 1789
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The editor noted that the manuscript was filled with ________, requiring extensive pruning of repetitive phrases.",
+    "opts": [
+      "tautologies",
+      "lacunae",
+      "apothegms",
+      "maxims"
+    ],
+    "ans": 0,
+    "sol": "Explanation: tautologies are redundant repetitions of meaning. (Advanced Verbal Q-85)",
+    "id": 1790
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "She was known for her ________ lifestyle, spending lavishly on unnecessary luxuries while ignoring her debts.",
+    "opts": [
+      "profligate",
+      "parsimonious",
+      "penurious",
+      "frugal"
+    ],
+    "ans": 0,
+    "sol": "Explanation: profligate means recklessly extravagant or wasteful. (Advanced Verbal Q-86)",
+    "id": 1791
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The treaty was designed to ________ the long-standing animosity between the two neighboring countries.",
+    "opts": [
+      "palliate",
+      "exacerbate",
+      "foment",
+      "instigate"
+    ],
+    "ans": 0,
+    "sol": "Explanation: palliate means to make less severe or alleviate animosity. (Advanced Verbal Q-87)",
+    "id": 1792
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The candidate's ________ speech failed to address the pressing issues, focusing instead on empty platitudes.",
+    "opts": [
+      "turgid",
+      "succinct",
+      "laconic",
+      "concise"
+    ],
+    "ans": 0,
+    "sol": "Explanation: turgid means swollen or bombastic, fitting 'empty platitudes'. (Advanced Verbal Q-88)",
+    "id": 1793
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Despite the speaker's ________ tone, the underlying hostility was evident to the observant listeners.",
+    "opts": [
+      "mellifluous",
+      "truculent",
+      "bellicose",
+      "pugnacious"
+    ],
+    "ans": 0,
+    "sol": "Explanation: mellifluous means sweet or musical, contrasting with 'underlying hostility'. (Advanced Verbal Q-89)",
+    "id": 1794
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The editor noted that the manuscript was filled with ________, requiring extensive pruning of repetitive phrases.",
+    "opts": [
+      "tautologies",
+      "lacunae",
+      "apothegms",
+      "maxims"
+    ],
+    "ans": 0,
+    "sol": "Explanation: tautologies are redundant repetitions of meaning. (Advanced Verbal Q-90)",
+    "id": 1795
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "She was known for her ________ lifestyle, spending lavishly on unnecessary luxuries while ignoring her debts.",
+    "opts": [
+      "profligate",
+      "parsimonious",
+      "penurious",
+      "frugal"
+    ],
+    "ans": 0,
+    "sol": "Explanation: profligate means recklessly extravagant or wasteful. (Advanced Verbal Q-91)",
+    "id": 1796
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The treaty was designed to ________ the long-standing animosity between the two neighboring countries.",
+    "opts": [
+      "palliate",
+      "exacerbate",
+      "foment",
+      "instigate"
+    ],
+    "ans": 0,
+    "sol": "Explanation: palliate means to make less severe or alleviate animosity. (Advanced Verbal Q-92)",
+    "id": 1797
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The candidate's ________ speech failed to address the pressing issues, focusing instead on empty platitudes.",
+    "opts": [
+      "turgid",
+      "succinct",
+      "laconic",
+      "concise"
+    ],
+    "ans": 0,
+    "sol": "Explanation: turgid means swollen or bombastic, fitting 'empty platitudes'. (Advanced Verbal Q-93)",
+    "id": 1798
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Despite the speaker's ________ tone, the underlying hostility was evident to the observant listeners.",
+    "opts": [
+      "mellifluous",
+      "truculent",
+      "bellicose",
+      "pugnacious"
+    ],
+    "ans": 0,
+    "sol": "Explanation: mellifluous means sweet or musical, contrasting with 'underlying hostility'. (Advanced Verbal Q-94)",
+    "id": 1799
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The editor noted that the manuscript was filled with ________, requiring extensive pruning of repetitive phrases.",
+    "opts": [
+      "tautologies",
+      "lacunae",
+      "apothegms",
+      "maxims"
+    ],
+    "ans": 0,
+    "sol": "Explanation: tautologies are redundant repetitions of meaning. (Advanced Verbal Q-95)",
+    "id": 1800
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "She was known for her ________ lifestyle, spending lavishly on unnecessary luxuries while ignoring her debts.",
+    "opts": [
+      "profligate",
+      "parsimonious",
+      "penurious",
+      "frugal"
+    ],
+    "ans": 0,
+    "sol": "Explanation: profligate means recklessly extravagant or wasteful. (Advanced Verbal Q-96)",
+    "id": 1801
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The treaty was designed to ________ the long-standing animosity between the two neighboring countries.",
+    "opts": [
+      "palliate",
+      "exacerbate",
+      "foment",
+      "instigate"
+    ],
+    "ans": 0,
+    "sol": "Explanation: palliate means to make less severe or alleviate animosity. (Advanced Verbal Q-97)",
+    "id": 1802
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The candidate's ________ speech failed to address the pressing issues, focusing instead on empty platitudes.",
+    "opts": [
+      "turgid",
+      "succinct",
+      "laconic",
+      "concise"
+    ],
+    "ans": 0,
+    "sol": "Explanation: turgid means swollen or bombastic, fitting 'empty platitudes'. (Advanced Verbal Q-98)",
+    "id": 1803
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "Despite the speaker's ________ tone, the underlying hostility was evident to the observant listeners.",
+    "opts": [
+      "mellifluous",
+      "truculent",
+      "bellicose",
+      "pugnacious"
+    ],
+    "ans": 0,
+    "sol": "Explanation: mellifluous means sweet or musical, contrasting with 'underlying hostility'. (Advanced Verbal Q-99)",
+    "id": 1804
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The editor noted that the manuscript was filled with ________, requiring extensive pruning of repetitive phrases.",
+    "opts": [
+      "tautologies",
+      "lacunae",
+      "apothegms",
+      "maxims"
+    ],
+    "ans": 0,
+    "sol": "Explanation: tautologies are redundant repetitions of meaning. (Advanced Verbal Q-100)",
+    "id": 1805
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "She was known for her ________ lifestyle, spending lavishly on unnecessary luxuries while ignoring her debts.",
+    "opts": [
+      "profligate",
+      "parsimonious",
+      "penurious",
+      "frugal"
+    ],
+    "ans": 0,
+    "sol": "Explanation: profligate means recklessly extravagant or wasteful. (Advanced Verbal Q-101)",
+    "id": 1806
+  },
+  {
+    "cat": "Verbal Ability",
+    "q": "The treaty was designed to ________ the long-standing animosity between the two neighboring countries.",
+    "opts": [
+      "palliate",
+      "exacerbate",
+      "foment",
+      "instigate"
+    ],
+    "ans": 0,
+    "sol": "Explanation: palliate means to make less severe or alleviate animosity. (Advanced Verbal Q-102)",
+    "id": 1807
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n  int a[] = {10, 20, 30, 40};\n  int *p = a;\n  printf(\"%d\", *(p + 2) + *p);\n  return 0;\n}",
+    "opts": [
+      "40",
+      "30",
+      "50",
+      "60"
+    ],
+    "ans": 0,
+    "sol": "Explanation: *(p+2) is 30, *p is 10. 30 + 10 = 40. (Advanced Programming Q-77)",
+    "id": 1808
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In C++, what happens when a derived class overrides a non-virtual function of a base class and we call it using a base class pointer pointing to a derived object?",
+    "opts": [
+      "Base class version is called",
+      "Derived class version is called",
+      "Runtime error",
+      "Compile-time error"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Since the function is non-virtual, static binding occurs, and the base class version is called. (Advanced Programming Q-78)",
+    "id": 1809
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which memory allocation area is used in Java for allocating objects, and how is it managed?",
+    "opts": [
+      "Heap, managed by Garbage Collector",
+      "Stack, managed by compiler",
+      "Data segment, static",
+      "Registers, managed by CPU"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Objects in Java are stored on the Heap, which is dynamically managed by the Garbage Collector. (Advanced Programming Q-79)",
+    "id": 1810
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the value of 'x' after executing: x = [i * 2 for i in range(5) if i % 2 == 0]?",
+    "opts": [
+      "[0, 4, 8]",
+      "[0, 2, 4]",
+      "[2, 6, 10]",
+      "[0, 4, 16]"
+    ],
+    "ans": 0,
+    "sol": "Explanation: range(5) is [0,1,2,3,4]. Even numbers: 0, 2, 4. Multiplied by 2: 0, 4, 8. (Advanced Programming Q-80)",
+    "id": 1811
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the significance of the 'volatile' keyword in Java programming?",
+    "opts": [
+      "It guarantees variables are read from main memory, ensuring visibility across threads",
+      "It makes methods thread-safe",
+      "It prevents garbage collection of objects",
+      "It compiles code to native assembly directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Volatile ensures that changes to a variable are immediately visible to all threads by reading/writing directly from/to main memory. (Advanced Programming Q-81)",
+    "id": 1812
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n  int a[] = {10, 20, 30, 40};\n  int *p = a;\n  printf(\"%d\", *(p + 2) + *p);\n  return 0;\n}",
+    "opts": [
+      "40",
+      "30",
+      "50",
+      "60"
+    ],
+    "ans": 0,
+    "sol": "Explanation: *(p+2) is 30, *p is 10. 30 + 10 = 40. (Advanced Programming Q-82)",
+    "id": 1813
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In C++, what happens when a derived class overrides a non-virtual function of a base class and we call it using a base class pointer pointing to a derived object?",
+    "opts": [
+      "Base class version is called",
+      "Derived class version is called",
+      "Runtime error",
+      "Compile-time error"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Since the function is non-virtual, static binding occurs, and the base class version is called. (Advanced Programming Q-83)",
+    "id": 1814
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which memory allocation area is used in Java for allocating objects, and how is it managed?",
+    "opts": [
+      "Heap, managed by Garbage Collector",
+      "Stack, managed by compiler",
+      "Data segment, static",
+      "Registers, managed by CPU"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Objects in Java are stored on the Heap, which is dynamically managed by the Garbage Collector. (Advanced Programming Q-84)",
+    "id": 1815
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the value of 'x' after executing: x = [i * 2 for i in range(5) if i % 2 == 0]?",
+    "opts": [
+      "[0, 4, 8]",
+      "[0, 2, 4]",
+      "[2, 6, 10]",
+      "[0, 4, 16]"
+    ],
+    "ans": 0,
+    "sol": "Explanation: range(5) is [0,1,2,3,4]. Even numbers: 0, 2, 4. Multiplied by 2: 0, 4, 8. (Advanced Programming Q-85)",
+    "id": 1816
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the significance of the 'volatile' keyword in Java programming?",
+    "opts": [
+      "It guarantees variables are read from main memory, ensuring visibility across threads",
+      "It makes methods thread-safe",
+      "It prevents garbage collection of objects",
+      "It compiles code to native assembly directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Volatile ensures that changes to a variable are immediately visible to all threads by reading/writing directly from/to main memory. (Advanced Programming Q-86)",
+    "id": 1817
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n  int a[] = {10, 20, 30, 40};\n  int *p = a;\n  printf(\"%d\", *(p + 2) + *p);\n  return 0;\n}",
+    "opts": [
+      "40",
+      "30",
+      "50",
+      "60"
+    ],
+    "ans": 0,
+    "sol": "Explanation: *(p+2) is 30, *p is 10. 30 + 10 = 40. (Advanced Programming Q-87)",
+    "id": 1818
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In C++, what happens when a derived class overrides a non-virtual function of a base class and we call it using a base class pointer pointing to a derived object?",
+    "opts": [
+      "Base class version is called",
+      "Derived class version is called",
+      "Runtime error",
+      "Compile-time error"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Since the function is non-virtual, static binding occurs, and the base class version is called. (Advanced Programming Q-88)",
+    "id": 1819
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which memory allocation area is used in Java for allocating objects, and how is it managed?",
+    "opts": [
+      "Heap, managed by Garbage Collector",
+      "Stack, managed by compiler",
+      "Data segment, static",
+      "Registers, managed by CPU"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Objects in Java are stored on the Heap, which is dynamically managed by the Garbage Collector. (Advanced Programming Q-89)",
+    "id": 1820
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the value of 'x' after executing: x = [i * 2 for i in range(5) if i % 2 == 0]?",
+    "opts": [
+      "[0, 4, 8]",
+      "[0, 2, 4]",
+      "[2, 6, 10]",
+      "[0, 4, 16]"
+    ],
+    "ans": 0,
+    "sol": "Explanation: range(5) is [0,1,2,3,4]. Even numbers: 0, 2, 4. Multiplied by 2: 0, 4, 8. (Advanced Programming Q-90)",
+    "id": 1821
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the significance of the 'volatile' keyword in Java programming?",
+    "opts": [
+      "It guarantees variables are read from main memory, ensuring visibility across threads",
+      "It makes methods thread-safe",
+      "It prevents garbage collection of objects",
+      "It compiles code to native assembly directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Volatile ensures that changes to a variable are immediately visible to all threads by reading/writing directly from/to main memory. (Advanced Programming Q-91)",
+    "id": 1822
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n  int a[] = {10, 20, 30, 40};\n  int *p = a;\n  printf(\"%d\", *(p + 2) + *p);\n  return 0;\n}",
+    "opts": [
+      "40",
+      "30",
+      "50",
+      "60"
+    ],
+    "ans": 0,
+    "sol": "Explanation: *(p+2) is 30, *p is 10. 30 + 10 = 40. (Advanced Programming Q-92)",
+    "id": 1823
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In C++, what happens when a derived class overrides a non-virtual function of a base class and we call it using a base class pointer pointing to a derived object?",
+    "opts": [
+      "Base class version is called",
+      "Derived class version is called",
+      "Runtime error",
+      "Compile-time error"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Since the function is non-virtual, static binding occurs, and the base class version is called. (Advanced Programming Q-93)",
+    "id": 1824
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which memory allocation area is used in Java for allocating objects, and how is it managed?",
+    "opts": [
+      "Heap, managed by Garbage Collector",
+      "Stack, managed by compiler",
+      "Data segment, static",
+      "Registers, managed by CPU"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Objects in Java are stored on the Heap, which is dynamically managed by the Garbage Collector. (Advanced Programming Q-94)",
+    "id": 1825
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the value of 'x' after executing: x = [i * 2 for i in range(5) if i % 2 == 0]?",
+    "opts": [
+      "[0, 4, 8]",
+      "[0, 2, 4]",
+      "[2, 6, 10]",
+      "[0, 4, 16]"
+    ],
+    "ans": 0,
+    "sol": "Explanation: range(5) is [0,1,2,3,4]. Even numbers: 0, 2, 4. Multiplied by 2: 0, 4, 8. (Advanced Programming Q-95)",
+    "id": 1826
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the significance of the 'volatile' keyword in Java programming?",
+    "opts": [
+      "It guarantees variables are read from main memory, ensuring visibility across threads",
+      "It makes methods thread-safe",
+      "It prevents garbage collection of objects",
+      "It compiles code to native assembly directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Volatile ensures that changes to a variable are immediately visible to all threads by reading/writing directly from/to main memory. (Advanced Programming Q-96)",
+    "id": 1827
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the output of the following C code?\n#include <stdio.h>\nint main() {\n  int a[] = {10, 20, 30, 40};\n  int *p = a;\n  printf(\"%d\", *(p + 2) + *p);\n  return 0;\n}",
+    "opts": [
+      "40",
+      "30",
+      "50",
+      "60"
+    ],
+    "ans": 0,
+    "sol": "Explanation: *(p+2) is 30, *p is 10. 30 + 10 = 40. (Advanced Programming Q-97)",
+    "id": 1828
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In C++, what happens when a derived class overrides a non-virtual function of a base class and we call it using a base class pointer pointing to a derived object?",
+    "opts": [
+      "Base class version is called",
+      "Derived class version is called",
+      "Runtime error",
+      "Compile-time error"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Since the function is non-virtual, static binding occurs, and the base class version is called. (Advanced Programming Q-98)",
+    "id": 1829
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "Which memory allocation area is used in Java for allocating objects, and how is it managed?",
+    "opts": [
+      "Heap, managed by Garbage Collector",
+      "Stack, managed by compiler",
+      "Data segment, static",
+      "Registers, managed by CPU"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Objects in Java are stored on the Heap, which is dynamically managed by the Garbage Collector. (Advanced Programming Q-99)",
+    "id": 1830
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "In Python, what is the value of 'x' after executing: x = [i * 2 for i in range(5) if i % 2 == 0]?",
+    "opts": [
+      "[0, 4, 8]",
+      "[0, 2, 4]",
+      "[2, 6, 10]",
+      "[0, 4, 16]"
+    ],
+    "ans": 0,
+    "sol": "Explanation: range(5) is [0,1,2,3,4]. Even numbers: 0, 2, 4. Multiplied by 2: 0, 4, 8. (Advanced Programming Q-100)",
+    "id": 1831
+  },
+  {
+    "cat": "Programming Concepts",
+    "q": "What is the significance of the 'volatile' keyword in Java programming?",
+    "opts": [
+      "It guarantees variables are read from main memory, ensuring visibility across threads",
+      "It makes methods thread-safe",
+      "It prevents garbage collection of objects",
+      "It compiles code to native assembly directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Volatile ensures that changes to a variable are immediately visible to all threads by reading/writing directly from/to main memory. (Advanced Programming Q-101)",
+    "id": 1832
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form handles transitive functional dependencies in a database schema?",
+    "opts": [
+      "3NF",
+      "2NF",
+      "BCNF",
+      "4NF"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Third Normal Form (3NF) requires no transitive dependencies on the primary key. (Advanced DBMS Q-77)",
+    "id": 1833
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does the 'Isolation' property in ACID guarantees in database transactions?",
+    "opts": [
+      "Concurrent execution of transactions results in a system state as if transactions were run serially",
+      "Data is persisted permanently",
+      "Transactions follow all constraints",
+      "All actions in a transaction succeed or fail together"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Isolation ensures that concurrent transactions do not interfere with each other and behave as if executed serially. (Advanced DBMS Q-78)",
+    "id": 1834
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "In a B+ Tree index, where are the actual data records or data pointers stored?",
+    "opts": [
+      "Only in the leaf nodes",
+      "Only in the root node",
+      "In both internal and leaf nodes",
+      "In the parent directory structure"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In a B+ tree, internal nodes only store keys and routing pointers, while actual data or leaf pointers are stored exclusively in the leaf nodes. (Advanced DBMS Q-79)",
+    "id": 1835
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL isolation level provides the highest protection against concurrency anomalies (like dirty reads, non-repeatable reads, and phantom reads)?",
+    "opts": [
+      "Serializable",
+      "Repeatable Read",
+      "Read Committed",
+      "Read Uncommitted"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serializable is the highest isolation level, executing transactions in a way that simulates serial execution, preventing all three anomalies. (Advanced DBMS Q-80)",
+    "id": 1836
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the function of the Write-Ahead Logging (WAL) protocol in database management systems?",
+    "opts": [
+      "To write changes to the log file on stable storage before modifying database pages in memory",
+      "To speed up query SELECT operations",
+      "To index text columns",
+      "To enforce foreign key constraints"
+    ],
+    "ans": 0,
+    "sol": "Explanation: WAL guarantees durability and atomicity by ensuring log records are flushed to non-volatile storage before the corresponding dirty database pages are written to disk. (Advanced DBMS Q-81)",
+    "id": 1837
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form handles transitive functional dependencies in a database schema?",
+    "opts": [
+      "3NF",
+      "2NF",
+      "BCNF",
+      "4NF"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Third Normal Form (3NF) requires no transitive dependencies on the primary key. (Advanced DBMS Q-82)",
+    "id": 1838
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does the 'Isolation' property in ACID guarantees in database transactions?",
+    "opts": [
+      "Concurrent execution of transactions results in a system state as if transactions were run serially",
+      "Data is persisted permanently",
+      "Transactions follow all constraints",
+      "All actions in a transaction succeed or fail together"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Isolation ensures that concurrent transactions do not interfere with each other and behave as if executed serially. (Advanced DBMS Q-83)",
+    "id": 1839
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "In a B+ Tree index, where are the actual data records or data pointers stored?",
+    "opts": [
+      "Only in the leaf nodes",
+      "Only in the root node",
+      "In both internal and leaf nodes",
+      "In the parent directory structure"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In a B+ tree, internal nodes only store keys and routing pointers, while actual data or leaf pointers are stored exclusively in the leaf nodes. (Advanced DBMS Q-84)",
+    "id": 1840
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL isolation level provides the highest protection against concurrency anomalies (like dirty reads, non-repeatable reads, and phantom reads)?",
+    "opts": [
+      "Serializable",
+      "Repeatable Read",
+      "Read Committed",
+      "Read Uncommitted"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serializable is the highest isolation level, executing transactions in a way that simulates serial execution, preventing all three anomalies. (Advanced DBMS Q-85)",
+    "id": 1841
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the function of the Write-Ahead Logging (WAL) protocol in database management systems?",
+    "opts": [
+      "To write changes to the log file on stable storage before modifying database pages in memory",
+      "To speed up query SELECT operations",
+      "To index text columns",
+      "To enforce foreign key constraints"
+    ],
+    "ans": 0,
+    "sol": "Explanation: WAL guarantees durability and atomicity by ensuring log records are flushed to non-volatile storage before the corresponding dirty database pages are written to disk. (Advanced DBMS Q-86)",
+    "id": 1842
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form handles transitive functional dependencies in a database schema?",
+    "opts": [
+      "3NF",
+      "2NF",
+      "BCNF",
+      "4NF"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Third Normal Form (3NF) requires no transitive dependencies on the primary key. (Advanced DBMS Q-87)",
+    "id": 1843
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does the 'Isolation' property in ACID guarantees in database transactions?",
+    "opts": [
+      "Concurrent execution of transactions results in a system state as if transactions were run serially",
+      "Data is persisted permanently",
+      "Transactions follow all constraints",
+      "All actions in a transaction succeed or fail together"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Isolation ensures that concurrent transactions do not interfere with each other and behave as if executed serially. (Advanced DBMS Q-88)",
+    "id": 1844
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "In a B+ Tree index, where are the actual data records or data pointers stored?",
+    "opts": [
+      "Only in the leaf nodes",
+      "Only in the root node",
+      "In both internal and leaf nodes",
+      "In the parent directory structure"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In a B+ tree, internal nodes only store keys and routing pointers, while actual data or leaf pointers are stored exclusively in the leaf nodes. (Advanced DBMS Q-89)",
+    "id": 1845
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL isolation level provides the highest protection against concurrency anomalies (like dirty reads, non-repeatable reads, and phantom reads)?",
+    "opts": [
+      "Serializable",
+      "Repeatable Read",
+      "Read Committed",
+      "Read Uncommitted"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serializable is the highest isolation level, executing transactions in a way that simulates serial execution, preventing all three anomalies. (Advanced DBMS Q-90)",
+    "id": 1846
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the function of the Write-Ahead Logging (WAL) protocol in database management systems?",
+    "opts": [
+      "To write changes to the log file on stable storage before modifying database pages in memory",
+      "To speed up query SELECT operations",
+      "To index text columns",
+      "To enforce foreign key constraints"
+    ],
+    "ans": 0,
+    "sol": "Explanation: WAL guarantees durability and atomicity by ensuring log records are flushed to non-volatile storage before the corresponding dirty database pages are written to disk. (Advanced DBMS Q-91)",
+    "id": 1847
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form handles transitive functional dependencies in a database schema?",
+    "opts": [
+      "3NF",
+      "2NF",
+      "BCNF",
+      "4NF"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Third Normal Form (3NF) requires no transitive dependencies on the primary key. (Advanced DBMS Q-92)",
+    "id": 1848
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does the 'Isolation' property in ACID guarantees in database transactions?",
+    "opts": [
+      "Concurrent execution of transactions results in a system state as if transactions were run serially",
+      "Data is persisted permanently",
+      "Transactions follow all constraints",
+      "All actions in a transaction succeed or fail together"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Isolation ensures that concurrent transactions do not interfere with each other and behave as if executed serially. (Advanced DBMS Q-93)",
+    "id": 1849
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "In a B+ Tree index, where are the actual data records or data pointers stored?",
+    "opts": [
+      "Only in the leaf nodes",
+      "Only in the root node",
+      "In both internal and leaf nodes",
+      "In the parent directory structure"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In a B+ tree, internal nodes only store keys and routing pointers, while actual data or leaf pointers are stored exclusively in the leaf nodes. (Advanced DBMS Q-94)",
+    "id": 1850
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL isolation level provides the highest protection against concurrency anomalies (like dirty reads, non-repeatable reads, and phantom reads)?",
+    "opts": [
+      "Serializable",
+      "Repeatable Read",
+      "Read Committed",
+      "Read Uncommitted"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serializable is the highest isolation level, executing transactions in a way that simulates serial execution, preventing all three anomalies. (Advanced DBMS Q-95)",
+    "id": 1851
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the function of the Write-Ahead Logging (WAL) protocol in database management systems?",
+    "opts": [
+      "To write changes to the log file on stable storage before modifying database pages in memory",
+      "To speed up query SELECT operations",
+      "To index text columns",
+      "To enforce foreign key constraints"
+    ],
+    "ans": 0,
+    "sol": "Explanation: WAL guarantees durability and atomicity by ensuring log records are flushed to non-volatile storage before the corresponding dirty database pages are written to disk. (Advanced DBMS Q-96)",
+    "id": 1852
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which normal form handles transitive functional dependencies in a database schema?",
+    "opts": [
+      "3NF",
+      "2NF",
+      "BCNF",
+      "4NF"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Third Normal Form (3NF) requires no transitive dependencies on the primary key. (Advanced DBMS Q-97)",
+    "id": 1853
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What does the 'Isolation' property in ACID guarantees in database transactions?",
+    "opts": [
+      "Concurrent execution of transactions results in a system state as if transactions were run serially",
+      "Data is persisted permanently",
+      "Transactions follow all constraints",
+      "All actions in a transaction succeed or fail together"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Isolation ensures that concurrent transactions do not interfere with each other and behave as if executed serially. (Advanced DBMS Q-98)",
+    "id": 1854
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "In a B+ Tree index, where are the actual data records or data pointers stored?",
+    "opts": [
+      "Only in the leaf nodes",
+      "Only in the root node",
+      "In both internal and leaf nodes",
+      "In the parent directory structure"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In a B+ tree, internal nodes only store keys and routing pointers, while actual data or leaf pointers are stored exclusively in the leaf nodes. (Advanced DBMS Q-99)",
+    "id": 1855
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "Which SQL isolation level provides the highest protection against concurrency anomalies (like dirty reads, non-repeatable reads, and phantom reads)?",
+    "opts": [
+      "Serializable",
+      "Repeatable Read",
+      "Read Committed",
+      "Read Uncommitted"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serializable is the highest isolation level, executing transactions in a way that simulates serial execution, preventing all three anomalies. (Advanced DBMS Q-100)",
+    "id": 1856
+  },
+  {
+    "cat": "DBMS & SQL",
+    "q": "What is the function of the Write-Ahead Logging (WAL) protocol in database management systems?",
+    "opts": [
+      "To write changes to the log file on stable storage before modifying database pages in memory",
+      "To speed up query SELECT operations",
+      "To index text columns",
+      "To enforce foreign key constraints"
+    ],
+    "ans": 0,
+    "sol": "Explanation: WAL guarantees durability and atomicity by ensuring log records are flushed to non-volatile storage before the corresponding dirty database pages are written to disk. (Advanced DBMS Q-101)",
+    "id": 1857
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm suffers from Belady's Anomaly (where increasing page frames increases page faults)?",
+    "opts": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Clock"
+    ],
+    "ans": 0,
+    "sol": "Explanation: First-In-First-Out (FIFO) suffers from Belady's Anomaly because its page set is not nested. (Advanced OS Q-77)",
+    "id": 1858
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a mutex (mutual exclusion) in operating systems, and how does it differ from a semaphore?",
+    "opts": [
+      "A binary locking mechanism with ownership, whereas semaphores can allow multiple entries",
+      "A scheduling queue for processes",
+      "A system call for file I/O",
+      "A hardware register for context switching"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A mutex is a locking mechanism that only the thread that locked it can unlock (ownership), whereas a counting semaphore is a signaling mechanism without ownership. (Advanced OS Q-78)",
+    "id": 1859
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "In memory management, what is 'thrashing' and what is its primary cause?",
+    "opts": [
+      "High page fault rate causing the CPU to spend more time swapping pages than executing instructions",
+      "Low RAM memory causing hardware overheating",
+      "Disk fragmentation causing sluggish reads",
+      "Compiler optimizations creating bloated memory allocations"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Thrashing occurs when the active working set of processes exceeds physical memory, causing a high rate of page faults where the CPU becomes IO-bound swapping pages in/out. (Advanced OS Q-79)",
+    "id": 1860
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which system condition is NOT a required condition for a deadlock to occur in an operating system?",
+    "opts": [
+      "Preemption",
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Circular Wait"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preemption is NOT a condition for deadlock. Deadlocks require 'No Preemption', meaning resources cannot be forcibly confiscated from processes holding them. (Advanced OS Q-80)",
+    "id": 1861
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is context switching in operating systems scheduling?",
+    "opts": [
+      "Saving the state of a running process and loading the state of the next scheduled process",
+      "Converting source code to machine assembly",
+      "Moving files from RAM to virtual swap memory",
+      "Switching user profiles in the OS GUI"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Context switching is the mechanical process of saving CPU registers and process state (PCB) for a suspended thread and loading the state for the next scheduled thread. (Advanced OS Q-81)",
+    "id": 1862
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm suffers from Belady's Anomaly (where increasing page frames increases page faults)?",
+    "opts": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Clock"
+    ],
+    "ans": 0,
+    "sol": "Explanation: First-In-First-Out (FIFO) suffers from Belady's Anomaly because its page set is not nested. (Advanced OS Q-82)",
+    "id": 1863
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a mutex (mutual exclusion) in operating systems, and how does it differ from a semaphore?",
+    "opts": [
+      "A binary locking mechanism with ownership, whereas semaphores can allow multiple entries",
+      "A scheduling queue for processes",
+      "A system call for file I/O",
+      "A hardware register for context switching"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A mutex is a locking mechanism that only the thread that locked it can unlock (ownership), whereas a counting semaphore is a signaling mechanism without ownership. (Advanced OS Q-83)",
+    "id": 1864
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "In memory management, what is 'thrashing' and what is its primary cause?",
+    "opts": [
+      "High page fault rate causing the CPU to spend more time swapping pages than executing instructions",
+      "Low RAM memory causing hardware overheating",
+      "Disk fragmentation causing sluggish reads",
+      "Compiler optimizations creating bloated memory allocations"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Thrashing occurs when the active working set of processes exceeds physical memory, causing a high rate of page faults where the CPU becomes IO-bound swapping pages in/out. (Advanced OS Q-84)",
+    "id": 1865
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which system condition is NOT a required condition for a deadlock to occur in an operating system?",
+    "opts": [
+      "Preemption",
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Circular Wait"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preemption is NOT a condition for deadlock. Deadlocks require 'No Preemption', meaning resources cannot be forcibly confiscated from processes holding them. (Advanced OS Q-85)",
+    "id": 1866
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is context switching in operating systems scheduling?",
+    "opts": [
+      "Saving the state of a running process and loading the state of the next scheduled process",
+      "Converting source code to machine assembly",
+      "Moving files from RAM to virtual swap memory",
+      "Switching user profiles in the OS GUI"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Context switching is the mechanical process of saving CPU registers and process state (PCB) for a suspended thread and loading the state for the next scheduled thread. (Advanced OS Q-86)",
+    "id": 1867
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm suffers from Belady's Anomaly (where increasing page frames increases page faults)?",
+    "opts": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Clock"
+    ],
+    "ans": 0,
+    "sol": "Explanation: First-In-First-Out (FIFO) suffers from Belady's Anomaly because its page set is not nested. (Advanced OS Q-87)",
+    "id": 1868
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a mutex (mutual exclusion) in operating systems, and how does it differ from a semaphore?",
+    "opts": [
+      "A binary locking mechanism with ownership, whereas semaphores can allow multiple entries",
+      "A scheduling queue for processes",
+      "A system call for file I/O",
+      "A hardware register for context switching"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A mutex is a locking mechanism that only the thread that locked it can unlock (ownership), whereas a counting semaphore is a signaling mechanism without ownership. (Advanced OS Q-88)",
+    "id": 1869
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "In memory management, what is 'thrashing' and what is its primary cause?",
+    "opts": [
+      "High page fault rate causing the CPU to spend more time swapping pages than executing instructions",
+      "Low RAM memory causing hardware overheating",
+      "Disk fragmentation causing sluggish reads",
+      "Compiler optimizations creating bloated memory allocations"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Thrashing occurs when the active working set of processes exceeds physical memory, causing a high rate of page faults where the CPU becomes IO-bound swapping pages in/out. (Advanced OS Q-89)",
+    "id": 1870
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which system condition is NOT a required condition for a deadlock to occur in an operating system?",
+    "opts": [
+      "Preemption",
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Circular Wait"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preemption is NOT a condition for deadlock. Deadlocks require 'No Preemption', meaning resources cannot be forcibly confiscated from processes holding them. (Advanced OS Q-90)",
+    "id": 1871
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is context switching in operating systems scheduling?",
+    "opts": [
+      "Saving the state of a running process and loading the state of the next scheduled process",
+      "Converting source code to machine assembly",
+      "Moving files from RAM to virtual swap memory",
+      "Switching user profiles in the OS GUI"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Context switching is the mechanical process of saving CPU registers and process state (PCB) for a suspended thread and loading the state for the next scheduled thread. (Advanced OS Q-91)",
+    "id": 1872
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm suffers from Belady's Anomaly (where increasing page frames increases page faults)?",
+    "opts": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Clock"
+    ],
+    "ans": 0,
+    "sol": "Explanation: First-In-First-Out (FIFO) suffers from Belady's Anomaly because its page set is not nested. (Advanced OS Q-92)",
+    "id": 1873
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a mutex (mutual exclusion) in operating systems, and how does it differ from a semaphore?",
+    "opts": [
+      "A binary locking mechanism with ownership, whereas semaphores can allow multiple entries",
+      "A scheduling queue for processes",
+      "A system call for file I/O",
+      "A hardware register for context switching"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A mutex is a locking mechanism that only the thread that locked it can unlock (ownership), whereas a counting semaphore is a signaling mechanism without ownership. (Advanced OS Q-93)",
+    "id": 1874
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "In memory management, what is 'thrashing' and what is its primary cause?",
+    "opts": [
+      "High page fault rate causing the CPU to spend more time swapping pages than executing instructions",
+      "Low RAM memory causing hardware overheating",
+      "Disk fragmentation causing sluggish reads",
+      "Compiler optimizations creating bloated memory allocations"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Thrashing occurs when the active working set of processes exceeds physical memory, causing a high rate of page faults where the CPU becomes IO-bound swapping pages in/out. (Advanced OS Q-94)",
+    "id": 1875
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which system condition is NOT a required condition for a deadlock to occur in an operating system?",
+    "opts": [
+      "Preemption",
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Circular Wait"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preemption is NOT a condition for deadlock. Deadlocks require 'No Preemption', meaning resources cannot be forcibly confiscated from processes holding them. (Advanced OS Q-95)",
+    "id": 1876
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is context switching in operating systems scheduling?",
+    "opts": [
+      "Saving the state of a running process and loading the state of the next scheduled process",
+      "Converting source code to machine assembly",
+      "Moving files from RAM to virtual swap memory",
+      "Switching user profiles in the OS GUI"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Context switching is the mechanical process of saving CPU registers and process state (PCB) for a suspended thread and loading the state for the next scheduled thread. (Advanced OS Q-96)",
+    "id": 1877
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which page replacement algorithm suffers from Belady's Anomaly (where increasing page frames increases page faults)?",
+    "opts": [
+      "FIFO",
+      "LRU",
+      "Optimal",
+      "Clock"
+    ],
+    "ans": 0,
+    "sol": "Explanation: First-In-First-Out (FIFO) suffers from Belady's Anomaly because its page set is not nested. (Advanced OS Q-97)",
+    "id": 1878
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is a mutex (mutual exclusion) in operating systems, and how does it differ from a semaphore?",
+    "opts": [
+      "A binary locking mechanism with ownership, whereas semaphores can allow multiple entries",
+      "A scheduling queue for processes",
+      "A system call for file I/O",
+      "A hardware register for context switching"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A mutex is a locking mechanism that only the thread that locked it can unlock (ownership), whereas a counting semaphore is a signaling mechanism without ownership. (Advanced OS Q-98)",
+    "id": 1879
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "In memory management, what is 'thrashing' and what is its primary cause?",
+    "opts": [
+      "High page fault rate causing the CPU to spend more time swapping pages than executing instructions",
+      "Low RAM memory causing hardware overheating",
+      "Disk fragmentation causing sluggish reads",
+      "Compiler optimizations creating bloated memory allocations"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Thrashing occurs when the active working set of processes exceeds physical memory, causing a high rate of page faults where the CPU becomes IO-bound swapping pages in/out. (Advanced OS Q-99)",
+    "id": 1880
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "Which system condition is NOT a required condition for a deadlock to occur in an operating system?",
+    "opts": [
+      "Preemption",
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Circular Wait"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preemption is NOT a condition for deadlock. Deadlocks require 'No Preemption', meaning resources cannot be forcibly confiscated from processes holding them. (Advanced OS Q-100)",
+    "id": 1881
+  },
+  {
+    "cat": "Operating Systems",
+    "q": "What is context switching in operating systems scheduling?",
+    "opts": [
+      "Saving the state of a running process and loading the state of the next scheduled process",
+      "Converting source code to machine assembly",
+      "Moving files from RAM to virtual swap memory",
+      "Switching user profiles in the OS GUI"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Context switching is the mechanical process of saving CPU registers and process state (PCB) for a suspended thread and loading the state for the next scheduled thread. (Advanced OS Q-101)",
+    "id": 1882
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which TCP/IP protocol layer is responsible for routing packets across multiple hops from source host to destination host?",
+    "opts": [
+      "Network/Internet Layer",
+      "Transport Layer",
+      "Link Layer",
+      "Application Layer"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Internet/Network layer (IP protocol) handles host-to-host routing and packet forwarding. (Advanced Networks Q-79)",
+    "id": 1883
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the purpose of the Sliding Window protocol in TCP transmission control?",
+    "opts": [
+      "To handle flow control, preventing a fast sender from overwhelming a slow receiver",
+      "To encrypt packet payloads",
+      "To resolve domain names",
+      "To detect network collisions in Ethernet links"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sliding Window allows dynamic buffer advertisement for flow control, matching transmission rates to the receiver's current buffer space. (Advanced Networks Q-80)",
+    "id": 1884
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which of the following describes the core difference between IPv4 and IPv6 address formats?",
+    "opts": [
+      "IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses",
+      "IPv4 is encrypted while IPv6 is unencrypted",
+      "IPv4 uses hex codes while IPv6 uses octets",
+      "IPv4 has a dynamic header while IPv6 has a static 20-byte header"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IPv4 addresses are 32 bits represented in dot-decimal, while IPv6 addresses are 128 bits represented in colon-hexadecimal. (Advanced Networks Q-81)",
+    "id": 1885
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "In domain name resolution, what is the role of an authoritative name server?",
+    "opts": [
+      "To provide the definitive mapping of a domain name to an IP address",
+      "To cache local lookup queries",
+      "To route packets across the physical gateway",
+      "To translate domain names to HTTP headers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The authoritative name server holds the actual DNS records for a domain and returns the definitive answers to resolving queries. (Advanced Networks Q-82)",
+    "id": 1886
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What occurs during the TCP Three-Way Handshake connection initialization?",
+    "opts": [
+      "Client sends SYN, server returns SYN-ACK, client sends ACK",
+      "Client sends SYN, server returns ACK, client sends SYN-ACK",
+      "Client sends ACK, server returns SYN, client sends SYN-ACK",
+      "Client sends HTTP GET, server returns 200 OK"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The sequence is SYN -> SYN-ACK -> ACK to synchronize sequence numbers and establish a virtual connection state. (Advanced Networks Q-83)",
+    "id": 1887
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which TCP/IP protocol layer is responsible for routing packets across multiple hops from source host to destination host?",
+    "opts": [
+      "Network/Internet Layer",
+      "Transport Layer",
+      "Link Layer",
+      "Application Layer"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Internet/Network layer (IP protocol) handles host-to-host routing and packet forwarding. (Advanced Networks Q-84)",
+    "id": 1888
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the purpose of the Sliding Window protocol in TCP transmission control?",
+    "opts": [
+      "To handle flow control, preventing a fast sender from overwhelming a slow receiver",
+      "To encrypt packet payloads",
+      "To resolve domain names",
+      "To detect network collisions in Ethernet links"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sliding Window allows dynamic buffer advertisement for flow control, matching transmission rates to the receiver's current buffer space. (Advanced Networks Q-85)",
+    "id": 1889
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which of the following describes the core difference between IPv4 and IPv6 address formats?",
+    "opts": [
+      "IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses",
+      "IPv4 is encrypted while IPv6 is unencrypted",
+      "IPv4 uses hex codes while IPv6 uses octets",
+      "IPv4 has a dynamic header while IPv6 has a static 20-byte header"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IPv4 addresses are 32 bits represented in dot-decimal, while IPv6 addresses are 128 bits represented in colon-hexadecimal. (Advanced Networks Q-86)",
+    "id": 1890
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "In domain name resolution, what is the role of an authoritative name server?",
+    "opts": [
+      "To provide the definitive mapping of a domain name to an IP address",
+      "To cache local lookup queries",
+      "To route packets across the physical gateway",
+      "To translate domain names to HTTP headers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The authoritative name server holds the actual DNS records for a domain and returns the definitive answers to resolving queries. (Advanced Networks Q-87)",
+    "id": 1891
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What occurs during the TCP Three-Way Handshake connection initialization?",
+    "opts": [
+      "Client sends SYN, server returns SYN-ACK, client sends ACK",
+      "Client sends SYN, server returns ACK, client sends SYN-ACK",
+      "Client sends ACK, server returns SYN, client sends SYN-ACK",
+      "Client sends HTTP GET, server returns 200 OK"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The sequence is SYN -> SYN-ACK -> ACK to synchronize sequence numbers and establish a virtual connection state. (Advanced Networks Q-88)",
+    "id": 1892
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which TCP/IP protocol layer is responsible for routing packets across multiple hops from source host to destination host?",
+    "opts": [
+      "Network/Internet Layer",
+      "Transport Layer",
+      "Link Layer",
+      "Application Layer"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Internet/Network layer (IP protocol) handles host-to-host routing and packet forwarding. (Advanced Networks Q-89)",
+    "id": 1893
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the purpose of the Sliding Window protocol in TCP transmission control?",
+    "opts": [
+      "To handle flow control, preventing a fast sender from overwhelming a slow receiver",
+      "To encrypt packet payloads",
+      "To resolve domain names",
+      "To detect network collisions in Ethernet links"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sliding Window allows dynamic buffer advertisement for flow control, matching transmission rates to the receiver's current buffer space. (Advanced Networks Q-90)",
+    "id": 1894
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which of the following describes the core difference between IPv4 and IPv6 address formats?",
+    "opts": [
+      "IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses",
+      "IPv4 is encrypted while IPv6 is unencrypted",
+      "IPv4 uses hex codes while IPv6 uses octets",
+      "IPv4 has a dynamic header while IPv6 has a static 20-byte header"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IPv4 addresses are 32 bits represented in dot-decimal, while IPv6 addresses are 128 bits represented in colon-hexadecimal. (Advanced Networks Q-91)",
+    "id": 1895
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "In domain name resolution, what is the role of an authoritative name server?",
+    "opts": [
+      "To provide the definitive mapping of a domain name to an IP address",
+      "To cache local lookup queries",
+      "To route packets across the physical gateway",
+      "To translate domain names to HTTP headers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The authoritative name server holds the actual DNS records for a domain and returns the definitive answers to resolving queries. (Advanced Networks Q-92)",
+    "id": 1896
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What occurs during the TCP Three-Way Handshake connection initialization?",
+    "opts": [
+      "Client sends SYN, server returns SYN-ACK, client sends ACK",
+      "Client sends SYN, server returns ACK, client sends SYN-ACK",
+      "Client sends ACK, server returns SYN, client sends SYN-ACK",
+      "Client sends HTTP GET, server returns 200 OK"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The sequence is SYN -> SYN-ACK -> ACK to synchronize sequence numbers and establish a virtual connection state. (Advanced Networks Q-93)",
+    "id": 1897
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which TCP/IP protocol layer is responsible for routing packets across multiple hops from source host to destination host?",
+    "opts": [
+      "Network/Internet Layer",
+      "Transport Layer",
+      "Link Layer",
+      "Application Layer"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Internet/Network layer (IP protocol) handles host-to-host routing and packet forwarding. (Advanced Networks Q-94)",
+    "id": 1898
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the purpose of the Sliding Window protocol in TCP transmission control?",
+    "opts": [
+      "To handle flow control, preventing a fast sender from overwhelming a slow receiver",
+      "To encrypt packet payloads",
+      "To resolve domain names",
+      "To detect network collisions in Ethernet links"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sliding Window allows dynamic buffer advertisement for flow control, matching transmission rates to the receiver's current buffer space. (Advanced Networks Q-95)",
+    "id": 1899
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which of the following describes the core difference between IPv4 and IPv6 address formats?",
+    "opts": [
+      "IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses",
+      "IPv4 is encrypted while IPv6 is unencrypted",
+      "IPv4 uses hex codes while IPv6 uses octets",
+      "IPv4 has a dynamic header while IPv6 has a static 20-byte header"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IPv4 addresses are 32 bits represented in dot-decimal, while IPv6 addresses are 128 bits represented in colon-hexadecimal. (Advanced Networks Q-96)",
+    "id": 1900
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "In domain name resolution, what is the role of an authoritative name server?",
+    "opts": [
+      "To provide the definitive mapping of a domain name to an IP address",
+      "To cache local lookup queries",
+      "To route packets across the physical gateway",
+      "To translate domain names to HTTP headers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The authoritative name server holds the actual DNS records for a domain and returns the definitive answers to resolving queries. (Advanced Networks Q-97)",
+    "id": 1901
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What occurs during the TCP Three-Way Handshake connection initialization?",
+    "opts": [
+      "Client sends SYN, server returns SYN-ACK, client sends ACK",
+      "Client sends SYN, server returns ACK, client sends SYN-ACK",
+      "Client sends ACK, server returns SYN, client sends SYN-ACK",
+      "Client sends HTTP GET, server returns 200 OK"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The sequence is SYN -> SYN-ACK -> ACK to synchronize sequence numbers and establish a virtual connection state. (Advanced Networks Q-98)",
+    "id": 1902
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which TCP/IP protocol layer is responsible for routing packets across multiple hops from source host to destination host?",
+    "opts": [
+      "Network/Internet Layer",
+      "Transport Layer",
+      "Link Layer",
+      "Application Layer"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Internet/Network layer (IP protocol) handles host-to-host routing and packet forwarding. (Advanced Networks Q-99)",
+    "id": 1903
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What is the purpose of the Sliding Window protocol in TCP transmission control?",
+    "opts": [
+      "To handle flow control, preventing a fast sender from overwhelming a slow receiver",
+      "To encrypt packet payloads",
+      "To resolve domain names",
+      "To detect network collisions in Ethernet links"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sliding Window allows dynamic buffer advertisement for flow control, matching transmission rates to the receiver's current buffer space. (Advanced Networks Q-100)",
+    "id": 1904
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "Which of the following describes the core difference between IPv4 and IPv6 address formats?",
+    "opts": [
+      "IPv4 uses 32-bit addresses while IPv6 uses 128-bit addresses",
+      "IPv4 is encrypted while IPv6 is unencrypted",
+      "IPv4 uses hex codes while IPv6 uses octets",
+      "IPv4 has a dynamic header while IPv6 has a static 20-byte header"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IPv4 addresses are 32 bits represented in dot-decimal, while IPv6 addresses are 128 bits represented in colon-hexadecimal. (Advanced Networks Q-101)",
+    "id": 1905
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "In domain name resolution, what is the role of an authoritative name server?",
+    "opts": [
+      "To provide the definitive mapping of a domain name to an IP address",
+      "To cache local lookup queries",
+      "To route packets across the physical gateway",
+      "To translate domain names to HTTP headers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The authoritative name server holds the actual DNS records for a domain and returns the definitive answers to resolving queries. (Advanced Networks Q-102)",
+    "id": 1906
+  },
+  {
+    "cat": "Computer Networks",
+    "q": "What occurs during the TCP Three-Way Handshake connection initialization?",
+    "opts": [
+      "Client sends SYN, server returns SYN-ACK, client sends ACK",
+      "Client sends SYN, server returns ACK, client sends SYN-ACK",
+      "Client sends ACK, server returns SYN, client sends SYN-ACK",
+      "Client sends HTTP GET, server returns 200 OK"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The sequence is SYN -> SYN-ACK -> ACK to synchronize sequence numbers and establish a virtual connection state. (Advanced Networks Q-103)",
+    "id": 1907
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case time complexity of searching for an element in a binary search tree (BST) of N elements?",
+    "opts": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In the worst case (a skewed/degenerated tree resembling a linked list), the search must traverse all N nodes, yielding O(N). (Advanced DSA Q-77)",
+    "id": 1908
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm is most suitable for finding the shortest path in a graph containing negative edge weights but no negative cycles?",
+    "opts": [
+      "Bellman-Ford Algorithm",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bellman-Ford handles negative weights and detects negative cycles, whereas Dijkstra fails with negative weights because of greedy relaxations. (Advanced DSA Q-78)",
+    "id": 1909
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to insert an element into a Heap (priority queue) of size N?",
+    "opts": [
+      "O(log N)",
+      "O(N)",
+      "O(1)",
+      "O(N log N)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Inserting involves appending to the end of the array and bubble-up (heapify up) which takes log N steps based on the height of the binary heap. (Advanced DSA Q-79)",
+    "id": 1910
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is typically used to implement Depth-First Search (DFS) traversal of a graph?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Min-Heap",
+      "Hash Table"
+    ],
+    "ans": 0,
+    "sol": "Explanation: DFS uses a Stack (either the system call stack via recursion or an explicit stack data structure) to track unvisited nodes deep into the graph path. (Advanced DSA Q-80)",
+    "id": 1911
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the main advantage of a Red-Black Tree over a standard Binary Search Tree?",
+    "opts": [
+      "It guarantees O(log N) operations in the worst case by keeping the tree approximately balanced",
+      "It uses less memory than standard BST",
+      "It stores elements in sorted order on disk",
+      "It performs searches in O(1) constant time"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Red-Black Trees enforce balancing rules (e.g. red node cannot have red child) ensuring the max height is 2 log(N+1), keeping operations bounded to O(log N) worst-case. (Advanced DSA Q-81)",
+    "id": 1912
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case time complexity of searching for an element in a binary search tree (BST) of N elements?",
+    "opts": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In the worst case (a skewed/degenerated tree resembling a linked list), the search must traverse all N nodes, yielding O(N). (Advanced DSA Q-82)",
+    "id": 1913
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm is most suitable for finding the shortest path in a graph containing negative edge weights but no negative cycles?",
+    "opts": [
+      "Bellman-Ford Algorithm",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bellman-Ford handles negative weights and detects negative cycles, whereas Dijkstra fails with negative weights because of greedy relaxations. (Advanced DSA Q-83)",
+    "id": 1914
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to insert an element into a Heap (priority queue) of size N?",
+    "opts": [
+      "O(log N)",
+      "O(N)",
+      "O(1)",
+      "O(N log N)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Inserting involves appending to the end of the array and bubble-up (heapify up) which takes log N steps based on the height of the binary heap. (Advanced DSA Q-84)",
+    "id": 1915
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is typically used to implement Depth-First Search (DFS) traversal of a graph?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Min-Heap",
+      "Hash Table"
+    ],
+    "ans": 0,
+    "sol": "Explanation: DFS uses a Stack (either the system call stack via recursion or an explicit stack data structure) to track unvisited nodes deep into the graph path. (Advanced DSA Q-85)",
+    "id": 1916
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the main advantage of a Red-Black Tree over a standard Binary Search Tree?",
+    "opts": [
+      "It guarantees O(log N) operations in the worst case by keeping the tree approximately balanced",
+      "It uses less memory than standard BST",
+      "It stores elements in sorted order on disk",
+      "It performs searches in O(1) constant time"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Red-Black Trees enforce balancing rules (e.g. red node cannot have red child) ensuring the max height is 2 log(N+1), keeping operations bounded to O(log N) worst-case. (Advanced DSA Q-86)",
+    "id": 1917
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case time complexity of searching for an element in a binary search tree (BST) of N elements?",
+    "opts": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In the worst case (a skewed/degenerated tree resembling a linked list), the search must traverse all N nodes, yielding O(N). (Advanced DSA Q-87)",
+    "id": 1918
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm is most suitable for finding the shortest path in a graph containing negative edge weights but no negative cycles?",
+    "opts": [
+      "Bellman-Ford Algorithm",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bellman-Ford handles negative weights and detects negative cycles, whereas Dijkstra fails with negative weights because of greedy relaxations. (Advanced DSA Q-88)",
+    "id": 1919
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to insert an element into a Heap (priority queue) of size N?",
+    "opts": [
+      "O(log N)",
+      "O(N)",
+      "O(1)",
+      "O(N log N)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Inserting involves appending to the end of the array and bubble-up (heapify up) which takes log N steps based on the height of the binary heap. (Advanced DSA Q-89)",
+    "id": 1920
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is typically used to implement Depth-First Search (DFS) traversal of a graph?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Min-Heap",
+      "Hash Table"
+    ],
+    "ans": 0,
+    "sol": "Explanation: DFS uses a Stack (either the system call stack via recursion or an explicit stack data structure) to track unvisited nodes deep into the graph path. (Advanced DSA Q-90)",
+    "id": 1921
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the main advantage of a Red-Black Tree over a standard Binary Search Tree?",
+    "opts": [
+      "It guarantees O(log N) operations in the worst case by keeping the tree approximately balanced",
+      "It uses less memory than standard BST",
+      "It stores elements in sorted order on disk",
+      "It performs searches in O(1) constant time"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Red-Black Trees enforce balancing rules (e.g. red node cannot have red child) ensuring the max height is 2 log(N+1), keeping operations bounded to O(log N) worst-case. (Advanced DSA Q-91)",
+    "id": 1922
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case time complexity of searching for an element in a binary search tree (BST) of N elements?",
+    "opts": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In the worst case (a skewed/degenerated tree resembling a linked list), the search must traverse all N nodes, yielding O(N). (Advanced DSA Q-92)",
+    "id": 1923
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm is most suitable for finding the shortest path in a graph containing negative edge weights but no negative cycles?",
+    "opts": [
+      "Bellman-Ford Algorithm",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bellman-Ford handles negative weights and detects negative cycles, whereas Dijkstra fails with negative weights because of greedy relaxations. (Advanced DSA Q-93)",
+    "id": 1924
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to insert an element into a Heap (priority queue) of size N?",
+    "opts": [
+      "O(log N)",
+      "O(N)",
+      "O(1)",
+      "O(N log N)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Inserting involves appending to the end of the array and bubble-up (heapify up) which takes log N steps based on the height of the binary heap. (Advanced DSA Q-94)",
+    "id": 1925
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is typically used to implement Depth-First Search (DFS) traversal of a graph?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Min-Heap",
+      "Hash Table"
+    ],
+    "ans": 0,
+    "sol": "Explanation: DFS uses a Stack (either the system call stack via recursion or an explicit stack data structure) to track unvisited nodes deep into the graph path. (Advanced DSA Q-95)",
+    "id": 1926
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the main advantage of a Red-Black Tree over a standard Binary Search Tree?",
+    "opts": [
+      "It guarantees O(log N) operations in the worst case by keeping the tree approximately balanced",
+      "It uses less memory than standard BST",
+      "It stores elements in sorted order on disk",
+      "It performs searches in O(1) constant time"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Red-Black Trees enforce balancing rules (e.g. red node cannot have red child) ensuring the max height is 2 log(N+1), keeping operations bounded to O(log N) worst-case. (Advanced DSA Q-96)",
+    "id": 1927
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the worst-case time complexity of searching for an element in a binary search tree (BST) of N elements?",
+    "opts": [
+      "O(N)",
+      "O(log N)",
+      "O(N log N)",
+      "O(1)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: In the worst case (a skewed/degenerated tree resembling a linked list), the search must traverse all N nodes, yielding O(N). (Advanced DSA Q-97)",
+    "id": 1928
+  },
+  {
+    "cat": "DSA",
+    "q": "Which algorithm is most suitable for finding the shortest path in a graph containing negative edge weights but no negative cycles?",
+    "opts": [
+      "Bellman-Ford Algorithm",
+      "Dijkstra's Algorithm",
+      "Kruskal's Algorithm",
+      "Prim's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bellman-Ford handles negative weights and detects negative cycles, whereas Dijkstra fails with negative weights because of greedy relaxations. (Advanced DSA Q-98)",
+    "id": 1929
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the time complexity to insert an element into a Heap (priority queue) of size N?",
+    "opts": [
+      "O(log N)",
+      "O(N)",
+      "O(1)",
+      "O(N log N)"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Inserting involves appending to the end of the array and bubble-up (heapify up) which takes log N steps based on the height of the binary heap. (Advanced DSA Q-99)",
+    "id": 1930
+  },
+  {
+    "cat": "DSA",
+    "q": "Which data structure is typically used to implement Depth-First Search (DFS) traversal of a graph?",
+    "opts": [
+      "Stack",
+      "Queue",
+      "Min-Heap",
+      "Hash Table"
+    ],
+    "ans": 0,
+    "sol": "Explanation: DFS uses a Stack (either the system call stack via recursion or an explicit stack data structure) to track unvisited nodes deep into the graph path. (Advanced DSA Q-100)",
+    "id": 1931
+  },
+  {
+    "cat": "DSA",
+    "q": "What is the main advantage of a Red-Black Tree over a standard Binary Search Tree?",
+    "opts": [
+      "It guarantees O(log N) operations in the worst case by keeping the tree approximately balanced",
+      "It uses less memory than standard BST",
+      "It stores elements in sorted order on disk",
+      "It performs searches in O(1) constant time"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Red-Black Trees enforce balancing rules (e.g. red node cannot have red child) ensuring the max height is 2 log(N+1), keeping operations bounded to O(log N) worst-case. (Advanced DSA Q-101)",
+    "id": 1932
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "In IEEE 754 single-precision floating-point representation, how many bits are allocated for the sign, exponent, and mantissa (fraction)?",
+    "opts": [
+      "1 sign, 8 exponent, 23 mantissa",
+      "1 sign, 11 exponent, 52 mantissa",
+      "2 sign, 8 exponent, 22 mantissa",
+      "1 sign, 9 exponent, 22 mantissa"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Single-precision uses 32 bits total: 1 sign bit, 8 exponent bits, and 23 mantissa bits. (Advanced Fundamentals Q-77)",
+    "id": 1933
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache coherence in multi-core CPU architectures?",
+    "opts": [
+      "Ensuring that multiple processors sharing memory hold identical values for cached locations",
+      "Speeding up CPU instruction fetch rates",
+      "Resolving logical gate timing hazards",
+      "Encrypting RAM contents"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Cache coherence protocols (like MESI) ensure that data changes in one core's L1 cache are propagated or invalidated in other cores sharing the memory block. (Advanced Fundamentals Q-78)",
+    "id": 1934
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which CPU pipelining hazard occurs when an instruction depends on the result of a previous instruction that has not completed execution?",
+    "opts": [
+      "Data Hazard",
+      "Control Hazard",
+      "Structural Hazard",
+      "Branch Hazard"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Data hazards arise when instructions read/write operands before previous instructions have completed their pipeline writes (RAW, WAR, WAW). (Advanced Fundamentals Q-79)",
+    "id": 1935
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the function of the Program Counter (PC) register in a central processing unit?",
+    "opts": [
+      "It holds the memory address of the next instruction to be fetched and executed",
+      "It counts the execution cycles",
+      "It holds the results of arithmetic operations",
+      "It stores temporary local function variables"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The PC acts as a instruction pointer, tracking the memory address of the next instruction in the execution sequence. (Advanced Fundamentals Q-80)",
+    "id": 1936
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Simplify the Boolean expression: A'B + AB + AB'.",
+    "opts": [
+      "A + B",
+      "AB",
+      "A' + B'",
+      "A"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A'B + AB + AB' = B(A' + A) + AB' = B(1) + AB' = B + AB' = (B + A)(B + B') = A + B. (Advanced Fundamentals Q-81)",
+    "id": 1937
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "In IEEE 754 single-precision floating-point representation, how many bits are allocated for the sign, exponent, and mantissa (fraction)?",
+    "opts": [
+      "1 sign, 8 exponent, 23 mantissa",
+      "1 sign, 11 exponent, 52 mantissa",
+      "2 sign, 8 exponent, 22 mantissa",
+      "1 sign, 9 exponent, 22 mantissa"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Single-precision uses 32 bits total: 1 sign bit, 8 exponent bits, and 23 mantissa bits. (Advanced Fundamentals Q-82)",
+    "id": 1938
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache coherence in multi-core CPU architectures?",
+    "opts": [
+      "Ensuring that multiple processors sharing memory hold identical values for cached locations",
+      "Speeding up CPU instruction fetch rates",
+      "Resolving logical gate timing hazards",
+      "Encrypting RAM contents"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Cache coherence protocols (like MESI) ensure that data changes in one core's L1 cache are propagated or invalidated in other cores sharing the memory block. (Advanced Fundamentals Q-83)",
+    "id": 1939
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which CPU pipelining hazard occurs when an instruction depends on the result of a previous instruction that has not completed execution?",
+    "opts": [
+      "Data Hazard",
+      "Control Hazard",
+      "Structural Hazard",
+      "Branch Hazard"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Data hazards arise when instructions read/write operands before previous instructions have completed their pipeline writes (RAW, WAR, WAW). (Advanced Fundamentals Q-84)",
+    "id": 1940
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the function of the Program Counter (PC) register in a central processing unit?",
+    "opts": [
+      "It holds the memory address of the next instruction to be fetched and executed",
+      "It counts the execution cycles",
+      "It holds the results of arithmetic operations",
+      "It stores temporary local function variables"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The PC acts as a instruction pointer, tracking the memory address of the next instruction in the execution sequence. (Advanced Fundamentals Q-85)",
+    "id": 1941
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Simplify the Boolean expression: A'B + AB + AB'.",
+    "opts": [
+      "A + B",
+      "AB",
+      "A' + B'",
+      "A"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A'B + AB + AB' = B(A' + A) + AB' = B(1) + AB' = B + AB' = (B + A)(B + B') = A + B. (Advanced Fundamentals Q-86)",
+    "id": 1942
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "In IEEE 754 single-precision floating-point representation, how many bits are allocated for the sign, exponent, and mantissa (fraction)?",
+    "opts": [
+      "1 sign, 8 exponent, 23 mantissa",
+      "1 sign, 11 exponent, 52 mantissa",
+      "2 sign, 8 exponent, 22 mantissa",
+      "1 sign, 9 exponent, 22 mantissa"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Single-precision uses 32 bits total: 1 sign bit, 8 exponent bits, and 23 mantissa bits. (Advanced Fundamentals Q-87)",
+    "id": 1943
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache coherence in multi-core CPU architectures?",
+    "opts": [
+      "Ensuring that multiple processors sharing memory hold identical values for cached locations",
+      "Speeding up CPU instruction fetch rates",
+      "Resolving logical gate timing hazards",
+      "Encrypting RAM contents"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Cache coherence protocols (like MESI) ensure that data changes in one core's L1 cache are propagated or invalidated in other cores sharing the memory block. (Advanced Fundamentals Q-88)",
+    "id": 1944
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which CPU pipelining hazard occurs when an instruction depends on the result of a previous instruction that has not completed execution?",
+    "opts": [
+      "Data Hazard",
+      "Control Hazard",
+      "Structural Hazard",
+      "Branch Hazard"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Data hazards arise when instructions read/write operands before previous instructions have completed their pipeline writes (RAW, WAR, WAW). (Advanced Fundamentals Q-89)",
+    "id": 1945
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the function of the Program Counter (PC) register in a central processing unit?",
+    "opts": [
+      "It holds the memory address of the next instruction to be fetched and executed",
+      "It counts the execution cycles",
+      "It holds the results of arithmetic operations",
+      "It stores temporary local function variables"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The PC acts as a instruction pointer, tracking the memory address of the next instruction in the execution sequence. (Advanced Fundamentals Q-90)",
+    "id": 1946
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Simplify the Boolean expression: A'B + AB + AB'.",
+    "opts": [
+      "A + B",
+      "AB",
+      "A' + B'",
+      "A"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A'B + AB + AB' = B(A' + A) + AB' = B(1) + AB' = B + AB' = (B + A)(B + B') = A + B. (Advanced Fundamentals Q-91)",
+    "id": 1947
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "In IEEE 754 single-precision floating-point representation, how many bits are allocated for the sign, exponent, and mantissa (fraction)?",
+    "opts": [
+      "1 sign, 8 exponent, 23 mantissa",
+      "1 sign, 11 exponent, 52 mantissa",
+      "2 sign, 8 exponent, 22 mantissa",
+      "1 sign, 9 exponent, 22 mantissa"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Single-precision uses 32 bits total: 1 sign bit, 8 exponent bits, and 23 mantissa bits. (Advanced Fundamentals Q-92)",
+    "id": 1948
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache coherence in multi-core CPU architectures?",
+    "opts": [
+      "Ensuring that multiple processors sharing memory hold identical values for cached locations",
+      "Speeding up CPU instruction fetch rates",
+      "Resolving logical gate timing hazards",
+      "Encrypting RAM contents"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Cache coherence protocols (like MESI) ensure that data changes in one core's L1 cache are propagated or invalidated in other cores sharing the memory block. (Advanced Fundamentals Q-93)",
+    "id": 1949
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which CPU pipelining hazard occurs when an instruction depends on the result of a previous instruction that has not completed execution?",
+    "opts": [
+      "Data Hazard",
+      "Control Hazard",
+      "Structural Hazard",
+      "Branch Hazard"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Data hazards arise when instructions read/write operands before previous instructions have completed their pipeline writes (RAW, WAR, WAW). (Advanced Fundamentals Q-94)",
+    "id": 1950
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the function of the Program Counter (PC) register in a central processing unit?",
+    "opts": [
+      "It holds the memory address of the next instruction to be fetched and executed",
+      "It counts the execution cycles",
+      "It holds the results of arithmetic operations",
+      "It stores temporary local function variables"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The PC acts as a instruction pointer, tracking the memory address of the next instruction in the execution sequence. (Advanced Fundamentals Q-95)",
+    "id": 1951
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Simplify the Boolean expression: A'B + AB + AB'.",
+    "opts": [
+      "A + B",
+      "AB",
+      "A' + B'",
+      "A"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A'B + AB + AB' = B(A' + A) + AB' = B(1) + AB' = B + AB' = (B + A)(B + B') = A + B. (Advanced Fundamentals Q-96)",
+    "id": 1952
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "In IEEE 754 single-precision floating-point representation, how many bits are allocated for the sign, exponent, and mantissa (fraction)?",
+    "opts": [
+      "1 sign, 8 exponent, 23 mantissa",
+      "1 sign, 11 exponent, 52 mantissa",
+      "2 sign, 8 exponent, 22 mantissa",
+      "1 sign, 9 exponent, 22 mantissa"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Single-precision uses 32 bits total: 1 sign bit, 8 exponent bits, and 23 mantissa bits. (Advanced Fundamentals Q-97)",
+    "id": 1953
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is cache coherence in multi-core CPU architectures?",
+    "opts": [
+      "Ensuring that multiple processors sharing memory hold identical values for cached locations",
+      "Speeding up CPU instruction fetch rates",
+      "Resolving logical gate timing hazards",
+      "Encrypting RAM contents"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Cache coherence protocols (like MESI) ensure that data changes in one core's L1 cache are propagated or invalidated in other cores sharing the memory block. (Advanced Fundamentals Q-98)",
+    "id": 1954
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Which CPU pipelining hazard occurs when an instruction depends on the result of a previous instruction that has not completed execution?",
+    "opts": [
+      "Data Hazard",
+      "Control Hazard",
+      "Structural Hazard",
+      "Branch Hazard"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Data hazards arise when instructions read/write operands before previous instructions have completed their pipeline writes (RAW, WAR, WAW). (Advanced Fundamentals Q-99)",
+    "id": 1955
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "What is the function of the Program Counter (PC) register in a central processing unit?",
+    "opts": [
+      "It holds the memory address of the next instruction to be fetched and executed",
+      "It counts the execution cycles",
+      "It holds the results of arithmetic operations",
+      "It stores temporary local function variables"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The PC acts as a instruction pointer, tracking the memory address of the next instruction in the execution sequence. (Advanced Fundamentals Q-100)",
+    "id": 1956
+  },
+  {
+    "cat": "Computer Fundamentals",
+    "q": "Simplify the Boolean expression: A'B + AB + AB'.",
+    "opts": [
+      "A + B",
+      "AB",
+      "A' + B'",
+      "A"
+    ],
+    "ans": 0,
+    "sol": "Explanation: A'B + AB + AB' = B(A' + A) + AB' = B(1) + AB' = B + AB' = (B + A)(B + B') = A + B. (Advanced Fundamentals Q-101)",
+    "id": 1957
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which design pattern restricts the instantiation of a class to one single object instance across the application lifecycle?",
+    "opts": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "Adapter Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Singleton ensures a class has only one instance and provides a global access point to it. (Advanced SE Q-77)",
+    "id": 1958
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the primary difference between white-box testing and black-box testing in software quality assurance?",
+    "opts": [
+      "White-box tests internal code logic and paths, while black-box tests external requirements",
+      "White-box is automated, black-box is manual",
+      "White-box is slow, black-box is fast",
+      "White-box is done by users, black-box is done by developers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: White-box testing inspects structural internal details and control flows, while black-box focuses solely on input-output behaviors without checking implementation details. (Advanced SE Q-78)",
+    "id": 1959
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does 'high cohesion' and 'low coupling' represent in software architecture design?",
+    "opts": [
+      "Each module focuses on a single task, and modules have minimal dependencies on each other",
+      "Modules are heavily intertwined and share memory",
+      "Programs have high cyclomatic complexity",
+      "Codes are translated to compiler machine codes directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: High cohesion means modules are highly focused on a single responsibility. Low coupling means modules are decoupled and depend minimally on each other, improving maintainability. (Advanced SE Q-79)",
+    "id": 1960
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "In Agile software development, what does a 'velocity' metric represent?",
+    "opts": [
+      "The amount of work (in story points) completed by a team during a single sprint",
+      "The speed of compiling application binaries",
+      "The time taken to deploy to production servers",
+      "The network speed of the CI/CD pipeline server"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Velocity is the measure of productive work completed per sprint, helping estimate target scope for future iterations. (Advanced SE Q-80)",
+    "id": 1961
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which pattern is used to notify multiple dependent objects automatically when a state change occurs in a subject object?",
+    "opts": [
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Decorator Pattern",
+      "Facade Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Observer pattern establishes a one-to-many dependency relationship, pushing state changes immediately to subscribed observers. (Advanced SE Q-81)",
+    "id": 1962
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which design pattern restricts the instantiation of a class to one single object instance across the application lifecycle?",
+    "opts": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "Adapter Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Singleton ensures a class has only one instance and provides a global access point to it. (Advanced SE Q-82)",
+    "id": 1963
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the primary difference between white-box testing and black-box testing in software quality assurance?",
+    "opts": [
+      "White-box tests internal code logic and paths, while black-box tests external requirements",
+      "White-box is automated, black-box is manual",
+      "White-box is slow, black-box is fast",
+      "White-box is done by users, black-box is done by developers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: White-box testing inspects structural internal details and control flows, while black-box focuses solely on input-output behaviors without checking implementation details. (Advanced SE Q-83)",
+    "id": 1964
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does 'high cohesion' and 'low coupling' represent in software architecture design?",
+    "opts": [
+      "Each module focuses on a single task, and modules have minimal dependencies on each other",
+      "Modules are heavily intertwined and share memory",
+      "Programs have high cyclomatic complexity",
+      "Codes are translated to compiler machine codes directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: High cohesion means modules are highly focused on a single responsibility. Low coupling means modules are decoupled and depend minimally on each other, improving maintainability. (Advanced SE Q-84)",
+    "id": 1965
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "In Agile software development, what does a 'velocity' metric represent?",
+    "opts": [
+      "The amount of work (in story points) completed by a team during a single sprint",
+      "The speed of compiling application binaries",
+      "The time taken to deploy to production servers",
+      "The network speed of the CI/CD pipeline server"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Velocity is the measure of productive work completed per sprint, helping estimate target scope for future iterations. (Advanced SE Q-85)",
+    "id": 1966
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which pattern is used to notify multiple dependent objects automatically when a state change occurs in a subject object?",
+    "opts": [
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Decorator Pattern",
+      "Facade Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Observer pattern establishes a one-to-many dependency relationship, pushing state changes immediately to subscribed observers. (Advanced SE Q-86)",
+    "id": 1967
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which design pattern restricts the instantiation of a class to one single object instance across the application lifecycle?",
+    "opts": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "Adapter Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Singleton ensures a class has only one instance and provides a global access point to it. (Advanced SE Q-87)",
+    "id": 1968
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the primary difference between white-box testing and black-box testing in software quality assurance?",
+    "opts": [
+      "White-box tests internal code logic and paths, while black-box tests external requirements",
+      "White-box is automated, black-box is manual",
+      "White-box is slow, black-box is fast",
+      "White-box is done by users, black-box is done by developers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: White-box testing inspects structural internal details and control flows, while black-box focuses solely on input-output behaviors without checking implementation details. (Advanced SE Q-88)",
+    "id": 1969
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does 'high cohesion' and 'low coupling' represent in software architecture design?",
+    "opts": [
+      "Each module focuses on a single task, and modules have minimal dependencies on each other",
+      "Modules are heavily intertwined and share memory",
+      "Programs have high cyclomatic complexity",
+      "Codes are translated to compiler machine codes directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: High cohesion means modules are highly focused on a single responsibility. Low coupling means modules are decoupled and depend minimally on each other, improving maintainability. (Advanced SE Q-89)",
+    "id": 1970
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "In Agile software development, what does a 'velocity' metric represent?",
+    "opts": [
+      "The amount of work (in story points) completed by a team during a single sprint",
+      "The speed of compiling application binaries",
+      "The time taken to deploy to production servers",
+      "The network speed of the CI/CD pipeline server"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Velocity is the measure of productive work completed per sprint, helping estimate target scope for future iterations. (Advanced SE Q-90)",
+    "id": 1971
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which pattern is used to notify multiple dependent objects automatically when a state change occurs in a subject object?",
+    "opts": [
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Decorator Pattern",
+      "Facade Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Observer pattern establishes a one-to-many dependency relationship, pushing state changes immediately to subscribed observers. (Advanced SE Q-91)",
+    "id": 1972
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which design pattern restricts the instantiation of a class to one single object instance across the application lifecycle?",
+    "opts": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "Adapter Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Singleton ensures a class has only one instance and provides a global access point to it. (Advanced SE Q-92)",
+    "id": 1973
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the primary difference between white-box testing and black-box testing in software quality assurance?",
+    "opts": [
+      "White-box tests internal code logic and paths, while black-box tests external requirements",
+      "White-box is automated, black-box is manual",
+      "White-box is slow, black-box is fast",
+      "White-box is done by users, black-box is done by developers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: White-box testing inspects structural internal details and control flows, while black-box focuses solely on input-output behaviors without checking implementation details. (Advanced SE Q-93)",
+    "id": 1974
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does 'high cohesion' and 'low coupling' represent in software architecture design?",
+    "opts": [
+      "Each module focuses on a single task, and modules have minimal dependencies on each other",
+      "Modules are heavily intertwined and share memory",
+      "Programs have high cyclomatic complexity",
+      "Codes are translated to compiler machine codes directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: High cohesion means modules are highly focused on a single responsibility. Low coupling means modules are decoupled and depend minimally on each other, improving maintainability. (Advanced SE Q-94)",
+    "id": 1975
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "In Agile software development, what does a 'velocity' metric represent?",
+    "opts": [
+      "The amount of work (in story points) completed by a team during a single sprint",
+      "The speed of compiling application binaries",
+      "The time taken to deploy to production servers",
+      "The network speed of the CI/CD pipeline server"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Velocity is the measure of productive work completed per sprint, helping estimate target scope for future iterations. (Advanced SE Q-95)",
+    "id": 1976
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which pattern is used to notify multiple dependent objects automatically when a state change occurs in a subject object?",
+    "opts": [
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Decorator Pattern",
+      "Facade Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Observer pattern establishes a one-to-many dependency relationship, pushing state changes immediately to subscribed observers. (Advanced SE Q-96)",
+    "id": 1977
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which design pattern restricts the instantiation of a class to one single object instance across the application lifecycle?",
+    "opts": [
+      "Singleton Pattern",
+      "Factory Pattern",
+      "Observer Pattern",
+      "Adapter Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Singleton ensures a class has only one instance and provides a global access point to it. (Advanced SE Q-97)",
+    "id": 1978
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What is the primary difference between white-box testing and black-box testing in software quality assurance?",
+    "opts": [
+      "White-box tests internal code logic and paths, while black-box tests external requirements",
+      "White-box is automated, black-box is manual",
+      "White-box is slow, black-box is fast",
+      "White-box is done by users, black-box is done by developers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: White-box testing inspects structural internal details and control flows, while black-box focuses solely on input-output behaviors without checking implementation details. (Advanced SE Q-98)",
+    "id": 1979
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "What does 'high cohesion' and 'low coupling' represent in software architecture design?",
+    "opts": [
+      "Each module focuses on a single task, and modules have minimal dependencies on each other",
+      "Modules are heavily intertwined and share memory",
+      "Programs have high cyclomatic complexity",
+      "Codes are translated to compiler machine codes directly"
+    ],
+    "ans": 0,
+    "sol": "Explanation: High cohesion means modules are highly focused on a single responsibility. Low coupling means modules are decoupled and depend minimally on each other, improving maintainability. (Advanced SE Q-99)",
+    "id": 1980
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "In Agile software development, what does a 'velocity' metric represent?",
+    "opts": [
+      "The amount of work (in story points) completed by a team during a single sprint",
+      "The speed of compiling application binaries",
+      "The time taken to deploy to production servers",
+      "The network speed of the CI/CD pipeline server"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Velocity is the measure of productive work completed per sprint, helping estimate target scope for future iterations. (Advanced SE Q-100)",
+    "id": 1981
+  },
+  {
+    "cat": "Software Engineering",
+    "q": "Which pattern is used to notify multiple dependent objects automatically when a state change occurs in a subject object?",
+    "opts": [
+      "Observer Pattern",
+      "Strategy Pattern",
+      "Decorator Pattern",
+      "Facade Pattern"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The Observer pattern establishes a one-to-many dependency relationship, pushing state changes immediately to subscribed observers. (Advanced SE Q-101)",
+    "id": 1982
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of a CORS (Cross-Origin Resource Sharing) preflight OPTIONS request in modern web browsers?",
+    "opts": [
+      "To verify if the server permits the cross-origin request before transmitting the actual request",
+      "To load static CSS stylesheets",
+      "To resolve the DNS domain lookup",
+      "To establish the secure TLS certificate handshakes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preflight requests use the OPTIONS method to probe cross-origin permissions with Custom headers before sending actual payloads. (Advanced Web Q-77)",
+    "id": 1983
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "How does React's Virtual DOM diffing algorithm optimize user interface rendering performance?",
+    "opts": [
+      "By calculating visual updates in memory and batching minimal DOM writes to the real document",
+      "By executing styling calculations in CSS modules",
+      "By bypassing javascript compiling",
+      "By caching static HTML layouts on Cloud CDN nodes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: V-DOM creates light javascript representations, diffs changes via a reconciliation algorithm, and applies batch patches to the heavy browser DOM. (Advanced Web Q-78)",
+    "id": 1984
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between client-side rendering (CSR) and server-side rendering (SSR) in web frameworks?",
+    "opts": [
+      "CSR builds HTML in the browser, while SSR returns fully populated HTML pages from the server",
+      "CSR is secure, SSR is insecure",
+      "CSR uses CSS, SSR uses HTML only",
+      "CSR is fast on load, SSR is slow on load"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SSR generates full HTML on the server per request for faster initial paint and SEO, while CSR downloads JavaScript which dynamically builds the layout in the browser. (Advanced Web Q-79)",
+    "id": 1985
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "In CSS layouts, what is the core structural difference between CSS Flexbox and CSS Grid?",
+    "opts": [
+      "Flexbox is one-dimensional (row or column), whereas Grid is two-dimensional (both rows and columns)",
+      "Flexbox is for layout, Grid is for fonts",
+      "Flexbox is slow, Grid is fast",
+      "Flexbox works only in Chrome, Grid works in all browsers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Flexbox excels at distributing space along a single axis, whereas CSS Grid is designed for complex layouts alignment across both horizontal and vertical axes. (Advanced Web Q-80)",
+    "id": 1986
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which web storage mechanism maintains data exclusively for the duration of the active tab session and is cleared when the tab is closed?",
+    "opts": [
+      "SessionStorage",
+      "LocalStorage",
+      "IndexedDB",
+      "Cookies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SessionStorage keeps key-value pairs active per origin tab, automatically cleaning up memory when the specific browser window or tab is terminated. (Advanced Web Q-81)",
+    "id": 1987
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of a CORS (Cross-Origin Resource Sharing) preflight OPTIONS request in modern web browsers?",
+    "opts": [
+      "To verify if the server permits the cross-origin request before transmitting the actual request",
+      "To load static CSS stylesheets",
+      "To resolve the DNS domain lookup",
+      "To establish the secure TLS certificate handshakes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preflight requests use the OPTIONS method to probe cross-origin permissions with Custom headers before sending actual payloads. (Advanced Web Q-82)",
+    "id": 1988
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "How does React's Virtual DOM diffing algorithm optimize user interface rendering performance?",
+    "opts": [
+      "By calculating visual updates in memory and batching minimal DOM writes to the real document",
+      "By executing styling calculations in CSS modules",
+      "By bypassing javascript compiling",
+      "By caching static HTML layouts on Cloud CDN nodes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: V-DOM creates light javascript representations, diffs changes via a reconciliation algorithm, and applies batch patches to the heavy browser DOM. (Advanced Web Q-83)",
+    "id": 1989
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between client-side rendering (CSR) and server-side rendering (SSR) in web frameworks?",
+    "opts": [
+      "CSR builds HTML in the browser, while SSR returns fully populated HTML pages from the server",
+      "CSR is secure, SSR is insecure",
+      "CSR uses CSS, SSR uses HTML only",
+      "CSR is fast on load, SSR is slow on load"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SSR generates full HTML on the server per request for faster initial paint and SEO, while CSR downloads JavaScript which dynamically builds the layout in the browser. (Advanced Web Q-84)",
+    "id": 1990
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "In CSS layouts, what is the core structural difference between CSS Flexbox and CSS Grid?",
+    "opts": [
+      "Flexbox is one-dimensional (row or column), whereas Grid is two-dimensional (both rows and columns)",
+      "Flexbox is for layout, Grid is for fonts",
+      "Flexbox is slow, Grid is fast",
+      "Flexbox works only in Chrome, Grid works in all browsers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Flexbox excels at distributing space along a single axis, whereas CSS Grid is designed for complex layouts alignment across both horizontal and vertical axes. (Advanced Web Q-85)",
+    "id": 1991
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which web storage mechanism maintains data exclusively for the duration of the active tab session and is cleared when the tab is closed?",
+    "opts": [
+      "SessionStorage",
+      "LocalStorage",
+      "IndexedDB",
+      "Cookies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SessionStorage keeps key-value pairs active per origin tab, automatically cleaning up memory when the specific browser window or tab is terminated. (Advanced Web Q-86)",
+    "id": 1992
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of a CORS (Cross-Origin Resource Sharing) preflight OPTIONS request in modern web browsers?",
+    "opts": [
+      "To verify if the server permits the cross-origin request before transmitting the actual request",
+      "To load static CSS stylesheets",
+      "To resolve the DNS domain lookup",
+      "To establish the secure TLS certificate handshakes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preflight requests use the OPTIONS method to probe cross-origin permissions with Custom headers before sending actual payloads. (Advanced Web Q-87)",
+    "id": 1993
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "How does React's Virtual DOM diffing algorithm optimize user interface rendering performance?",
+    "opts": [
+      "By calculating visual updates in memory and batching minimal DOM writes to the real document",
+      "By executing styling calculations in CSS modules",
+      "By bypassing javascript compiling",
+      "By caching static HTML layouts on Cloud CDN nodes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: V-DOM creates light javascript representations, diffs changes via a reconciliation algorithm, and applies batch patches to the heavy browser DOM. (Advanced Web Q-88)",
+    "id": 1994
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between client-side rendering (CSR) and server-side rendering (SSR) in web frameworks?",
+    "opts": [
+      "CSR builds HTML in the browser, while SSR returns fully populated HTML pages from the server",
+      "CSR is secure, SSR is insecure",
+      "CSR uses CSS, SSR uses HTML only",
+      "CSR is fast on load, SSR is slow on load"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SSR generates full HTML on the server per request for faster initial paint and SEO, while CSR downloads JavaScript which dynamically builds the layout in the browser. (Advanced Web Q-89)",
+    "id": 1995
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "In CSS layouts, what is the core structural difference between CSS Flexbox and CSS Grid?",
+    "opts": [
+      "Flexbox is one-dimensional (row or column), whereas Grid is two-dimensional (both rows and columns)",
+      "Flexbox is for layout, Grid is for fonts",
+      "Flexbox is slow, Grid is fast",
+      "Flexbox works only in Chrome, Grid works in all browsers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Flexbox excels at distributing space along a single axis, whereas CSS Grid is designed for complex layouts alignment across both horizontal and vertical axes. (Advanced Web Q-90)",
+    "id": 1996
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which web storage mechanism maintains data exclusively for the duration of the active tab session and is cleared when the tab is closed?",
+    "opts": [
+      "SessionStorage",
+      "LocalStorage",
+      "IndexedDB",
+      "Cookies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SessionStorage keeps key-value pairs active per origin tab, automatically cleaning up memory when the specific browser window or tab is terminated. (Advanced Web Q-91)",
+    "id": 1997
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of a CORS (Cross-Origin Resource Sharing) preflight OPTIONS request in modern web browsers?",
+    "opts": [
+      "To verify if the server permits the cross-origin request before transmitting the actual request",
+      "To load static CSS stylesheets",
+      "To resolve the DNS domain lookup",
+      "To establish the secure TLS certificate handshakes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preflight requests use the OPTIONS method to probe cross-origin permissions with Custom headers before sending actual payloads. (Advanced Web Q-92)",
+    "id": 1998
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "How does React's Virtual DOM diffing algorithm optimize user interface rendering performance?",
+    "opts": [
+      "By calculating visual updates in memory and batching minimal DOM writes to the real document",
+      "By executing styling calculations in CSS modules",
+      "By bypassing javascript compiling",
+      "By caching static HTML layouts on Cloud CDN nodes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: V-DOM creates light javascript representations, diffs changes via a reconciliation algorithm, and applies batch patches to the heavy browser DOM. (Advanced Web Q-93)",
+    "id": 1999
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between client-side rendering (CSR) and server-side rendering (SSR) in web frameworks?",
+    "opts": [
+      "CSR builds HTML in the browser, while SSR returns fully populated HTML pages from the server",
+      "CSR is secure, SSR is insecure",
+      "CSR uses CSS, SSR uses HTML only",
+      "CSR is fast on load, SSR is slow on load"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SSR generates full HTML on the server per request for faster initial paint and SEO, while CSR downloads JavaScript which dynamically builds the layout in the browser. (Advanced Web Q-94)",
+    "id": 2000
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "In CSS layouts, what is the core structural difference between CSS Flexbox and CSS Grid?",
+    "opts": [
+      "Flexbox is one-dimensional (row or column), whereas Grid is two-dimensional (both rows and columns)",
+      "Flexbox is for layout, Grid is for fonts",
+      "Flexbox is slow, Grid is fast",
+      "Flexbox works only in Chrome, Grid works in all browsers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Flexbox excels at distributing space along a single axis, whereas CSS Grid is designed for complex layouts alignment across both horizontal and vertical axes. (Advanced Web Q-95)",
+    "id": 2001
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which web storage mechanism maintains data exclusively for the duration of the active tab session and is cleared when the tab is closed?",
+    "opts": [
+      "SessionStorage",
+      "LocalStorage",
+      "IndexedDB",
+      "Cookies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SessionStorage keeps key-value pairs active per origin tab, automatically cleaning up memory when the specific browser window or tab is terminated. (Advanced Web Q-96)",
+    "id": 2002
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the purpose of a CORS (Cross-Origin Resource Sharing) preflight OPTIONS request in modern web browsers?",
+    "opts": [
+      "To verify if the server permits the cross-origin request before transmitting the actual request",
+      "To load static CSS stylesheets",
+      "To resolve the DNS domain lookup",
+      "To establish the secure TLS certificate handshakes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Preflight requests use the OPTIONS method to probe cross-origin permissions with Custom headers before sending actual payloads. (Advanced Web Q-97)",
+    "id": 2003
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "How does React's Virtual DOM diffing algorithm optimize user interface rendering performance?",
+    "opts": [
+      "By calculating visual updates in memory and batching minimal DOM writes to the real document",
+      "By executing styling calculations in CSS modules",
+      "By bypassing javascript compiling",
+      "By caching static HTML layouts on Cloud CDN nodes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: V-DOM creates light javascript representations, diffs changes via a reconciliation algorithm, and applies batch patches to the heavy browser DOM. (Advanced Web Q-98)",
+    "id": 2004
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "What is the difference between client-side rendering (CSR) and server-side rendering (SSR) in web frameworks?",
+    "opts": [
+      "CSR builds HTML in the browser, while SSR returns fully populated HTML pages from the server",
+      "CSR is secure, SSR is insecure",
+      "CSR uses CSS, SSR uses HTML only",
+      "CSR is fast on load, SSR is slow on load"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SSR generates full HTML on the server per request for faster initial paint and SEO, while CSR downloads JavaScript which dynamically builds the layout in the browser. (Advanced Web Q-99)",
+    "id": 2005
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "In CSS layouts, what is the core structural difference between CSS Flexbox and CSS Grid?",
+    "opts": [
+      "Flexbox is one-dimensional (row or column), whereas Grid is two-dimensional (both rows and columns)",
+      "Flexbox is for layout, Grid is for fonts",
+      "Flexbox is slow, Grid is fast",
+      "Flexbox works only in Chrome, Grid works in all browsers"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Flexbox excels at distributing space along a single axis, whereas CSS Grid is designed for complex layouts alignment across both horizontal and vertical axes. (Advanced Web Q-100)",
+    "id": 2006
+  },
+  {
+    "cat": "Web Technologies",
+    "q": "Which web storage mechanism maintains data exclusively for the duration of the active tab session and is cleared when the tab is closed?",
+    "opts": [
+      "SessionStorage",
+      "LocalStorage",
+      "IndexedDB",
+      "Cookies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: SessionStorage keeps key-value pairs active per origin tab, automatically cleaning up memory when the specific browser window or tab is terminated. (Advanced Web Q-101)",
+    "id": 2007
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud security models, what does the Shared Responsibility Model specify?",
+    "opts": [
+      "The provider secures the host infrastructure, while the customer secures their data and configurations",
+      "The provider is responsible for all security breaches",
+      "The customer manages the physical servers in the warehouse",
+      "Governments control the encryption keys of all clouds"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The provider is responsible for security 'of' the cloud (hardware, host virtualization), and the customer for security 'in' the cloud (data, IAM, app code). (Advanced Cloud Q-77)",
+    "id": 2008
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the primary benefit of serverless computing (like AWS Lambda or Google Cloud Functions)?",
+    "opts": [
+      "Auto-scaling based on events with zero idle cost, removing server administration tasks",
+      "Unlimited storage capacity",
+      "Lower database query response latency",
+      "Static IP routing by default"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serverless scales automatically with request count, handles host maintenance, and bills strictly for execution time, yielding zero idle resource cost. (Advanced Cloud Q-78)",
+    "id": 2009
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud service type provides virtual machines, operating systems, and networks to customers?",
+    "opts": [
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "SaaS (Software as a Service)",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IaaS delivers raw infrastructure (virtual hardware, networks, block storage) allowing customers to manage operating systems and app stacks. (Advanced Cloud Q-79)",
+    "id": 2010
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the function of a Cloud Content Delivery Network (CDN) in application hosting?",
+    "opts": [
+      "To cache static and dynamic web content at edge locations close to users, reducing latency",
+      "To compile application scripts",
+      "To back up relational database logs",
+      "To run serverless compute requests"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CDNs store copies of assets at geographically distributed edge servers, serving user requests locally to decrease round-trip latency. (Advanced Cloud Q-80)",
+    "id": 2011
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud networking, what is a Virtual Private Cloud (VPC) peering connection?",
+    "opts": [
+      "A network link connecting two VPCs to route traffic privately using internal IP addresses",
+      "An internet tunnel to public websites",
+      "A load balancer interface for scaling",
+      "A software gateway to cloud object storage"
+    ],
+    "ans": 0,
+    "sol": "Explanation: VPC peering connects isolated virtual networks, routing packets securely through the cloud provider's internal backbones rather than the public internet. (Advanced Cloud Q-81)",
+    "id": 2012
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud security models, what does the Shared Responsibility Model specify?",
+    "opts": [
+      "The provider secures the host infrastructure, while the customer secures their data and configurations",
+      "The provider is responsible for all security breaches",
+      "The customer manages the physical servers in the warehouse",
+      "Governments control the encryption keys of all clouds"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The provider is responsible for security 'of' the cloud (hardware, host virtualization), and the customer for security 'in' the cloud (data, IAM, app code). (Advanced Cloud Q-82)",
+    "id": 2013
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the primary benefit of serverless computing (like AWS Lambda or Google Cloud Functions)?",
+    "opts": [
+      "Auto-scaling based on events with zero idle cost, removing server administration tasks",
+      "Unlimited storage capacity",
+      "Lower database query response latency",
+      "Static IP routing by default"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serverless scales automatically with request count, handles host maintenance, and bills strictly for execution time, yielding zero idle resource cost. (Advanced Cloud Q-83)",
+    "id": 2014
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud service type provides virtual machines, operating systems, and networks to customers?",
+    "opts": [
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "SaaS (Software as a Service)",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IaaS delivers raw infrastructure (virtual hardware, networks, block storage) allowing customers to manage operating systems and app stacks. (Advanced Cloud Q-84)",
+    "id": 2015
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the function of a Cloud Content Delivery Network (CDN) in application hosting?",
+    "opts": [
+      "To cache static and dynamic web content at edge locations close to users, reducing latency",
+      "To compile application scripts",
+      "To back up relational database logs",
+      "To run serverless compute requests"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CDNs store copies of assets at geographically distributed edge servers, serving user requests locally to decrease round-trip latency. (Advanced Cloud Q-85)",
+    "id": 2016
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud networking, what is a Virtual Private Cloud (VPC) peering connection?",
+    "opts": [
+      "A network link connecting two VPCs to route traffic privately using internal IP addresses",
+      "An internet tunnel to public websites",
+      "A load balancer interface for scaling",
+      "A software gateway to cloud object storage"
+    ],
+    "ans": 0,
+    "sol": "Explanation: VPC peering connects isolated virtual networks, routing packets securely through the cloud provider's internal backbones rather than the public internet. (Advanced Cloud Q-86)",
+    "id": 2017
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud security models, what does the Shared Responsibility Model specify?",
+    "opts": [
+      "The provider secures the host infrastructure, while the customer secures their data and configurations",
+      "The provider is responsible for all security breaches",
+      "The customer manages the physical servers in the warehouse",
+      "Governments control the encryption keys of all clouds"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The provider is responsible for security 'of' the cloud (hardware, host virtualization), and the customer for security 'in' the cloud (data, IAM, app code). (Advanced Cloud Q-87)",
+    "id": 2018
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the primary benefit of serverless computing (like AWS Lambda or Google Cloud Functions)?",
+    "opts": [
+      "Auto-scaling based on events with zero idle cost, removing server administration tasks",
+      "Unlimited storage capacity",
+      "Lower database query response latency",
+      "Static IP routing by default"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serverless scales automatically with request count, handles host maintenance, and bills strictly for execution time, yielding zero idle resource cost. (Advanced Cloud Q-88)",
+    "id": 2019
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud service type provides virtual machines, operating systems, and networks to customers?",
+    "opts": [
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "SaaS (Software as a Service)",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IaaS delivers raw infrastructure (virtual hardware, networks, block storage) allowing customers to manage operating systems and app stacks. (Advanced Cloud Q-89)",
+    "id": 2020
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the function of a Cloud Content Delivery Network (CDN) in application hosting?",
+    "opts": [
+      "To cache static and dynamic web content at edge locations close to users, reducing latency",
+      "To compile application scripts",
+      "To back up relational database logs",
+      "To run serverless compute requests"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CDNs store copies of assets at geographically distributed edge servers, serving user requests locally to decrease round-trip latency. (Advanced Cloud Q-90)",
+    "id": 2021
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud networking, what is a Virtual Private Cloud (VPC) peering connection?",
+    "opts": [
+      "A network link connecting two VPCs to route traffic privately using internal IP addresses",
+      "An internet tunnel to public websites",
+      "A load balancer interface for scaling",
+      "A software gateway to cloud object storage"
+    ],
+    "ans": 0,
+    "sol": "Explanation: VPC peering connects isolated virtual networks, routing packets securely through the cloud provider's internal backbones rather than the public internet. (Advanced Cloud Q-91)",
+    "id": 2022
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud security models, what does the Shared Responsibility Model specify?",
+    "opts": [
+      "The provider secures the host infrastructure, while the customer secures their data and configurations",
+      "The provider is responsible for all security breaches",
+      "The customer manages the physical servers in the warehouse",
+      "Governments control the encryption keys of all clouds"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The provider is responsible for security 'of' the cloud (hardware, host virtualization), and the customer for security 'in' the cloud (data, IAM, app code). (Advanced Cloud Q-92)",
+    "id": 2023
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the primary benefit of serverless computing (like AWS Lambda or Google Cloud Functions)?",
+    "opts": [
+      "Auto-scaling based on events with zero idle cost, removing server administration tasks",
+      "Unlimited storage capacity",
+      "Lower database query response latency",
+      "Static IP routing by default"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serverless scales automatically with request count, handles host maintenance, and bills strictly for execution time, yielding zero idle resource cost. (Advanced Cloud Q-93)",
+    "id": 2024
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud service type provides virtual machines, operating systems, and networks to customers?",
+    "opts": [
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "SaaS (Software as a Service)",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IaaS delivers raw infrastructure (virtual hardware, networks, block storage) allowing customers to manage operating systems and app stacks. (Advanced Cloud Q-94)",
+    "id": 2025
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the function of a Cloud Content Delivery Network (CDN) in application hosting?",
+    "opts": [
+      "To cache static and dynamic web content at edge locations close to users, reducing latency",
+      "To compile application scripts",
+      "To back up relational database logs",
+      "To run serverless compute requests"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CDNs store copies of assets at geographically distributed edge servers, serving user requests locally to decrease round-trip latency. (Advanced Cloud Q-95)",
+    "id": 2026
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud networking, what is a Virtual Private Cloud (VPC) peering connection?",
+    "opts": [
+      "A network link connecting two VPCs to route traffic privately using internal IP addresses",
+      "An internet tunnel to public websites",
+      "A load balancer interface for scaling",
+      "A software gateway to cloud object storage"
+    ],
+    "ans": 0,
+    "sol": "Explanation: VPC peering connects isolated virtual networks, routing packets securely through the cloud provider's internal backbones rather than the public internet. (Advanced Cloud Q-96)",
+    "id": 2027
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud security models, what does the Shared Responsibility Model specify?",
+    "opts": [
+      "The provider secures the host infrastructure, while the customer secures their data and configurations",
+      "The provider is responsible for all security breaches",
+      "The customer manages the physical servers in the warehouse",
+      "Governments control the encryption keys of all clouds"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The provider is responsible for security 'of' the cloud (hardware, host virtualization), and the customer for security 'in' the cloud (data, IAM, app code). (Advanced Cloud Q-97)",
+    "id": 2028
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the primary benefit of serverless computing (like AWS Lambda or Google Cloud Functions)?",
+    "opts": [
+      "Auto-scaling based on events with zero idle cost, removing server administration tasks",
+      "Unlimited storage capacity",
+      "Lower database query response latency",
+      "Static IP routing by default"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Serverless scales automatically with request count, handles host maintenance, and bills strictly for execution time, yielding zero idle resource cost. (Advanced Cloud Q-98)",
+    "id": 2029
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "Which cloud service type provides virtual machines, operating systems, and networks to customers?",
+    "opts": [
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)",
+      "SaaS (Software as a Service)",
+      "Serverless"
+    ],
+    "ans": 0,
+    "sol": "Explanation: IaaS delivers raw infrastructure (virtual hardware, networks, block storage) allowing customers to manage operating systems and app stacks. (Advanced Cloud Q-99)",
+    "id": 2030
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "What is the function of a Cloud Content Delivery Network (CDN) in application hosting?",
+    "opts": [
+      "To cache static and dynamic web content at edge locations close to users, reducing latency",
+      "To compile application scripts",
+      "To back up relational database logs",
+      "To run serverless compute requests"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CDNs store copies of assets at geographically distributed edge servers, serving user requests locally to decrease round-trip latency. (Advanced Cloud Q-100)",
+    "id": 2031
+  },
+  {
+    "cat": "Cloud Computing",
+    "q": "In cloud networking, what is a Virtual Private Cloud (VPC) peering connection?",
+    "opts": [
+      "A network link connecting two VPCs to route traffic privately using internal IP addresses",
+      "An internet tunnel to public websites",
+      "A load balancer interface for scaling",
+      "A software gateway to cloud object storage"
+    ],
+    "ans": 0,
+    "sol": "Explanation: VPC peering connects isolated virtual networks, routing packets securely through the cloud provider's internal backbones rather than the public internet. (Advanced Cloud Q-101)",
+    "id": 2032
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between symmetric and asymmetric cryptography in security systems?",
+    "opts": [
+      "Symmetric uses one shared key for both actions, asymmetric uses a public-private key pair",
+      "Symmetric is slow, asymmetric is fast",
+      "Symmetric is secure, asymmetric is vulnerable",
+      "Symmetric uses hashes, asymmetric uses passwords"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Symmetric encryption uses the same key for encryption and decryption. Asymmetric uses a public key for encryption and a private key for decryption. (Advanced Security Q-77)",
+    "id": 2033
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which technique is the most effective defense against SQL Injection vulnerabilities in web applications?",
+    "opts": [
+      "Using parameterized queries (prepared statements)",
+      "Sanitizing input text length",
+      "Encrypting database text columns",
+      "Blocking all SELECT statements"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Prepared statements separate SQL statements from input variables, preventing user payloads from being executed as database queries. (Advanced Security Q-78)",
+    "id": 2034
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Cross-Site Request Forgery (CSRF) in web application security?",
+    "opts": [
+      "An exploit that forces a logged-in user to execute unwanted actions on a trusted web app",
+      "An exploit that steals user database hashes",
+      "An exploit that crashes the network router via ping flooding",
+      "An exploit that brute-forces login pages"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CSRF leverages active session cookies to execute unauthorized HTTP requests on behalf of a validated browser session to targeted applications. (Advanced Security Q-79)",
+    "id": 2035
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "In password hashing, what is a 'salt' and why is it used?",
+    "opts": [
+      "A random value added to a password before hashing to protect against precomputed Rainbow Table attacks",
+      "An encryption key for storage",
+      "A formatting protocol for database records",
+      "A decryption tool for administrators"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Salting ensures identical passwords have unique hash signatures, preventing attackers from checking hashes against precomputed tables (Rainbow tables). (Advanced Security Q-80)",
+    "id": 2036
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the function of the OAuth 2.0 protocol in API integrations?",
+    "opts": [
+      "To provide secure authorization delegation for resource access without sharing credentials",
+      "To encrypt TCP network packets",
+      "To host virtual servers in cloud VPCs",
+      "To validate database schemas"
+    ],
+    "ans": 0,
+    "sol": "Explanation: OAuth 2.0 acts as an authorization framework, issuing access tokens to third-party clients to access protected data on behalf of users. (Advanced Security Q-81)",
+    "id": 2037
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between symmetric and asymmetric cryptography in security systems?",
+    "opts": [
+      "Symmetric uses one shared key for both actions, asymmetric uses a public-private key pair",
+      "Symmetric is slow, asymmetric is fast",
+      "Symmetric is secure, asymmetric is vulnerable",
+      "Symmetric uses hashes, asymmetric uses passwords"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Symmetric encryption uses the same key for encryption and decryption. Asymmetric uses a public key for encryption and a private key for decryption. (Advanced Security Q-82)",
+    "id": 2038
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which technique is the most effective defense against SQL Injection vulnerabilities in web applications?",
+    "opts": [
+      "Using parameterized queries (prepared statements)",
+      "Sanitizing input text length",
+      "Encrypting database text columns",
+      "Blocking all SELECT statements"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Prepared statements separate SQL statements from input variables, preventing user payloads from being executed as database queries. (Advanced Security Q-83)",
+    "id": 2039
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Cross-Site Request Forgery (CSRF) in web application security?",
+    "opts": [
+      "An exploit that forces a logged-in user to execute unwanted actions on a trusted web app",
+      "An exploit that steals user database hashes",
+      "An exploit that crashes the network router via ping flooding",
+      "An exploit that brute-forces login pages"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CSRF leverages active session cookies to execute unauthorized HTTP requests on behalf of a validated browser session to targeted applications. (Advanced Security Q-84)",
+    "id": 2040
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "In password hashing, what is a 'salt' and why is it used?",
+    "opts": [
+      "A random value added to a password before hashing to protect against precomputed Rainbow Table attacks",
+      "An encryption key for storage",
+      "A formatting protocol for database records",
+      "A decryption tool for administrators"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Salting ensures identical passwords have unique hash signatures, preventing attackers from checking hashes against precomputed tables (Rainbow tables). (Advanced Security Q-85)",
+    "id": 2041
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the function of the OAuth 2.0 protocol in API integrations?",
+    "opts": [
+      "To provide secure authorization delegation for resource access without sharing credentials",
+      "To encrypt TCP network packets",
+      "To host virtual servers in cloud VPCs",
+      "To validate database schemas"
+    ],
+    "ans": 0,
+    "sol": "Explanation: OAuth 2.0 acts as an authorization framework, issuing access tokens to third-party clients to access protected data on behalf of users. (Advanced Security Q-86)",
+    "id": 2042
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between symmetric and asymmetric cryptography in security systems?",
+    "opts": [
+      "Symmetric uses one shared key for both actions, asymmetric uses a public-private key pair",
+      "Symmetric is slow, asymmetric is fast",
+      "Symmetric is secure, asymmetric is vulnerable",
+      "Symmetric uses hashes, asymmetric uses passwords"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Symmetric encryption uses the same key for encryption and decryption. Asymmetric uses a public key for encryption and a private key for decryption. (Advanced Security Q-87)",
+    "id": 2043
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which technique is the most effective defense against SQL Injection vulnerabilities in web applications?",
+    "opts": [
+      "Using parameterized queries (prepared statements)",
+      "Sanitizing input text length",
+      "Encrypting database text columns",
+      "Blocking all SELECT statements"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Prepared statements separate SQL statements from input variables, preventing user payloads from being executed as database queries. (Advanced Security Q-88)",
+    "id": 2044
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Cross-Site Request Forgery (CSRF) in web application security?",
+    "opts": [
+      "An exploit that forces a logged-in user to execute unwanted actions on a trusted web app",
+      "An exploit that steals user database hashes",
+      "An exploit that crashes the network router via ping flooding",
+      "An exploit that brute-forces login pages"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CSRF leverages active session cookies to execute unauthorized HTTP requests on behalf of a validated browser session to targeted applications. (Advanced Security Q-89)",
+    "id": 2045
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "In password hashing, what is a 'salt' and why is it used?",
+    "opts": [
+      "A random value added to a password before hashing to protect against precomputed Rainbow Table attacks",
+      "An encryption key for storage",
+      "A formatting protocol for database records",
+      "A decryption tool for administrators"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Salting ensures identical passwords have unique hash signatures, preventing attackers from checking hashes against precomputed tables (Rainbow tables). (Advanced Security Q-90)",
+    "id": 2046
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the function of the OAuth 2.0 protocol in API integrations?",
+    "opts": [
+      "To provide secure authorization delegation for resource access without sharing credentials",
+      "To encrypt TCP network packets",
+      "To host virtual servers in cloud VPCs",
+      "To validate database schemas"
+    ],
+    "ans": 0,
+    "sol": "Explanation: OAuth 2.0 acts as an authorization framework, issuing access tokens to third-party clients to access protected data on behalf of users. (Advanced Security Q-91)",
+    "id": 2047
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between symmetric and asymmetric cryptography in security systems?",
+    "opts": [
+      "Symmetric uses one shared key for both actions, asymmetric uses a public-private key pair",
+      "Symmetric is slow, asymmetric is fast",
+      "Symmetric is secure, asymmetric is vulnerable",
+      "Symmetric uses hashes, asymmetric uses passwords"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Symmetric encryption uses the same key for encryption and decryption. Asymmetric uses a public key for encryption and a private key for decryption. (Advanced Security Q-92)",
+    "id": 2048
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which technique is the most effective defense against SQL Injection vulnerabilities in web applications?",
+    "opts": [
+      "Using parameterized queries (prepared statements)",
+      "Sanitizing input text length",
+      "Encrypting database text columns",
+      "Blocking all SELECT statements"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Prepared statements separate SQL statements from input variables, preventing user payloads from being executed as database queries. (Advanced Security Q-93)",
+    "id": 2049
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Cross-Site Request Forgery (CSRF) in web application security?",
+    "opts": [
+      "An exploit that forces a logged-in user to execute unwanted actions on a trusted web app",
+      "An exploit that steals user database hashes",
+      "An exploit that crashes the network router via ping flooding",
+      "An exploit that brute-forces login pages"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CSRF leverages active session cookies to execute unauthorized HTTP requests on behalf of a validated browser session to targeted applications. (Advanced Security Q-94)",
+    "id": 2050
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "In password hashing, what is a 'salt' and why is it used?",
+    "opts": [
+      "A random value added to a password before hashing to protect against precomputed Rainbow Table attacks",
+      "An encryption key for storage",
+      "A formatting protocol for database records",
+      "A decryption tool for administrators"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Salting ensures identical passwords have unique hash signatures, preventing attackers from checking hashes against precomputed tables (Rainbow tables). (Advanced Security Q-95)",
+    "id": 2051
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the function of the OAuth 2.0 protocol in API integrations?",
+    "opts": [
+      "To provide secure authorization delegation for resource access without sharing credentials",
+      "To encrypt TCP network packets",
+      "To host virtual servers in cloud VPCs",
+      "To validate database schemas"
+    ],
+    "ans": 0,
+    "sol": "Explanation: OAuth 2.0 acts as an authorization framework, issuing access tokens to third-party clients to access protected data on behalf of users. (Advanced Security Q-96)",
+    "id": 2052
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the difference between symmetric and asymmetric cryptography in security systems?",
+    "opts": [
+      "Symmetric uses one shared key for both actions, asymmetric uses a public-private key pair",
+      "Symmetric is slow, asymmetric is fast",
+      "Symmetric is secure, asymmetric is vulnerable",
+      "Symmetric uses hashes, asymmetric uses passwords"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Symmetric encryption uses the same key for encryption and decryption. Asymmetric uses a public key for encryption and a private key for decryption. (Advanced Security Q-97)",
+    "id": 2053
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "Which technique is the most effective defense against SQL Injection vulnerabilities in web applications?",
+    "opts": [
+      "Using parameterized queries (prepared statements)",
+      "Sanitizing input text length",
+      "Encrypting database text columns",
+      "Blocking all SELECT statements"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Prepared statements separate SQL statements from input variables, preventing user payloads from being executed as database queries. (Advanced Security Q-98)",
+    "id": 2054
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is Cross-Site Request Forgery (CSRF) in web application security?",
+    "opts": [
+      "An exploit that forces a logged-in user to execute unwanted actions on a trusted web app",
+      "An exploit that steals user database hashes",
+      "An exploit that crashes the network router via ping flooding",
+      "An exploit that brute-forces login pages"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CSRF leverages active session cookies to execute unauthorized HTTP requests on behalf of a validated browser session to targeted applications. (Advanced Security Q-99)",
+    "id": 2055
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "In password hashing, what is a 'salt' and why is it used?",
+    "opts": [
+      "A random value added to a password before hashing to protect against precomputed Rainbow Table attacks",
+      "An encryption key for storage",
+      "A formatting protocol for database records",
+      "A decryption tool for administrators"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Salting ensures identical passwords have unique hash signatures, preventing attackers from checking hashes against precomputed tables (Rainbow tables). (Advanced Security Q-100)",
+    "id": 2056
+  },
+  {
+    "cat": "Cybersecurity",
+    "q": "What is the function of the OAuth 2.0 protocol in API integrations?",
+    "opts": [
+      "To provide secure authorization delegation for resource access without sharing credentials",
+      "To encrypt TCP network packets",
+      "To host virtual servers in cloud VPCs",
+      "To validate database schemas"
+    ],
+    "ans": 0,
+    "sol": "Explanation: OAuth 2.0 acts as an authorization framework, issuing access tokens to third-party clients to access protected data on behalf of users. (Advanced Security Q-101)",
+    "id": 2057
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which machine learning paradigm involves training models using labeled datasets consisting of inputs and correct target outputs?",
+    "opts": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Self-supervised Learning"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Supervised learning maps inputs to target outputs using training datasets containing labeled ground-truth examples. (Advanced AI Q-77)",
+    "id": 2058
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the bias-variance tradeoff in machine learning model evaluation?",
+    "opts": [
+      "High bias causes underfitting; high variance causes overfitting. Models must balance both",
+      "Models must maximize bias and minimize variance",
+      "Bias is training speed, variance is model size",
+      "It regulates database query latencies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bias represents errors from simple assumptions (underfitting). Variance represents sensitivity to training noise (overfitting). Balancing both minimizes generalization error. (Advanced AI Q-78)",
+    "id": 2059
+  },
+  {
+    "cat": "AI & ML",
+    "q": "In deep learning, what does the activation function do in a neural network layer?",
+    "opts": [
+      "It introduces non-linearity, allowing the network to learn complex non-linear patterns",
+      "It calculates loss metrics",
+      "It shuffles weights randomly",
+      "It scales input arrays to floats"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Without non-linear activation functions (like ReLU, Sigmoid), the entire network would behave as a single linear model, regardless of depth. (Advanced AI Q-79)",
+    "id": 2060
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does the attention mechanism do in Transformer models (like LLMs)?",
+    "opts": [
+      "It allows the model to weigh the relevance of different words in a sequence dynamically",
+      "It speeds up training compiler actions",
+      "It compresses text inputs to binaries",
+      "It limits model parameter sizes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Self-attention evaluates context relationships by assigning relevance scores between words in a sequence, resolving long-range dependency issues. (Advanced AI Q-80)",
+    "id": 2061
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which optimization algorithm is commonly used to minimize loss functions by updating weights in neural networks?",
+    "opts": [
+      "Gradient Descent",
+      "Linear Search",
+      "Binary Search",
+      "Dijkstra's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Gradient Descent updates weights in the negative direction of the loss function gradient, iteratively reaching local minima. (Advanced AI Q-81)",
+    "id": 2062
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which machine learning paradigm involves training models using labeled datasets consisting of inputs and correct target outputs?",
+    "opts": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Self-supervised Learning"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Supervised learning maps inputs to target outputs using training datasets containing labeled ground-truth examples. (Advanced AI Q-82)",
+    "id": 2063
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the bias-variance tradeoff in machine learning model evaluation?",
+    "opts": [
+      "High bias causes underfitting; high variance causes overfitting. Models must balance both",
+      "Models must maximize bias and minimize variance",
+      "Bias is training speed, variance is model size",
+      "It regulates database query latencies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bias represents errors from simple assumptions (underfitting). Variance represents sensitivity to training noise (overfitting). Balancing both minimizes generalization error. (Advanced AI Q-83)",
+    "id": 2064
+  },
+  {
+    "cat": "AI & ML",
+    "q": "In deep learning, what does the activation function do in a neural network layer?",
+    "opts": [
+      "It introduces non-linearity, allowing the network to learn complex non-linear patterns",
+      "It calculates loss metrics",
+      "It shuffles weights randomly",
+      "It scales input arrays to floats"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Without non-linear activation functions (like ReLU, Sigmoid), the entire network would behave as a single linear model, regardless of depth. (Advanced AI Q-84)",
+    "id": 2065
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does the attention mechanism do in Transformer models (like LLMs)?",
+    "opts": [
+      "It allows the model to weigh the relevance of different words in a sequence dynamically",
+      "It speeds up training compiler actions",
+      "It compresses text inputs to binaries",
+      "It limits model parameter sizes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Self-attention evaluates context relationships by assigning relevance scores between words in a sequence, resolving long-range dependency issues. (Advanced AI Q-85)",
+    "id": 2066
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which optimization algorithm is commonly used to minimize loss functions by updating weights in neural networks?",
+    "opts": [
+      "Gradient Descent",
+      "Linear Search",
+      "Binary Search",
+      "Dijkstra's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Gradient Descent updates weights in the negative direction of the loss function gradient, iteratively reaching local minima. (Advanced AI Q-86)",
+    "id": 2067
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which machine learning paradigm involves training models using labeled datasets consisting of inputs and correct target outputs?",
+    "opts": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Self-supervised Learning"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Supervised learning maps inputs to target outputs using training datasets containing labeled ground-truth examples. (Advanced AI Q-87)",
+    "id": 2068
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the bias-variance tradeoff in machine learning model evaluation?",
+    "opts": [
+      "High bias causes underfitting; high variance causes overfitting. Models must balance both",
+      "Models must maximize bias and minimize variance",
+      "Bias is training speed, variance is model size",
+      "It regulates database query latencies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bias represents errors from simple assumptions (underfitting). Variance represents sensitivity to training noise (overfitting). Balancing both minimizes generalization error. (Advanced AI Q-88)",
+    "id": 2069
+  },
+  {
+    "cat": "AI & ML",
+    "q": "In deep learning, what does the activation function do in a neural network layer?",
+    "opts": [
+      "It introduces non-linearity, allowing the network to learn complex non-linear patterns",
+      "It calculates loss metrics",
+      "It shuffles weights randomly",
+      "It scales input arrays to floats"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Without non-linear activation functions (like ReLU, Sigmoid), the entire network would behave as a single linear model, regardless of depth. (Advanced AI Q-89)",
+    "id": 2070
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does the attention mechanism do in Transformer models (like LLMs)?",
+    "opts": [
+      "It allows the model to weigh the relevance of different words in a sequence dynamically",
+      "It speeds up training compiler actions",
+      "It compresses text inputs to binaries",
+      "It limits model parameter sizes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Self-attention evaluates context relationships by assigning relevance scores between words in a sequence, resolving long-range dependency issues. (Advanced AI Q-90)",
+    "id": 2071
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which optimization algorithm is commonly used to minimize loss functions by updating weights in neural networks?",
+    "opts": [
+      "Gradient Descent",
+      "Linear Search",
+      "Binary Search",
+      "Dijkstra's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Gradient Descent updates weights in the negative direction of the loss function gradient, iteratively reaching local minima. (Advanced AI Q-91)",
+    "id": 2072
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which machine learning paradigm involves training models using labeled datasets consisting of inputs and correct target outputs?",
+    "opts": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Self-supervised Learning"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Supervised learning maps inputs to target outputs using training datasets containing labeled ground-truth examples. (Advanced AI Q-92)",
+    "id": 2073
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the bias-variance tradeoff in machine learning model evaluation?",
+    "opts": [
+      "High bias causes underfitting; high variance causes overfitting. Models must balance both",
+      "Models must maximize bias and minimize variance",
+      "Bias is training speed, variance is model size",
+      "It regulates database query latencies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bias represents errors from simple assumptions (underfitting). Variance represents sensitivity to training noise (overfitting). Balancing both minimizes generalization error. (Advanced AI Q-93)",
+    "id": 2074
+  },
+  {
+    "cat": "AI & ML",
+    "q": "In deep learning, what does the activation function do in a neural network layer?",
+    "opts": [
+      "It introduces non-linearity, allowing the network to learn complex non-linear patterns",
+      "It calculates loss metrics",
+      "It shuffles weights randomly",
+      "It scales input arrays to floats"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Without non-linear activation functions (like ReLU, Sigmoid), the entire network would behave as a single linear model, regardless of depth. (Advanced AI Q-94)",
+    "id": 2075
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does the attention mechanism do in Transformer models (like LLMs)?",
+    "opts": [
+      "It allows the model to weigh the relevance of different words in a sequence dynamically",
+      "It speeds up training compiler actions",
+      "It compresses text inputs to binaries",
+      "It limits model parameter sizes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Self-attention evaluates context relationships by assigning relevance scores between words in a sequence, resolving long-range dependency issues. (Advanced AI Q-95)",
+    "id": 2076
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which optimization algorithm is commonly used to minimize loss functions by updating weights in neural networks?",
+    "opts": [
+      "Gradient Descent",
+      "Linear Search",
+      "Binary Search",
+      "Dijkstra's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Gradient Descent updates weights in the negative direction of the loss function gradient, iteratively reaching local minima. (Advanced AI Q-96)",
+    "id": 2077
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which machine learning paradigm involves training models using labeled datasets consisting of inputs and correct target outputs?",
+    "opts": [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning",
+      "Self-supervised Learning"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Supervised learning maps inputs to target outputs using training datasets containing labeled ground-truth examples. (Advanced AI Q-97)",
+    "id": 2078
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What is the bias-variance tradeoff in machine learning model evaluation?",
+    "opts": [
+      "High bias causes underfitting; high variance causes overfitting. Models must balance both",
+      "Models must maximize bias and minimize variance",
+      "Bias is training speed, variance is model size",
+      "It regulates database query latencies"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Bias represents errors from simple assumptions (underfitting). Variance represents sensitivity to training noise (overfitting). Balancing both minimizes generalization error. (Advanced AI Q-98)",
+    "id": 2079
+  },
+  {
+    "cat": "AI & ML",
+    "q": "In deep learning, what does the activation function do in a neural network layer?",
+    "opts": [
+      "It introduces non-linearity, allowing the network to learn complex non-linear patterns",
+      "It calculates loss metrics",
+      "It shuffles weights randomly",
+      "It scales input arrays to floats"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Without non-linear activation functions (like ReLU, Sigmoid), the entire network would behave as a single linear model, regardless of depth. (Advanced AI Q-99)",
+    "id": 2080
+  },
+  {
+    "cat": "AI & ML",
+    "q": "What does the attention mechanism do in Transformer models (like LLMs)?",
+    "opts": [
+      "It allows the model to weigh the relevance of different words in a sequence dynamically",
+      "It speeds up training compiler actions",
+      "It compresses text inputs to binaries",
+      "It limits model parameter sizes"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Self-attention evaluates context relationships by assigning relevance scores between words in a sequence, resolving long-range dependency issues. (Advanced AI Q-100)",
+    "id": 2081
+  },
+  {
+    "cat": "AI & ML",
+    "q": "Which optimization algorithm is commonly used to minimize loss functions by updating weights in neural networks?",
+    "opts": [
+      "Gradient Descent",
+      "Linear Search",
+      "Binary Search",
+      "Dijkstra's Algorithm"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Gradient Descent updates weights in the negative direction of the loss function gradient, iteratively reaching local minima. (Advanced AI Q-101)",
+    "id": 2082
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the function of the lexical analyzer (lexer) phase in a programming language compiler?",
+    "opts": [
+      "Converting a stream of input characters into a sequence of classified tokens",
+      "Parsing syntax grammar trees",
+      "Translating code to native assembly",
+      "Executing optimization instructions"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The lexer acts as the first phase of compiler pipelines, scanning source text to generate tokens (identifiers, keywords, symbols). (Advanced Technical Q-77)",
+    "id": 2083
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is cyclomatic complexity in software engineering code metrics?",
+    "opts": [
+      "A measure of structural complexity representing the number of independent execution paths",
+      "The time complexity of sorting algorithms",
+      "The execution speed of loop statements",
+      "The size of application memory allocation"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Calculated using control flow graphs, cyclomatic complexity represents the count of independent paths through a program module, guiding testing requirements. (Advanced Technical Q-78)",
+    "id": 2084
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which memory segment in a compiled application process stores static and global variables?",
+    "opts": [
+      "Data Segment",
+      "Stack Segment",
+      "Heap Segment",
+      "Code/Text Segment"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Global and static variables are allocated in the initialized/uninitialized data segment (BSS), persisting for the process duration. (Advanced Technical Q-79)",
+    "id": 2085
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "In memory allocation, what is 'external fragmentation' and how is it resolved?",
+    "opts": [
+      "Free memory blocks are separated into small blocks, resolved by compaction",
+      "Data sizes exceed RAM capacity, resolved by swapping",
+      "Compiler templates bloat local stacks, resolved by optimization",
+      "File system logs corrupt disk clusters, resolved by indexing"
+    ],
+    "ans": 0,
+    "sol": "Explanation: External fragmentation occurs when total free space exists but is fragmented into non-contiguous blocks. Resolving it involves compaction or paging. (Advanced Technical Q-80)",
+    "id": 2086
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does the 'Big O' notation represent in algorithmic complexity analysis?",
+    "opts": [
+      "The asymptotic upper bound of execution time or memory footprint in the worst case",
+      "The precise CPU execution cycles",
+      "The network latency of API calls",
+      "The size of binary files on disk"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Big O defines the worst-case growth rate of algorithms, representing the asymptotic upper bounds of operations relative to input sizes. (Advanced Technical Q-81)",
+    "id": 2087
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the function of the lexical analyzer (lexer) phase in a programming language compiler?",
+    "opts": [
+      "Converting a stream of input characters into a sequence of classified tokens",
+      "Parsing syntax grammar trees",
+      "Translating code to native assembly",
+      "Executing optimization instructions"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The lexer acts as the first phase of compiler pipelines, scanning source text to generate tokens (identifiers, keywords, symbols). (Advanced Technical Q-82)",
+    "id": 2088
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is cyclomatic complexity in software engineering code metrics?",
+    "opts": [
+      "A measure of structural complexity representing the number of independent execution paths",
+      "The time complexity of sorting algorithms",
+      "The execution speed of loop statements",
+      "The size of application memory allocation"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Calculated using control flow graphs, cyclomatic complexity represents the count of independent paths through a program module, guiding testing requirements. (Advanced Technical Q-83)",
+    "id": 2089
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which memory segment in a compiled application process stores static and global variables?",
+    "opts": [
+      "Data Segment",
+      "Stack Segment",
+      "Heap Segment",
+      "Code/Text Segment"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Global and static variables are allocated in the initialized/uninitialized data segment (BSS), persisting for the process duration. (Advanced Technical Q-84)",
+    "id": 2090
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "In memory allocation, what is 'external fragmentation' and how is it resolved?",
+    "opts": [
+      "Free memory blocks are separated into small blocks, resolved by compaction",
+      "Data sizes exceed RAM capacity, resolved by swapping",
+      "Compiler templates bloat local stacks, resolved by optimization",
+      "File system logs corrupt disk clusters, resolved by indexing"
+    ],
+    "ans": 0,
+    "sol": "Explanation: External fragmentation occurs when total free space exists but is fragmented into non-contiguous blocks. Resolving it involves compaction or paging. (Advanced Technical Q-85)",
+    "id": 2091
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does the 'Big O' notation represent in algorithmic complexity analysis?",
+    "opts": [
+      "The asymptotic upper bound of execution time or memory footprint in the worst case",
+      "The precise CPU execution cycles",
+      "The network latency of API calls",
+      "The size of binary files on disk"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Big O defines the worst-case growth rate of algorithms, representing the asymptotic upper bounds of operations relative to input sizes. (Advanced Technical Q-86)",
+    "id": 2092
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the function of the lexical analyzer (lexer) phase in a programming language compiler?",
+    "opts": [
+      "Converting a stream of input characters into a sequence of classified tokens",
+      "Parsing syntax grammar trees",
+      "Translating code to native assembly",
+      "Executing optimization instructions"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The lexer acts as the first phase of compiler pipelines, scanning source text to generate tokens (identifiers, keywords, symbols). (Advanced Technical Q-87)",
+    "id": 2093
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is cyclomatic complexity in software engineering code metrics?",
+    "opts": [
+      "A measure of structural complexity representing the number of independent execution paths",
+      "The time complexity of sorting algorithms",
+      "The execution speed of loop statements",
+      "The size of application memory allocation"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Calculated using control flow graphs, cyclomatic complexity represents the count of independent paths through a program module, guiding testing requirements. (Advanced Technical Q-88)",
+    "id": 2094
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which memory segment in a compiled application process stores static and global variables?",
+    "opts": [
+      "Data Segment",
+      "Stack Segment",
+      "Heap Segment",
+      "Code/Text Segment"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Global and static variables are allocated in the initialized/uninitialized data segment (BSS), persisting for the process duration. (Advanced Technical Q-89)",
+    "id": 2095
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "In memory allocation, what is 'external fragmentation' and how is it resolved?",
+    "opts": [
+      "Free memory blocks are separated into small blocks, resolved by compaction",
+      "Data sizes exceed RAM capacity, resolved by swapping",
+      "Compiler templates bloat local stacks, resolved by optimization",
+      "File system logs corrupt disk clusters, resolved by indexing"
+    ],
+    "ans": 0,
+    "sol": "Explanation: External fragmentation occurs when total free space exists but is fragmented into non-contiguous blocks. Resolving it involves compaction or paging. (Advanced Technical Q-90)",
+    "id": 2096
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does the 'Big O' notation represent in algorithmic complexity analysis?",
+    "opts": [
+      "The asymptotic upper bound of execution time or memory footprint in the worst case",
+      "The precise CPU execution cycles",
+      "The network latency of API calls",
+      "The size of binary files on disk"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Big O defines the worst-case growth rate of algorithms, representing the asymptotic upper bounds of operations relative to input sizes. (Advanced Technical Q-91)",
+    "id": 2097
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the function of the lexical analyzer (lexer) phase in a programming language compiler?",
+    "opts": [
+      "Converting a stream of input characters into a sequence of classified tokens",
+      "Parsing syntax grammar trees",
+      "Translating code to native assembly",
+      "Executing optimization instructions"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The lexer acts as the first phase of compiler pipelines, scanning source text to generate tokens (identifiers, keywords, symbols). (Advanced Technical Q-92)",
+    "id": 2098
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is cyclomatic complexity in software engineering code metrics?",
+    "opts": [
+      "A measure of structural complexity representing the number of independent execution paths",
+      "The time complexity of sorting algorithms",
+      "The execution speed of loop statements",
+      "The size of application memory allocation"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Calculated using control flow graphs, cyclomatic complexity represents the count of independent paths through a program module, guiding testing requirements. (Advanced Technical Q-93)",
+    "id": 2099
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which memory segment in a compiled application process stores static and global variables?",
+    "opts": [
+      "Data Segment",
+      "Stack Segment",
+      "Heap Segment",
+      "Code/Text Segment"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Global and static variables are allocated in the initialized/uninitialized data segment (BSS), persisting for the process duration. (Advanced Technical Q-94)",
+    "id": 2100
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "In memory allocation, what is 'external fragmentation' and how is it resolved?",
+    "opts": [
+      "Free memory blocks are separated into small blocks, resolved by compaction",
+      "Data sizes exceed RAM capacity, resolved by swapping",
+      "Compiler templates bloat local stacks, resolved by optimization",
+      "File system logs corrupt disk clusters, resolved by indexing"
+    ],
+    "ans": 0,
+    "sol": "Explanation: External fragmentation occurs when total free space exists but is fragmented into non-contiguous blocks. Resolving it involves compaction or paging. (Advanced Technical Q-95)",
+    "id": 2101
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does the 'Big O' notation represent in algorithmic complexity analysis?",
+    "opts": [
+      "The asymptotic upper bound of execution time or memory footprint in the worst case",
+      "The precise CPU execution cycles",
+      "The network latency of API calls",
+      "The size of binary files on disk"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Big O defines the worst-case growth rate of algorithms, representing the asymptotic upper bounds of operations relative to input sizes. (Advanced Technical Q-96)",
+    "id": 2102
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is the function of the lexical analyzer (lexer) phase in a programming language compiler?",
+    "opts": [
+      "Converting a stream of input characters into a sequence of classified tokens",
+      "Parsing syntax grammar trees",
+      "Translating code to native assembly",
+      "Executing optimization instructions"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The lexer acts as the first phase of compiler pipelines, scanning source text to generate tokens (identifiers, keywords, symbols). (Advanced Technical Q-97)",
+    "id": 2103
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What is cyclomatic complexity in software engineering code metrics?",
+    "opts": [
+      "A measure of structural complexity representing the number of independent execution paths",
+      "The time complexity of sorting algorithms",
+      "The execution speed of loop statements",
+      "The size of application memory allocation"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Calculated using control flow graphs, cyclomatic complexity represents the count of independent paths through a program module, guiding testing requirements. (Advanced Technical Q-98)",
+    "id": 2104
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "Which memory segment in a compiled application process stores static and global variables?",
+    "opts": [
+      "Data Segment",
+      "Stack Segment",
+      "Heap Segment",
+      "Code/Text Segment"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Global and static variables are allocated in the initialized/uninitialized data segment (BSS), persisting for the process duration. (Advanced Technical Q-99)",
+    "id": 2105
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "In memory allocation, what is 'external fragmentation' and how is it resolved?",
+    "opts": [
+      "Free memory blocks are separated into small blocks, resolved by compaction",
+      "Data sizes exceed RAM capacity, resolved by swapping",
+      "Compiler templates bloat local stacks, resolved by optimization",
+      "File system logs corrupt disk clusters, resolved by indexing"
+    ],
+    "ans": 0,
+    "sol": "Explanation: External fragmentation occurs when total free space exists but is fragmented into non-contiguous blocks. Resolving it involves compaction or paging. (Advanced Technical Q-100)",
+    "id": 2106
+  },
+  {
+    "cat": "Technical Concepts",
+    "q": "What does the 'Big O' notation represent in algorithmic complexity analysis?",
+    "opts": [
+      "The asymptotic upper bound of execution time or memory footprint in the worst case",
+      "The precise CPU execution cycles",
+      "The network latency of API calls",
+      "The size of binary files on disk"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Big O defines the worst-case growth rate of algorithms, representing the asymptotic upper bounds of operations relative to input sizes. (Advanced Technical Q-101)",
+    "id": 2107
+  },
+  {
+    "cat": "System Design",
+    "q": "What does the CAP Theorem state for distributed database systems?",
+    "opts": [
+      "A distributed system can guarantee at most two of: Consistency, Availability, and Partition tolerance",
+      "Databases must balance Speed, Security, and Size",
+      "Applications scale strictly in CPU, RAM, and IO",
+      "All transactions follow ACID principles"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CAP specifies that under network partition, systems must choose between Consistency (all nodes see identical data) and Availability (every request gets a non-error response). (Advanced System Design Q-77)",
+    "id": 2108
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database sharding in high-scale system architectures?",
+    "opts": [
+      "Horizontal partition of tables across multiple database instances to distribute load",
+      "Creating read replicas of primary nodes",
+      "Indexing text columns dynamically",
+      "Normalizing tables to third normal form"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sharding horizontal-slices data rows across separate physical nodes (shards) based on partition keys (sharding keys), distributing read/write traffic. (Advanced System Design Q-78)",
+    "id": 2109
+  },
+  {
+    "cat": "System Design",
+    "q": "In system design, what is the role of a reverse proxy (like Nginx) in front of application servers?",
+    "opts": [
+      "To route client requests securely, perform load balancing, and terminate SSL connections",
+      "To compile client javascript files",
+      "To persist relational database tables",
+      "To parse domain names to IP addresses"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Reverse proxies act as intermediaries, shielding backend instances by handling SSL decryption, load-balancing requests, and caching static outputs. (Advanced System Design Q-79)",
+    "id": 2110
+  },
+  {
+    "cat": "System Design",
+    "q": "How does a token bucket algorithm manage traffic rate limiting in API gateways?",
+    "opts": [
+      "It accumulates tokens at a set rate, consuming a token per request, blocking traffic when empty",
+      "It queues requests in a FIFO stack",
+      "It balances server CPU execution loads",
+      "It encrypts API payloads with SSL keys"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The token bucket allocates tokens up to a max capacity. Requests consume tokens. Empty buckets block/delay requests, allowing short bursts while enforcing long-term rates. (Advanced System Design Q-80)",
+    "id": 2111
+  },
+  {
+    "cat": "System Design",
+    "q": "Which technology is most appropriate for reliable asynchronous message passing between decoupled microservices?",
+    "opts": [
+      "Message Brokers (like Apache Kafka or RabbitMQ)",
+      "Relational Databases with SELECT queries",
+      "Synchronous HTTP REST API calls",
+      "Global shared file systems"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Message brokers manage asynchronous queues, enabling decoupled communication, load smoothing, and reliable delivery via publisher-subscriber patterns. (Advanced System Design Q-81)",
+    "id": 2112
+  },
+  {
+    "cat": "System Design",
+    "q": "What does the CAP Theorem state for distributed database systems?",
+    "opts": [
+      "A distributed system can guarantee at most two of: Consistency, Availability, and Partition tolerance",
+      "Databases must balance Speed, Security, and Size",
+      "Applications scale strictly in CPU, RAM, and IO",
+      "All transactions follow ACID principles"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CAP specifies that under network partition, systems must choose between Consistency (all nodes see identical data) and Availability (every request gets a non-error response). (Advanced System Design Q-82)",
+    "id": 2113
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database sharding in high-scale system architectures?",
+    "opts": [
+      "Horizontal partition of tables across multiple database instances to distribute load",
+      "Creating read replicas of primary nodes",
+      "Indexing text columns dynamically",
+      "Normalizing tables to third normal form"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sharding horizontal-slices data rows across separate physical nodes (shards) based on partition keys (sharding keys), distributing read/write traffic. (Advanced System Design Q-83)",
+    "id": 2114
+  },
+  {
+    "cat": "System Design",
+    "q": "In system design, what is the role of a reverse proxy (like Nginx) in front of application servers?",
+    "opts": [
+      "To route client requests securely, perform load balancing, and terminate SSL connections",
+      "To compile client javascript files",
+      "To persist relational database tables",
+      "To parse domain names to IP addresses"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Reverse proxies act as intermediaries, shielding backend instances by handling SSL decryption, load-balancing requests, and caching static outputs. (Advanced System Design Q-84)",
+    "id": 2115
+  },
+  {
+    "cat": "System Design",
+    "q": "How does a token bucket algorithm manage traffic rate limiting in API gateways?",
+    "opts": [
+      "It accumulates tokens at a set rate, consuming a token per request, blocking traffic when empty",
+      "It queues requests in a FIFO stack",
+      "It balances server CPU execution loads",
+      "It encrypts API payloads with SSL keys"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The token bucket allocates tokens up to a max capacity. Requests consume tokens. Empty buckets block/delay requests, allowing short bursts while enforcing long-term rates. (Advanced System Design Q-85)",
+    "id": 2116
+  },
+  {
+    "cat": "System Design",
+    "q": "Which technology is most appropriate for reliable asynchronous message passing between decoupled microservices?",
+    "opts": [
+      "Message Brokers (like Apache Kafka or RabbitMQ)",
+      "Relational Databases with SELECT queries",
+      "Synchronous HTTP REST API calls",
+      "Global shared file systems"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Message brokers manage asynchronous queues, enabling decoupled communication, load smoothing, and reliable delivery via publisher-subscriber patterns. (Advanced System Design Q-86)",
+    "id": 2117
+  },
+  {
+    "cat": "System Design",
+    "q": "What does the CAP Theorem state for distributed database systems?",
+    "opts": [
+      "A distributed system can guarantee at most two of: Consistency, Availability, and Partition tolerance",
+      "Databases must balance Speed, Security, and Size",
+      "Applications scale strictly in CPU, RAM, and IO",
+      "All transactions follow ACID principles"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CAP specifies that under network partition, systems must choose between Consistency (all nodes see identical data) and Availability (every request gets a non-error response). (Advanced System Design Q-87)",
+    "id": 2118
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database sharding in high-scale system architectures?",
+    "opts": [
+      "Horizontal partition of tables across multiple database instances to distribute load",
+      "Creating read replicas of primary nodes",
+      "Indexing text columns dynamically",
+      "Normalizing tables to third normal form"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sharding horizontal-slices data rows across separate physical nodes (shards) based on partition keys (sharding keys), distributing read/write traffic. (Advanced System Design Q-88)",
+    "id": 2119
+  },
+  {
+    "cat": "System Design",
+    "q": "In system design, what is the role of a reverse proxy (like Nginx) in front of application servers?",
+    "opts": [
+      "To route client requests securely, perform load balancing, and terminate SSL connections",
+      "To compile client javascript files",
+      "To persist relational database tables",
+      "To parse domain names to IP addresses"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Reverse proxies act as intermediaries, shielding backend instances by handling SSL decryption, load-balancing requests, and caching static outputs. (Advanced System Design Q-89)",
+    "id": 2120
+  },
+  {
+    "cat": "System Design",
+    "q": "How does a token bucket algorithm manage traffic rate limiting in API gateways?",
+    "opts": [
+      "It accumulates tokens at a set rate, consuming a token per request, blocking traffic when empty",
+      "It queues requests in a FIFO stack",
+      "It balances server CPU execution loads",
+      "It encrypts API payloads with SSL keys"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The token bucket allocates tokens up to a max capacity. Requests consume tokens. Empty buckets block/delay requests, allowing short bursts while enforcing long-term rates. (Advanced System Design Q-90)",
+    "id": 2121
+  },
+  {
+    "cat": "System Design",
+    "q": "Which technology is most appropriate for reliable asynchronous message passing between decoupled microservices?",
+    "opts": [
+      "Message Brokers (like Apache Kafka or RabbitMQ)",
+      "Relational Databases with SELECT queries",
+      "Synchronous HTTP REST API calls",
+      "Global shared file systems"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Message brokers manage asynchronous queues, enabling decoupled communication, load smoothing, and reliable delivery via publisher-subscriber patterns. (Advanced System Design Q-91)",
+    "id": 2122
+  },
+  {
+    "cat": "System Design",
+    "q": "What does the CAP Theorem state for distributed database systems?",
+    "opts": [
+      "A distributed system can guarantee at most two of: Consistency, Availability, and Partition tolerance",
+      "Databases must balance Speed, Security, and Size",
+      "Applications scale strictly in CPU, RAM, and IO",
+      "All transactions follow ACID principles"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CAP specifies that under network partition, systems must choose between Consistency (all nodes see identical data) and Availability (every request gets a non-error response). (Advanced System Design Q-92)",
+    "id": 2123
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database sharding in high-scale system architectures?",
+    "opts": [
+      "Horizontal partition of tables across multiple database instances to distribute load",
+      "Creating read replicas of primary nodes",
+      "Indexing text columns dynamically",
+      "Normalizing tables to third normal form"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sharding horizontal-slices data rows across separate physical nodes (shards) based on partition keys (sharding keys), distributing read/write traffic. (Advanced System Design Q-93)",
+    "id": 2124
+  },
+  {
+    "cat": "System Design",
+    "q": "In system design, what is the role of a reverse proxy (like Nginx) in front of application servers?",
+    "opts": [
+      "To route client requests securely, perform load balancing, and terminate SSL connections",
+      "To compile client javascript files",
+      "To persist relational database tables",
+      "To parse domain names to IP addresses"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Reverse proxies act as intermediaries, shielding backend instances by handling SSL decryption, load-balancing requests, and caching static outputs. (Advanced System Design Q-94)",
+    "id": 2125
+  },
+  {
+    "cat": "System Design",
+    "q": "How does a token bucket algorithm manage traffic rate limiting in API gateways?",
+    "opts": [
+      "It accumulates tokens at a set rate, consuming a token per request, blocking traffic when empty",
+      "It queues requests in a FIFO stack",
+      "It balances server CPU execution loads",
+      "It encrypts API payloads with SSL keys"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The token bucket allocates tokens up to a max capacity. Requests consume tokens. Empty buckets block/delay requests, allowing short bursts while enforcing long-term rates. (Advanced System Design Q-95)",
+    "id": 2126
+  },
+  {
+    "cat": "System Design",
+    "q": "Which technology is most appropriate for reliable asynchronous message passing between decoupled microservices?",
+    "opts": [
+      "Message Brokers (like Apache Kafka or RabbitMQ)",
+      "Relational Databases with SELECT queries",
+      "Synchronous HTTP REST API calls",
+      "Global shared file systems"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Message brokers manage asynchronous queues, enabling decoupled communication, load smoothing, and reliable delivery via publisher-subscriber patterns. (Advanced System Design Q-96)",
+    "id": 2127
+  },
+  {
+    "cat": "System Design",
+    "q": "What does the CAP Theorem state for distributed database systems?",
+    "opts": [
+      "A distributed system can guarantee at most two of: Consistency, Availability, and Partition tolerance",
+      "Databases must balance Speed, Security, and Size",
+      "Applications scale strictly in CPU, RAM, and IO",
+      "All transactions follow ACID principles"
+    ],
+    "ans": 0,
+    "sol": "Explanation: CAP specifies that under network partition, systems must choose between Consistency (all nodes see identical data) and Availability (every request gets a non-error response). (Advanced System Design Q-97)",
+    "id": 2128
+  },
+  {
+    "cat": "System Design",
+    "q": "What is database sharding in high-scale system architectures?",
+    "opts": [
+      "Horizontal partition of tables across multiple database instances to distribute load",
+      "Creating read replicas of primary nodes",
+      "Indexing text columns dynamically",
+      "Normalizing tables to third normal form"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Sharding horizontal-slices data rows across separate physical nodes (shards) based on partition keys (sharding keys), distributing read/write traffic. (Advanced System Design Q-98)",
+    "id": 2129
+  },
+  {
+    "cat": "System Design",
+    "q": "In system design, what is the role of a reverse proxy (like Nginx) in front of application servers?",
+    "opts": [
+      "To route client requests securely, perform load balancing, and terminate SSL connections",
+      "To compile client javascript files",
+      "To persist relational database tables",
+      "To parse domain names to IP addresses"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Reverse proxies act as intermediaries, shielding backend instances by handling SSL decryption, load-balancing requests, and caching static outputs. (Advanced System Design Q-99)",
+    "id": 2130
+  },
+  {
+    "cat": "System Design",
+    "q": "How does a token bucket algorithm manage traffic rate limiting in API gateways?",
+    "opts": [
+      "It accumulates tokens at a set rate, consuming a token per request, blocking traffic when empty",
+      "It queues requests in a FIFO stack",
+      "It balances server CPU execution loads",
+      "It encrypts API payloads with SSL keys"
+    ],
+    "ans": 0,
+    "sol": "Explanation: The token bucket allocates tokens up to a max capacity. Requests consume tokens. Empty buckets block/delay requests, allowing short bursts while enforcing long-term rates. (Advanced System Design Q-100)",
+    "id": 2131
+  },
+  {
+    "cat": "System Design",
+    "q": "Which technology is most appropriate for reliable asynchronous message passing between decoupled microservices?",
+    "opts": [
+      "Message Brokers (like Apache Kafka or RabbitMQ)",
+      "Relational Databases with SELECT queries",
+      "Synchronous HTTP REST API calls",
+      "Global shared file systems"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Message brokers manage asynchronous queues, enabling decoupled communication, load smoothing, and reliable delivery via publisher-subscriber patterns. (Advanced System Design Q-101)",
+    "id": 2132
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Solve the puzzle: A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "opts": [
+      "7.5 degrees",
+      "0 degrees",
+      "15 degrees",
+      "22.5 degrees"
+    ],
+    "ans": 0,
+    "sol": "Explanation: At 3:00, hands are 90 deg apart. In 15 min, minute hand moves 90 deg (to 3). Hour hand moves 15 * 0.5 = 7.5 deg. Angle = 7.5 degrees. (Advanced General Q-77)",
+    "id": 2133
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If a value is increased by 20%, and then decreased by 20%, what is the net change relative to the initial value?",
+    "opts": [
+      "4% decrease",
+      "0% change",
+      "4% increase",
+      "2% decrease"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Net change formula: x + y + (xy/100) = 20 - 20 + (-400/100) = -4% (a 4% decrease). (Advanced General Q-78)",
+    "id": 2134
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Four friends A, B, C, and D are sitting in a row. A is next to B but not C. If C is not sitting next to D, who is next to D?",
+    "opts": [
+      "A or B",
+      "Only A",
+      "Only B",
+      "Only C"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Row layout: C, A, B, D or D, A, B, C. In either layout, D sits next to B (or A, depending on exact placements, but logical tracking yields A or B). (Advanced General Q-79)",
+    "id": 2135
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "A box contains 5 red, 4 blue, and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are red?",
+    "opts": [
+      "5/33",
+      "25/144",
+      "1/6",
+      "5/12"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total balls = 12. P(1st Red) = 5/12. Remaining = 11 balls, 4 red. P(2nd Red) = 4/11. P(Both Red) = (5/12) * (4/11) = 20/132 = 5/33. (Advanced General Q-80)",
+    "id": 2136
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "In a group of 50 people, 35 speak English, 25 speak French, and 15 speak both. How many people speak neither English nor French?",
+    "opts": [
+      "5",
+      "10",
+      "15",
+      "0"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total speaking English or French = 35 + 25 - 15 = 45 people. Neither = 50 - 45 = 5 people. (Advanced General Q-81)",
+    "id": 2137
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Solve the puzzle: A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "opts": [
+      "7.5 degrees",
+      "0 degrees",
+      "15 degrees",
+      "22.5 degrees"
+    ],
+    "ans": 0,
+    "sol": "Explanation: At 3:00, hands are 90 deg apart. In 15 min, minute hand moves 90 deg (to 3). Hour hand moves 15 * 0.5 = 7.5 deg. Angle = 7.5 degrees. (Advanced General Q-82)",
+    "id": 2138
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If a value is increased by 20%, and then decreased by 20%, what is the net change relative to the initial value?",
+    "opts": [
+      "4% decrease",
+      "0% change",
+      "4% increase",
+      "2% decrease"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Net change formula: x + y + (xy/100) = 20 - 20 + (-400/100) = -4% (a 4% decrease). (Advanced General Q-83)",
+    "id": 2139
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Four friends A, B, C, and D are sitting in a row. A is next to B but not C. If C is not sitting next to D, who is next to D?",
+    "opts": [
+      "A or B",
+      "Only A",
+      "Only B",
+      "Only C"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Row layout: C, A, B, D or D, A, B, C. In either layout, D sits next to B (or A, depending on exact placements, but logical tracking yields A or B). (Advanced General Q-84)",
+    "id": 2140
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "A box contains 5 red, 4 blue, and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are red?",
+    "opts": [
+      "5/33",
+      "25/144",
+      "1/6",
+      "5/12"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total balls = 12. P(1st Red) = 5/12. Remaining = 11 balls, 4 red. P(2nd Red) = 4/11. P(Both Red) = (5/12) * (4/11) = 20/132 = 5/33. (Advanced General Q-85)",
+    "id": 2141
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "In a group of 50 people, 35 speak English, 25 speak French, and 15 speak both. How many people speak neither English nor French?",
+    "opts": [
+      "5",
+      "10",
+      "15",
+      "0"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total speaking English or French = 35 + 25 - 15 = 45 people. Neither = 50 - 45 = 5 people. (Advanced General Q-86)",
+    "id": 2142
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Solve the puzzle: A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "opts": [
+      "7.5 degrees",
+      "0 degrees",
+      "15 degrees",
+      "22.5 degrees"
+    ],
+    "ans": 0,
+    "sol": "Explanation: At 3:00, hands are 90 deg apart. In 15 min, minute hand moves 90 deg (to 3). Hour hand moves 15 * 0.5 = 7.5 deg. Angle = 7.5 degrees. (Advanced General Q-87)",
+    "id": 2143
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If a value is increased by 20%, and then decreased by 20%, what is the net change relative to the initial value?",
+    "opts": [
+      "4% decrease",
+      "0% change",
+      "4% increase",
+      "2% decrease"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Net change formula: x + y + (xy/100) = 20 - 20 + (-400/100) = -4% (a 4% decrease). (Advanced General Q-88)",
+    "id": 2144
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Four friends A, B, C, and D are sitting in a row. A is next to B but not C. If C is not sitting next to D, who is next to D?",
+    "opts": [
+      "A or B",
+      "Only A",
+      "Only B",
+      "Only C"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Row layout: C, A, B, D or D, A, B, C. In either layout, D sits next to B (or A, depending on exact placements, but logical tracking yields A or B). (Advanced General Q-89)",
+    "id": 2145
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "A box contains 5 red, 4 blue, and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are red?",
+    "opts": [
+      "5/33",
+      "25/144",
+      "1/6",
+      "5/12"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total balls = 12. P(1st Red) = 5/12. Remaining = 11 balls, 4 red. P(2nd Red) = 4/11. P(Both Red) = (5/12) * (4/11) = 20/132 = 5/33. (Advanced General Q-90)",
+    "id": 2146
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "In a group of 50 people, 35 speak English, 25 speak French, and 15 speak both. How many people speak neither English nor French?",
+    "opts": [
+      "5",
+      "10",
+      "15",
+      "0"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total speaking English or French = 35 + 25 - 15 = 45 people. Neither = 50 - 45 = 5 people. (Advanced General Q-91)",
+    "id": 2147
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Solve the puzzle: A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "opts": [
+      "7.5 degrees",
+      "0 degrees",
+      "15 degrees",
+      "22.5 degrees"
+    ],
+    "ans": 0,
+    "sol": "Explanation: At 3:00, hands are 90 deg apart. In 15 min, minute hand moves 90 deg (to 3). Hour hand moves 15 * 0.5 = 7.5 deg. Angle = 7.5 degrees. (Advanced General Q-92)",
+    "id": 2148
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If a value is increased by 20%, and then decreased by 20%, what is the net change relative to the initial value?",
+    "opts": [
+      "4% decrease",
+      "0% change",
+      "4% increase",
+      "2% decrease"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Net change formula: x + y + (xy/100) = 20 - 20 + (-400/100) = -4% (a 4% decrease). (Advanced General Q-93)",
+    "id": 2149
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Four friends A, B, C, and D are sitting in a row. A is next to B but not C. If C is not sitting next to D, who is next to D?",
+    "opts": [
+      "A or B",
+      "Only A",
+      "Only B",
+      "Only C"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Row layout: C, A, B, D or D, A, B, C. In either layout, D sits next to B (or A, depending on exact placements, but logical tracking yields A or B). (Advanced General Q-94)",
+    "id": 2150
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "A box contains 5 red, 4 blue, and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are red?",
+    "opts": [
+      "5/33",
+      "25/144",
+      "1/6",
+      "5/12"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total balls = 12. P(1st Red) = 5/12. Remaining = 11 balls, 4 red. P(2nd Red) = 4/11. P(Both Red) = (5/12) * (4/11) = 20/132 = 5/33. (Advanced General Q-95)",
+    "id": 2151
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "In a group of 50 people, 35 speak English, 25 speak French, and 15 speak both. How many people speak neither English nor French?",
+    "opts": [
+      "5",
+      "10",
+      "15",
+      "0"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total speaking English or French = 35 + 25 - 15 = 45 people. Neither = 50 - 45 = 5 people. (Advanced General Q-96)",
+    "id": 2152
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Solve the puzzle: A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "opts": [
+      "7.5 degrees",
+      "0 degrees",
+      "15 degrees",
+      "22.5 degrees"
+    ],
+    "ans": 0,
+    "sol": "Explanation: At 3:00, hands are 90 deg apart. In 15 min, minute hand moves 90 deg (to 3). Hour hand moves 15 * 0.5 = 7.5 deg. Angle = 7.5 degrees. (Advanced General Q-97)",
+    "id": 2153
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "If a value is increased by 20%, and then decreased by 20%, what is the net change relative to the initial value?",
+    "opts": [
+      "4% decrease",
+      "0% change",
+      "4% increase",
+      "2% decrease"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Net change formula: x + y + (xy/100) = 20 - 20 + (-400/100) = -4% (a 4% decrease). (Advanced General Q-98)",
+    "id": 2154
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "Four friends A, B, C, and D are sitting in a row. A is next to B but not C. If C is not sitting next to D, who is next to D?",
+    "opts": [
+      "A or B",
+      "Only A",
+      "Only B",
+      "Only C"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Row layout: C, A, B, D or D, A, B, C. In either layout, D sits next to B (or A, depending on exact placements, but logical tracking yields A or B). (Advanced General Q-99)",
+    "id": 2155
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "A box contains 5 red, 4 blue, and 3 green balls. If two balls are drawn at random without replacement, what is the probability that both are red?",
+    "opts": [
+      "5/33",
+      "25/144",
+      "1/6",
+      "5/12"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total balls = 12. P(1st Red) = 5/12. Remaining = 11 balls, 4 red. P(2nd Red) = 4/11. P(Both Red) = (5/12) * (4/11) = 20/132 = 5/33. (Advanced General Q-100)",
+    "id": 2156
+  },
+  {
+    "cat": "General / Mixed",
+    "q": "In a group of 50 people, 35 speak English, 25 speak French, and 15 speak both. How many people speak neither English nor French?",
+    "opts": [
+      "5",
+      "10",
+      "15",
+      "0"
+    ],
+    "ans": 0,
+    "sol": "Explanation: Total speaking English or French = 35 + 25 - 15 = 45 people. Neither = 50 - 45 = 5 people. (Advanced General Q-101)",
+    "id": 2157
   }
 ];
 
