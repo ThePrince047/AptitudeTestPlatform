@@ -1,5 +1,5 @@
 // TCS NQT Mock Test Question Bank
-// Total Questions: 1535
+// Total Questions: 1667
 
 export const QB = [
   {
@@ -19956,26 +19956,1742 @@ export const QB = [
     "ans": 0,
     "sol": "This question focuses on testing standard definitions for General / Mixed.",
     "id": 1535
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 7, 9, 11, 13, 15, ?",
+    "opts": [
+      "14",
+      "17",
+      "19",
+      "22"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 2. Next term = 17.",
+    "id": 1536
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 9, 11, 13, 15, 17, ?",
+    "opts": [
+      "16",
+      "19",
+      "21",
+      "24"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 2. Next term = 19.",
+    "id": 1537
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 11, 13, 15, 17, 19, ?",
+    "opts": [
+      "18",
+      "21",
+      "23",
+      "26"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 2. Next term = 21.",
+    "id": 1538
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 13, 16, 19, 22, 25, ?",
+    "opts": [
+      "25",
+      "28",
+      "30",
+      "33"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 3. Next term = 28.",
+    "id": 1539
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 16, 19, 22, 25, 28, ?",
+    "opts": [
+      "28",
+      "31",
+      "33",
+      "36"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 3. Next term = 31.",
+    "id": 1540
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 19, 22, 25, 28, 31, ?",
+    "opts": [
+      "31",
+      "34",
+      "36",
+      "39"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 3. Next term = 34.",
+    "id": 1541
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 3, 8, 13, 18, 23, ?",
+    "opts": [
+      "25",
+      "28",
+      "30",
+      "33"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 5. Next term = 28.",
+    "id": 1542
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 8, 13, 18, 23, 28, ?",
+    "opts": [
+      "30",
+      "33",
+      "35",
+      "38"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 5. Next term = 33.",
+    "id": 1543
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 13, 18, 23, 28, 33, ?",
+    "opts": [
+      "35",
+      "38",
+      "40",
+      "43"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 5. Next term = 38.",
+    "id": 1544
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 11, 18, 25, 32, 39, ?",
+    "opts": [
+      "43",
+      "46",
+      "48",
+      "51"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 7. Next term = 46.",
+    "id": 1545
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 18, 25, 32, 39, 46, ?",
+    "opts": [
+      "50",
+      "53",
+      "55",
+      "58"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 7. Next term = 53.",
+    "id": 1546
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 25, 32, 39, 46, 53, ?",
+    "opts": [
+      "57",
+      "60",
+      "62",
+      "65"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 7. Next term = 60.",
+    "id": 1547
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 11, 21, 31, 41, 51, ?",
+    "opts": [
+      "58",
+      "61",
+      "63",
+      "66"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 10. Next term = 61.",
+    "id": 1548
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 21, 31, 41, 51, 61, ?",
+    "opts": [
+      "68",
+      "71",
+      "73",
+      "76"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 10. Next term = 71.",
+    "id": 1549
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 31, 41, 51, 61, 71, ?",
+    "opts": [
+      "78",
+      "81",
+      "83",
+      "86"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 10. Next term = 81.",
+    "id": 1550
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 18, 33, 48, 63, 78, ?",
+    "opts": [
+      "90",
+      "93",
+      "95",
+      "98"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 15. Next term = 93.",
+    "id": 1551
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 33, 48, 63, 78, 93, ?",
+    "opts": [
+      "105",
+      "108",
+      "110",
+      "113"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 15. Next term = 108.",
+    "id": 1552
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 48, 63, 78, 93, 108, ?",
+    "opts": [
+      "120",
+      "123",
+      "125",
+      "128"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Arithmetic progression with a common difference of 15. Next term = 123.",
+    "id": 1553
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 2, 4, 8, 16, 32, ?",
+    "opts": [
+      "61",
+      "64",
+      "66",
+      "69"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Geometric progression where each term is double the previous term. Next term = 64.",
+    "id": 1554
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 4, 8, 16, 32, 64, ?",
+    "opts": [
+      "125",
+      "128",
+      "130",
+      "133"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Geometric progression where each term is double the previous term. Next term = 128.",
+    "id": 1555
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 8, 16, 32, 64, 128, ?",
+    "opts": [
+      "253",
+      "256",
+      "258",
+      "261"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Geometric progression where each term is double the previous term. Next term = 256.",
+    "id": 1556
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 3, 9, 27, 81, 243, ?",
+    "opts": [
+      "726",
+      "729",
+      "731",
+      "734"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Geometric progression where each term is triple the previous term. Next term = 729.",
+    "id": 1557
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 9, 27, 81, 243, 729, ?",
+    "opts": [
+      "2184",
+      "2187",
+      "2189",
+      "2192"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Geometric progression where each term is triple the previous term. Next term = 2187.",
+    "id": 1558
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 27, 81, 243, 729, 2187, ?",
+    "opts": [
+      "6558",
+      "6561",
+      "6563",
+      "6566"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Geometric progression where each term is triple the previous term. Next term = 6561.",
+    "id": 1559
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 1, 4, 9, 16, 25, ?",
+    "opts": [
+      "33",
+      "36",
+      "38",
+      "41"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of consecutive perfect squares (1, 4, 9, 16...). Next term = 36.",
+    "id": 1560
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 4, 9, 16, 25, 36, ?",
+    "opts": [
+      "46",
+      "49",
+      "51",
+      "54"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of consecutive perfect squares (1, 4, 9, 16...). Next term = 49.",
+    "id": 1561
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 9, 16, 25, 36, 49, ?",
+    "opts": [
+      "61",
+      "64",
+      "66",
+      "69"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of consecutive perfect squares (1, 4, 9, 16...). Next term = 64.",
+    "id": 1562
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 2, 5, 10, 17, 26, ?",
+    "opts": [
+      "34",
+      "37",
+      "39",
+      "42"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect squares plus 1 (2, 5, 10, 17...). Next term = 37.",
+    "id": 1563
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 5, 10, 17, 26, 37, ?",
+    "opts": [
+      "47",
+      "50",
+      "52",
+      "55"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect squares plus 1 (2, 5, 10, 17...). Next term = 50.",
+    "id": 1564
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 10, 17, 26, 37, 50, ?",
+    "opts": [
+      "62",
+      "65",
+      "67",
+      "70"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect squares plus 1 (2, 5, 10, 17...). Next term = 65.",
+    "id": 1565
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 0, 3, 8, 15, 24, ?",
+    "opts": [
+      "32",
+      "35",
+      "37",
+      "40"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect squares minus 1 (0, 3, 8, 15...). Next term = 35.",
+    "id": 1566
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 3, 8, 15, 24, 35, ?",
+    "opts": [
+      "45",
+      "48",
+      "50",
+      "53"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect squares minus 1 (0, 3, 8, 15...). Next term = 48.",
+    "id": 1567
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 8, 15, 24, 35, 48, ?",
+    "opts": [
+      "60",
+      "63",
+      "65",
+      "68"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect squares minus 1 (0, 3, 8, 15...). Next term = 63.",
+    "id": 1568
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 1, 8, 27, 64, 125, ?",
+    "opts": [
+      "213",
+      "216",
+      "218",
+      "221"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of consecutive perfect cubes (1, 8, 27, 64...). Next term = 216.",
+    "id": 1569
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 8, 27, 64, 125, 216, ?",
+    "opts": [
+      "340",
+      "343",
+      "345",
+      "348"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of consecutive perfect cubes (1, 8, 27, 64...). Next term = 343.",
+    "id": 1570
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 27, 64, 125, 216, 343, ?",
+    "opts": [
+      "509",
+      "512",
+      "514",
+      "517"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of consecutive perfect cubes (1, 8, 27, 64...). Next term = 512.",
+    "id": 1571
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 2, 9, 28, 65, 126, ?",
+    "opts": [
+      "214",
+      "217",
+      "219",
+      "222"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect cubes plus 1 (2, 9, 28, 65...). Next term = 217.",
+    "id": 1572
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 9, 28, 65, 126, 217, ?",
+    "opts": [
+      "341",
+      "344",
+      "346",
+      "349"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect cubes plus 1 (2, 9, 28, 65...). Next term = 344.",
+    "id": 1573
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 28, 65, 126, 217, 344, ?",
+    "opts": [
+      "510",
+      "513",
+      "515",
+      "518"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect cubes plus 1 (2, 9, 28, 65...). Next term = 513.",
+    "id": 1574
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 0, 7, 26, 63, 124, ?",
+    "opts": [
+      "212",
+      "215",
+      "217",
+      "220"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect cubes minus 1 (0, 7, 26, 63...). Next term = 215.",
+    "id": 1575
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 7, 26, 63, 124, 215, ?",
+    "opts": [
+      "339",
+      "342",
+      "344",
+      "347"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect cubes minus 1 (0, 7, 26, 63...). Next term = 342.",
+    "id": 1576
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the missing term in the sequence: 26, 63, 124, 215, 342, ?",
+    "opts": [
+      "508",
+      "511",
+      "513",
+      "516"
+    ],
+    "ans": 1,
+    "sol": "The pattern is defined by: Series of perfect cubes minus 1 (0, 7, 26, 63...). Next term = 511.",
+    "id": 1577
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 10, 15, 12, 17, 14, ?",
+    "opts": [
+      "16",
+      "18",
+      "19",
+      "21"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 14 + 5 = 19.",
+    "id": 1578
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 12, 17, 14, 19, 16, ?",
+    "opts": [
+      "18",
+      "20",
+      "21",
+      "23"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 16 + 5 = 21.",
+    "id": 1579
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 14, 19, 16, 21, 18, ?",
+    "opts": [
+      "20",
+      "22",
+      "23",
+      "25"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 18 + 5 = 23.",
+    "id": 1580
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 16, 21, 18, 23, 20, ?",
+    "opts": [
+      "22",
+      "24",
+      "25",
+      "27"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 20 + 5 = 25.",
+    "id": 1581
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 18, 23, 20, 25, 22, ?",
+    "opts": [
+      "24",
+      "26",
+      "27",
+      "29"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 22 + 5 = 27.",
+    "id": 1582
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 20, 25, 22, 27, 24, ?",
+    "opts": [
+      "26",
+      "28",
+      "29",
+      "31"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 24 + 5 = 29.",
+    "id": 1583
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 22, 27, 24, 29, 26, ?",
+    "opts": [
+      "28",
+      "30",
+      "31",
+      "33"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 26 + 5 = 31.",
+    "id": 1584
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 24, 29, 26, 31, 28, ?",
+    "opts": [
+      "30",
+      "32",
+      "33",
+      "35"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 28 + 5 = 33.",
+    "id": 1585
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 26, 31, 28, 33, 30, ?",
+    "opts": [
+      "32",
+      "34",
+      "35",
+      "37"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 30 + 5 = 35.",
+    "id": 1586
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 28, 33, 30, 35, 32, ?",
+    "opts": [
+      "34",
+      "36",
+      "37",
+      "39"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 32 + 5 = 37.",
+    "id": 1587
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 30, 35, 32, 37, 34, ?",
+    "opts": [
+      "36",
+      "38",
+      "39",
+      "41"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 34 + 5 = 39.",
+    "id": 1588
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 32, 37, 34, 39, 36, ?",
+    "opts": [
+      "38",
+      "40",
+      "41",
+      "43"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 36 + 5 = 41.",
+    "id": 1589
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 34, 39, 36, 41, 38, ?",
+    "opts": [
+      "40",
+      "42",
+      "43",
+      "45"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 38 + 5 = 43.",
+    "id": 1590
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 36, 41, 38, 43, 40, ?",
+    "opts": [
+      "42",
+      "44",
+      "45",
+      "47"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 40 + 5 = 45.",
+    "id": 1591
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "What is the next number in the alternating series: 38, 43, 40, 45, 42, ?",
+    "opts": [
+      "44",
+      "46",
+      "47",
+      "49"
+    ],
+    "ans": 2,
+    "sol": "The series alternates: odd-positioned terms increase by 2, and even-positioned terms increase by 2. Alternatively: +5, -3, +5, -3. Next term = 42 + 5 = 47.",
+    "id": 1592
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Amit walks 5m North, then turns to his right and walks 10m, and finally turns right again and walks 5m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m North",
+      "10m West",
+      "15m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 5m in North is canceled out by the final 5m in South (opposite direction). This leaves only the perpendicular 10m displacement in the East direction.",
+    "id": 1593
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Rahul walks 10m East, then turns to his right and walks 15m, and finally turns right again and walks 10m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m North",
+      "15m South",
+      "25m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 10m in East is canceled out by the final 10m in West (opposite direction). This leaves only the perpendicular 15m displacement in the South direction.",
+    "id": 1594
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Priya walks 15m South, then turns to his right and walks 20m, and finally turns right again and walks 15m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m South",
+      "20m West",
+      "35m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 15m in South is canceled out by the final 15m in North (opposite direction). This leaves only the perpendicular 20m displacement in the West direction.",
+    "id": 1595
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Suresh walks 20m West, then turns to his right and walks 10m, and finally turns right again and walks 20m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m North",
+      "10m South",
+      "10m West",
+      "30m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 20m in West is canceled out by the final 20m in East (opposite direction). This leaves only the perpendicular 10m displacement in the North direction.",
+    "id": 1596
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Neha walks 25m North, then turns to his right and walks 15m, and finally turns right again and walks 25m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m North",
+      "15m West",
+      "40m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 25m in North is canceled out by the final 25m in South (opposite direction). This leaves only the perpendicular 15m displacement in the East direction.",
+    "id": 1597
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Divya walks 5m East, then turns to his right and walks 20m, and finally turns right again and walks 5m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m North",
+      "20m South",
+      "25m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 5m in East is canceled out by the final 5m in West (opposite direction). This leaves only the perpendicular 20m displacement in the South direction.",
+    "id": 1598
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Karan walks 10m South, then turns to his right and walks 10m, and finally turns right again and walks 10m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m South",
+      "10m West",
+      "20m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 10m in South is canceled out by the final 10m in North (opposite direction). This leaves only the perpendicular 10m displacement in the West direction.",
+    "id": 1599
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Sneha walks 15m West, then turns to his right and walks 15m, and finally turns right again and walks 15m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m North",
+      "15m South",
+      "15m West",
+      "30m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 15m in West is canceled out by the final 15m in East (opposite direction). This leaves only the perpendicular 15m displacement in the North direction.",
+    "id": 1600
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Vikram walks 20m North, then turns to his right and walks 20m, and finally turns right again and walks 20m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m North",
+      "20m West",
+      "40m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 20m in North is canceled out by the final 20m in South (opposite direction). This leaves only the perpendicular 20m displacement in the East direction.",
+    "id": 1601
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Anjali walks 25m East, then turns to his right and walks 10m, and finally turns right again and walks 25m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m North",
+      "10m South",
+      "35m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 25m in East is canceled out by the final 25m in West (opposite direction). This leaves only the perpendicular 10m displacement in the South direction.",
+    "id": 1602
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Amit walks 5m South, then turns to his right and walks 15m, and finally turns right again and walks 5m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m South",
+      "15m West",
+      "20m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 5m in South is canceled out by the final 5m in North (opposite direction). This leaves only the perpendicular 15m displacement in the West direction.",
+    "id": 1603
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Rahul walks 10m West, then turns to his right and walks 20m, and finally turns right again and walks 10m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m North",
+      "20m South",
+      "20m West",
+      "30m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 10m in West is canceled out by the final 10m in East (opposite direction). This leaves only the perpendicular 20m displacement in the North direction.",
+    "id": 1604
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Priya walks 15m North, then turns to his right and walks 10m, and finally turns right again and walks 15m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m North",
+      "10m West",
+      "25m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 15m in North is canceled out by the final 15m in South (opposite direction). This leaves only the perpendicular 10m displacement in the East direction.",
+    "id": 1605
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Suresh walks 20m East, then turns to his right and walks 15m, and finally turns right again and walks 20m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m North",
+      "15m South",
+      "35m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 20m in East is canceled out by the final 20m in West (opposite direction). This leaves only the perpendicular 15m displacement in the South direction.",
+    "id": 1606
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Neha walks 25m South, then turns to his right and walks 20m, and finally turns right again and walks 25m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m South",
+      "20m West",
+      "45m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 25m in South is canceled out by the final 25m in North (opposite direction). This leaves only the perpendicular 20m displacement in the West direction.",
+    "id": 1607
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Divya walks 5m West, then turns to his right and walks 10m, and finally turns right again and walks 5m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m North",
+      "10m South",
+      "10m West",
+      "15m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 5m in West is canceled out by the final 5m in East (opposite direction). This leaves only the perpendicular 10m displacement in the North direction.",
+    "id": 1608
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Karan walks 10m North, then turns to his right and walks 15m, and finally turns right again and walks 10m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m North",
+      "15m West",
+      "25m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 10m in North is canceled out by the final 10m in South (opposite direction). This leaves only the perpendicular 15m displacement in the East direction.",
+    "id": 1609
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Sneha walks 15m East, then turns to his right and walks 20m, and finally turns right again and walks 15m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m North",
+      "20m South",
+      "35m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 15m in East is canceled out by the final 15m in West (opposite direction). This leaves only the perpendicular 20m displacement in the South direction.",
+    "id": 1610
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Vikram walks 20m South, then turns to his right and walks 10m, and finally turns right again and walks 20m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m South",
+      "10m West",
+      "30m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 20m in South is canceled out by the final 20m in North (opposite direction). This leaves only the perpendicular 10m displacement in the West direction.",
+    "id": 1611
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Anjali walks 25m West, then turns to his right and walks 15m, and finally turns right again and walks 25m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m North",
+      "15m South",
+      "15m West",
+      "40m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 25m in West is canceled out by the final 25m in East (opposite direction). This leaves only the perpendicular 15m displacement in the North direction.",
+    "id": 1612
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Amit walks 5m North, then turns to his right and walks 20m, and finally turns right again and walks 5m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m North",
+      "20m West",
+      "25m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 5m in North is canceled out by the final 5m in South (opposite direction). This leaves only the perpendicular 20m displacement in the East direction.",
+    "id": 1613
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Rahul walks 10m East, then turns to his right and walks 10m, and finally turns right again and walks 10m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m North",
+      "10m South",
+      "20m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 10m in East is canceled out by the final 10m in West (opposite direction). This leaves only the perpendicular 10m displacement in the South direction.",
+    "id": 1614
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Priya walks 15m South, then turns to his right and walks 15m, and finally turns right again and walks 15m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m South",
+      "15m West",
+      "30m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 15m in South is canceled out by the final 15m in North (opposite direction). This leaves only the perpendicular 15m displacement in the West direction.",
+    "id": 1615
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Suresh walks 20m West, then turns to his right and walks 20m, and finally turns right again and walks 20m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m North",
+      "20m South",
+      "20m West",
+      "40m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 20m in West is canceled out by the final 20m in East (opposite direction). This leaves only the perpendicular 20m displacement in the North direction.",
+    "id": 1616
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Neha walks 25m North, then turns to his right and walks 10m, and finally turns right again and walks 25m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m East",
+      "10m North",
+      "10m West",
+      "35m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 25m in North is canceled out by the final 25m in South (opposite direction). This leaves only the perpendicular 10m displacement in the East direction.",
+    "id": 1617
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Divya walks 5m East, then turns to his right and walks 15m, and finally turns right again and walks 5m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m North",
+      "15m South",
+      "20m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 5m in East is canceled out by the final 5m in West (opposite direction). This leaves only the perpendicular 15m displacement in the South direction.",
+    "id": 1618
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Karan walks 10m South, then turns to his right and walks 20m, and finally turns right again and walks 10m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m South",
+      "20m West",
+      "30m West"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 10m in South is canceled out by the final 10m in North (opposite direction). This leaves only the perpendicular 20m displacement in the West direction.",
+    "id": 1619
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Sneha walks 15m West, then turns to his right and walks 10m, and finally turns right again and walks 15m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "10m North",
+      "10m South",
+      "10m West",
+      "25m North"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 15m in West is canceled out by the final 15m in East (opposite direction). This leaves only the perpendicular 10m displacement in the North direction.",
+    "id": 1620
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Vikram walks 20m North, then turns to his right and walks 15m, and finally turns right again and walks 20m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "15m East",
+      "15m North",
+      "15m West",
+      "35m East"
+    ],
+    "ans": 0,
+    "sol": "Drawing the path: 20m in North is canceled out by the final 20m in South (opposite direction). This leaves only the perpendicular 15m displacement in the East direction.",
+    "id": 1621
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Anjali walks 25m East, then turns to his right and walks 20m, and finally turns right again and walks 25m. How far and in which direction is he now with respect to his starting point?",
+    "opts": [
+      "20m East",
+      "20m North",
+      "20m South",
+      "45m South"
+    ],
+    "ans": 2,
+    "sol": "Drawing the path: 25m in East is canceled out by the final 25m in West (opposite direction). This leaves only the perpendicular 20m displacement in the South direction.",
+    "id": 1622
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "In a family tree, X is the brother of Y. Z is the mother of X. W is the father of Z. How is Y related to W (assuming Y is female)?",
+    "opts": [
+      "Granddaughter",
+      "Grandson",
+      "Daughter",
+      "Mother"
+    ],
+    "ans": 0,
+    "sol": "Z is Y's mother. W is Z's father. Since Y is female, Y is W's granddaughter.",
+    "id": 1623
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Pointing to a photograph, a lady said, 'He is the son of my husband's only brother.' How is the man in the photograph related to the lady's husband?",
+    "opts": [
+      "Nephew",
+      "Son",
+      "Brother",
+      "Uncle"
+    ],
+    "ans": 0,
+    "sol": "The husband's only brother's son is the husband's nephew.",
+    "id": 1624
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If A is B's brother, C is A's mother, D is C's father, and E is B's son, how is D related to A?",
+    "opts": [
+      "Grandfather",
+      "Grandson",
+      "Uncle",
+      "Father"
+    ],
+    "ans": 0,
+    "sol": "C is A's mother. D is C's father. Thus D is A's mother's father, which is maternal grandfather.",
+    "id": 1625
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Q's mother is the sister of P and daughter of M. S is the daughter of P and sister of T. How is M related to T?",
+    "opts": [
+      "Grandmother or Grandfather",
+      "Mother",
+      "Aunt",
+      "Sister"
+    ],
+    "ans": 0,
+    "sol": "Q's mother is daughter of M, so M is grandparent of Q. P is sibling of Q's mother. S is daughter of P, and T is sister of S (so T is child of P). M is parent of P, so M is grandparent of T.",
+    "id": 1626
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Introducing a man, a woman says, 'His wife is the only daughter of my father.' How is the man related to the woman?",
+    "opts": [
+      "Husband",
+      "Brother",
+      "Father-in-law",
+      "Uncle"
+    ],
+    "ans": 0,
+    "sol": "The only daughter of the woman's father is the woman herself. So 'His wife is me' -> the man is her husband.",
+    "id": 1627
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "P is the father of Q, but Q is not his son. How is Q related to P?",
+    "opts": [
+      "Daughter",
+      "Son",
+      "Brother",
+      "Nephew"
+    ],
+    "ans": 0,
+    "sol": "Since P is the father and Q is not the son, Q must be P's daughter.",
+    "id": 1628
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "A is the uncle of B, who is the daughter of C. C is the sister-in-law of A's wife. How is A related to C?",
+    "opts": [
+      "Brother",
+      "Husband",
+      "Son",
+      "Cousin"
+    ],
+    "ans": 0,
+    "sol": "A is uncle of B. B is C's daughter, meaning C is parent of B. A is uncle of B means A is brother of C (or brother of C's husband). Since C is sister-in-law of A's wife, A must be C's brother.",
+    "id": 1629
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Anil introduces Rohit as the son of the only brother of his father's wife. How is Rohit related to Anil?",
+    "opts": [
+      "Cousin",
+      "Brother",
+      "Nephew",
+      "Uncle"
+    ],
+    "ans": 0,
+    "sol": "Anil's father's wife is Anil's mother. Her only brother is Anil's uncle. His son is Anil's cousin.",
+    "id": 1630
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Pointing to a gentleman, Deepak said, 'His only brother is the father of my daughter's father.' How is the gentleman related to Deepak?",
+    "opts": [
+      "Uncle",
+      "Father",
+      "Grandfather",
+      "Brother"
+    ],
+    "ans": 0,
+    "sol": "Deepak's daughter's father is Deepak himself. The father of Deepak is Deepak's father. The gentleman's only brother is Deepak's father, so the gentleman is Deepak's uncle.",
+    "id": 1631
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If P + Q means P is the husband of Q; P - Q means P is the sister of Q; P * Q means P is the son of Q. What does X * Y - Z mean?",
+    "opts": [
+      "X is the nephew of Z",
+      "X is the brother of Z",
+      "X is the son of Z",
+      "X is the uncle of Z"
+    ],
+    "ans": 0,
+    "sol": "X is the son of Y. Y is the sister of Z. Thus, Z is the sibling of X's mother. X is Z's nephew.",
+    "id": 1632
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "A man said to a lady, 'Your mother's husband's sister is my aunt.' How is the lady related to the man?",
+    "opts": [
+      "Sister",
+      "Cousin",
+      "Aunt",
+      "Mother"
+    ],
+    "ans": 1,
+    "sol": "Lady's mother's husband is lady's father. Father's sister is lady's aunt. If she is also the man's aunt, the lady and the man are cousins (or siblings). 'Cousin' is the correct option here.",
+    "id": 1633
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'MOBILE' is encrypted as 'PRELOH' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1634
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'DEVICE' is encrypted as 'GHYLFH' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1635
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'ACCENT' is encrypted as 'DFFHQW' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1636
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'SCREEN' is encrypted as 'VFUHHQ' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1637
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'MOCK' is encrypted as 'PRFN' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1638
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'TEST' is encrypted as 'WHVW' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1639
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'ENGINE' is encrypted as 'HQJLQH' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1640
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'RESULT' is encrypted as 'UHVXOW' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1641
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'DATA' is encrypted as 'GDWD' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1642
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the word 'PORTAL' is encrypted as 'SRUWDO' under a shift cipher, how will the exam code 'NQT' be written under the same cipher?",
+    "opts": [
+      "QTW",
+      "QTV",
+      "RUW",
+      "PSV"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter forward by 3 positions in the alphabet: N(+3)=Q, Q(+3)=T, T(+3)=W.",
+    "id": 1643
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'MOBILE' is encoded as 'KMZGJC' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1644
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'DEVICE' is encoded as 'BCTGAC' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1645
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'ACCENT' is encoded as 'YAACLR' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1646
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'SCREEN' is encoded as 'QAPCCL' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1647
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'MOCK' is encoded as 'KMAI' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1648
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'TEST' is encoded as 'RCQR' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1649
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'ENGINE' is encoded as 'CLEGLC' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1650
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'RESULT' is encoded as 'PCQSJR' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1651
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'DATA' is encoded as 'BYRY' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1652
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "If the framework 'PORTAL' is encoded as 'NMPRYJ' by shifting letters backward, how is 'VITE' represented?",
+    "opts": [
+      "TGRC",
+      "TGSC",
+      "SFRB",
+      "UHSD"
+    ],
+    "ans": 0,
+    "sol": "The cipher shifts every letter backward by 2 positions: V(-2)=T, I(-2)=G, T(-2)=R, E(-2)=C.",
+    "id": 1653
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Choose the odd one out from the following hardware components:",
+    "opts": [
+      "Hard Disk",
+      "Solid State Drive",
+      "RAM",
+      "Python Compiler"
+    ],
+    "ans": 3,
+    "sol": "Python Compiler is software, while Hard Disk, SSD, and RAM are hardware devices.",
+    "id": 1654
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the odd one out among these options:",
+    "opts": [
+      "JSON",
+      "XML",
+      "YAML",
+      "C++"
+    ],
+    "ans": 3,
+    "sol": "C++ is a compiled programming language, while JSON, XML, and YAML are data serialization formats.",
+    "id": 1655
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Select the term that does not belong with the others:",
+    "opts": [
+      "Linux",
+      "Unix",
+      "Windows",
+      "Apache"
+    ],
+    "ans": 3,
+    "sol": "Apache is a web server software, while Linux, Unix, and Windows are operating systems.",
+    "id": 1656
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Which of the following is the odd one out?",
+    "opts": [
+      "Git",
+      "SVN",
+      "Mercurial",
+      "Docker"
+    ],
+    "ans": 3,
+    "sol": "Docker is a containerization platform, while Git, SVN, and Mercurial are version control systems.",
+    "id": 1657
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Find the odd one out among these web browsers:",
+    "opts": [
+      "Safari",
+      "Firefox",
+      "Chrome",
+      "MySQL"
+    ],
+    "ans": 3,
+    "sol": "MySQL is a database server, while Safari, Firefox, and Chrome are web browsers.",
+    "id": 1658
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Select the odd term from the list:",
+    "opts": [
+      "HTML",
+      "CSS",
+      "SQL",
+      "Tailwind"
+    ],
+    "ans": 2,
+    "sol": "SQL is a database query language, while HTML, CSS, and Tailwind are frontend web layout technologies.",
+    "id": 1659
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Which number does not fit the pattern? 8, 27, 64, 100, 125",
+    "opts": [
+      "100",
+      "8",
+      "27",
+      "125"
+    ],
+    "ans": 0,
+    "sol": "All other numbers are perfect cubes: 2^3=8, 3^3=27, 4^3=64, 5^3=125. 100 is a square, not a cube.",
+    "id": 1660
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Choose the odd one out from the programming paradigms:",
+    "opts": [
+      "Procedural",
+      "Object-Oriented",
+      "Functional",
+      "Vite"
+    ],
+    "ans": 3,
+    "sol": "Vite is a build tool, while Procedural, Object-Oriented, and Functional are programming paradigms.",
+    "id": 1661
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Select the odd word out:",
+    "opts": [
+      "Algorithm",
+      "Flowchart",
+      "Pseudocode",
+      "Compiler"
+    ],
+    "ans": 3,
+    "sol": "Compiler is a translator software, while Algorithm, Flowchart, and Pseudocode are design representations of a program's logic.",
+    "id": 1662
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statement: Some functions are parameters. Some parameters are arguments. Conclusions: I. Some functions are arguments. II. No parameter is a function.",
+    "opts": [
+      "Neither I nor II follows",
+      "Only I follows",
+      "Only II follows",
+      "Both follow"
+    ],
+    "ans": 0,
+    "sol": "Venn diagrams show that functions and arguments do not necessarily intersect, and since some functions are parameters, the statement 'no parameter is a function' is false.",
+    "id": 1663
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statement: Some software are applications. All applications are tools. Conclusions: I. All software are tools. II. Some software are tools.",
+    "opts": [
+      "Only II follows",
+      "Only I follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "ans": 0,
+    "sol": "Since some software are applications and all applications are tools, those software that are applications must be tools. Hence, some software are tools follows. All software are tools does not necessarily follow.",
+    "id": 1664
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statement: No loops are infinite. Some loops are recursive. Conclusions: I. Some recursive are not infinite. II. No recursive are infinite.",
+    "opts": [
+      "Only I follows",
+      "Only II follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "ans": 0,
+    "sol": "Since some loops are recursive and no loops are infinite, those recursive items that are loops cannot be infinite. Thus, some recursive are not infinite follows.",
+    "id": 1665
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statement: All servers are local. No local is remote. Conclusions: I. Some servers are remote. II. No server is remote.",
+    "opts": [
+      "Only II follows",
+      "Only I follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "ans": 0,
+    "sol": "All servers are subset of local. No local is remote. Thus, no server can be remote. Only II follows.",
+    "id": 1666
+  },
+  {
+    "cat": "Logical Reasoning",
+    "q": "Statement: All codes are bugs. All bugs are issues. Conclusions: I. All codes are issues. II. All issues are codes.",
+    "opts": [
+      "Only I follows",
+      "Only II follows",
+      "Both follow",
+      "Neither follows"
+    ],
+    "ans": 0,
+    "sol": "Codes are subset of bugs, and bugs are subset of issues. Thus, all codes are issues. The reverse does not necessarily follow.",
+    "id": 1667
   }
 ];
 
 export const CATEGORY_CONFIG = [
-  { id: "all", label: "All Categories", icon: "BookOpen", color: "#6B7280", bg: "#1F2937" },
-  { id: "Quantitative Aptitude", label: "Quantitative Aptitude", icon: "BarChart3", color: "#2563EB", bg: "#1E3A8A" },
-  { id: "Logical Reasoning", label: "Logical Reasoning", icon: "Brain", color: "#7C3AED", bg: "#4C1D95" },
-  { id: "Verbal Ability", label: "Verbal Ability", icon: "BookOpen", color: "#059669", bg: "#064E3B" },
-  { id: "Programming Concepts", label: "Programming Concepts", icon: "Code2", color: "#D97706", bg: "#78350F" },
-  { id: "DSA", label: "DSA", icon: "Server", color: "#0891B2", bg: "#164E63" },
-  { id: "DBMS & SQL", label: "DBMS & SQL", icon: "Database", color: "#EA580C", bg: "#7C2D12" },
-  { id: "Operating Systems", label: "Operating Systems", icon: "Cpu", color: "#DC2626", bg: "#7F1D1D" },
-  { id: "Computer Networks", label: "Computer Networks", icon: "Globe", color: "#4F46E5", bg: "#31108F" },
-  { id: "Web Technologies", label: "Web Technologies", icon: "Globe", color: "#DB2777", bg: "#831843" },
-  { id: "AI & ML", label: "AI & ML", icon: "Sparkles", color: "#0D9488", bg: "#115E59" },
-  { id: "Computer Fundamentals", label: "Computer Fundamentals", icon: "Info", color: "#3B82F6", bg: "#1E3A8A" },
-  { id: "Software Engineering", label: "Software Engineering", icon: "Layers", color: "#60A5FA", bg: "#1E40AF" },
-  { id: "Cloud Computing", label: "Cloud Computing", icon: "Cloud", color: "#06B6D4", bg: "#0891B2" },
-  { id: "Cybersecurity", label: "Cybersecurity", icon: "Shield", color: "#10B981", bg: "#047857" },
-  { id: "System Design", label: "System Design", icon: "GitBranch", color: "#F59E0B", bg: "#B45309" },
-  { id: "Technical Concepts", label: "Technical Concepts", icon: "FileText", color: "#9CA3AF", bg: "#4B5563" },
-  { id: "General / Mixed", label: "General / Mixed", icon: "HelpCircle", color: "#A855F7", bg: "#581C87" }
+  { id: "all", label: "All Categories", icon: "BookOpen", color: "#A0AEC0", bg: "rgba(160, 174, 192, 0.1)" },
+  { id: "Quantitative Aptitude", label: "Quantitative Aptitude", icon: "BarChart3", color: "#4A90E2", bg: "rgba(74, 144, 226, 0.1)" },
+  { id: "Logical Reasoning", label: "Logical Reasoning", icon: "Brain", color: "#9F7AEA", bg: "rgba(159, 122, 234, 0.1)" },
+  { id: "Verbal Ability", label: "Verbal Ability", icon: "BookOpen", color: "#48BB78", bg: "rgba(72, 187, 120, 0.1)" },
+  { id: "Programming Concepts", label: "Programming Concepts", icon: "Code2", color: "#ED8936", bg: "rgba(237, 137, 54, 0.1)" },
+  { id: "DSA", label: "DSA", icon: "Server", color: "#38B2AC", bg: "rgba(56, 178, 172, 0.1)" },
+  { id: "DBMS & SQL", label: "DBMS & SQL", icon: "Database", color: "#ED64A6", bg: "rgba(237, 100, 166, 0.1)" },
+  { id: "Operating Systems", label: "Operating Systems", icon: "Cpu", color: "#E53E3E", bg: "rgba(229, 62, 62, 0.1)" },
+  { id: "Computer Networks", label: "Computer Networks", icon: "Globe", color: "#667EEA", bg: "rgba(102, 126, 234, 0.1)" },
+  { id: "Web Technologies", label: "Web Technologies", icon: "Globe", color: "#ED64A6", bg: "rgba(237, 100, 166, 0.1)" },
+  { id: "AI & ML", label: "AI & ML", icon: "Sparkles", color: "#ECC94B", bg: "rgba(236, 201, 75, 0.1)" },
+  { id: "Computer Fundamentals", label: "Computer Fundamentals", icon: "Info", color: "#4299E1", bg: "rgba(66, 153, 225, 0.1)" },
+  { id: "Software Engineering", label: "Software Engineering", icon: "Layers", color: "#319795", bg: "rgba(49, 151, 149, 0.1)" },
+  { id: "Cloud Computing", label: "Cloud Computing", icon: "Cloud", color: "#63B3ED", bg: "rgba(99, 179, 237, 0.1)" },
+  { id: "Cybersecurity", label: "Cybersecurity", icon: "Shield", color: "#38A169", bg: "rgba(56, 161, 105, 0.1)" },
+  { id: "System Design", label: "System Design", icon: "GitBranch", color: "#D69E2E", bg: "rgba(214, 158, 46, 0.1)" },
+  { id: "Technical Concepts", label: "Technical Concepts", icon: "FileText", color: "#A0AEC0", bg: "rgba(160, 174, 192, 0.1)" },
+  { id: "General / Mixed", label: "General / Mixed", icon: "HelpCircle", color: "#805AD5", bg: "rgba(128, 90, 213, 0.1)" }
 ];

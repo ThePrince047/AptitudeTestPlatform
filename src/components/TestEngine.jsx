@@ -17,6 +17,7 @@ export default function TestEngine({
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [showExitModal, setShowExitModal] = useState(false);
   const [practiceRevealed, setPracticeRevealed] = useState({}); // Track which practice questions are revealed
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const timerRef = useRef(null);
 
   // Timer Effect
@@ -145,6 +146,19 @@ export default function TestEngine({
                 <span>Practice Mode</span>
               </div>
             )}
+
+            {/* Mobile Question Palette Toggle */}
+            <button 
+              onClick={() => setMobileDrawerOpen(true)}
+              className="btn btn-secondary mobile-only-btn"
+              style={{ 
+                padding: "10px", 
+                borderRadius: "10px"
+              }}
+              title="Question Navigator"
+            >
+              <Icons.Grid size={16} />
+            </button>
 
             {/* Flag Question */}
             <button 
@@ -286,9 +300,27 @@ export default function TestEngine({
         </div>
       </div>
 
-      {/* Grid Navigation Panel (Right) */}
-      <div className="test-navigation-sidebar">
-        <h4 className="nav-sidebar-title">Question Palette</h4>
+      {/* Mobile Drawer Overlay when Palette is open */}
+      {mobileDrawerOpen && (
+        <div 
+          className="mobile-sidebar-overlay"
+          style={{ zIndex: 1090 }}
+          onClick={() => setMobileDrawerOpen(false)}
+        ></div>
+      )}
+
+      {/* Grid Navigation Panel (Right / Drawer) */}
+      <div className={`test-navigation-sidebar ${mobileDrawerOpen ? "mobile-open" : ""}`}>
+        <div className="mobile-only" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px", width: "100%" }}>
+          <span style={{ fontWeight: "700", fontSize: "14px", color: "#FFF", textTransform: "uppercase" }}>Question Palette</span>
+          <button 
+            onClick={() => setMobileDrawerOpen(false)}
+            style={{ background: "none", border: "none", color: "var(--error)", cursor: "pointer", display: "flex", alignItems: "center", gap: "4px", fontSize: "12px", fontWeight: "bold" }}
+          >
+            <Icons.X size={16} /> Close
+          </button>
+        </div>
+        <h4 className="nav-sidebar-title desktop-only-title">Question Palette</h4>
         <div 
           className="question-nav-grid"
           style={{ 
@@ -315,7 +347,10 @@ export default function TestEngine({
                   fontSize: isDense ? "11px" : "13px",
                   borderRadius: isDense ? "4px" : "8px"
                 }}
-                onClick={() => setIdx(qIdx)}
+                onClick={() => {
+                  setIdx(qIdx);
+                  setMobileDrawerOpen(false);
+                }}
               >
                 {qIdx + 1}
               </button>

@@ -19,6 +19,7 @@ export default function App() {
   const [testConfig, setTestConfig] = useState({});
   const [latestResult, setLatestResult] = useState(null);
   const [hasApiKey, setHasApiKey] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Load initial data
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function App() {
       }
     }
 
-    const key = localStorage.getItem("anthropic_api_key");
+    const key = localStorage.getItem("gemini_api_key");
     setHasApiKey(!!key);
   }, [screen]);
 
@@ -58,9 +59,14 @@ export default function App() {
     });
   };
 
+  const navigateTo = (scrName) => {
+    setScreen(scrName);
+    setMobileMenuOpen(false);
+  };
+
   const handleStartTestConfig = (catId) => {
     setActiveCategory(catId);
-    setScreen("config");
+    navigateTo("config");
   };
 
   const handleStartTest = (setup) => {
@@ -83,7 +89,7 @@ export default function App() {
     setTestConfig({
       category: topicName,
       questionCount: customQs.length,
-      timeLimit: 30, // 30 minutes for AI papers
+      timeLimit: Math.max(10, Math.ceil(customQs.length * 1.5)), // Dynamic time limit
       mode: "exam"
     });
     setScreen("test");
@@ -145,18 +151,33 @@ export default function App() {
 
   return (
     <div className="app-container">
+      {/* Mobile Drawer Overlay */}
+      {mobileMenuOpen && (
+        <div 
+          className="mobile-sidebar-overlay" 
+          onClick={() => setMobileMenuOpen(false)}
+        ></div>
+      )}
+
       {/* Sidebar Navigation */}
-      <div className="sidebar">
+      <div className={`sidebar ${mobileMenuOpen ? "mobile-open" : ""}`}>
         <div className="logo-section">
           <div className="logo-icon">
             <Icons.Layers size={18} color="#FFF" />
           </div>
           <h1>NQT Prep Portal</h1>
+          <button 
+            className="mobile-close-btn" 
+            onClick={() => setMobileMenuOpen(false)}
+            aria-label="Close Menu"
+          >
+            <Icons.X size={20} />
+          </button>
         </div>
 
         <ul className="nav-links">
           <button 
-            onClick={() => setScreen("dashboard")} 
+            onClick={() => navigateTo("dashboard")} 
             className={`nav-item ${screen === "dashboard" || screen === "config" ? "active" : ""}`}
           >
             <Icons.Home size={18} />
@@ -164,7 +185,7 @@ export default function App() {
           </button>
           
           <button 
-            onClick={() => setScreen("analytics")} 
+            onClick={() => navigateTo("analytics")} 
             className={`nav-item ${screen === "analytics" ? "active" : ""}`}
           >
             <Icons.Trophy size={18} />
@@ -172,7 +193,7 @@ export default function App() {
           </button>
 
           <button 
-            onClick={() => setScreen("ai")} 
+            onClick={() => navigateTo("ai")} 
             className={`nav-item ${screen === "ai" ? "active" : ""}`}
           >
             <Icons.Sparkles size={18} />
@@ -190,7 +211,7 @@ export default function App() {
               display: "inline-block" 
             }}></span>
             <span>
-              {hasApiKey ? "AI API Connected" : "Local Simulator"}
+              {hasApiKey ? "Gemini Connected" : "Local Simulator"}
             </span>
           </div>
         </div>
@@ -198,10 +219,26 @@ export default function App() {
 
       {/* Main Container Workspace */}
       <div className="main-content">
+        {/* Mobile Header Bar */}
+        <div className="mobile-header-bar">
+          <button 
+            onClick={() => setMobileMenuOpen(true)} 
+            className="mobile-menu-btn"
+            aria-label="Open Menu"
+          >
+            <Icons.Menu size={20} />
+          </button>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <Icons.Layers size={16} color="var(--primary)" />
+            <span style={{ fontWeight: "700", fontSize: "14px", color: "#FFF" }}>NQT Prep</span>
+          </div>
+          <div style={{ width: "20px" }}></div>
+        </div>
+
         {screen === "dashboard" && (
           <Dashboard 
             onStartTest={handleStartTestConfig}
-            onNavigate={setScreen}
+            onNavigate={navigateTo}
             history={history}
             bookmarks={bookmarks}
           />
@@ -210,7 +247,7 @@ export default function App() {
         {screen === "config" && (
           <TestConfig 
             initialCategory={activeCategory}
-            onBack={() => setScreen("dashboard")}
+            onBack={() => navigateTo("dashboard")}
             onStart={handleStartTest}
           />
         )}
@@ -220,14 +257,14 @@ export default function App() {
             result={latestResult}
             bookmarks={bookmarks}
             onToggleBookmark={handleToggleBookmark}
-            onNavigate={setScreen}
+            onNavigate={navigateTo}
           />
         )}
 
         {screen === "ai" && (
           <AiPaper 
             onStartCustomTest={handleStartCustomTest}
-            onNavigate={setScreen}
+            onNavigate={navigateTo}
           />
         )}
 
@@ -237,7 +274,7 @@ export default function App() {
             bookmarks={bookmarks}
             onToggleBookmark={handleToggleBookmark}
             onStartBookmarkedMock={handleStartBookmarkedMock}
-            onNavigate={setScreen}
+            onNavigate={navigateTo}
           />
         )}
       </div>
