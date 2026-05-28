@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import * as Icons from "lucide-react";
 import { CATEGORY_CONFIG } from "../data/questionBank";
+import SolutionRenderer from "./SolutionRenderer";
 
 export default function TestEngine({ 
   questions = [], 
@@ -255,14 +256,12 @@ export default function TestEngine({
 
             {/* Explanation box in Practice Mode */}
             {config.mode === "practice" && practiceRevealed[idx] && (
-              <div className="glass-card explanation-card">
+              <div className="explanation-card">
                 <h5>
-                  <Icons.Sparkles size={16} color="var(--primary)" />
-                  Explanation & Solution
+                  <Icons.Sparkles size={16} />
+                  Explanation &amp; Solution
                 </h5>
-                <p style={{ whiteSpace: "pre-line" }}>
-                  {currentQ.sol || "No explanation provided for this question."}
-                </p>
+                <SolutionRenderer text={currentQ.sol} />
               </div>
             )}
           </div>

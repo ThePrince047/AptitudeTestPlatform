@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as Icons from "lucide-react";
 import { CATEGORY_CONFIG } from "../data/questionBank";
+import SolutionRenderer from "./SolutionRenderer";
 
 export default function ResultsView({ 
   result = {}, 
@@ -261,14 +262,12 @@ export default function ResultsView({
                     </div>
 
                     {/* Explanation */}
-                    <div style={{ padding: "16px", borderRadius: "10px", backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid var(--border-color)" }}>
-                      <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "14px", fontWeight: "700", color: "#FFF", marginBottom: "8px" }}>
-                        <Icons.Sparkles size={14} color="var(--primary)" />
+                    <div style={{ padding: "16px", borderRadius: "10px", backgroundColor: "rgba(99,102,241,0.04)", border: "1px solid var(--primary-border)" }}>
+                      <div style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "12px", fontWeight: "700", color: "var(--primary)", marginBottom: "12px", letterSpacing: "0.04em", textTransform: "uppercase" }}>
+                        <Icons.Sparkles size={13} color="var(--primary)" />
                         Solution Explanation
                       </div>
-                      <p style={{ fontSize: "13px", lineHeight: "1.6", color: "var(--text-secondary)", whiteSpace: "pre-line" }}>
-                        {q.sol || "No explanation provided for this question."}
-                      </p>
+                      <SolutionRenderer text={q.sol} />
                     </div>
                   </div>
                 )}

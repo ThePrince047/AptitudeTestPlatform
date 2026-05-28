@@ -955,26 +955,118 @@ body {
 .explanation-card {
   margin-top: 24px;
   border-color: var(--primary-border);
-  background-color: rgba(99, 102, 241, 0.02);
-  padding: 20px;
+  background-color: rgba(99, 102, 241, 0.03);
+  padding: 20px 24px;
   border-radius: 12px;
+  border: 1px solid var(--primary-border);
 }
 
 .explanation-card h5 {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  color: #FFF;
+  color: var(--primary);
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.explanation-card p {
+/* Solution Renderer Styles */
+.sol-renderer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sol-empty {
   font-size: 13px;
-  line-height: 1.6;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.sol-para {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sol-line {
+  font-size: 13.5px;
+  line-height: 1.7;
   color: var(--text-secondary);
 }
+
+.sol-step {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  padding-left: 16px;
+  border-left: 2px solid rgba(99, 102, 241, 0.25);
+  margin-left: 4px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+}
+
+.sol-answer {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #10B981;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.06);
+  border-left: 3px solid #10B981;
+  padding: 6px 12px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 4px;
+}
+
+.sol-label {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/* Inline table in solutions */
+.sol-table-wrap {
+  overflow-x: auto;
+  margin: 4px 0;
+}
+
+.sol-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}
+
+.sol-table th {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  font-weight: 600;
+  text-align: left;
+  padding: 6px 10px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  white-space: nowrap;
+}
+
+.sol-table td {
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.sol-table tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sol-table tr:hover td {
+  background: rgba(99, 102, 241, 0.04);
+}
+
+
 
 /* Results Section */
 .results-card {
