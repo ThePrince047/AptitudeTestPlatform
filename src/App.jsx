@@ -8,9 +8,11 @@ import TestEngine from "./components/TestEngine";
 import ResultsView from "./components/ResultsView";
 import AiPaper from "./components/AiPaper";
 import Analytics from "./components/Analytics";
+import CodingPrep from "./components/CodingPrep";
 
 const NAV = [
   { id: "dashboard", label: "Dashboard",      icon: "LayoutDashboard" },
+  { id: "coding",    label: "Programming Prep", icon: "Code2" },
   { id: "analytics", label: "Progress",       icon: "BarChart2" },
   { id: "ai",        label: "AI Generator",   icon: "Sparkles" },
 ];
@@ -249,6 +251,9 @@ export default function App() {
         )}
         {screen === "analytics" && (
           <Analytics history={history} bookmarks={bookmarks} onToggleBookmark={handleToggleBookmark} onStartBookmarkedMock={handleStartBookmarkedMock} onNavigate={navigateTo} onViewPastResult={handleViewPastResult} onDeleteSession={handleDeleteSession} onClearHistory={handleClearHistory} />
+        )}
+        {screen === "coding" && (
+          <CodingPrep onNavigate={navigateTo} />
         )}
       </div>
     </div>
