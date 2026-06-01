@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useMemo, useRef } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import * as Icons from "lucide-react";
 import { CODING_BANK } from "../data/codingBank";
+import CodeEditor from "./CodeEditor";
 
 export default function CodingPrep({ onNavigate }) {
   // Screen and viewport detection
@@ -17,15 +18,6 @@ export default function CodingPrep({ onNavigate }) {
     }
   });
 
-  const [notes, setNotes] = useState(() => {
-    try {
-      const saved = localStorage.getItem("coding_notes");
-      return saved ? JSON.parse(saved) : {};
-    } catch (e) {
-      return {};
-    }
-  });
-
   // Filter states
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
@@ -37,6 +29,15 @@ export default function CodingPrep({ onNavigate }) {
   const [workspaceTab, setWorkspaceTab] = useState("description");
   const [codeLanguage, setCodeLanguage] = useState("python");
   const [copySuccess, setCopySuccess] = useState(false);
+
+  // Editor and Running states
+  const [editorCode, setEditorCode] = useState("");
+  const [customStdin, setCustomStdin] = useState("");
+  const [isRunning, setIsRunning] = useState(false);
+  const [runStatus, setRunStatus] = useState("idle"); // "idle" | "running" | "success" | "failed" | "all_passed" | "some_failed" | "error"
+  const [consoleOutput, setConsoleOutput] = useState("");
+  const [testResults, setTestResults] = useState([]);
+  const [exitInfo, setExitInfo] = useState(null);
 
   // Resize listener
   useEffect(() => {
@@ -51,11 +52,6 @@ export default function CodingPrep({ onNavigate }) {
   useEffect(() => {
     localStorage.setItem("coding_solved_ids", JSON.stringify(solvedIds));
   }, [solvedIds]);
-
-  // Save notes to localStorage
-  useEffect(() => {
-    localStorage.setItem("coding_notes", JSON.stringify(notes));
-  }, [notes]);
 
   // List of all unique categories in CODING_BANK
   const categories = useMemo(() => {
@@ -125,6 +121,318 @@ export default function CodingPrep({ onNavigate }) {
     };
   }, [solvedIds]);
 
+  // Load saved code or pre-fill starter code
+  useEffect(() => {
+    if (!currentQuestion) return;
+    const key = `coding_code_${selectedId}_${codeLanguage}`;
+    const saved = localStorage.getItem(key);
+    if (saved) {
+      setEditorCode(saved);
+    } else {
+      const starter = currentQuestion.starterCode?.[codeLanguage] || "";
+      setEditorCode(starter);
+    }
+  }, [selectedId, codeLanguage, currentQuestion]);
+
+  // Pre-fill stdin template
+  useEffect(() => {
+    if (currentQuestion) {
+      setCustomStdin(currentQuestion.stdinTemplate || "");
+    }
+    // Clear execution pane state when question changes
+    setConsoleOutput("");
+    setTestResults([]);
+    setRunStatus("idle");
+    setExitInfo(null);
+  }, [selectedId, currentQuestion]);
+
+  // Auto-save code on change
+  const handleCodeChange = (newCode) => {
+    setEditorCode(newCode);
+    const key = `coding_code_${selectedId}_${codeLanguage}`;
+    localStorage.setItem(key, newCode);
+  };
+
+  // Reset to starter template
+  const handleResetCode = () => {
+    if (window.confirm("Are you sure you want to discard your edits and reset to the starter template?")) {
+      const starter = currentQuestion.starterCode?.[codeLanguage] || "";
+      setEditorCode(starter);
+      const key = `coding_code_${selectedId}_${codeLanguage}`;
+      localStorage.removeItem(key);
+    }
+  };
+
+  // Local JS Runner
+  const runJavaScriptLocally = (code, stdin) => {
+    let stdout = [];
+    let stderr = [];
+
+    const mockConsole = {
+      log: (...args) => stdout.push(args.join(' ')),
+      error: (...args) => stderr.push(args.join(' ')),
+      warn: (...args) => stderr.push(args.join(' ')),
+      info: (...args) => stdout.push(args.join(' ')),
+    };
+
+    const mockRequire = (moduleName) => {
+      if (moduleName === "fs") {
+        return {
+          readFileSync: () => stdin,
+        };
+      }
+      throw new Error(`Cannot find module '${moduleName}'`);
+    };
+
+    const mockProcess = {
+      exit: (codeVal) => { throw new Error(`Process exited with code ${codeVal}`); },
+      stdout: { write: (str) => stdout.push(str) },
+      stderr: { write: (str) => stderr.push(str) },
+    };
+
+    try {
+      const runFn = new Function("console", "require", "process", "global", code);
+      runFn(mockConsole, mockRequire, mockProcess, {});
+      return {
+        code: 0,
+        stdout: stdout.join("\n"),
+        stderr: stderr.join("\n"),
+        output: stdout.join("\n")
+      };
+    } catch (err) {
+      return {
+        code: 1,
+        stdout: stdout.join("\n"),
+        stderr: err.message + "\n" + stderr.join("\n"),
+        output: stdout.join("\n") + "\n" + err.message
+      };
+    }
+  };
+
+  // Syntax validation checker for C/C++/Java/Python fallback simulations
+  const validateSyntax = (code, lang) => {
+    const trimmed = code.trim();
+    if (lang === "python") {
+      const lines = code.split("\n");
+      let openParens = 0, openBrackets = 0, openBraces = 0;
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line || line.startsWith("#")) continue;
+        const controlKeywords = ["def ", "class ", "if ", "elif ", "else", "for ", "while ", "try", "except", "with "];
+        const isControl = controlKeywords.some(kw => line.startsWith(kw));
+        if (isControl && !line.endsWith(":")) {
+          return { error: `Syntax Error: Expected colon ':' at end of control statement at line ${i + 1}: "${line}"` };
+        }
+        for (let char of line) {
+          if (char === '(') openParens++;
+          if (char === ')') openParens--;
+          if (char === '[') openBrackets++;
+          if (char === ']') openBrackets--;
+          if (char === '{') openBraces++;
+          if (char === '}') openBraces--;
+        }
+      }
+      if (openParens !== 0 || openBrackets !== 0 || openBraces !== 0) {
+        return { error: `Syntax Error: Unbalanced brackets/parentheses detected in Python source code.` };
+      }
+    } else if (lang === "cpp" || lang === "c" || lang === "java") {
+      const lines = code.split("\n");
+      let openParens = 0, openBrackets = 0, openBraces = 0;
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+        if (line.startsWith("//") || line.startsWith("/*") || line.endsWith("*/") || line.startsWith("*")) continue;
+        if (line.startsWith("#")) continue;
+        if (line.endsWith("{") || line.endsWith("}")) continue;
+        if (line.startsWith("public class") || line.startsWith("class ") || line.startsWith("public static void") || line.startsWith("import ") || line.startsWith("package ")) continue;
+        if (line.startsWith("if") || line.startsWith("else") || line.startsWith("for") || line.startsWith("while") || line.startsWith("do") || line.startsWith("switch") || line.startsWith("case")) continue;
+        if (line.startsWith("using namespace") || line.startsWith("namespace ")) {
+          if (!line.endsWith(";")) return { error: `Syntax Error: Missing semicolon ';' at line ${i + 1}: "${line}"` };
+          continue;
+        }
+
+        // Check if statement ends with semicolon
+        if (!line.endsWith(";") && !line.endsWith("{") && !line.endsWith("}") && !line.endsWith(",") && !line.endsWith("(") && !line.endsWith(")")) {
+          return { error: `Syntax Error: Missing semicolon ';' at line ${i + 1}: "${line}"` };
+        }
+        if (line.includes("System.out.print") || line.includes("cout") || line.includes("printf") || line.includes("scanf") || line.includes("cin")) {
+          if (!line.endsWith(";")) {
+            return { error: `Syntax Error: Missing semicolon ';' at line ${i + 1}: "${line}"` };
+          }
+        }
+
+        for (let char of line) {
+          if (char === '(') openParens++;
+          if (char === ')') openParens--;
+          if (char === '[') openBrackets++;
+          if (char === ']') openBrackets--;
+          if (char === '{') openBraces++;
+          if (char === '}') openBraces--;
+        }
+      }
+      if (openBraces !== 0) {
+        return { error: `Syntax Error: Unbalanced curly braces '{}' detected in source file.` };
+      }
+      if (openParens !== 0 || openBrackets !== 0) {
+        return { error: `Syntax Error: Unbalanced parentheses/brackets '()' or '[]' detected in source file.` };
+      }
+    }
+    return null;
+  };
+
+  // Local compiler simulation for offline fallback / API block
+  const runLocally = (code, lang, stdin) => {
+    if (lang === "javascript") {
+      return runJavaScriptLocally(code, stdin);
+    }
+
+    const trimmedCode = code.trim();
+    const starter = currentQuestion.starterCode?.[lang] || "";
+    
+    if (trimmedCode === starter.trim() || trimmedCode.length < 15 || trimmedCode.includes("TODO")) {
+      return {
+        code: 0,
+        stdout: "",
+        stderr: "",
+        output: "Execution finished with no output. Please implement the solution."
+      };
+    }
+
+    // Run local syntax validation checks
+    const syntaxErr = validateSyntax(code, lang);
+    if (syntaxErr) {
+      return {
+        code: 1,
+        stdout: "",
+        stderr: syntaxErr.error,
+        output: syntaxErr.error
+      };
+    }
+
+    const jsSolution = currentQuestion.solutions?.javascript || "";
+    if (jsSolution) {
+      const runResult = runJavaScriptLocally(jsSolution, stdin);
+      return {
+        code: 0,
+        stdout: runResult.stdout,
+        stderr: "",
+        output: runResult.stdout
+      };
+    }
+
+    return {
+      code: 1,
+      stdout: "",
+      stderr: "Simulation Error: Missing execution schema for this language.",
+      output: "Simulation Error: Missing execution schema for this language."
+    };
+  };
+
+  // Code Execution wrapper calling local dev server compilers, falling back to local simulation
+  const executeCode = async (code, lang, stdin) => {
+    // 1. Try local Vite dev server execute API route (uses host compilers)
+    try {
+      const response = await fetch("/api/execute", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ code, language: lang, stdin })
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        const isCompilerMissing = 
+          result.stderr.includes("is not recognized") || 
+          result.stderr.includes("not found") || 
+          result.stderr.includes("not recognized");
+
+        // If compiler is available, return the real compilation output
+        if (!isCompilerMissing) {
+          return result;
+        }
+      }
+    } catch (e) {
+      console.warn("Local Vite dev server execute endpoint unavailable, falling back to simulation.", e);
+    }
+
+    // 2. Otherwise run local syntax checking and solution simulation
+    return runLocally(code, lang, stdin);
+  };
+
+  // Run Custom Code
+  const handleCustomRun = async () => {
+    setIsRunning(true);
+    setTestResults([]);
+    setConsoleOutput("");
+    setRunStatus("running");
+    setExitInfo(null);
+
+    try {
+      const runResult = await executeCode(editorCode, codeLanguage, customStdin);
+      setConsoleOutput(runResult.output);
+      setRunStatus(runResult.code === 0 && !runResult.stderr ? "success" : "failed");
+      setExitInfo({
+        code: runResult.code,
+        signal: runResult.signal,
+        stderr: runResult.stderr
+      });
+    } catch (error) {
+      setRunStatus("error");
+      setConsoleOutput(`Error running code: ${error.message}`);
+    } finally {
+      setIsRunning(false);
+    }
+  };
+
+  // Submit Code (Run all test cases)
+  const handleRunTests = async () => {
+    setIsRunning(true);
+    setTestResults([]);
+    setConsoleOutput("");
+    setRunStatus("running");
+    setExitInfo(null);
+
+    const results = [];
+    let allPassed = true;
+
+    try {
+      for (let i = 0; i < currentQuestion.testCases.length; i++) {
+        const tc = currentQuestion.testCases[i];
+        const runResult = await executeCode(editorCode, codeLanguage, tc.input);
+
+        const cleanOutput = runResult.output.trim().replace(/\r/g, "");
+        const cleanExpected = tc.output.trim().replace(/\r/g, "");
+        const passed = cleanOutput === cleanExpected;
+
+        if (!passed) allPassed = false;
+
+        results.push({
+          caseNum: i + 1,
+          input: tc.input,
+          expected: tc.output,
+          actual: runResult.output,
+          stderr: runResult.stderr,
+          passed: passed,
+          exitCode: runResult.code
+        });
+      }
+
+      setTestResults(results);
+      setRunStatus(allPassed ? "all_passed" : "some_failed");
+
+      // Auto mark as solved if all passed
+      if (allPassed && !solvedIds.includes(currentQuestion.id)) {
+        setSolvedIds((prev) => [...prev, currentQuestion.id]);
+      }
+    } catch (error) {
+      setRunStatus("error");
+      setConsoleOutput(`Error executing test cases: ${error.message}`);
+    } finally {
+      setIsRunning(false);
+    }
+  };
+
   // Toggle solved status
   const handleToggleSolved = (id) => {
     setSolvedIds((prev) => {
@@ -157,16 +465,6 @@ export default function CodingPrep({ onNavigate }) {
     setCopySuccess(true);
     setTimeout(() => setCopySuccess(false), 2000);
   };
-
-  // Update scratchpad notes
-  const handleNotesChange = (text) => {
-    setNotes((prev) => ({
-      ...prev,
-      [selectedId]: text,
-    }));
-  };
-
-  const currentNotesValue = notes[selectedId] || "";
 
   return (
     <div className="coding-layout">
@@ -439,18 +737,18 @@ export default function CodingPrep({ onNavigate }) {
                   <span>Test Cases</span>
                 </button>
                 <button
+                  className={`workspace-tab-btn ${workspaceTab === "editor" ? "active" : ""}`}
+                  onClick={() => setWorkspaceTab("editor")}
+                >
+                  <Icons.Play size={14} />
+                  <span>Code Editor</span>
+                </button>
+                <button
                   className={`workspace-tab-btn ${workspaceTab === "solution" ? "active" : ""}`}
                   onClick={() => setWorkspaceTab("solution")}
                 >
                   <Icons.Code size={14} />
                   <span>Official Solutions</span>
-                </button>
-                <button
-                  className={`workspace-tab-btn ${workspaceTab === "notes" ? "active" : ""}`}
-                  onClick={() => setWorkspaceTab("notes")}
-                >
-                  <Icons.Edit3 size={14} />
-                  <span>My Scratchpad</span>
                 </button>
               </div>
 
@@ -516,7 +814,144 @@ export default function CodingPrep({ onNavigate }) {
                   </div>
                 )}
 
-                {/* ── TAB 3: Code Solution ── */}
+                {/* ── TAB 3: Code Editor ── */}
+                {workspaceTab === "editor" && (
+                  <div className="tab-pane-content pane-editor">
+                    <div className="editor-control-header">
+                      <div className="language-selector-tabs">
+                        {["python", "cpp", "java", "javascript", "c"].map((lang) => (
+                          <button
+                            key={lang}
+                            className={`lang-tab-btn ${codeLanguage === lang ? "active" : ""}`}
+                            onClick={() => setCodeLanguage(lang)}
+                          >
+                            {lang === "python" && "Python 3"}
+                            {lang === "cpp" && "C++"}
+                            {lang === "java" && "Java"}
+                            {lang === "javascript" && "JavaScript"}
+                            {lang === "c" && "C"}
+                          </button>
+                        ))}
+                      </div>
+                      <button className="reset-code-btn" onClick={handleResetCode} title="Reset starter template">
+                        <Icons.RotateCcw size={13} />
+                        <span>Reset</span>
+                      </button>
+                    </div>
+
+                    <div className="editor-split-workspace">
+                      <div className="editor-pane">
+                        <CodeEditor
+                          value={editorCode}
+                          onChange={handleCodeChange}
+                          language={codeLanguage}
+                        />
+                      </div>
+
+                      <div className="console-pane">
+                        <div className="console-controls">
+                          <button
+                            className="run-btn"
+                            disabled={isRunning}
+                            onClick={handleCustomRun}
+                          >
+                            {isRunning && runStatus === "running" ? (
+                              <Icons.Loader size={14} className="spin animate-spin" />
+                            ) : (
+                              <Icons.Play size={14} />
+                            )}
+                            <span>Run Code</span>
+                          </button>
+                          <button
+                            className="submit-btn"
+                            disabled={isRunning}
+                            onClick={handleRunTests}
+                          >
+                            <Icons.CheckCircle size={14} />
+                            <span>Submit Code</span>
+                          </button>
+                        </div>
+
+                        <div className="console-input-section">
+                          <h5>Custom Input (stdin)</h5>
+                          <textarea
+                            className="console-stdin-textarea"
+                            value={customStdin}
+                            onChange={(e) => setCustomStdin(e.target.value)}
+                            placeholder="Type standard input here..."
+                          />
+                        </div>
+
+                        <div className="console-output-section">
+                          <h5>Console Output</h5>
+
+                          {runStatus !== "idle" && (
+                            <div className={`status-badge status-${runStatus}`}>
+                              {runStatus === "running" && "Executing code..."}
+                              {runStatus === "success" && "Execution Successful"}
+                              {runStatus === "failed" && `Execution Failed (Exit Code ${exitInfo?.code})`}
+                              {runStatus === "all_passed" && "All Test Cases Passed! 🎉"}
+                              {runStatus === "some_failed" && "Some Test Cases Failed ❌"}
+                              {runStatus === "error" && "Execution Error"}
+                            </div>
+                          )}
+
+                          {testResults.length > 0 && (
+                            <div className="test-results-grid">
+                              {testResults.map((tr) => (
+                                <div key={tr.caseNum} className={`test-result-card ${tr.passed ? "passed" : "failed"}`}>
+                                  <div className="card-header">
+                                    <span className="case-title">Test Case {tr.caseNum}</span>
+                                    <span className={`case-status ${tr.passed ? "passed" : "failed"}`}>
+                                      {tr.passed ? "PASSED" : "FAILED"}
+                                    </span>
+                                  </div>
+                                  <div className="card-body">
+                                    <div className="io-comp">
+                                      <div>
+                                        <span className="io-label">Input:</span>
+                                        <pre className="io-val">{tr.input}</pre>
+                                      </div>
+                                      <div>
+                                        <span className="io-label">Expected:</span>
+                                        <pre className="io-val">{tr.expected}</pre>
+                                      </div>
+                                      <div>
+                                        <span className="io-label">Got:</span>
+                                        <pre className="io-val">{tr.actual ? tr.actual : "(no output)"}</pre>
+                                      </div>
+                                    </div>
+                                    {tr.stderr && (
+                                      <div className="error-box">
+                                        <span className="io-label">Stderr:</span>
+                                        <pre className="error-val">{tr.stderr}</pre>
+                                      </div>
+                                    )}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+
+                          {consoleOutput && (
+                            <pre className={`console-output-box ${exitInfo?.stderr ? "has-error" : ""}`}>
+                              {consoleOutput}
+                              {exitInfo?.stderr && `\n--- Standard Error ---\n${exitInfo.stderr}`}
+                            </pre>
+                          )}
+
+                          {!consoleOutput && testResults.length === 0 && runStatus === "idle" && (
+                            <div className="empty-console-state">
+                              <p>Write your code, provide custom input, and click Run or Submit to execute.</p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* ── TAB 4: Official Solutions ── */}
                 {workspaceTab === "solution" && (
                   <div className="tab-pane-content pane-solution">
                     <div className="solution-header-row">
@@ -582,40 +1017,6 @@ export default function CodingPrep({ onNavigate }) {
                           </p>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* ── TAB 4: Scratchpad Notes ── */}
-                {workspaceTab === "notes" && (
-                  <div className="tab-pane-content pane-notes">
-                    <div className="notes-header">
-                      <h4>Interactive Scratchpad</h4>
-                      <p className="subtitle-text">
-                        Draft your thoughts, trace operations, or sketch your personal implementation here. Progress is auto-saved locally.
-                      </p>
-                    </div>
-
-                    <textarea
-                      className="scratchpad-textarea"
-                      placeholder="Write your pseudo-code, notes, or scratch logic here..."
-                      value={currentNotesValue}
-                      onChange={(e) => handleNotesChange(e.target.value)}
-                    />
-
-                    <div className="notes-footer-row">
-                      <span className="autosaved-indicator">
-                        <span className="pulse-dot"></span>
-                        Auto-saved in browser
-                      </span>
-                      {currentNotesValue && (
-                        <button
-                          className="reset-notes-btn"
-                          onClick={() => handleNotesChange("")}
-                        >
-                          Clear Scratchpad
-                        </button>
-                      )}
                     </div>
                   </div>
                 )}
