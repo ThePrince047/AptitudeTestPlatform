@@ -19,23 +19,57 @@ export default function TestEngine({
   const [showExitModal, setShowExitModal] = useState(false);
   const [practiceRevealed, setPracticeRevealed] = useState({}); // Track which practice questions are revealed
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [timeSpentPerQuestion, setTimeSpentPerQuestion] = useState({});
+  const [showShortcutsDrawer, setShowShortcutsDrawer] = useState(false);
   const timerRef = useRef(null);
 
-  // Timer Effect
+  const currentIdxRef = useRef(idx);
   useEffect(() => {
-    if (config.mode === "exam") {
-      timerRef.current = setInterval(() => {
+    currentIdxRef.current = idx;
+  }, [idx]);
+
+  const handleSubmit = (isAuto = false) => {
+    clearInterval(timerRef.current);
+    setShowSubmitModal(false);
+    
+    const totalTimeSecs = config.mode === "exam"
+      ? (config.timeLimit * 60 - timeLeft)
+      : Object.values(timeSpentPerQuestion).reduce((sum, val) => sum + val, 0);
+
+    onSubmitTest({
+      answers: answers,
+      flagged: flagged,
+      timeSpent: totalTimeSecs,
+      timeSpentPerQuestion: timeSpentPerQuestion,
+      questions: questions,
+      config: config
+    });
+  };
+
+  const handleSubmitRef = useRef(handleSubmit);
+  useEffect(() => {
+    handleSubmitRef.current = handleSubmit;
+  });
+
+  // Timer Effect (Tracks total exam time and per-question time)
+  useEffect(() => {
+    timerRef.current = setInterval(() => {
+      if (config.mode === "exam") {
         setTimeLeft(t => {
           if (t <= 1) {
             clearInterval(timerRef.current);
-            // Auto submit
-            handleSubmit(true);
+            handleSubmitRef.current(true);
             return 0;
           }
           return t - 1;
         });
-      }, 1000);
-    }
+      }
+      setTimeSpentPerQuestion(prev => {
+        const curIdx = currentIdxRef.current;
+        return { ...prev, [curIdx]: (prev[curIdx] || 0) + 1 };
+      });
+    }, 1000);
+
     return () => clearInterval(timerRef.current);
   }, []);
 
@@ -78,17 +112,42 @@ export default function TestEngine({
     });
   };
 
-  const handleSubmit = (isAuto = false) => {
-    clearInterval(timerRef.current);
-    setShowSubmitModal(false);
-    onSubmitTest({
-      answers: answers,
-      flagged: flagged,
-      timeSpent: config.mode === "exam" ? (config.timeLimit * 60 - timeLeft) : 0,
-      questions: questions,
-      config: config
-    });
-  };
+  // Keyboard Shortcuts Listener Effect
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      const activeEl = document.activeElement;
+      if (activeEl && (activeEl.tagName === "INPUT" || activeEl.tagName === "TEXTAREA" || activeEl.tagName === "SELECT" || activeEl.isContentEditable)) {
+        return;
+      }
+
+      const key = e.key.toLowerCase();
+
+      if (key === "1" || key === "a") {
+        handleSelectOption(0);
+      } else if (key === "2" || key === "b") {
+        handleSelectOption(1);
+      } else if (key === "3" || key === "c") {
+        handleSelectOption(2);
+      } else if (key === "4" || key === "d") {
+        handleSelectOption(3);
+      } else if (e.key === "ArrowLeft") {
+        setIdx(prev => Math.max(0, prev - 1));
+      } else if (e.key === "ArrowRight") {
+        if (idx < questions.length - 1) {
+          setIdx(prev => prev + 1);
+        }
+      } else if (key === "f") {
+        handleToggleFlag();
+      } else if (key === "s") {
+        onToggleBookmark(currentQ.id);
+      } else if (e.key === "?") {
+        setShowShortcutsDrawer(prev => !prev);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [idx, currentQ, answers, practiceRevealed, questions.length]);
 
   const getCatConfig = (id) => {
     return CATEGORY_CONFIG.find(c => c.id === id) || CATEGORY_CONFIG[0];
@@ -159,6 +218,15 @@ export default function TestEngine({
               title="Question Navigator"
             >
               <Icons.Grid size={16} />
+            </button>
+
+            {/* Keyboard Shortcuts Guide */}
+            <button 
+              onClick={() => setShowShortcutsDrawer(true)}
+              className="shortcuts-toggle-btn"
+              title="Keyboard Shortcuts Guide"
+            >
+              <Icons.Keyboard size={16} />
             </button>
 
             {/* Flag Question */}
@@ -310,7 +378,7 @@ export default function TestEngine({
 
       {/* Grid Navigation Panel (Right / Drawer) */}
       <div className={`test-navigation-sidebar ${mobileDrawerOpen ? "mobile-open" : ""}`}>
-        <div className="mobile-only" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px", width: "100%" }}>
+        <div className="mobile-only" style={{ justifyContent: "space-between", alignItems: "center", marginBottom: "20px", width: "100%" }}>
           <span style={{ fontWeight: "700", fontSize: "14px", color: "#FFF", textTransform: "uppercase" }}>Question Palette</span>
           <button 
             onClick={() => setMobileDrawerOpen(false)}
@@ -436,6 +504,69 @@ export default function TestEngine({
               >
                 Leave Session
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Keyboard Shortcuts Drawer */}
+      {showShortcutsDrawer && (
+        <div className="shortcuts-drawer-overlay" onClick={() => setShowShortcutsDrawer(false)}>
+          <div className="shortcuts-drawer" onClick={e => e.stopPropagation()}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <h4 style={{ margin: 0, display: "flex", alignItems: "center", gap: 8, color: "var(--t1)" }}>
+                <Icons.Keyboard size={18} style={{ color: "var(--accent-text)" }} />
+                Keyboard Guide
+              </h4>
+              <button 
+                onClick={() => setShowShortcutsDrawer(false)}
+                style={{ background: "none", border: "none", color: "var(--t3)", cursor: "pointer", display: "flex", alignItems: "center" }}
+              >
+                <Icons.X size={18} />
+              </button>
+            </div>
+            
+            <div style={{ display: "flex", flexDirection: "column", gap: 4, marginTop: 12 }}>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Select Option A</span>
+                <span className="shortcut-key">A / 1</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Select Option B</span>
+                <span className="shortcut-key">B / 2</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Select Option C</span>
+                <span className="shortcut-key">C / 3</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Select Option D</span>
+                <span className="shortcut-key">D / 4</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Next Question</span>
+                <span className="shortcut-key">→</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Previous Question</span>
+                <span className="shortcut-key">←</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Flag for Review</span>
+                <span className="shortcut-key">F</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Bookmark Question</span>
+                <span className="shortcut-key">S</span>
+              </div>
+              <div className="shortcut-item">
+                <span style={{ color: "var(--t2)", fontSize: 13 }}>Toggle Guide</span>
+                <span className="shortcut-key">?</span>
+              </div>
+            </div>
+            
+            <div style={{ marginTop: "auto", fontSize: 11, color: "var(--t3)", lineHeight: 1.5, textAlign: "center" }}>
+              Press <kbd className="shortcut-key">?</kbd> at any time to toggle this panel.
             </div>
           </div>
         </div>

@@ -13,9 +13,39 @@ export default function AiPaper({
   const [progressText, setProgressText] = useState("");
   const [error, setError] = useState("");
   const [saveKey, setSaveKey] = useState(true);
+  const [showKey, setShowKey] = useState(false);
+  const [connectionStatus, setConnectionStatus] = useState(""); // "", "testing", "success", "failed"
 
   const handleSaveKeyChange = (e) => {
     setSaveKey(e.target.checked);
+  };
+
+  const testApiConnection = async () => {
+    if (!apiKey.trim()) {
+      setError("Please enter a Gemini API Key to test.");
+      return;
+    }
+    setConnectionStatus("testing");
+    setError("");
+    try {
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey.trim()}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: "ping" }] }],
+          generationConfig: { maxOutputTokens: 2 }
+        })
+      });
+      if (res.ok) {
+        setConnectionStatus("success");
+      } else {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error?.message || `HTTP ${res.status}`);
+      }
+    } catch (err) {
+      setError(`Connection failed: ${err.message}`);
+      setConnectionStatus("failed");
+    }
   };
 
   const fetchBatch = async (count, topicName, key) => {
@@ -159,62 +189,80 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
   return (
     <div className="config-container">
       <button onClick={() => onNavigate("dashboard")} className="back-button">
-        <Icons.ChevronLeft size={16} /> Back to Dashboard
+        <Icons.ChevronLeft size={15} /> Back
       </button>
 
-      <div className="glass-card">
-        <div style={{ display: "flex", gap: "16px", marginBottom: "20px" }}>
-          <div className="stat-icon-wrapper" style={{ backgroundColor: "rgba(99, 102, 241, 0.1)", color: "var(--primary)" }}>
-            <Icons.Sparkles size={24} />
+      <div className="card card-lg">
+        <div style={{ display: "flex", gap: 14, marginBottom: 22 }}>
+          <div style={{ width: 42, height: 42, borderRadius: 10, background: "var(--accent-soft)", color: "var(--accent-text)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+            <Icons.Sparkles size={22} />
           </div>
           <div>
-            <h3 style={{ fontSize: "20px", fontWeight: "700", color: "#FFF" }}>AI Mock Test Generator</h3>
-            <p style={{ color: "var(--text-secondary)", fontSize: "14px", marginTop: "4px", lineHeight: "1.5" }}>
-              Generate a custom mock paper powered by Google Gemini. Enter your Gemini API Key below to fetch fresh, dynamically generated questions.
+            <h3 style={{ fontSize: 20, fontWeight: 800, color: "var(--t1)", letterSpacing: "-0.02em" }}>AI Mock Generator</h3>
+            <p style={{ color: "var(--t2)", fontSize: 13, marginTop: 3, lineHeight: 1.55 }}>
+              Generate a custom paper via Gemini API, or use the local simulator.
             </p>
           </div>
         </div>
 
         {/* API Key input */}
-        <div className="settings-input-group">
-          <label>Gemini API Key</label>
-          <div style={{ position: "relative" }}>
-            <input 
-              type="password" 
-              placeholder="AIzaSy..." 
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-              className="settings-input"
-              style={{ paddingLeft: "40px" }}
-            />
-            <Icons.Key size={16} color="var(--text-muted)" style={{ position: "absolute", left: "14px", top: "16px" }} />
+        <div className="config-form-group">
+          <div className="config-label-wrapper">
+            <label>Gemini API Key</label>
+            {apiKey.trim() && (
+              <button
+                type="button"
+                onClick={testApiConnection}
+                disabled={connectionStatus === "testing"}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: connectionStatus === "success" ? "var(--green)" : connectionStatus === "failed" ? "var(--red)" : "var(--accent-text)",
+                  fontSize: 11,
+                  fontWeight: 600,
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 4
+                }}
+              >
+                {connectionStatus === "testing" && <Icons.RefreshCw size={11} className="animate-spin" />}
+                {connectionStatus === "success" && <Icons.CheckCircle size={11} />}
+                {connectionStatus === "failed" && <Icons.XCircle size={11} />}
+                {connectionStatus === "testing" ? "Testing..." : connectionStatus === "success" ? "Key Validated!" : connectionStatus === "failed" ? "Validation Failed" : "Validate Key"}
+              </button>
+            )}
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginTop: "10px" }}>
-            <input 
-              type="checkbox" 
-              id="save-key" 
-              checked={saveKey}
-              onChange={handleSaveKeyChange}
-              style={{ accentColor: "var(--primary)" }}
+          <div style={{ position: "relative" }}>
+            <input
+              type={showKey ? "text" : "password"}
+              placeholder="AIzaSy..."
+              value={apiKey}
+              onChange={(e) => {
+                setApiKey(e.target.value);
+                setConnectionStatus("");
+              }}
+              className="custom-select"
+              style={{ paddingLeft: 40, paddingRight: 40 }}
             />
-            <label htmlFor="save-key" style={{ margin: 0, fontSize: "12px", cursor: "pointer", userSelect: "none" }}>
-              Remember Key locally (saves in browser localStorage)
+            <Icons.Key size={15} style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--t3)" }} />
+            <button
+              type="button"
+              onClick={() => setShowKey(!showKey)}
+              className="input-icon-btn"
+              title={showKey ? "Hide key" : "Show key"}
+            >
+              {showKey ? <Icons.EyeOff size={15} /> : <Icons.Eye size={15} />}
+            </button>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 10 }}>
+            <input type="checkbox" id="save-key" checked={saveKey} onChange={handleSaveKeyChange} style={{ accentColor: "var(--accent)" }} />
+            <label htmlFor="save-key" style={{ margin: 0, fontSize: 12, cursor: "pointer", color: "var(--t2)" }}>
+              Remember key in browser localStorage
             </label>
           </div>
-          
-          <div 
-            style={{ 
-              marginTop: "12px", 
-              padding: "10px 14px", 
-              borderRadius: "8px", 
-              backgroundColor: "rgba(99, 102, 241, 0.04)", 
-              border: "1px solid rgba(99, 102, 241, 0.1)",
-              fontSize: "12px",
-              color: "var(--text-secondary)",
-              lineHeight: "1.5"
-            }}
-          >
-            <strong>Note on Fallback:</strong> If no API key is supplied, the portal will run in <strong>Local Simulator Mode</strong>. It will automatically build a realistic aptitude paper from the offline questions database immediately!
+          <div style={{ marginTop: 12, padding: "10px 14px", borderRadius: 8, background: "var(--accent-soft)", border: "1px solid var(--accent-line)", fontSize: 12, color: "var(--t2)", lineHeight: 1.55 }}>
+            <strong style={{ color: "var(--accent-text)" }}>No API key?</strong> Leave blank to use the <strong>Local Simulator</strong> — it builds a paper from the offline database instantly.
           </div>
         </div>
 
@@ -257,39 +305,28 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
         </div>
 
         {error && (
-          <div 
-            style={{ 
-              margin: "20px 0", 
-              padding: "12px 16px", 
-              borderRadius: "10px", 
-              backgroundColor: "rgba(239, 68, 68, 0.05)", 
-              border: "1px solid var(--error-border)",
-              color: "var(--error)",
-              fontSize: "13px",
-              lineHeight: "1.5"
-            }}
-          >
-            <div style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}>
-              <Icons.AlertTriangle size={16} style={{ flexShrink: 0, marginTop: "2px" }} />
+          <div style={{ margin: "16px 0", padding: "12px 16px", borderRadius: 10, background: "var(--red-soft)", border: "1px solid var(--red-line)", color: "var(--red)", fontSize: 13, lineHeight: 1.5 }}>
+            <div style={{ display: "flex", gap: 8, alignItems: "flex-start" }}>
+              <Icons.AlertTriangle size={15} style={{ flexShrink: 0, marginTop: 2 }} />
               <span>{error}</span>
             </div>
           </div>
         )}
 
-        <button 
+        <button
           onClick={generatePaper}
           disabled={loading}
-          className="btn btn-accent"
-          style={{ width: "100%", padding: "16px", borderRadius: "12px", fontSize: "16px", opacity: loading ? 0.7 : 1 }}
+          className="btn btn-primary"
+          style={{ width: "100%", padding: "13px 20px", borderRadius: 10, fontSize: 15, marginTop: 4 }}
         >
           {loading ? (
             <>
-              <Icons.RefreshCw size={16} className="animate-spin" style={{ animation: "spin 1s linear infinite" }} />
-              {progressText || `Generating ${numQuestions} Questions...`}
+              <Icons.RefreshCw size={15} style={{ animation: "spin 1s linear infinite" }} />
+              {progressText || `Generating ${numQuestions} questions...`}
             </>
           ) : (
             <>
-              <Icons.Sparkles size={16} />
+              <Icons.Sparkles size={15} />
               {apiKey.trim() ? "Generate via Gemini API" : "Start Local Simulator"}
             </>
           )}

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import * as Icons from "lucide-react";
 import { QB } from "./data/questionBank";
 
-// Import modular components
 import Dashboard from "./components/Dashboard";
 import TestConfig from "./components/TestConfig";
 import TestEngine from "./components/TestEngine";
@@ -10,8 +9,14 @@ import ResultsView from "./components/ResultsView";
 import AiPaper from "./components/AiPaper";
 import Analytics from "./components/Analytics";
 
+const NAV = [
+  { id: "dashboard", label: "Dashboard",      icon: "LayoutDashboard" },
+  { id: "analytics", label: "Progress",       icon: "BarChart2" },
+  { id: "ai",        label: "AI Generator",   icon: "Sparkles" },
+];
+
 export default function App() {
-  const [screen, setScreen] = useState("dashboard"); // "dashboard", "config", "test", "result", "ai", "analytics"
+  const [screen, setScreen] = useState("dashboard");
   const [history, setHistory] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
   const [activeCategory, setActiveCategory] = useState("all");
@@ -21,13 +26,11 @@ export default function App() {
   const [hasApiKey, setHasApiKey] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Load initial data
   useEffect(() => {
     const savedHistory = localStorage.getItem("nqt_history");
     if (savedHistory) {
       try {
         const parsed = JSON.parse(savedHistory);
-        // Self-healing migration to correct any NaN percentages or scores
         const healed = parsed.map(h => {
           let score = h.score;
           let pct = h.pct;
@@ -39,33 +42,20 @@ export default function App() {
         });
         setHistory(healed);
         localStorage.setItem("nqt_history", JSON.stringify(healed));
-      } catch (e) {
-        console.error("Failed to parse history", e);
-      }
+      } catch (e) { console.error("Failed to parse history", e); }
     }
 
     const savedBookmarks = localStorage.getItem("nqt_bookmarks");
     if (savedBookmarks) {
-      try {
-        setBookmarks(JSON.parse(savedBookmarks));
-      } catch (e) {
-        console.error("Failed to parse bookmarks", e);
-      }
+      try { setBookmarks(JSON.parse(savedBookmarks)); } catch (e) {}
     }
 
-    const key = localStorage.getItem("gemini_api_key");
-    setHasApiKey(!!key);
+    setHasApiKey(!!localStorage.getItem("gemini_api_key"));
   }, [screen]);
 
   const handleToggleBookmark = (qId) => {
     setBookmarks(prev => {
-      const idx = prev.indexOf(qId);
-      let next;
-      if (idx !== -1) {
-        next = prev.filter(id => id !== qId);
-      } else {
-        next = [...prev, qId];
-      }
+      const next = prev.includes(qId) ? prev.filter(id => id !== qId) : [...prev, qId];
       localStorage.setItem("nqt_bookmarks", JSON.stringify(next));
       return next;
     });
@@ -76,17 +66,11 @@ export default function App() {
     setMobileMenuOpen(false);
   };
 
-  // Dynamic option shuffler that shifts correct answer index ans
   const shuffleQuestionOptions = (q) => {
     if (!q || !q.opts) return q;
-    const correctOptionText = q.opts[q.ans];
-    const shuffledOpts = [...q.opts].sort(() => Math.random() - 0.5);
-    const newAnsIndex = shuffledOpts.indexOf(correctOptionText);
-    return {
-      ...q,
-      opts: shuffledOpts,
-      ans: newAnsIndex
-    };
+    const correctText = q.opts[q.ans];
+    const shuffled = [...q.opts].sort(() => Math.random() - 0.5);
+    return { ...q, opts: shuffled, ans: shuffled.indexOf(correctText) };
   };
 
   const handleStartTestConfig = (catId) => {
@@ -95,28 +79,20 @@ export default function App() {
   };
 
   const handleStartTest = (setup) => {
-    // Filter questions
-    const pool = setup.category === "all" 
-      ? QB 
-      : QB.filter(q => q.cat === setup.category);
-    
-    // Shuffle and slice
+    const pool = setup.category === "all" ? QB : QB.filter(q => q.cat === setup.category);
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
     const selected = shuffled.slice(0, Math.min(setup.questionCount, pool.length));
-    const prepared = selected.map(shuffleQuestionOptions);
-    
-    setTestQuestions(prepared);
+    setTestQuestions(selected.map(shuffleQuestionOptions));
     setTestConfig(setup);
     setScreen("test");
   };
 
   const handleStartCustomTest = (customQs, topicName) => {
-    const prepared = customQs.map(shuffleQuestionOptions);
-    setTestQuestions(prepared);
+    setTestQuestions(customQs.map(shuffleQuestionOptions));
     setTestConfig({
       category: topicName,
       questionCount: customQs.length,
-      timeLimit: Math.max(10, Math.ceil(customQs.length * 1.5)), // Dynamic time limit
+      timeLimit: Math.max(10, Math.ceil(customQs.length * 1.5)),
       mode: "exam"
     });
     setScreen("test");
@@ -124,56 +100,69 @@ export default function App() {
 
   const handleStartBookmarkedMock = () => {
     const pool = QB.filter(q => bookmarks.includes(q.id));
-    if (pool.length === 0) return;
-    
+    if (!pool.length) return;
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
-    const prepared = shuffled.map(shuffleQuestionOptions);
-    
-    setTestQuestions(prepared);
-    setTestConfig({
-      category: "all",
-      questionCount: shuffled.length,
-      timeLimit: 30,
-      mode: "practice" // Bookmarked practice is untimed practice by default
-    });
+    setTestQuestions(shuffled.map(shuffleQuestionOptions));
+    setTestConfig({ category: "all", questionCount: shuffled.length, timeLimit: 30, mode: "practice" });
     setScreen("test");
   };
 
   const handleSubmitTest = (resultPayload) => {
-    const { questions, answers, config } = resultPayload;
-    
-    // Calculate correct score and percentage directly to avoid undefined/NaN bugs
+    const { questions, answers, config, timeSpent = 0, timeSpentPerQuestion = {} } = resultPayload;
     const score = questions.filter((q, idx) => answers[idx] === q.ans).length;
     const pct = questions.length ? Math.round((score / questions.length) * 100) : 0;
-    
+
     const newSession = {
       id: Date.now(),
       date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
-      score: score,
+      score,
       totalQuestions: questions.length,
-      pct: pct,
+      pct,
       cat: config.category,
       mode: config.mode,
-      answers: answers,
-      questions: questions
+      answers,
+      questions,
+      timeSpent,
+      timeSpentPerQuestion
     };
 
     const nextHistory = [...history, newSession];
     setHistory(nextHistory);
     localStorage.setItem("nqt_history", JSON.stringify(nextHistory));
-    
+    setLatestResult({ ...resultPayload, score, pct });
+    setScreen("result");
+  };
+
+  const handleViewPastResult = (session) => {
     setLatestResult({
-      ...resultPayload,
-      score: score,
-      pct: pct
+      questions: session.questions,
+      answers: session.answers,
+      config: {
+        category: session.cat,
+        mode: session.mode,
+      },
+      timeSpent: session.timeSpent || 0,
+      timeSpentPerQuestion: session.timeSpentPerQuestion || {},
+      score: session.score,
+      pct: session.pct
     });
     setScreen("result");
   };
 
-  // If in active test, hide sidebar for full screen concentration
+  const handleDeleteSession = (id) => {
+    const nextHistory = history.filter(h => h.id !== id);
+    setHistory(nextHistory);
+    localStorage.setItem("nqt_history", JSON.stringify(nextHistory));
+  };
+
+  const handleClearHistory = () => {
+    setHistory([]);
+    localStorage.removeItem("nqt_history");
+  };
+
   if (screen === "test") {
     return (
-      <TestEngine 
+      <TestEngine
         questions={testQuestions}
         config={testConfig}
         bookmarks={bookmarks}
@@ -186,131 +175,80 @@ export default function App() {
 
   return (
     <div className="app-container">
-      {/* Mobile Drawer Overlay */}
+      {/* Overlay */}
       {mobileMenuOpen && (
-        <div 
-          className="mobile-sidebar-overlay" 
-          onClick={() => setMobileMenuOpen(false)}
-        ></div>
+        <div className="mobile-sidebar-overlay" onClick={() => setMobileMenuOpen(false)} />
       )}
 
-      {/* Sidebar Navigation */}
-      <div className={`sidebar ${mobileMenuOpen ? "mobile-open" : ""}`}>
+      {/* Sidebar */}
+      <aside className={`sidebar ${mobileMenuOpen ? "mobile-open" : ""}`}>
         <div className="logo-section">
           <div className="logo-icon">
-            <Icons.Layers size={18} color="#FFF" />
+            <Icons.GraduationCap size={17} color="#fff" />
           </div>
-          <h1>Aptitude Portal</h1>
-          <button 
-            className="mobile-close-btn" 
-            onClick={() => setMobileMenuOpen(false)}
-            aria-label="Close Menu"
-          >
-            <Icons.X size={20} />
+          <h1>MockTest</h1>
+          <button className="mobile-close-btn" onClick={() => setMobileMenuOpen(false)} aria-label="Close">
+            <Icons.X size={18} />
           </button>
         </div>
 
         <ul className="nav-links">
-          <button 
-            onClick={() => navigateTo("dashboard")} 
-            className={`nav-item ${screen === "dashboard" || screen === "config" ? "active" : ""}`}
-          >
-            <Icons.Home size={18} />
-            Dashboard
-          </button>
-          
-          <button 
-            onClick={() => navigateTo("analytics")} 
-            className={`nav-item ${screen === "analytics" ? "active" : ""}`}
-          >
-            <Icons.Trophy size={18} />
-            Progress & Saved
-          </button>
-
-          <button 
-            onClick={() => navigateTo("ai")} 
-            className={`nav-item ${screen === "ai" ? "active" : ""}`}
-          >
-            <Icons.Sparkles size={18} />
-            AI Paper Gen
-          </button>
+          {NAV.map(item => {
+            const Icon = Icons[item.icon] || Icons.Circle;
+            const isActive = screen === item.id || (item.id === "dashboard" && screen === "config");
+            return (
+              <button
+                key={item.id}
+                onClick={() => navigateTo(item.id)}
+                className={`nav-item ${isActive ? "active" : ""}`}
+              >
+                <Icon size={16} />
+                {item.label}
+              </button>
+            );
+          })}
         </ul>
 
         <div className="sidebar-footer">
           <div className="api-key-indicator">
-            <span style={{ 
-              width: "8px", 
-              height: "8px", 
-              borderRadius: "50%", 
-              backgroundColor: hasApiKey ? "var(--success)" : "var(--warning)",
-              display: "inline-block" 
-            }}></span>
-            <span>
-              {hasApiKey ? "Gemini Connected" : "Local Simulator"}
-            </span>
+            <span style={{
+              width: 7, height: 7, borderRadius: "50%", flexShrink: 0,
+              backgroundColor: hasApiKey ? "var(--green)" : "var(--amber)",
+              display: "inline-block"
+            }} />
+            <span>{hasApiKey ? "Gemini API active" : "Local mode"}</span>
           </div>
         </div>
-      </div>
+      </aside>
 
-      {/* Main Container Workspace */}
+      {/* Main */}
       <div className="main-content">
-        {/* Mobile Header Bar */}
+        {/* Mobile top bar */}
         <div className="mobile-header-bar">
-          <button 
-            onClick={() => setMobileMenuOpen(true)} 
-            className="mobile-menu-btn"
-            aria-label="Open Menu"
-          >
-            <Icons.Menu size={20} />
+          <button className="mobile-menu-btn" onClick={() => setMobileMenuOpen(true)} aria-label="Menu">
+            <Icons.Menu size={18} />
           </button>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <Icons.Layers size={16} color="var(--primary)" />
-            <span style={{ fontWeight: "700", fontSize: "14px", color: "#FFF" }}>Aptitude Prep</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <Icons.GraduationCap size={16} style={{ color: "var(--accent-text)" }} />
+            <span style={{ fontWeight: 700, fontSize: 14 }}>MockTest</span>
           </div>
-          <div style={{ width: "20px" }}></div>
+          <div style={{ width: 34 }} />
         </div>
 
         {screen === "dashboard" && (
-          <Dashboard 
-            onStartTest={handleStartTestConfig}
-            onNavigate={navigateTo}
-            history={history}
-            bookmarks={bookmarks}
-          />
+          <Dashboard onStartTest={handleStartTestConfig} onNavigate={navigateTo} history={history} bookmarks={bookmarks} onViewPastResult={handleViewPastResult} />
         )}
-
         {screen === "config" && (
-          <TestConfig 
-            initialCategory={activeCategory}
-            onBack={() => navigateTo("dashboard")}
-            onStart={handleStartTest}
-          />
+          <TestConfig initialCategory={activeCategory} onBack={() => navigateTo("dashboard")} onStart={handleStartTest} />
         )}
-
         {screen === "result" && (
-          <ResultsView 
-            result={latestResult}
-            bookmarks={bookmarks}
-            onToggleBookmark={handleToggleBookmark}
-            onNavigate={navigateTo}
-          />
+          <ResultsView result={latestResult} bookmarks={bookmarks} onToggleBookmark={handleToggleBookmark} onNavigate={navigateTo} />
         )}
-
         {screen === "ai" && (
-          <AiPaper 
-            onStartCustomTest={handleStartCustomTest}
-            onNavigate={navigateTo}
-          />
+          <AiPaper onStartCustomTest={handleStartCustomTest} onNavigate={navigateTo} />
         )}
-
         {screen === "analytics" && (
-          <Analytics 
-            history={history}
-            bookmarks={bookmarks}
-            onToggleBookmark={handleToggleBookmark}
-            onStartBookmarkedMock={handleStartBookmarkedMock}
-            onNavigate={navigateTo}
-          />
+          <Analytics history={history} bookmarks={bookmarks} onToggleBookmark={handleToggleBookmark} onStartBookmarkedMock={handleStartBookmarkedMock} onNavigate={navigateTo} onViewPastResult={handleViewPastResult} onDeleteSession={handleDeleteSession} onClearHistory={handleClearHistory} />
         )}
       </div>
     </div>
