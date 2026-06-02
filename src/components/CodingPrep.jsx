@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import * as Icons from "lucide-react";
 import { CODING_BANK } from "../data/codingBank";
 import CodeEditor from "./CodeEditor";
+import { API_BASE } from "../config";
 
 export default function CodingPrep({ onNavigate }) {
   // Screen and viewport detection
@@ -46,7 +47,7 @@ export default function CodingPrep({ onNavigate }) {
   useEffect(() => {
     const loadSolvedIds = async () => {
       try {
-        const res = await fetch("/api/storage/coding_solved_ids");
+        const res = await fetch(`${API_BASE}/api/storage/coding_solved_ids`);
         if (res.ok) {
           const data = await res.json();
           if (data && data.value) setSolvedIds(data.value);
@@ -137,7 +138,7 @@ export default function CodingPrep({ onNavigate }) {
 
     const loadCode = async () => {
       try {
-        const res = await fetch(`/api/storage/${key}`);
+        const res = await fetch(`${API_BASE}/api/storage/${key}`);
         if (res.ok && active) {
           const data = await res.json();
           if (data && data.value) {
@@ -180,7 +181,7 @@ export default function CodingPrep({ onNavigate }) {
 
     const key = `coding_code_${selectedId}_${codeLanguage}`;
     const delayDebounceFn = setTimeout(() => {
-      fetch(`/api/storage/${key}`, {
+      fetch(`${API_BASE}/api/storage/${key}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ value: editorCode })
@@ -201,7 +202,7 @@ export default function CodingPrep({ onNavigate }) {
       const starter = currentQuestion.starterCode?.[codeLanguage] || "";
       setEditorCode(starter);
       const key = `coding_code_${selectedId}_${codeLanguage}`;
-      fetch(`/api/storage/${key}`, {
+      fetch(`${API_BASE}/api/storage/${key}`, {
         method: "DELETE"
       }).catch(e => console.error("Failed to delete draft on server", e));
     }
@@ -376,7 +377,7 @@ export default function CodingPrep({ onNavigate }) {
   const executeCode = async (code, lang, stdin) => {
     // 1. Try local Vite dev server execute API route (uses host compilers)
     try {
-      const response = await fetch("/api/execute", {
+      const response = await fetch(`${API_BASE}/api/execute`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -469,7 +470,7 @@ export default function CodingPrep({ onNavigate }) {
       if (allPassed && !solvedIds.includes(currentQuestion.id)) {
         const nextSolvedIds = [...solvedIds, currentQuestion.id];
         setSolvedIds(nextSolvedIds);
-        fetch("/api/storage/coding_solved_ids", {
+        fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ value: nextSolvedIds })
@@ -487,7 +488,7 @@ export default function CodingPrep({ onNavigate }) {
   const handleToggleSolved = (id) => {
     setSolvedIds((prev) => {
       const next = prev.includes(id) ? prev.filter((solvedId) => solvedId !== id) : [...prev, id];
-      fetch("/api/storage/coding_solved_ids", {
+      fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ value: next })

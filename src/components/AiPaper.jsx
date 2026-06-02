@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as Icons from "lucide-react";
 import { QB, CATEGORY_CONFIG } from "../data/questionBank";
+import { API_BASE } from "../config";
 
 export default function AiPaper({ 
   onStartCustomTest, 
@@ -19,7 +20,7 @@ export default function AiPaper({
   useEffect(() => {
     const loadApiKey = async () => {
       try {
-        const res = await fetch("/api/storage/gemini_api_key");
+        const res = await fetch(`${API_BASE}/api/storage/gemini_api_key`);
         if (res.ok) {
           const data = await res.json();
           if (data && data.value) setApiKey(data.value);
@@ -121,13 +122,13 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
     setProgressText("Initializing API connection...");
 
     if (saveKey) {
-      fetch("/api/storage/gemini_api_key", {
+      fetch(`${API_BASE}/api/storage/gemini_api_key`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ value: apiKey.trim() })
       }).catch(e => console.error("Failed to save API key to server", e));
     } else {
-      fetch("/api/storage/gemini_api_key", {
+      fetch(`${API_BASE}/api/storage/gemini_api_key`, {
         method: "DELETE"
       }).catch(e => console.error("Failed to remove API key from server", e));
     }

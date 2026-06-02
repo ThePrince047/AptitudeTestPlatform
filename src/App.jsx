@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as Icons from "lucide-react";
 import { QB } from "./data/questionBank";
+import { API_BASE } from "./config";
 
 import Dashboard from "./components/Dashboard";
 import TestConfig from "./components/TestConfig";
@@ -54,7 +55,7 @@ export default function App() {
         }
 
         try {
-          const migrateRes = await fetch("/api/storage/migrate", {
+          const migrateRes = await fetch(`${API_BASE}/api/storage/migrate`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(migrationPayload)
@@ -73,7 +74,7 @@ export default function App() {
 
       // 2. Load data from Server
       try {
-        const historyRes = await fetch("/api/storage/nqt_history");
+        const historyRes = await fetch(`${API_BASE}/api/storage/nqt_history`);
         if (historyRes.ok) {
           const data = await historyRes.json();
           if (data && data.value) {
@@ -94,7 +95,7 @@ export default function App() {
       }
 
       try {
-        const bookmarksRes = await fetch("/api/storage/nqt_bookmarks");
+        const bookmarksRes = await fetch(`${API_BASE}/api/storage/nqt_bookmarks`);
         if (bookmarksRes.ok) {
           const data = await bookmarksRes.json();
           if (data && data.value) {
@@ -106,7 +107,7 @@ export default function App() {
       }
 
       try {
-        const keyRes = await fetch("/api/storage/gemini_api_key");
+        const keyRes = await fetch(`${API_BASE}/api/storage/gemini_api_key`);
         if (keyRes.ok) {
           const data = await keyRes.json();
           setHasApiKey(!!(data && data.value));
@@ -122,7 +123,7 @@ export default function App() {
   const handleToggleBookmark = (qId) => {
     setBookmarks(prev => {
       const next = prev.includes(qId) ? prev.filter(id => id !== qId) : [...prev, qId];
-      fetch("/api/storage/nqt_bookmarks", {
+      fetch(`${API_BASE}/api/storage/nqt_bookmarks`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ value: next })
@@ -198,7 +199,7 @@ export default function App() {
 
     const nextHistory = [...history, newSession];
     setHistory(nextHistory);
-    fetch("/api/storage/nqt_history", {
+    fetch(`${API_BASE}/api/storage/nqt_history`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ value: nextHistory })
@@ -227,7 +228,7 @@ export default function App() {
   const handleDeleteSession = (id) => {
     const nextHistory = history.filter(h => h.id !== id);
     setHistory(nextHistory);
-    fetch("/api/storage/nqt_history", {
+    fetch(`${API_BASE}/api/storage/nqt_history`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ value: nextHistory })
@@ -236,7 +237,7 @@ export default function App() {
 
   const handleClearHistory = () => {
     setHistory([]);
-    fetch("/api/storage/nqt_history", {
+    fetch(`${API_BASE}/api/storage/nqt_history`, {
       method: "DELETE"
     }).catch(err => console.error("Failed to clear history on server", err));
   };
