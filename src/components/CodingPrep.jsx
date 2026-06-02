@@ -9,14 +9,8 @@ export default function CodingPrep({ onNavigate }) {
   const [viewMode, setViewMode] = useState("list"); // "list" | "details"
 
   // Storage states
-  const [solvedIds, setSolvedIds] = useState(() => {
-    try {
-      const saved = localStorage.getItem("coding_solved_ids");
-      return saved ? JSON.parse(saved) : [];
-    } catch (e) {
-      return [];
-    }
-  });
+  const [solvedIds, setSolvedIds] = useState([]);
+  const [isCodeLoading, setIsCodeLoading] = useState(true);
 
   // Filter states
   const [searchTerm, setSearchTerm] = useState("");
@@ -48,10 +42,21 @@ export default function CodingPrep({ onNavigate }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Save solved IDs to localStorage
+  // Load solved IDs on mount
   useEffect(() => {
-    localStorage.setItem("coding_solved_ids", JSON.stringify(solvedIds));
-  }, [solvedIds]);
+    const loadSolvedIds = async () => {
+      try {
+        const res = await fetch("/api/storage/coding_solved_ids");
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.value) setSolvedIds(data.value);
+        }
+      } catch (e) {
+        console.error("Failed to load solved coding IDs from server", e);
+      }
+    };
+    loadSolvedIds();
+  }, []);
 
   // List of all unique categories in CODING_BANK
   const categories = useMemo(() => {
@@ -124,14 +129,37 @@ export default function CodingPrep({ onNavigate }) {
   // Load saved code or pre-fill starter code
   useEffect(() => {
     if (!currentQuestion) return;
+    let active = true;
+    setIsCodeLoading(true);
+
     const key = `coding_code_${selectedId}_${codeLanguage}`;
-    const saved = localStorage.getItem(key);
-    if (saved) {
-      setEditorCode(saved);
-    } else {
-      const starter = currentQuestion.starterCode?.[codeLanguage] || "";
-      setEditorCode(starter);
-    }
+    const starter = currentQuestion.starterCode?.[codeLanguage] || "";
+
+    const loadCode = async () => {
+      try {
+        const res = await fetch(`/api/storage/${key}`);
+        if (res.ok && active) {
+          const data = await res.json();
+          if (data && data.value) {
+            setEditorCode(data.value);
+          } else {
+            setEditorCode(starter);
+          }
+        } else if (active) {
+          setEditorCode(starter);
+        }
+      } catch (e) {
+        console.error("Failed to load saved draft", e);
+        if (active) setEditorCode(starter);
+      } finally {
+        if (active) setIsCodeLoading(false);
+      }
+    };
+    loadCode();
+
+    return () => {
+      active = false;
+    };
   }, [selectedId, codeLanguage, currentQuestion]);
 
   // Pre-fill stdin template
@@ -146,11 +174,25 @@ export default function CodingPrep({ onNavigate }) {
     setExitInfo(null);
   }, [selectedId, currentQuestion]);
 
-  // Auto-save code on change
+  // Auto-save code to server with a 1-second debounce
+  useEffect(() => {
+    if (!currentQuestion || isCodeLoading) return;
+
+    const key = `coding_code_${selectedId}_${codeLanguage}`;
+    const delayDebounceFn = setTimeout(() => {
+      fetch(`/api/storage/${key}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value: editorCode })
+      }).catch(e => console.error("Error auto-saving draft", e));
+    }, 1000);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [editorCode, selectedId, codeLanguage, currentQuestion, isCodeLoading]);
+
+  // Auto-save code on change (just updates state, effect handles debounce save)
   const handleCodeChange = (newCode) => {
     setEditorCode(newCode);
-    const key = `coding_code_${selectedId}_${codeLanguage}`;
-    localStorage.setItem(key, newCode);
   };
 
   // Reset to starter template
@@ -159,7 +201,9 @@ export default function CodingPrep({ onNavigate }) {
       const starter = currentQuestion.starterCode?.[codeLanguage] || "";
       setEditorCode(starter);
       const key = `coding_code_${selectedId}_${codeLanguage}`;
-      localStorage.removeItem(key);
+      fetch(`/api/storage/${key}`, {
+        method: "DELETE"
+      }).catch(e => console.error("Failed to delete draft on server", e));
     }
   };
 
@@ -423,7 +467,13 @@ export default function CodingPrep({ onNavigate }) {
 
       // Auto mark as solved if all passed
       if (allPassed && !solvedIds.includes(currentQuestion.id)) {
-        setSolvedIds((prev) => [...prev, currentQuestion.id]);
+        const nextSolvedIds = [...solvedIds, currentQuestion.id];
+        setSolvedIds(nextSolvedIds);
+        fetch("/api/storage/coding_solved_ids", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ value: nextSolvedIds })
+        }).catch(e => console.error("Failed to save solved IDs to server", e));
       }
     } catch (error) {
       setRunStatus("error");
@@ -436,11 +486,13 @@ export default function CodingPrep({ onNavigate }) {
   // Toggle solved status
   const handleToggleSolved = (id) => {
     setSolvedIds((prev) => {
-      if (prev.includes(id)) {
-        return prev.filter((solvedId) => solvedId !== id);
-      } else {
-        return [...prev, id];
-      }
+      const next = prev.includes(id) ? prev.filter((solvedId) => solvedId !== id) : [...prev, id];
+      fetch("/api/storage/coding_solved_ids", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value: next })
+      }).catch(e => console.error("Failed to save solved IDs to server", e));
+      return next;
     });
   };
 

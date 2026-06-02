@@ -29,36 +29,104 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const savedHistory = localStorage.getItem("nqt_history");
-    if (savedHistory) {
-      try {
-        const parsed = JSON.parse(savedHistory);
-        const healed = parsed.map(h => {
-          let score = h.score;
-          let pct = h.pct;
-          if (score === undefined || score === null || isNaN(pct) || pct === null) {
-            score = h.questions && h.answers ? h.questions.filter((q, idx) => h.answers && h.answers[idx] === q.ans).length : 0;
-            pct = h.questions && h.questions.length ? Math.round((score / h.questions.length) * 100) : 0;
+    const migrateAndLoadData = async () => {
+      // 1. Check for legacy localStorage data
+      const legacyHistory = localStorage.getItem("nqt_history");
+      const legacyBookmarks = localStorage.getItem("nqt_bookmarks");
+      const legacySolvedIds = localStorage.getItem("coding_solved_ids");
+      const legacyApiKey = localStorage.getItem("gemini_api_key");
+
+      const hasLegacyData = legacyHistory || legacyBookmarks || legacySolvedIds || legacyApiKey;
+
+      if (hasLegacyData) {
+        const migrationPayload = {};
+        if (legacyHistory) {
+          try { migrationPayload.nqt_history = JSON.parse(legacyHistory); } catch (e) {}
+        }
+        if (legacyBookmarks) {
+          try { migrationPayload.nqt_bookmarks = JSON.parse(legacyBookmarks); } catch (e) {}
+        }
+        if (legacySolvedIds) {
+          try { migrationPayload.coding_solved_ids = JSON.parse(legacySolvedIds); } catch (e) {}
+        }
+        if (legacyApiKey) {
+          migrationPayload.gemini_api_key = legacyApiKey;
+        }
+
+        try {
+          const migrateRes = await fetch("/api/storage/migrate", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(migrationPayload)
+          });
+          if (migrateRes.ok) {
+            localStorage.removeItem("nqt_history");
+            localStorage.removeItem("nqt_bookmarks");
+            localStorage.removeItem("coding_solved_ids");
+            localStorage.removeItem("gemini_api_key");
+            console.log("Successfully migrated localStorage state to Express backend server.");
           }
-          return { ...h, score, pct };
-        });
-        setHistory(healed);
-        localStorage.setItem("nqt_history", JSON.stringify(healed));
-      } catch (e) { console.error("Failed to parse history", e); }
-    }
+        } catch (err) {
+          console.error("Failed to migrate legacy localStorage data", err);
+        }
+      }
 
-    const savedBookmarks = localStorage.getItem("nqt_bookmarks");
-    if (savedBookmarks) {
-      try { setBookmarks(JSON.parse(savedBookmarks)); } catch (e) {}
-    }
+      // 2. Load data from Server
+      try {
+        const historyRes = await fetch("/api/storage/nqt_history");
+        if (historyRes.ok) {
+          const data = await historyRes.json();
+          if (data && data.value) {
+            const healed = data.value.map(h => {
+              let score = h.score;
+              let pct = h.pct;
+              if (score === undefined || score === null || isNaN(pct) || pct === null) {
+                score = h.questions && h.answers ? h.questions.filter((q, idx) => h.answers && h.answers[idx] === q.ans).length : 0;
+                pct = h.questions && h.questions.length ? Math.round((score / h.questions.length) * 100) : 0;
+              }
+              return { ...h, score, pct };
+            });
+            setHistory(healed);
+          }
+        }
+      } catch (e) {
+        console.error("Failed to load history from server", e);
+      }
 
-    setHasApiKey(!!localStorage.getItem("gemini_api_key"));
+      try {
+        const bookmarksRes = await fetch("/api/storage/nqt_bookmarks");
+        if (bookmarksRes.ok) {
+          const data = await bookmarksRes.json();
+          if (data && data.value) {
+            setBookmarks(data.value);
+          }
+        }
+      } catch (e) {
+        console.error("Failed to load bookmarks from server", e);
+      }
+
+      try {
+        const keyRes = await fetch("/api/storage/gemini_api_key");
+        if (keyRes.ok) {
+          const data = await keyRes.json();
+          setHasApiKey(!!(data && data.value));
+        }
+      } catch (e) {
+        console.error("Failed to load gemini key status from server", e);
+      }
+    };
+
+    migrateAndLoadData();
   }, [screen]);
 
   const handleToggleBookmark = (qId) => {
     setBookmarks(prev => {
       const next = prev.includes(qId) ? prev.filter(id => id !== qId) : [...prev, qId];
-      localStorage.setItem("nqt_bookmarks", JSON.stringify(next));
+      fetch("/api/storage/nqt_bookmarks", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value: next })
+      }).catch(err => console.error("Failed to save bookmarks to server", err));
       return next;
     });
   };
@@ -130,7 +198,12 @@ export default function App() {
 
     const nextHistory = [...history, newSession];
     setHistory(nextHistory);
-    localStorage.setItem("nqt_history", JSON.stringify(nextHistory));
+    fetch("/api/storage/nqt_history", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ value: nextHistory })
+    }).catch(err => console.error("Failed to save history to server", err));
+
     setLatestResult({ ...resultPayload, score, pct });
     setScreen("result");
   };
@@ -154,12 +227,18 @@ export default function App() {
   const handleDeleteSession = (id) => {
     const nextHistory = history.filter(h => h.id !== id);
     setHistory(nextHistory);
-    localStorage.setItem("nqt_history", JSON.stringify(nextHistory));
+    fetch("/api/storage/nqt_history", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ value: nextHistory })
+    }).catch(err => console.error("Failed to save history to server", err));
   };
 
   const handleClearHistory = () => {
     setHistory([]);
-    localStorage.removeItem("nqt_history");
+    fetch("/api/storage/nqt_history", {
+      method: "DELETE"
+    }).catch(err => console.error("Failed to clear history on server", err));
   };
 
   if (screen === "test") {

@@ -6,7 +6,7 @@ export default function AiPaper({
   onStartCustomTest, 
   onNavigate 
 }) {
-  const [apiKey, setApiKey] = useState(localStorage.getItem("gemini_api_key") || "");
+  const [apiKey, setApiKey] = useState("");
   const [topic, setTopic] = useState("Quantitative Aptitude");
   const [numQuestions, setNumQuestions] = useState(10);
   const [loading, setLoading] = useState(false);
@@ -15,6 +15,21 @@ export default function AiPaper({
   const [saveKey, setSaveKey] = useState(true);
   const [showKey, setShowKey] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState(""); // "", "testing", "success", "failed"
+
+  useEffect(() => {
+    const loadApiKey = async () => {
+      try {
+        const res = await fetch("/api/storage/gemini_api_key");
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.value) setApiKey(data.value);
+        }
+      } catch (e) {
+        console.error("Failed to load Gemini API key from server", e);
+      }
+    };
+    loadApiKey();
+  }, []);
 
   const handleSaveKeyChange = (e) => {
     setSaveKey(e.target.checked);
@@ -106,9 +121,15 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
     setProgressText("Initializing API connection...");
 
     if (saveKey) {
-      localStorage.setItem("gemini_api_key", apiKey.trim());
+      fetch("/api/storage/gemini_api_key", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ value: apiKey.trim() })
+      }).catch(e => console.error("Failed to save API key to server", e));
     } else {
-      localStorage.removeItem("gemini_api_key");
+      fetch("/api/storage/gemini_api_key", {
+        method: "DELETE"
+      }).catch(e => console.error("Failed to remove API key from server", e));
     }
 
     try {
@@ -258,7 +279,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
           <div style={{ display: "flex", alignItems: "center", gap: 8, marginTop: 10 }}>
             <input type="checkbox" id="save-key" checked={saveKey} onChange={handleSaveKeyChange} style={{ accentColor: "var(--accent)" }} />
             <label htmlFor="save-key" style={{ margin: 0, fontSize: 12, cursor: "pointer", color: "var(--t2)" }}>
-              Remember key in browser localStorage
+              Remember key on server database
             </label>
           </div>
           <div style={{ marginTop: 12, padding: "10px 14px", borderRadius: 8, background: "var(--accent-soft)", border: "1px solid var(--accent-line)", fontSize: 12, color: "var(--t2)", lineHeight: 1.55 }}>
