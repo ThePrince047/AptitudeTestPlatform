@@ -4,10 +4,10 @@
 
 ### A premium, dark-themed mock exam, practice, and code execution portal for competitive preparation
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-mocktest101.netlify.app-6366F1?style=for-the-badge)](https://mocktest101.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-placement14.netlify.app-6366F1?style=for-the-badge)](https://placement14.netlify.app/)
 [![Built with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Built with Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-[![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://mocktest101.netlify.app/)
+[![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://placement14.netlify.app/)
 
 </div>
 
@@ -15,7 +15,7 @@
 
 ## 🌐 Live Website
 
-> **👉 [https://mocktest101.netlify.app/](https://mocktest101.netlify.app/)**
+> **👉 [https://placement14.netlify.app/](https://placement14.netlify.app/)**
 
 Visit the live site directly in your browser — no installation required. All **2,157 MCQs** and **155 programming challenges** are bundled offline-first.
 
@@ -119,17 +119,21 @@ Open `http://localhost:5173/` in your browser.
 
 ---
 
-## 🚀 Deployment to Netlify
+## 🚀 Deployment
 
-This is a fully **static Single Page Application** — no database or external servers required.
+The project is split into a **Frontend SPA** (deployed on Netlify) and an **Express Backend API** (deployed on Render) to handle persistent storage and code execution.
 
-### Option A: Drag & Drop
+### 🌐 Frontend (Netlify)
+
+The React SPA is deployed as static files.
+
+#### Option A: Drag & Drop
 ```bash
 npm run build        # Generates the dist/ folder
 ```
 Drag the `dist/` folder into [Netlify Dashboard](https://app.netlify.com/).
 
-### Option B: Git Integration (Auto-Deploy)
+#### Option B: Git Integration (Auto-Deploy)
 Connect your GitHub repository to Netlify and set:
 
 | Setting | Value |
@@ -137,6 +141,19 @@ Connect your GitHub repository to Netlify and set:
 | **Build Command** | `npm run build` |
 | **Publish Directory** | `dist` |
 | **Node Version** | `18` or `20` |
+| **Environment Variable** | `VITE_API_URL` pointing to your Render backend URL |
+
+### 🎛️ Backend (Render)
+
+The Express backend serves API endpoints for code compilation (`/api/execute`) and state persistence (`/api/storage`).
+
+To deploy the backend:
+1. Create a new **Web Service** on [Render](https://render.com/).
+2. Connect your GitHub repository.
+3. Configure the following settings:
+   - **Environment**: `Node`
+   - **Build Command**: `npm install`
+   - **Start Command**: `node server.js`
 
 ---
 
@@ -151,7 +168,7 @@ Connect your GitHub repository to Netlify and set:
 | **Icons** | Lucide React |
 | **Fonts** | Plus Jakarta Sans, JetBrains Mono (Google Fonts) |
 | **AI Integration** | Google Gemini API (gemini-2.5-flash) |
-| **Hosting** | Netlify (Static SPA) |
+| **Hosting** | Frontend: Netlify (Static SPA) <br> Backend: Render (Express API) |
 
 ---
 
@@ -163,6 +180,6 @@ This project is open for personal and educational use. Feel free to fork and bui
 
 <div align="center">
 
-Made with ❤️ &nbsp;|&nbsp; Live at **[mocktest101.netlify.app](https://mocktest101.netlify.app/)**
+Made with ❤️ &nbsp;|&nbsp; Live at **[placement14.netlify.app](https://placement14.netlify.app/)**
 
 </div>
