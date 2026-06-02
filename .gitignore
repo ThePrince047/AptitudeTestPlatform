@@ -24,4 +24,6 @@ dist-ssr
 *.sw?
 db.json
 temp_exec/
+.env
+*.env
 

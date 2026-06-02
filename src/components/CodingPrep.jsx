@@ -127,6 +127,15 @@ export default function CodingPrep({ onNavigate }) {
     };
   }, [solvedIds]);
 
+  // Default starter templates — used when a question has no language-specific starter
+  const DEFAULT_STARTERS = {
+    python: "# Read input\n# Write your solution below\n",
+    cpp: "#include <iostream>\n#include <vector>\n#include <string>\n#include <algorithm>\nusing namespace std;\n\nint main() {\n    // Read input and write your solution\n    return 0;\n}",
+    java: "import java.util.*;\nimport java.io.*;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        // Read input and write your solution\n    }\n}",
+    javascript: "const lines = require('fs').readFileSync(0, 'utf-8').trim().split('\\n');\n// Write your solution below\n",
+    c: "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main() {\n    // Read input and write your solution\n    return 0;\n}"
+  };
+
   // Load saved code or pre-fill starter code
   useEffect(() => {
     if (!currentQuestion) return;
@@ -134,7 +143,10 @@ export default function CodingPrep({ onNavigate }) {
     setIsCodeLoading(true);
 
     const key = `coding_code_${selectedId}_${codeLanguage}`;
-    const starter = currentQuestion.starterCode?.[codeLanguage] || "";
+    // Use question-specific starter, or fall back to language default
+    const starter = (currentQuestion.starterCode?.[codeLanguage] || "").trim()
+      ? currentQuestion.starterCode[codeLanguage]
+      : (DEFAULT_STARTERS[codeLanguage] || "");
 
     const loadCode = async () => {
       try {
@@ -199,7 +211,9 @@ export default function CodingPrep({ onNavigate }) {
   // Reset to starter template
   const handleResetCode = () => {
     if (window.confirm("Are you sure you want to discard your edits and reset to the starter template?")) {
-      const starter = currentQuestion.starterCode?.[codeLanguage] || "";
+      const starter = (currentQuestion.starterCode?.[codeLanguage] || "").trim()
+        ? currentQuestion.starterCode[codeLanguage]
+        : (DEFAULT_STARTERS[codeLanguage] || "");
       setEditorCode(starter);
       const key = `coding_code_${selectedId}_${codeLanguage}`;
       fetch(`${API_BASE}/api/storage/${key}`, {

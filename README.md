@@ -7,6 +7,7 @@
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-placement14.netlify.app-6366F1?style=for-the-badge)](https://placement14.netlify.app/)
 [![Built with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![Built with Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![Database](https://img.shields.io/badge/Database-MongoDB%20Atlas-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
 [![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://placement14.netlify.app/)
 
 </div>
@@ -17,7 +18,7 @@
 
 > **👉 [https://placement14.netlify.app/](https://placement14.netlify.app/)**
 
-Visit the live site directly in your browser — no installation required. All **2,157 MCQs** and **155 programming challenges** are bundled offline-first.
+Visit the live site directly in your browser — no installation required. All **2,157 MCQs** and **189+ programming challenges** are bundled offline-first.
 
 ---
 
@@ -26,10 +27,11 @@ Visit the live site directly in your browser — no installation required. All *
 | Feature | Description |
 |---|---|
 | 📊 **Dashboard** | Track progress, average scores, overall accuracy, saved bookmarks, and coding solved states |
+| 🗄️ **Persistent Storage** | Full **MongoDB Atlas** integration. Your test history, custom bookmarks, solved coding challenges, and AI configurations are safely persisted across sessions and devices. |
 | 📚 **Offline MCQ Bank** | **2,157 unique questions** across 17 topics with step-by-step solutions |
-| 💻 **Programming Prep** | **155 coding challenges** spanning 8 DSA categories with optimal complexities and scenarios |
-| 📝 **Code Editor** | Full CodeMirror-based editor supporting **Python 3, C++, Java, JavaScript, and C** |
-| ⚙️ **Dual Execution** | Executes code locally using system compilers via Vite middleware, falling back to a client-side syntax-check parser |
+| 💻 **Programming Prep** | **189+ coding challenges** spanning multiple DSA categories with optimal complexities and test cases |
+| 📝 **Code Editor** | Full CodeMirror-based editor supporting **Python 3, C++, Java, JavaScript, and C** with pre-defined starter templates for all languages |
+| ⚙️ **Dual Execution** | Executes code locally using system compilers via Node/Express middleware, falling back to a client-side syntax-check parser |
 | ⚙️ **Mock Configurator** | Pick topic, question count, time limit & session mode |
 | 🧠 **Exam Mode** | Strict timed simulation with countdown warning under 5 minutes |
 | 🛠️ **Practice Mode** | Instant feedback, checkmarks, and full solution explanations per question |
@@ -37,7 +39,7 @@ Visit the live site directly in your browser — no installation required. All *
 | 💾 **Bookmark System** | Save tough questions and launch a custom mock from your bookmarks |
 | 🔮 **AI Paper Generator** | Use your **Google Gemini API Key** to generate fresh papers on any topic |
 | 🔀 **Option Shuffling** | Answer options are randomly shuffled every session |
-| 📱 **Fully Responsive** | Optimized for desktop, tablet, and mobile browsers |
+| 🔄 **Auto-Migration** | Automatic one-time migration of existing data from `db.json` to MongoDB Atlas on initial launch, with graceful file-based fallback |
 
 ---
 
@@ -61,11 +63,14 @@ NQTMcq/
 │   │   ├── AiPaper.jsx         # Gemini API integration + offline simulator
 │   │   └── Analytics.jsx       # SVG trend charts and bookmarks manager
 │   ├── data/
-│   │   ├── questionBank.js     # 2,157 MCQ offline database
-│   │   └── codingBank.js       # 155 DSA coding challenges with test cases
+│   │   ├── questionBank.js     # 2,157 MCQ database
+│   │   └── codingBank.js       # 189+ DSA coding challenges with test cases
+│   ├── config.js               # Global configuration module (endpoints, env flags)
 │   ├── App.jsx                 # App shell, routing, and global state
 │   ├── index.css               # Design system, glassmorphism, and styling
 │   └── main.jsx                # ReactDOM client mount point
+├── .env.example                # Example environment variables template file
+├── server.js                   # Node/Express API with MongoDB Atlas integration and compile engine
 ├── index.html                  # HTML5 template (SEO meta tags)
 ├── package.json
 └── vite.config.js              # Vite config + local code execution server middleware
@@ -73,45 +78,74 @@ NQTMcq/
 
 ---
 
+## 💾 MongoDB Integration & State Persistence
+
+The application has been upgraded with a persistent database layer:
+* **Primary Store**: MongoDB Atlas (via Mongoose ODM) stores user states, bookmarks, history, and keys.
+* **Auto-Migration**: On startup, the server automatically scans for any pre-existing local `db.json` file. If present, it migrates the local key-value data to the MongoDB Atlas cluster and renames the file to `db.json.migrated`.
+* **Graceful Fallback**: If connection to MongoDB Atlas fails, the system automatically falls back to reading and writing from a local `db.json` file, ensuring zero downtime and continuous operation.
+
+---
+
 ## 💻 Programming Prep & In-Browser Runner
 
-The newly added **Programming Prep** workspace offers a state-of-the-art competitive coding arena:
+The **Programming Prep** workspace offers a competitive coding arena:
 
-1. **Category Coverage (155 Questions)**:
-   * **Basic Logic** (Factorials, Primes, Armstrong Numbers, Palindromes)
-   * **Arrays & Strings** (Two Sum, Stock Max Profit, Trapping Rain Water, Merged Intervals)
-   * **Linked Lists** (Reverse list, intersection nodes, cycle detection)
-   * **Stacks & Queues** (Valid parentheses, Min Stack implementation)
-   * **Trees & BSTs** (Max depth, tree traversals, tree validations)
-   * **Graphs** (Number of islands, grid traversals)
-   * **Recursion & Backtracking** (Subsets, combination sums)
-   * **Dynamic Programming** (Climbing stairs, coin change, house robber)
+1. **Category Coverage (189+ Questions)**:
+   * **Basic Logic**: Factorials, Primes, Armstrong Numbers, Palindromes
+   * **Arrays & Strings**: Two Sum, Stock Max Profit, Trapping Rain Water, Merged Intervals, Anagrams, Longest Substring
+   * **Linked Lists**: Reverse list, intersection nodes, cycle detection
+   * **Stacks & Queues**: Valid parentheses, Min Stack implementation
+   * **Trees & BSTs**: Max depth, tree traversals, tree validations
+   * **Graphs**: Number of islands, grid traversals
+   * **Recursion & Backtracking**: Subsets, combination sums, N-Queens
+   * **Dynamic Programming**: Climbing stairs, coin change, LIS, LCS, Knapsack
+   * **Bit Manipulation & Math**: Hamming weight, single number, sieve of Eratosthenes
+   * **Greedy**: Gas station, activity selection
+   * **Searching**: Search in rotated array, first/last position
 
-2. **Dual Code Execution Engine**:
-   * **Vite Compile Server (Local Dev Mode)**: When running `npm run dev` locally, requests to `/api/execute` write files to `temp_exec/` and invoke system compilers (`g++`, `gcc`, `javac`, `node`, `python`) on your host machine. It outputs **real compiler logs, syntax exceptions, and runtime outputs** (such as Seg Faults or TLE).
+2. **Boilerplate Starter Templates**:
+   * Pre-defined starter structures and boilerplate code are provided for all 5 languages (**C, C++, Java, JavaScript, Python**) to parse standard input (stdin) and print standard output (stdout), ensuring you can begin implementing solutions instantly.
+
+3. **Dual Code Execution Engine**:
+   * **Server Compile Engine (Express)**: Requests to `/api/execute` write code files to `temp_exec/` and invoke system compilers/interpreters (`g++`, `gcc`, `javac`, `node`, `python`) on the host machine. Outputs **real compiler logs, syntax exceptions, and stdout/stderr**.
    * **Client-Side Syntax checking fallback**: If system compilers are missing or when deployed as a static build, the client analyzes your code locally for syntax bugs:
      * Checks for **missing semicolons** in C/C++/Java statements.
      * Checks for **missing colons `:`** on control blocks in Python.
      * Verifies **unbalanced brackets/parentheses** in all languages.
-     * Evaluates JavaScript code *for real* locally in the browser.
-     * Simulates execution of other languages via JS equivalence mapping.
+     * Evaluates JavaScript code locally in the browser.
 
 ---
 
 ## 🛠️ Local Development
 
-Ensure you have [Node.js 18+](https://nodejs.org/) installed.
+### Prerequisites
+* [Node.js 18+](https://nodejs.org/)
+* System compilers (`gcc`, `g++`, `javac`, `python3`) optional, for local code execution
+
+### Setup
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/ThePrince047/AptitudeTestPlatform.git
-# Or if local: navigate to the project directory
 cd NQTMcq
 
 # 2. Install dependencies
 npm install
 
-# 3. Start the dev server (loads local code runner automatically)
+# 3. Create .env file
+# Copy from .env.example or create manually
+cp .env.example .env
+```
+
+Define the connection variables in your `.env` file:
+```env
+PORT=5000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/nqtmcq
+```
+
+```bash
+# 4. Start frontend and backend concurrently
 npm run dev
 ```
 
@@ -119,41 +153,33 @@ Open `http://localhost:5173/` in your browser.
 
 ---
 
+## 🔌 API Endpoints
+
+The Node/Express backend exposes the following endpoints:
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/api/health` | `GET` | Health check endpoint returning status of the backend and database connection |
+| `/api/storage/:key` | `GET` | Retrieve saved data value for a given key |
+| `/api/storage/:key` | `POST` | Upsert value for a given key |
+| `/api/storage/:key` | `DELETE` | Remove data stored under a given key |
+| `/api/storage/migrate` | `POST` | Bulk migrate user data from client |
+| `/api/execute` | `POST` | Compiles/interprets and runs code using standard I/O against test cases |
+
+---
+
 ## 🚀 Deployment
 
-The project is split into a **Frontend SPA** (deployed on Netlify) and an **Express Backend API** (deployed on Render) to handle persistent storage and code execution.
-
 ### 🌐 Frontend (Netlify)
-
-The React SPA is deployed as static files.
-
-#### Option A: Drag & Drop
-```bash
-npm run build        # Generates the dist/ folder
-```
-Drag the `dist/` folder into [Netlify Dashboard](https://app.netlify.com/).
-
-#### Option B: Git Integration (Auto-Deploy)
-Connect your GitHub repository to Netlify and set:
-
-| Setting | Value |
-|---|---|
-| **Build Command** | `npm run build` |
-| **Publish Directory** | `dist` |
-| **Node Version** | `18` or `20` |
-| **Environment Variable** | `VITE_API_URL` pointing to your Render backend URL |
+Deploy the built `dist/` folder static SPA.
+Configure environment variables:
+* `VITE_API_URL`: Point to your hosted backend API URL.
 
 ### 🎛️ Backend (Render)
-
-The Express backend serves API endpoints for code compilation (`/api/execute`) and state persistence (`/api/storage`).
-
-To deploy the backend:
-1. Create a new **Web Service** on [Render](https://render.com/).
-2. Connect your GitHub repository.
-3. Configure the following settings:
-   - **Environment**: `Node`
-   - **Build Command**: `npm install`
-   - **Start Command**: `node server.js`
+Deploy the Express service.
+Configure environment variables:
+* `MONGO_URI`: MongoDB connection string.
+* `PORT`: Set to standard production port.
 
 ---
 
@@ -162,13 +188,15 @@ To deploy the backend:
 | Layer | Technology |
 |---|---|
 | **Bundler** | Vite 8 |
-| **UI Library** | React 19 (Functional components & hooks) |
+| **UI Library** | React 19 |
 | **Editor Canvas** | CodeMirror 6 (`@uiw/react-codemirror`) |
+| **Database** | MongoDB Atlas (via Mongoose ODM) |
+| **Backend Framework** | Node.js + Express |
 | **Styling** | Vanilla CSS (CSS Variables, Glassmorphism, Grid) |
 | **Icons** | Lucide React |
 | **Fonts** | Plus Jakarta Sans, JetBrains Mono (Google Fonts) |
 | **AI Integration** | Google Gemini API (gemini-2.5-flash) |
-| **Hosting** | Frontend: Netlify (Static SPA) <br> Backend: Render (Express API) |
+| **Hosting** | Frontend: Netlify <br> Backend: Render |
 
 ---
 
