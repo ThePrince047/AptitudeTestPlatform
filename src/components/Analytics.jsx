@@ -22,12 +22,14 @@ export default function Analytics({
   const catStats = {};
   CATEGORY_CONFIG.slice(1).forEach((c) => { catStats[c.id] = { correct: 0, total: 0 }; });
   history.forEach((h) => {
-    h.questions.forEach((q, i) => {
-      if (catStats[q.cat]) {
-        catStats[q.cat].total += 1;
-        if (h.answers[i] === q.ans) catStats[q.cat].correct += 1;
-      }
-    });
+    if (h.questions && h.answers) {
+      h.questions.forEach((q, i) => {
+        if (catStats[q.cat]) {
+          catStats[q.cat].total += 1;
+          if (h.answers[i] === q.ans) catStats[q.cat].correct += 1;
+        }
+      });
+    }
   });
   const getCatConfig = (id) => CATEGORY_CONFIG.find((c) => c.id === id) || CATEGORY_CONFIG[0];
 

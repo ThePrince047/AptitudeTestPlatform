@@ -37,7 +37,7 @@ export default function App() {
           let score = h.score;
           let pct = h.pct;
           if (score === undefined || score === null || isNaN(pct) || pct === null) {
-            score = h.questions ? h.questions.filter((q, idx) => h.answers[idx] === q.ans).length : 0;
+            score = h.questions && h.answers ? h.questions.filter((q, idx) => h.answers && h.answers[idx] === q.ans).length : 0;
             pct = h.questions && h.questions.length ? Math.round((score / h.questions.length) * 100) : 0;
           }
           return { ...h, score, pct };

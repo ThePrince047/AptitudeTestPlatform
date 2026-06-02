@@ -242,7 +242,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
                 setApiKey(e.target.value);
                 setConnectionStatus("");
               }}
-              className="custom-select"
+              className="custom-input"
               style={{ paddingLeft: 40, paddingRight: 40 }}
             />
             <Icons.Key size={15} style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--t3)" }} />
@@ -296,7 +296,7 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
             max="150" 
             value={numQuestions}
             onChange={(e) => setNumQuestions(Math.max(5, Math.min(150, parseInt(e.target.value) || 10)))}
-            className="settings-input"
+            className="custom-input"
             style={{ width: "100%" }}
           />
           <div style={{ fontSize: "11px", color: "var(--text-muted)", marginTop: "6px" }}>

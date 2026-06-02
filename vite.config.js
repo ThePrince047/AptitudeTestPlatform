@@ -19,6 +19,11 @@ const codeExecutorPlugin = () => ({
             const tempDir = path.join(process.cwd(), 'temp_exec');
             if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir);
 
+            // Generate unique subdirectory for this specific run request
+            const runId = `run_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
+            const runDir = path.join(tempDir, runId);
+            fs.mkdirSync(runDir, { recursive: true });
+
             const fileExtensions = {
               python: 'py',
               cpp: 'cpp',
@@ -28,13 +33,12 @@ const codeExecutorPlugin = () => ({
             };
 
             const ext = fileExtensions[language] || 'txt';
-            const baseName = `temp_${Date.now()}`;
-            const fileName = language === 'java' ? 'Main.java' : `${baseName}.${ext}`;
-            const filePath = path.join(tempDir, fileName);
+            const fileName = language === 'java' ? 'Main.java' : `solution.${ext}`;
+            const filePath = path.join(runDir, fileName);
 
             fs.writeFileSync(filePath, code);
 
-            const stdinPath = path.join(tempDir, `${baseName}_stdin.txt`);
+            const stdinPath = path.join(runDir, `stdin.txt`);
             fs.writeFileSync(stdinPath, stdin || '');
 
             let command = '';
@@ -45,28 +49,25 @@ const codeExecutorPlugin = () => ({
             } else if (language === 'javascript') {
               command = `node "${filePath}" < "${stdinPath}"`;
             } else if (language === 'cpp') {
-              exePath = path.join(tempDir, `${baseName}.exe`);
+              exePath = path.join(runDir, `solution.exe`);
               command = `g++ "${filePath}" -o "${exePath}" && "${exePath}" < "${stdinPath}"`;
             } else if (language === 'c') {
-              exePath = path.join(tempDir, `${baseName}.exe`);
+              exePath = path.join(runDir, `solution.exe`);
               command = `gcc "${filePath}" -o "${exePath}" && "${exePath}" < "${stdinPath}"`;
             } else if (language === 'java') {
-              command = `javac "${filePath}" && java -cp "${tempDir}" Main < "${stdinPath}"`;
+              command = `javac "${filePath}" && java -cp "${runDir}" Main < "${stdinPath}"`;
             } else {
+              try { fs.rmSync(runDir, { recursive: true, force: true }); } catch (cleanupErr) {}
               res.writeHead(400, { 'Content-Type': 'application/json' });
               res.end(JSON.stringify({ error: 'Unsupported language' }));
               return;
             }
 
             exec(command, { timeout: 5000 }, (error, stdout, stderr) => {
-              // Clean up files
+              // Clean up run directory completely
               try {
-                if (fs.existsSync(filePath)) fs.unlinkSync(filePath);
-                if (fs.existsSync(stdinPath)) fs.unlinkSync(stdinPath);
-                if (exePath && fs.existsSync(exePath)) fs.unlinkSync(exePath);
-                if (language === 'java') {
-                  const classFile = path.join(tempDir, 'Main.class');
-                  if (fs.existsSync(classFile)) fs.unlinkSync(classFile);
+                if (fs.existsSync(runDir)) {
+                  fs.rmSync(runDir, { recursive: true, force: true });
                 }
               } catch (cleanupErr) {
                 console.error('Cleanup error:', cleanupErr);
