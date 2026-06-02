@@ -43,11 +43,22 @@ export default function CodingPrep({ onNavigate }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const getAuthHeaders = (additional = {}) => {
+    const token = localStorage.getItem("nqt_auth_token");
+    const headers = { ...additional };
+    if (token) {
+      headers["Authorization"] = `Bearer ${token}`;
+    }
+    return headers;
+  };
+
   // Load solved IDs on mount
   useEffect(() => {
     const loadSolvedIds = async () => {
       try {
-        const res = await fetch(`${API_BASE}/api/storage/coding_solved_ids`);
+        const res = await fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
+          headers: getAuthHeaders()
+        });
         if (res.ok) {
           const data = await res.json();
           if (data && data.value) setSolvedIds(data.value);
@@ -150,7 +161,9 @@ export default function CodingPrep({ onNavigate }) {
 
     const loadCode = async () => {
       try {
-        const res = await fetch(`${API_BASE}/api/storage/${key}`);
+        const res = await fetch(`${API_BASE}/api/storage/${key}`, {
+          headers: getAuthHeaders()
+        });
         if (res.ok && active) {
           const data = await res.json();
           if (data && data.value) {
@@ -195,7 +208,7 @@ export default function CodingPrep({ onNavigate }) {
     const delayDebounceFn = setTimeout(() => {
       fetch(`${API_BASE}/api/storage/${key}`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: getAuthHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ value: editorCode })
       }).catch(e => console.error("Error auto-saving draft", e));
     }, 1000);
@@ -217,7 +230,8 @@ export default function CodingPrep({ onNavigate }) {
       setEditorCode(starter);
       const key = `coding_code_${selectedId}_${codeLanguage}`;
       fetch(`${API_BASE}/api/storage/${key}`, {
-        method: "DELETE"
+        method: "DELETE",
+        headers: getAuthHeaders()
       }).catch(e => console.error("Failed to delete draft on server", e));
     }
   };
@@ -393,9 +407,9 @@ export default function CodingPrep({ onNavigate }) {
     try {
       const response = await fetch(`${API_BASE}/api/execute`, {
         method: "POST",
-        headers: {
+        headers: getAuthHeaders({
           "Content-Type": "application/json"
-        },
+        }),
         body: JSON.stringify({ code, language: lang, stdin })
       });
 
@@ -486,7 +500,7 @@ export default function CodingPrep({ onNavigate }) {
         setSolvedIds(nextSolvedIds);
         fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: getAuthHeaders({ "Content-Type": "application/json" }),
           body: JSON.stringify({ value: nextSolvedIds })
         }).catch(e => console.error("Failed to save solved IDs to server", e));
       }
@@ -504,7 +518,7 @@ export default function CodingPrep({ onNavigate }) {
       const next = prev.includes(id) ? prev.filter((solvedId) => solvedId !== id) : [...prev, id];
       fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: getAuthHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ value: next })
       }).catch(e => console.error("Failed to save solved IDs to server", e));
       return next;

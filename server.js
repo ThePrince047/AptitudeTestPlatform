@@ -6,6 +6,7 @@ import path from 'path';
 import { exec } from 'child_process';
 import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
+import crypto from 'crypto';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -17,14 +18,55 @@ const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/nqtmcq';
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
-// ─── MongoDB Schema & Model ─────────────────────────────────────────────────
-const StorageSchema = new mongoose.Schema(
+// ─── AUTHENTICATION HELPERS (NATIVE CRYPTO HS256 JWT) ─────────────────────────
+function hashPassword(password) {
+  return crypto.createHash('sha256').update(password + 'nqt-salt-key').digest('hex');
+}
+
+function generateToken(payload) {
+  const header = Buffer.from(JSON.stringify({ alg: 'HS256', typ: 'JWT' })).toString('base64url');
+  const body = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const secret = process.env.JWT_SECRET || 'nqt-secret-token-key-12345';
+  const signature = crypto.createHmac('sha256', secret)
+    .update(`${header}.${body}`)
+    .digest('base64url');
+  return `${header}.${body}.${signature}`;
+}
+
+function verifyToken(token) {
+  try {
+    const [header, body, signature] = token.split('.');
+    const secret = process.env.JWT_SECRET || 'nqt-secret-token-key-12345';
+    const expectedSignature = crypto.createHmac('sha256', secret)
+      .update(`${header}.${body}`)
+      .digest('base64url');
+    if (signature !== expectedSignature) return null;
+    return JSON.parse(Buffer.from(body, 'base64url').toString('utf8'));
+  } catch (e) {
+    return null;
+  }
+}
+
+// ─── MongoDB Schemas & Models ────────────────────────────────────────────────
+const UserSchema = new mongoose.Schema(
   {
-    key:   { type: String, required: true, unique: true, index: true },
-    value: { type: mongoose.Schema.Types.Mixed }
+    username: { type: String, required: true, unique: true, index: true, lowercase: true, trim: true },
+    password: { type: String, required: true }
   },
   { timestamps: true }
 );
+const User = mongoose.model('User', UserSchema);
+
+const StorageSchema = new mongoose.Schema(
+  {
+    userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true, index: true },
+    key:    { type: String, required: true, index: true },
+    value:  { type: mongoose.Schema.Types.Mixed }
+  },
+  { timestamps: true }
+);
+// Ensure uniqueness per user and key
+StorageSchema.index({ userId: 1, key: 1 }, { unique: true });
 const Storage = mongoose.model('Storage', StorageSchema);
 
 // ─── Connect to MongoDB ──────────────────────────────────────────────────────
@@ -37,50 +79,10 @@ async function connectDB() {
     });
     dbConnected = true;
     console.log('✅ Connected to MongoDB Atlas');
-    await migrateFromJsonFile();
   } catch (err) {
     console.error('❌ MongoDB connection failed:', err.message);
     console.warn('⚠️  Falling back to local db.json file for storage.');
     dbConnected = false;
-  }
-}
-
-// ─── One-time migration from db.json ────────────────────────────────────────
-async function migrateFromJsonFile() {
-  const DB_FILE = path.join(process.cwd(), 'db.json');
-  if (!fs.existsSync(DB_FILE)) return;
-
-  try {
-    const raw = fs.readFileSync(DB_FILE, 'utf8').trim();
-    if (!raw || raw === '{}' || raw === '') return;
-
-    const data = JSON.parse(raw);
-    const keys = Object.keys(data);
-    if (keys.length === 0) return;
-
-    // Only migrate if MongoDB is empty
-    const count = await Storage.countDocuments();
-    if (count > 0) {
-      console.log('ℹ️  MongoDB already has data, skipping db.json migration.');
-      return;
-    }
-
-    let migrated = 0;
-    for (const [key, value] of Object.entries(data)) {
-      if (value !== undefined && value !== null) {
-        await Storage.findOneAndUpdate(
-          { key },
-          { key, value },
-          { upsert: true, new: true }
-        );
-        migrated++;
-      }
-    }
-    console.log(`✅ Migrated ${migrated} keys from db.json to MongoDB.`);
-    // Rename old file so we don't migrate again
-    fs.renameSync(DB_FILE, DB_FILE + '.migrated');
-  } catch (e) {
-    console.error('Migration error:', e.message);
   }
 }
 
@@ -90,7 +92,8 @@ const DB_FILE = path.join(process.cwd(), 'db.json');
 function readDbFile() {
   try {
     if (fs.existsSync(DB_FILE)) {
-      const data = fs.readFileSync(DB_FILE, 'utf8');
+      const data = fs.readFileSync(DB_FILE, 'utf8').trim();
+      if (!data) return {};
       return JSON.parse(data);
     }
   } catch (e) {
@@ -107,91 +110,242 @@ function writeDbFile(data) {
   }
 }
 
-// ─── Storage Helpers (MongoDB primary, JSON fallback) ───────────────────────
-async function storageGet(key) {
-  if (dbConnected) {
-    const doc = await Storage.findOne({ key });
-    return doc ? doc.value : null;
-  }
+// Local fallback user-scoped helpers
+function fallbackRegister(username, password) {
   const db = readDbFile();
-  return db[key] !== undefined ? db[key] : null;
+  if (!db._users) db._users = [];
+  const normalized = username.toLowerCase().trim();
+  if (db._users.some(u => u.username === normalized)) {
+    throw new Error('Username already exists');
+  }
+  const userId = `local_user_${Date.now()}`;
+  const newUser = { id: userId, username: normalized, password: hashPassword(password) };
+  db._users.push(newUser);
+  writeDbFile(db);
+  return newUser;
 }
 
-async function storageSet(key, value) {
-  if (dbConnected) {
-    await Storage.findOneAndUpdate(
-      { key },
-      { key, value },
-      { upsert: true, new: true }
-    );
-    return;
-  }
+function fallbackLogin(username, password) {
   const db = readDbFile();
-  db[key] = value;
+  if (!db._users) return null;
+  const normalized = username.toLowerCase().trim();
+  const user = db._users.find(u => u.username === normalized);
+  if (!user) return null;
+  if (user.password !== hashPassword(password)) return null;
+  return user;
+}
+
+function fallbackGet(userId, key) {
+  const db = readDbFile();
+  const compositeKey = `_storage_${userId}_${key}`;
+  return db[compositeKey] !== undefined ? db[compositeKey] : null;
+}
+
+function fallbackSet(userId, key, value) {
+  const db = readDbFile();
+  const compositeKey = `_storage_${userId}_${key}`;
+  db[compositeKey] = value;
   writeDbFile(db);
 }
 
-async function storageDelete(key) {
-  if (dbConnected) {
-    await Storage.deleteOne({ key });
-    return;
-  }
+function fallbackDelete(userId, key) {
   const db = readDbFile();
-  delete db[key];
+  const compositeKey = `_storage_${userId}_${key}`;
+  delete db[compositeKey];
   writeDbFile(db);
 }
 
-// ─── 1. Storage API Endpoints ────────────────────────────────────────────────
-app.get('/api/storage/:key', async (req, res) => {
+// ─── AUTHENTICATION MIDDLEWARE ───────────────────────────────────────────────
+const authMiddleware = (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return res.status(401).json({ error: 'Unauthorized: No token provided' });
+    }
+    const token = authHeader.split(' ')[1];
+    const decoded = verifyToken(token);
+    if (!decoded || !decoded.userId) {
+      return res.status(401).json({ error: 'Unauthorized: Invalid token' });
+    }
+    req.userId = decoded.userId;
+    req.username = decoded.username;
+    next();
+  } catch (err) {
+    res.status(401).json({ error: 'Unauthorized: ' + err.message });
+  }
+};
+
+// ─── 1. AUTHENTICATION ENDPOINTS ──────────────────────────────────────────────
+app.post('/api/auth/register', async (req, res) => {
+  try {
+    const { username, password, geminiApiKey } = req.body;
+    if (!username || !password) {
+      return res.status(400).json({ error: 'Username and password are required' });
+    }
+    const normalizedUsername = username.toLowerCase().trim();
+    if (normalizedUsername.length < 3) {
+      return res.status(400).json({ error: 'Username must be at least 3 characters long' });
+    }
+    if (password.length < 4) {
+      return res.status(400).json({ error: 'Password must be at least 4 characters long' });
+    }
+
+    let user;
+    if (dbConnected) {
+      const existing = await User.findOne({ username: normalizedUsername });
+      if (existing) {
+        return res.status(400).json({ error: 'Username already exists' });
+      }
+      user = new User({ username: normalizedUsername, password: hashPassword(password) });
+      await user.save();
+    } else {
+      try {
+        const localUser = fallbackRegister(normalizedUsername, password);
+        user = { _id: localUser.id, username: localUser.username };
+      } catch (err) {
+        return res.status(400).json({ error: err.message });
+      }
+    }
+
+    const userId = user._id.toString();
+    const token = generateToken({ userId, username: normalizedUsername });
+
+    // Store Gemini API key once in storage if provided
+    if (geminiApiKey && geminiApiKey.trim()) {
+      if (dbConnected) {
+        await Storage.findOneAndUpdate(
+          { userId, key: 'gemini_api_key' },
+          { userId, key: 'gemini_api_key', value: geminiApiKey.trim() },
+          { upsert: true }
+        );
+      } else {
+        fallbackSet(userId, 'gemini_api_key', geminiApiKey.trim());
+      }
+    }
+
+    res.json({ success: true, token, user: { id: userId, username: normalizedUsername } });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/auth/login', async (req, res) => {
+  try {
+    const { username, password } = req.body;
+    if (!username || !password) {
+      return res.status(400).json({ error: 'Username and password are required' });
+    }
+    const normalizedUsername = username.toLowerCase().trim();
+
+    let userId;
+    if (dbConnected) {
+      const user = await User.findOne({ username: normalizedUsername });
+      if (!user || user.password !== hashPassword(password)) {
+        return res.status(400).json({ error: 'Invalid username or password' });
+      }
+      userId = user._id.toString();
+    } else {
+      const localUser = fallbackLogin(normalizedUsername, password);
+      if (!localUser) {
+        return res.status(400).json({ error: 'Invalid username or password' });
+      }
+      userId = localUser.id;
+    }
+
+    const token = generateToken({ userId, username: normalizedUsername });
+    res.json({ success: true, token, user: { id: userId, username: normalizedUsername } });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.get('/api/auth/me', authMiddleware, (req, res) => {
+  res.json({ user: { id: req.userId, username: req.username } });
+});
+
+// ─── 2. STORAGE API ENDPOINTS (USER-SCOPED) ──────────────────────────────────
+app.get('/api/storage/:key', authMiddleware, async (req, res) => {
   try {
     const { key } = req.params;
-    const value = await storageGet(key);
+    const userId = req.userId;
+    
+    let value;
+    if (dbConnected) {
+      const doc = await Storage.findOne({ userId, key });
+      value = doc ? doc.value : null;
+    } else {
+      value = fallbackGet(userId, key);
+    }
     res.json({ key, value: value !== undefined ? value : null });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-app.post('/api/storage/:key', async (req, res) => {
+app.post('/api/storage/:key', authMiddleware, async (req, res) => {
   try {
     const { key } = req.params;
     const { value } = req.body;
-    await storageSet(key, value);
+    const userId = req.userId;
+
+    if (dbConnected) {
+      await Storage.findOneAndUpdate(
+        { userId, key },
+        { userId, key, value },
+        { upsert: true, new: true }
+      );
+    } else {
+      fallbackSet(userId, key, value);
+    }
     res.json({ success: true, key, value });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-app.delete('/api/storage/:key', async (req, res) => {
+app.delete('/api/storage/:key', authMiddleware, async (req, res) => {
   try {
     const { key } = req.params;
-    await storageDelete(key);
+    const userId = req.userId;
+    
+    if (dbConnected) {
+      await Storage.deleteOne({ userId, key });
+    } else {
+      fallbackDelete(userId, key);
+    }
     res.json({ success: true, key });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-app.post('/api/storage/migrate', async (req, res) => {
+app.post('/api/storage/migrate', authMiddleware, async (req, res) => {
   try {
     const migrationData = req.body;
+    const userId = req.userId;
     let migratedCount = 0;
 
     for (const [key, value] of Object.entries(migrationData)) {
       if (value !== undefined && value !== null) {
-        await storageSet(key, value);
+        if (dbConnected) {
+          await Storage.findOneAndUpdate(
+            { userId, key },
+            { userId, key, value },
+            { upsert: true }
+          );
+        } else {
+          fallbackSet(userId, key, value);
+        }
         migratedCount++;
       }
     }
-
     res.json({ success: true, migratedCount });
   } catch (err) {
     res.status(500).json({ error: 'Migration failed: ' + err.message });
   }
 });
 
-// ─── 2. DB Health Check Endpoint ─────────────────────────────────────────────
+// ─── 3. DB Health Check Endpoint ─────────────────────────────────────────────
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
@@ -200,8 +354,8 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// ─── 3. Code Execution API Endpoint ──────────────────────────────────────────
-app.post('/api/execute', (req, res) => {
+// ─── 4. Code Execution API Endpoint (SECURED WITH AUTH) ──────────────────────
+app.post('/api/execute', authMiddleware, (req, res) => {
   try {
     const { code, language, stdin } = req.body;
 
@@ -276,7 +430,7 @@ app.post('/api/execute', (req, res) => {
   }
 });
 
-// ─── 4. Serve Static Files (Production) ──────────────────────────────────────
+// ─── 5. Serve Static Files (Production) ──────────────────────────────────────
 const distPath = path.join(process.cwd(), 'dist');
 if (fs.existsSync(distPath)) {
   app.use(express.static(distPath));

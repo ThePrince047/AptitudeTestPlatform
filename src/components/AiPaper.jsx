@@ -17,10 +17,21 @@ export default function AiPaper({
   const [showKey, setShowKey] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState(""); // "", "testing", "success", "failed"
 
+  const getAuthHeaders = (additional = {}) => {
+    const token = localStorage.getItem("nqt_auth_token");
+    const headers = { ...additional };
+    if (token) {
+      headers["Authorization"] = `Bearer ${token}`;
+    }
+    return headers;
+  };
+
   useEffect(() => {
     const loadApiKey = async () => {
       try {
-        const res = await fetch(`${API_BASE}/api/storage/gemini_api_key`);
+        const res = await fetch(`${API_BASE}/api/storage/gemini_api_key`, {
+          headers: getAuthHeaders()
+        });
         if (res.ok) {
           const data = await res.json();
           if (data && data.value) setApiKey(data.value);
@@ -124,12 +135,13 @@ The "ans" field must be the 0-based index (0, 1, 2, or 3) of the correct option 
     if (saveKey) {
       fetch(`${API_BASE}/api/storage/gemini_api_key`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: getAuthHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ value: apiKey.trim() })
       }).catch(e => console.error("Failed to save API key to server", e));
     } else {
       fetch(`${API_BASE}/api/storage/gemini_api_key`, {
-        method: "DELETE"
+        method: "DELETE",
+        headers: getAuthHeaders()
       }).catch(e => console.error("Failed to remove API key from server", e));
     }
 

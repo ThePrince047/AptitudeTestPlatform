@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as Icons from "lucide-react";
 import { QB } from "./data/questionBank";
 import { API_BASE } from "./config";
+import { CODING_BANK } from "./data/codingBank";
 
 import Dashboard from "./components/Dashboard";
 import TestConfig from "./components/TestConfig";
@@ -10,6 +11,7 @@ import ResultsView from "./components/ResultsView";
 import AiPaper from "./components/AiPaper";
 import Analytics from "./components/Analytics";
 import CodingPrep from "./components/CodingPrep";
+import Auth from "./components/Auth";
 
 const NAV = [
   { id: "dashboard", label: "Dashboard",      icon: "LayoutDashboard" },
@@ -19,6 +21,16 @@ const NAV = [
 ];
 
 export default function App() {
+  const [token, setToken] = useState(localStorage.getItem("nqt_auth_token") || null);
+  const [user, setUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem("nqt_auth_user");
+      return saved ? JSON.parse(saved) : null;
+    } catch (e) {
+      return null;
+    }
+  });
+
   const [screen, setScreen] = useState("dashboard");
   const [history, setHistory] = useState([]);
   const [bookmarks, setBookmarks] = useState([]);
@@ -29,7 +41,79 @@ export default function App() {
   const [hasApiKey, setHasApiKey] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const getAuthHeaders = (additional = {}) => {
+    const headers = { ...additional };
+    if (token) {
+      headers["Authorization"] = `Bearer ${token}`;
+    }
+    return headers;
+  };
+
+  const handleAuthSuccess = (newToken, newUser) => {
+    setToken(newToken);
+    setUser(newUser);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("nqt_auth_token");
+    localStorage.removeItem("nqt_auth_user");
+    setToken(null);
+    setUser(null);
+    setHistory([]);
+    setBookmarks([]);
+    setHasApiKey(false);
+    setScreen("dashboard");
+  };
+
+  const compressHistory = (historyList) => {
+    return historyList.map(session => {
+      return {
+        ...session,
+        questions: (session.questions || []).map(q => {
+          const isAi = q && typeof q.id === "string" && (q.id.startsWith("ai_") || q.id.startsWith("local_ai_"));
+          if (isAi) {
+            return {
+              id: q.id,
+              q: q.q,
+              opts: q.opts,
+              ans: q.ans,
+              sol: q.sol,
+              cat: q.cat
+            };
+          }
+          return { id: q.id };
+        })
+      };
+    }).slice(-30); // Cap history at last 30 test runs to protect MongoDB storage (512MB limit)
+  };
+
   useEffect(() => {
+    if (!token) return;
+
+    const findQuestionById = (id) => {
+      if (typeof id === "number" || !isNaN(id)) {
+        return QB.find(q => q.id === Number(id));
+      }
+      if (typeof id === "string" && id.startsWith("code_")) {
+        return CODING_BANK.find(q => q.id === id);
+      }
+      return null;
+    };
+
+    const reconstructHistory = (historyData) => {
+      if (!Array.isArray(historyData)) return [];
+      return historyData.map(session => {
+        const reconstructedQuestions = (session.questions || []).map(q => {
+          if (q && q.id && !q.q) {
+            const original = findQuestionById(q.id);
+            return original ? original : q;
+          }
+          return q;
+        });
+        return { ...session, questions: reconstructedQuestions };
+      });
+    };
+
     const migrateAndLoadData = async () => {
       // 1. Check for legacy localStorage data
       const legacyHistory = localStorage.getItem("nqt_history");
@@ -57,7 +141,7 @@ export default function App() {
         try {
           const migrateRes = await fetch(`${API_BASE}/api/storage/migrate`, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: getAuthHeaders({ "Content-Type": "application/json" }),
             body: JSON.stringify(migrationPayload)
           });
           if (migrateRes.ok) {
@@ -74,7 +158,9 @@ export default function App() {
 
       // 2. Load data from Server
       try {
-        const historyRes = await fetch(`${API_BASE}/api/storage/nqt_history`);
+        const historyRes = await fetch(`${API_BASE}/api/storage/nqt_history`, {
+          headers: getAuthHeaders()
+        });
         if (historyRes.ok) {
           const data = await historyRes.json();
           if (data && data.value) {
@@ -87,7 +173,7 @@ export default function App() {
               }
               return { ...h, score, pct };
             });
-            setHistory(healed);
+            setHistory(reconstructHistory(healed));
           }
         }
       } catch (e) {
@@ -95,7 +181,9 @@ export default function App() {
       }
 
       try {
-        const bookmarksRes = await fetch(`${API_BASE}/api/storage/nqt_bookmarks`);
+        const bookmarksRes = await fetch(`${API_BASE}/api/storage/nqt_bookmarks`, {
+          headers: getAuthHeaders()
+        });
         if (bookmarksRes.ok) {
           const data = await bookmarksRes.json();
           if (data && data.value) {
@@ -107,7 +195,9 @@ export default function App() {
       }
 
       try {
-        const keyRes = await fetch(`${API_BASE}/api/storage/gemini_api_key`);
+        const keyRes = await fetch(`${API_BASE}/api/storage/gemini_api_key`, {
+          headers: getAuthHeaders()
+        });
         if (keyRes.ok) {
           const data = await keyRes.json();
           setHasApiKey(!!(data && data.value));
@@ -118,14 +208,14 @@ export default function App() {
     };
 
     migrateAndLoadData();
-  }, [screen]);
+  }, [screen, token]);
 
   const handleToggleBookmark = (qId) => {
     setBookmarks(prev => {
       const next = prev.includes(qId) ? prev.filter(id => id !== qId) : [...prev, qId];
       fetch(`${API_BASE}/api/storage/nqt_bookmarks`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: getAuthHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ value: next })
       }).catch(err => console.error("Failed to save bookmarks to server", err));
       return next;
@@ -201,8 +291,8 @@ export default function App() {
     setHistory(nextHistory);
     fetch(`${API_BASE}/api/storage/nqt_history`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ value: nextHistory })
+      headers: getAuthHeaders({ "Content-Type": "application/json" }),
+      body: JSON.stringify({ value: compressHistory(nextHistory) })
     }).catch(err => console.error("Failed to save history to server", err));
 
     setLatestResult({ ...resultPayload, score, pct });
@@ -230,17 +320,23 @@ export default function App() {
     setHistory(nextHistory);
     fetch(`${API_BASE}/api/storage/nqt_history`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ value: nextHistory })
+      headers: getAuthHeaders({ "Content-Type": "application/json" }),
+      body: JSON.stringify({ value: compressHistory(nextHistory) })
     }).catch(err => console.error("Failed to save history to server", err));
   };
 
   const handleClearHistory = () => {
     setHistory([]);
     fetch(`${API_BASE}/api/storage/nqt_history`, {
-      method: "DELETE"
+      method: "DELETE",
+      headers: getAuthHeaders()
     }).catch(err => console.error("Failed to clear history on server", err));
   };
+
+  // Block rendering with premium Auth screen if user is not authenticated
+  if (!token) {
+    return <Auth onAuthSuccess={handleAuthSuccess} />;
+  }
 
   if (screen === "test") {
     return (
@@ -291,7 +387,36 @@ export default function App() {
           })}
         </ul>
 
-        <div className="sidebar-footer">
+        {/* Sidebar Footer with Logged in user info & logout */}
+        <div className="sidebar-footer" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          {user && (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 8, padding: "4px 0", borderBottom: "1px solid var(--border)", paddingBottom: 10 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, minWidth: 0, flex: 1 }}>
+                <div style={{
+                  width: 24, height: 24, borderRadius: "50%", background: "var(--accent-soft)", color: "var(--accent-text)",
+                  display: "flex", alignItems: "center", justifyContent: "center", fontSize: 11, fontWeight: 700, textTransform: "uppercase", flexShrink: 0
+                }}>
+                  {user.username ? user.username.charAt(0) : "U"}
+                </div>
+                <span style={{ fontSize: 13, fontWeight: 600, color: "var(--t1)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                  {user.username}
+                </span>
+              </div>
+              <button 
+                onClick={handleLogout} 
+                title="Log Out"
+                style={{
+                  background: "none", border: "none", color: "var(--t3)", cursor: "pointer", 
+                  padding: 4, borderRadius: 4, display: "flex", alignItems: "center"
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = "var(--red)"}
+                onMouseLeave={(e) => e.currentTarget.style.color = "var(--t3)"}
+              >
+                <Icons.LogOut size={14} />
+              </button>
+            </div>
+          )}
+
           <div className="api-key-indicator">
             <span style={{
               width: 7, height: 7, borderRadius: "50%", flexShrink: 0,

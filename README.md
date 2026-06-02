@@ -26,6 +26,7 @@ Visit the live site directly in your browser — no installation required. All *
 
 | Feature | Description |
 |---|---|
+| 🔒 **User Authentication** | Secure signup and login. User data (bookmarks, history, API key, solved status) is isolated and persistent for each individual user profile. |
 | 📊 **Dashboard** | Track progress, average scores, overall accuracy, saved bookmarks, and coding solved states |
 | 🗄️ **Persistent Storage** | Full **MongoDB Atlas** integration. Your test history, custom bookmarks, solved coding challenges, and AI configurations are safely persisted across sessions and devices. |
 | 📚 **Offline MCQ Bank** | **2,157 unique questions** across 17 topics with step-by-step solutions |
@@ -39,7 +40,8 @@ Visit the live site directly in your browser — no installation required. All *
 | 💾 **Bookmark System** | Save tough questions and launch a custom mock from your bookmarks |
 | 🔮 **AI Paper Generator** | Use your **Google Gemini API Key** to generate fresh papers on any topic |
 | 🔀 **Option Shuffling** | Answer options are randomly shuffled every session |
-| 🔄 **Auto-Migration** | Automatic one-time migration of existing data from `db.json` to MongoDB Atlas on initial launch, with graceful file-based fallback |
+| 🔄 **Auto-Migration** | Automatic client-side migration of existing legacy data from browser `localStorage` to the database scope upon registration / first login |
+| 💾 **Storage Guard** | Smart data optimization: question text is stripped from static test history logs before saving, keeping DB size minimal (safely under the free 512MB limit) |
 
 ---
 
@@ -78,12 +80,15 @@ NQTMcq/
 
 ---
 
-## 💾 MongoDB Integration & State Persistence
+## 💾 MongoDB Integration, Security & State Persistence
 
-The application has been upgraded with a persistent database layer:
+The application has been upgraded with a secure and persistent database layer:
 * **Primary Store**: MongoDB Atlas (via Mongoose ODM) stores user states, bookmarks, history, and keys.
-* **Auto-Migration**: On startup, the server automatically scans for any pre-existing local `db.json` file. If present, it migrates the local key-value data to the MongoDB Atlas cluster and renames the file to `db.json.migrated`.
-* **Graceful Fallback**: If connection to MongoDB Atlas fails, the system automatically falls back to reading and writing from a local `db.json` file, ensuring zero downtime and continuous operation.
+* **Authentication Security**: Standardized password hashing and token-based state authorization (using standard HS256 JWT tokens). Scopes all key-value operations to authenticated users.
+* **Free Tier Quota Optimization**:
+  * **Question Stripping**: Standard aptitude and DSA questions in user history are saved as references using only their `id`. Full text is stripped to reduce DB size. The client dynamically reconstructs full question data from static local banks upon loading history.
+  * **History Queue Capping**: Only the last 30 mock/practice tests are retained per user, protecting DB memory from boundless growth.
+* **Graceful Fallback**: If connection to MongoDB Atlas fails, the system automatically falls back to local `db.json` file storage, running multi-user local session databases so that offline test prep is unimpeded.
 
 ---
 
@@ -157,14 +162,24 @@ Open `http://localhost:5173/` in your browser.
 
 The Node/Express backend exposes the following endpoints:
 
+### Authentication API (Public)
 | Endpoint | Method | Description |
 |---|---|---|
-| `/api/health` | `GET` | Health check endpoint returning status of the backend and database connection |
-| `/api/storage/:key` | `GET` | Retrieve saved data value for a given key |
-| `/api/storage/:key` | `POST` | Upsert value for a given key |
-| `/api/storage/:key` | `DELETE` | Remove data stored under a given key |
-| `/api/storage/migrate` | `POST` | Bulk migrate user data from client |
+| `/api/auth/register` | `POST` | Register a new user profile with a hashed password, and optionally store their Gemini API key at once |
+| `/api/auth/login` | `POST` | Verify credentials and return an authentication token |
+
+### Storage & Execution API (Requires JWT Authorization)
+All calls to these endpoints must include the `Authorization: Bearer <token>` header:
+
+| Endpoint | Method | Description |
+|---|---|---|
+| `/api/auth/me` | `GET` | Fetch credentials context of the currently active token |
+| `/api/storage/:key` | `GET` | Retrieve saved user-scoped data value for a given key |
+| `/api/storage/:key` | `POST` | Upsert user-scoped value for a given key |
+| `/api/storage/:key` | `DELETE` | Remove user-scoped data stored under a given key |
+| `/api/storage/migrate` | `POST` | Bulk migrate user data from client `localStorage` to the database scope |
 | `/api/execute` | `POST` | Compiles/interprets and runs code using standard I/O against test cases |
+| `/api/health` | `GET` | (Public) Health check endpoint returning status of the backend and database connection |
 
 ---
 
