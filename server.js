@@ -169,7 +169,7 @@ if (fs.existsSync(distPath)) {
   app.use(express.static(distPath));
   
   // Wildcard route to serve index.html for React Router / SPA fallback
-  app.get('*', (req, res, next) => {
+  app.use((req, res, next) => {
     if (req.path.startsWith('/api')) {
       return next();
     }
