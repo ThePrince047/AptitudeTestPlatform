@@ -1474,6 +1474,140 @@ const SEARCH_QUESTIONS = [
   }
 ];
 
+// ─── Printing Pattern & Matrix Questions ─────────────────────────────────────
+const PRINTING_PATTERN_QUESTIONS = [
+  {
+    id: "code_p_star_pyramid", title: "Star Pyramid Pattern", difficulty: "Easy", category: CAT.BASIC,
+    description: "Write a program that reads an integer N and prints a centered pyramid of stars of height N.\n\nInput format:\nLine 1: N (height of the pyramid)",
+    constraints: "1 <= N <= 30",
+    testCases: [
+      { input: "3", output: "  *\n ***\n*****" },
+      { input: "2", output: " *\n***" }
+    ],
+    solutions: {
+      python: "n = int(input())\nfor i in range(n):\n    print(' ' * (n - 1 - i) + '*' * (2 * i + 1))",
+      cpp: "#include <iostream>\nusing namespace std;\nint main() {\n    int n; if (cin >> n) {\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n - 1 - i; j++) cout << \" \";\n            for (int j = 0; j < 2 * i + 1; j++) cout << \"*\";\n            cout << endl;\n        }\n    }\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        if (sc.hasNextInt()) {\n            int n = sc.nextInt();\n            for (int i = 0; i < n; i++) {\n                for (int j = 0; j < n - 1 - i; j++) System.out.print(\" \");\n                for (int j = 0; j < 2 * i + 1; j++) System.out.print(\"*\");\n                System.out.println();\n            }\n        }\n    }\n}",
+      javascript: "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim());\nfor (let i = 0; i < n; i++) {\n    console.log(' '.repeat(n - 1 - i) + '*'.repeat(2 * i + 1));\n}",
+      c: "#include <stdio.h>\nint main() {\n    int n;\n    if (scanf(\"%d\", &n) == 1) {\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n - 1 - i; j++) printf(\" \");\n            for (int j = 0; j < 2 * i + 1; j++) printf(\"*\");\n            printf(\"\\n\");\n        }\n    }\n    return 0;\n}"
+    },
+    starterCode: {
+      python: "n = int(input())\n# Print star pyramid of height n\n",
+      cpp: "#include <iostream>\nusing namespace std;\nint main() {\n    int n; cin >> n;\n    // Print star pyramid\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        // Print star pyramid\n    }\n}",
+      javascript: "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim());\n// Print star pyramid\n",
+      c: "#include <stdio.h>\nint main() {\n    int n; scanf(\"%d\", &n);\n    // Print star pyramid\n    return 0;\n}"
+    },
+    explanation: "For each row i from 0 to N-1, print (N - 1 - i) spaces followed by (2 * i + 1) stars.",
+    timeComplexity: "O(N^2)", spaceComplexity: "O(1)",
+    stdinTemplate: "3"
+  },
+  {
+    id: "code_p_floyds_triangle", title: "Floyd's Triangle", difficulty: "Easy", category: CAT.BASIC,
+    description: "Write a program to print Floyd's Triangle of N rows. Numbers should increment consecutively and be space-separated on each row.\n\nInput format:\nLine 1: N (number of rows)",
+    constraints: "1 <= N <= 20",
+    testCases: [
+      { input: "3", output: "1\n2 3\n4 5 6" },
+      { input: "4", output: "1\n2 3\n4 5 6\n7 8 9 10" }
+    ],
+    solutions: {
+      python: "n = int(input())\nval = 1\nfor i in range(1, n + 1):\n    row = []\n    for _ in range(i):\n        row.append(str(val))\n        val += 1\n    print(' '.join(row))",
+      cpp: "#include <iostream>\nusing namespace std;\nint main() {\n    int n; if (cin >> n) {\n        int val = 1;\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= i; j++) {\n                cout << val << (j == i ? \"\" : \" \");\n                val++;\n            }\n            cout << endl;\n        }\n    }\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        if (sc.hasNextInt()) {\n            int n = sc.nextInt();\n            int val = 1;\n            for (int i = 1; i <= n; i++) {\n                for (int j = 1; j <= i; j++) {\n                    System.out.print(val + (j == i ? \"\" : \" \"));\n                    val++;\n                }\n                System.out.println();\n            }\n        }\n    }\n}",
+      javascript: "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim());\nlet val = 1;\nfor (let i = 1; i <= n; i++) {\n    let row = [];\n    for (let j = 0; j < i; j++) {\n        row.push(val);\n        val++;\n    }\n    console.log(row.join(' '));\n}",
+      c: "#include <stdio.h>\nint main() {\n    int n;\n    if (scanf(\"%d\", &n) == 1) {\n        int val = 1;\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= i; j++) {\n                printf(\"%d%s\", val, j == i ? \"\" : \" \");\n                val++;\n            }\n            printf(\"\\n\");\n        }\n    }\n    return 0;\n}"
+    },
+    starterCode: {
+      python: "n = int(input())\n# Print Floyd's Triangle\n",
+      cpp: "#include <iostream>\nusing namespace std;\nint main() {\n    int n; cin >> n;\n    // Print Floyd's Triangle\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        // Print Floyd's Triangle\n    }\n}",
+      javascript: "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim());\n// Print Floyd's Triangle\n",
+      c: "#include <stdio.h>\nint main() {\n    int n; scanf(\"%d\", &n);\n    // Print Floyd's Triangle\n    return 0;\n}"
+    },
+    explanation: "Keep a running counter starting from 1. For row i, print i values separated by spaces, incrementing the counter each time.",
+    timeComplexity: "O(N^2)", spaceComplexity: "O(1)",
+    stdinTemplate: "3"
+  },
+  {
+    id: "code_p_diamond", title: "Diamond Star Pattern", difficulty: "Easy", category: CAT.BASIC,
+    description: "Write a program that takes an integer N and prints a symmetric diamond star pattern, where the widest middle row contains 2*N - 1 stars.\n\nInput format:\nLine 1: N (half-height of diamond)",
+    constraints: "1 <= N <= 20",
+    testCases: [
+      { input: "3", output: "  *\n ***\n*****\n ***\n  *" },
+      { input: "2", output: " *\n***\n *" }
+    ],
+    solutions: {
+      python: "n = int(input())\nfor i in range(n):\n    print(' ' * (n - 1 - i) + '*' * (2 * i + 1))\nfor i in range(n - 2, -1, -1):\n    print(' ' * (n - 1 - i) + '*' * (2 * i + 1))",
+      cpp: "#include <iostream>\nusing namespace std;\nint main() {\n    int n; if (cin >> n) {\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n - 1 - i; j++) cout << \" \";\n            for (int j = 0; j < 2 * i + 1; j++) cout << \"*\";\n            cout << endl;\n        }\n        for (int i = n - 2; i >= 0; i--) {\n            for (int j = 0; j < n - 1 - i; j++) cout << \" \";\n            for (int j = 0; j < 2 * i + 1; j++) cout << \"*\";\n            cout << endl;\n        }\n    }\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        if (sc.hasNextInt()) {\n            int n = sc.nextInt();\n            for (int i = 0; i < n; i++) {\n                for (int j = 0; j < n - 1 - i; j++) System.out.print(\" \");\n                for (int j = 0; j < 2 * i + 1; j++) System.out.print(\"*\");\n                System.out.println();\n            }\n            for (int i = n - 2; i >= 0; i--) {\n                for (int j = 0; j < n - 1 - i; j++) System.out.print(\" \");\n                for (int j = 0; j < 2 * i + 1; j++) System.out.print(\"*\");\n                System.out.println();\n            }\n        }\n    }\n}",
+      javascript: "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim());\nfor (let i = 0; i < n; i++) {\n    console.log(' '.repeat(n - 1 - i) + '*'.repeat(2 * i + 1));\n}\nfor (let i = n - 2; i >= 0; i--) {\n    console.log(' '.repeat(n - 1 - i) + '*'.repeat(2 * i + 1));\n}",
+      c: "#include <stdio.h>\nint main() {\n    int n;\n    if (scanf(\"%d\", &n) == 1) {\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n - 1 - i; j++) printf(\" \");\n            for (int j = 0; j < 2 * i + 1; j++) printf(\"*\");\n            printf(\"\\n\");\n        }\n        for (int i = n - 2; i >= 0; i--) {\n            for (int j = 0; j < n - 1 - i; j++) printf(\" \");\n            for (int j = 0; j < 2 * i + 1; j++) printf(\"*\");\n            printf(\"\\n\");\n        }\n    }\n    return 0;\n}"
+    },
+    starterCode: {
+      python: "n = int(input())\n# Print diamond pattern\n",
+      cpp: "#include <iostream>\nusing namespace std;\nint main() {\n    int n; cin >> n;\n    // Print diamond pattern\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        // Print diamond pattern\n    }\n}",
+      javascript: "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim());\n// Print diamond pattern\n",
+      c: "#include <stdio.h>\nint main() {\n    int n; scanf(\"%d\", &n);\n    // Print diamond pattern\n    return 0;\n}"
+    },
+    explanation: "Combine standard star pyramid algorithm with a reversed star pyramid starting from row index N - 2 down to 0.",
+    timeComplexity: "O(N^2)", spaceComplexity: "O(1)",
+    stdinTemplate: "3"
+  },
+  {
+    id: "code_p_rotate_matrix", title: "Rotate Matrix 90 Degrees", difficulty: "Medium", category: CAT.ARRAY,
+    description: "Given an N x N 2D matrix, rotate it by 90 degrees clockwise in-place.\n\nInput format:\nLine 1: N (dimension of matrix)\nNext N lines: N space-separated integers representing matrix rows",
+    constraints: "1 <= N <= 100",
+    testCases: [
+      { input: "3\n1 2 3\n4 5 6\n7 8 9", output: "7 4 1\n8 5 2\n9 6 3" },
+      { input: "2\n5 6\n7 8", output: "7 5\n8 6" }
+    ],
+    solutions: {
+      python: "n = int(input())\nmatrix = []\nfor _ in range(n):\n    matrix.append(list(map(int, input().split())))\nfor i in range(n):\n    for j in range(i, n):\n        matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]\nfor i in range(n):\n    matrix[i].reverse()\nfor i in range(n):\n    print(' '.join(map(str, matrix[i])))",
+      cpp: "#include <iostream>\n#include <vector>\n#include <algorithm>\nusing namespace std;\nint main() {\n    int n; if (cin >> n) {\n        vector<vector<int>> a(n, vector<int>(n));\n        for (int i = 0; i < n; i++)\n            for (int j = 0; j < n; j++) cin >> a[i][j];\n        for (int i = 0; i < n; i++)\n            for (int j = i; j < n; j++) swap(a[i][j], a[j][i]);\n        for (int i = 0; i < n; i++) reverse(a[i].begin(), a[i].end());\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) cout << a[i][j] << (j == n - 1 ? \"\" : \" \");\n            cout << endl;\n        }\n    }\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        if (sc.hasNextInt()) {\n            int n = sc.nextInt();\n            int[][] a = new int[n][n];\n            for (int i = 0; i < n; i++)\n                for (int j = 0; j < n; j++) a[i][j] = sc.nextInt();\n            for (int i = 0; i < n; i++) {\n                for (int j = i; j < n; j++) {\n                    int temp = a[i][j];\n                    a[i][j] = a[j][i];\n                    a[j][i] = temp;\n                }\n            }\n            for (int i = 0; i < n; i++) {\n                for (int j = 0; j < n / 2; j++) {\n                    int temp = a[i][j];\n                    a[i][j] = a[i][n - 1 - j];\n                    a[i][n - 1 - j] = temp;\n                }\n            }\n            for (int i = 0; i < n; i++) {\n                for (int j = 0; j < n; j++) {\n                    System.out.print(a[i][j] + (j == n - 1 ? \"\" : \" \"));\n                }\n                System.out.println();\n            }\n        }\n    }\n}",
+      javascript: "const fs = require('fs');\nconst lines = fs.readFileSync(0, 'utf-8').trim().split('\\n');\nconst n = parseInt(lines[0]);\nlet matrix = [];\nfor (let i = 1; i <= n; i++) {\n    matrix.push(lines[i].trim().split(/\\s+/).map(Number));\n}\nfor (let i = 0; i < n; i++) {\n    for (let j = i; j < n; j++) {\n        let temp = matrix[i][j];\n        matrix[i][j] = matrix[j][i];\n        matrix[j][i] = temp;\n    }\n}\nfor (let i = 0; i < n; i++) {\n    matrix[i].reverse();\n    console.log(matrix[i].join(' '));\n}",
+      c: "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int n;\n    if (scanf(\"%d\", &n) == 1) {\n        int **a = malloc(n * sizeof(int*));\n        for (int i = 0; i < n; i++) {\n            a[i] = malloc(n * sizeof(int));\n            for (int j = 0; j < n; j++) scanf(\"%d\", &a[i][j]);\n        }\n        for (int i = 0; i < n; i++) {\n            for (int j = i; j < n; j++) {\n                int temp = a[i][j];\n                a[i][j] = a[j][i];\n                a[j][i] = temp;\n            }\n        }\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n / 2; j++) {\n                int temp = a[i][j];\n                a[i][j] = a[i][n - 1 - j];\n                a[i][n - 1 - j] = temp;\n            }\n        }\n        for (int i = 0; i < n; i++) {\n            for (int j = 0; j < n; j++) printf(\"%d%s\", a[i][j], j == n - 1 ? \"\" : \" \");\n            printf(\"\\n\");\n            free(a[i]);\n        }\n        free(a);\n    }\n    return 0;\n}"
+    },
+    starterCode: {
+      python: "n = int(input())\n# Read and rotate matrix by 90 degrees\n",
+      cpp: "#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\n    int n; cin >> n;\n    // Transpose and then reverse each row\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int n = sc.nextInt();\n        // Rotate matrix\n    }\n}",
+      javascript: "const fs = require('fs');\nconst lines = fs.readFileSync(0, 'utf-8').trim().split('\\n');\nconst n = parseInt(lines[0]);\n// Rotate matrix\n",
+      c: "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int n; scanf(\"%d\", &n);\n    // Rotate matrix in-place\n    return 0;\n}"
+    },
+    explanation: "Two step rotation: First transpose the matrix (swap matrix[i][j] with matrix[j][i]), and then reverse each row.",
+    timeComplexity: "O(N^2)", spaceComplexity: "O(1) in-place",
+    stdinTemplate: "3\n1 2 3\n4 5 6\n7 8 9"
+  },
+  {
+    id: "code_p_spiral_matrix", title: "Spiral Matrix Traversal", difficulty: "Medium", category: CAT.ARRAY,
+    description: "Given an M x N 2D matrix, print all elements in spiral order, separated by a single space.\n\nInput format:\nLine 1: M (rows) and N (columns)\nNext M lines: N space-separated integers",
+    constraints: "1 <= M, N <= 100",
+    testCases: [
+      { input: "3 3\n1 2 3\n4 5 6\n7 8 9", output: "1 2 3 6 9 8 7 4 5" },
+      { input: "2 3\n1 2 3\n4 5 6", output: "1 2 3 6 5 4" }
+    ],
+    solutions: {
+      python: "r, c = map(int, input().split())\nmatrix = []\nfor _ in range(r):\n    matrix.append(list(map(int, input().split())))\nans = []\ntop, bottom, left, right = 0, r - 1, 0, c - 1\nwhile top <= bottom and left <= right:\n    for j in range(left, right + 1): ans.append(str(matrix[top][j]))\n    top += 1\n    for i in range(top, bottom + 1): ans.append(str(matrix[i][right]))\n    right -= 1\n    if top <= bottom:\n        for j in range(right, left - 1, -1): ans.append(str(matrix[bottom][j]))\n        bottom -= 1\n    if left <= right:\n        for i in range(bottom, top - 1, -1): ans.append(str(matrix[i][left]))\n        left += 1\nprint(' '.join(ans))",
+      cpp: "#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\n    int r, c; if (cin >> r >> c) {\n        vector<vector<int>> a(r, vector<int>(c));\n        for (int i = 0; i < r; i++)\n            for (int j = 0; j < c; j++) cin >> a[i][j];\n        int top = 0, bottom = r - 1, left = 0, right = c - 1;\n        bool first = true;\n        while (top <= bottom && left <= right) {\n            for (int j = left; j <= right; j++) {\n                cout << (first ? \"\" : \" \") << a[top][j]; first = false;\n            }\n            top++;\n            for (int i = top; i <= bottom; i++) {\n                cout << \" \" << a[i][right];\n            }\n            right--;\n            if (top <= bottom) {\n                for (int j = right; j >= left; j--) {\n                    cout << \" \" << a[bottom][j];\n                }\n                bottom--;\n            }\n            if (left <= right) {\n                for (int i = bottom; i >= top; i--) {\n                    cout << \" \" << a[i][left];\n                }\n                left++;\n            }\n        }\n        cout << endl;\n    }\n    return 0;\n}",
+      java: "import java.util.Scanner;\nimport java.util.ArrayList;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        if (sc.hasNextInt()) {\n            int r = sc.nextInt();\n            int c = sc.nextInt();\n            int[][] a = new int[r][c];\n            for (int i = 0; i < r; i++)\n                for (int j = 0; j < c; j++) a[i][j] = sc.nextInt();\n            int top = 0, bottom = r - 1, left = 0, right = c - 1;\n            ArrayList<Integer> ans = new ArrayList<>();\n            while (top <= bottom && left <= right) {\n                for (int j = left; j <= right; j++) ans.add(a[top][j]);\n                top++;\n                for (int i = top; i <= bottom; i++) ans.add(a[i][right]);\n                right--;\n                if (top <= bottom) {\n                    for (int j = right; j >= left; j--) ans.add(a[bottom][j]);\n                    bottom--;\n                }\n                if (left <= right) {\n                    for (int i = bottom; i >= top; i--) ans.add(a[i][left]);\n                    left++;\n                }\n            }\n            for (int i = 0; i < ans.size(); i++) {\n                System.out.print(ans.get(i) + (i == ans.size() - 1 ? \"\" : \" \"));\n            }\n            System.out.println();\n        }\n    }\n}",
+      javascript: "const fs = require('fs');\nconst lines = fs.readFileSync(0, 'utf-8').trim().split('\\n');\nconst [r, c] = lines[0].trim().split(/\\s+/).map(Number);\nlet matrix = [];\nfor (let i = 1; i <= r; i++) {\n    matrix.push(lines[i].trim().split(/\\s+/).map(Number));\n}\nlet top = 0, bottom = r - 1, left = 0, right = c - 1;\nlet ans = [];\nwhile (top <= bottom && left <= right) {\n    for (let j = left; j <= right; j++) ans.push(matrix[top][j]);\n    top++;\n    for (let i = top; i <= bottom; i++) ans.push(matrix[i][right]);\n    right--;\n    if (top <= bottom) {\n        for (let j = right; j >= left; j--) ans.push(matrix[bottom][j]);\n        bottom--;\n    }\n    if (left <= right) {\n        for (let i = bottom; i >= top; i--) ans.push(matrix[i][left]);\n        left++;\n    }\n}\nconsole.log(ans.join(' '));",
+      c: "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int r, c;\n    if (scanf(\"%d %d\", &r, &c) == 2) {\n        int **a = malloc(r * sizeof(int*));\n        for (int i = 0; i < r; i++) {\n            a[i] = malloc(c * sizeof(int));\n            for (int j = 0; j < c; j++) scanf(\"%d\", &a[i][j]);\n        }\n        int top = 0, bottom = r - 1, left = 0, right = c - 1;\n        int first = 1;\n        while (top <= bottom && left <= right) {\n            for (int j = left; j <= right; j++) {\n                printf(\"%s%d\", first ? \"\" : \" \", a[top][j]); first = 0;\n            }\n            top++;\n            for (int i = top; i <= bottom; i++) {\n                printf(\" %d\", a[i][right]);\n            }\n            right--;\n            if (top <= bottom) {\n                for (int j = right; j >= left; j--) {\n                    printf(\" %d\", a[bottom][j]);\n                }\n                bottom--;\n            }\n            if (left <= right) {\n                for (int i = bottom; i >= top; i--) {\n                    printf(\" %d\", a[i][left]);\n                }\n                left++;\n            }\n        }\n        printf(\"\\n\");\n        for (int i = 0; i < r; i++) free(a[i]);\n        free(a);\n    }\n    return 0;\n}"
+    },
+    starterCode: {
+      python: "r, c = map(int, input().split())\n# Spiral order matrix traversal\n",
+      cpp: "#include <iostream>\n#include <vector>\nusing namespace std;\nint main() {\n    int r, c; cin >> r >> c;\n    // Print elements in spiral order\n    return 0;\n}",
+      java: "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int r = sc.nextInt(), c = sc.nextInt();\n        // Traverse matrix spirally\n    }\n}",
+      javascript: "const fs = require('fs');\nconst lines = fs.readFileSync(0, 'utf-8').trim().split('\\n');\nconst [r, c] = lines[0].split(' ').map(Number);\n// Traverse spirally\n",
+      c: "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int r, c; scanf(\"%d %d\", &r, &c);\n    // Traverse matrix in spiral order\n    return 0;\n}"
+    },
+    explanation: "Maintain boundaries (top, bottom, left, right) and traverse from left to right, top to bottom, right to left, and bottom to top while updating borders.",
+    timeComplexity: "O(M * N)", spaceComplexity: "O(1)",
+    stdinTemplate: "3 3\n1 2 3\n4 5 6\n7 8 9"
+  }
+];
+
 // ─── Merge all question arrays ───────────────────────────────────────────────
 export const CODING_BANK = [
   ...CORE_QUESTIONS,
@@ -1483,5 +1617,6 @@ export const CODING_BANK = [
   ...DP_QUESTIONS,
   ...BIT_MATH_QUESTIONS,
   ...GREEDY_QUESTIONS,
-  ...SEARCH_QUESTIONS
+  ...SEARCH_QUESTIONS,
+  ...PRINTING_PATTERN_QUESTIONS
 ];
