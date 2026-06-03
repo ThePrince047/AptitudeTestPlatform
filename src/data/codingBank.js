@@ -1,5 +1,8 @@
-// Coding Prep Question Bank - 155 fully interactive & runnable questions
+// Coding Prep Question Bank - fully interactive & runnable questions
 // Supports C, C++, Python, Java, JavaScript via Standard I/O model
+import { DSA_QUESTIONS } from './dsaQuestions.js';
+import { DSA_QUESTIONS_2 } from './dsaQuestions2.js';
+import { DSA_QUESTIONS_3 } from './dsaQuestions3.js';
 
 const CAT = {
   BASIC: "Basic Logic",
@@ -1618,5 +1621,9 @@ export const CODING_BANK = [
   ...BIT_MATH_QUESTIONS,
   ...GREEDY_QUESTIONS,
   ...SEARCH_QUESTIONS,
-  ...PRINTING_PATTERN_QUESTIONS
+  ...PRINTING_PATTERN_QUESTIONS,
+  // ── New DSA Interview Questions (Patterns, Arrays, Strings, LL, Stack, Recursion, Searching, Sorting, HashMap, Trees, DP) ──
+  ...DSA_QUESTIONS,
+  ...DSA_QUESTIONS_2,
+  ...DSA_QUESTIONS_3,
 ];
