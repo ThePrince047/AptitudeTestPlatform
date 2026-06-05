@@ -3,6 +3,7 @@
 import { DSA_QUESTIONS } from './dsaQuestions.js';
 import { DSA_QUESTIONS_2 } from './dsaQuestions2.js';
 import { DSA_QUESTIONS_3 } from './dsaQuestions3.js';
+import { KEYWORD_DATA } from './keywordData.js';
 
 const CAT = {
   BASIC: "Basic Logic",
@@ -705,6 +706,8 @@ for (let i = 0; i < remainingCount; i++) {
 
   const description = KEYWORD_DESCRIPTIONS[keyword] || matchedSchema.description(keyword);
 
+  const kwData = KEYWORD_DATA[keyword];
+
   extraQuestions.push({
     id: `code_${qIdIndex++}`,
     title: keyword,
@@ -712,13 +715,13 @@ for (let i = 0; i < remainingCount; i++) {
     category: template.cat,
     description,
     constraints: "1 <= N <= 10^5\nTime limit: 1.0s\nMemory Limit: 256MB",
-    testCases: matchedSchema.testCases,
-    solutions: matchedSchema.solutions,
-    starterCode: matchedSchema.starterCode,
+    testCases: kwData ? kwData.testCases : matchedSchema.testCases,
+    solutions: kwData ? kwData.solutions : matchedSchema.solutions,
+    starterCode: kwData ? kwData.starterCode : matchedSchema.starterCode,
     explanation: `Analyze the input patterns to calculate matching characteristics for '${keyword}'.`,
     timeComplexity: matchedSchema.timeComplexity,
     spaceComplexity: matchedSchema.spaceComplexity,
-    stdinTemplate: matchedSchema.stdinTemplate
+    stdinTemplate: kwData ? kwData.stdinTemplate : matchedSchema.stdinTemplate
   });
 }
 
