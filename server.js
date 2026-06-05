@@ -363,13 +363,13 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
       return res.status(400).json({ error: 'No code provided' });
     }
 
-    // Map frontend language names to Piston API language names
+    // Map frontend language names to Piston API language names and standard versions
     const langMap = {
-      python: 'python',
-      cpp: 'c++',
-      c: 'c',
-      java: 'java',
-      javascript: 'javascript'
+      python: { language: 'python', version: '3.10.0' },
+      cpp: { language: 'c++', version: '10.2.0' },
+      c: { language: 'c', version: '10.2.0' },
+      java: { language: 'java', version: '15.0.2' },
+      javascript: { language: 'javascript', version: '18.15.0' }
     };
 
     const pistonLang = langMap[language];
@@ -378,14 +378,18 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
     }
 
     const payload = {
-      language: pistonLang,
-      version: '*',
-      files: [{ content: code }],
+      language: pistonLang.language,
+      version: pistonLang.version,
+      files: [{
+        name: language === 'java' ? 'Main.java' : `main.${language === 'python' ? 'py' : language === 'javascript' ? 'js' : language}`,
+        content: code 
+      }],
       stdin: stdin || ''
     };
 
     // Public Piston API mirrors (No API Key Required)
     const pistonUrls = [
+      'https://piston.pterodactyl.io/api/v2/execute',
       'https://emacs.piston.rs/api/v2/execute',
       'https://emkc.org/api/v2/piston/execute'
     ];
@@ -402,7 +406,14 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
         });
         
         if (fetchResponse.ok) {
-          data = await fetchResponse.json();
+          const tempData = await fetchResponse.json();
+          // If the server returns a system error (like missing compiler), we might want to try another mirror
+          const compileErr = tempData.compile ? tempData.compile.stderr : '';
+          if (compileErr && compileErr.includes('not found') && compileErr.includes('javac')) {
+             console.warn(`Mirror ${url} seems to have a broken compiler. Trying next...`);
+             continue;
+          }
+          data = tempData;
           break; // successfully executed
         }
       } catch (err) {
@@ -411,16 +422,24 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
       }
     }
 
-    if (!data || !data.run) {
+    if (!data) {
       return res.status(500).json({ error: 'All online compilers are currently unavailable.' });
     }
 
+    const compileErr = data.compile && data.compile.code !== 0 ? data.compile.stderr : '';
+    const runErr = data.run ? data.run.stderr : '';
+    const runOut = data.run ? data.run.stdout : '';
+    const runCode = data.run ? data.run.code : (data.compile ? data.compile.code : 1);
+    
+    // Combine outputs
+    const fullOutput = (compileErr ? compileErr + '\n' : '') + runOut + (runErr ? '\n' + runErr : '');
+
     // Return the formatted output to the frontend
     res.json({
-      code: data.run.code,
-      stdout: data.run.stdout || '',
-      stderr: data.run.stderr || '',
-      output: data.run.output || ''
+      code: runCode,
+      stdout: runOut,
+      stderr: compileErr || runErr,
+      output: fullOutput.trim()
     });
 
   } catch (e) {
