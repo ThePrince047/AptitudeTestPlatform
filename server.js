@@ -402,11 +402,11 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
 
     // Map frontend language names
     const languageKeys = {
-      python: { piston: 'python', pistonVersion: '3.10.0', onecompiler: 'python', onlineio: 'python-3.11', jdoodle: 'python3', jdoodleVer: '3' },
-      cpp: { piston: 'c++', pistonVersion: '10.2.0', onecompiler: 'cpp', onlineio: 'cpp-11', jdoodle: 'cpp', jdoodleVer: '5' },
-      c: { piston: 'c', pistonVersion: '10.2.0', onecompiler: 'c', onlineio: 'c-11', jdoodle: 'c', jdoodleVer: '5' },
-      java: { piston: 'java', pistonVersion: '15.0.2', onecompiler: 'java', onlineio: 'java-17', jdoodle: 'java', jdoodleVer: '4' },
-      javascript: { piston: 'javascript', pistonVersion: '18.15.0', onecompiler: 'nodejs', onlineio: 'nodejs-18', jdoodle: 'nodejs', jdoodleVer: '4' }
+      python: { piston: 'python', pistonVersion: '*', onecompiler: 'python', onlineio: 'python-3.11', jdoodle: 'python3', jdoodleVer: '3' },
+      cpp: { piston: 'c++', pistonVersion: '*', onecompiler: 'cpp', onlineio: 'cpp-11', jdoodle: 'cpp', jdoodleVer: '5' },
+      c: { piston: 'c', pistonVersion: '*', onecompiler: 'c', onlineio: 'c-11', jdoodle: 'c', jdoodleVer: '5' },
+      java: { piston: 'java', pistonVersion: '*', onecompiler: 'java', onlineio: 'java-17', jdoodle: 'java', jdoodleVer: '4' },
+      javascript: { piston: 'javascript', pistonVersion: '*', onecompiler: 'nodejs', onlineio: 'nodejs-18', jdoodle: 'nodejs', jdoodleVer: '4' }
     };
 
     const langConfig = languageKeys[language];
@@ -421,6 +421,7 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
     let runErr = '';
     let runOut = '';
     let runCode = 1;
+    const fallbackErrors = [];
 
     // --- Provider 1: OnlineCompiler.io (Requires ONLINECOMPILER_API_KEY in .env) ---
     if (!data && process.env.ONLINECOMPILER_API_KEY) {
@@ -434,8 +435,12 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
           runOut = data.stdout || '';
           runErr = data.stderr || '';
           runCode = data.exit_code || 0;
+        } else {
+          fallbackErrors.push(`OnlineCompiler.io failed: HTTP ${response.status} - ${JSON.stringify(response.data)}`);
         }
-      } catch (e) { console.warn("OnlineCompiler.io failed:", e.message); }
+      } catch (e) { fallbackErrors.push(`OnlineCompiler.io exception: ${e.message}`); }
+    } else if (!data) {
+       fallbackErrors.push(`OnlineCompiler.io skipped: No API Key provided`);
     }
 
     // --- Provider 2: JDoodle (Requires JDOODLE_CLIENT_ID and JDOODLE_CLIENT_SECRET in .env) ---
@@ -454,8 +459,12 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
           data = response.data;
           runOut = data.output || '';
           runCode = data.statusCode === 200 ? 0 : 1;
+        } else {
+          fallbackErrors.push(`JDoodle failed: HTTP ${response.status} - ${JSON.stringify(response.data)}`);
         }
-      } catch (e) { console.warn("JDoodle failed:", e.message); }
+      } catch (e) { fallbackErrors.push(`JDoodle exception: ${e.message}`); }
+    } else if (!data) {
+       fallbackErrors.push(`JDoodle skipped: Missing Client ID or Secret`);
     }
 
     // --- Provider 3: OneCompiler (Public API fallback) ---
@@ -473,8 +482,10 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
           runErr = data.stderr || '';
           runOut = data.stdout || '';
           runCode = (compileErr || runErr || data.status !== 'success') ? 1 : 0;
+        } else {
+          fallbackErrors.push(`OneCompiler failed: HTTP ${ocResponse.status} - ${JSON.stringify(ocResponse.data)}`);
         }
-      } catch (e) { console.warn("OneCompiler API failed:", e.message); }
+      } catch (e) { fallbackErrors.push(`OneCompiler exception: ${e.message}`); }
     }
 
     // --- Provider 4: Piston API Mirrors ---
@@ -499,7 +510,10 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
           if (fetchResponse.ok && fetchResponse.data) {
             const tempData = fetchResponse.data;
             const cErr = tempData.compile ? tempData.compile.stderr : '';
-            if (cErr && cErr.includes('not found') && cErr.includes('javac')) continue;
+            if (cErr && cErr.includes('not found') && cErr.includes('javac')) {
+               fallbackErrors.push(`Piston (${url}) failed: Broken compiler (javac not found)`);
+               continue;
+            }
             
             data = tempData;
             compileErr = tempData.compile && tempData.compile.code !== 0 ? tempData.compile.stderr : '';
@@ -507,13 +521,16 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
             runOut = tempData.run ? tempData.run.stdout : '';
             runCode = tempData.run ? tempData.run.code : (tempData.compile ? tempData.compile.code : 1);
             break; 
+          } else {
+            fallbackErrors.push(`Piston (${url}) failed: HTTP ${fetchResponse.status} - ${JSON.stringify(fetchResponse.data)}`);
           }
-        } catch (err) { console.warn(`Piston API failed for ${url}:`, err.message); }
+        } catch (err) { fallbackErrors.push(`Piston (${url}) exception: ${err.message}`); }
       }
     }
 
     if (!data) {
-      return res.status(500).json({ error: 'All online compilers (OnlineCompiler.io, JDoodle, OneCompiler, & Piston) are currently unavailable or rate limited. Please ensure API keys are set in .env or try again later.' });
+      const errorDump = fallbackErrors.join(' | ');
+      return res.status(500).json({ error: `All online compilers failed. Debug info: ${errorDump}` });
     }
     
     // Combine outputs
