@@ -410,7 +410,7 @@ export default function CodingPrep({ onNavigate }) {
     try {
       const runResult = await executeCode(editorCode, codeLanguage, customStdin);
       setConsoleOutput(runResult.output);
-      setRunStatus(runResult.code === 0 && !runResult.stderr ? "success" : "failed");
+      setRunStatus(runResult.code === 0 ? "success" : "failed");
       setExitInfo({
         code: runResult.code,
         signal: runResult.signal,
