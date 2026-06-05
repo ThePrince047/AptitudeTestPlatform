@@ -10,7 +10,7 @@ import crypto from 'crypto';
 import https from 'https';
 
 // Native HTTPS POST helper to avoid 'fetch is not defined' on older Node versions
-function makeJsonPostRequest(url, payload) {
+function makeJsonPostRequest(url, payload, customHeaders = {}) {
   return new Promise((resolve, reject) => {
     const parsedUrl = new URL(url);
     const dataString = JSON.stringify(payload);
@@ -21,7 +21,9 @@ function makeJsonPostRequest(url, payload) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(dataString)
+        'Content-Length': Buffer.byteLength(dataString),
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        ...customHeaders
       }
     };
 
@@ -398,68 +400,121 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
       return res.status(400).json({ error: 'No code provided' });
     }
 
-    // Map frontend language names to Piston API language names and standard versions
-    const langMap = {
-      python: { language: 'python', version: '3.10.0' },
-      cpp: { language: 'c++', version: '10.2.0' },
-      c: { language: 'c', version: '10.2.0' },
-      java: { language: 'java', version: '15.0.2' },
-      javascript: { language: 'javascript', version: '18.15.0' }
+    // Map frontend language names
+    const languageKeys = {
+      python: { piston: 'python', pistonVersion: '3.10.0', onecompiler: 'python', onlineio: 'python-3.11', jdoodle: 'python3', jdoodleVer: '3' },
+      cpp: { piston: 'c++', pistonVersion: '10.2.0', onecompiler: 'cpp', onlineio: 'cpp-11', jdoodle: 'cpp', jdoodleVer: '5' },
+      c: { piston: 'c', pistonVersion: '10.2.0', onecompiler: 'c', onlineio: 'c-11', jdoodle: 'c', jdoodleVer: '5' },
+      java: { piston: 'java', pistonVersion: '15.0.2', onecompiler: 'java', onlineio: 'java-17', jdoodle: 'java', jdoodleVer: '4' },
+      javascript: { piston: 'javascript', pistonVersion: '18.15.0', onecompiler: 'nodejs', onlineio: 'nodejs-18', jdoodle: 'nodejs', jdoodleVer: '4' }
     };
 
-    const pistonLang = langMap[language];
-    if (!pistonLang) {
+    const langConfig = languageKeys[language];
+    if (!langConfig) {
       return res.status(400).json({ error: 'Unsupported language' });
     }
 
-    const payload = {
-      language: pistonLang.language,
-      version: pistonLang.version,
-      files: [{
-        name: language === 'java' ? 'Main.java' : `main.${language === 'python' ? 'py' : language === 'javascript' ? 'js' : language}`,
-        content: code 
-      }],
-      stdin: stdin || ''
-    };
-
-    // Public Piston API mirrors (No API Key Required)
-    const pistonUrls = [
-      'https://piston.pterodactyl.io/api/v2/execute',
-      'https://emacs.piston.rs/api/v2/execute',
-      'https://emkc.org/api/v2/piston/execute'
-    ];
+    const fileName = language === 'java' ? 'Main.java' : `main.${language === 'python' ? 'py' : language === 'javascript' ? 'js' : language}`;
 
     let data = null;
+    let compileErr = '';
+    let runErr = '';
+    let runOut = '';
+    let runCode = 1;
 
-    for (const url of pistonUrls) {
+    // --- Provider 1: OnlineCompiler.io (Requires ONLINECOMPILER_API_KEY in .env) ---
+    if (!data && process.env.ONLINECOMPILER_API_KEY) {
       try {
-        const fetchResponse = await makeJsonPostRequest(url, payload);
-        
-        if (fetchResponse.ok && fetchResponse.data) {
-          const tempData = fetchResponse.data;
-          // If the server returns a system error (like missing compiler), we might want to try another mirror
-          const compileErr = tempData.compile ? tempData.compile.stderr : '';
-          if (compileErr && compileErr.includes('not found') && compileErr.includes('javac')) {
-             console.warn(`Mirror ${url} seems to have a broken compiler. Trying next...`);
-             continue;
-          }
-          data = tempData;
-          break; // successfully executed
+        const payload = { compiler: langConfig.onlineio, code: code, input: stdin || '' };
+        const response = await makeJsonPostRequest('https://api.onlinecompiler.io/api/run-code-sync/', payload, {
+          'Authorization': process.env.ONLINECOMPILER_API_KEY
+        });
+        if (response.ok && response.data) {
+          data = response.data;
+          runOut = data.stdout || '';
+          runErr = data.stderr || '';
+          runCode = data.exit_code || 0;
         }
-      } catch (err) {
-        console.warn(`Execution API failed for ${url}:`, err.message);
-        // Continue to the next URL
+      } catch (e) { console.warn("OnlineCompiler.io failed:", e.message); }
+    }
+
+    // --- Provider 2: JDoodle (Requires JDOODLE_CLIENT_ID and JDOODLE_CLIENT_SECRET in .env) ---
+    if (!data && process.env.JDOODLE_CLIENT_ID && process.env.JDOODLE_CLIENT_SECRET) {
+      try {
+        const payload = {
+          clientId: process.env.JDOODLE_CLIENT_ID,
+          clientSecret: process.env.JDOODLE_CLIENT_SECRET,
+          script: code,
+          language: langConfig.jdoodle,
+          versionIndex: langConfig.jdoodleVer,
+          stdin: stdin || ''
+        };
+        const response = await makeJsonPostRequest('https://api.jdoodle.com/v1/execute', payload);
+        if (response.ok && response.data && !response.data.error) {
+          data = response.data;
+          runOut = data.output || '';
+          runCode = data.statusCode === 200 ? 0 : 1;
+        }
+      } catch (e) { console.warn("JDoodle failed:", e.message); }
+    }
+
+    // --- Provider 3: OneCompiler (Public API fallback) ---
+    if (!data) {
+      try {
+        const ocPayload = {
+          language: langConfig.onecompiler,
+          stdin: stdin || '',
+          files: [{ name: fileName, content: code }]
+        };
+        const ocResponse = await makeJsonPostRequest('https://onecompiler.com/api/code/exec', ocPayload);
+        if (ocResponse.ok && ocResponse.data && !ocResponse.data.error) {
+          data = ocResponse.data;
+          compileErr = data.exception || '';
+          runErr = data.stderr || '';
+          runOut = data.stdout || '';
+          runCode = (compileErr || runErr || data.status !== 'success') ? 1 : 0;
+        }
+      } catch (e) { console.warn("OneCompiler API failed:", e.message); }
+    }
+
+    // --- Provider 4: Piston API Mirrors ---
+    if (!data) {
+      const pistonPayload = {
+        language: langConfig.piston,
+        version: langConfig.pistonVersion,
+        files: [{ name: fileName, content: code }],
+        stdin: stdin || ''
+      };
+
+      const pistonUrls = [
+        'https://piston.pterodactyl.io/api/v2/execute',
+        'https://emacs.piston.rs/api/v2/execute',
+        'https://emkc.org/api/v2/piston/execute'
+      ];
+
+      for (const url of pistonUrls) {
+        try {
+          const fetchResponse = await makeJsonPostRequest(url, pistonPayload);
+          
+          if (fetchResponse.ok && fetchResponse.data) {
+            const tempData = fetchResponse.data;
+            const cErr = tempData.compile ? tempData.compile.stderr : '';
+            if (cErr && cErr.includes('not found') && cErr.includes('javac')) continue;
+            
+            data = tempData;
+            compileErr = tempData.compile && tempData.compile.code !== 0 ? tempData.compile.stderr : '';
+            runErr = tempData.run ? tempData.run.stderr : '';
+            runOut = tempData.run ? tempData.run.stdout : '';
+            runCode = tempData.run ? tempData.run.code : (tempData.compile ? tempData.compile.code : 1);
+            break; 
+          }
+        } catch (err) { console.warn(`Piston API failed for ${url}:`, err.message); }
       }
     }
 
     if (!data) {
-      return res.status(500).json({ error: 'All online compilers are currently unavailable.' });
+      return res.status(500).json({ error: 'All online compilers (OnlineCompiler.io, JDoodle, OneCompiler, & Piston) are currently unavailable or rate limited. Please ensure API keys are set in .env or try again later.' });
     }
-
-    const compileErr = data.compile && data.compile.code !== 0 ? data.compile.stderr : '';
-    const runErr = data.run ? data.run.stderr : '';
-    const runOut = data.run ? data.run.stdout : '';
-    const runCode = data.run ? data.run.code : (data.compile ? data.compile.code : 1);
     
     // Combine outputs
     const fullOutput = (compileErr ? compileErr + '\n' : '') + runOut + (runErr ? '\n' + runErr : '');
