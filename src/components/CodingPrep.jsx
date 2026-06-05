@@ -381,6 +381,15 @@ export default function CodingPrep({ onNavigate }) {
 
       if (response.ok) {
         return await response.json();
+      } else {
+        const errData = await response.json().catch(() => ({}));
+        const errMsg = errData.error || `Server Error: ${response.status} ${response.statusText}`;
+        return {
+          code: 1,
+          stdout: "",
+          stderr: errMsg,
+          output: errMsg
+        };
       }
     } catch (e) {
       console.warn("Local Vite dev server execute endpoint unavailable, falling back to simulation.", e);

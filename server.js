@@ -7,6 +7,41 @@ import { exec } from 'child_process';
 import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
 import crypto from 'crypto';
+import https from 'https';
+
+// Native HTTPS POST helper to avoid 'fetch is not defined' on older Node versions
+function makeJsonPostRequest(url, payload) {
+  return new Promise((resolve, reject) => {
+    const parsedUrl = new URL(url);
+    const dataString = JSON.stringify(payload);
+    
+    const options = {
+      hostname: parsedUrl.hostname,
+      path: parsedUrl.pathname + parsedUrl.search,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(dataString)
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let responseBody = '';
+      res.on('data', (chunk) => { responseBody += chunk; });
+      res.on('end', () => {
+        try {
+          resolve({ ok: res.statusCode >= 200 && res.statusCode < 300, status: res.statusCode, data: JSON.parse(responseBody) });
+        } catch (e) {
+          resolve({ ok: res.statusCode >= 200 && res.statusCode < 300, status: res.statusCode, data: null });
+        }
+      });
+    });
+
+    req.on('error', (e) => reject(e));
+    req.write(dataString);
+    req.end();
+  });
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -394,19 +429,14 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
       'https://emkc.org/api/v2/piston/execute'
     ];
 
-    let fetchResponse = null;
     let data = null;
 
     for (const url of pistonUrls) {
       try {
-        fetchResponse = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
-        });
+        const fetchResponse = await makeJsonPostRequest(url, payload);
         
-        if (fetchResponse.ok) {
-          const tempData = await fetchResponse.json();
+        if (fetchResponse.ok && fetchResponse.data) {
+          const tempData = fetchResponse.data;
           // If the server returns a system error (like missing compiler), we might want to try another mirror
           const compileErr = tempData.compile ? tempData.compile.stderr : '';
           if (compileErr && compileErr.includes('not found') && compileErr.includes('javac')) {

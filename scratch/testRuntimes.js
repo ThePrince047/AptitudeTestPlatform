@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-async function test() {
+async function test() { 
   try {
     const res = await fetch('https://emacs.piston.rs/api/v2/runtimes');
     const data = await res.json();
