@@ -359,45 +359,11 @@ export default function CodingPrep({ onNavigate }) {
       return runJavaScriptLocally(code, stdin);
     }
 
-    const trimmedCode = code.trim();
-    const starter = currentQuestion.starterCode?.[lang] || "";
-    
-    if (trimmedCode === starter.trim() || trimmedCode.length < 15 || trimmedCode.includes("TODO")) {
-      return {
-        code: 0,
-        stdout: "",
-        stderr: "",
-        output: "Execution finished with no output. Please implement the solution."
-      };
-    }
-
-    // Run local syntax validation checks
-    const syntaxErr = validateSyntax(code, lang);
-    if (syntaxErr) {
-      return {
-        code: 1,
-        stdout: "",
-        stderr: syntaxErr.error,
-        output: syntaxErr.error
-      };
-    }
-
-    const jsSolution = currentQuestion.solutions?.javascript || "";
-    if (jsSolution) {
-      const runResult = runJavaScriptLocally(jsSolution, stdin);
-      return {
-        code: 0,
-        stdout: runResult.stdout,
-        stderr: "",
-        output: runResult.stdout
-      };
-    }
-
     return {
       code: 1,
       stdout: "",
-      stderr: "Simulation Error: Missing execution schema for this language.",
-      output: "Simulation Error: Missing execution schema for this language."
+      stderr: `Execution Error: Cannot run ${lang} locally in the browser. Please ensure the backend server is running.`,
+      output: `Execution Error: Cannot run ${lang} locally in the browser. Please ensure the backend server is running.`
     };
   };
 
@@ -414,16 +380,7 @@ export default function CodingPrep({ onNavigate }) {
       });
 
       if (response.ok) {
-        const result = await response.json();
-        const isCompilerMissing = 
-          result.stderr.includes("is not recognized") || 
-          result.stderr.includes("not found") || 
-          result.stderr.includes("not recognized");
-
-        // If compiler is available, return the real compilation output
-        if (!isCompilerMissing) {
-          return result;
-        }
+        return await response.json();
       }
     } catch (e) {
       console.warn("Local Vite dev server execute endpoint unavailable, falling back to simulation.", e);

@@ -355,7 +355,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // ─── 4. Code Execution API Endpoint (SECURED WITH AUTH) ──────────────────────
-app.post('/api/execute', authMiddleware, (req, res) => {
+app.post('/api/execute', authMiddleware, async (req, res) => {
   try {
     const { code, language, stdin } = req.body;
 
@@ -363,68 +363,66 @@ app.post('/api/execute', authMiddleware, (req, res) => {
       return res.status(400).json({ error: 'No code provided' });
     }
 
-    const tempDir = path.join(process.cwd(), 'temp_exec');
-    if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir);
-
-    const runId = `run_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
-    const runDir = path.join(tempDir, runId);
-    fs.mkdirSync(runDir, { recursive: true });
-
-    const fileExtensions = {
-      python: 'py',
-      cpp: 'cpp',
+    // Map frontend language names to Piston API language names
+    const langMap = {
+      python: 'python',
+      cpp: 'c++',
       c: 'c',
-      java: 'Main.java',
-      javascript: 'js'
+      java: 'java',
+      javascript: 'javascript'
     };
 
-    const ext = fileExtensions[language] || 'txt';
-    const fileName = language === 'java' ? 'Main.java' : `solution.${ext}`;
-    const filePath = path.join(runDir, fileName);
-
-    fs.writeFileSync(filePath, code);
-
-    const stdinPath = path.join(runDir, 'stdin.txt');
-    fs.writeFileSync(stdinPath, stdin || '');
-
-    let command = '';
-    let exePath = '';
-
-    if (language === 'python') {
-      command = `python "${filePath}" < "${stdinPath}"`;
-    } else if (language === 'javascript') {
-      command = `node "${filePath}" < "${stdinPath}"`;
-    } else if (language === 'cpp') {
-      exePath = path.join(runDir, 'solution.exe');
-      command = `g++ "${filePath}" -o "${exePath}" && "${exePath}" < "${stdinPath}"`;
-    } else if (language === 'c') {
-      exePath = path.join(runDir, 'solution.exe');
-      command = `gcc "${filePath}" -o "${exePath}" && "${exePath}" < "${stdinPath}"`;
-    } else if (language === 'java') {
-      command = `javac "${filePath}" && java -cp "${runDir}" Main < "${stdinPath}"`;
-    } else {
-      try { fs.rmSync(runDir, { recursive: true, force: true }); } catch (cleanupErr) {}
+    const pistonLang = langMap[language];
+    if (!pistonLang) {
       return res.status(400).json({ error: 'Unsupported language' });
     }
 
-    exec(command, { timeout: 8000 }, (error, stdout, stderr) => {
+    const payload = {
+      language: pistonLang,
+      version: '*',
+      files: [{ content: code }],
+      stdin: stdin || ''
+    };
+
+    // Public Piston API mirrors (No API Key Required)
+    const pistonUrls = [
+      'https://emacs.piston.rs/api/v2/execute',
+      'https://emkc.org/api/v2/piston/execute'
+    ];
+
+    let fetchResponse = null;
+    let data = null;
+
+    for (const url of pistonUrls) {
       try {
-        if (fs.existsSync(runDir)) {
-          fs.rmSync(runDir, { recursive: true, force: true });
+        fetchResponse = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        
+        if (fetchResponse.ok) {
+          data = await fetchResponse.json();
+          break; // successfully executed
         }
-      } catch (cleanupErr) {
-        console.error('Cleanup error:', cleanupErr);
+      } catch (err) {
+        console.warn(`Execution API failed for ${url}:`, err.message);
+        // Continue to the next URL
       }
+    }
 
-      const output = {
-        code: error ? error.code || 1 : 0,
-        stdout: stdout || '',
-        stderr: stderr || (error ? error.message : ''),
-        output: (stdout || '') + (stderr || '')
-      };
+    if (!data || !data.run) {
+      return res.status(500).json({ error: 'All online compilers are currently unavailable.' });
+    }
 
-      res.json(output);
+    // Return the formatted output to the frontend
+    res.json({
+      code: data.run.code,
+      stdout: data.run.stdout || '',
+      stderr: data.run.stderr || '',
+      output: data.run.output || ''
     });
+
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
