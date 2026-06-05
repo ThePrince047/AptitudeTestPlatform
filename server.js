@@ -45,6 +45,36 @@ function makeJsonPostRequest(url, payload, customHeaders = {}) {
   });
 }
 
+function makeGetRequest(url, customHeaders = {}) {
+  return new Promise((resolve, reject) => {
+    const parsedUrl = new URL(url);
+    const options = {
+      hostname: parsedUrl.hostname,
+      path: parsedUrl.pathname + parsedUrl.search,
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        ...customHeaders
+      }
+    };
+
+    const req = https.request(options, (res) => {
+      let responseBody = '';
+      res.on('data', (chunk) => { responseBody += chunk; });
+      res.on('end', () => {
+        try {
+          resolve({ ok: res.statusCode >= 200 && res.statusCode < 300, status: res.statusCode, data: JSON.parse(responseBody) });
+        } catch (e) {
+          resolve({ ok: res.statusCode >= 200 && res.statusCode < 300, status: res.statusCode, data: null });
+        }
+      });
+    });
+
+    req.on('error', (e) => reject(e));
+    req.end();
+  });
+}
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -402,11 +432,11 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
 
     // Map frontend language names
     const languageKeys = {
-      python: { piston: 'python', pistonVersion: '*', onecompiler: 'python', onlineio: 'python-3.11', jdoodle: 'python3', jdoodleVer: '3' },
-      cpp: { piston: 'c++', pistonVersion: '*', onecompiler: 'cpp', onlineio: 'cpp-11', jdoodle: 'cpp', jdoodleVer: '5' },
-      c: { piston: 'c', pistonVersion: '*', onecompiler: 'c', onlineio: 'c-11', jdoodle: 'c', jdoodleVer: '5' },
-      java: { piston: 'java', pistonVersion: '*', onecompiler: 'java', onlineio: 'java-17', jdoodle: 'java', jdoodleVer: '4' },
-      javascript: { piston: 'javascript', pistonVersion: '*', onecompiler: 'nodejs', onlineio: 'nodejs-18', jdoodle: 'nodejs', jdoodleVer: '4' }
+      python: { piston: 'python', pistonVersion: '*', onecompiler: 'python', onlineio: 'python-3.11', jdoodle: 'python3', jdoodleVer: '3', paiza: 'python3' },
+      cpp: { piston: 'c++', pistonVersion: '*', onecompiler: 'cpp', onlineio: 'cpp-11', jdoodle: 'cpp', jdoodleVer: '5', paiza: 'cpp' },
+      c: { piston: 'c', pistonVersion: '*', onecompiler: 'c', onlineio: 'c-11', jdoodle: 'c', jdoodleVer: '5', paiza: 'c' },
+      java: { piston: 'java', pistonVersion: '*', onecompiler: 'java', onlineio: 'java-17', jdoodle: 'java', jdoodleVer: '4', paiza: 'java' },
+      javascript: { piston: 'javascript', pistonVersion: '*', onecompiler: 'nodejs', onlineio: 'nodejs-18', jdoodle: 'nodejs', jdoodleVer: '4', paiza: 'javascript' }
     };
 
     const langConfig = languageKeys[language];
@@ -467,15 +497,17 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
        fallbackErrors.push(`JDoodle skipped: Missing Client ID or Secret`);
     }
 
-    // --- Provider 3: OneCompiler (Public API fallback) ---
-    if (!data) {
+    // --- Provider 3: OneCompiler (Authenticated API) ---
+    if (!data && process.env.ONECOMPILER_API_KEY) {
       try {
         const ocPayload = {
           language: langConfig.onecompiler,
           stdin: stdin || '',
           files: [{ name: fileName, content: code }]
         };
-        const ocResponse = await makeJsonPostRequest('https://onecompiler.com/api/code/exec', ocPayload);
+        const ocResponse = await makeJsonPostRequest('https://api.onecompiler.com/v1/run', ocPayload, {
+          'X-API-Key': process.env.ONECOMPILER_API_KEY
+        });
         if (ocResponse.ok && ocResponse.data && !ocResponse.data.error) {
           data = ocResponse.data;
           compileErr = data.exception || '';
@@ -486,6 +518,8 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
           fallbackErrors.push(`OneCompiler failed: HTTP ${ocResponse.status} - ${JSON.stringify(ocResponse.data)}`);
         }
       } catch (e) { fallbackErrors.push(`OneCompiler exception: ${e.message}`); }
+    } else if (!data) {
+       fallbackErrors.push(`OneCompiler skipped: No API Key provided`);
     }
 
     // --- Provider 4: Piston API Mirrors ---
@@ -526,6 +560,43 @@ app.post('/api/execute', authMiddleware, async (req, res) => {
           }
         } catch (err) { fallbackErrors.push(`Piston (${url}) exception: ${err.message}`); }
       }
+    }
+
+    // --- Provider 5: Paiza.io (Public API) ---
+    if (!data) {
+      try {
+        const paizaPayload = {
+          source_code: code,
+          language: langConfig.paiza,
+          input: stdin || '',
+          api_key: 'guest'
+        };
+        const createRes = await makeJsonPostRequest('https://api.paiza.io/runners/create', paizaPayload);
+        if (createRes.ok && createRes.data && createRes.data.id) {
+          const runnerId = createRes.data.id;
+          let details;
+          // Poll for details
+          for (let i = 0; i < 15; i++) {
+            await new Promise(r => setTimeout(r, 1000));
+            const detailRes = await makeGetRequest(`https://api.paiza.io/runners/get_details?id=${runnerId}&api_key=guest`);
+            if (detailRes.ok && detailRes.data && detailRes.data.status === 'completed') {
+              details = detailRes.data;
+              break;
+            }
+          }
+          if (details) {
+            data = details;
+            compileErr = details.build_stderr || '';
+            runErr = details.stderr || '';
+            runOut = details.stdout || '';
+            runCode = details.build_exit_code !== 0 ? details.build_exit_code : (details.exit_code || 0);
+          } else {
+            fallbackErrors.push(`Paiza.io failed: Timeout or incomplete`);
+          }
+        } else {
+          fallbackErrors.push(`Paiza.io failed: HTTP ${createRes.status} - ${JSON.stringify(createRes.data)}`);
+        }
+      } catch (e) { fallbackErrors.push(`Paiza.io exception: ${e.message}`); }
     }
 
     if (!data) {
