@@ -1,4 +1,4 @@
-﻿// Aptitude Mock Test Question Bank
+// Aptitude Mock Test Question Bank
 // Total Questions: 2157
 
 export const QB = [
@@ -28385,7 +28385,8 @@ export const QB = [
     "q": "If 100 cats can kill 100 mice in 100 minutes, how many cats are needed to kill 100 mice in 50 minutes?",
     "opts": ["50", "100", "200", "150"],
     "ans": 2,
-    "sol": "Cats x Time = constant for same work. 100 x 100 = C x 50. C = 200 cats.",
+    "sol": "Cats x Time = constant for same work. 100 x 100 = C x 50. C = 200 cats."
+  },
   {
     "id": 2201,
     "cat": "Quantitative Aptitude",
