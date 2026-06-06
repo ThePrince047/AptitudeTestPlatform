@@ -290,7 +290,7 @@ export default function Materials({ onNavigate }) {
           </div>
           <div className="mat-stat-pill">
             <Icons.Zap size={13} />
-            100+ Formulas
+            200+ Formulas
           </div>
           <div className="mat-stat-pill">
             <Icons.Lightbulb size={13} />

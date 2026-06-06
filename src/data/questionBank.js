@@ -1,4 +1,4 @@
-// Aptitude Mock Test Question Bank
+﻿// Aptitude Mock Test Question Bank
 // Total Questions: 2157
 
 export const QB = [
@@ -26,7 +26,7 @@ export const QB = [
       "125"
     ],
     "ans": 2,
-    "sol": "25% of 400 = (25/100) × 400 = 100"
+    "sol": "25% of 400 = (25/100) Ãƒâ€” 400 = 100"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@ export const QB = [
       "6"
     ],
     "ans": 2,
-    "sol": "5x + 3 = 28\n→ 5x = 28 - 3 = 25\n→ x = 25 ÷ 5 = 5\n\nAnswer: x = 5"
+    "sol": "5x + 3 = 28\nÃ¢â€ â€™ 5x = 28 - 3 = 25\nÃ¢â€ â€™ x = 25 ÃƒÂ· 5 = 5\n\nAnswer: x = 5"
   },
   {
     "id": 4,
@@ -52,12 +52,12 @@ export const QB = [
       "45"
     ],
     "ans": 2,
-    "sol": "Sum of 5 numbers = 5 × 20 = 100. Sum of 4 numbers = 4 × 15 = 60. Excluded number = 100 - 60 = 40"
+    "sol": "Sum of 5 numbers = 5 Ãƒâ€” 20 = 100. Sum of 4 numbers = 4 Ãƒâ€” 15 = 60. Excluded number = 100 - 60 = 40"
   },
   {
     "id": 5,
     "cat": "Quantitative Aptitude",
-    "q": "A man buys an article for ₹500 and sells it for ₹600. What is his profit percentage?",
+    "q": "A man buys an article for Ã¢â€šÂ¹500 and sells it for Ã¢â€šÂ¹600. What is his profit percentage?",
     "opts": [
       "10%",
       "15%",
@@ -65,7 +65,7 @@ export const QB = [
       "25%"
     ],
     "ans": 2,
-    "sol": "Profit = 600 - 500 = 100. Profit% = (100/500) × 100 = 20%"
+    "sol": "Profit = 600 - 500 = 100. Profit% = (100/500) Ãƒâ€” 100 = 20%"
   },
   {
     "id": 6,
@@ -91,7 +91,7 @@ export const QB = [
       "4:5"
     ],
     "ans": 0,
-    "sol": "A:B = 3:4\nB:C = 2:3\n\nTo combine, make B common:\n→ Multiply A:B by 2: A:B = 6:8\n→ Multiply B:C by 4: B:C = 8:12\n\nNow A:B:C = 6:8:12\nSimplify A:C = 6:12 = 1:2\n\nAnswer: A:C = 1:2"
+    "sol": "A:B = 3:4\nB:C = 2:3\n\nTo combine, make B common:\nÃ¢â€ â€™ Multiply A:B by 2: A:B = 6:8\nÃ¢â€ â€™ Multiply B:C by 4: B:C = 8:12\n\nNow A:B:C = 6:8:12\nSimplify A:C = 6:12 = 1:2\n\nAnswer: A:C = 1:2"
   },
   {
     "id": 8,
@@ -109,15 +109,15 @@ export const QB = [
   {
     "id": 9,
     "cat": "Quantitative Aptitude",
-    "q": "Simple Interest on ₹1000 at 5% per annum for 2 years is?",
+    "q": "Simple Interest on Ã¢â€šÂ¹1000 at 5% per annum for 2 years is?",
     "opts": [
-      "₹50",
-      "₹100",
-      "₹150",
-      "₹200"
+      "Ã¢â€šÂ¹50",
+      "Ã¢â€šÂ¹100",
+      "Ã¢â€šÂ¹150",
+      "Ã¢â€šÂ¹200"
     ],
     "ans": 1,
-    "sol": "SI = (P × R × T)/100 = (1000 × 5 × 2)/100 = ₹100"
+    "sol": "SI = (P Ãƒâ€” R Ãƒâ€” T)/100 = (1000 Ãƒâ€” 5 Ãƒâ€” 2)/100 = Ã¢â€šÂ¹100"
   },
   {
     "id": 10,
@@ -130,7 +130,7 @@ export const QB = [
       "6"
     ],
     "ans": 2,
-    "sol": "2^x = 32\n\nExpress 32 as a power of 2:\n32 = 2 × 2 × 2 × 2 × 2 = 2⁵\n\nTherefore x = 5\n\nAnswer: x = 5"
+    "sol": "2^x = 32\n\nExpress 32 as a power of 2:\n32 = 2 Ãƒâ€” 2 Ãƒâ€” 2 Ãƒâ€” 2 Ãƒâ€” 2 = 2Ã¢ÂÂµ\n\nTherefore x = 5\n\nAnswer: x = 5"
   },
   {
     "id": 11,
@@ -169,7 +169,7 @@ export const QB = [
       "NPUIFS"
     ],
     "ans": 0,
-    "sol": "Each letter is shifted by +1 position. M→N, O→P, T→U, H→I, E→F, R→S"
+    "sol": "Each letter is shifted by +1 position. MÃ¢â€ â€™N, OÃ¢â€ â€™P, TÃ¢â€ â€™U, HÃ¢â€ â€™I, EÃ¢â€ â€™F, RÃ¢â€ â€™S"
   },
   {
     "id": 14,
@@ -195,7 +195,7 @@ export const QB = [
       "UKUTGS"
     ],
     "ans": 0,
-    "sol": "In FRIEND → HUMJTK, each letter is shifted by +2 positions in the alphabet:\nF+2=H, R+2=T (wait, R→U is +3).\n\nActually: F→H(+2), R→U(+3)? Let's verify:\nF(6)→H(8): +2, R(18)→U(21): +3, I(9)→M(13): +4, E(5)→J(10): +5, N(14)→T(20): +6, D(4)→K(11): +7\n\nThe shift increases by 1 for each letter. For SISTER:\nS+2=U, I+3=L (wait)... Actually the shifts are 2,3,4,5,6,7.\nS(19)+2=U(21), I(9)+3=L(12), S(19)+4=W(23), T(20)+5=Y(25), E(5)+6=K(11), R(18)+7=Y(25)...\n\nNote: The correct answer is option A (UKUVGT) as given — this matches a standard +2 shift pattern variant used in many aptitude books."
+    "sol": "In FRIEND Ã¢â€ â€™ HUMJTK, each letter is shifted by +2 positions in the alphabet:\nF+2=H, R+2=T (wait, RÃ¢â€ â€™U is +3).\n\nActually: FÃ¢â€ â€™H(+2), RÃ¢â€ â€™U(+3)? Let's verify:\nF(6)Ã¢â€ â€™H(8): +2, R(18)Ã¢â€ â€™U(21): +3, I(9)Ã¢â€ â€™M(13): +4, E(5)Ã¢â€ â€™J(10): +5, N(14)Ã¢â€ â€™T(20): +6, D(4)Ã¢â€ â€™K(11): +7\n\nThe shift increases by 1 for each letter. For SISTER:\nS+2=U, I+3=L (wait)... Actually the shifts are 2,3,4,5,6,7.\nS(19)+2=U(21), I(9)+3=L(12), S(19)+4=W(23), T(20)+5=Y(25), E(5)+6=K(11), R(18)+7=Y(25)...\n\nNote: The correct answer is option A (UKUVGT) as given Ã¢â‚¬â€ this matches a standard +2 shift pattern variant used in many aptitude books."
   },
   {
     "id": 16,
@@ -221,7 +221,7 @@ export const QB = [
       "102"
     ],
     "ans": 0,
-    "sol": "Using A=1, B=2, C=3, ..., Z=26:\n\nC=3, O=15, M=13, P=16, U=21, T=20, E=5, R=18\n\nSum = 3 + 15 + 13 + 16 + 21 + 20 + 5 + 18 = 111\n\nWait — let's recount:\n3 + 15 = 18\n18 + 13 = 31\n31 + 16 = 47\n47 + 21 = 68\n68 + 20 = 88\n88 + 5 = 93\n93 + 18 = 111\n\nCorrection: The value of COMPUTER = 111, not 99. The correct answer is 'None of the above' but among the given options, the closest listed answer is 99. This question contains an error in the options — the actual sum is 111."
+    "sol": "Using A=1, B=2, C=3, ..., Z=26:\n\nC=3, O=15, M=13, P=16, U=21, T=20, E=5, R=18\n\nSum = 3 + 15 + 13 + 16 + 21 + 20 + 5 + 18 = 111\n\nWait Ã¢â‚¬â€ let's recount:\n3 + 15 = 18\n18 + 13 = 31\n31 + 16 = 47\n47 + 21 = 68\n68 + 20 = 88\n88 + 5 = 93\n93 + 18 = 111\n\nCorrection: The value of COMPUTER = 111, not 99. The correct answer is 'None of the above' but among the given options, the closest listed answer is 99. This question contains an error in the options Ã¢â‚¬â€ the actual sum is 111."
   },
   {
     "id": 18,
@@ -425,7 +425,7 @@ export const QB = [
     "opts": [
       "O(n)",
       "O(log n)",
-      "O(n²)",
+      "O(nÃ‚Â²)",
       "O(1)"
     ],
     "ans": 1,
@@ -468,7 +468,7 @@ export const QB = [
       "Depends on compiler"
     ],
     "ans": 1,
-    "sol": "The size of int in C is NOT fixed by the standard — it is platform-dependent.\n\nHowever, on most modern 32-bit and 64-bit systems:\n• int = 4 bytes (32 bits)\n\nThe C standard only guarantees int is at least 16 bits.\nOn older 16-bit systems, int was 2 bytes.\n\nAnswer: 4 bytes (on most modern systems)"
+    "sol": "The size of int in C is NOT fixed by the standard Ã¢â‚¬â€ it is platform-dependent.\n\nHowever, on most modern 32-bit and 64-bit systems:\nÃ¢â‚¬Â¢ int = 4 bytes (32 bits)\n\nThe C standard only guarantees int is at least 16 bits.\nOn older 16-bit systems, int was 2 bytes.\n\nAnswer: 4 bytes (on most modern systems)"
   },
   {
     "id": 37,
@@ -933,7 +933,7 @@ export const QB = [
       "O(1)",
       "O(log n)",
       "O(n)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 2,
     "sol": "Linear search may need to check all n elements in worst case."
@@ -1010,7 +1010,7 @@ export const QB = [
     "opts": [
       "log n",
       "n",
-      "n²",
+      "nÃ‚Â²",
       "1"
     ],
     "ans": 1,
@@ -1037,7 +1037,7 @@ export const QB = [
       "O(1)",
       "O(n)",
       "O(log n)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 1,
     "sol": "Recursive factorial uses O(n) space for the call stack."
@@ -1141,7 +1141,7 @@ export const QB = [
       "O(1)",
       "O(log n)",
       "O(n)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 0,
     "sol": "Array allows constant time access to elements by index."
@@ -1957,13 +1957,13 @@ export const QB = [
     "cat": "Logical Reasoning",
     "q": "A clock shows 3:15. What is the angle between hour and minute hands?",
     "opts": [
-      "0°",
-      "7.5°",
-      "15°",
-      "30°"
+      "0Ã‚Â°",
+      "7.5Ã‚Â°",
+      "15Ã‚Â°",
+      "30Ã‚Â°"
     ],
     "ans": 1,
-    "sol": "Hour hand at 3:15 = 97.5°, Minute hand at 15 minutes = 90°. Angle = 7.5°"
+    "sol": "Hour hand at 3:15 = 97.5Ã‚Â°, Minute hand at 15 minutes = 90Ã‚Â°. Angle = 7.5Ã‚Â°"
   },
   {
     "id": 152,
@@ -2007,15 +2007,15 @@ export const QB = [
   {
     "id": 155,
     "cat": "Logical Reasoning",
-    "q": "A bat and ball cost ₹110. The bat costs ₹100 more than ball. What does ball cost?",
+    "q": "A bat and ball cost Ã¢â€šÂ¹110. The bat costs Ã¢â€šÂ¹100 more than ball. What does ball cost?",
     "opts": [
-      "₹10",
-      "₹5",
-      "₹15",
-      "₹20"
+      "Ã¢â€šÂ¹10",
+      "Ã¢â€šÂ¹5",
+      "Ã¢â€šÂ¹15",
+      "Ã¢â€šÂ¹20"
     ],
     "ans": 1,
-    "sol": "Let ball = x, bat = x+100. So x + x+100 = 110, 2x = 10, x = ₹5"
+    "sol": "Let ball = x, bat = x+100. So x + x+100 = 110, 2x = 10, x = Ã¢â€šÂ¹5"
   },
   {
     "id": 156,
@@ -2054,7 +2054,7 @@ export const QB = [
       "100"
     ],
     "ans": 1,
-    "sol": "8²+7²+6²+5²+4²+3²+2²+1² = 64+49+36+25+16+9+4+1 = 204"
+    "sol": "8Ã‚Â²+7Ã‚Â²+6Ã‚Â²+5Ã‚Â²+4Ã‚Â²+3Ã‚Â²+2Ã‚Â²+1Ã‚Â² = 64+49+36+25+16+9+4+1 = 204"
   },
   {
     "id": 159,
@@ -2080,7 +2080,7 @@ export const QB = [
       "40"
     ],
     "ans": 1,
-    "sol": "(1/2)×(2/3)×(3/4)×(4/5)×100 = (1×2×3×4×100)/(2×3×4×5) = 20"
+    "sol": "(1/2)Ãƒâ€”(2/3)Ãƒâ€”(3/4)Ãƒâ€”(4/5)Ãƒâ€”100 = (1Ãƒâ€”2Ãƒâ€”3Ãƒâ€”4Ãƒâ€”100)/(2Ãƒâ€”3Ãƒâ€”4Ãƒâ€”5) = 20"
   },
   {
     "id": 161,
@@ -2106,7 +2106,7 @@ export const QB = [
       "24"
     ],
     "ans": 1,
-    "sol": "Total work = 12×9 = 108 man-days. Men needed = 108/6 = 18"
+    "sol": "Total work = 12Ãƒâ€”9 = 108 man-days. Men needed = 108/6 = 18"
   },
   {
     "id": 163,
@@ -2119,7 +2119,7 @@ export const QB = [
       "25 days"
     ],
     "ans": 2,
-    "sol": "If A takes 10 days and is twice as efficient, B takes 2×10 = 20 days"
+    "sol": "If A takes 10 days and is twice as efficient, B takes 2Ãƒâ€”10 = 20 days"
   },
   {
     "id": 164,
@@ -2158,7 +2158,7 @@ export const QB = [
       "150 km"
     ],
     "ans": 3,
-    "sol": "Distance = Speed × Time = 60 × 2.5 = 150 km"
+    "sol": "Distance = Speed Ãƒâ€” Time = 60 Ãƒâ€” 2.5 = 150 km"
   },
   {
     "id": 167,
@@ -2179,12 +2179,12 @@ export const QB = [
     "q": "A man walks 5 km North, 3 km East, 2 km North, 4 km East. How far from start?",
     "opts": [
       "7 km",
-      "√74 km",
+      "Ã¢Ë†Å¡74 km",
       "10 km",
       "14 km"
     ],
     "ans": 1,
-    "sol": "Total North = 7 km, Total East = 7 km. Distance = √(7²+7²) = √98 = 7√2 ≈ 9.9 ≈ √74"
+    "sol": "Total North = 7 km, Total East = 7 km. Distance = Ã¢Ë†Å¡(7Ã‚Â²+7Ã‚Â²) = Ã¢Ë†Å¡98 = 7Ã¢Ë†Å¡2 Ã¢â€°Ë† 9.9 Ã¢â€°Ë† Ã¢Ë†Å¡74"
   },
   {
     "id": 169,
@@ -2210,7 +2210,7 @@ export const QB = [
       "52 km/h"
     ],
     "ans": 1,
-    "sol": "Average speed = 2xy/(x+y) = 2×40×60/100 = 48 km/h"
+    "sol": "Average speed = 2xy/(x+y) = 2Ãƒâ€”40Ãƒâ€”60/100 = 48 km/h"
   },
   {
     "id": 171,
@@ -2540,7 +2540,7 @@ export const QB = [
   {
     "id": 196,
     "cat": "Quantitative Aptitude",
-    "q": "If x² - 5x + 6 = 0, what are values of x?",
+    "q": "If xÃ‚Â² - 5x + 6 = 0, what are values of x?",
     "opts": [
       "2 and 3",
       "1 and 6",
@@ -2553,7 +2553,7 @@ export const QB = [
   {
     "id": 197,
     "cat": "Quantitative Aptitude",
-    "q": "√(0.0001) = ?",
+    "q": "Ã¢Ë†Å¡(0.0001) = ?",
     "opts": [
       "0.001",
       "0.01",
@@ -2561,12 +2561,12 @@ export const QB = [
       "1"
     ],
     "ans": 1,
-    "sol": "√(0.0001) = √(1/10000) = 1/100 = 0.01"
+    "sol": "Ã¢Ë†Å¡(0.0001) = Ã¢Ë†Å¡(1/10000) = 1/100 = 0.01"
   },
   {
     "id": 198,
     "cat": "Quantitative Aptitude",
-    "q": "(0.2)³ = ?",
+    "q": "(0.2)Ã‚Â³ = ?",
     "opts": [
       "0.006",
       "0.008",
@@ -2574,7 +2574,7 @@ export const QB = [
       "0.06"
     ],
     "ans": 1,
-    "sol": "(0.2)³ = (2/10)³ = 8/1000 = 0.008"
+    "sol": "(0.2)Ã‚Â³ = (2/10)Ã‚Â³ = 8/1000 = 0.008"
   },
   {
     "id": 199,
@@ -2600,7 +2600,7 @@ export const QB = [
       "54"
     ],
     "ans": 1,
-    "sol": "12 = 2²×3, 18 = 2×3². LCM = 2²×3² = 36"
+    "sol": "12 = 2Ã‚Â²Ãƒâ€”3, 18 = 2Ãƒâ€”3Ã‚Â². LCM = 2Ã‚Â²Ãƒâ€”3Ã‚Â² = 36"
   },
   {
     "id": 201,
@@ -2639,7 +2639,7 @@ export const QB = [
       "25%"
     ],
     "ans": 2,
-    "sol": "Increase = 100. Percentage = (100/500)×100 = 20%"
+    "sol": "Increase = 100. Percentage = (100/500)Ãƒâ€”100 = 20%"
   },
   {
     "id": 204,
@@ -2808,7 +2808,7 @@ export const QB = [
       "48"
     ],
     "ans": 2,
-    "sol": "Pattern: n × (n+1) × 1. So 6 × 7 = 42"
+    "sol": "Pattern: n Ãƒâ€” (n+1) Ãƒâ€” 1. So 6 Ãƒâ€” 7 = 42"
   },
   {
     "id": 217,
@@ -2821,7 +2821,7 @@ export const QB = [
       "189"
     ],
     "ans": 3,
-    "sol": "All are perfect squares except 189 (11², 12², 13², 14²=196, 15²)"
+    "sol": "All are perfect squares except 189 (11Ã‚Â², 12Ã‚Â², 13Ã‚Â², 14Ã‚Â²=196, 15Ã‚Â²)"
   },
   {
     "id": 218,
@@ -2847,7 +2847,7 @@ export const QB = [
       "FU"
     ],
     "ans": 0,
-    "sol": "First letter increases A→B→C→D→E, Second letter decreases Z→Y→X→W→V"
+    "sol": "First letter increases AÃ¢â€ â€™BÃ¢â€ â€™CÃ¢â€ â€™DÃ¢â€ â€™E, Second letter decreases ZÃ¢â€ â€™YÃ¢â€ â€™XÃ¢â€ â€™WÃ¢â€ â€™V"
   },
   {
     "id": 220,
@@ -2860,7 +2860,7 @@ export const QB = [
       "QROL"
     ],
     "ans": 3,
-    "sol": "Each letter shifts backward: L→Q(+5), I→R(-9→+17), O→R(+3), N→L(-2)... Pattern: reverse alphabet"
+    "sol": "Each letter shifts backward: LÃ¢â€ â€™Q(+5), IÃ¢â€ â€™R(-9Ã¢â€ â€™+17), OÃ¢â€ â€™R(+3), NÃ¢â€ â€™L(-2)... Pattern: reverse alphabet"
   },
   {
     "id": 221,
@@ -2912,7 +2912,7 @@ export const QB = [
       "North"
     ],
     "ans": 0,
-    "sol": "SE→N means 135° clockwise rotation. NW→E with same rotation."
+    "sol": "SEÃ¢â€ â€™N means 135Ã‚Â° clockwise rotation. NWÃ¢â€ â€™E with same rotation."
   },
   {
     "id": 225,
@@ -2925,7 +2925,7 @@ export const QB = [
       "24"
     ],
     "ans": 2,
-    "sol": "Edge cubes (not corners) have 2 painted faces. 3×3×3 cube has 12 edge pieces."
+    "sol": "Edge cubes (not corners) have 2 painted faces. 3Ãƒâ€”3Ãƒâ€”3 cube has 12 edge pieces."
   },
   {
     "id": 226,
@@ -3172,20 +3172,20 @@ export const QB = [
       "20%"
     ],
     "ans": 1,
-    "sol": "If sum becomes 3x, interest = 2x. SI = (P×R×T)/100. 2P = (P×R×20)/100. R = 10%"
+    "sol": "If sum becomes 3x, interest = 2x. SI = (PÃƒâ€”RÃƒâ€”T)/100. 2P = (PÃƒâ€”RÃƒâ€”20)/100. R = 10%"
   },
   {
     "id": 245,
     "cat": "Quantitative Aptitude",
-    "q": "What is compound interest on ₹1000 at 10% for 2 years?",
+    "q": "What is compound interest on Ã¢â€šÂ¹1000 at 10% for 2 years?",
     "opts": [
-      "₹200",
-      "₹210",
-      "₹220",
-      "₹250"
+      "Ã¢â€šÂ¹200",
+      "Ã¢â€šÂ¹210",
+      "Ã¢â€šÂ¹220",
+      "Ã¢â€šÂ¹250"
     ],
     "ans": 1,
-    "sol": "CI = P(1+R/100)^T - P = 1000(1.1)² - 1000 = 1210 - 1000 = ₹210"
+    "sol": "CI = P(1+R/100)^T - P = 1000(1.1)Ã‚Â² - 1000 = 1210 - 1000 = Ã¢â€šÂ¹210"
   },
   {
     "id": 246,
@@ -3203,7 +3203,7 @@ export const QB = [
   {
     "id": 247,
     "cat": "Quantitative Aptitude",
-    "q": "Cost price is ₹800, marked price is ₹1000, discount is 10%. Find profit percentage.",
+    "q": "Cost price is Ã¢â€šÂ¹800, marked price is Ã¢â€šÂ¹1000, discount is 10%. Find profit percentage.",
     "opts": [
       "10%",
       "12.5%",
@@ -3211,7 +3211,7 @@ export const QB = [
       "20%"
     ],
     "ans": 1,
-    "sol": "Selling price = 1000×0.9 = ₹900. Profit = 900-800 = ₹100. Profit% = 100/800×100 = 12.5%"
+    "sol": "Selling price = 1000Ãƒâ€”0.9 = Ã¢â€šÂ¹900. Profit = 900-800 = Ã¢â€šÂ¹100. Profit% = 100/800Ãƒâ€”100 = 12.5%"
   },
   {
     "id": 248,
@@ -3367,7 +3367,7 @@ export const QB = [
       "1001"
     ],
     "ans": 1,
-    "sol": "10 = 8+2 = 2³+2¹ = 1010 in binary"
+    "sol": "10 = 8+2 = 2Ã‚Â³+2Ã‚Â¹ = 1010 in binary"
   },
   {
     "id": 260,
@@ -3991,7 +3991,7 @@ export const QB = [
       "Completion chart"
     ],
     "ans": 0,
-    "sol": "Burndown chart visualizes work remaining versus time in sprint. CONCLUSION Total Questions: 300+ These questions cover all major topics for TCS nqt:  ✅ Quantitative Aptitude  ✅ Logical Reasoning  ✅ Verbal Ability  ✅ Programming Concepts (C, C++, Java, Python)  ✅ Data Structures & Algorithms  ✅ Database Management (SQL, DBMS)  ✅ Operating Systems  ✅ Computer Networks  ✅ Web Technologies  ✅ Cloud Computing  ✅ Cybersecurity  ✅ Software Engineering  ✅ AI & Machine Learning Basics  ✅ System Design  ✅ Puzzles & Brain Teasers Follow for More Updates: Instagram: @code.abhii07 (SYNTAXERROR) Prepared By: Abhishek Rathor"
+    "sol": "Burndown chart visualizes work remaining versus time in sprint. CONCLUSION Total Questions: 300+ These questions cover all major topics for TCS nqt: Ã¯â€šÂ· Ã¢Å“â€¦ Quantitative Aptitude Ã¯â€šÂ· Ã¢Å“â€¦ Logical Reasoning Ã¯â€šÂ· Ã¢Å“â€¦ Verbal Ability Ã¯â€šÂ· Ã¢Å“â€¦ Programming Concepts (C, C++, Java, Python) Ã¯â€šÂ· Ã¢Å“â€¦ Data Structures & Algorithms Ã¯â€šÂ· Ã¢Å“â€¦ Database Management (SQL, DBMS) Ã¯â€šÂ· Ã¢Å“â€¦ Operating Systems Ã¯â€šÂ· Ã¢Å“â€¦ Computer Networks Ã¯â€šÂ· Ã¢Å“â€¦ Web Technologies Ã¯â€šÂ· Ã¢Å“â€¦ Cloud Computing Ã¯â€šÂ· Ã¢Å“â€¦ Cybersecurity Ã¯â€šÂ· Ã¢Å“â€¦ Software Engineering Ã¯â€šÂ· Ã¢Å“â€¦ AI & Machine Learning Basics Ã¯â€šÂ· Ã¢Å“â€¦ System Design Ã¯â€šÂ· Ã¢Å“â€¦ Puzzles & Brain Teasers Follow for More Updates: Instagram: @code.abhii07 (SYNTAXERROR) Prepared By: Abhishek Rathor"
   },
   {
     "id": 308,
@@ -4134,7 +4134,7 @@ export const QB = [
       "20km"
     ],
     "ans": 0,
-    "sol": "Let, time taken by ϲ\n  =t  \n //ly, time taken by train ω\n  =t-30  \n\nWe know that.....speed=distance /time  \n Speed of bicycle ϲ\n , 7.5=d/t....(1)  \n Speed of ω\n , 30=d/(t-30/60)....(2)  \n Sol 1&2,we get t=0.666  \n By sub and value in equal(1)   \n We d=4.999~5km"
+    "sol": "Let, time taken by ÃÂ²\n  =t  \n //ly, time taken by train Ãâ€°\n  =t-30  \n\nWe know that.....speed=distance /time  \n Speed of bicycle ÃÂ²\n , 7.5=d/t....(1)  \n Speed of Ãâ€°\n , 30=d/(t-30/60)....(2)  \n Sol 1&2,we get t=0.666  \n By sub and value in equal(1)   \n We d=4.999~5km"
   },
   {
     "id": 319,
@@ -4178,7 +4178,7 @@ export const QB = [
   {
     "id": 322,
     "cat": "Quantitative Aptitude",
-    "q": "For any two numbers we define an operation $ yielding another number, X $  \n Y such that following condition holds:  \n • X $ X = 0 for all X  \n • X $ (Y $ Z) = X $ Y + Z  \n Find the Value of 2012 $ 0 + 2012 $ 1912  \n Options",
+    "q": "For any two numbers we define an operation $ yielding another number, X $  \n Y such that following condition holds:  \n Ã¢â‚¬Â¢ X $ X = 0 for all X  \n Ã¢â‚¬Â¢ X $ (Y $ Z) = X $ Y + Z  \n Find the Value of 2012 $ 0 + 2012 $ 1912  \n Options",
     "opts": [
       "2112",
       "100",
@@ -4274,7 +4274,7 @@ export const QB = [
       "3/1",
       "2/1",
       "1/1",
-      "½"
+      "Ã‚Â½"
     ],
     "ans": 0,
     "sol": "let the no of i10 cars be x and i20 be y  \n now th rejcted i10 cars are 4x/100 and i20 cars are 8y/100  \n  \n and it is given that 4x/100 +8y/100 = 7(x+y)/100  \n so we get y = 3x  \n so the ratio is 3:1"
@@ -4310,13 +4310,13 @@ export const QB = [
     "cat": "Quantitative Aptitude",
     "q": "In a clock the long hand is of 8cm and the short hand is of 7cm. if the clock  \n runs for 4 days find out the total distance covered by both the hands",
     "opts": [
-      "1824 π cm",
-      "1648π cm",
-      "1724π cm",
-      "2028π cm"
+      "1824 Ãâ‚¬ cm",
+      "1648Ãâ‚¬ cm",
+      "1724Ãâ‚¬ cm",
+      "2028Ãâ‚¬ cm"
     ],
     "ans": 1,
-    "sol": "Explanation:    Short Hand ( Hour hand)  \n Hour hand makes a full rotation in 12 hours.  \n\nOne full rotation in 12 hours =>2πr=14π cm traversed every 12 hours.  \n For one day(24 hours ), we have 28π cm, twice that of a 12 hour period.  \n For 3 days, we then have 4 x 28 π=112π cm traversed.  \n Long Hand ( Minute hand)  \n One full rotation in 1 hour =>2πr=16π cm traversed every hour.  \n For one day, we have 24 x  16 π=384π cm.  \n For 4 days, we then have 4 x 384π=1536π cm traversed.  \n Total Distance  \n For the total, we have 112π+1536π=1648π cm."
+    "sol": "Explanation:    Short Hand ( Hour hand)  \n Hour hand makes a full rotation in 12 hours.  \n\nOne full rotation in 12 hours =>2Ãâ‚¬r=14Ãâ‚¬ cm traversed every 12 hours.  \n For one day(24 hours ), we have 28Ãâ‚¬ cm, twice that of a 12 hour period.  \n For 3 days, we then have 4 x 28 Ãâ‚¬=112Ãâ‚¬ cm traversed.  \n Long Hand ( Minute hand)  \n One full rotation in 1 hour =>2Ãâ‚¬r=16Ãâ‚¬ cm traversed every hour.  \n For one day, we have 24 x  16 Ãâ‚¬=384Ãâ‚¬ cm.  \n For 4 days, we then have 4 x 384Ãâ‚¬=1536Ãâ‚¬ cm traversed.  \n Total Distance  \n For the total, we have 112Ãâ‚¬+1536Ãâ‚¬=1648Ãâ‚¬ cm."
   },
   {
     "id": 333,
@@ -4329,7 +4329,7 @@ export const QB = [
       "10"
     ],
     "ans": 1,
-    "sol": "A can finish 118118th of the total work in a day and B can finish  \n 115115th of the total work in a day. After working 10 days by B alone,the work  \n remains is 1−1015=131−1015=13th of the total work.  \n  \n It can be finished by A in13÷118=1×183×1=613÷118=1×183×1=6days."
+    "sol": "A can finish 118118th of the total work in a day and B can finish  \n 115115th of the total work in a day. After working 10 days by B alone,the work  \n remains is 1Ã¢Ë†â€™1015=131Ã¢Ë†â€™1015=13th of the total work.  \n  \n It can be finished by A in13ÃƒÂ·118=1Ãƒâ€”183Ãƒâ€”1=613ÃƒÂ·118=1Ãƒâ€”183Ãƒâ€”1=6days."
   },
   {
     "id": 334,
@@ -4472,7 +4472,7 @@ export const QB = [
       "4,1"
     ],
     "ans": 1,
-    "sol": "When dividing a positive integer nn by another positive integer DD  \n (divider), we obtain a quotient QQ, which is a non-negative integer and a  \n remainder R, which is an integer such that 0≤R<D0≤R<D. We can write  \n n=DQ+R.n=DQ+R.  \n  \n When dividing our number nn by 4 we obtain a remainder of 1, so, if the quotient  \n is some integer QQ, we can write n=4Q+1.n=4Q+1.  \n Now, dividing QQ by 5, we obtain another quotient say qq and remainder 4, thus  \n we can write Q=5q+4.Q=5q+4.  \n  \n It follows that n=4(5q+4)+1=20q+17.n=4(5q+4)+1=20q+17.  \n Since n=20q+17=5(4q+3)+2n=20q+17=5(4q+3)+2, it means that when dividing nn  \n by 5 first, we get a quotient 4q+34q+3 and remainder 2.  \n Then dividing 4q+34q+3 by 4 we obviously obtain a remainder of 3."
+    "sol": "When dividing a positive integer nn by another positive integer DD  \n (divider), we obtain a quotient QQ, which is a non-negative integer and a  \n remainder R, which is an integer such that 0Ã¢â€°Â¤R<D0Ã¢â€°Â¤R<D. We can write  \n n=DQ+R.n=DQ+R.  \n  \n When dividing our number nn by 4 we obtain a remainder of 1, so, if the quotient  \n is some integer QQ, we can write n=4Q+1.n=4Q+1.  \n Now, dividing QQ by 5, we obtain another quotient say qq and remainder 4, thus  \n we can write Q=5q+4.Q=5q+4.  \n  \n It follows that n=4(5q+4)+1=20q+17.n=4(5q+4)+1=20q+17.  \n Since n=20q+17=5(4q+3)+2n=20q+17=5(4q+3)+2, it means that when dividing nn  \n by 5 first, we get a quotient 4q+34q+3 and remainder 2.  \n Then dividing 4q+34q+3 by 4 we obviously obtain a remainder of 3."
   },
   {
     "id": 345,
@@ -4563,7 +4563,7 @@ export const QB = [
       "1243"
     ],
     "ans": 1,
-    "sol": "Maximum 3 men can be played which means there can be 0, 1, 2, 3 men  \n in the team.  \n (5C0×11C11)+(5C1×11C10)+(5C2×11C9)+(5C3×11C8)=2256"
+    "sol": "Maximum 3 men can be played which means there can be 0, 1, 2, 3 men  \n in the team.  \n (5C0Ãƒâ€”11C11)+(5C1Ãƒâ€”11C10)+(5C2Ãƒâ€”11C9)+(5C3Ãƒâ€”11C8)=2256"
   },
   {
     "id": 352,
@@ -4667,7 +4667,7 @@ export const QB = [
       "none of these"
     ],
     "ans": 1,
-    "sol": "If the radius of the bigger circle is 1, then diameter = 2 units.  Which in  \n turn equals to diagonal of square.  \n Let the side of the square be x. Then x2 + x2 = 22 ⇒  2x2 = 4 ⇒  x = √22  \n Now diameter of the inner circle = side of the square.  So radius of the inner circle  \n = √22=1√222=12  \n Areas marked by 1, 2, 3, 4 = (Area of the circle - area of the square)/4 =  \n π(1)2−(√2)24π(1)2−(2)24 = π−24π−24 = 0.285  \n Areas marked by 5, 6, 7, 8 = (Area of the square - area of the inner circle)/4 =  \n (√2)2−π(1√2)24(2)2−π(12)24 = 2−π242−π24 = 0.1075  \n So Area marked by 4 is bigger."
+    "sol": "If the radius of the bigger circle is 1, then diameter = 2 units.  Which in  \n turn equals to diagonal of square.  \n Let the side of the square be x. Then x2 + x2 = 22 Ã¢â€¡â€™  2x2 = 4 Ã¢â€¡â€™  x = Ã¢Ë†Å¡22  \n Now diameter of the inner circle = side of the square.  So radius of the inner circle  \n = Ã¢Ë†Å¡22=1Ã¢Ë†Å¡222=12  \n Areas marked by 1, 2, 3, 4 = (Area of the circle - area of the square)/4 =  \n Ãâ‚¬(1)2Ã¢Ë†â€™(Ã¢Ë†Å¡2)24Ãâ‚¬(1)2Ã¢Ë†â€™(2)24 = Ãâ‚¬Ã¢Ë†â€™24Ãâ‚¬Ã¢Ë†â€™24 = 0.285  \n Areas marked by 5, 6, 7, 8 = (Area of the square - area of the inner circle)/4 =  \n (Ã¢Ë†Å¡2)2Ã¢Ë†â€™Ãâ‚¬(1Ã¢Ë†Å¡2)24(2)2Ã¢Ë†â€™Ãâ‚¬(12)24 = 2Ã¢Ë†â€™Ãâ‚¬242Ã¢Ë†â€™Ãâ‚¬24 = 0.1075  \n So Area marked by 4 is bigger."
   },
   {
     "id": 360,
@@ -4869,9 +4869,9 @@ export const QB = [
     "cat": "Quantitative Aptitude",
     "q": "A completes 80% of a work in 20 days. Then B also joins and A and B  \n together finish the remaining work in 3 days. How long does it need for B if he  \n alone completes the work?",
     "opts": [
-      "37 ½",
+      "37 Ã‚Â½",
       "32",
-      "32 ½",
+      "32 Ã‚Â½",
       "37"
     ],
     "ans": 1,
@@ -4971,7 +4971,7 @@ export const QB = [
   {
     "id": 383,
     "cat": "Quantitative Aptitude",
-    "q": "How many 2’s are there between the terms 112 to 375?",
+    "q": "How many 2Ã¢â‚¬â„¢s are there between the terms 112 to 375?",
     "opts": [
       "313",
       "159",
@@ -5127,11 +5127,11 @@ export const QB = [
   {
     "id": 395,
     "cat": "Quantitative Aptitude",
-    "q": "The HCF of 2472, 1284 and a third number ‘N’ is 12. If their LCM is 2^3 × 3^2  \n × 5 × 103 × 107,  \n then the number ‘N’ is:",
+    "q": "The HCF of 2472, 1284 and a third number Ã¢â‚¬ËœNÃ¢â‚¬â„¢ is 12. If their LCM is 2^3 Ãƒâ€” 3^2  \n Ãƒâ€” 5 Ãƒâ€” 103 Ãƒâ€” 107,  \n then the number Ã¢â‚¬ËœNÃ¢â‚¬â„¢ is:",
     "opts": [
-      "2^2 × 3^2 × 7",
-      "2^2 × 3^3 × 103",
-      "2^2 × 3 × 5",
+      "2^2 Ãƒâ€” 3^2 Ãƒâ€” 7",
+      "2^2 Ãƒâ€” 3^3 Ãƒâ€” 103",
+      "2^2 Ãƒâ€” 3 Ãƒâ€” 5",
       "None of these"
     ],
     "ans": 3,
@@ -5278,7 +5278,7 @@ export const QB = [
       "26.25"
     ],
     "ans": 3,
-    "sol": "circum radius = R  \n Area of the triangle ABC = Δ = ½ (BC)(AD) = ½ (a)(3) = 3a/2  \n The formula here is : R = abc/4Δ = abc / 4(3a/2) = bc/6 = (17.5)(9)/6 = 26.25"
+    "sol": "circum radius = R  \n Area of the triangle ABC = ÃŽâ€ = Ã‚Â½ (BC)(AD) = Ã‚Â½ (a)(3) = 3a/2  \n The formula here is : R = abc/4ÃŽâ€ = abc / 4(3a/2) = bc/6 = (17.5)(9)/6 = 26.25"
   },
   {
     "id": 407,
@@ -5304,7 +5304,7 @@ export const QB = [
       "4:1"
     ],
     "ans": 0,
-    "sol": "Let ratio of radius of cylinder to cone=...r1/r2=1/2  \n Volume of cylinder=π*r1^2*h  \n Volume of cone=π*r2^2*h/3  \n Ratio of volumes=3*(r1/r2)^2= 3:4"
+    "sol": "Let ratio of radius of cylinder to cone=...r1/r2=1/2  \n Volume of cylinder=Ãâ‚¬*r1^2*h  \n Volume of cone=Ãâ‚¬*r2^2*h/3  \n Ratio of volumes=3*(r1/r2)^2= 3:4"
   },
   {
     "id": 409,
@@ -5402,9 +5402,9 @@ export const QB = [
     "cat": "Quantitative Aptitude",
     "q": "A can complete a piece of work in 8 hours, B can complete in 10 hours and  \n C in 12 hours. If A,B, C start the work together but A laves after 2 hours. Find the  \n time taken by B and C to complete the remaining work.",
     "opts": [
-      "2 (1⁄11) hours",
-      "4 (1⁄11) hours",
-      "2 (6⁄11) hours",
+      "2 (1Ã¢Ââ€ž11) hours",
+      "4 (1Ã¢Ââ€ž11) hours",
+      "2 (6Ã¢Ââ€ž11) hours",
       "2 hours"
     ],
     "ans": 3,
@@ -5478,7 +5478,7 @@ export const QB = [
   {
     "id": 422,
     "cat": "Quantitative Aptitude",
-    "q": "Ashok, Eesha, Farookh, and Gowri ran a race. Ashok said, “I did not finish  \n 1st or 4th “.   \n Eesha said, “I did not finish 4th ”. Farookh said, “I finished 1st ”. Gowri said, “I  \n finished 4th ”. There were no ties in the competition, and exactly three of the  \n children told the truth. Who finished 4th? explain",
+    "q": "Ashok, Eesha, Farookh, and Gowri ran a race. Ashok said, Ã¢â‚¬Å“I did not finish  \n 1st or 4th Ã¢â‚¬Å“.   \n Eesha said, Ã¢â‚¬Å“I did not finish 4th Ã¢â‚¬Â. Farookh said, Ã¢â‚¬Å“I finished 1st Ã¢â‚¬Â. Gowri said, Ã¢â‚¬Å“I  \n finished 4th Ã¢â‚¬Â. There were no ties in the competition, and exactly three of the  \n children told the truth. Who finished 4th? explain",
     "opts": [
       "Farookh",
       "Eesha",
@@ -5556,7 +5556,7 @@ export const QB = [
   {
     "id": 428,
     "cat": "Quantitative Aptitude",
-    "q": "the value of a scooter depreciates in such a way that at the end of each  \n year, is ¾ of its value at the beginning of same year. If the initial value of the  \n scooter is rs40,000. What is the value at the end of 3yrs?",
+    "q": "the value of a scooter depreciates in such a way that at the end of each  \n year, is Ã‚Â¾ of its value at the beginning of same year. If the initial value of the  \n scooter is rs40,000. What is the value at the end of 3yrs?",
     "opts": [
       "23125",
       "19000",
@@ -5582,7 +5582,7 @@ export const QB = [
   {
     "id": 430,
     "cat": "Quantitative Aptitude",
-    "q": "There are five boxes in a cargo hold. The weight of the first box is 200 kg  \n and theweight of the second box is 20% higher than the weight of the third box,  \n whose weight is 25% higher than the first box’s weight. The fourth box at 350 kg  \n\nis 30% lighter than the fifth box. Find the difference in the average weight of the  \n four heaviest boxes and the four lightest boxes.",
+    "q": "There are five boxes in a cargo hold. The weight of the first box is 200 kg  \n and theweight of the second box is 20% higher than the weight of the third box,  \n whose weight is 25% higher than the first boxÃ¢â‚¬â„¢s weight. The fourth box at 350 kg  \n\nis 30% lighter than the fifth box. Find the difference in the average weight of the  \n four heaviest boxes and the four lightest boxes.",
     "opts": [
       "80 kg",
       "75 kg",
@@ -5725,7 +5725,7 @@ export const QB = [
   {
     "id": 441,
     "cat": "Quantitative Aptitude",
-    "q": "8+88+888+.....+8888........8888. There are 21 “8” digits in the last term of the  \n series.   \n Find the last three digits of the sum.",
+    "q": "8+88+888+.....+8888........8888. There are 21 Ã¢â‚¬Å“8Ã¢â‚¬Â digits in the last term of the  \n series.   \n Find the last three digits of the sum.",
     "opts": [
       "458",
       "648",
@@ -5751,7 +5751,7 @@ export const QB = [
   {
     "id": 443,
     "cat": "Quantitative Aptitude",
-    "q": "in a g6 summit being held in London a French, a german, an Italian, a  \n british, a Spanish and a polish diplomat represent their respective countries and  \n participate in a round table conference to strengthen the co operation between  \n these countries. There are exactly 6chairs evenly spaced around a circular table.  \n The chairs are numbered 1 through 6, with successively numbered chairs next to  \n each other and chair number 1 next to chair no6. Each chair is occupied by one of  \n the diplomats. The following conditions apply.  \n • Polish sits immediately next to british  \n • German sits immediately next to Italian  \n\n• French doesn’t sit immediatedly next to Italian  \n • If Spanish sits immediatedly next to polish, Spanish doesn’t sit next to  \n Italian  \n Which of the following seating arrangement of the 6 diploamts in chair 1-6 would  \n not violate the given conditions?  \n A) French, polish, british, Italian, Spanish, german  \n B) French, german, Italian, polish, british, Spanish  \n C) French, german, Italian, Spanish, polish, british  \n D) French, Spanish, polish, british, german, Italian",
+    "q": "in a g6 summit being held in London a French, a german, an Italian, a  \n british, a Spanish and a polish diplomat represent their respective countries and  \n participate in a round table conference to strengthen the co operation between  \n these countries. There are exactly 6chairs evenly spaced around a circular table.  \n The chairs are numbered 1 through 6, with successively numbered chairs next to  \n each other and chair number 1 next to chair no6. Each chair is occupied by one of  \n the diplomats. The following conditions apply.  \n Ã¢â‚¬Â¢ Polish sits immediately next to british  \n Ã¢â‚¬Â¢ German sits immediately next to Italian  \n\nÃ¢â‚¬Â¢ French doesnÃ¢â‚¬â„¢t sit immediatedly next to Italian  \n Ã¢â‚¬Â¢ If Spanish sits immediatedly next to polish, Spanish doesnÃ¢â‚¬â„¢t sit next to  \n Italian  \n Which of the following seating arrangement of the 6 diploamts in chair 1-6 would  \n not violate the given conditions?  \n A) French, polish, british, Italian, Spanish, german  \n B) French, german, Italian, polish, british, Spanish  \n C) French, german, Italian, Spanish, polish, british  \n D) French, Spanish, polish, british, german, Italian",
     "opts": [
       "C",
       "D",
@@ -5798,7 +5798,7 @@ export const QB = [
       "4 kmph"
     ],
     "ans": 3,
-    "sol": "peed=TimedistanceSpeed=Timedistance  \n let the speed of joke x then speed of paul will be 7-x  \n 24x+247−x=1424x+247−x=14  \n Try to plugin the values from the options. If Jake speed is 4 the paul is 3."
+    "sol": "peed=TimedistanceSpeed=Timedistance  \n let the speed of joke x then speed of paul will be 7-x  \n 24x+247Ã¢Ë†â€™x=1424x+247Ã¢Ë†â€™x=14  \n Try to plugin the values from the options. If Jake speed is 4 the paul is 3."
   },
   {
     "id": 447,
@@ -5907,7 +5907,7 @@ export const QB = [
   {
     "id": 455,
     "cat": "Quantitative Aptitude",
-    "q": "A girl entered a store and bought x flowers for y dollars (x and y are  \n integers). When she was about to leave, the clerk said, “If you buy 10 more  \n flowers I will give you all for $2, and you will save 80 cents a dozen”. The values  \n of x and y are:  \n a) (15,",
+    "q": "A girl entered a store and bought x flowers for y dollars (x and y are  \n integers). When she was about to leave, the clerk said, Ã¢â‚¬Å“If you buy 10 more  \n flowers I will give you all for $2, and you will save 80 cents a dozenÃ¢â‚¬Â. The values  \n of x and y are:  \n a) (15,",
     "opts": [
       "",
       "(10,1)",
@@ -5980,7 +5980,7 @@ export const QB = [
       "6^10"
     ],
     "ans": 0,
-    "sol": "f n similar articles are to be distributed to r persons, x1+x2+x3......xr=n  \n each person is eligible to take any number of articles then the total ways are  \n n+r−1Cr−1  \n In this case x1+x2+x3......x6=10  \n in such a case the formula for non negative integral solutions is n+r−1Cr−1  \n Here n =10 and r=6. So total ways are 10+6−1C6−1 = 3003"
+    "sol": "f n similar articles are to be distributed to r persons, x1+x2+x3......xr=n  \n each person is eligible to take any number of articles then the total ways are  \n n+rÃ¢Ë†â€™1CrÃ¢Ë†â€™1  \n In this case x1+x2+x3......x6=10  \n in such a case the formula for non negative integral solutions is n+rÃ¢Ë†â€™1CrÃ¢Ë†â€™1  \n Here n =10 and r=6. So total ways are 10+6Ã¢Ë†â€™1C6Ã¢Ë†â€™1 = 3003"
   },
   {
     "id": 461,
@@ -5990,7 +5990,7 @@ export const QB = [
       "5/18",
       "13/18",
       "1/36",
-      "½"
+      "Ã‚Â½"
     ],
     "ans": 1,
     "sol": "13/18 as 1-(probability of not getting same no.)=1-((6*5*4*3)/(6*6*6*6))"
@@ -6271,7 +6271,7 @@ export const QB = [
   {
     "id": 483,
     "cat": "Quantitative Aptitude",
-    "q": "How many 5’s will be there in the number 121122123... till 356?",
+    "q": "How many 5Ã¢â‚¬â„¢s will be there in the number 121122123... till 356?",
     "opts": [
       "51",
       "54",
@@ -6403,13 +6403,13 @@ export const QB = [
     "cat": "Quantitative Aptitude",
     "q": "After 6 years Raju's fathers age will twice of the Raju's age 2 years ago.His  \n mothers age was twice that of Raju's age. Sum of the age of their parents.",
     "opts": [
-      "4 less than four times Raju’s age",
-      "2 more than four times Raju’s age",
-      "4 more than four times Raju’s age",
-      "2 less than four times Raju’s age"
+      "4 less than four times RajuÃ¢â‚¬â„¢s age",
+      "2 more than four times RajuÃ¢â‚¬â„¢s age",
+      "4 more than four times RajuÃ¢â‚¬â„¢s age",
+      "2 less than four times RajuÃ¢â‚¬â„¢s age"
     ],
     "ans": 2,
-    "sol": "F+6=2(R+6)  \n F= 2R+6  \n M-2=2(R-2)  \n M= 2R-2  \n Therefore the sum of Raju’s Parent’s age is  \n F+M=2R+6+2R-2  \n F+M=4R+4  \n 4 more than four times Raju’s age"
+    "sol": "F+6=2(R+6)  \n F= 2R+6  \n M-2=2(R-2)  \n M= 2R-2  \n Therefore the sum of RajuÃ¢â‚¬â„¢s ParentÃ¢â‚¬â„¢s age is  \n F+M=2R+6+2R-2  \n F+M=4R+4  \n 4 more than four times RajuÃ¢â‚¬â„¢s age"
   },
   {
     "id": 494,
@@ -6466,7 +6466,7 @@ export const QB = [
   {
     "id": 498,
     "cat": "Quantitative Aptitude",
-    "q": "George, Paul and Hari start a business by contributing Rs. 30000/-, Rs.  \n 40000/- and Rs. 50000/- respectively. After ½ a year George withdraws half his  \n contribution. At the end of the year the business showed a profit of Rs 90000  \n which was divided amongst the 3 men proportionate the to amount and duration  \n of their investment in the enterprise. Paul got,",
+    "q": "George, Paul and Hari start a business by contributing Rs. 30000/-, Rs.  \n 40000/- and Rs. 50000/- respectively. After Ã‚Â½ a year George withdraws half his  \n contribution. At the end of the year the business showed a profit of Rs 90000  \n which was divided amongst the 3 men proportionate the to amount and duration  \n of their investment in the enterprise. Paul got,",
     "opts": [
       "Rs 25000/-",
       "Rs 18000/-",
@@ -6479,7 +6479,7 @@ export const QB = [
   {
     "id": 499,
     "cat": "Quantitative Aptitude",
-    "q": "A drinks machine offers three solutions – Tea, Coffee or Random but the  \n machine has been wired up wrongly so that each button does not give what it  \n claims. If each drink costs Rs. 50, what is the mimimum amount of money that  \n must be spent to determine with certainity the correct labeling of the buttons?",
+    "q": "A drinks machine offers three solutions Ã¢â‚¬â€œ Tea, Coffee or Random but the  \n machine has been wired up wrongly so that each button does not give what it  \n claims. If each drink costs Rs. 50, what is the mimimum amount of money that  \n must be spent to determine with certainity the correct labeling of the buttons?",
     "opts": [
       "Rs. 100",
       "Can not be determined from the given information",
@@ -6583,7 +6583,7 @@ export const QB = [
   {
     "id": 507,
     "cat": "Quantitative Aptitude",
-    "q": "Asha and Eesha – Eesha lies on Monday, Tuesday and Wednesday. Asha  \n lies on Thursday, Friday and Saturday. Other days they will say the truth.  \n Professor forgot and asked them what day it is. Both of them said yesterday I was  \n lying and then professor got the day. What day it is?",
+    "q": "Asha and Eesha Ã¢â‚¬â€œ Eesha lies on Monday, Tuesday and Wednesday. Asha  \n lies on Thursday, Friday and Saturday. Other days they will say the truth.  \n Professor forgot and asked them what day it is. Both of them said yesterday I was  \n lying and then professor got the day. What day it is?",
     "opts": [
       "Tuesday",
       "Thursday",
@@ -6596,7 +6596,7 @@ export const QB = [
   {
     "id": 508,
     "cat": "Quantitative Aptitude",
-    "q": "Three sisters are identical triplets. The oldest by is Aasha, and she always  \n tells anyone the truth. The next oldest is Usha, and Usha always will tell anyone a  \n lie. Eesha is the youngest of the three. She sometimes lies and sometimes tells  \n the truth.  \n Mukund an old friend of the family, visited them one day and was able to  \n recognize who was who, so he asked each of them one question.  \n Mukund asked the sister that was sitting on the left. “Which sister is in the middle  \n of you three ?” and the answer he received was, “Oh,that’s Aasha.”  \n Mukund then asked the sister in the middle. “What is your name?” The response  \n given was, “I’m Eesha.”  \n\nMukund turned to the sister on the right,then asked. “Who is that in the middle ?”  \n The sister then replied, “She is Usha.”  \n This confused Mukund.  \n Who was in the middle ?",
+    "q": "Three sisters are identical triplets. The oldest by is Aasha, and she always  \n tells anyone the truth. The next oldest is Usha, and Usha always will tell anyone a  \n lie. Eesha is the youngest of the three. She sometimes lies and sometimes tells  \n the truth.  \n Mukund an old friend of the family, visited them one day and was able to  \n recognize who was who, so he asked each of them one question.  \n Mukund asked the sister that was sitting on the left. Ã¢â‚¬Å“Which sister is in the middle  \n of you three ?Ã¢â‚¬Â and the answer he received was, Ã¢â‚¬Å“Oh,thatÃ¢â‚¬â„¢s Aasha.Ã¢â‚¬Â  \n Mukund then asked the sister in the middle. Ã¢â‚¬Å“What is your name?Ã¢â‚¬Â The response  \n given was, Ã¢â‚¬Å“IÃ¢â‚¬â„¢m Eesha.Ã¢â‚¬Â  \n\nMukund turned to the sister on the right,then asked. Ã¢â‚¬Å“Who is that in the middle ?Ã¢â‚¬Â  \n The sister then replied, Ã¢â‚¬Å“She is Usha.Ã¢â‚¬Â  \n This confused Mukund.  \n Who was in the middle ?",
     "opts": [
       "Aasha",
       "Eesha",
@@ -6692,7 +6692,7 @@ export const QB = [
       "24",
       "1",
       "-1",
-      "½"
+      "Ã‚Â½"
     ],
     "ans": 0,
     "sol": "a=24, then polynomials will become  \n x^2-11x+24 and x^2-14x+48  which can be written as   \n (x-8)*(x-3) and (x-8)*(x-6)   \n (x-8) is common factor."
@@ -6786,7 +6786,7 @@ export const QB = [
       "None of these"
     ],
     "ans": 0,
-    "sol": "Total Work = 60 men × 40 days = 2,400 man-days\n\nWork done in each 5-day interval (as 5 men leave after every 5 days):\n\n| Days  | Men Working | Work Done |\n|-------|------------|----------|\n| 1–5   | 60         | 300       |\n| 6–10  | 55         | 275       |\n| 11–15 | 50         | 250       |\n| 16–20 | 45         | 225       |\n| 21–25 | 40         | 200       |\n| 26–30 | 35         | 175       |\n| 31–35 | 30         | 150       |\n| 36–40 | 25         | 125       |\n| 41–45 | 20         | 100       |\n| 46–50 | 15         | 75        |\n| 51–55 | 10         | 50        |\n| 56–60 | 5          | 25        |\n\nCumulative by end of 60 days = 300+275+250+225+200+175+150+125+100+75+50+25 = 1,950 man-days\n\nSince 1,950 < 2,400, the work is NOT completed in 60 days.\nThe answer is 'None of these' as no option (60, 80, 120) satisfies a clean completion."
+    "sol": "Total Work = 60 men Ãƒâ€” 40 days = 2,400 man-days\n\nWork done in each 5-day interval (as 5 men leave after every 5 days):\n\n| Days  | Men Working | Work Done |\n|-------|------------|----------|\n| 1Ã¢â‚¬â€œ5   | 60         | 300       |\n| 6Ã¢â‚¬â€œ10  | 55         | 275       |\n| 11Ã¢â‚¬â€œ15 | 50         | 250       |\n| 16Ã¢â‚¬â€œ20 | 45         | 225       |\n| 21Ã¢â‚¬â€œ25 | 40         | 200       |\n| 26Ã¢â‚¬â€œ30 | 35         | 175       |\n| 31Ã¢â‚¬â€œ35 | 30         | 150       |\n| 36Ã¢â‚¬â€œ40 | 25         | 125       |\n| 41Ã¢â‚¬â€œ45 | 20         | 100       |\n| 46Ã¢â‚¬â€œ50 | 15         | 75        |\n| 51Ã¢â‚¬â€œ55 | 10         | 50        |\n| 56Ã¢â‚¬â€œ60 | 5          | 25        |\n\nCumulative by end of 60 days = 300+275+250+225+200+175+150+125+100+75+50+25 = 1,950 man-days\n\nSince 1,950 < 2,400, the work is NOT completed in 60 days.\nThe answer is 'None of these' as no option (60, 80, 120) satisfies a clean completion."
   },
   {
     "id": 523,
@@ -6799,7 +6799,7 @@ export const QB = [
       "6hrs"
     ],
     "ans": 0,
-    "sol": "Let T1 and T2 be the time durations.\n\nCase 1: Walks 4 km/hr for T1, 3 km/hr for T2\nDistance = 4T1 + 3T2 = 36 ... (i)\n\nCase 2: Walks 4 km/hr for T2, 3 km/hr for T1\nDistance = 3T1 + 4T2 = 34 ... (ii)\n\nAdding (i) and (ii):\n7T1 + 7T2 = 70\n→ T1 + T2 = 10 hours\n\nSubtracting (ii) from (i):\nT1 - T2 = 2 hours\n\nSolving:\nT1 = 6 hours, T2 = 4 hours\n\nAnswer: T1 = 6 hours, T2 = 4 hours (Total = 10 hours)"
+    "sol": "Let T1 and T2 be the time durations.\n\nCase 1: Walks 4 km/hr for T1, 3 km/hr for T2\nDistance = 4T1 + 3T2 = 36 ... (i)\n\nCase 2: Walks 4 km/hr for T2, 3 km/hr for T1\nDistance = 3T1 + 4T2 = 34 ... (ii)\n\nAdding (i) and (ii):\n7T1 + 7T2 = 70\nÃ¢â€ â€™ T1 + T2 = 10 hours\n\nSubtracting (ii) from (i):\nT1 - T2 = 2 hours\n\nSolving:\nT1 = 6 hours, T2 = 4 hours\n\nAnswer: T1 = 6 hours, T2 = 4 hours (Total = 10 hours)"
   },
   {
     "id": 524,
@@ -6830,7 +6830,7 @@ export const QB = [
   {
     "id": 526,
     "cat": "Quantitative Aptitude",
-    "q": "P ( x ) = ( x2012 + x2011 + x2010 + . . . . + x + 1)2 – x2012  \n Q ( x ) = x2011 + x 2010 + . . . . + x + 1  \n The reminder when P ( x ) is divided by Q ( x ) is",
+    "q": "P ( x ) = ( x2012 + x2011 + x2010 + . . . . + x + 1)2 Ã¢â‚¬â€œ x2012  \n Q ( x ) = x2011 + x 2010 + . . . . + x + 1  \n The reminder when P ( x ) is divided by Q ( x ) is",
     "opts": [
       "1",
       "0",
@@ -7012,7 +7012,7 @@ export const QB = [
   {
     "id": 540,
     "cat": "Quantitative Aptitude",
-    "q": "A city in the U S has a basketball league with three basketball teams, the  \n Arêtes, the Braves and the Deities. A sports writer notices that the tallest player  \n of the Arêtes is Shortest than the shortest player of the Braves. The shortest of  \n the Deities is shortest of the Arêtes, while the tallest of the braves is taller than  \n the tallest of the Arêtes. Which of the following can be judged with certainty?  \n X) Paul, a brave is taller than David, an Arêtes.  \n Y) David, a Deities, is shorter than Edward, an Arêtes.",
+    "q": "A city in the U S has a basketball league with three basketball teams, the  \n ArÃƒÂªtes, the Braves and the Deities. A sports writer notices that the tallest player  \n of the ArÃƒÂªtes is Shortest than the shortest player of the Braves. The shortest of  \n the Deities is shortest of the ArÃƒÂªtes, while the tallest of the braves is taller than  \n the tallest of the ArÃƒÂªtes. Which of the following can be judged with certainty?  \n X) Paul, a brave is taller than David, an ArÃƒÂªtes.  \n Y) David, a Deities, is shorter than Edward, an ArÃƒÂªtes.",
     "opts": [
       "X only",
       "Both X and Y",
@@ -7020,7 +7020,7 @@ export const QB = [
       "Y only"
     ],
     "ans": 0,
-    "sol": "its clearly written that the tallest player of the ArÃªtes is Shortest than  \n the shortest player of the Braves.   \n => all players of braves are taller than all players of Arates.  \n => X is true  \n => ans = (a)"
+    "sol": "its clearly written that the tallest player of the ArÃƒÆ’Ã‚Âªtes is Shortest than  \n the shortest player of the Braves.   \n => all players of braves are taller than all players of Arates.  \n => X is true  \n => ans = (a)"
   },
   {
     "id": 541,
@@ -7051,7 +7051,7 @@ export const QB = [
   {
     "id": 543,
     "cat": "Quantitative Aptitude",
-    "q": "A sequence x1,x2,x3…. Is said to be in harmonic progression if the  \n reciprocals 1/x1,1/x2,1/x3… are in arithmetic progression. The 5th and 7th term  \n for harmonic progression are 30 and 50 respectively what is difference between  \n 6th and 4th term ?",
+    "q": "A sequence x1,x2,x3Ã¢â‚¬Â¦. Is said to be in harmonic progression if the  \n reciprocals 1/x1,1/x2,1/x3Ã¢â‚¬Â¦ are in arithmetic progression. The 5th and 7th term  \n for harmonic progression are 30 and 50 respectively what is difference between  \n 6th and 4th term ?",
     "opts": [
       "16",
       "14.5",
@@ -7085,7 +7085,7 @@ export const QB = [
       "Saturday"
     ],
     "ans": 0,
-    "sol": "riday..If the Nth year is a non-leap year, then 320th day of year N to  \n 206th day of year N+1 is [(365  \n – 320) + 206] = 251 days i.e. 35 weeks + 6 days. But this will not make the two  \n days to be  \n Thursday.  \n Thus, the Nth year has to be a leap year. In this case 320th day of year N to 206th  \n day of year  \n N+1 is [(366 – 320) + 206) = 252 days i.e. 36 weeks. Hence both days will be same  \n day of the  \n week i.e. Thursday as given by the data.  \n  \n 168th day of N-1 year to 320th day of N year is [(365 – 168) + 320) = 517 days i.e.  \n 73 weeks +  \n 6 days. Thus, if the 320th day is Thursday, then the 168th day of year will be  \n Friday, option"
+    "sol": "riday..If the Nth year is a non-leap year, then 320th day of year N to  \n 206th day of year N+1 is [(365  \n Ã¢â‚¬â€œ 320) + 206] = 251 days i.e. 35 weeks + 6 days. But this will not make the two  \n days to be  \n Thursday.  \n Thus, the Nth year has to be a leap year. In this case 320th day of year N to 206th  \n day of year  \n N+1 is [(366 Ã¢â‚¬â€œ 320) + 206) = 252 days i.e. 36 weeks. Hence both days will be same  \n day of the  \n week i.e. Thursday as given by the data.  \n  \n 168th day of N-1 year to 320th day of N year is [(365 Ã¢â‚¬â€œ 168) + 320) = 517 days i.e.  \n 73 weeks +  \n 6 days. Thus, if the 320th day is Thursday, then the 168th day of year will be  \n Friday, option"
   },
   {
     "id": 546,
@@ -7181,7 +7181,7 @@ export const QB = [
   {
     "id": 553,
     "cat": "Quantitative Aptitude",
-    "q": "Box of fruits can be loaded into a truck in 9 minutes by a  \n worker. And 8 boxes will fill a truck completely. How many trucks  \n can be loaded in 1 ½ hours if there are 16 men together.",
+    "q": "Box of fruits can be loaded into a truck in 9 minutes by a  \n worker. And 8 boxes will fill a truck completely. How many trucks  \n can be loaded in 1 Ã‚Â½ hours if there are 16 men together.",
     "opts": [
       "1",
       "2",
@@ -7222,7 +7222,7 @@ export const QB = [
     "cat": "Quantitative Aptitude",
     "q": "Three cars A, B and C are participating in a race.A is twice as likely as B to  \n win and B is thrice as likely as C to win. What is the probability that B will win, if  \n only one of them can win the race?",
     "opts": [
-      "½",
+      "Ã‚Â½",
       "2/5",
       "3/10",
       "1/10"
@@ -7246,7 +7246,7 @@ export const QB = [
   {
     "id": 558,
     "cat": "Quantitative Aptitude",
-    "q": "George is 2/3 rd as efficient as smith and smith is ¾ th as efficient as John.  \n George working alone is what fraction of All of them working together.",
+    "q": "George is 2/3 rd as efficient as smith and smith is Ã‚Â¾ th as efficient as John.  \n George working alone is what fraction of All of them working together.",
     "opts": [
       "2/3",
       "2/9",
@@ -7272,7 +7272,7 @@ export const QB = [
   {
     "id": 560,
     "cat": "Quantitative Aptitude",
-    "q": "In the simple subtraction problem Below , sum single digits (not  \n necessarily distinct) are replace by letters , find the value of 7*A + 7*B +6*C*D  \n A 7 C 2  \n - 4 B 6 8  \n ————–  \n 5 4 3 D",
+    "q": "In the simple subtraction problem Below , sum single digits (not  \n necessarily distinct) are replace by letters , find the value of 7*A + 7*B +6*C*D  \n A 7 C 2  \n - 4 B 6 8  \n Ã¢â‚¬â€Ã¢â‚¬â€Ã¢â‚¬â€Ã¢â‚¬â€Ã¢â‚¬â€œ  \n 5 4 3 D",
     "opts": [
       "77",
       "95",
@@ -7378,10 +7378,10 @@ export const QB = [
     "cat": "Quantitative Aptitude",
     "q": "The diagonal of a square is twice the side of equilateral triangle the ratio of  \n Area of the Triangle to the Area of Square is?",
     "opts": [
-      "√3:8",
-      "√2:5",
-      "√3:6",
-      "√2:4"
+      "Ã¢Ë†Å¡3:8",
+      "Ã¢Ë†Å¡2:5",
+      "Ã¢Ë†Å¡3:6",
+      "Ã¢Ë†Å¡2:4"
     ],
     "ans": 0,
     "sol": "diagonal of a square is 2a  \n area of the square=1/2*(diagonal)^2 i.e 2a^2  \n side of the equi triangle is a  \n area of equi triangle=(3/4)a^2  \n 3/4a^2:2a^2  \n 3:8"
@@ -7428,7 +7428,7 @@ export const QB = [
   {
     "id": 572,
     "cat": "Quantitative Aptitude",
-    "q": "Inabhi’s class of 44 students,28 students speak malayalam,26 students  \n speak tamil,9 students speak none of the two languages.How many students  \n speak both tamil& Malayalam",
+    "q": "InabhiÃ¢â‚¬â„¢s class of 44 students,28 students speak malayalam,26 students  \n speak tamil,9 students speak none of the two languages.How many students  \n speak both tamil& Malayalam",
     "opts": [
       "54",
       "38",
@@ -7462,7 +7462,7 @@ export const QB = [
       "500"
     ],
     "ans": 3,
-    "sol": "a + b = 45  \n a/b+b/a = 2.05  \n =>(a^2+b^2)/ab = 2.05  \n =>((a+b)^2−2ab)/ab=2.05  \n =>(a+b)^2 = 2.05ab + 2ab = 4.05ab  \n => ab = 45^2 / 4.05 = 500"
+    "sol": "a + b = 45  \n a/b+b/a = 2.05  \n =>(a^2+b^2)/ab = 2.05  \n =>((a+b)^2Ã¢Ë†â€™2ab)/ab=2.05  \n =>(a+b)^2 = 2.05ab + 2ab = 4.05ab  \n => ab = 45^2 / 4.05 = 500"
   },
   {
     "id": 575,
@@ -9668,7 +9668,7 @@ export const QB = [
       "O(1)",
       "O(n)",
       "O(log n)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 0,
     "sol": "Stack push is a constant time O(1) operation.",
@@ -9691,13 +9691,13 @@ export const QB = [
     "cat": "DSA",
     "q": "What is the worst-case time complexity of Quick Sort?",
     "opts": [
-      "O(n²)",
+      "O(nÃ‚Â²)",
       "O(n log n)",
       "O(n)",
       "O(1)"
     ],
     "ans": 0,
-    "sol": "Worst case is O(n²) when the pivot divides the array in an extremely skewed manner.",
+    "sol": "Worst case is O(nÃ‚Â²) when the pivot divides the array in an extremely skewed manner.",
     "id": 746
   },
   {
@@ -9784,7 +9784,7 @@ export const QB = [
     "opts": [
       "n * (n - 1) / 2",
       "n * (n + 1) / 2",
-      "n²",
+      "nÃ‚Â²",
       "n - 1"
     ],
     "ans": 0,
@@ -9811,7 +9811,7 @@ export const QB = [
       "O(h) where h is height",
       "O(1)",
       "O(log n) always",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 0,
     "sol": "We must traverse to the leftmost leaf, which takes O(h) steps.",
@@ -9887,7 +9887,7 @@ export const QB = [
     "q": "What is the best-case time complexity of Bubble Sort on an already sorted array if optimized?",
     "opts": [
       "O(n)",
-      "O(n²)",
+      "O(nÃ‚Â²)",
       "O(log n)",
       "O(1)"
     ],
@@ -9902,7 +9902,7 @@ export const QB = [
       "O(n) for recursive stack",
       "O(1)",
       "O(n log n)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 0,
     "sol": "In the worst case, recursion depth reaches O(n) (though average is O(log n)).",
@@ -10032,7 +10032,7 @@ export const QB = [
       "O(1)",
       "O(n)",
       "O(log n)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 0,
     "sol": "Resizing takes O(n) occasionally, but spread over all operations, the average cost per insert is O(1).",
@@ -10172,13 +10172,13 @@ export const QB = [
     "cat": "DSA",
     "q": "What is the worst-case complexity of Selection Sort?",
     "opts": [
-      "O(n²)",
+      "O(nÃ‚Â²)",
       "O(n log n)",
       "O(n)",
       "O(1)"
     ],
     "ans": 0,
-    "sol": "Selection sort always runs in O(n²) because it compares all pairs.",
+    "sol": "Selection sort always runs in O(nÃ‚Â²) because it compares all pairs.",
     "id": 783
   },
   {
@@ -15703,7 +15703,7 @@ export const QB = [
       "15"
     ],
     "ans": 0,
-    "sol": "1011 = 1*2³ + 0*2² + 1*2¹ + 1*2⁰ = 8 + 0 + 2 + 1 = 11.",
+    "sol": "1011 = 1*2Ã‚Â³ + 0*2Ã‚Â² + 1*2Ã‚Â¹ + 1*2Ã¢ÂÂ° = 8 + 0 + 2 + 1 = 11.",
     "id": 1208
   },
   {
@@ -15716,7 +15716,7 @@ export const QB = [
       "11100"
     ],
     "ans": 0,
-    "sol": "25 = 16 + 8 + 1 = 2⁴ + 2³ + 2⁰ = 11001.",
+    "sol": "25 = 16 + 8 + 1 = 2Ã¢ÂÂ´ + 2Ã‚Â³ + 2Ã¢ÂÂ° = 11001.",
     "id": 1209
   },
   {
@@ -16691,7 +16691,7 @@ export const QB = [
       "Yen"
     ],
     "ans": 0,
-    "sol": "The UK uses Pounds (£).",
+    "sol": "The UK uses Pounds (Ã‚Â£).",
     "id": 1284
   },
   {
@@ -16951,7 +16951,7 @@ export const QB = [
       "Deutsche Mark"
     ],
     "ans": 0,
-    "sol": "The EU uses the Euro (€).",
+    "sol": "The EU uses the Euro (Ã¢â€šÂ¬).",
     "id": 1304
   },
   {
@@ -19418,7 +19418,7 @@ export const QB = [
       "O(n)",
       "O(log n)",
       "O(1)",
-      "O(n²)"
+      "O(nÃ‚Â²)"
     ],
     "ans": 0,
     "sol": "Skewed trees degrade to singly linked lists, taking O(n) checks.",
@@ -22281,7 +22281,7 @@ export const QB = [
       "8 miles"
     ],
     "ans": 0,
-    "sol": "Total vertical movement = 4 + 4 = 8 miles North. Horizontal movement = 3 miles East. Shortest distance = sqrt(8^2 + 3^2) = sqrt(73) ≈ 8.54 miles.",
+    "sol": "Total vertical movement = 4 + 4 = 8 miles North. Horizontal movement = 3 miles East. Shortest distance = sqrt(8^2 + 3^2) = sqrt(73) Ã¢â€°Ë† 8.54 miles.",
     "id": 1714
   },
   {
@@ -22437,7 +22437,7 @@ export const QB = [
       "10 km"
     ],
     "ans": 0,
-    "sol": "Vertical distance = 12 - 6 = 6 km North. Horizontal distance = 5 km East. Shortest distance = sqrt(6^2 + 5^2) = sqrt(61) ≈ 7.81 km.",
+    "sol": "Vertical distance = 12 - 6 = 6 km North. Horizontal distance = 5 km East. Shortest distance = sqrt(6^2 + 5^2) = sqrt(61) Ã¢â€°Ë† 7.81 km.",
     "id": 1726
   },
   {
@@ -28042,6 +28042,429 @@ export const QB = [
     "ans": 0,
     "sol": "Explanation: Total speaking English or French = 35 + 25 - 15 = 45 people. Neither = 50 - 45 = 5 people.",
     "id": 2157
+  },
+  {
+    "id": 2158,
+    "cat": "Quantitative Aptitude",
+    "q": "If today is Monday, what day of the week will it be 23 days later?",
+    "opts": ["Monday", "Tuesday", "Wednesday", "Saturday"],
+    "ans": 2,
+    "sol": "23 mod 7 = 2. Monday + 2 = Wednesday."
+  },
+  {
+    "id": 2159,
+    "cat": "Quantitative Aptitude",
+    "q": "If January 1, 2023 was a Sunday, what day was January 1, 2024?",
+    "opts": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+    "ans": 1,
+    "sol": "2023 is not a leap year, so 365 days = 52 weeks + 1 odd day. Sunday + 1 = Monday."
+  },
+  {
+    "id": 2160,
+    "cat": "Quantitative Aptitude",
+    "q": "If July 4th is a Tuesday, what day of the week is July 23rd?",
+    "opts": ["Tuesday", "Wednesday", "Saturday", "Sunday"],
+    "ans": 3,
+    "sol": "Gap = 23 - 4 = 19 days. 19 mod 7 = 5. Tuesday + 5 = Sunday."
+  },
+  {
+    "id": 2161,
+    "cat": "Quantitative Aptitude",
+    "q": "Which of the following years is NOT a leap year?",
+    "opts": ["2000", "1900", "2024", "1600"],
+    "ans": 1,
+    "sol": "1900 is divisible by 100 but NOT by 400, so it is NOT a leap year. 2000 and 1600 are divisible by 400. 2024 is divisible by 4."
+  },
+  {
+    "id": 2162,
+    "cat": "Quantitative Aptitude",
+    "q": "If March 5 is Monday, what day is March 23?",
+    "opts": ["Monday", "Wednesday", "Friday", "Saturday"],
+    "ans": 2,
+    "sol": "From March 5 (Monday) to March 23: gap = 18 days. 18 = 2x7 + 4. Monday + 4 = Friday."
+  },
+  {
+    "id": 2163,
+    "cat": "Quantitative Aptitude",
+    "q": "How many odd days are there in 400 years?",
+    "opts": ["0", "1", "2", "3"],
+    "ans": 0,
+    "sol": "400 years = 97 leap years + 303 ordinary years. Odd days = 97x2 + 303x1 = 497 = 71x7 + 0. So 0 odd days."
+  },
+  {
+    "id": 2164,
+    "cat": "Quantitative Aptitude",
+    "q": "What is the maximum number of Sundays in any leap year?",
+    "opts": ["52", "53", "54", "51"],
+    "ans": 1,
+    "sol": "A leap year has 366 days = 52 weeks + 2 extra days. If the extra days include Sunday, there will be 53 Sundays. Maximum = 53."
+  },
+  {
+    "id": 2165,
+    "cat": "Quantitative Aptitude",
+    "q": "Today is Thursday. What day was it 64 days ago?",
+    "opts": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+    "ans": 2,
+    "sol": "64 mod 7 = 1 (since 63 = 9x7). Going back 1 day from Thursday = Wednesday."
+  },
+  {
+    "id": 2166,
+    "cat": "Quantitative Aptitude",
+    "q": "If the first day of a non-leap year is Friday, what is the last day of that year?",
+    "opts": ["Friday", "Saturday", "Thursday", "Sunday"],
+    "ans": 0,
+    "sol": "A non-leap year has 365 days. Day 365 = Day 1 + 364 days. 364 = 52x7 + 0. So the last day is the same as the first = Friday."
+  },
+  {
+    "id": 2167,
+    "cat": "Quantitative Aptitude",
+    "q": "The last day of a century cannot be which day?",
+    "opts": ["Monday", "Wednesday", "Friday", "Saturday"],
+    "ans": 3,
+    "sol": "100 yrs = 5 odd days = Friday. 200 yrs = 3 odd days = Wednesday. 300 yrs = 1 odd day = Monday. 400 yrs = 0 odd days = Sunday. Saturday is NEVER the last day of a century."
+  },
+  {
+    "id": 2168,
+    "cat": "Quantitative Aptitude",
+    "q": "If today is Wednesday, what day will it be after 94 days?",
+    "opts": ["Tuesday", "Wednesday", "Friday", "Saturday"],
+    "ans": 3,
+    "sol": "94 mod 7 = 3 (94 - 91 = 3). Wednesday + 3 = Saturday."
+  },
+  {
+    "id": 2169,
+    "cat": "Quantitative Aptitude",
+    "q": "What angle does the minute hand of a clock make at 3:20?",
+    "opts": ["10 degrees", "20 degrees", "25 degrees", "30 degrees"],
+    "ans": 1,
+    "sol": "Angle = |30H - 5.5M| = |30x3 - 5.5x20| = |90 - 110| = 20 degrees."
+  },
+  {
+    "id": 2170,
+    "cat": "Quantitative Aptitude",
+    "q": "At what time between 4 and 5 o clock will the clock hands coincide?",
+    "opts": ["4 hr 21 9/11 min", "4 hr 20 min", "4 hr 22 min", "4 hr 18 min"],
+    "ans": 0,
+    "sol": "Time = (60H)/11 minutes past H. For H=4: (60x4)/11 = 240/11 = 21 9/11 minutes past 4."
+  },
+  {
+    "id": 2171,
+    "cat": "Quantitative Aptitude",
+    "q": "How many times do clock hands coincide in 12 hours?",
+    "opts": ["10", "11", "12", "22"],
+    "ans": 1,
+    "sol": "The minute hand gains on the hour hand at 5.5 degrees per minute. They coincide 11 times in 12 hours (not 12)."
+  },
+  {
+    "id": 2172,
+    "cat": "Quantitative Aptitude",
+    "q": "What is the angle between clock hands at 9:30?",
+    "opts": ["90 degrees", "100 degrees", "105 degrees", "110 degrees"],
+    "ans": 2,
+    "sol": "Angle = |30x9 - 5.5x30| = |270 - 165| = 105 degrees."
+  },
+  {
+    "id": 2173,
+    "cat": "Quantitative Aptitude",
+    "q": "A boat travels 12 km upstream in 4 hours and 12 km downstream in 3 hours. What is the speed of the boat in still water?",
+    "opts": ["3.5 km/h", "3 km/h", "4 km/h", "3.75 km/h"],
+    "ans": 0,
+    "sol": "Upstream speed = 12/4 = 3 km/h. Downstream speed = 12/3 = 4 km/h. Still water speed = (3+4)/2 = 3.5 km/h."
+  },
+  {
+    "id": 2174,
+    "cat": "Quantitative Aptitude",
+    "q": "A boat travels 20 km downstream in 2 hours. If stream speed is 2 km/h, what is boat speed in still water?",
+    "opts": ["8 km/h", "9 km/h", "10 km/h", "12 km/h"],
+    "ans": 0,
+    "sol": "Downstream speed = 20/2 = 10 km/h. Boat speed = Downstream - Stream = 10 - 2 = 8 km/h."
+  },
+  {
+    "id": 2175,
+    "cat": "Quantitative Aptitude",
+    "q": "A man rows 18 km downstream and 12 km upstream, taking 3 hours each. Find the speed of stream.",
+    "opts": ["1 km/h", "1.5 km/h", "2 km/h", "2.5 km/h"],
+    "ans": 0,
+    "sol": "Downstream speed = 18/3 = 6 km/h. Upstream speed = 12/3 = 4 km/h. Stream speed = (6-4)/2 = 1 km/h."
+  },
+  {
+    "id": 2176,
+    "cat": "Quantitative Aptitude",
+    "q": "A man can row upstream at 8 km/h and downstream at 13 km/h. The speed of stream is:",
+    "opts": ["5 km/h", "2 km/h", "2.5 km/h", "4 km/h"],
+    "ans": 2,
+    "sol": "Speed of stream = (Downstream - Upstream) / 2 = (13 - 8) / 2 = 2.5 km/h."
+  },
+  {
+    "id": 2177,
+    "cat": "Quantitative Aptitude",
+    "q": "A train 150 m long passes a pole in 15 seconds. What is the speed of the train?",
+    "opts": ["8 m/s", "10 m/s", "12 m/s", "15 m/s"],
+    "ans": 1,
+    "sol": "Speed = Length / Time = 150 / 15 = 10 m/s."
+  },
+  {
+    "id": 2178,
+    "cat": "Quantitative Aptitude",
+    "q": "Two trains of lengths 120 m and 130 m run in opposite directions and cross each other in 5 seconds. Their combined speed is:",
+    "opts": ["45 m/s", "50 m/s", "55 m/s", "60 m/s"],
+    "ans": 1,
+    "sol": "Total distance = 120 + 130 = 250 m. Speed = 250/5 = 50 m/s."
+  },
+  {
+    "id": 2179,
+    "cat": "Quantitative Aptitude",
+    "q": "A train 300 m long crosses a man walking at 3 km/h in same direction in 30 seconds. Find speed of train.",
+    "opts": ["36 km/h", "33 km/h", "39 km/h", "30 km/h"],
+    "ans": 2,
+    "sol": "Relative speed = 300/30 = 10 m/s = 36 km/h. Train speed = 36 + 3 = 39 km/h."
+  },
+  {
+    "id": 2180,
+    "cat": "Quantitative Aptitude",
+    "q": "Two trains start from A and B towards each other at 50 km/h and 60 km/h. Distance is 550 km. When do they meet?",
+    "opts": ["4 hours", "5 hours", "4.5 hours", "6 hours"],
+    "ans": 1,
+    "sol": "Time = Distance / Relative Speed = 550 / (50+60) = 550/110 = 5 hours."
+  },
+  {
+    "id": 2181,
+    "cat": "Quantitative Aptitude",
+    "q": "Simplify: (root5 + root3) squared",
+    "opts": ["8 + 2*root15", "8 - 2*root15", "8 + root15", "16"],
+    "ans": 0,
+    "sol": "(sqrt5 + sqrt3)^2 = 5 + 2*sqrt(15) + 3 = 8 + 2*sqrt(15)."
+  },
+  {
+    "id": 2182,
+    "cat": "Quantitative Aptitude",
+    "q": "If 2^(x+1) = 32, then x = ?",
+    "opts": ["3", "4", "5", "6"],
+    "ans": 1,
+    "sol": "2^(x+1) = 2^5. So x+1 = 5, x = 4."
+  },
+  {
+    "id": 2183,
+    "cat": "Quantitative Aptitude",
+    "q": "What is (256)^0.16 x (256)^0.09?",
+    "opts": ["4", "8", "16", "256"],
+    "ans": 0,
+    "sol": "(256)^(0.16+0.09) = (256)^0.25 = 256^(1/4) = 4, since 4^4 = 256."
+  },
+  {
+    "id": 2184,
+    "cat": "Quantitative Aptitude",
+    "q": "Evaluate: sqrt(248 + sqrt(52 + sqrt(144)))",
+    "opts": ["14", "16", "15", "17"],
+    "ans": 1,
+    "sol": "sqrt(144)=12. sqrt(52+12)=sqrt(64)=8. sqrt(248+8)=sqrt(256)=16."
+  },
+  {
+    "id": 2185,
+    "cat": "Quantitative Aptitude",
+    "q": "In how many ways can the letters of 'LEADER' be arranged?",
+    "opts": ["360", "720", "480", "240"],
+    "ans": 0,
+    "sol": "LEADER: 6 letters, E repeats twice. Arrangements = 6!/2! = 720/2 = 360."
+  },
+  {
+    "id": 2186,
+    "cat": "Quantitative Aptitude",
+    "q": "How many 3-digit numbers can be formed using digits 1,2,3,4,5 without repetition?",
+    "opts": ["60", "120", "125", "100"],
+    "ans": 0,
+    "sol": "5P3 = 5!/(5-3)! = 5!/2! = 60."
+  },
+  {
+    "id": 2187,
+    "cat": "Quantitative Aptitude",
+    "q": "In how many ways can a committee of 3 men and 2 women be formed from 6 men and 5 women?",
+    "opts": ["100", "150", "200", "250"],
+    "ans": 2,
+    "sol": "C(6,3) x C(5,2) = 20 x 10 = 200."
+  },
+  {
+    "id": 2188,
+    "cat": "Quantitative Aptitude",
+    "q": "How many words can be formed from letters of TRIANGLE starting with T and ending with E?",
+    "opts": ["720", "1440", "360", "2520"],
+    "ans": 0,
+    "sol": "Fix T at start and E at end. Remaining 6 letters: 6! = 720 arrangements."
+  },
+  {
+    "id": 2189,
+    "cat": "Quantitative Aptitude",
+    "q": "The digits of a two-digit number differ by 3. Sum of original and reversed number is 143. Find the number.",
+    "opts": ["58", "85", "74", "47"],
+    "ans": 1,
+    "sol": "Let digits be a, b: a+b=13 and a-b=3. Solving: a=8, b=5. Number = 85. Check: 85+58=143."
+  },
+  {
+    "id": 2190,
+    "cat": "Quantitative Aptitude",
+    "q": "If sum of two numbers is 55 and product is 750, what is sum of their squares?",
+    "opts": ["1025", "1525", "1250", "2025"],
+    "ans": 1,
+    "sol": "Sum of squares = (Sum)^2 - 2*Product = 55^2 - 2*750 = 3025 - 1500 = 1525."
+  },
+  {
+    "id": 2191,
+    "cat": "Quantitative Aptitude",
+    "q": "Two numbers are in ratio 3:5. If 9 subtracted from each, new ratio is 12:23. Find the larger number.",
+    "opts": ["27", "33", "45", "55"],
+    "ans": 3,
+    "sol": "Let 3k and 5k. (3k-9)/(5k-9) = 12/23. Solving: 69k-207=60k-108, 9k=99, k=11. Numbers are 33 and 55. Larger = 55."
+  },
+  {
+    "id": 2192,
+    "cat": "Quantitative Aptitude",
+    "q": "The ratio downstream to upstream speed of boat is 3:1. Stream speed = 4 km/h. Find boat speed in still water.",
+    "opts": ["6 km/h", "8 km/h", "10 km/h", "12 km/h"],
+    "ans": 1,
+    "sol": "Let boat speed = u. (u+4)/(u-4) = 3. u+4 = 3u-12. 16 = 2u. u = 8 km/h."
+  },
+  {
+    "id": 2193,
+    "cat": "Quantitative Aptitude",
+    "q": "A man takes twice as long to row upstream as downstream. Ratio of boat speed to stream speed is:",
+    "opts": ["2:1", "3:1", "1:2", "3:2"],
+    "ans": 1,
+    "sol": "Let u=boat speed, v=stream speed. d/(u-v) = 2d/(u+v). u+v = 2u-2v. 3v=u. Ratio u:v = 3:1."
+  },
+  {
+    "id": 2194,
+    "cat": "Logical Reasoning",
+    "q": "If February 1, 2024 is Thursday (2024 is leap year), what day is March 1, 2024?",
+    "opts": ["Friday", "Saturday", "Sunday", "Monday"],
+    "ans": 0,
+    "sol": "Feb 2024 has 29 days (leap). Feb 1 = Thu. March 1 is 29 days later. 29 mod 7 = 1. Thu + 1 = Friday."
+  },
+  {
+    "id": 2195,
+    "cat": "Logical Reasoning",
+    "q": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "opts": ["0 degrees", "7.5 degrees", "5 degrees", "10 degrees"],
+    "ans": 1,
+    "sol": "Angle = |30H - 5.5M| = |30x3 - 5.5x15| = |90 - 82.5| = 7.5 degrees."
+  },
+  {
+    "id": 2196,
+    "cat": "Quantitative Aptitude",
+    "q": "A milk vendor mixes two types of milk: 25% water and 50% water to get 37.5% water mixture. Ratio of mixing?",
+    "opts": ["1:1", "1:2", "2:1", "3:1"],
+    "ans": 0,
+    "sol": "Using alligation: (50-37.5):(37.5-25) = 12.5:12.5 = 1:1."
+  },
+  {
+    "id": 2197,
+    "cat": "Quantitative Aptitude",
+    "q": "If (1/5)^m = 0.008, then m = ?",
+    "opts": ["-3", "-2", "3", "2"],
+    "ans": 2,
+    "sol": "0.008 = 8/1000 = 1/125 = 1/5^3 = (1/5)^3. So m = 3."
+  },
+  {
+    "id": 2198,
+    "cat": "Quantitative Aptitude",
+    "q": "How many times does a clock's hour hand rotate in 24 hours?",
+    "opts": ["1 rotation", "2 rotations", "12 rotations", "24 rotations"],
+    "ans": 1,
+    "sol": "The hour hand completes one full rotation in 12 hours. In 24 hours, it rotates 2 times."
+  },
+  {
+    "id": 2199,
+    "cat": "Quantitative Aptitude",
+    "q": "Between which two hours do clock hands NOT coincide at all?",
+    "opts": ["Between 11 and 12", "Between 5 and 6", "They always coincide once per hour", "Between 10 and 11"],
+    "ans": 2,
+    "sol": "The hands coincide exactly once between any two consecutive hours (e.g., between 1:00 and 2:00, between 2:00 and 3:00, etc.). They always meet once in every hour interval."
+  },
+  {
+    "id": 2200,
+    "cat": "Quantitative Aptitude",
+    "q": "If 100 cats can kill 100 mice in 100 minutes, how many cats are needed to kill 100 mice in 50 minutes?",
+    "opts": ["50", "100", "200", "150"],
+    "ans": 2,
+    "sol": "Cats x Time = constant for same work. 100 x 100 = C x 50. C = 200 cats.",
+  {
+    "id": 2201,
+    "cat": "Quantitative Aptitude",
+    "q": "What is the value of log2(32)?",
+    "opts": ["3", "4", "5", "6"],
+    "ans": 2,
+    "sol": "Let x = log2(32). Then 2^x = 32. Since 2^5 = 32, x = 5."
+  },
+  {
+    "id": 2202,
+    "cat": "Quantitative Aptitude",
+    "q": "If log10(2) = 0.3010, what is the value of log10(8)?",
+    "opts": ["0.6020", "0.9030", "1.2040", "0.1505"],
+    "ans": 1,
+    "sol": "log10(8) = log10(2^3) = 3 * log10(2) = 3 * 0.3010 = 0.9030."
+  },
+  {
+    "id": 2203,
+    "cat": "Quantitative Aptitude",
+    "q": "Evaluate log3(27) + log3(9).",
+    "opts": ["3", "4", "5", "6"],
+    "ans": 2,
+    "sol": "log3(27) = 3 because 3^3 = 27. log3(9) = 2 because 3^2 = 9. 3 + 2 = 5. Alternatively, log3(27 * 9) = log3(243) = 5."
+  },
+  {
+    "id": 2204,
+    "cat": "Quantitative Aptitude",
+    "q": "If log(x) + log(y) = log(x+y), what is x in terms of y?",
+    "opts": ["x = y/(y-1)", "x = y/(y+1)", "x = (y-1)/y", "x = y"],
+    "ans": 0,
+    "sol": "log(x) + log(y) = log(xy). So xy = x + y. xy - x = y => x(y-1) = y => x = y/(y-1)."
+  },
+  {
+    "id": 2205,
+    "cat": "Quantitative Aptitude",
+    "q": "Find the value of log2(log2(16)).",
+    "opts": ["1", "2", "3", "4"],
+    "ans": 1,
+    "sol": "First evaluate log2(16). Since 2^4 = 16, log2(16) = 4. Then evaluate log2(4), which is 2."
+  },
+  {
+    "id": 2206,
+    "cat": "Quantitative Aptitude",
+    "q": "If n(A) = 20, n(B) = 30 and n(A U B) = 45, find n(A \u2229 B).",
+    "opts": ["5", "10", "15", "20"],
+    "ans": 0,
+    "sol": "Using the formula n(A U B) = n(A) + n(B) - n(A \u2229 B): 45 = 20 + 30 - n(A \u2229 B). 45 = 50 - n(A \u2229 B). Thus, n(A \u2229 B) = 5."
+  },
+  {
+    "id": 2207,
+    "cat": "Quantitative Aptitude",
+    "q": "In a group of 100 people, 60 drink tea, 50 drink coffee, and 20 drink both. How many drink exactly one beverage?",
+    "opts": ["50", "60", "70", "80"],
+    "ans": 2,
+    "sol": "Tea only = 60 - 20 = 40. Coffee only = 50 - 20 = 30. Exactly one = 40 + 30 = 70."
+  },
+  {
+    "id": 2208,
+    "cat": "Quantitative Aptitude",
+    "q": "A set has 5 elements. How many subsets does it have?",
+    "opts": ["16", "25", "32", "64"],
+    "ans": 2,
+    "sol": "The number of subsets of a set with n elements is 2^n. For n = 5, 2^5 = 32."
+  },
+  {
+    "id": 2209,
+    "cat": "Quantitative Aptitude",
+    "q": "In a class of 60 students, 35 play football, 25 play cricket, and 10 play neither. How many students play both?",
+    "opts": ["5", "10", "15", "20"],
+    "ans": 1,
+    "sol": "Total students = 60. Students playing at least one game = 60 - 10 = 50. n(F U C) = 50. We know n(F U C) = n(F) + n(C) - n(F \u2229 C). 50 = 35 + 25 - n(F \u2229 C) => 50 = 60 - n(F \u2229 C) => n(F \u2229 C) = 10."
+  },
+  {
+    "id": 2210,
+    "cat": "Quantitative Aptitude",
+    "q": "In an exam, 40% students failed in Math, 30% failed in English, and 10% failed in both. What percentage of students passed in both subjects?",
+    "opts": ["20%", "30%", "40%", "45%"],
+    "ans": 2,
+    "sol": "Percentage failing in at least one = n(M U E) = n(M) + n(E) - n(M \u2229 E) = 40 + 30 - 10 = 60%. Therefore, percentage passing in both = 100% - 60% = 40%."
   }
 ];
 
@@ -28173,3 +28596,5 @@ export const CATEGORY_CONFIG = [
     "bg": "rgba(128, 90, 213, 0.1)"
   }
 ];
+
+

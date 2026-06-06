@@ -719,5 +719,483 @@ export const MATERIALS = [
         ]
       }
     ]
+  },
+
+  {
+    id: "calendar-dates",
+    title: "Calendar & Dates",
+    icon: "📅",
+    color: "#6366F1",
+    colorSoft: "rgba(99,102,241,0.10)",
+    colorLine: "rgba(99,102,241,0.25)",
+    tag: "CAL",
+    topics: [
+      {
+        title: "Key Concept: Odd Days",
+        items: [
+          { label: "Odd Days", formula: "Remainder when total days ÷ 7", note: "Determines the day of the week" },
+          { label: "Ordinary year (365 days)", formula: "365 = 52 weeks + 1 day → 1 Odd Day", note: "Every ordinary year shifts day by +1" },
+          { label: "Leap year (366 days)", formula: "366 = 52 weeks + 2 days → 2 Odd Days", note: "Every leap year shifts day by +2" },
+          { label: "100 years", formula: "76 ordinary + 24 leap = 76 + 48 = 124 odd days = 5 odd days", note: "100 years = 5 odd days" },
+          { label: "200 years", formula: "2 × 5 = 10 → 10 mod 7 = 3 odd days", note: "" },
+          { label: "300 years", formula: "3 × 5 = 15 → 15 mod 7 = 1 odd day", note: "" },
+          { label: "400 years", formula: "4 × 5 + 1 = 21 → 21 mod 7 = 0 odd days", note: "400 years is perfectly divisible" },
+        ]
+      },
+      {
+        title: "Day Code Table",
+        type: "table",
+        rows: [
+          ["Odd Days", "0", "1", "2", "3", "4", "5", "6"],
+          ["Day", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        ]
+      },
+      {
+        title: "Leap Year Rules",
+        items: [
+          { label: "Ordinary Leap Year", formula: "Divisible by 4 AND NOT by 100", note: "e.g. 2024 ✓, 2100 ✗" },
+          { label: "Century Leap Year", formula: "Divisible by 400", note: "e.g. 1600 ✓, 2000 ✓, 1900 ✗" },
+          { label: "Quick Check", formula: "If year % 400 = 0 → Leap | Else if year % 100 = 0 → NOT Leap | Else if year % 4 = 0 → Leap", note: "" },
+        ]
+      },
+      {
+        title: "Month Odd Days (Non-Leap Year)",
+        type: "table",
+        rows: [
+          ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          ["3", "0", "3", "2", "3", "2", "3", "3", "2", "3", "2", "3"],
+        ]
+      },
+      {
+        title: "Month Codes (Zeller/NQT Method)",
+        type: "table",
+        rows: [
+          ["Month", "Code"],
+          ["January", "1 (or 6 in leap year)"],
+          ["February", "4 (or 2 in leap year)"],
+          ["March", "4"],
+          ["April", "0"],
+          ["May", "2"],
+          ["June", "5"],
+          ["July", "0"],
+          ["August", "3"],
+          ["September", "6"],
+          ["October", "1"],
+          ["November", "4"],
+          ["December", "6"],
+        ]
+      },
+      {
+        title: "Finding Day for Any Date (Step-by-Step)",
+        items: [
+          { label: "Step 1", formula: "Take last 2 digits of year → call it 'a'", note: "e.g. for 2023 → a = 23" },
+          { label: "Step 2", formula: "Calculate b = a/4 (ignore remainder)", note: "e.g. 23/4 = 5" },
+          { label: "Step 3", formula: "Take date number → call it 'c'", note: "e.g. 15th → c = 15" },
+          { label: "Step 4", formula: "Look up month code from table → call it 'd'", note: "e.g. March = 4 → d = 4" },
+          { label: "Step 5", formula: "Century code: 1800→2, 1900→0, 2000→6, 2100→4", note: "e.g. 2000s → 6" },
+          { label: "Step 6", formula: "Total = a + b + c + d + century_code", note: "" },
+          { label: "Step 7", formula: "Day = Total mod 7 → use day code table (0=Sun, 1=Mon...)", note: "If leap year & month is Jan/Feb, subtract 1" },
+        ]
+      },
+      {
+        title: "Quick Day-Finding Formula",
+        items: [
+          { label: "Formula", formula: "Day = (d + m + y + y/4 + c) mod 7", note: "d=date, m=month code, y=last 2 digits of year, c=century code" },
+          { label: "Same date, next year", formula: "If non-leap year: day advances by 1 | If leap year: day advances by 2", note: "" },
+          { label: "Day after n days", formula: "New Day = (Current Day Number + n) mod 7", note: "Sun=0, Mon=1, Tue=2, Wed=3, Thu=4, Fri=5, Sat=6" },
+        ]
+      },
+      {
+        title: "Practical Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "SAME DAY TRICK: If today is Monday (1st), then 8th, 15th, 22nd, 29th are ALL Mondays (add 7 each time)",
+          "DAY COUNTING: If 7th is Monday → 14th Mon → 21st Mon → 28th Mon → 27th = Sunday (28-1), 29th = Tuesday (28+1)",
+          "EXAMPLE: If March 23 is asked and today is Monday March 2 → Gap = 21 days = 3 weeks → same day = Monday",
+          "EXAMPLE: If Jan 1 is Wednesday → Jan 25 = Jan 1 + 24 days = 24 mod 7 = 3 → Wednesday + 3 = Saturday",
+          "LEAP YEAR CALENDAR TRICK: Feb has 29 days in leap year. After Feb 28, leap year inserts extra day",
+          "CENTURY RULE: Jan 1, 1901 = Tuesday. Jan 1, 2001 = Monday. Jan 1, 1800 = Wednesday",
+          "If a year starts on Monday, the same year ends on Monday (non-leap). If leap, ends on Tuesday",
+          "SHORTCUT for this year: Find Jan 1 day → use odd days for each month to track forward"
+        ]
+      },
+      {
+        title: "Common Exam Questions Explained",
+        type: "tricks",
+        items: [
+          "Q: What day is 23rd March if today (6th June) is Saturday? → Find day of 23rd March: Count backwards or use formula",
+          "Q: If 15 Aug 1947 was Friday, what day was 26 Jan 1950? → Count odd days between dates",
+          "Q: What is the last day of a century? → Every century (100, 200, 300) ends on Friday. 400-century ends on Sunday",
+          "Q: Which year has same calendar as 2024? → After leap year, repeat after 28 years (or find year with 0 odd days gap)",
+          "Q: If today is Thursday, what day will it be 100 days later? → 100 mod 7 = 2 → Thursday + 2 = Saturday",
+          "Q: On what day does February end in 2025? → 2025 is not a leap year → Feb has 28 days. Jan 1 2025 = Wednesday → Jan has 31 days = 31 mod 7 = 3 odd days → Feb 1 = Saturday → Feb 28 = Saturday + 27 days = 27 mod 7 = 6 → Saturday + 6 = Friday"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "clocks",
+    title: "Clocks",
+    icon: "🕐",
+    color: "#D97706",
+    colorSoft: "rgba(217,119,6,0.10)",
+    colorLine: "rgba(217,119,6,0.25)",
+    tag: "CLK",
+    topics: [
+      {
+        title: "Core Concepts",
+        items: [
+          { label: "Speed of Hour hand", formula: "0.5° per minute (360° in 12 hours = 720 minutes)", note: "Hour hand moves 30° per hour" },
+          { label: "Speed of Minute hand", formula: "6° per minute (360° in 60 minutes)", note: "Minute hand moves 360° per hour" },
+          { label: "Relative speed", formula: "Minute hand gains 5.5° per minute over hour hand", note: "= 6° − 0.5° = 5.5° per minute" },
+          { label: "Minute hand gain per hour", formula: "Minute hand gains 55 minutes over hour hand per hour", note: "In 60 min, minute hand gains 55 min spaces" },
+        ]
+      },
+      {
+        title: "Angle Between Hands",
+        items: [
+          { label: "Angle Formula", formula: "Angle = |30H − 5.5M|", note: "H = hours, M = minutes. If >180°, subtract from 360°" },
+          { label: "Example: 3:20", formula: "|30×3 − 5.5×20| = |90 − 110| = 20°", note: "" },
+          { label: "Example: 9:45", formula: "|30×9 − 5.5×45| = |270 − 247.5| = 22.5°", note: "" },
+          { label: "Hands coincide", formula: "Every 65.45 min (= 720/11 minutes)", note: "Hands meet 22 times in 24 hours" },
+          { label: "Hands at right angle", formula: "Every 32.72 min (= 360/11 minutes)", note: "Occurs 44 times in 24 hours" },
+          { label: "Hands opposite (180°)", formula: "Every 65.45 min (22 times in 24 hours)", note: "" },
+        ]
+      },
+      {
+        title: "Incorrect Clock Problems",
+        items: [
+          { label: "Clock gains time", formula: "Actual time = (Correct time × 60) / (60 + gain per hour)", note: "" },
+          { label: "Clock loses time", formula: "Actual time = (Correct time × 60) / (60 − loss per hour)", note: "" },
+          { label: "Time when clock shows correct again", formula: "If gain = x min/hr → After 12×60/(x) hours it shows correct time", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "At 12:00 both hands coincide. Next coincidence is at 12:65.45 (12 hr 5 min 27 sec approx)",
+          "Between any two consecutive hours, hands coincide ONCE (except 11 and 12 where they coincide once also)",
+          "In 12 hours, hands coincide 11 times (NOT 12). In 24 hours = 22 times",
+          "Hands are perpendicular (90°) in 12 hours = 22 times. In 24 hours = 44 times",
+          "Hands opposite (180°) in 12 hours = 11 times. In 24 hours = 22 times",
+          "TRICK: Time when minute and hour hand coincide after H hours: M = (60H)/11 minutes past H",
+          "If a clock is set right at 8 AM and gains 10 min/hour, by 1 PM (5 hours later) it shows: 1 PM + 50 min = 1:50 PM"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "boats-streams",
+    title: "Boats & Streams",
+    icon: "🚣",
+    color: "#0891B2",
+    colorSoft: "rgba(8,145,178,0.10)",
+    colorLine: "rgba(8,145,178,0.25)",
+    tag: "B&S",
+    topics: [
+      {
+        title: "Core Formulas",
+        items: [
+          { label: "Downstream speed", formula: "D = u + v", note: "u = boat speed in still water, v = stream speed" },
+          { label: "Upstream speed", formula: "U = u − v", note: "Boat against current" },
+          { label: "Boat speed (still water)", formula: "u = (D + U) / 2", note: "Average of downstream and upstream" },
+          { label: "Stream speed", formula: "v = (D − U) / 2", note: "Half the difference" },
+          { label: "Time downstream", formula: "t = Distance / (u + v)", note: "" },
+          { label: "Time upstream", formula: "t = Distance / (u − v)", note: "" },
+        ]
+      },
+      {
+        title: "Round Trip",
+        items: [
+          { label: "Round trip time", formula: "T = d/(u+v) + d/(u−v)", note: "d = one-way distance" },
+          { label: "Average speed for round trip", formula: "Avg = 2(u+v)(u−v) / (u+v + u−v) = (u²−v²)/u", note: "" },
+          { label: "If man rows to point and back", formula: "T_total = 2du / (u²−v²)", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "If a man can row at u km/h in still water and stream speed is v km/h → Downstream = u+v, Upstream = u−v",
+          "Speed of current = (Downstream − Upstream) / 2",
+          "Speed in still water = (Downstream + Upstream) / 2",
+          "If downstream time = t1, upstream time = t2 for same distance d → d/t1 = D-speed, d/t2 = U-speed → solve for u and v",
+          "Man rows x km upstream and x km downstream: Time ratio = Upstream time / Downstream time = (u+v)/(u−v)",
+          "TRICK: If speed downstream is a and upstream is b → boat speed = (a+b)/2, current = (a−b)/2"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "trains",
+    title: "Problems on Trains",
+    icon: "🚂",
+    color: "#B45309",
+    colorSoft: "rgba(180,83,9,0.10)",
+    colorLine: "rgba(180,83,9,0.25)",
+    tag: "TRN",
+    topics: [
+      {
+        title: "Core Formulas",
+        items: [
+          { label: "Speed", formula: "Speed = Distance / Time", note: "Always use consistent units" },
+          { label: "km/h to m/s", formula: "Multiply by 5/18", note: "e.g. 72 km/h = 20 m/s" },
+          { label: "m/s to km/h", formula: "Multiply by 18/5", note: "e.g. 20 m/s = 72 km/h" },
+          { label: "Train crosses a pole/man", formula: "Time = Length of train / Speed", note: "Pole/man = point object (0 length)" },
+          { label: "Train crosses a platform/bridge", formula: "Time = (Length of train + Length of platform) / Speed", note: "Both lengths matter" },
+          { label: "Train crosses a standing man", formula: "Time = Length of train / Speed", note: "Same as crossing a pole" },
+          { label: "Train crosses a moving man (same dir)", formula: "Time = Length of train / (Speed of train − Speed of man)", note: "Relative speed" },
+          { label: "Train crosses a moving man (opp dir)", formula: "Time = Length of train / (Speed of train + Speed of man)", note: "" },
+        ]
+      },
+      {
+        title: "Two Trains",
+        items: [
+          { label: "Same direction", formula: "Relative Speed = |S₁ − S₂| | Time = (L₁+L₂)/(S₁−S₂)", note: "Faster chases slower" },
+          { label: "Opposite directions", formula: "Relative Speed = S₁ + S₂ | Time = (L₁+L₂)/(S₁+S₂)", note: "Head-on approach" },
+          { label: "Distance between trains", formula: "If both start at same time from A & B → D covered = sum × time if opp, diff × time if same", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "KEY: When a train passes a STANDING object → distance = train length only",
+          "KEY: When a train passes a MOVING object → add or subtract speed based on direction",
+          "KEY: When a train passes a PLATFORM → distance = train length + platform length",
+          "If train takes t1 sec to pass a pole and t2 sec to pass a platform of length L → Train length = L×t1/(t2−t1)",
+          "Two trains start from A & B towards each other, distance D, speeds S1 & S2 → Meet after D/(S1+S2) hours",
+          "After meeting, train 1 takes t1 hours and train 2 takes t2 hours to reach destination → S1/S2 = √(t2/t1)"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "surds-indices",
+    title: "Surds & Indices",
+    icon: "√",
+    color: "#7C3AED",
+    colorSoft: "rgba(124,58,237,0.10)",
+    colorLine: "rgba(124,58,237,0.25)",
+    tag: "S&I",
+    topics: [
+      {
+        title: "Laws of Indices",
+        items: [
+          { label: "aᵐ × aⁿ", formula: "= aᵐ⁺ⁿ", note: "Same base: add powers" },
+          { label: "aᵐ / aⁿ", formula: "= aᵐ⁻ⁿ", note: "Same base: subtract powers" },
+          { label: "(aᵐ)ⁿ", formula: "= aᵐⁿ", note: "Power of power: multiply" },
+          { label: "(ab)ⁿ", formula: "= aⁿ × bⁿ", note: "" },
+          { label: "a⁰", formula: "= 1", note: "Any non-zero base to power 0 = 1" },
+          { label: "a⁻ⁿ", formula: "= 1/aⁿ", note: "Negative exponent = reciprocal" },
+          { label: "a^(1/n)", formula: "= ⁿ√a", note: "Fractional exponent = nth root" },
+          { label: "a^(m/n)", formula: "= (ⁿ√a)ᵐ", note: "" },
+        ]
+      },
+      {
+        title: "Surds (Irrational Roots)",
+        items: [
+          { label: "Surd", formula: "Expression like √2, ³√5 that cannot be simplified to rational", note: "" },
+          { label: "Like surds", formula: "√2 + 3√2 = 4√2", note: "Same radicand: add/subtract coefficients" },
+          { label: "Rationalizing 1/√a", formula: "= √a/a (multiply by √a/√a)", note: "" },
+          { label: "Rationalizing 1/(a+√b)", formula: "= (a−√b)/(a²−b)", note: "Multiply by conjugate" },
+        ]
+      },
+      {
+        title: "Important Square Root Values",
+        type: "table",
+        rows: [
+          ["√2", "√3", "√5", "√6", "√7", "√10"],
+          ["1.414", "1.732", "2.236", "2.449", "2.646", "3.162"],
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "aˣ = aʸ → x = y (when a ≠ 0, 1). Use to solve exponential equations directly",
+          "Unit digit cycles of 4: 2→(2,4,8,6), 3→(3,9,7,1), 7→(7,9,3,1), 8→(8,4,2,6)",
+          "Unit digit cycles of 2: 4→(4,6), 9→(9,1). Use exponent mod cycle-length to find unit digit",
+          "If aˣ = b → x = log_a(b). Useful for comparing expressions with different bases",
+          "√(a + √(a + √(a + ...∞))) = (1 + √(1+4a)) / 2 — nested radical infinity formula"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "permutation-combination",
+    title: "Permutation & Combination",
+    icon: "🎯",
+    color: "#059669",
+    colorSoft: "rgba(5,150,105,0.10)",
+    colorLine: "rgba(5,150,105,0.25)",
+    tag: "P&C",
+    topics: [
+      {
+        title: "Core Formulas",
+        items: [
+          { label: "Factorial n!", formula: "n × (n−1) × ... × 1", note: "0! = 1, 1! = 1" },
+          { label: "nPr (Permutation)", formula: "n! / (n−r)!", note: "Arrangements — ORDER MATTERS" },
+          { label: "nCr (Combination)", formula: "n! / [r!(n−r)!]", note: "Selections — ORDER DOESN'T MATTER" },
+          { label: "nCr = nC(n−r)", formula: "Symmetric: ¹⁰C₃ = ¹⁰C₇", note: "" },
+          { label: "nPr = nCr × r!", formula: "Permutation = Combination × r!", note: "" },
+          { label: "nC0 = nCn = 1", formula: "Always 1", note: "" },
+        ]
+      },
+      {
+        title: "Special Arrangements",
+        items: [
+          { label: "Circular permutation", formula: "(n−1)!", note: "n objects in a circle" },
+          { label: "Necklace / Bracelet", formula: "(n−1)! / 2", note: "Flipping gives same arrangement" },
+          { label: "Word with repeated letters", formula: "n! / (p! × q! × r!...)", note: "p, q, r = frequencies of repeated letters" },
+          { label: "Objects always together", formula: "Treat k objects as 1 → (n−k+1)! × k!", note: "" },
+          { label: "Objects never together", formula: "Total arrangements − always together", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "nCr = choose r from n (order doesn't matter). nPr = arrange r from n (order matters)",
+          "VOWELS TOGETHER trick: treat all vowels as one block → (n−v+1)! × v! arrangements",
+          "AT LEAST ONE: 2ⁿ − 1 ways to select from n distinct items (every possible non-empty subset)",
+          "TOTAL SUBSETS of n items = 2ⁿ (including empty set)",
+          "MISSISSIPPI has 11 letters (I=4, S=4, P=2, M=1) → arrangements = 11!/(4!×4!×2!×1!) = 34650",
+          "Dividing n items into groups p, q, r (distinct groups): n!/(p!×q!×r!)"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "word-problems",
+    title: "Word Problems & Equations",
+    icon: "📝",
+    color: "#DC2626",
+    colorSoft: "rgba(220,38,38,0.10)",
+    colorLine: "rgba(220,38,38,0.25)",
+    tag: "WP",
+    topics: [
+      {
+        title: "Number Problems",
+        items: [
+          { label: "Two-digit number", formula: "Number = 10a + b", note: "a=tens digit, b=units digit" },
+          { label: "Reversed number", formula: "= 10b + a", note: "Swap tens and units" },
+          { label: "Reversed − Original", formula: "= 9(b−a)", note: "Always a multiple of 9" },
+          { label: "Three-digit number", formula: "100a + 10b + c", note: "" },
+        ]
+      },
+      {
+        title: "Mixture & Alligation",
+        items: [
+          { label: "Alligation Cross Rule", formula: "(Qty Cheaper)/(Qty Dearer) = (Dearer−Mean)/(Mean−Cheaper)", note: "" },
+          { label: "Mixing two liquids", formula: "Final conc. = (c₁V₁ + c₂V₂)/(V₁+V₂)", note: "Weighted average" },
+          { label: "Replacement formula", formula: "Pure remaining = V × (1−x/V)ⁿ", note: "x removed n times from V litres" },
+        ]
+      },
+      {
+        title: "Advanced Work & Time",
+        items: [
+          { label: "Work equivalence", formula: "M₁D₁H₁/W₁ = M₂D₂H₂/W₂", note: "M=men, D=days, H=hours, W=work" },
+          { label: "Wages distribution", formula: "Wage ratio = Work done ratio = Efficiency × Time ratio", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "Two numbers with sum S and product P → roots of x² − Sx + P = 0",
+          "Sum of n consecutive integers starting from a = n×a + n(n−1)/2",
+          "FRACTION TRICK: If N/D < 1, adding same number to both N and D increases the fraction value",
+          "MIXTURE SHORTCUT: Mix at ₹A and ₹B, sell at ₹M → ratio = (B−M):(M−A)",
+          "CHAIN RULE: 10 men do work in 8 days. Men needed in 4 days = 10×8/4 = 20 men",
+          "If A is twice as efficient as B, together they finish in T days → A alone = 3T/2, B alone = 3T"
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "logarithms",
+    title: "Logarithms",
+    icon: "📈",
+    color: "#D97706",
+    colorSoft: "rgba(217,119,6,0.10)",
+    colorLine: "rgba(217,119,6,0.25)",
+    tag: "LOG",
+    topics: [
+      {
+        title: "Basic Definitions & Properties",
+        items: [
+          { label: "Definition", formula: "If aˣ = N, then logₐ(N) = x", note: "a > 0, a ≠ 1, N > 0" },
+          { label: "logₐ(a)", formula: "= 1", note: "Log of base to itself" },
+          { label: "logₐ(1)", formula: "= 0", note: "Log of 1 to any base is 0" },
+        ]
+      },
+      {
+        title: "Laws of Logarithms",
+        items: [
+          { label: "Product Rule", formula: "logₐ(MN) = logₐ(M) + logₐ(N)", note: "" },
+          { label: "Quotient Rule", formula: "logₐ(M/N) = logₐ(M) − logₐ(N)", note: "" },
+          { label: "Power Rule", formula: "logₐ(Mⁿ) = n × logₐ(M)", note: "" },
+          { label: "Base Power Rule", formula: "log_aⁿ(M) = (1/n) × logₐ(M)", note: "" },
+          { label: "Change of Base", formula: "logₐ(M) = log_b(M) / log_b(a)", note: "" },
+          { label: "Reciprocal", formula: "logₐ(b) = 1 / log_b(a)", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "a^(logₐ(x)) = x (Fundamental identity)",
+          "x^(logₐ(y)) = y^(logₐ(x))",
+          "If log(x) + log(y) = log(x+y), then x = y / (y-1)",
+          "Common Log: log₁₀(2) ≈ 0.3010, log₁₀(3) ≈ 0.4771",
+        ]
+      }
+    ]
+  },
+
+  {
+    id: "set-theory",
+    title: "Set Theory & Venn Diagrams",
+    icon: "⭕",
+    color: "#2563EB",
+    colorSoft: "rgba(37,99,235,0.10)",
+    colorLine: "rgba(37,99,235,0.25)",
+    tag: "SETS",
+    topics: [
+      {
+        title: "Two Sets Formulas",
+        items: [
+          { label: "n(A ∪ B)", formula: "n(A) + n(B) − n(A ∩ B)", note: "Total elements in A or B" },
+          { label: "Only A", formula: "n(A) − n(A ∩ B)", note: "Elements strictly in A" },
+          { label: "Exactly one set", formula: "n(A) + n(B) − 2n(A ∩ B)", note: "" },
+        ]
+      },
+      {
+        title: "Three Sets Formulas",
+        items: [
+          { label: "n(A ∪ B ∪ C)", formula: "n(A) + n(B) + n(C) − n(A∩B) − n(B∩C) − n(C∩A) + n(A∩B∩C)", note: "" },
+          { label: "Exactly two sets", formula: "n(A∩B) + n(B∩C) + n(C∩A) − 3n(A∩B∩C)", note: "" },
+          { label: "Exactly one set", formula: "n(A) + n(B) + n(C) − 2(n(A∩B) + n(B∩C) + n(C∩A)) + 3n(A∩B∩C)", note: "" },
+        ]
+      },
+      {
+        title: "Tricks & Shortcuts",
+        type: "tricks",
+        items: [
+          "Always fill the innermost intersection first (A∩B∩C) when solving Venn diagrams",
+          "Total population = n(A ∪ B ∪ C) + n(Neither)",
+          "De Morgan's Laws: (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'"
+        ]
+      }
+    ]
   }
 ];
