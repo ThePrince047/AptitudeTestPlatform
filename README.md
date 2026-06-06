@@ -2,7 +2,7 @@
 
 # 🎯 Aptitude & Programming Mock Test Environment
 
-### A premium, dark-themed mock exam, practice, and code execution portal for competitive preparation
+### A premium, dark-themed mock exam, practice, study materials, and code execution portal for competitive preparation
 
 [![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-placement14.netlify.app-6366F1?style=for-the-badge)](https://placement14.netlify.app/)
 [![Built with React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
@@ -18,7 +18,7 @@
 
 > **👉 [https://placement14.netlify.app/](https://placement14.netlify.app/)**
 
-Visit the live site directly in your browser — no installation required. All **2,157 MCQs** and **189+ programming challenges** are bundled offline-first.
+Visit the live site directly in your browser — no installation required. All **2,157 MCQs**, **189+ programming challenges**, and complete **study materials** are bundled offline-first.
 
 ---
 
@@ -28,8 +28,9 @@ Visit the live site directly in your browser — no installation required. All *
 |---|---|
 | 🔒 **User Authentication** | Secure signup and login. User data (bookmarks, history, API key, solved status) is isolated and persistent for each individual user profile. |
 | 📊 **Dashboard** | Track progress, average scores, overall accuracy, saved bookmarks, and coding solved states |
-| 🗄️ **Persistent Storage** | Full **MongoDB Atlas** integration. Your test history, custom bookmarks, solved coding challenges, and AI configurations are safely persisted across sessions and devices. |
+| 🗄️ **Persistent Storage** | Full **MongoDB Atlas** integration with **localStorage dual-write fallback**. Your test history, bookmarks, solved coding challenges, and AI configurations persist even when the server is offline. |
 | 📚 **Offline MCQ Bank** | **2,157 unique questions** across 17 topics with step-by-step solutions |
+| 📖 **Study Materials** | Complete aptitude formula library with **15 topic categories** covering Time/Speed/Distance, Profit & Loss, Percentages, SI/CI, Geometry, Probability, Logical Reasoning, and more — with tricks, shortcuts, formula tables, and divisibility rules |
 | 💻 **Programming Prep** | **189+ coding challenges** spanning multiple DSA categories with optimal complexities and test cases |
 | 📝 **Code Editor** | Full CodeMirror-based editor supporting **Python 3, C++, Java, JavaScript, and C** with pre-defined starter templates for all languages |
 | ⚙️ **Dual Execution** | Executes code locally using system compilers via Node/Express middleware, falling back to a client-side syntax-check parser |
@@ -42,6 +43,39 @@ Visit the live site directly in your browser — no installation required. All *
 | 🔀 **Option Shuffling** | Answer options are randomly shuffled every session |
 | 🔄 **Auto-Migration** | Automatic client-side migration of existing legacy data from browser `localStorage` to the database scope upon registration / first login |
 | 💾 **Storage Guard** | Smart data optimization: question text is stripped from static test history logs before saving, keeping DB size minimal (safely under the free 512MB limit) |
+
+---
+
+## 📖 Study Materials Section
+
+The **Study Materials** section is a built-in reference library so you never need to look elsewhere for aptitude solving methods.
+
+### 15 Topic Categories Covered:
+
+| Topic | Contents |
+|---|---|
+| 🚀 **Time, Speed & Distance** | Core S=D/T formulas, unit conversions, average speed, relative speed, train problems, meeting point tricks |
+| 📈 **Profit & Loss** | SP/CP formulas, discount, successive discounts, false weights, shopkeeper tricks |
+| 💯 **Percentages** | % change, reverse %, important fraction table (10%=1/10, 25%=1/4, etc.), successive change formula |
+| 🏦 **Simple & Compound Interest** | SI/CI formulas, Rule of 72, half-yearly/quarterly compounding, CI−SI difference shortcuts |
+| ⚖️ **Ratio & Proportion** | Alligation diagonal rule, mixture removal formula, partnership profit rules |
+| 🔧 **Work & Time** | LCM efficiency method, pipes & cisterns, man-day calculations |
+| 🔢 **Number System** | Divisibility rules table (2–25), HCF/LCM fractions, unit digit cyclicity, sum series formulas |
+| 📊 **Averages** | Weighted average, AP average, add/remove item update shortcuts |
+| 🔣 **Algebra** | All algebraic identities, quadratic formula, discriminant, x+1/x chain tricks |
+| 📐 **Geometry & Mensuration** | 2D shapes (area/perimeter/diagonal), 3D shapes (volume/surface area), Heron's formula |
+| 🎲 **Probability** | P(E) formulas, P&C (nPr/nCr), standard outcomes (dice, cards, coins) |
+| 👤 **Age Problems** | Ratio-equation approach, systematic solution setup |
+| 🔁 **Series & Sequences** | AP/GP nth term & sum formulas, important sum series (∑n, ∑n², ∑n³) |
+| 🧠 **Logical Reasoning** | Syllogisms, blood relations, directions, coding-decoding, seating arrangement strategies |
+| 📉 **Data Interpretation** | % change formula, approximation strategy, pie chart angles, ratio comparison trick |
+
+### Features:
+- **Full-text search** across all topics, formulas, and tricks in real-time
+- **Category cards** showing topic count and formula count at a glance
+- **Detail view** with organized blocks: Core Formulas → Tables → Tricks & Shortcuts
+- Formulas rendered in **monospace font** for clarity
+- **Amber dot trick list** visually distinguishes shortcuts from standard formulas
 
 ---
 
@@ -63,10 +97,12 @@ NQTMcq/
 │   │   ├── CodingPrep.jsx      # Split-pane coding environment & runner
 │   │   ├── CodeEditor.jsx      # Syntax-highlighted editor (CodeMirror 6 wrapper)
 │   │   ├── AiPaper.jsx         # Gemini API integration + offline simulator
-│   │   └── Analytics.jsx       # SVG trend charts and bookmarks manager
+│   │   ├── Analytics.jsx       # SVG trend charts and bookmarks manager
+│   │   └── Materials.jsx       # Study materials: formulas, tricks, shortcuts
 │   ├── data/
 │   │   ├── questionBank.js     # 2,157 MCQ database
-│   │   └── codingBank.js       # 189+ DSA coding challenges with test cases
+│   │   ├── codingBank.js       # 189+ DSA coding challenges with test cases
+│   │   └── materialsData.js    # Aptitude formulas, tricks & shortcut reference data
 │   ├── config.js               # Global configuration module (endpoints, env flags)
 │   ├── App.jsx                 # App shell, routing, and global state
 │   ├── index.css               # Design system, glassmorphism, and styling
@@ -82,8 +118,10 @@ NQTMcq/
 
 ## 💾 MongoDB Integration, Security & State Persistence
 
-The application has been upgraded with a secure and persistent database layer:
+The application has a secure and persistent database layer with dual-write offline resilience:
+
 * **Primary Store**: MongoDB Atlas (via Mongoose ODM) stores user states, bookmarks, history, and keys.
+* **localStorage Fallback (Dual-Write)**: All critical user data (solved coding IDs, bookmarks, history) is written to both the server **and** `localStorage` simultaneously. On page load, `localStorage` is read first for instant rendering, then server data is fetched and merged — ensuring no data loss if the server is temporarily offline.
 * **Authentication Security**: Standardized password hashing and token-based state authorization (using standard HS256 JWT tokens). Scopes all key-value operations to authenticated users.
 * **Free Tier Quota Optimization**:
   * **Question Stripping**: Standard aptitude and DSA questions in user history are saved as references using only their `id`. Full text is stripped to reduce DB size. The client dynamically reconstructs full question data from static local banks upon loading history.
@@ -109,10 +147,14 @@ The **Programming Prep** workspace offers a competitive coding arena:
    * **Greedy**: Gas station, activity selection
    * **Searching**: Search in rotated array, first/last position
 
-2. **Boilerplate Starter Templates**:
+2. **Solved Status Persistence**:
+   * Questions marked as solved (manually or by passing all test cases) are saved using a **dual-write strategy**: written to `localStorage` immediately for offline persistence AND synced to the server for cross-device access.
+   * On page load, solved IDs from `localStorage` are applied instantly (no flicker), then merged with fresh server data.
+
+3. **Boilerplate Starter Templates**:
    * Pre-defined starter structures and boilerplate code are provided for all 5 languages (**C, C++, Java, JavaScript, Python**) to parse standard input (stdin) and print standard output (stdout), ensuring you can begin implementing solutions instantly.
 
-3. **Dual Code Execution Engine**:
+4. **Dual Code Execution Engine**:
    * **Server Compile Engine (Express)**: Requests to `/api/execute` write code files to `temp_exec/` and invoke system compilers/interpreters (`g++`, `gcc`, `javac`, `node`, `python`) on the host machine. Outputs **real compiler logs, syntax exceptions, and stdout/stderr**.
    * **Client-Side Syntax checking fallback**: If system compilers are missing or when deployed as a static build, the client analyzes your code locally for syntax bugs:
      * Checks for **missing semicolons** in C/C++/Java statements.
@@ -209,7 +251,7 @@ Configure environment variables:
 | **Backend Framework** | Node.js + Express |
 | **Styling** | Vanilla CSS (CSS Variables, Glassmorphism, Grid) |
 | **Icons** | Lucide React |
-| **Fonts** | Plus Jakarta Sans, JetBrains Mono (Google Fonts) |
+| **Fonts** | Inter, JetBrains Mono (Google Fonts) |
 | **AI Integration** | Google Gemini API (gemini-2.5-flash) |
 | **Hosting** | Frontend: Netlify <br> Backend: Render |
 

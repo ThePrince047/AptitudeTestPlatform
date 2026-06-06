@@ -12,12 +12,14 @@ import AiPaper from "./components/AiPaper";
 import Analytics from "./components/Analytics";
 import CodingPrep from "./components/CodingPrep";
 import Auth from "./components/Auth";
+import Materials from "./components/Materials";
 
 const NAV = [
-  { id: "dashboard", label: "Dashboard",      icon: "LayoutDashboard" },
+  { id: "dashboard", label: "Dashboard",       icon: "LayoutDashboard" },
   { id: "coding",    label: "Programming Prep", icon: "Code2" },
-  { id: "analytics", label: "Progress",       icon: "BarChart2" },
-  { id: "ai",        label: "AI Generator",   icon: "Sparkles" },
+  { id: "materials", label: "Study Materials",  icon: "BookOpen" },
+  { id: "analytics", label: "Progress",        icon: "BarChart2" },
+  { id: "ai",        label: "AI Generator",    icon: "Sparkles" },
 ];
 
 export default function App() {
@@ -459,6 +461,9 @@ export default function App() {
         )}
         {screen === "coding" && (
           <CodingPrep onNavigate={navigateTo} />
+        )}
+        {screen === "materials" && (
+          <Materials onNavigate={navigateTo} />
         )}
       </div>
     </div>

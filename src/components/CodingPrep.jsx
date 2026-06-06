@@ -52,19 +52,36 @@ export default function CodingPrep({ onNavigate }) {
     return headers;
   };
 
-  // Load solved IDs on mount
+  // Load solved IDs on mount — server first, localStorage fallback
   useEffect(() => {
     const loadSolvedIds = async () => {
+      // Always try localStorage first for instant render
+      const localData = localStorage.getItem("coding_solved_ids");
+      let localIds = [];
+      if (localData) {
+        try { localIds = JSON.parse(localData); } catch (e) {}
+        if (Array.isArray(localIds) && localIds.length > 0) {
+          setSolvedIds(localIds);
+        }
+      }
+
+      // Then try server (may have newer/merged data)
       try {
         const res = await fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
           headers: getAuthHeaders()
         });
         if (res.ok) {
           const data = await res.json();
-          if (data && data.value) setSolvedIds(data.value);
+          if (data && data.value && Array.isArray(data.value)) {
+            // Merge server + local to avoid losing either
+            const merged = Array.from(new Set([...localIds, ...data.value]));
+            setSolvedIds(merged);
+            // Keep localStorage in sync with server
+            localStorage.setItem("coding_solved_ids", JSON.stringify(merged));
+          }
         }
       } catch (e) {
-        console.error("Failed to load solved coding IDs from server", e);
+        console.warn("Server unavailable — using localStorage for solved IDs", e);
       }
     };
     loadSolvedIds();
@@ -464,11 +481,13 @@ export default function CodingPrep({ onNavigate }) {
       if (allPassed && !solvedIds.includes(currentQuestion.id)) {
         const nextSolvedIds = [...solvedIds, currentQuestion.id];
         setSolvedIds(nextSolvedIds);
+        // Dual-write: localStorage for offline persistence + server for sync
+        localStorage.setItem("coding_solved_ids", JSON.stringify(nextSolvedIds));
         fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
           method: "POST",
           headers: getAuthHeaders({ "Content-Type": "application/json" }),
           body: JSON.stringify({ value: nextSolvedIds })
-        }).catch(e => console.error("Failed to save solved IDs to server", e));
+        }).catch(e => console.warn("Failed to save solved IDs to server (saved locally)", e));
       }
     } catch (error) {
       setRunStatus("error");
@@ -482,11 +501,13 @@ export default function CodingPrep({ onNavigate }) {
   const handleToggleSolved = (id) => {
     setSolvedIds((prev) => {
       const next = prev.includes(id) ? prev.filter((solvedId) => solvedId !== id) : [...prev, id];
+      // Dual-write: localStorage for offline persistence + server for sync
+      localStorage.setItem("coding_solved_ids", JSON.stringify(next));
       fetch(`${API_BASE}/api/storage/coding_solved_ids`, {
         method: "POST",
         headers: getAuthHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ value: next })
-      }).catch(e => console.error("Failed to save solved IDs to server", e));
+      }).catch(e => console.warn("Failed to save solved IDs to server (saved locally)", e));
       return next;
     });
   };
